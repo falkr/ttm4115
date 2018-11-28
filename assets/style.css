@@ -91,11 +91,11 @@ aside + aside {
  }
 
 pre {
-padding: 8px;
-color: #333;
-background-color: #f5f5f5;
-border: 1px solid #ccc;
-border-radius: 4px;
+	padding: 8px;
+	color: #333;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 .navbar > * {
@@ -115,3 +115,25 @@ border-radius: 4px;
      6px 0px 6px yellow,
     -6px 0px 6px yellow;
 }
+
+h1 {
+  font: 200 40px "Source Sans Pro", Georgia, serif;
+  padding: 20px 0 4px 0;
+  border-bottom: solid 0px #eeeeee; }
+
+.section:before {
+  content: " / "; }
+
+h2 {
+  color: #1481b8;
+  font: 300 35px "Source Sans Pro", Georgia, serif;
+  margin: 20px 0 15px -38px;
+  padding: 0 0 2px 30px;
+  border-left: solid 8px #d9eaf2; }
+
+h3 {
+  color: #1481b8;
+  font: 400 20px "Source Sans Pro", Georgia, serif;
+  margin: 20px 0 0 -38px;
+  padding-left: 30px;
+  border-left: solid 8px #d9eaf2; }

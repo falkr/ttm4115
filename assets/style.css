@@ -1,0 +1,117 @@
+.page, .content, aside {
+	box-sizing: content-box;
+}
+
+body {
+  line-height: 24px;
+  color: #222;
+  font: normal 14px/24px "Merriweather", Georgia, serif;
+  background: #fbfaf8; 
+}
+
+.page {
+  background: #fbfaf8;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  }
+
+.content {
+  padding: 0 40px 40px 40px;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: .25rem;
+  padding: 2rem 2rem 1rem;
+  border: 1px solid #e8e8e8;
+}
+
+
+aside {
+  color: #868279;
+  padding: 10px 10px;
+  background: #faf8f5;
+  border: solid 1px #f7f4ed;
+  border-bottom: solid 1px #f0e9db;
+  border-radius: 3px; }
+  aside h2 {
+    color: #9e9b94;
+    font-size: 24px;
+    border: none;
+    margin: 20px 0 10px 0;
+    padding: 0; }
+  aside p, aside li {
+    font: 15px/22px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+  aside li {
+    line-height: 20px; }
+  aside > p:first-child {
+    margin-top: 0; }
+  aside > p:last-child {
+    margin-bottom: 0; }
+  aside ul, aside ol {
+    padding: 0 0 0 18px; }
+  aside code {
+    color: #666;
+    font: normal 13px "Source Code Pro", Menlo, Consolas, Monaco, monospace; }
+  aside img {
+    padding: 0; }
+
+aside + aside {
+  margin-top: 10px; }
+
+
+@media only screen and (max-width: 479px) {
+  .content {
+    padding: 0 20px 2px 20px; }
+
+  .section {
+    display: block; }
+
+  .section:before {
+    content: ""; }
+
+ }
+
+@media only screen and (min-width: 800px) {
+  .page {
+    padding-right: 300px; }
+
+  aside {
+    position: absolute;
+    width: 240px;
+    right: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+    padding-left: 22px;
+    border-radius: 0;
+    border-left: solid 8px #f0e9db; }
+    aside p, aside li {
+      font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+
+ }
+
+pre {
+padding: 8px;
+color: #333;
+background-color: #f5f5f5;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.navbar > * {
+	font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	color: #ffffff;
+}
+
+.nav-link {
+	font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	color: #ffffff;
+}
+
+.yellow-highlight {
+  text-shadow: 
+    -3px 0px 3px yellow,
+     3px 0px 3px yellow,
+     6px 0px 6px yellow,
+    -6px 0px 6px yellow;
+}

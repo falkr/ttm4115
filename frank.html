@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+<link href="http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+<style>
+.page, .content, aside {
+	box-sizing: content-box;
+}
+
+body {
+  line-height: 24px;
+  color: #222;
+  font: normal 14px/24px "Merriweather", Georgia, serif;
+  background: #fbfaf8; 
+}
+
+.page {
+  background: #fbfaf8;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  }
+
+.content {
+  padding: 0 40px 40px 40px;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: .25rem;
+  padding: 2rem 2rem 1rem;
+  border: 1px solid #e8e8e8;
+}
+
+
+aside {
+  color: #868279;
+  padding: 10px 10px;
+  background: #faf8f5;
+  border: solid 1px #f7f4ed;
+  border-bottom: solid 1px #f0e9db;
+  border-radius: 3px; }
+  aside h2 {
+    color: #9e9b94;
+    font-size: 24px;
+    border: none;
+    margin: 20px 0 10px 0;
+    padding: 0; }
+  aside p, aside li {
+    font: 15px/22px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+  aside li {
+    line-height: 20px; }
+  aside > p:first-child {
+    margin-top: 0; }
+  aside > p:last-child {
+    margin-bottom: 0; }
+  aside ul, aside ol {
+    padding: 0 0 0 18px; }
+  aside code {
+    color: #666;
+    font: normal 13px "Source Code Pro", Menlo, Consolas, Monaco, monospace; }
+  aside img {
+    padding: 0; }
+
+aside + aside {
+  margin-top: 10px; }
+
+
+@media only screen and (max-width: 479px) {
+  .content {
+    padding: 0 20px 2px 20px; }
+
+  .section {
+    display: block; }
+
+  .section:before {
+    content: ""; }
+
+ }
+
+@media only screen and (min-width: 800px) {
+  .page {
+    padding-right: 300px; }
+
+  aside {
+    position: absolute;
+    width: 240px;
+    right: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+    padding-left: 22px;
+    border-radius: 0;
+    border-left: solid 8px #f0e9db; }
+    aside p, aside li {
+      font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+
+ }
+
+pre {
+	padding: 8px;
+	color: #333;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.navbar > * {
+	font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	color: #ffffff;
+}
+
+.nav-link {
+	font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	color: #ffffff;
+}
+
+.yellow-highlight {
+  text-shadow: 
+    -3px 0px 3px yellow,
+     3px 0px 3px yellow,
+     6px 0px 6px yellow,
+    -6px 0px 6px yellow;
+}
+
+h1 {
+  font: 200 40px "Source Sans Pro", Georgia, serif;
+  padding: 20px 0 4px 0;
+  border-bottom: solid 0px #eeeeee; }
+
+.section:before {
+  content: " / "; }
+
+h2 {
+  color: #1481b8;
+  font: 300 35px "Source Sans Pro", Georgia, serif;
+  margin: 20px 0 15px -38px;
+  padding: 0 0 2px 30px;
+  border-left: solid 8px #d9eaf2; }
+
+h3 {
+  color: #1481b8;
+  font: 400 20px "Source Sans Pro", Georgia, serif;
+  margin: 20px 0 0 -38px;
+  padding-left: 30px;
+  border-left: solid 8px #d9eaf2; }
+</style>
+
+<!--<script src="jquery-1.10.1.min.js"></script>-->
+<script src="script.js"></script>
+</head>
+<body id="top">
+
+
+<nav class="navbar navbar-expand-md navbar-dark " style="background-color:#666666"#2B65EC"> <!-- fixed-top -->
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+    <a class="nav-link" href="#" style="font-weight: bold")>TTM4115</a>
+  </li>
+        
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">1. Introduction</a>
+      <a class="dropdown-item" href="#">2. Deployments</a>
+      <a class="dropdown-item" href="#">3. Use Cases</a>
+      <a class="dropdown-item" href="#">4. Requirements</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Deliveries</a>
+    <div class="dropdown-menu">
+      
+      
+      <a class="dropdown-item" href="#">Project</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">I1</a>
+      <a class="dropdown-item" href="#">T1</a>
+      <a class="dropdown-item" href="#">I2</a>
+    </div>
+  </li>
+  
+  
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blackboard</a>
+  </li>
+</ul>
+
+<div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
+             <a class="navbar-brand" href="#">
+      	<svg width="100" height="30">
+      		<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
+      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
+      	</svg>
+      </a>
+    </nav>
+    
+    
+    <div class="jumbotron jumbotron-fluid" style="background: url(https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2017/12/R2_collage3.jpg) repeat">
+  <div class="container">
+  <p class="lead">Unit 1 Team Activity</p>
+    <h1 class="display-4">Hello, State Machines!</h1>
+    
+  </div>
+</div>
+
+
+<div class="page">
+
+<section class="content">
+		<h2>Course Content</h2>
+		<p>In this course, you will how to describe systems in a wide variety of notations and rigor, which means that we will sometimes sketch it, sometimes model it more formally. Sometimes we will use graphical notations, sometimes text, and sometimes code.</p>
+
+<p>All systems have in common that they make heavy use of communication, and this is reflected in the development process for them and the way we describe them. Notations, for instance, need to be scalable so that they also can convey complex interactions in a compact and suitable form.</p>
+
+<p>When building a system, you will quickly find out that another critical part besides descriptions and technology are people and processes. Learning how to work in teams is therefore another important aspect of the course. We will also pay attention to development processes.</p>
+
+<h2>Learning</h2>
+<p>This course combines team-based learning with a semester project.</p>
+
+<p>During the course, you will develop a system together with your team fellows. The units each week support you during this task, from a requirements analysis, use case analysis towards a robust system specification and design that you then implement. During the semester you will need to hand in deliveries that document the different stages of your system. This is similar to a process in industry you will encounter later, just a bit adapted so it fits into a semester.</p>
+
+<p>Though there is lots of team work, there is enough room for you to also work individually. The course requires preparation each week, which you can complete at your own speed and schedule. This preparation gives you the basic knowledge and understanding to work together, and it will be tested in class so that you get immediate feedback on your own progress.</p>
+
+<h2>Grading</h2>
+<p><b class="yellow-highlight">There is no final written exam in the course.</b> The grading scheme is based on the RATs (quizzes) during class and the deliveries you hand in as teams as well as the ones you do individually. All these items give enough material for robust and balanced grading.</p>
+		
+</section>
+
+
+
+
+		
+<section class="content">
+<table id="tablepress-table-schedule-2018" class="table">
+<caption style="caption-side:bottom;text-align:left;border:none;background:none;margin:0;padding:0;"><a href="https://www.iik.ntnu.no/ttm4115/wp-admin/admin.php?page=tablepress&amp;action=edit&amp;table_id=table-schedule-2018">Edit</a></caption>
+<thead>
+<tr class="row-1">
+	<th class="column-1">W</th><th class="column-2">Date</th><th class="column-3">Preparation</th><th class="column-4">RAT</th><th class="column-5">Delivery</th><th class="column-6">Room</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1">2</td><td class="column-2">8. Jan.</td><td class="column-3"><em>no class on campus</em></td><td class="column-4">-</td><td class="column-5"></td><td class="column-6">-</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1">3</td><td class="column-2">15. Jan.</td><td class="column-3"><a href="https://www.iik.ntnu.no/ttm4115/preparation/unit-0/">0. Introduction</a></td><td class="column-4">-</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1">4</td><td class="column-2">22. Jan.</td><td class="column-3">1. Modeling and Deployment</td><td class="column-4">R1</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1">5</td><td class="column-2">29. Jan.</td><td class="column-3">2. Requirements and Design Thinking</td><td class="column-4">R2</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1">6</td><td class="column-2">5. Feb.</td><td class="column-3">3. Use Cases</td><td class="column-4">R3</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1">7</td><td class="column-2">12. Feb.</td><td class="column-3">4. State Machines</td><td class="column-4">R4</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1">8</td><td class="column-2">19. Feb.</td><td class="column-3">5. Sequence Diagrams</td><td class="column-4">R5</td><td class="column-5">T1</td><td class="column-6">R2</td>
+</tr>
+<tr class="row-9">
+	<td class="column-1">9</td><td class="column-2">26. Feb.</td><td class="column-3">6. State Machines in Python</td><td class="column-4">R6</td><td class="column-5">I1</td><td class="column-6">R2</td>
+</tr>
+<tr class="row-10">
+	<td class="column-1">10</td><td class="column-2">5. Mar.</td><td class="column-3">6. State Machines in Python 2</td><td class="column-4"></td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-11">
+	<td class="column-1">11</td><td class="column-2">12. Mar.</td><td class="column-3">7. Communication</td><td class="column-4">R7</td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-12">
+	<td class="column-1">12</td><td class="column-2">19. Mar.</td><td class="column-3">Repetition / Exercises</td><td class="column-4">R8</td><td class="column-5">T2</td><td class="column-6">R2</td>
+</tr>
+<tr class="row-13">
+	<td class="column-1">13</td><td class="column-2">26. Mar.</td><td class="column-3"><em>no class on campus</em></td><td class="column-4"></td><td class="column-5"></td><td class="column-6">-</td>
+</tr>
+<tr class="row-14">
+	<td class="column-1">14</td><td class="column-2">2. Apr.</td><td class="column-3"><em>no class on campus</em></td><td class="column-4"></td><td class="column-5"></td><td class="column-6">-</td>
+</tr>
+<tr class="row-15">
+	<td class="column-1">15</td><td class="column-2">9. Apr.</td><td class="column-3">9. Agile Development</td><td class="column-4">R8</td><td class="column-5">I2</td><td class="column-6">R2</td>
+</tr>
+<tr class="row-16">
+	<td class="column-1">16</td><td class="column-2">16. Apr.</td><td class="column-3"><em>t.b.a.</em></td><td class="column-4"></td><td class="column-5"></td><td class="column-6">R2</td>
+</tr>
+<tr class="row-17">
+	<td class="column-1">17</td><td class="column-2">23. Apr.</td><td class="column-3">Launch Day (with Videos)</td><td class="column-4"></td><td class="column-5">T3</td><td class="column-6"></td>
+</tr>
+<tr class="row-18">
+	<td class="column-1">18</td><td class="column-2">30 Apr.</td><td class="column-3"><em>no class on campus</em></td><td class="column-4"></td><td class="column-5">I3</td><td class="column-6"></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+	<section class="content">
+		<h1>Learning Goals</h1>
+		
+<table class="table">
+		<span name="hint"></span>
+		<aside name="hiny"><p>Come back here regularly and check if you reach these goals. If not, <a href="">tell us</a>!</p>
+		</aside>
+<tbody><tr>
+<td>Learning Goal</td>
+<td>Comment</td>
+</tr>
+<tr>
+<td><strong>5.</strong> Capture user requirements and synthesize relevant use cases at a proper level of detail.
+</td>
+<td>
+This is an underestimated skill. The resulting use cases are often written in text and don’t look spectacular. But formulating bad use cases is the earliest phase in a project where things can go wrong.
+</td>
+</tr>
+<tr>
+<td><strong>6.</strong> Write project deliverables that describe system requirements, properties and solutions.
+</td>
+<td>
+Producing the right documents, emphasizing relevant questions, reasonable precision level. Can uncover project problems early or even before they arise. Again, learn to ask the right questions.
+</td>
+</tr>
+<tr>
+<td><strong>7.</strong> Plan and coordinate the development of larger software products (consisting of more than one single application) within a team of developers.
+</td>
+<td>
+To coordinate a project, you need to know a lot about the architecture of a system, but also the process how to build it and potential pitfalls.
+</td>
+</tr>
+<tr>
+<td><strong>8.</strong> Apply agile development methods and reflect about their usage within the context of a project.
+</td>
+<td>
+Selecting and reflecting over development methods: How much should you plan ahead? Should you use an agile method? Read an article on development methods, and understanding it based on own experience.
+</td>
+</tr>
+<tr>
+<td><strong>9.</strong> Make proper design choices for the system architecture and document them accordingly.
+</td>
+<td>
+Learn how to reason about different alternatives together with others. This can happen at a whiteboard or through a document. No matter how, good visualizations are helpful in this task.
+</td>
+</tr>
+</tbody></table>
+
+
+
+		
+
+	</section>
+
+	<div class="content">
+
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+
+		<blockquote>
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</blockquote>
+
+		<p>Then, the rest of that sentence is just a list of stuff you could maybe possibly
+		use the pattern for. Not very illuminating unless your use case happens to be in
+		that list. <em>My</em> pithy tagline for the Command pattern is:</p>
+		<p><strong>A command is a <em><span name="latin">reified</span> method call</em>.</strong></p>
+		<aside name="latin"><p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</aside>
+
+		<h1>Command</h1>
+		<!--<h1 class="book"><a href="/">Game Programming Patterns</a><span class="section"><a href="design-patterns-revisited.html">Design Patterns Revisited</a></span></h1>-->
+		<p>Command is one of my favorite patterns. Most large programs I write, games or
+		otherwise, end up using it somewhere. When I&#8217;ve used it in the right place, it&#8217;s
+		neatly untangled some really gnarly code. For such a swell pattern, the Gang of
+		Four has a predictably abstruse description:</p>
+
+		<blockquote>
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</blockquote>
+
+	</div>
+
+
+	<div class="content">
+	
+		<h1>Task 1</h1>
+
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		
+		<h2>Preconditions</h2>
+
+		<blockquote>
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</blockquote>
+
+		<p>Then, the rest of that sentence is just a list of stuff you could maybe possibly
+		use the pattern for. Not very illuminating unless your use case happens to be in
+		that list. <em>My</em> pithy tagline for the Command pattern is:</p>
+		<p><strong>A command is a <em><span name="latin">reified</span> method call</em>.</strong></p>
+		<aside name="latin"><p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</aside>
+		
+		<div class="alert alert-danger" role="alert">
+Don't do this at home!
+		</div>
+
+		
+		<!--<h1 class="book"><a href="/">Game Programming Patterns</a><span class="section"><a href="design-patterns-revisited.html">Design Patterns Revisited</a></span></h1>-->
+		<p>Command is one of my favorite patterns. Most large programs I write, games or
+		otherwise, end up using it somewhere. When I&#8217;ve used it in the right place, it&#8217;s
+		neatly untangled some really gnarly code. For such a swell pattern, the Gang of
+		Four has a predictably abstruse description:</p>
+		
+		<ul>
+<li><code>gate_1: Gate</code></li>
+<li><code>lights_1: Lights</code></li>
+<li><code>card_1: Card Reader</code></li>
+<li><code>w_1: Weight</code></li>
+<li><code>c: Computer</code></li>
+<li><code>p: Payment</code></li>
+<li><code>gate_2: Gate</code></li>
+<li><code>lights_2: Lights</code></li>
+<li><code>card_2: Card Reader</code></li>
+<li><code>w_2: Weight</code></li>
+</ul>
+
+
+		<p>Command is one of my favorite patterns. Most large programs I write, games or
+		otherwise, end up using it somewhere. When I&#8217;ve used it in the right place, it&#8217;s
+		neatly untangled some really gnarly code. For such a swell pattern, the Gang of
+		Four has a predictably abstruse description:</p>
+		<blockquote>
+		<p>Encapsulate a request as an object, thereby letting users parameterize clients
+		with different requests, queue or log requests, and support undoable
+		operations.</p>
+		</blockquote>
+
+	</div>
+	
+	<section class="content">
+		<ul>
+<li><strong>F1 (REQUIREMENTS INSTABILITY)</strong> refers to the effect that unstable requirements have on up-front planning. Being able to respond to changing requirements is one of the underlying values of the Agile Manifesto and is central to our conceptual definition of agility.</li>
+<li><strong>F2 (TECHNICAL RISK)</strong> describes the effect that exposure to potentially negative outcome has on a team’s up-front effort. Risk is caused by complex architecture. </li>
+<li><strong>F3 (EARLY VALUE)</strong> refers to a customer’s need to gain value from a system or product being built (rather than simply provide feedback) before all functionality has been implemented, perhaps in the form of a minimum viable product.</li>
+<li><strong>F4 (TEAM CULTURE)</strong> describes the effect that a team’s culture has on its agility and the effort it puts into up-front planning. A culture that is people-focused and collaborative is a very important factor in a team’s ability to communicate.</li>
+<li><strong>F5 (CUSTOMER AGILITY)</strong> describes the culture of the customer’s organisation and the huge impact that it has on the amount of up-front architecture design a team does. A customer must have an agile culture that is similar to the team’s culture, whether the team is in-house or an ISV (independent software vendor), for the team to be truly agile. A highly-agile team will not fit in well with a heavyweight process-oriented organisation that prefers planning and formal communication.</li>
+<li><strong>F6 (EXPERIENCE)</strong> describes the impact that an experienced architect’s tacit knowledge and implicit decision-making ability has on the time that an agile team spends on up-front design. Experienced architects have breadth of knowledge; they are more likely to be aware of suitable options for implementing a solution and better understand what will work and what will not.</li>
+</ul>
+	
+	
+	<figure class="figure">
+		<span name="figurex"></span>
+		<aside name="figurex"><p>A sidenote to the figure.</p>
+		</aside>
+  		<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/04/Screen-Shot-2018-04-09-at-08.47.14-1024x717.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  		<figcaption class="figure-caption">A caption for the above image.</figcaption>
+  		
+	</figure>
+
+
+	</section>
+	
+	
+	<div class="content">
+		<iframe width="100%"  src="https://www.youtube.com/embed/0oly6d0zlZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
+	
+	
+	<section class="content">
+		<p>
+
+  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Give us a hint
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+	</section>
+	
+	
+	<section class="content">
+	
+	<h2>From Diagram to Code</h2>
+	
+	<p>So now that we motivated why we want to implement our state machines, how should we do this? How should we get from the state machine diagram to running code. You have previously already read about <em>Degrees of UML</em>. Remember, there were three ways of looking at modelling:</p>
+	<ul>
+<li><strong>Models as a Sketch:</strong> The models only serve the purpose to think and illustrate selected issues og of a system and are often only temporary, like on a piece of paper or a whiteboard. </li>
+<li><strong>Models as a Blueprint:</strong> The models provide a detailed specification of the system, and are kept alongside the system, as part of the documentation. </li>
+<li><strong>Models as a Programming Language:</strong> The models are so detailed that a compiler (in this case often called <em>code generator</em>) can take the model and derive the system code from it.</li>
+</ul>
+		
+		<table class="table">
+<thead>
+<tr>
+<th>Approach</th>
+<th>Benefit</th>
+<th>Drawback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sketch</td>
+<td>
+<ul>
+<li>Quick and easy, requires no formal process or tools.</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Models are often thrown away, and insights gained by models are lost.</li>
+<li>Not automatically synced with code, errors can be introduced when coding.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Blueprint</td>
+<td>
+<ul>
+<li>Quick and easy, requires no formal process or tools.</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Models are often thrown away, and insights gained by models are lost.</li>
+<li>Not automatically synced with code, errors can be introduced when coding.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Programming Language</td>
+<td>
+<ul>
+<li>Model and code are in sync automatically through code generation.</li>
+<li>No introduction of errors into code (when code generator is mature).</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Depends on a tool.</li>
+<li>Model must be very expressive.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2>The Idea</h2>
+<ul>
+<li>The idea is to create a state machine in graphics, and then manually code it, supported by a library.</li>
+<li>Let’s provide a library in Python that takes care of many technicalities around state machines. </li>
+<li>Let’s declare states and transitions as Python data structures, so that they can be programmed quickly and also easily changed. We can reduce the amount of code to be written.</li>
+<li>Let’s keep a very strong connection to Python and how things are done there. It should be easy to combine the code for state machines with any other code in Python.</li>
+<li>Because we have some support library, coding is much easier than coding the state machine entirely manual. This means our approach is more automized than the “Model as Sketch” approach, but less dependent on a specific tools like with the “Model as Programming Language” approach.</li>
+<li>The library has an API, so that there are indirectly some rules how state machines are coded. This makes it easier to understand how diagram and code belong together. This property is also called <em>traceability</em>. </li>
+</ul>
+
+
+<figure class="figure">
+		<span name="figurex"></span>
+		<aside name="figurex"><p>A sidenote to the figure.</p>
+		</aside>
+  		<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/stmpy.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  		<figcaption class="figure-caption">A caption for the above image.</figcaption>
+  		
+	</figure>
+	
+	<pre><code>pip install --upgrade stmpy
+	</code></pre>
+	
+	Just in a pre:
+	
+	<pre>pip install --upgrade stmpy</pre>
+	
+	<div class="bd-callout bd-callout-danger">
+<h4 id="asynchronous-methods-and-transitions">Asynchronous methods and transitions</h4>
+
+<p>All API methods are <strong>asynchronous</strong> and start a <strong>transition</strong>. They return to the caller as soon as the transition is started but <strong>before it ends</strong>. In addition, a method call on a <strong>transitioning component will be ignored</strong>.</p>
+
+<p><a href="/docs/4.0/getting-started/javascript/">See our JavaScript documentation for more information.</a></p>
+</div>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
+
+	</section>
+	
+</div>
+
+
+
+<footer></footer>
+</body>
+</html>

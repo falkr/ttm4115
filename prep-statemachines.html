@@ -29,7 +29,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
@@ -47,8 +47,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="prep-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
@@ -63,8 +63,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="unit-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
@@ -98,6 +98,7 @@
       <a class="dropdown-item" href="tools.html">Tools</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+      <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
     </div>
@@ -143,81 +144,8 @@
 
 
 <div class="page">
-    </section>
     <section class="content">
-<h1 id="welcome-to-unit-4">Welcome to Unit 4</h1>
-<p>In the previous units, we learned how to capture and understand our user’s requirements for a system, and structure what the system should provide to its users in the form of use cases. We have also learned how to use deployment diagrams to reveal already some details about the structure of the system. This week, we start with the specification of how the system actually works. This will be more technical and on a more detailed level as before.</p>
-<h2 id="hello-state-machines">Hello, State Machines!</h2>
-<p>In the following, we are going to learn the concept of state machines. Besides sequence diagrams and activities, state machines are one of the fundamental ways to describe behavior. They are used to specify communication protocols, logic in embedded systems, and in general behavior where events need to be coordinated in a complex way. Here is an intuitive example of a sketch for a state machine that illustrates in a compact way how a traffic light works:</p>
-
-<div class="figure">
-<img src="figures/statemachines/state-machines-traffic-light.jpg" alt="A state machine describing the sequence of phases in a traffic light." width="100%"/>
-<span name="figures/statemachines/state-machines-traffic-light.jpg">&nbsp;</span>
-<aside name="figures/statemachines/state-machines-traffic-light.jpg"><p><p>A state machine describing the sequence of phases in a traffic light.</p>
-</p></aside>
-</div>
-<p>Another example is the specification of the TCP protocol, also using a state machine:</p>
-<p><img src="" /></p>
-
-<div class="figure">
-<img src="figures/statemachines/state-machines-tcp.gif" alt="The TCP protocol uses state machines to describe parts of its behavior." width="100%"/>
-<span name="figures/statemachines/state-machines-tcp.gif">&nbsp;</span>
-<aside name="figures/statemachines/state-machines-tcp.gif"><p><p>The TCP protocol uses state machines to describe parts of its behavior.</p>
-</p></aside>
-</div>
-<p>A bit of a problem with state machines is that developers often only understand they they should have used a state machine for a problem <em>after</em> it is too late, and they already spent much effort on trying to solve a task in other ways. Have a look at this blog post from developer Alan Skorkin, <a href="https://www.skorks.com/2011/09/why-developers-never-use-state-machines/">Why Developers Never Use State Machines</a>.</p>
-<p>Another example is the construction of the kernel for GNU. There you have a situation where the behavior quickly became very complex. Have a look at the interview with Richard Stallman:</p>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jw8K460vx1c?start=1525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<span name="jw8K460vx1c">&nbsp;</span>
-<aside name="jw8K460vx1c"><p><p>Interview with Richard Stallman, from 0:25:25 until 0:26:30, from the movie <em>Revolution OS</em>. You may watch the entire movie later.</p>
-</p></aside>
-</div>
-<p><strong>“It took us years to get the thing to work.”</strong> What we are saying is not that Richard should “just have used state machines.” The answer is probably not that easy. What we are saying is that there are problems that can quickly grow very complex, and state machines offer a way to handle complexity that plays out very beneficial in some situations. With state machines, you can structure complex behavior such that:</p>
-<ul>
-<li>It is easy to debug and understand precisely what happened.</li>
-<li>Only one thing happens at a time. (Resp. you have detailed control over concurrency.)</li>
-<li>Given the complexity thay handle, state machines are easy to understand.</li>
-</ul>
-
-<h2 id="mandatory-preparation">Mandatory Preparation</h2>
-<p>In the compendium, read <strong>Chapter 5: The State Machine Diagram</strong>. (Page numbers from the original book are 85 to 106)</p>
-<p>Hints:</p>
-<ul>
-<li><p>Pay especially attention to the examples that the book presents and explains in detail, especially figures 5.3, 5.5, 5.6, 5.7, 5.8, 5.9, 5.11, 5.13, 5.14, 5.20. Try to understand the mechanics of state machines by going through these examples. You should be able to tell, for instance, what happens in a state machine when a given event happens.</p></li>
-<li><p>We won’t ask specific questions about the history state (5.5.4) or submachines (5.5.2), but they may be helpful as context.</p></li>
-</ul>
-
-<h2 id="a-physical-state-machine-model">A Physical State Machine Model</h2>
-<p><em>The following is a description of state machines using a physical model. Have a look at its description, it may help you to understand the book chapter above.</em></p>
-<p>State machines are implemented in code and executed by a computer. To understand how a state machine works, you can also think of it as a physical machine, which executes almost like a mechanical clockwork.</p>
-<p>The figure below illustrates such a machine. Feel free to ignore this illustration if it does not work for you, or if your mental model of a state machine is different. Also, note that this is an illustration, explaining some aspects of state machines while leaving out others.</p>
-
-<div class="figure">
-<img src="figures/statemachines/state-machine-machine.svg" alt="An imaginary machine that illustrates how a state machine works." width="100%"/>
-<span name="figures/statemachines/state-machine-machine.svg">&nbsp;</span>
-<aside name="figures/statemachines/state-machine-machine.svg"><p><p>An imaginary machine that illustrates how a state machine works.</p>
-</p></aside>
-</div>
-<p>The state machine has an input queue for signals sent by other parts of the system. These may be other state machines within the same computing node, state machines from other nodes, or other parts of programs that send messages.</p>
-<p>All messages arrive and are sorted in a first-in, first-out (or short FIFO) order. (Timers are an exception to this.)</p>
-<p>The state machine also manages a set of timers. The state machine starts these timers as part of its behaviour. When a timer expires, it places an event in the same event queue as the one for incoming messages. Timer expiration events are placed at the front of the queue, since an event from a timer should be processed as close to its actual expiration time as possible.</p>
-<p>The state machine interprets the state machine diagram. The diagram can be represented as a state-transition table. In this table is written down in which current state of the state machine an event has which effect. The effect means the behaviour the state machine is executing. This includes to start and stop timers, run operations, and moving the state machine into its next state. The state machine can also keep track of other data by using variables. (This is why this type of state machine is also called <em>extended</em> finite state machine.)</p>
-<h2 id="queue-semantics">Queue Semantics</h2>
-<p>To understand how a state machine executes, it is important to understand how the input queue works.</p>
-<ul>
-<li>Messages arriving at the input of the state machine are placed at the end of the queue.</li>
-<li>Time events are placed at the front of the queue when the corresponding timer expires.</li>
-<li>States can defer events.</li>
-<li>Events that are not consumed or deferred are simply discarded.</li>
-</ul>
-<p><strong>Discarding events:</strong> When the state machine is in a state that does not declare a transition that is triggered by the event at the head of the queue, the event is taken from the queue and discarded, that means thrown away.</p>
-<p><img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.12-1024x365.png" alt="" width="750" height="267" class="alignnone size-large wp-image-358" /></p>
-<p>In state <em>s1</em> above, for instance, <em>b</em> is not consumed. (The state machine is waiting for message <em>a</em>.) It is therefore discarded as soon as it arrives during state <em>s1</em>. Note that it is discarded even if it is consumed by the later state <em>s2</em>, which is not the current state.</p>
-<p><img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.18.png" alt="" width="958" height="302" class="alignnone size-full wp-image-359" /></p>
-<p><strong>Deferring events:</strong> A state can <em>defer</em> some events. This means that the deferred events are ignored in this state. When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred. Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it). Deferred events are written within the state symbol following the keyword <em>/defer</em>.</p>
-
+<mark>This site is under construction.</mark>
     </section>
 </div>
 

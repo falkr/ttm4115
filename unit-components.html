@@ -29,7 +29,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
@@ -47,8 +47,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="prep-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
@@ -63,8 +63,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="unit-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
@@ -98,6 +98,7 @@
       <a class="dropdown-item" href="tools.html">Tools</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+      <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
     </div>
@@ -143,66 +144,8 @@
 
 
 <div class="page">
-    </section>
     <section class="content">
-<h1 id="timer-module-for-a-voice-assistant">Timer Module for a Voice Assistant</h1>
-<p>Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. Currently, Alexa can have these named timers, while Siri cannot. This means, a user should be able to say:</p>
-<blockquote>
-<p>&quot;Hey Assistant*, please start a 10-minute spaghetti timer.&quot;</p>
-</blockquote>
-<p>During this timer is active, the user can start another timer:</p>
-<blockquote>
-<p>&quot;Hey Assistant*, start a 2-minute green tea timer.&quot;</p>
-</blockquote>
-<p>These timers are independent of each other. Once they expire, the assistant says:</p>
-<blockquote>
-<p>“Your green tea timer is ready!”</p>
-</blockquote>
-<p>And then later:</p>
-<blockquote>
-<p>“Your spaghetti timer is ready!”</p>
-</blockquote>
-<p>https://youtu.be/VqAPibRlTvo</p>
-<p>The part of the system you are concerned with looks as follows:</p>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS&amp;export=download&quot;}">
-
-</div>
-<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS%26export%3Ddownload"></script>
-<ul>
-<li><p>The voice command detection is responsible for listening for the activation command (“Hey Assistant”), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here.</p></li>
-<li><p>The text-to-speech engine runs locally. It receives strings that are then transformed into speech. Each act of speech is called an “utterance”. It also pays attention that several utterances are queued up, i.e., when the module receives several utterances that would overlap, it plays them nicely one after the other.</p></li>
-</ul>
-<p>You should design the timer manager in the middle. It receives commands from the voice command detection, should maintain the control over the necessary timers, and produce commands for the text-to-speech engine.</p>
-<p>From the voice command detection, you may receive the following commands:</p>
-<ul>
-<li><strong>Starting a new timer:</strong> The command is called <em>timer_start</em> and includes the <em>name</em> of the timer (string) and the <em>duration</em> already converted into seconds (as int).<br />
-</li>
-<li><strong>Stopping a timer:</strong> The command is called <em>timer_stop</em> and includes the <em>name</em> of the timer (string) that should be stopped.</li>
-<li><strong>Status:</strong> The command is called <em>timer_status</em>. The user can either ask for a specific timer, then the <em>name</em> is set. If the name is not set, the device should present a list of all currently active timers.</li>
-</ul>
-<p>The text-to-speech just accepts a command that contains a sentence in English. For the timers, you will probably produce the following utterances:</p>
-<ul>
-<li>“Your spaghetti timer is ready!”</li>
-<li>“You have 30 seconds left on the spaghetti timer.”</li>
-<li>“Your have 2 active timers, spaghetti and green tea.”</li>
-</ul>
-
-<h2 id="hint-1-mqtt">Hint 1: MQTT</h2>
-<ul>
-<li>Have a look at the MQTT Notebook to get all necessary information on how to publish and subscribe using MQTT.</li>
-</ul>
-<h2 id="hint-2-serialization">Hint 2: Serialization</h2>
-<ul>
-<li>Have a look at the Serialization with JSON Notebook, that tells you how to serialize structured data, like the commands above, into strings that can easily be sent for instance via MQTT.</li>
-</ul>
-<h2 id="hint-3-component-structure">Hint 3: Component Structure</h2>
-<ul>
-<li><p>Once challenge of the system is that it needs to maintain control over many (in principle and unlimited number of) timers at the same time. All of the timers have some stateful behavior, because they can expire at any time. You could create a system that continuously runs over a list of timers, determines which of them expired and then schedules the necessary test-to-speech utterances. However, this is a job that can be done by a set of state machines. <strong>You should therefore create a new state machine instance for every timer that gets started.</strong></p></li>
-<li><p>update STMPY to version 0.5.1. This latest version adds a method <code>get_timer(name)</code> in the Machine class so you can check the current state of a timer with a given name. The method returns the time in seconds remaining for the timer, or None if the timer is currently not active.</p></li>
-<li><p>Install the application <strong>MQTT.fx</strong> from <a href="http://mqttfx.jensd.de">here</a>. With this application, you can send and receive MQTT messages. You can use it to simulate the functions of the text-to-speech engine and the voice command detection.</p></li>
-<li><p>Use the template TimerManager.py form the repository as optional starting point. https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py</p></li>
-</ul>
-
+<mark>This site is under construction.</mark>
     </section>
 </div>
 

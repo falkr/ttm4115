@@ -29,7 +29,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
@@ -47,8 +47,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="prep-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
@@ -63,8 +63,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="unit-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
@@ -98,6 +98,7 @@
       <a class="dropdown-item" href="tools.html">Tools</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+      <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
     </div>
@@ -144,95 +145,7 @@
 
 <div class="page">
     <section class="content">
-<h2 id="kitchen-timer">Kitchen Timer</h2>
-<p>You should build the state machine for the following device:</p>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>It’s a kitchen timer. It has 4 LEDs and a button. When the button is pressed, the first LED is switched on, and the plug provides electricity, for instance for a coffee machine. After 15 minutes, the LED is switched off and the plug is turned off. Whenever the button is pressed when an LED is already on, the next LED is switched on and time timer is set to 30, 45, or 60 minutes, respectively. If all LEDs are on, and the button is pressed, all LEDs and the plug are switched off.</p>
-<p>You can ignore that the LED of the segment that is currently active is blinking, just assume it lights all the time.</p>
-<p>Use the following actions:</p>
-<ul>
-<li><code>start_timer('t', x min)</code> This starts a timer with name <code>t</code>. The second argument is the time, given as seconds. If a timer is already active, the timer is simply restarted with the new, updated timeout.</li>
-<li><code>stop_timer('t')</code>. Stops a timer. If no such timer exists or has already timed out, nothing happens.</li>
-<li><code>set_leds(1, 0, 0, 0)</code>. Control all of the four LEDs at the same time. <code>1</code> means on, <code>0</code> means off. Here, the first LED is switched on, the others are off.</li>
-<li><code>set_power(True)</code> switches the power on (True) or off (False)</li>
-</ul>
-<p>You can assume that whenever the button is pressed, the state machine will receive a signal with the name <code>switch</code>.</p>
-<ol type="1">
-<li>Use individual time so that everyone can sketch a proposal on paper.</li>
-<li>Compare your solutions in your team, and discuss any alternatives.</li>
-<li>Build a complete suggestion in draw.io.</li>
-<li>Do a peer review between teams:</li>
-</ol>
-<ul>
-<li>Team <strong>7</strong> reviews the diagram of Team <strong>10</strong>.</li>
-<li>Team <strong>8</strong> reviews the diagram of Team <strong>11</strong>.</li>
-<li>Team <strong>9</strong> reviews the diagram of Team <strong>12</strong>.</li>
-<li>Team <strong>10</strong> reviews the diagram of Team <strong>13</strong>.</li>
-<li>Team <strong>11</strong> reviews the diagram of Team <strong>14</strong>.</li>
-<li>Team <strong>12</strong> reviews the diagram of Team <strong>15</strong>.</li>
-<li>Team <strong>13</strong> reviews the diagram of Team <strong>16</strong>.</li>
-<li>Team <strong>14</strong> reviews the diagram of Team <strong>17</strong>.</li>
-<li>Team <strong>15</strong> reviews the diagram of Team <strong>18</strong>.</li>
-<li>Team <strong>16</strong> reviews the diagram of Team <strong>21</strong>.</li>
-<li>Team <strong>17</strong> reviews the diagram of Team <strong>7</strong>.</li>
-<li>Team <strong>18</strong> reviews the diagram of Team <strong>8</strong>.</li>
-<li>Team <strong>21</strong> reviews the diagram of Team <strong>9</strong>.</li>
-</ul>
-<p>Comments by adding UML note elements, and use the following colors:</p>
-<ul>
-<li><strong>red</strong> for errors where the state machine does not work or is clearly violating the desired behavior.</li>
-<li><strong>yellow</strong> for ambiguous cases.</li>
-<li><strong>green</strong> for general comments or recommendations or questions.</li>
-</ul>
-<ol start="5" type="1">
-<li>Receive the reviewed state machine, store a version of it in PDF.</li>
-<li>Have a look at an <a href="https://www.iik.ntnu.no/ttm4115/lectures/lecture-4/solution-for-kitchen-timer/" rel="noopener" target="_blank">example solution</a>, and figure out if there any meaningful differences. Describe differences and how your state machine can be matched with the given one. This reflection should be ca. half a page, or more if necessary.</li>
-<li>Reflect over the process. What did you observe while creating the state machines? This is a reflection, you can address everything you find noteworthy. Use another half page ore more for this reflection.</li>
-</ol>
-<p>You should now have three PDF pages:</p>
-<ul>
-<li>Your original state machine, including annotations by another team</li>
-<li>The improved state machine</li>
-<li>A short reflection.</li>
-</ul>
-<h2 id="car-lock">Car Lock</h2>
-<p>You should design the controller of a car lock. The controller is one of several modules in the car, which are connected via a CAN-bus, that sends signals between the modules. The controller gets input from the remote car key, which can send the commands <em>key_unlock</em> and <em>key_lock</em>. (The necessary encryption and security mechanisms are implemented between the car key and the key component, but not detailed here.) The controller send the signals <em>unlock</em> and <em>lock</em> to the lock component. It can also detect if the car door was opened or closed, via the signals <em>door_opened</em> and <em>door_closed</em>. Below is a diagram that illustrates all components and the CAN bus.</p>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1ZX0ZxYLXXpE4ZLAdk7D39M1mdFLEcA7T&amp;export=download&quot;}">
-
-</div>
-<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ZX0ZxYLXXpE4ZLAdk7D39M1mdFLEcA7T%26export%3Ddownload"></script>
-<p>The following are the functional requirements for the controller:</p>
-<ul>
-<li>When the button <em>Unlock</em> is pressed, the door is unlocked.</li>
-<li>When the button <em>Lock</em> is pressed, the door is locked.</li>
-<li>Assume that the controller starts in a state where the door is closed and the lock is locked.</li>
-</ul>
-<p>The following signals are sent between the components via the CAN-bus:</p>
-<ul>
-<li>From Remote Key Controller to Car Lock Controller: <code>key_unlock</code> <code>key_lock</code></li>
-<li>From Car Lock Controller to Door Controller: <code>unlock</code> <code>lock</code></li>
-<li>From Door Controller to Car Lock Controller: <code>door_opened</code> <code>door_closed</code></li>
-</ul>
-<p>To send a signal, use method <code>send_signal('...')</code> with the signal name as argument. To react on the reception of a signal, simply write that signals as the trigger of a transition.</p>
-<p>Design a state machine in draw.io for the Car Lock Controller that keeps track of the state of the door and the lock, and that implements the functional requirements from above.</p>
-<p>Now, add the following functional requirement and create another version of the state machine. (Edit as a copy of the sheet.)</p>
-<ul>
-<li>If a door is unlocked but not opened, it is locked again after 60 seconds.</li>
-</ul>
-<p>This time, we do not do a peer review, but you can get an example solution from the blackboard in front. Again, you should produce 3 PDFs. 1 with the first solution, then one with the second solution. Add a page of reflection as before, when you compare with the example solution. Also, apply corrections to your solution.</p>
-<h2 id="the-headphone-story">The Headphone Story</h2>
-<p>This is an additional task if we have time left.</p>
-<p>You work as a summer intern at a computer company during the spring of 2007. You get the task to develop a controller for a mysterious remote control for some headphone stuff or so. Everyone is busy. A product manager drops by, and tells you:</p>
-<pre><code>âThe controller should translate button clicks into specific commands, depending on how often the user clicks. A single click should generate signal âswitchâ. I think they use that for switching between playing and pausing. A double click should send signal ânextâ. And if the user clicks three times in a row they need signal âbackâ. Thatâs all I know. I have to go. Oh... the guys from the X-department gave me a diagram how it should be integrated. Here.â </code></pre>
-<p><img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-12-at-10.14.53-1024x270.png" alt="" width="750" height="198" class="alignnone size-large wp-image-398" /></p>
-<p>You are confused, but you manage to produce a decent state machine.</p>
-<p>Create the state machine. You probably need some individual focus time to try it out on a piece of paper before you sketch a solution in Draw.io.</p>
-<h2 id="todays-delivery">Today’s Delivery</h2>
-<p>Merge all PDFs into a single document and deliver on Blackboard, once per team.</p>
-
+<mark>This site is under construction.</mark>
     </section>
 </div>
 

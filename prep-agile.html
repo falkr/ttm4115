@@ -29,7 +29,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
@@ -47,8 +47,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="prep-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
@@ -63,8 +63,8 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-introduction.html">Introduction</a>
-      <a class="dropdown-item" href="unit-deployment.html">Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
@@ -98,6 +98,7 @@
       <a class="dropdown-item" href="tools.html">Tools</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+      <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
     </div>
@@ -143,79 +144,8 @@
 
 
 <div class="page">
-    </section>
     <section class="content">
-<h1 id="agile-vs.architecture">Agile vs. Architecture</h1>
-
-<div class="goals">
-<p>/p>
-<h2 id="learning-goals">Learning Goals</h2>
-<ul>
-<li>Have fun</li>
-<li>More Goals</li>
-<li>even more goals</li>
-</ul>
-
-</div>
-<p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
-<ul>
-<li>understanding how to figure out the user requirements so that we built the right system</li>
-<li>understanding the intricacies with communication and interactions</li>
-<li>the documentation of system architecture</li>
-<li>the specification of use cases</li>
-<li>the detailed specification of interactions with sequence diagrams</li>
-<li>the detailed specification of component behavior using state machines</li>
-<li>and finally how to code state machines</li>
-</ul>
-<p>When we talk about <em>development process</em> we mean how we should organize our work around these documents: When to create which document, how they depend on each other, and how to organize our team around these.</p>
-<p>Initially, we could follow this scheme:</p>
-
-<div class="figure">
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
-<span name="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg">&nbsp;</span>
-<aside name="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
-</p></aside>
-</div>
-<p><strong>But this is not how real projects work!</strong> In reality, the following will happen:</p>
-<ul>
-<li>When making the use cases, more questions come up that you have to clarify with the customer, and you need to refine the requirements.</li>
-<li>When making the sequence diagrams, you may also need to go back and reconsider use cases and requirements.</li>
-<li>You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code.</li>
-<li>…</li>
-</ul>
-<p>The above model is also called “Waterfall Model”, because the different stages follow each other. (The original image was also moving downwards, and looked like a waterfall.) Have a look into the following presentation: (The video is not part of the RAT.)</p>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NP9AIUT9nos?start=525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<span name="NP9AIUT9nos">&nbsp;</span>
-<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p>
-</p></aside>
-</div>
-<p>We can look at the waterfall model as one side in a spectrum of methods:</p>
-
-<div class="figure">
-<img src="figures/agile-spectrum.png" alt="**The spectrum of development methods:** Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right." width="100%"/>
-<span name="figures/agile-spectrum.png">&nbsp;</span>
-<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
-</p></aside>
-</div>
-<p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of planning, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking”. Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
-<p>To popularize agile development, some engineers gathered and prepared the <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">Agile Manifesto</a>. This document explains some of the principles. It is short to read, and most developers have at some point heard about it.</p>
-<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
-<h2 id="mandatory-preparation">Mandatory Preparation</h2>
-<p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working. As part of the preparation, you should read through the Scrum Guide:</p>
-<ul>
-<li><a href="http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf">The Scrum Guide</a> by Ken Schwaber and Jeff Sutherland</li>
-</ul>
-
-<h2 id="optional-material">Optional Material:</h2>
-<ul>
-<li>Explaining Agile - Martin Fowler and Neil Ford at USI</li>
-</ul>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GE6lbPLEAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<mark>This site is under construction.</mark>
     </section>
 </div>
 

@@ -4,19 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 <title>TTM4115</title>
-<meta name="generator" content="Jekyll v3.7.3.1">
-<meta property="og:title" content="The Practical Guide to Active Learning">
+<meta property="og:title" content="TTM4115">
 <meta property="og:locale" content="en_US">
-<meta name="description" content="The Practical Guide to Active Learning">
-<meta property="og:description" content="The Practical Guide to Active Learning">
-<link rel="canonical" href="https://falkr.github.io/guide/">
-<meta property="og:url" content="https://falkr.github.io/guide">
-<meta property="og:site_name" content="The Practical Guide to Active Learning">
-
-
-
-
-
+<meta name="description" content="Design of Communicating Systems">
+<meta property="og:description" content="Design of Communicating Systems">
 
 
 <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
@@ -131,24 +122,269 @@
     </nav>
 
 
-<!--
-    <div class="jumbotron jumbotron-fluid" style="background: url(https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2017/12/R2_collage3.jpg) repeat">
-  <div class="container">
-  <p class="lead">Unit 1 Team Activity</p>
-    <h1 class="display-4">Hello, State Machines!</h1>
-    
-  </div>
-</div>
--->
-
-
-
 <div class="page">
     <section class="content">
-<mark>This site is under construction.</mark>
+
+    </section>
+    <section class="content">
+<h1 id="welcome-to-unit-5">Welcome to Unit 5!</h1>
+<p>In this unit, we will start to use sequence diagrams. They are useful to study interactions between your system components.</p>
+<h2 id="mandatory-preparation">Mandatory Preparation</h2>
+<p>Read carefully through the script on sequence diagrams below.</p>
+<p>[pdf-embedder url=“https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/ttm4115-unit-5-v-2018-1.pdf”]</p>
+<p><a href="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/ttm4115-unit-5-v-2018-1.pdf">Direct Download Link</a></p>
+<p>This is a new script, so there may be errors or you may have comments and questions. Please post them to Piazza!</p>
+
+    </section>
+    <section class="content">
+<h1 id="learning-goals">Learning Goals</h1>
+
+<p>State machines are suitable to show the behavior of a single component at a time, and define its behavior in terms of states and transitions. We have also seen that state machines are used to define a protocol, as for instance TCP, by showing the behavior of each of the communication partners. Sequence diagrams, on the other hand, are used to specify the interactions between the components of a system. Interactions can happen through method-, function- or operation-calls, or via signals. Sequence diagrams specify therefor behavior by looking at the sequences of interactions <em>between</em> several components. These components can be within the same computer or far away from each other. Some of the components may not even be software.</p>
+<p>An important difference to state machines is that sequence diagrams usually do not model complete behaviors, but only show selected scenarios that a developer wants to show. More on that later. Let’s first get some intuition on sequence diagrams.</p>
+
+    </section>
+    <section class="content">
+<h1 id="intuition-on-sequence-diagrams">Intuition on Sequence Diagrams</h1>
+<p>Sequence diagrams are an effective and intuitive way to describe the communication between several communicating partners. Have a look at the following dialogue:</p>
+
+<div class="figure">
+<img src="figures/interactions/intuition.svg" alt="A sequence diagram showing a simple interaction" width="100%"/>
+<span name="figures/interactions/intuition.svg">&nbsp;</span>
+<aside name="figures/interactions/intuition.svg"><p><p>A sequence diagram showing a simple interaction</p>
+</p></aside>
+</div>
+<p>That’s pretty much how sequence diagrams work, they show messages between participants. Each participant in a sequence diagram is represented by a vertical line, called <em>lifeline</em>. The horizontal lines are messages. Time flows downwards, so that the messages make up a conversation.</p>
+<p>With this little knowledge, you can already understand most sequence diagrams. What follows are refinements of this concept and additional modeling elements so we can more precisely express how a software system communicates. This is necessary to prevent misunderstandings between developers and when we want to detect design flaws in our systems at an early stage.</p>
+<h2 id="participants-and-lifelines">Participants and Lifelines</h2>
+<p>Each participant in a sequence diagram is represented by a lifeline, shown as dashed lines. It’s okay to show them as solid lines, which may sometimes be quicker when you make a sketch by hand. Lifelines are always drawn parallel to each other, and follow a vertical orientation. You will never see a sequence diagram with horizontal lifelines. If you do, it’s not a sequence diagram.</p>
+<p>Lifelines can represent software concepts like components, modules, objects or classes. They can also represent entities from reality, like human users. The diagram below shows how a human user who presses a button on a car key. The car key then sends a radio signal to the car, which in turn confirms to the user by blinking the lights.</p>
+<figure>
+<embed src="figures/car-key.pdf" style="width:6cm" /><figcaption>image</figcaption>
+</figure>
+<p>The top of the lifeline shows a box that refers to what the participant represents in this sequence diagram. The label in this box consists of three parts: a role name, a selector, a class name.</p>
+<pre><code>role[selector]:Class</code></pre>
+<p>Let’s look at an example to understand the difference between these. Below you see a sequence diagram of a home automation system. There are several <strong>roles</strong>: <em>sensor</em> and <em>light</em>. The role name is a name that refers to the participant’s function within an interaction. From the lifelines that represent sensors, the diagram shows that there are two <strong>classes</strong> of sensors, <em>TempSensor</em> and <em>HumiditySensor</em>. All of them act as sensors in the system (and hence send signals with the name <em>measurement</em>), which is why they all share the same role. All components communicate with the central unit. Here we have chosen to just give it a class name <em>HouseCentral</em>, since there is only one and we already know that we want to have this class. An alternative would be to just give it a role name, for instance <em>central</em>. You can also see that the sensors have different <strong>selectors</strong>, which here are strings that refer to different rooms. They show that there can be many sensors (role <em>sensor</em> of the same class (for instance <em>TempSensor</em>). Here, room names make sense. Alternatives are numbers.</p>
+<figure>
+<embed src="figures/home-system.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>A lifeline requires at least a role name or a class name. The selector is optional. Note that the class name is always preceded by a colon (“:”). Usually, role names are in lowercase letters, and class names are written in CamelCase.</p>
+<h2 id="messages">Messages</h2>
+<p>The horizontal arrows are called <strong>messages</strong>. They represent either the transmission of a <strong>signal</strong>, or the <strong>call of an operation</strong>.</p>
+<ul>
+<li><p><strong>Signals</strong> represent information that is communicated asynchronously between objects. So far, all messages we have seen have referred to signals. They may refer to the physical touch of a button, a radio transmission, the signal of a light, a sound notification, or any other transmission of information. In the following, many of our signals will represent units of some specific protocol, like an MQTT or AMQP message. Signals are always asynchronous, and therefore use always the symbol for asynchronous messages, which is the solid line with an open arrowhead.</p></li>
+<li><p>Alternatively, messages in sequence diagrams refer to <strong>operation calls</strong>. They correspond to functions, methods or operations in programming languages.</p></li>
+</ul>
+<figure>
+<embed src="figures/math-pow.pdf" style="width:4cm" /><figcaption>image</figcaption>
+</figure>
+<p>Fig.Â <a href="#fig-pow" data-reference-type="ref" data-reference="fig-pow">[fig-pow]</a> shows an example of a sequence diagram that shows the communication between a Python main program <em>main.py</em> that calls the <em>pow()</em> function of the <em>math</em> module. As you can see, this interaction is much more complicated than the one with the signals. An operation call consists of two messages: the message that represents the call of the operation, and another one that shows the return of the operation. In the example, the operation also returns a result. The messages are also drawn differently: The call message in this example is a synchronous message, and therefore drawn with a filled arrowhead (as opposed to the open arrowhead of the message that describes a signal). The return message has an open arrowhead, but is painted with a dashed line. Therefore, this is a synchronous function call, which represents what the Python program actually does: The calling main.py is blocked (not doing anything) while math.py is calculating the results and then returns.</p>
+<p>Sometimes the return message is left away, to reduce the visual clutter of a diagram or just due to laziness. In this course, we don’t do that for didactic reasons, so that we can clearly distinguish the modeling of signals from that of operation calls. If you use messages that represent operation calls, always draw the return messages.</p>
+<figure>
+<embed src="figures/math-pow-3.pdf" style="width:5cm" /><figcaption>image</figcaption>
+</figure>
+<p>There are also situations where method calls in programming languages are asynchronous. Then, the calling message is shown with the asynchronous message symbol (the one with the open arrow head). In this course, you will probably not use this and can forget about them.</p>
+<figure>
+<embed src="figures/math-pow-2.pdf" style="width:5cm" /><figcaption>image</figcaption>
+</figure>
+<p>The diagram above shows another element that is sometimes used: <strong>execution specifications</strong>. These elements illustrate that a participant is active. For instance, the main program is active, then calling <em>pow()</em>, which activates the math module until it returns. In some cases, such an illustration is very helpful, for instance to represent recursive method calls, or illustrate design patterns. In this course, execution specifications are optional. In many situations it is better to focus on the messages and get them right.</p>
+<h2 id="creation-and-destruction">Creation and Destruction</h2>
+<p>In some cases, it is interesting to show that a participant in an interaction is created or destroyed as part of the interaction. This is shown by special messages. Creation messages target the head of the lifeline that they create. Destruction messages target a lifeline that is then terminated with a big termination symbol. Both messages are shown as dashed lines with an open arrow. They can be labeled with the <em>create</em> and <em>destroy</em> stereotypes. The example below shows how the main program creates an object of type <em>Socket</em> and then destroys it again. Note that creation and destruction can be used independently, and that they can be triggered by different participants in the interaction. A lifeline can also terminate itself without a destruction message.</p>
+<figure>
+<embed src="figures/create-destroy.pdf" style="width:5cm" /><figcaption>image</figcaption>
+</figure>
+
+    </section>
+    <section class="content">
+<h1 id="what-do-sequence-diagrams-represent">What do Sequence Diagrams Represent?</h1>
+<p>Let’s take a step back. You have seen that sequence diagrams can represent a wide variety of interactions, and even include elements that are not software. Within software, we can coarsely distinguish two different focus areas covered by sequence diagrams:</p>
+<ul>
+<li><p><strong>Local interactions</strong> <em>within a program</em>, i.e., procedure, method or function calls.</p></li>
+<li><p><strong>Distributed interactions</strong> of a system that consists of <em>several components</em>, each running some programs.</p></li>
+</ul>
+<p>Note that both local and distributed interactions are represented with several lifelines. In the local case, they represent different code modules, like Java or Python classes or modules. Within both of these interaction groups, you can use asynchronous signals or synchronous or asynchronous operation calls. This means, there can be local signals, and there are also distributed operation calls.</p>
+<p>Sequence diagrams typically only show selected scenarios of the interactions in a system, and do not give a complete picture. That means they do not show all the possible exchanges of messages of a real system, but focus only on a few but interesting ones. This may come as a surprise. If we want to do a good specification job, don’t we have to study <em>all</em> interaction scenarios? The problem is complexity. Sequence diagrams can quickly grow, and a naÃve attempt to cover all scenarios just by writing them down results in specifications that confuse rather than clarify. Important aspects of the model will drown in too many details, and the value of modeling is lost. There are several solutions to this dilemma:</p>
+<ul>
+<li><p>We will complement sequence diagrams with state machines, which give a complete picture, but on a local level only.</p></li>
+<li><p>You will learn how to select the relevant and interesting interaction scenarios that deserve attention, and leave out those that are not relevant.</p></li>
+<li><p>We will try to build interactions in such a way that the number of possibilities is reduced.</p></li>
+</ul>
+<p>One way of making sequence diagrams more powerful and let a single diagram express more than one scenario is by using combined fragments, which we will look at in the next section.</p>
+
+    </section>
+    <section class="content">
+<h1 id="combined-fragments">Combined Fragments</h1>
+<p>Combined fragments allow you to express more behavioral details in compact ways. Some of them look very much like programming statements, which makes them intuitive to understand. However, it can also be a trap to think of them too much as control statements, since they do not handle operations, but entire scenarios. Rather, think of them as a way to characterize interactions.</p>
+<h2 id="alt">alt</h2>
+<p>The <strong>alt</strong> fragment specifies alternative scenarios. For instance, a component may ask for access, and the access right may be granted or not. We can show this in the sequence diagram <em>Access</em> below:</p>
+<figure>
+<embed src="figures/alt.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>The different compartments are alternatives to each other. There may be any number of compartments, not only two. They are separated by a dashed line. To describe in more detail, when a specific alternative is chosen, the compartments can have an optional guard. This guard may refer to some text or a variable.</p>
+<p><em>Access</em> almost looks like an if-statement. And in fact, the access control component may internally execute an if-statement. But the alt fragment can be even more abstract, since it can describe alternative scenarios, independent of how they are realized. The specification of <em>Timer</em> is therefore equally valid Do you see the difference? The example shows that a timer can be started and then either be aborted or it times out. This time the scenario is more subtle, the alternative is not determined by a single component, but the overall timing of the interaction.</p>
+<h2 id="opt">opt</h2>
+<p>The <strong>opt</strong> fragment contains behavior that can happen or not. It is similar to an alt fragment with two compartments, one of which is empty. Like with the alt fragment, the opt fragment can have a guard.</p>
+<figure>
+<embed src="figures/opt-1.pdf" style="width:8cm" /><figcaption>image</figcaption>
+</figure>
+<h2 id="loop">loop</h2>
+<p>With the <strong>loop</strong> fragment, you can express that a behavior is executed repeatedly. Below, you see the specification of an alarm clock with a snooze function. Within the loop fragment, you see an alt fragment, with different branches of the user either snoozing or stopping the alarm. In case of stopping the alarm, there is also a break fragment. This signals the escape out of the loop. You may also leave unspecified how often the loop is executed.</p>
+<figure>
+<embed src="figures/loop-1.pdf" style="width:5cm" /><figcaption>image</figcaption>
+</figure>
+<h2 id="assert-and-neg">assert and neg</h2>
+<p>In some cases, you want to assert that a certain interaction must exactly occur as specified. For that, you can place it into an <strong>assert</strong> fragment. The other way round, you may want to specify <em>negative</em> behavior, i.e., behavior that must not happen. Such behavior can be places in a <strong>neg</strong> fragment.</p>
+<figure>
+<embed src="figures/assert-neg.pdf" style="width:10cm" /><figcaption>image</figcaption>
+</figure>
+<h2 id="ref">ref</h2>
+<p>With a <strong>ref</strong> fragment, you can refer from one sequence diagram to another one. This makes diagrams easier to handle. It also allows to reuse a sequence diagram and apply it at several places.</p>
+<p>In the example below, we have another definition of the snooze feature of an alarm clock. Here, we used the ref fragment that refers to the sequence diagram itself and by that introduces some recursion. (The blue arrow is just an illustration.) This is probably not a good example in general, but it should work. Note that the outermost frame, labeled “<strong>sd</strong> alarm” encapsulates the entire sequence diagram.</p>
+<figure>
+<embed src="figures/ref-1.pdf" style="width:7cm" /><figcaption>image</figcaption>
+</figure>
+<h2 id="time-constraints">Time Constraints</h2>
+<p>In some cases, you want to add time constraints to a specification, to show <em>when</em> an interaction occurs, or how long specific parts of it may or should take. Have a look at the example below:</p>
+<figure>
+<embed src="figures/timing.pdf" /><figcaption>From UML @Class Book</figcaption>
+</figure>
+<p>It shows that the newsletter is sent at 12:00. Five time units later, the student receives the confirmation. The diagram also specifies that the signal <em>inform</em> must be received within two hours.</p>
+
+    </section>
+    <section class="content">
+<h1 id="event-orderings-and-semantics">Event Orderings and Semantics</h1>
+<p>Let’s have a closer look at the semantics of sequence diagrams, that is, what they mean in detail. We do this by looking at the detailed events that happen as part of an interaction. understanding in which order they are supposed to happen, means to understand what the interaction really means.</p>
+<p>The passing of a message <strong>A</strong> consists of two events:</p>
+<ul>
+<li><p>The message is sent, written as <strong>!A</strong>.</p></li>
+<li><p>The message is received, written as <strong>?A</strong>.</p></li>
+</ul>
+<p><strong>Ordering Rule 1:</strong> Because our universe seems to act causally, <strong>a message must be sent before it can be received</strong>. For a message A, the only sequence of events that it possible is <span class="math inline">⟨!<em>A</em>, ?<em>A</em>⟩</span>.</p>
+<p><strong>Ordering Rule 2:</strong> A second ordering rule is that of lifelines: <strong>Events along the <em>same</em> lifeline are in a total order.</strong> Below, this means that lifeline Y receives signal A before it receives B, <span class="math inline">⟨?<em>A</em>, ?<em>B</em>⟩</span>.</p>
+<figure>
+<embed src="figures/ordering-lifeline.pdf" style="width:2cm" /><figcaption>image</figcaption>
+</figure>
+<p>Now comes the part that may be less intuitive: Events on different lifelines are <em>not ordered</em>, even though they have distinct y-coordinates. In the diagram below, the reception of A and the reception of B are clearly at different y-coordinates. <em>Visually</em>, A happens before B. But this is <em>not</em> an order that the diagram implies. Because these events are not related with each other, the diagram does not tell if any of them happens before each other, despite it may look like it.</p>
+<figure>
+<embed src="figures/ex-11.pdf" style="width:5cm" /><figcaption>Despite the position on their respective lifelines, events <span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span> are not in any order in this diagram.</figcaption>
+</figure>
+<p>For some, this non-ordering of events on different lifelines may not be intuitive at the first glance. The following illustration may help you to understand it: Imagine that the events along a lifeline are connected to it by rings. The rings can move up and down along the lifeline, and the message can get a different slope depending on the position on the rings. Rings attached to the same lifeline can not pass each other. Therefore, the diagrams below all look different, but imply the same ordering among the events, irrespective of their absolute position on the lifelines. What counts is that <span class="math inline"><em>A</em></span> is received before <span class="math inline"><em>B</em></span>, and this does not change in any of the diagrams.</p>
+<figure>
+<embed src="figures/ex-12.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>The slope of messages is hence only a means of illustration. A recommendation is to use horizontal messages where possible, and messages with a downwards slope when you want to show that messages cross each other. (That comes later.) Avoid messages with an upwards slope.</p>
+<p>The example below shows a sequence diagram with two messages, and four distinct events:</p>
+<figure>
+<embed src="figures/ex-1.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>Intuitively, we already know one sequence in which these events can happen, that is, we know that <span class="math inline">⟨!<em>A</em>, ?<em>A</em>, !<em>B</em>, ?<em>B</em>⟩</span> is one valid trace. However, it is not the only possible trace. To find the other traces, we may start by writing down all possible different combinations we can get from these events. With 4 events, we end up with 24 different traces:</p>
+<p><br /><span class="math display">$$\begin{split}
+\langle !A,?A,!B,?B \rangle,   %
+\langle !A,?A,?B,!B \rangle,
+\langle !A,!B,?A,?B \rangle, %
+\langle !A,!B,?B,?A \rangle,\\
+\langle !A,?B,?A,!B \rangle,
+\langle !A,?B,!B,?A \rangle,
+\langle ?A,!A,!B,?B \rangle,
+\langle ?A,!A,?B,!B \rangle,\\
+\langle ?A,!B,!A,?B \rangle,
+\langle ?A,!B,?B,!A \rangle,
+\langle ?A,?B,!A,!B \rangle,
+\langle ?A,?B,!B,!A \rangle,\\
+\langle !B,!A,?A,?B \rangle,
+\langle !B,!A,?B,?A \rangle,
+\langle !B,?A,!A,?B \rangle,
+\langle !B,?A,?B,!A \rangle,\\
+\langle !B,?B,!A,?A \rangle,
+\langle !B,?B,?A,!A \rangle,
+\langle ?B,!A,?A,!B \rangle,
+\langle ?B,!A,!B,?A \rangle,\\
+\langle ?B,?A,!A,!B \rangle,
+\langle ?B,?A,!B,!A \rangle,
+\langle ?B,!B,!A,?A \rangle,
+\langle ?B,!B,?A,!A \rangle
+\end{split}$$</span><br /></p>
+<p>Because of the ordering rules from above, not all of these traces are possible. The sequence diagram <em>Alpha</em> from above relates the four events with each other.</p>
+<ul>
+<li><p>Because of message ordering, we know that only those traces are valid ones, in which a signal is sent before it is received. This means, <span class="math inline">!<em>A</em></span> must happen before <span class="math inline">?<em>A</em></span> and <span class="math inline">!<em>B</em></span> must happen before <span class="math inline">?<em>B</em></span>.</p></li>
+<li><p>Because of lifeline ordering, we also know that those traces, in which events do not follow the order of the lifeline, are invalid. This means <span class="math inline">!<em>A</em></span> must happen before <span class="math inline">!<em>B</em></span>, and <span class="math inline">?<em>A</em></span> must happen before <span class="math inline">?<em>B</em></span>.</p></li>
+</ul>
+<p><strong>Exercise:</strong> Can you find the traces that violate any of the two ordering rules, and strike them out?</p>
+<h2 id="co-regions">Co-Regions</h2>
+<p>The diagram <em>Beta</em> below only covers the scenario that <span class="math inline"><em>A</em></span> is received by <span class="math inline"><em>Y</em></span> before <span class="math inline"><em>B</em></span>.</p>
+<figure>
+<embed src="figures/ex-2.pdf" /><figcaption>image</figcaption>
+</figure>
+<p><strong>Exercise:</strong> Write down all the possible traces that the sequence diagram <em>Beta</em> allows.</p>
+<p>In reality, it will be hard or impossible to ensure that this order is maintained, especially since the diagram allows to send <span class="math inline"><em>B</em></span> first. For a real and robust specification, we should handle such situations. One way is to demand from component <span class="math inline"><em>Y</em></span> that it must be prepared to properly handle the arrival of messages <span class="math inline"><em>A</em></span> or <span class="math inline"><em>B</em></span> in <em>any</em> order. For that, we can use a so-called <em>co-region</em>. These are the brackets placed on the lifeline <em>Y</em>. Within the brackets of a co-region, events on the lifeline are not ordered anymore, i.e., they can happen in any order.</p>
+<figure>
+<embed src="figures/ex-3.pdf" /><figcaption>image</figcaption>
+</figure>
+<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if the events within the co-region (<span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span>) can happen in any order?</p>
+<p><strong>Exercise:</strong> Is there a way to handle the situation also in another way? For instance, can you, just by adding a message (and without a co-region), reduce the number of traces so that there is only one possible trace left for diagram <em>Beta-C</em>?</p>
+<figure>
+<embed src="figures/ex-3-2.pdf" /><figcaption>image</figcaption>
+</figure>
+
+    </section>
+    <section class="content">
+<h1 id="implied-scenarios">Implied Scenarios</h1>
+<p>With the sequence diagrams, we describe scenarios, that means, specific and selected examples of the system interactions. Some diagrams cover several scenarios. In most cases, a specification (a set of diagrams) does not document <em>all</em> possible scenarios. This is because it is often not practical to write down all scenarios, and especially when sketching a system it may not be relevant to think about all scenarios right at the beginning.</p>
+<p>Once a system specification gets more mature, you need to also develop an understanding how the system handles scenarios that your specification does not explicitly document yet. These scenarios often exist because reality is more complicated than an idealized interaction.</p>
+<p>Of course, you could just not care and leave the choice about details to the developer who implements the system. In fact, this is what often happens. However, this is not what you want. This may cause bugs in the system, cost a lot of time of fixing afterwards and in general leads to surprises later on. (And if there is one thing we want to prevent, it is <em>surprises</em>.)</p>
+<h2 id="message-loss">Message Loss</h2>
+<p>Communication protocols provide different guarantees to the application regarding the delivery of messages. However, even the most sophisticated protocol cannot prevent that a communication link is failing and never recovers. In these cases, the protocol cannot “hide” the problem from the application, and the application itself needs to handle the situation. The scenario <em>Lossy_1</em> for instance also implies scenario <em>Lossy_2</em>, i.e., that the message is not received. The loss of a message is written with a big cross.</p>
+<figure>
+<embed src="figures/lossy-12.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>So, whenever there is a diagram in which a message is sent, we should check what would happen if this message got lost. Here are some possible alternatives:</p>
+<ul>
+<li><p>The application is fine even if message <span class="math inline"><em>A</em></span> is lost. This can be the case, for instance, if message <span class="math inline"><em>A</em></span> is one (of many) messages of the same type that are sent periodically, and where it does not matter if some of them get lost. A sensor that repeatedly sends some measurements is a typical example. (It may be, however, important that the sensor message <em>eventually</em> is sent, i.e., not all of them are lost.</p></li>
+<li><p>The most common solution is to use acknowledgment messages. This is illustrated in <em>Lossy_3</em>. In case message <span class="math inline"><em>A</em></span> is lost, <span class="math inline"><em>Y</em></span> does not send an acknowledgement. This is detected by <span class="math inline"><em>X</em></span> indirectly, through the expiration of a timer. We show the timer here as a message of <span class="math inline"><em>X</em></span> to itself.</p></li>
+</ul>
+<figure>
+<embed src="figures/lossy-3.pdf" /><figcaption>image</figcaption>
+</figure>
+<h2 id="non-causal-orderings">Non-Causal Orderings</h2>
+<p>The diagram below shows an interaction between parts in a movie ticket system. At the end of the purchase process, the terminal sends a <em>pay</em> message to the payment component. The payment component then forwards <em>pay_ok</em> to the ticket printer. The terminal sends the movie selection to the printer. The printer then prints the tickets. We ignore the case that the payment fails.</p>
+<figure>
+<embed src="figures/ex-6.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>This specification has a trouble spot. The diagram indicates that the <em>movie</em> message is received after the <em>pay_ok</em> message. In a real system, we often have little control on the delay of message transfer. The payment process within <em>payment</em> may also take different amounts of time. In a real system it is therefore difficult, undesirable or even impossible to ensure that <em>movie</em> is received after <em>pay_ok</em>.</p>
+<p>One way to fix this situation is with a co-region as in <em>Movie Fix 1</em>, to express explicitly that the two signals can arrive at the printer in any order. The implementation of the printer must then take care of this.</p>
+<p>Another way is to change the way the entire interaction works. Instead of sending <em>pay_ok</em> to the printer, the payment component may also return it to the terminal, shown in <em>Movie Fix 2</em>. The terminal can then send the <em>movie</em> message after the payment is confirmed. In this case, we may also use a synchronous message for the payment as in <em>Movie Fix 2x</em>, since the terminal may anyways be waiting for it and not do anything else.</p>
+<p>Note: The original sequence diagram is not wrong, but depending on the context, type of system and the subsequent development process and implementation, the non-causal ordering of the events may be a source of trouble.</p>
+<figure>
+<embed src="figures/ex-7.pdf" /><figcaption>image</figcaption>
+</figure>
+<h2 id="mixed-initiatives">Mixed Initiatives</h2>
+<p>Consider the following alarm system. A sensor may detect an alarm and send message <em>alarm</em> to a subscriber. The subscriber may then confirm the alarm via message <em>confirm</em>. The alarm can also be stopped by the sensor via <em>stop</em>. This is shown in the two diagrams below.</p>
+<figure>
+<embed src="figures/ex-8.pdf" /><figcaption>image</figcaption>
+</figure>
+<p>The two different scenarios seem pretty straight-forward. However, these two scenarios imply a third one: What should happen, if the alarm is stopped by the sensor, but the subscriber confirms it, right before it receives the stop message? We call this scenario a <em>mixed initiative</em>, since it involves a situation where several participants may take initiative and send a message. This situation may seem like a rare coincidence, but it is only a matter of time and you will observe this situation. We can illustrate it in another diagram:</p>
+<figure>
+<embed src="figures/ex-9.pdf" style="width:5cm" /><figcaption>image</figcaption>
+</figure>
+<p>So what to do about this? If you only provide the sequence diagrams above, it is not clear how an implementation should respond in this situation, i.e., when an alarm is both confirmed and cancelled. In this case, you need to find out what the application should do. Depending on what kind of alarm it is, the stopping may overrule the confirmation, or vice-versa. The diagram <em>Confirm and Stop</em> shows one way to address the mixed initiative, using a simple comment.</p>
+<figure>
+<embed src="figures/ex-91.pdf" /><figcaption>image</figcaption>
+</figure>
+
+    </section>
+    <section class="content">
+<h1 id="epilogue-the-value-of-sequence-diagrams">Epilogue: The Value of Sequence Diagrams</h1>
+<p>You may ask yourself: <em>Why should I use sequence diagrams?</em> Can’t you just immediately build a state machine or write code for your system? Of course, you could. But then again, would you build a house before drawing it?</p>
+<p>Depending on the project, sequence diagrams may be mandatory and part of a formal specification, or they may just be something that you scribble on a whiteboard or a piece of paper. The actual value of writing down interactions by sequence diagrams comes then from the following:</p>
+<ol type="1">
+<li><p><strong>They make you think about interactions.</strong></p></li>
+<li><p><strong>They enable you to explain interactions to others, discuss interactions in team.</strong></p></li>
+<li><p><strong>They let you find trouble spots.</strong></p></li>
+<li><p><strong>You can resolve intricate situations.</strong></p></li>
+</ol>
+<p>So, the value of sequence diagrams depends on how they are used in the development process, and how they effectively improve the system design. In some cases, just the fact that you sit down and sketch some interactions changes your view on the system, leads to good design choices and prevents errors in the first place. A single relevant sequence diagram, sketched on a paper that uncovers problems in your system design early, can save millions in whatever currency.</p>
+
     </section>
 </div>
-
 
 
 <footer></footer>

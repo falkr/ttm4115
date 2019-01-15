@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="368.00395 1122.0197 278.79528 97.37796" width="278.79528" height="97.37796">
+  <defs>
+    <font-face font-family="Calibri" font-size="9" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Calibri" font-size="12" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-15 20:29:57 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_2" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>Canvas 2</title>
+    <g id="Canvas_2: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_112">
+        <rect x="368.50395" y="1133.8583" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="368.50395" y="1133.8583" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(373.50395 1138.8583)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="25.58225" y="22">t1: Turnstile</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <path d="M 368.50395 1133.8583 L 379.84253 1122.5197 L 498.89765 1122.5197 L 487.55907 1133.8583 Z" fill="white"/>
+        <path d="M 368.50395 1133.8583 L 379.84253 1122.5197 L 498.89765 1122.5197 L 487.55907 1133.8583 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_115">
+        <path d="M 487.55907 1133.8583 L 498.89765 1122.5197 L 498.89765 1207.5591 L 487.55907 1218.8977 Z" fill="white"/>
+        <path d="M 487.55907 1133.8583 L 498.89765 1122.5197 L 498.89765 1207.5591 L 487.55907 1218.8977 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_116">
+        <rect x="515.9055" y="1133.8583" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="515.9055" y="1133.8583" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(520.9055 1138.8583)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="25.58225" y="22">t2: Turnstile</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <path d="M 515.9055 1133.8583 L 527.2441 1122.5197 L 646.2992 1122.5197 L 634.96065 1133.8583 Z" fill="white"/>
+        <path d="M 515.9055 1133.8583 L 527.2441 1122.5197 L 646.2992 1122.5197 L 634.96065 1133.8583 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_118">
+        <path d="M 634.96065 1133.8583 L 646.2992 1122.5197 L 646.2992 1207.5591 L 634.96065 1218.8977 Z" fill="white"/>
+        <path d="M 634.96065 1133.8583 L 646.2992 1122.5197 L 646.2992 1207.5591 L 634.96065 1218.8977 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Line_119">
+        <line x1="396.8504" y1="1162.2048" x2="459.2126" y2="1162.2048" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_120">
+        <line x1="544.252" y1="1162.2048" x2="606.6142" y2="1162.2048" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

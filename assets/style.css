@@ -60,6 +60,19 @@ div.figurefullwitdth {
   width: 100%;
 }
 
+blockquote {
+  padding: 10px;
+  background: #f9fafb;
+  border: solid 1px #f3f5f7;
+  border-bottom: solid 1px #dee8ed;
+  border-radius: 3px; }
+  blockquote p {
+    font: italic 14px/24px "Merriweather", Georgia, serif;
+    color: #73848c; }
+  blockquote p:first-child {
+    margin-top: 0; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
 
 aside {
   color: #868279;

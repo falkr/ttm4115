@@ -145,7 +145,7 @@
 <blockquote>
 <p>You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money.</p>
 </blockquote>
-<p>This sounds like a nice story story, and of course, it is also not true.</p>
+<p>This sounds like a nice story — and of course — it is also not true. Why?</p>
 <ul>
 <li>Systems are rarely created by a single person. Most systems are the effort of a team of developers, or rather <em>several</em> teams of developers, changing over time.</li>
 <li>Most systems are not just built once, but maintained, extended and adapted over many years.</li>
@@ -193,24 +193,24 @@
 <li><strong>In a general-purpose graphical editor.</strong> For documentation or planning, engineers create more detailed models using graphical editors. <em>General-purpose</em> means that the editor is not specific for software but for drawing diagrams in general. Text can also be part of that description.</li>
 <li><strong>In a modeling editor.</strong> In contrast to a general-purpose editor, a modeling editor knows more about the type of models you want to create. With this knowledge, it can for instance offer connections between modeling elements, or check if there are errors in the model.</li>
 </ul>
+<p>Any of these models can be valuable, and one is not inherently more valuable than another. Models are always as valuable as they contribute to clarify and increase system quality. A model is not more valuable just because it is done in a tool, the value depends on its context.</p>
+<p>With regard to this course, we focus in the first three: You will be able to improve the models you have of a system in your own head. I also want you to get much better at just taking a pen during a discussion and sketching a relevant model on a whiteboard to show to some colleagues. This is an underestimated skill. Finally, once you should produce a delivery document or plan ahead your project in greater detail, you will also be able to create some decent diagrams.</p>
 
     </section>
     <section class="content">
 <h1 id="uml-unified-modeling-language">UML — Unified Modeling Language</h1>
 <p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job.</p>
 <p>This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
-<p>However, UML itself is not really important in this course. This is not a “UML course.” It’s a course about Designing systems, and we happen to use UML notation for 4 types of diagrams. UML has about 500 different modeling elements and XX different graphical notations. We will look only at the following:</p>
+<p>However, UML itself is not really important in this course. This is not a “UML course.” It’s a course about Designing systems, and we happen to use UML notation for 4 types of diagrams. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:</p>
 <ul>
 <li>Deployment Diagrams</li>
-<li>Use Case Diagrams (and tables)</li>
+<li>Use Case Diagrams</li>
 <li>State machine diagrams</li>
 <li>Interaction Diagrams</li>
 </ul>
-<p>For each of those diagrams, we only look at a subset of the modeling elements, and shy away from some more obscure constructs.</p>
-<p>The course is therefore not very syntax heavy. However, you will need to apply the syntax consistently. This is because we want to convey information with the diagrams. We want the diagrams to be valuable. For that reason, we need to stick to some conventions. Therefore, we are strict with the syntax that we will use.</p>
+<p>For each of these diagrams, we only look at a subset of the modeling elements, and shy away from some more obscure constructs. The course is therefore not very syntax heavy. However, you will need to apply the syntax consistently. This is because we want to convey information with the diagrams. We want the diagrams to be valuable. For that reason, we need to stick to some conventions. Therefore, we are strict with the syntax that we will use.</p>
 <h2 id="degrees-of-uml">Degrees of UML</h2>
-<p>Depending on how and when we create our models and which details they show, we can use UML in fundamentally different ways. When a person tells you <em>“…we are using UML”</em>, you can ask them immediately <em>“…oh, how do you use it?, I mean, at which level or degree?”</em></p>
-<p>We can roughly outline three degrees, levels or modes how UML can be used:</p>
+<p>Depending on how and when we create our models and which details they show, we can use UML in fundamentally different ways. We can roughly outline three degrees, levels or modes how UML can be used:</p>
 <ul>
 <li><strong>UML as Sketch:</strong> This means to use UML in a very informal way, maybe without paying too much attention on the detailed syntax.
 <ul>
@@ -281,7 +281,7 @@
 <p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype « execution environment».</p>
 <p>Examples for execution environments are runtime environment, application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
 
-<span name="IQF2O"></span><aside name="IQF2O"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
+<span name="I1LHX"></span><aside name="I1LHX"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
 </aside>
 <h2 id="nested-nodes">Nested Nodes</h2>
 <p>In some cases it makes sense to show nested nodes.</p>
@@ -308,38 +308,64 @@
 <li>«bluetooth»</li>
 <li>«CoAP»</li>
 </ul>
-
 <h2 id="artifacts">Artifacts</h2>
-<p>Database firmware device driver configuration files (.xml, .txt, .properties,…) source files (.java, .py, .c) library files (.dll, .jar) executable files (.exe, .jar, .c) app</p>
-
-<h2 id="deploying-artifacts">Deploying Artifacts</h2>
+<p>The software itself that runs on hardware and inside execution environments comes in the form of <strong>artifacts</strong>. They are shown as simple rectangles, with «artifact» written at the top. They can represent any artifact we find in software, for example:</p>
 <ul>
-<li>By drawing them inside a device or execution environment</li>
-<li>by connecting them with an ——&gt; arrow with label &lt;<deploy>&gt;</li>
+<li>Database</li>
+<li>firmware</li>
+<li>device driver</li>
+<li>configuration files (.xml, .txt, .properties,…)</li>
+<li>source files (.java, .py, .c)</li>
+<li>library files (.dll, .jar)</li>
+<li>executable files (.exe, .jar, .c)</li>
 </ul>
-<p>There can be an additional deployment specification. .wsdd, .xml</p>
-<ul>
-<li>artifacts must be deployed on a node</li>
-<li></li>
-</ul>
+<h3 id="deploying-artifacts">Deploying Artifacts</h3>
+<p>Software artifacts run within an execution environment or directly in a hardware nodes. There are two ways to assign a software artifact into a node:</p>
+<ol type="1">
+<li>Simply by drawing it into the node, that means, graphically by <em>nesting</em>.</li>
+<li>By connecting them with a dashed line arrow labelled «deploy»</li>
+</ol>
+<p>Below you see the two ways of deploying an artifact into a node. Both are semantically equivalent (they <em>mean</em> the same thing), but the graphics are different. Depending on how many artifacts to deploy and other layout constraints, either of them can be more compact and practical to use.</p>
 
-<p>(img)(img)</p>
-<p>Deployment diagrams most often show node instances</p>
+<div class="figure">
+<img src="figures/deployment/deployment-1.png" alt="Two ways of showing deployment. Both ways have the same meaning, but look different graphically." width="100%"/>
+<span name="figures/deployment/deployment-1.png">&nbsp;</span>
+<aside name="figures/deployment/deployment-1.png"><p><p>Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</p>
+</p></aside>
+</div>
+<!--
+In some cases, the deployment of an artifact requires some more details, which can be expressed by an (optional) deployment specification.
+.wsdd, .xml
+-->
+<h3 id="manifestation">Manifestation</h3>
+<p>The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact <em>manifests</em> other modeling elements. In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest».</p>
 
-<ul>
-<li>Which details are actually worth showing?
-<ul>
-<li>Too many details and the diagram gets messy</li>
-<li>Too little and there is not much to show</li>
-<li>show composite diagrams</li>
-</ul></li>
-<li>How to provide a good overview, good layout?</li>
-<li></li>
-</ul>
+<div class="figure">
+<img src="figures/deployment/manifest-1.png" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact." width="100%"/>
+<span name="figures/deployment/manifest-1.png">&nbsp;</span>
+<aside name="figures/deployment/manifest-1.png"><p><p>With the stereotype «manifest» we can show that a UML element (here a component) is used to describe the contents of a software artifact.</p>
+</p></aside>
+</div>
+<!--
+Deployment diagrams most often show node instances
+- Which details are actually worth showing?
+    - Too many details and the diagram gets messy
+    - Too little and there is not much to show
+    - show composite diagrams
+- How to provide a good overview, good layout?
+-->
+<h2 id="notes">Notes</h2>
+<p>Similar to comments and documentation in source code, UML diagrams can contain notes. They can capture additional information that cannot be expressed by other elements.</p>
 
+<div class="figure">
+<img src="figures/deployment/notes-1.png" alt="Notes can show additional information that is difficult to express in other ways." width="100%"/>
+<span name="figures/deployment/notes-1.png">&nbsp;</span>
+<aside name="figures/deployment/notes-1.png"><p><p>Notes can show additional information that is difficult to express in other ways.</p>
+</p></aside>
+</div>
     </section>
     <section class="content">
-<span name="FLYSU"></span><aside name="FLYSU"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+<span name="ESWS5"></span><aside name="ESWS5"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
 </aside>
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>

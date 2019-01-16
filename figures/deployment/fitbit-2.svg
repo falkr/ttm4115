@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="152.57087 623.1221 562.25986 222.10237" width="562.25986" height="222.10237">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="152.57087 623.1221 562.25986 222.10237" width="562.25986" height="222.10237">
   <defs>
     <font-face font-family="Calibri" font-size="9" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
       <font-face-src>
@@ -19,9 +19,9 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.9.4 
-    <dc:date>2019-01-15 17:16:47 +0000</dc:date>
+    <dc:date>2019-01-16 06:27:58 +0000</dc:date>
   </metadata>
-  <g id="Canvas_2" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none" fill-opacity="1">
+  <g id="Canvas_2" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke="none">
     <title>Canvas 2</title>
     <g id="Canvas_2: Layer 1">
       <title>Layer 1</title>
@@ -57,7 +57,7 @@
         <rect x="379.84253" y="793.7008" width="96.37795" height="39.68504" fill="#fffd78"/>
         <rect x="379.84253" y="793.7008" width="96.37795" height="39.68504" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(384.84253 798.7008)" fill="#f7b504">
-          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="31.69508" y="9">«app»</tspan>
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="25.496593" y="9">«artifact»</tspan>
         </text>
       </g>
       <g id="Graphic_84">
@@ -74,23 +74,23 @@
         <path d="M 368.50395 799.3701 L 209.76379 799.3701 L 209.76379 720" stroke="#ff365e" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
       </g>
       <g id="Graphic_88">
-        <text transform="translate(515.9055 657.6378)" fill="#ff365e">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff365e" x=".4782715" y="9">«bluetooth»</tspan>
+        <text transform="translate(515.9055 657.6378)" fill="#ff355e">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff355e" x=".4782715" y="9">«bluetooth»</tspan>
         </text>
       </g>
       <g id="Graphic_89">
-        <text transform="translate(306.14174 657.6378)" fill="#ff365e">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff365e" x=".23876953" y="9">«https»</tspan>
+        <text transform="translate(306.14174 657.6378)" fill="#ff355e">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff355e" x=".23876953" y="9">«https»</tspan>
         </text>
       </g>
       <g id="Graphic_90">
-        <text transform="translate(306.14174 782.3622)" fill="#ff365e">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff365e" x=".23876953" y="9">«https»</tspan>
+        <text transform="translate(306.14174 782.3622)" fill="#ff355e">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff355e" x=".23876953" y="9">«https»</tspan>
         </text>
       </g>
       <g id="Graphic_91">
-        <text transform="translate(521.5748 782.3622)" fill="#ff365e">
-          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff365e" x=".4782715" y="9">«bluetooth»</tspan>
+        <text transform="translate(521.5748 782.3622)" fill="#ff355e">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="#ff355e" x=".4782715" y="9">«bluetooth»</tspan>
         </text>
       </g>
       <g id="Graphic_92">
@@ -109,7 +109,7 @@
         <rect x="379.84253" y="668.9764" width="96.37795" height="39.68504" fill="#fffd78"/>
         <rect x="379.84253" y="668.9764" width="96.37795" height="39.68504" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(384.84253 673.9764)" fill="#f7b504">
-          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="23.61793" y="9">«browser»</tspan>
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="25.496593" y="9">«artifact»</tspan>
         </text>
       </g>
       <g id="Graphic_95">
@@ -139,7 +139,22 @@
         <rect x="595.2756" y="668.9764" width="96.37795" height="39.68504" fill="#fffd78"/>
         <rect x="595.2756" y="668.9764" width="96.37795" height="39.68504" stroke="#ffd579" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(600.2756 673.9764)" fill="#f7b504">
-          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="21.994152" y="9">«firmware»</tspan>
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="25.496593" y="9">«artifact»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <text transform="translate(408.0197 810.5394)" fill="#f7b504">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x=".08666992" y="9">Fitbit app</tspan>
+        </text>
+      </g>
+      <g id="Graphic_122">
+        <text transform="translate(384.84253 685.815)" fill="#f7b504">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="28.227796" y="9">browser</tspan>
+        </text>
+      </g>
+      <g id="Graphic_123">
+        <text transform="translate(600.2756 685.815)" fill="#f7b504">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="#f7b504" x="26.604017" y="9">firmware</tspan>
         </text>
       </g>
     </g>

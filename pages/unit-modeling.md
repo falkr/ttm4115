@@ -1,32 +1,11 @@
----
-status: draft
----
+# Team Setup
+
+* Assign team roles, just like last week. 
+* See if you had any improvements or follow-ups from last week, and act on them.
 
 
-# Comments on Deployment Diagrams
-
-[pdf-embedder url="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/01/unit-1.pdf"]
 
 
-# Team Forming
-
-## Step 1: Find a Team Name
-
-Your team ID corresponds to the table you are assigned to, i.e., 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21. In addition, find a name that you like. 
-
-Also: Find a Team Emoji. Because 2018 🐷.
-
-## Step 2: Take a Picture
-
-Take a picture of the entire team. Add annotations on the picture to show everyone's name. 
-
-## Step 3: 
-
-Upload the picture on Padlet. Add Team ID and the new team name!
-
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/zvot1dkd27t8" frameborder="0" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://resources.padletcdn.com/assets/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
-
-(Password on blackboard.)
 
 
 # Modeling and Deployment Diagrams
@@ -34,83 +13,75 @@ Upload the picture on Padlet. Add Team ID and the new team name!
 
 Today's team activity is about a system to control rice irrigation in Malaysia. For rice to grow, the water levels need to be controlled. Read the following "application story" from Kontron, a manufacturer of embedded computers used for industrial purposes. (This is obviously advertisement for their products, but the system description is at a very good level of detail for this task.)
 
-[Adding IoT to Water Works Wonders for Malaysian Rice Growers](https://www.kontron.com/downloads/application_stories/bu-ind/as_abbaco_en.pdf)
+<a href="https://www.kontron.com/downloads/application_stories/bu-ind/as_abbaco_en.pdf" class="arrow">Adding IoT to Water Works Wonders for Malaysian Rice Growers</a>
 
 Your task will be to create a deployment diagram for this system, based on the information from the story. If you need to add information or make assumptions, feel free to do so.
 
-**For the course grade:** This diagram will be part of the delivery T1. In addition, you will create a deployment diagram of your own system that is also part of T1.
+
+### Step 1: Individual Read-Through
+
+Read the application story individually, and pay attention on the technical details, but also on the context of the system. 
+
+- Make notes. 
+- Highlight portions of the text that you find relevant. 
+- Lookup terms that you don't understand.
+
+### Step 2: Discuss the System
+
+Discuss the system together. Discuss how it works, how it is structured, what its goals are. 
+
+### Step 3: Individual Diagram Sketches
+
+Each on their own, make some sketches **using pen and paper** for a deployment diagram. 
+
+- Don't necessarily try to make the entire diagram yet. 
+- Study different alternatives or modeling elements.
+
+### Step 4: Sketch of Diagram 
+
+- Compare your ideas and find commonalities, discuss differences. 
+- Iteratively agree on a diagram you want to build.
+- Outline the diagram, ideally on a whiteboard, blackboard or a shared piece of paper. 
+
+### Step 5: Diagram 
+
+Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool **Draw.io**, because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
+
+- Try to create a diagram that provides you with a good overview of the system.
+- Include _relevant_ details.
+- Try to build a good layout. Have several attempts, the first one may not be the best one.
+
+Deliver the diagram on Blackboard immediately.
 
 
-## Setup
+# Peer Review of Diagrams
 
-Assign the following roles for today:
+Ask another team for their diagram. This may require some coordination, since you have scheduled different timeslots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
 
-* **Timekeeper:** Responsible to keep the time on all steps, coordinate time plans, punctual delivery of all items.
-* **Delivery:** Responsible to check that all deliveries are properly stored. (Padlet, with other teams, in shared folder, backup, etc...)
-* **Moderator:** Coordinate discussion
-* assign more roles as you see need 
-* please also make sure tables and whiteboards are clean after you leave
+* Use the channel **Exchange** on Teams.
+* In the Exchange channel, find a document called _Unit 1 - Deployment Diagrams Exchange.docx_ where you list which team you review.
 
-## Step 1: Individual Read-Through
+Have a look at the diagram of the other team. Add notes into their diagram (ask them for access to the document.) Comments by adding UML note elements:
 
-Read the application story individually, and pay attention on the technical details, but also on the context of the system. Make notes.
-
-## Step 2: Individual Diagram Sketches
-
-Make some sketches (on paper) individually with elements from the diagram. Don't yet try to make the entire diagram. Study different alternatives or modeling elements.
-
-## Step 3: Team Work on Iteration 1
-
-Using the whiteboard, compare your ideas and find commonalities, discuss differences. Iteratively agree on a diagram you want to build. 
-
-## Step 4: Final Diagram in Draw.io 
-
-Based on Step 3, create a polished diagram in Draw.io. Save it in Google Docs for easy sharing.
-
-**Time keepers: This diagram needs to be finished by the time agreed in class, on the blackboard!**
-
-## Step 5: Peer Review
-
-Exchange sharing links with another team (listed below) for review. You need to grant editing rights (not only commenting.)
-
-Comments by adding UML note elements:
-
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/01/Screen-Shot-2018-01-22-at-09.07.51-1024x599.png" alt="" width="750" height="439" class="alignnone size-large wp-image-281" />
+---
+type: figure
+source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/01/Screen-Shot-2018-01-22-at-09.07.51-1024x599.png"
+---
 
 Use **red** for errors, **green** for general comments or recommendations, **yellow** for ambiguous cases.
 
-Note that we review circularly, i.e., not in pairs of teams, since we are an odd number of teams:
-
-* Team **7** reviews the diagram of Team **10**.
-* Team **8** reviews the diagram of Team **11**.
-* Team **9** reviews the diagram of Team **12**.
-* Team **10** reviews the diagram of Team **13**.
-* Team **11** reviews the diagram of Team **14**.
-* Team **12** reviews the diagram of Team **15**.
-* Team **13** reviews the diagram of Team **16**.
-* Team **14** reviews the diagram of Team **17**.
-* Team **15** reviews the diagram of Team **18**.
-* Team **16** reviews the diagram of Team **21**.
-* Team **17** reviews the diagram of Team **7**.
-* Team **18** reviews the diagram of Team **8**.
-* Team **21** reviews the diagram of Team **9**.
+Deliver this other team's diagram with your comments as PDF on Blackboard, and notify the other team so that they are aware of your comments. 
 
 
-## Step 6: Final Diagram
 
-Based on the feedback you received, prepare a final diagram. Make sure that the layout is readable and decent, that the UML syntax is correct, and that the diagram "works", in the sense that it conveys the important information about the system in a suitable way.
 
-**Store the Diagram as a PDF (available to all team members.) 
 
-Store a copy on Padlet:
+# Team Reflection for This Unit 
 
-https://padlet.com/ttm4115/rice_irrigation_2018
+* Add another section to the team reflection document, just like last week. 
 
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/324i7v858v1p" frameborder="0" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://resources.padletcdn.com/assets/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+# Individual Reflection
 
-(Password on blackboard.)
-
-# Team Conventions
-
-Browse through the suggestions for teamwork from the last session (on the Teams Padlet). Discuss which conventions you want to have in your team. Be specific. Write them down in a document, and share this document. (For instance in a shared Drive folder.) This document is also part of your final delivery. You should review it whenever you see fit.
-
+* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
+* Copy the answers into a document that you maintain on your own.
+* Add any additional observations to your reflection diary.

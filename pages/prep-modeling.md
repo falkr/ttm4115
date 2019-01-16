@@ -71,6 +71,8 @@ Let's think one again, why we use models in general, and why models make sense a
 - When a model has a more mathematical or formal character, we can also simulate it or analyze it thoroughly.
 - One obvious, but often underestimated value is **communication** with other developers, or sometimes customers.
 
+Altogether, through modeling all participants in a development project can gain a better understanding of the system --- before it's built, during its constructions, and afterwards during maintenance and extensions or adaptations.
+
 ## Where Does Modeling Happen?
 
 We have seen that models come in va variety of forms. There's no specific property models needs to have to be called _model_ other than being _a model of something_. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a useful model. The act of modeling can therefore take place in different forms:

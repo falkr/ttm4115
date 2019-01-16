@@ -60,7 +60,8 @@ Depending on what we want to find out, a model may also cover some aspects very 
 
 ## Models of Software
 
-Of course, like we can have models of planes and buildings, we can also have models of a system that mainly consists of software. But there's one thing that is special with software: Software is made up of digital artifacts, and therefore virtual in nature. (Let's just say you can't touch it.) While it is easy to distinguish the _model_ of a house from the house itself, it is harder to distinguish the _model_ of a piece of software from the software itself. This is why we sometimes confuse software models and programs. (In some cases, the lines are even more blurry when we generate code from models automatically, or take the model and interpret it by a machine that then effectively executes it. But more on that later.)
+Of course, like we can have models of planes and buildings, we can also have models of a system that mainly consists of software. But there's one thing that is special with software: Software is made up of digital artifacts, and therefore virtual in nature. (_Virtual_ means you can't touch it.) While it is easy to distinguish the _model_ of a house from the house itself, it is harder to distinguish the _model_ of a piece of software from the software itself. One could also argue that code itself is a model, since it describes a way of executing an algorithm.
+This is why we sometimes confuse software models and programs. In some cases, the lines are even more blurry when we generate code from models automatically, or take the model and interpret it by a machine that then effectively executes it. But more on that later.
 
 ## Why Modeling Software?
 
@@ -92,7 +93,7 @@ There are lots of languages, notations or standards for modeling software. In th
 
 This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.
 
-However, UML itself is not really important in this course.  This is not a "UML course." It's a course about Designing systems, and we happen to use UML notation for 4 types of diagrams. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:
+However, UML itself is not really important in this course.  This is not a "UML course." It's a course about _designing systems_, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:
 
 - Deployment Diagrams
 - Use Case Diagrams

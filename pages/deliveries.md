@@ -17,42 +17,42 @@ During the semester, you need to hand in the following deliveries:
 <tbody>
 <tr>
 <td>T1</td>
-<td>2018-02-23</td>
+<td>2019-02-15</td>
 <td>Team</td>
 <td><a href="delivery-t1/">Requirements</a></td>
 <td>Pass/Fail</td>
 </tr>
 <tr>
 <td>I1</td>
-<td>2018-xx-xx</td>
+<td>2019-02-22</td>
 <td>Individual</td>
 <td><a href="delivery-i1/">Feedback on T1</a></td>
 <td>Pass/Fail</td>
 </tr>
 <tr>
 <td>T2</td>
-<td>2018-03-23</td>
+<td>2019-03-22</td>
 <td>Team</td>
 <td><a href="delivery-t2/">Specification and Design</a></td>
 <td>Pass/Fail</td>
 </tr>
 <tr>
 <td>I2</td>
-<td>2018-04-08</td>
+<td>2019-03-29</td>
 <td>Individual</td>
 <td><a href="delivery-i2/">Feedback on T2</a></td>
 <td>Pass/Fail</td>
 </tr>
 <tr>
 <td>T3</td>
-<td>2018-04-23</td>
+<td>2019-05-06</td>
 <td>Team</td>
 <td><a href="delivery-t3/">Final System, Video</a></td>
 <td>Grade (40%)</td>
 </tr>
 <tr>
 <td>I3</td>
-<td>2018-04-30</td>
+<td>2018-05-13</td>
 <td>Individual</td>
 <td><a href="delivery-i3/">Reflection</a></td>
 <td>Grade (30%)</td>

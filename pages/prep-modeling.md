@@ -76,7 +76,7 @@ Altogether, through modeling all participants in a development project can gain 
 
 ## Where Does Modeling Happen?
 
-We have seen that models come in va variety of forms. There's no specific property models needs to have to be called _model_ other than being _a model of something_. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a useful model. The act of modeling can therefore take place in different forms:
+We have seen that models come in a variety of forms. There's no specific property models needs to have to be called _model_ other than being _a model of something_. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a useful model. The act of modeling can therefore take place in different forms:
 
 - **In your head.** This is kind of obvious. Engineers have a representation of the system they work in their heads. These are models, too. The only problem of these models is that they are local and hard to transfer from one developer to another.
 - **At a whiteboard or on a piece of paper.** When discussing, engineers often draw spontaneously to illustrate a part of a system, so that they can understand a system aspect better or communicate it to other developers.
@@ -123,7 +123,7 @@ Depending on whom you ask, you may hear very strong arguments for any of these w
 
 ## Views and Diagrams
 
-The model of a building can have different **views**, like showing the building form different perspectives. There can also be plans for different parts of the infrastructure, like one plan showing the electricity, one focusing on ventilation and another on fire safety. 
+The model of a building can have different **views**, like showing the building from different perspectives. There can also be plans for different parts of the infrastructure, like one plan showing the electricity, one focusing on ventilation and another on fire safety. 
 
 Similarly, the UML model of a system provides different views on it using various diagrams. These diagrams are like a window into the model. For instance, a physical view can show how a system is organized into nodes and distributed (deployment diagram). Another dynamic view can show how a component behaves in terms of state machines and interactions. Yet another structural view can show how the use cases in a system are organized. 
 

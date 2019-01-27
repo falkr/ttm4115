@@ -20,9 +20,11 @@ These do not have to be your final choices for the system that you end up workin
 During the design workshop this week, you should elaborate one or two ideas. 
 You will then write a Vision and Scope Document for one of these suggestions for this week. 
 
-For tour delivery T1 you also need to deliver such a document for your system.
-This _can_ be already the one you develop now, but you may find out that you have a better idea. Then I recommend to develop another document. 
-It is usually not hard to write another Vision and Scope document once you have gone through it for the first time. Rather develop a new one than sticking with a system idea that you don't like.
+For delivery T1 you also need to create such a document describing your system.
+This _can_ be already the one you develop now, but you may find out that you have a better idea. 
+Then I recommend to develop another document. 
+It is usually not hard to write another Vision and Scope document once you have gone through it for the first time. 
+Rather develop a new one than sticking with a system idea that you don't like.
 
 
 # Tiles Workshop
@@ -35,7 +37,7 @@ As said above, this does not have to be the final system for your semester proje
 
 * Take a picture of your table for later reference.
 * The workshop usually results in an _Elevator Pitch_ that summarizes the system idea. 
-Instead, you should build a partial (and preliminary) Vision and Scope Document.
+Instead, you should build a partial (and preliminary) Vision and Scope Document, as described in the next section.
 
 
 
@@ -59,9 +61,20 @@ This should guide the technical development, and contribute to achieve the visio
   * See Compendium, Vision and Scope Document, p.579, 3.1
 
 
-**Deliver to Blackboard:** You need to deliver the preliminary document today. As said above, this is not the final delivery. 
+**Deliver to Blackboard:** You need to deliver the preliminary document this week. As said above, this is not the final delivery. 
 You can change the system. This delivery is just a milestone to get done, even if you change it.
 
+
+# Peer Review of Vision and Scope Document
+
+Ask another team for their document. This may require some coordination, since you have scheduled different timeslots. 
+Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
+
+* Use the channel **Exchange** on Teams.
+* In the Exchange channel, find a document called _Unit 2 - Vision and Scope Exchange.docx_ where you list which team you review.
+* Write your comments as normal text, but with colored background, so that the comments are visible in an exported PDF.
+
+**Deliver to Blackboard:** Deliver the document that you provided comments for on Blackboard.
 
 # Team Reflection for This Unit 
 
@@ -72,3 +85,19 @@ You can change the system. This delivery is just a milestone to get done, even i
 * Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
 * Copy the answers into a document that you maintain on your own.
 * Add any additional observations to your reflection diary.
+
+
+
+# Checklist
+
+Delivery via Teams:
+
+* Team Reflection (in the public channel for your team).
+
+Deliveries via Blackboard:
+
+* Vision and Scope Document (PDF)
+
+Other:
+
+* Individual Reflection (individual, via Office Forms)

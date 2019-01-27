@@ -7,6 +7,10 @@ This is part of systems development is called **requirements engineering**.
 
 ## Learning Goals
 
+
+
+Goals: The learning goals specific for this week are the following:
+
 - Understand how critical requirements are for the development process.
 - Go through a design thinking workshop to elaborate requirements.
 - Write a Vision and Scope document.

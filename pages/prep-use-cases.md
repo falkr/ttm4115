@@ -1,8 +1,4 @@
----
-status: draft
----
-
-## Welcome to Unit 3
+# Use Cases 
 
 This week, we are going to create a set of use cases based on the requirements from the users. This is an important step before we can specify the functionality of the system. 
 

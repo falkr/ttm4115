@@ -282,7 +282,7 @@
 <p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype « execution environment».</p>
 <p>Examples for execution environments are runtime environment, application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
 
-<span name="ZBD3B"></span><aside name="ZBD3B"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
+<span name="9IFO7"></span><aside name="9IFO7"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
 </aside>
 <h2 id="nested-nodes">Nested Nodes</h2>
 <p>In some cases it makes sense to show nested nodes.</p>
@@ -339,7 +339,8 @@ In some cases, the deployment of an artifact requires some more details, which c
 .wsdd, .xml
 -->
 <h3 id="manifestation">Manifestation</h3>
-<p>The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact <em>manifests</em> other modeling elements. In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest».</p>
+<p>The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact <em>manifests</em> other modeling elements.</p>
+<p>In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest». This means that there is a UML description of a traffic light encapsulated by the component <code>Traffic Light Logic</code>. This can be for example a state machine that describes in which sequences the traffic light cycles through red, yellow and green. (We will work with state machines later.) The state machines and the component, however, are only descriptions but cannot be executed on their own. For that, we need the code provided here by the artifact <code>traffic-light-firmware.c</code>, which implements for instance the component and state machines for the traffic light.</p>
 
 <div class="figure">
 <img src="figures/deployment/manifest-1.png" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact." width="100%"/>
@@ -355,6 +356,9 @@ Deployment diagrams most often show node instances
     - show composite diagrams
 - How to provide a good overview, good layout?
 -->
+
+<p><strong>Hint:</strong> The difference between artifacts and nodes may appear subtle in some cases. Nodes that are devices describe physical pieces of hardware that you can touch. Artifacts, on the other side are often files, like source files or executable files for a program. They are real, but you cannot touch them. Execution environments, which are nodes, are a bit more subtle. You cannot touch them, but they provide a place of executing software, which comes in the form of artifacts.</p>
+
 <h2 id="notes">Notes</h2>
 <p>Similar to comments and documentation in source code, UML diagrams can contain notes. They can capture additional information that cannot be expressed by other elements.</p>
 
@@ -366,7 +370,7 @@ Deployment diagrams most often show node instances
 </div>
     </section>
     <section class="content">
-<span name="I53CO"></span><aside name="I53CO"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+<span name="HFPM3"></span><aside name="HFPM3"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
 </aside>
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>

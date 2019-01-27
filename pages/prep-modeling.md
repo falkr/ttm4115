@@ -264,7 +264,11 @@ In some cases, the deployment of an artifact requires some more details, which c
 
 ### Manifestation
 
-The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact _manifests_ other modeling elements. In the example below, we show that the UML component `Traffic Light Logic` is manifested by the artifact `traffic-light-firmware.c`, using a dashed arrow with the stereotype &laquo;manifest&raquo;.
+The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact _manifests_ other modeling elements. 
+
+In the example below, we show that the UML component `Traffic Light Logic` is manifested by the artifact `traffic-light-firmware.c`, using a dashed arrow with the stereotype &laquo;manifest&raquo;.
+This means that there is a UML description of a traffic light encapsulated by the component `Traffic Light Logic`. This can be for example a state machine that describes in which sequences the traffic light cycles through red, yellow and green. (We will work with state machines later.) The state machines and the component, however, are only descriptions but cannot be executed on their own. For that, we need the code provided here by the artifact `traffic-light-firmware.c`, which implements for instance the component and state machines for the traffic light.
+
 
 ---
 type: figure
@@ -280,6 +284,17 @@ Deployment diagrams most often show node instances
 	- show composite diagrams
 - How to provide a good overview, good layout?
 -->
+
+
+**Hint:** The difference between artifacts and nodes may appear subtle in some cases.
+Nodes that are devices describe physical pieces of hardware that you can touch. Artifacts, on the other side are often files, like source files or executable files for a program. 
+They are real, but you cannot touch them. 
+Execution environments, which are nodes, are a bit more subtle. You cannot touch them, but
+they provide a place of executing software, which comes in the form of artifacts.  
+ 
+
+
+
 
 ## Notes
 

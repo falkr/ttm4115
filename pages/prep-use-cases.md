@@ -4,6 +4,21 @@ This week, we are going to create a set of use cases based on the requirements f
 
 **At this point I’d like to make the following remark:** Some of you may doubt the value of requirements engineering last week, and then use case modeling this week. This is not uncommon. It is easy to dismiss or undervalue the insights that you get from requirements engineering or use case design right now, given that we build a system not under the entirely real conditions.  But if you ask practitioners, they will confirm that good use cases are hard to make, but valuable to have. Creating good use cases is another step in the development chain where you can understand your system better, and where you can detect dead ends or bad designs before you spend more time implementing them. 
 
+## Learning Goals
+
+
+
+
+Goals: The learning goals specific for this week are the following:
+
+- Appreciate the value of thinking in terms of use cases.
+- Creating use case overview diagrams and use case tables.
+- Sorting use cases according to their level of detail.
+
+
+
+
+
 ## Preparation
 
 Read carefully through the following book chapter from the compendium:
@@ -14,16 +29,37 @@ Read carefully through the following book chapter from the compendium:
 
 Have a look at the following videos that show how to create deployment diagrams.
 
-https://youtu.be/tLJXJLfLCCM
+---
+type: youtube
+video: tLJXJLfLCCM
+---
 
-https://youtu.be/_JCsqdNf8bA
+---
+type: youtube
+video: _JCsqdNf8bA
+---
 
-https://youtu.be/SmcBTsPsbIY
+---
+type: youtube
+video: SmcBTsPsbIY
+---
 
-https://youtu.be/q7O2EAZ_s7M
+---
+type: youtube
+video: q7O2EAZ_s7M
+---
 
-https://youtu.be/bL_Bl_Xl7wQ
+---
+type: youtube
+video: bL_Bl_Xl7wQ
+---
 
-https://youtu.be/x5LkaZlLT28
+---
+type: youtube
+video: x5LkaZlLT28
+---
 
-https://youtu.be/gYmOzpU7DDI
+---
+type: youtube
+video: gYmOzpU7DDI
+---

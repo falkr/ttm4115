@@ -66,26 +66,6 @@ The delivery must contain the following sections:
 * **Evaluation:** Completeness, plausibility, correctness of syntax, layout, clarity.
 * **Hints:** Most likely, the deployment diagram will fit on a single A4 page in landscape orientation.
 
-### 8. Appendix
-
-Include the original versions of the following documents that you prepared during the team activities. These are not directly graded either (and they are not subject to improvement or feedback). They serve as reference material that you can use in the individual delivery I3 later in the semester.
-
-* Team Conventions
-* Deployment Diagram from the Rice Irrigation System
-* Design Thinking Workshop 
-* Use case sea level diagram
-
-
-
-# Delivery
-
-For this delivery, you need to create a single PDF document that contains several items. 
-
-
-* We recommend to use Google Docs for the document and export as PDF.
-
-* Create diagrams using draw.io, and use some time to prepare a good layout.
-* Final delivery is on Blackboard
 
 
 # Formatting Rules for Deliveries

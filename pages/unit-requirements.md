@@ -59,7 +59,10 @@ This should guide the technical development, and contribute to achieve the visio
   * See Compendium, Vision and Scope Document, p.576, 1.3
 * **Stakeholders:** Describe briefly the stakeholders that are important for the system. What is important to them? 
   * See Compendium, Vision and Scope Document, p.579, 3.1
-
+* **Risks:** Describe briefly the main risks relevant for the system. Which are they, how can they be handled or reduced? 
+  * See Compendium, Vision and Scope Document, p.577, 1.6
+* **Major Features:** Describe briefly the major features of the system. These will help you to describe use case next week. You don't have to present a feature diagram, just make a list of 3 to 5 main features and explain them briefly.
+  * See Compendium, Vision and Scope Document, p.578, 1.6
 
 **Deliver to Blackboard:** You need to deliver the preliminary document this week. As said above, this is not the final delivery. 
 You can change the system. This delivery is just a milestone to get done, even if you change it.

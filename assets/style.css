@@ -295,6 +295,10 @@ a.arrow:hover {
     background-color: #DDEAF4;
 }
 
+code {
+  font-size: 100%
+}
+
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */

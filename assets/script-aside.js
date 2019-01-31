@@ -37,6 +37,6 @@ function refreshAsides() {
       return;
     }
 
-    aside.offset({top: span.position().top - 3 + 80});
+    aside.offset({top: span.position().top - 3 + 80 - 80});
   });
 }

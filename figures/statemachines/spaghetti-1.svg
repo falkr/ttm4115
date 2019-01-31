@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="64.94685 4730.774 400.18506 150.73622" width="400.18506" height="150.73622">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 0 M 0 -2.1 L 5.6 0 L 0 2.1" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-31 06:58:39 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11520">
+        <rect x="65.19685" y="4731.024" width="399.68506" height="150.23622" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11521">
+        <circle cx="181.41733" cy="4750.866" r="2.83465027762383" fill="black"/>
+      </g>
+      <g id="Line_11522">
+        <line x1="181.41733" y1="4753.701" x2="181.41733" y2="4795.055" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11523">
+        <path d="M 159.07087 4799.055 L 203.76379 4799.055 C 207.0775 4799.055 209.76379 4801.7415 209.76379 4805.055 L 209.76379 4821.4017 C 209.76379 4824.7154 207.0775 4827.4017 203.76379 4827.4017 L 159.07087 4827.4017 C 155.75716 4827.4017 153.07087 4824.7154 153.07087 4821.4017 L 153.07087 4805.055 C 153.07087 4801.7415 155.75716 4799.055 159.07087 4799.055 Z" fill="white"/>
+        <path d="M 159.07087 4799.055 L 203.76379 4799.055 C 207.0775 4799.055 209.76379 4801.7415 209.76379 4805.055 L 209.76379 4821.4017 C 209.76379 4824.7154 207.0775 4827.4017 203.76379 4827.4017 L 159.07087 4827.4017 C 155.75716 4827.4017 153.07087 4824.7154 153.07087 4821.4017 L 153.07087 4805.055 C 153.07087 4801.7415 155.75716 4799.055 159.07087 4799.055 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(158.07087 4806.2285)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="6.333763" y="11">active</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11524">
+        <path d="M 309.3071 4799.055 L 354 4799.055 C 357.3137 4799.055 360 4801.7415 360 4805.055 L 360 4821.4017 C 360 4824.7154 357.3137 4827.4017 354 4827.4017 L 309.3071 4827.4017 C 305.9934 4827.4017 303.3071 4824.7154 303.3071 4821.4017 L 303.3071 4805.055 C 303.3071 4801.7415 305.9934 4799.055 309.3071 4799.055 Z" fill="white"/>
+        <path d="M 309.3071 4799.055 L 354 4799.055 C 357.3137 4799.055 360 4801.7415 360 4805.055 L 360 4821.4017 C 360 4824.7154 357.3137 4827.4017 354 4827.4017 L 309.3071 4827.4017 C 305.9934 4827.4017 303.3071 4824.7154 303.3071 4821.4017 L 303.3071 4805.055 C 303.3071 4801.7415 305.9934 4799.055 309.3071 4799.055 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(308.3071 4806.2285)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x=".34548187" y="11">beeping</tspan>
+        </text>
+      </g>
+      <g id="Line_11525">
+        <line x1="210.01379" y1="4813.2285" x2="299.0571" y2="4813.2285" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11526">
+        <text transform="translate(85.87402 4767.874)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".4785156" y="11">/ start(t1, 60000)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11527">
+        <text transform="translate(218.26772 4765.0395)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="29.16211" y="11">t1 / </tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="3.4833984" y="25">start_beep();</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".14941406" y="39">start(t2, 3000)</tspan>
+        </text>
+      </g>
+      <g id="Line_11528">
+        <line x1="331.65355" y1="4827.6517" x2="331.65355" y2="4854.333" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11529">
+        <text transform="translate(335.32284 4835.9056)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".4736328" y="11">t2 / stop_beep()</tspan>
+        </text>
+      </g>
+      <g id="Group_11530">
+        <g id="Graphic_11532">
+          <circle cx="331.65355" cy="4864.252" r="5.66930055524852" fill="white"/>
+          <circle cx="331.65355" cy="4864.252" r="5.66930055524852" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_11531">
+          <circle cx="331.65355" cy="4864.252" r="2.8346502776237" fill="black"/>
+        </g>
+      </g>
+      <g id="Line_11533">
+        <path d="M 65.19685 4748.0316 L 167.2441 4748.0316 L 172.9134 4742.3623 L 172.9134 4731.024" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11534">
+        <text transform="translate(68.07087 4733.197)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="0" y="10">stm</tspan>
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" y="10"> Spaghetti Timer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

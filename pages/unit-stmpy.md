@@ -1,7 +1,3 @@
----
-status: draft
----
-
 # State Machines in Python
 
 

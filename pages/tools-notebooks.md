@@ -31,3 +31,18 @@ For further reading and tutorial, check out this page: <a href="https://www.dat
 To turn your GitHub repository into interactive notebooks.
 
 <a href="https://mybinder.org">https://mybinder.org</a>
+
+
+
+
+# Troubleshooting
+
+
+Find out which Python interpreter your notebook is using:
+
+```
+import sys
+sys.executable
+```
+
+

@@ -1,6 +1,4 @@
----
-status: draft
----
+# State Machines
 
 
 ## Kitchen Timer

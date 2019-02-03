@@ -1,78 +1,135 @@
----
-status: draft
----
-
 # Use Cases
 
-## Good Use Cases
+## What are Good Use Cases?
 
-What are characteristics of good use cases?
+You have now already learned a lot about use cases and seen some examples, and know which goal we have when designing use cases. So what are the characteristics of **good** use cases?
 
-1. Come up with individual suggestions for good use cases (3 minutes)
-2. Collect on a whiteboard or document.
-3. Discuss and select the three most important. (Have a backlog with the others.)
+### Step 1: Teamwork
+
+* Use 3 to 5 minutes of silence where each of you thinks about what are characteristics of a good use case. 
+  - Each one should come up with about 3 to 5 such suggestions.
+  - Rank these suggestions. 
+  - Try to be compact, either a word or a short phrase for each characteristic.
+* Take rounds where each of you takes their top choice, and compile a complete list of attributes. 
+  - Take rounds until you have listed all characteristics. 
+  - Eliminate or rephrase similar characteristics as you go, to remove making the same point several times.
+* Discuss and select the **three most important** characteristics. 
+  - Mark the them with a star, or highlight them in yellow.
+
+### Step 2: Submit to Blackboard
+
+Submit this list with your favorite characteristics marked into Blackboard. **Especially: Submit to Blackboard before starting with Step 3.** 
 
 
-During the discussion in the auditorium, we will use <a href="https://docs.google.com/document/d/18FsNzkSbpG-1jrUbPr_zRBiAdg_jr_Zt6LLNF52WcKU/edit?usp=sharing" rel="noopener" target="_blank">this document</a> to collect all suggestions.
+### Step 3: Merge Results
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQJZreKQc1rl2WYdFA8BoyCjUvwX0b0bB9fuHC7KqabigZoKHEWP3f_Gaca98fGwOBhOKT25bsrYJij/pub?embedded=true"></iframe>
+On Teams, under General / Files / Unit 3, you find a document called **Use Case Characteristics.docx**. This document contains a large table, and each team has their column. The first column is from Team Frank. 
+
+Add the **10 highest ranked characteristics** into the table. For each characteristic you add, see if another team has already written a very similar one. 
+
+  * If you find a similar one, place it in the same row. 
+  * If your characteristic is new, add it in a new row. If necessary, expand the table.
+  * Mark your three most important ones with a yellow highlight.
+  
+In the end, when we look at the entire document, we should see that each row describes similar characteristics but maybe with different words. Some cells stay empty if you have different choices, obviously. That's just fine. We will talk about our different choices the week after. 
 
 
-## Use Case Levels
 
-Not all use cases are at the same level. Alistair Cockburn proposes to sort them according to the levels inspired by a horizon, as shown below. 
-
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-05-at-07.53.46-1024x639.png" alt="" width="750" height="468" class="alignnone size-large wp-image-331" />
+# Use Case Levels
 
 
-## Team: Use Case Levels 1
-
-Below you find a collection of use cases from different systems. At the moment, they are all placed at the sea level, but most of them don't belong there.
-
-1. Make a copy of the diagram below. 
-2. Discuss and move all use cases to the level that fits best.
+Recall the different levels of use cases from the preparation, where we assigned use cases to different levels on a horizon:
 
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg%26export%3Ddownload"></script>
 
-<a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">Diagram Link</a>
+In the document above, you see all use cases lined up at the sea-level, but many of them belong either to a higher or a lower level. In case you have troubles with the document, here is a list of all the use cases it lists:
 
+* Log into system
+* Hit tab key
+* Register a new customer
+* Get paid for a car accident
+* Buy a book
+* Provide students loans. 
 
-## Good Use Cases at Sea-Level
+As you can see, these use cases do not relate to the same system. Use some fantasy to think about the systems around them, most should be obvious.
 
-A good use case specification requires good use cases especially at the sea-level. A guideline for use cases at sea-level are the following:
-
-* Can the user achieve their goals in this use case within 2 to 20 minutes?
-* Can users have a coffee break after the use case?
-* Can the primary actor go away happy after achieving the goal?
-* Does the use case have 3 to 8 steps?
-
-
-If use cases are **too high-level**:
-
-- Break them down
-- Provide details
-
-If use cases are **too low-level**:
-
-- relate to a higher level use case
-- if it is a clam: integrate as a step into another use case
-- ask the question *why* the actor is doing something
-- remove details and merge steps
-
-
-## Team: Use Case Levels 2
-
-You should now create a map with the horizon from above and add the first use cases for your system. Try to find **all use cases at the sea-level** and **all use cases above the sea level**. Also, add **some** use cases below the sea level.
+* Make a **copy** of the diagram. [Here is the direct link to it.](https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing)
+* Move the use cases up and down, and discuss them. 
+  * Argue why they should be on a certain level. 
+  * Compare the use cases with each other, and see if the level also fits relative to each other. 
+* Once you are happy with the level of all use cases, [fill out the quiz (once per team.)](https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMk1CS1gxMDhIVEtZS1pFMEJGSkRTWjBVNC4u)
+* See if you agree with the answers. If not, discuss on MS Teams!
 
 
 
-### Hints:
+# Use Cases for Your Project
 
-* **Individual Round First:** Let everyone write down many use cases, then write them down and merge them.
-* **Several Pages:** You can have several pages within one document. For this task, three pages sounds good. Try to relate use cases at different levels together if they are connected. (One use case helps implementing another one.)
-* Make a copy of the document below. 
-* **Submit on Blackboard:** Submit the preliminary versions of the use cases on Blackboard by the end of the day. 
+For the delivery T1 that covers requirements, you will need to deliver a set of use cases. Today, you should start delivering them. 
 
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;page&quot;:2,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1AlrgI6V7VNGDRhhlforNpb4Mz9NcBECk&amp;export=download&quot;}"></div>
-<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1AlrgI6V7VNGDRhhlforNpb4Mz9NcBECk%26export%3Ddownload"></script>
+## Use Case Levels
+
+For your project delivery, you should focus on **three** use cases **at the sea-level**. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail. 
+
+* Make a copy of the [use case level document](https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing), and start filling it with some use cases for your system.
+* Be critical so that you capture the most important three use cases at the sea-level of your system. 
+  * Look at higher-level ones, how they can be decomposed into sea-level use cases.
+  * Look at lower-level ones to see if they can be aggregates into sea-level ones.
+  * Ignore clamp-level use cases.
+* Store a screenshot of your results for your T1 delivery.
+
+As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems. My focus is at the sea-level, where I added two and think about a third one. I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases. 
+
+---
+type: figure
+source: figures/use-cases/toilet-paper.png
+---
+
+## Use Case Diagram
+
+Remember that the diagrams with the sea-level are not use case diagrams, they are just a tool to find the use cases at the right level and relate them to each other. You should now start to create a use case diagram for your system. (See compendium **Fig. 8-2** on p. 149.) 
+
+* Based on the three use cases at the sea-level you found above, create a use case diagram.
+* Identify the actors connected to each use case.
+* Store this diagram, as you will need it for the T1 delivery.
+
+
+## Tabular Use Case Specification
+
+For your system, you also need to deliver the tabular specification of the use cases, like the one in **Fig. 8-3** on page 150. Each table should fit on one A4 page. 
+
+* Start outlining the tables, and review if your use case really is at sea-level.
+
+
+
+# Checklist
+
+Since the use cases you develop are part of T1, there is no formal delivery for them. 
+
+### Blackboard
+
+- Only blackboard delivery for this week is the list of good use case characteristics from the first task.
+
+### MS Teams
+
+- Entry of your use case characteristics
+- Ask for feedback in general
+
+### Team Reflection for This Unit 
+
+* Add another section to the team reflection document, just like last week. 
+
+### Individual Reflection
+
+* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
+* Copy the answers into a document that you maintain on your own.
+* Add any additional observations to your reflection diary.
+
+
+
+
+
+
+
+
+ 

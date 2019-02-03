@@ -1,9 +1,4 @@
----
-status: draft
----
-
-
-# Welcome to Unit 6!
+# State Machines in Python
 
 In this unit, you will learn how to implement state machines in Python. Achieving this is valuable for several reasons:
 

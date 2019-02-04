@@ -75,7 +75,7 @@ For your project delivery, you should focus on **three** use cases **at the sea-
 * Be critical so that you capture the most important three use cases at the sea-level of your system. 
   * Look at higher-level ones, how they can be decomposed into sea-level use cases.
   * Look at lower-level ones to see if they can be aggregates into sea-level ones.
-  * Ignore clamp-level use cases.
+  * Ignore clam-level use cases.
 * Store a screenshot of your results for your T1 delivery.
 
 As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems. My focus is at the sea-level, where I added two and think about a third one. I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases. 
@@ -98,8 +98,9 @@ Remember that the diagrams with the sea-level are not use case diagrams, they ar
 
 For your system, you also need to deliver the tabular specification of the use cases, like the one in **Fig. 8-3** on page 150. Each table should fit on one A4 page. 
 
-* Start outlining the tables, and review if your use case really is at sea-level.
-
+* Start outlining all three tables.
+  * Review if your use case really is at sea-level.
+* Finish the use case tables. Ideally, these will be close to the ones you submit into T1.
 
 
 # Checklist

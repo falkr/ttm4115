@@ -17,7 +17,7 @@ caption: "A simple sketch of the use cases for the system to read in RAT results
 
 **This is a use case diagram.** It describes the main functions a system provides to its environment, depicted as actors. Here, the main actors are _teacher_ and _student_. As you can see, there is a use case _Enter Results_. Originally, I thought this could be done by students on their own, using a web formular. However, as you know, during the RAT you are not allowed to use your phone, so how should we have done this? Also, how to ensure that everyone is reporting their own, correct results? Just by thinking at this level of use cases I then decided that this was a task for the teaching assistant, and changed the use case.
 
-You may think now that you could have done this also without use cases, just by thinking about the system. But this is exactly what we are talking about: The use cases make your thinking on a high level about the system visible to your development team, your boss, your customers, and yourself. This is why use cases are important, and why hopping over them can cost you time and money. 
+You may think now that you could have done this also without use cases, just by thinking about the system. But this is exactly what we are talking about: The use cases make your thinking on a high level about the system visible to your development team, your boss, your customers, and yourself. This is why use cases are important, and why skipping them can cost you time and money. 
 
 
 ## Learning Goals
@@ -48,7 +48,7 @@ Goals: The learning goals specific for this week are the following:
 
 _You should read through the following material, but you don't have to remember it for the RAT._
 
-Not all use cases are at the same level. Alistair Cockburn proposes in hos book _Writing Effective Use Cases_ to sort them according to the levels inspired by a horizon, as shown in the table below. 
+Not all use cases are at the same level. Alistair Cockburn proposes in his book _Writing Effective Use Cases_ to sort them according to the levels inspired by a horizon, as shown in the table below. 
 
 <div>
 <table class="table">
@@ -99,11 +99,11 @@ Not all use cases are at the same level. Alistair Cockburn proposes in hos book 
 	</td>
 </tr>
 <tr style="background-color: #459EDC">
-	<td><img src="figures/use-cases/use-case-clamp.png" width="50%"></img></td>
-	<td><b>Clamp</b></td>
+	<td><img src="figures/use-cases/use-case-clam.png" width="50%"></img></td>
+	<td><b>Clam</b></td>
 	<td>
 		<ul>
-			<li>Clamps are so low-level that you should not even write them down as separate use cases, but integrate them into another, higher-level use case.</li>
+			<li>Clams are so low-level that you should not even write them down as separate use cases, but integrate them into another, higher-level use case.</li>
 			<li><b>Example: Enter Student Name</b></li>
 		</ul>
 		</td>
@@ -115,7 +115,7 @@ This hierarchy distinguished use cases at three levels:
 
 * In the middle, we have the level of **user goals**, represented by the **sea-level**. These are the use cases with the greatest interest for us and that we should spend most time with. They are at a medium level of detail compared to the other levels. Think of a function like _Register Student Information_ as part of a loan application system.
 * At the top, there are use cases that represent **summary goals**. They describe high-level goals and why the system exist, but are a bit abstract so that it may be difficult to be sure how they are implemented. On this summary goal level, we distinguish between the very high level **cloud**, of which  a system only should have very few. For the loan application system, _Offer Student Loans_ would be such a use case. One step further down we have **kites**, which describe use cases that are a bit more concrete than cloud-levels. An example is _Check Student Loan Credibility_. 
-* At the bottom, we have the level for **subfunctions**. Here, we can have useful use cases that we characterize as **fishes**. _Check Submitted Formular_ may be a function related to several goals in the system, and necessary, but is itself not a goal of a user. It's more a detailed subfunction. Below the fishes, there are even more low-level use cases, called **clamps**. They are so low-level that we shouldn't even write them down. An example would be _Enter Student Name_. Instead, these should be integrated into higher level use cases. (Sorry, clamps...)  
+* At the bottom, we have the level for **subfunctions**. Here, we can have useful use cases that we characterize as **fishes**. _Check Submitted Formular_ may be a function related to several goals in the system, and necessary, but is itself not a goal of a user. It's more a detailed subfunction. Below the fishes, there are even more low-level use cases, called **clams**. They are so low-level that we shouldn't even write them down. An example would be _Enter Student Name_. Instead, these should be integrated into higher level use cases. (Sorry, clams...)  
 
 
 

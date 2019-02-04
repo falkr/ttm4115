@@ -103,6 +103,18 @@ For your system, you also need to deliver the tabular specification of the use c
 * Finish the use case tables. Ideally, these will be close to the ones you submit into T1.
 
 
+# Plan T1
+
+At this point, you have all information and knowledge needed for the delivery of T1. 
+
+* Read through <a class="arrow" href="deliveries-t1.html">Delivery T1</a>
+  * Plan how you will complete the work.
+  * Ask any question on MS Teams, ideally in public.
+* Talk through the <a class="arrow" href="learning-grading.html">peer evaluation</a>.
+  * What do you think should count?
+
+
+
 # Checklist
 
 Since the use cases you develop are part of T1, there is no formal delivery for them. 

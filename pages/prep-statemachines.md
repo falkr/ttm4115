@@ -1,18 +1,19 @@
 # State Machines
 
-In the previous units, we learned how to capture and understand our user's requirements for a system, and structure what the system should provide to its users in the form of use cases. We have also learned how to use deployment diagrams to reveal already some details about the structure of the system. This week, we start with the specification of **how the system actually works.** This will be more technical and on a more detailed level as before. 
+In the previous units, we learned how to capture and understand our user's requirements for a system, and structure the functionality that the system should provide to its users in the form of use cases. We have also learned how to use deployment diagrams to reveal already some details about the structure of the system. This week, we start with the specification of **how the system actually works.** This will be more technical and on a more detailed level as before. 
 
 ## Learning Goals
 
 
 
 
-Goals: The learning goals specific for this week are the following:
+Goals: After this week, you will be able to:
 
 - Create syntactically correct state machines.
 - Interpret and explain detailed state machine behavior.
 - Recite the main features of state machines.
 
+With these basic skills you have every concept of state machines covered we need for the course. However, learning to design good state machines will require some more experience, which you will acquire over the following weeks.
 
 ## Hello, State Machines!
 
@@ -32,12 +33,7 @@ source: figures/statemachines/state-machines-tcp.gif
 caption: "The TCP protocol uses state machines to describe parts of its behavior."
 ---
 
-
-A bit of a problem with state machines is that developers often only understand they they should have used a state machine for a problem *after* it is too late, and they already spent much effort on trying to solve a task in other ways. Have a look at this blog post from developer Alan Skorkin, [Why Developers Never Use State Machines][skorkin]. 
-
-[skorkin]: https://www.skorks.com/2011/09/why-developers-never-use-state-machines/
-
-Another example is the construction of the kernel for GNU. There you have a situation where the behavior quickly became very complex. Have a look at the interview with Richard Stallman:  
+Another example is the construction of the kernel for GNU. The behavior quickly became very complex. Have a look at the interview with Richard Stallman (starting at 0:25:25):  
 
 ---
 type: youtube
@@ -46,7 +42,13 @@ start: 1525
 caption: "Interview with Richard Stallman, from  0:25:25 until 0:26:30, from the movie _Revolution OS_. You may watch the entire movie later." 
 ---
 
-When he says _"It took us years to get the thing to work."_, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control. There are problems that look simple but that can quickly grow very complex, and state machines offer a way to handle complexity that plays out very beneficial in such situations. With state machines, you can structure complex behavior such that:
+When he says _"It took us years to get the thing to work."_, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control. There are problems that look simple but that can quickly grow very complex, and state machines offer a way to handle complexity that plays out very beneficial in such situations. 
+
+A bit of a problem with state machines is that developers often only understand they they should have used a state machine for a problem *after* it is too late, and they already spent much effort on trying to solve a task in other ways. Have a look at this blog post from developer Alan Skorkin, [Why Developers Never Use State Machines][skorkin]. 
+
+[skorkin]: https://www.skorks.com/2011/09/why-developers-never-use-state-machines/
+
+With state machines, you can structure complex behavior such that:
 
 - It is easy to debug and understand precisely what happened.
 - Only one thing happens at a time.
@@ -93,7 +95,7 @@ type: figure
 source: figures/statemachines/traffic-light-3.jpg
 ---
 
-That's a pretty complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into _red_ first.
+That's a complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into _red_ first.
 
 
 # State Machine Diagrams
@@ -122,10 +124,10 @@ type: figure
 source: figures/statemachines/traffic-light-5.svg
 ---  
 
-The diagram describes exactly the same behavior. Both state symbols for the state `red` refer to the same state, so our traffic light still has the same number of states, just its layout changed. In this simple state machine this doesn't really matter, but this can help you to create better layouts once state machines grow in complexity.
+The diagram describes exactly the same behavior. Both state symbols for the state `red` refer to the same state, so our traffic light still has the same number of states, just its layout changed. In this simple state machine this doesn't really matter, but this can help you to create better layouts once state machines become larger.
 
 
-**State Names:** Selecting good names for states can help making state machine easier to understand, especially when the states map to phases of the thing we want to model, like _on_ and _off_ for a lamp, or _open_ and _close_ for a lock. However, sometimes it's not clear what a good name is. In such cases, I recommend to use state names like `s0`, `s1`,..., which can make life easier. You always have the possibility to attach a note to a state and explain what it means.
+**State Names:** Selecting good names for states can help making state machine easier to understand, especially when the states map to phases of the thing we want to model, like _on_ and _off_ for a lamp, or _open_ and _close_ for a lock. However, sometimes there is no obvious good name. In such cases, I recommend to use state names like `s0`, `s1`,..., which can make life easier. You always have the possibility to attach a note to a state and explain what it means.
 
 Pay attention to the state symbol. It's a rectangle with some rounded corners, nothing else!
 
@@ -138,15 +140,15 @@ source: figures/statemachines/state-shapes.svg
  
 ## Transitions
 
-The arrows between the states are called **transitions**. We have said above that the state machine is at any point in time in exactly one of its state. It is not in two or more of them at the same time, and it is never somewhere in between. Conceptually, this means that a state machine switches from one state to another one within no time at all,  meaning that **transitions take no time**. This sounds magical, but we will come back to this.
+The arrows between the states are called **transitions**. We have said above that the state machine is at any point in time in exactly one of its states. It is not in two or more of them at the same time, and it is never somewhere in between. Conceptually, this means that a state machine switches from one state to another **within no time at all**,  meaning that **transitions take no time**. This sounds magical, but we will come back to this.
 
 So far, we have not yet talked about _when_ a transition happens, this means, what **triggers** a transition. We have, for example, not described _when_ the traffic light switches from `red` to `red_yellow`. There are three types of events that can trigger transitions in a state machine:
 
 * The state machine is started, then its **transition from the initial state** is triggered. This happens when the component or code surrounding the machine is started and then starts up the machine, for instance when we boot our firmware and the software starts running.
 * The state machine observes the **expiration of a timer**. Timers are managed by the machine itself, and we will learn how timers can be started and stopped later. 
-* The state machine **receives a signal.** State machines can receive signals from other parts of the system, which can be code, drivers, interrupts or communication modules, or other state machines.
+* The state machine **receives a message.** State machines can receive messages from other parts of the system, which can be code, drivers, interrupts or communication modules, or other state machines.
 
-All transitions need to have exactly one trigger, because they would otherwise never be started at all. A trigger is declared using a label on the arrow, followed by a `/`. This means that you should have a trigger label at all transitions, with the only exception being transitions starting at initial states, because their trigger is implicitly the start of the entire machine.
+A transition must have exactly one trigger. Without one, it would never be started at all. For simplicity, we also don't allow more than one trigger. A trigger is declared using a label on the arrow, followed by a `/`. This means that you should have a trigger label at all transitions, with the only exception being transitions starting at initial states, because their trigger is implicitly the start of the entire machine.
 
 
 
@@ -160,7 +162,7 @@ type: figure
 source: figures/statemachines/tunnel.jpg
 ---
 
-From our experience with the more complex traffic light, this should be an easy state machine to write down. We have now added labels to some of the transitions. They describe that the state machine switches from state `left` to state `right` triggered by an event `t1`. This is a timer. It switches back with a timer `t2`. The detailed timer operations are not yet visible, we come later to that. In this blinking light we also show how to switch it off. This happens by an event called `off`, and it can happen in any of the two states. 
+From our experience with the more complex traffic light, this should be an easy state machine to write down. It has two states, `left`and `right`, corresponding to one of the lamps being switched on. We also added labels to some of the transitions. They describe that the state machine switches from state `left` to state `right` triggered by an event `t1`. This is a timer. It switches back with a timer `t2`. The detailed timer operations are not yet visible, we come later to that. In this blinking light we also show how to switch it off. This happens by an event called `off`, and it can happen in any of the two states. 
 
 ---
 type: figure
@@ -222,9 +224,9 @@ caption: "Several entry and exit actions are possible."
 
 ## Timers
 
-The expiration of a timer can trigger a transition. By convention, we name timers with a prefix `t`, like for example `t0`. To declare that a transition is triggered by a timer, we simply write the name of the timer in the transition label. 
+The expiration of a timer can trigger a transition. By convention, we name timers with a prefix `t`, like for example `t0`. To declare that a transition is triggered by a timer, we simply write the name of the timer in the beginning of the transition label. 
 
-State machines manage timers on their own, wich also means that timers can only be started as part of an action within the same state machine. As we anticipate already our implementation inn Python, we use the following syntax for controlling timers:
+State machines manage timers on their own, wich also means that timers can only be started as part of an action within the same state machine. As we anticipate already our implementation in Python, we use the following syntax for controlling timers:
 
 * `start(t1, 1000)` starts a timer with name `t1` that will expire after 1000 milliseconds. If we invoke this action again while the timer is active and has not yet expired yet, the countdown will again start from the beginning, i.e., we expect the timeout 1000 milliseconds from the last call of `start(t1, 1000)`.
 * `stop(t1)` stops a timer, so that a timeout will not happen in the future. In case this action is called but `t1` already expired or was never started before, nothing happens.
@@ -247,7 +249,7 @@ source: figures/statemachines/spaghetti-2.svg
 caption: "Functionally identical timer, but with entry and exit actions on the state."
 ---  
 
-**Exercise:** Simulate both of these state machines in you head or on paper by going through all the states, starting with the initial state. Verify that these to versions really are functionally equivalent.
+**Exercise:** Simulate both of these state machines in you head or on paper by going through all the states, starting with the initial state. Verify that these two versions really are functionally equivalent.
 
 ## Internal Transitions
 
@@ -259,7 +261,7 @@ source: figures/statemachines/internal-transition.svg
 caption: "Declaration of an internal transition, triggered by event A."
 ---
 
-The state _s1_ above declares an internal transition `A/a_2()`. It is triggered when the event `A` is happening. When that happens, action `a_2()` is executed. Because it is an internal transition, the entry and exit actions are **not** executed. Also, because the state stays the same, we can react many times to the event `A`. Whenever it occurs whiole we are in state _s1_, action `a_2()` will be executed.
+The state _s1_ above declares an internal transition `A/a_2()`. It is triggered when the event `A` is happening. When that happens, action `a_2()` is executed. Because it is an internal transition, the entry and exit actions are **not** executed. Also, because the state stays the same, we can react many times to the event `A`. Whenever it occurs and we are in state _s1_, action `a_2()` will be executed.
 
 **Note:** When you look at the entry and exit actions, you see that they almost look the same as an internal transition. And the notation is quite consistent, because the prefix _entry_ and _exit_ before the `/` really do describe when the action behind the dash is executed. But these are not transitions, just declarations of entry and exit actions.
 
@@ -289,6 +291,7 @@ Now you have seen many kinds of transitions, and we can summarize all the differ
 * A **self-transition** is simply a transition that starts and ends in the same state.
 * An **internal transition** is a transition that starts and ends in the same state, but which does not invoke any of the state's entry and exit actions. 
 * An **external transition** is the type of transition that is _not an internal transition_. That means, a "normal" transition form one state to another, a self-transition, or an initial transition.
+ 
 
 ### Transition Labels
 
@@ -302,6 +305,8 @@ We have seen now all the types of elements that we can add into the label of a t
 
 ## States, Revisited
 
+Let's also have a look at all the different states we have seen until now, and repeat some properties:
+
 * Initial states and choice states are called **pseudo states**, because they are not really states in the sense that we wait in them. They are transient states, meaning that the state machine is only going through them, but never waits in them. For that reason, transition originating at initial or choice states do not declare a trigger.
 * At any time, a state machine is in exactly one of its states. We assume that transitions execute in no time, so we never find a state machine like "waiting" within a transition. Waiting only happens within states. 
 * State symbols with the same name refer to the same state. 
@@ -311,7 +316,7 @@ We have seen now all the types of elements that we can add into the label of a t
 
 
 State machines can send and receive messages. You may think that this is useful for implementing communication, like via TCP/IP or other protocols. 
-But the motivation is actually different. By sending messages, we can couple state machines with each other, and handle certain complex behavior easier. We can for example solve a problem with two state machines that execute parallel to each other, and just synchronize with each other every now and then via passing messages in between each other. 
+But the motivation is actually different. By sending messages, we can couple state machines with each other, and handle certain complex behavior easier. We can for example solve a problem with two state machines that execute parallel to each other, and just synchronize with each other every now and then via passing messages between each other. 
 
 To send a message, we use the action `send('A', 'stm1')`, where the first argument is the name of the message, and the second the name of the state machine we want to send the message to. 
 
@@ -331,12 +336,12 @@ Now we _could_ build a single state machine for it, which handles the 10 minutes
 ## Traces
 
 Once you get more experienced with state machines, you will be able to simulate them in your head, just by figuring out the sequences in which the different events may happen. 
-Since at any time, more than one event could happen, the same state machine could create many different traces. When you will design state machines, it means to get control over all of these traces, so that in the end, any possible behavior (that means, any possible trace of events) is okay for the system. 
+Since at any time, more than one event could happen, the same state machine could create many different sequences of events, also called **traces**. When you will design state machines, it means to get control over all of these traces, so that in the end, any possible behavior (that means, any possible trace of events) is okay for the system. State machines hence describe **complete behavior**. (We will later see how another diagram type, interactions, describe usually only partial behavior.) For state machines, this means that what they don't describe, they can't do. 
 
-Lets just write down one trace of event that can happen when we activate the spaghetti timer. We just write down the events regarding the main machine **Blinking 10 min Timer**, and do so by listing the sequence of all triggers and actions as they happen:
+By looking at a state machine, we can write down possible sequences of events. Lets just write down **one** trace of events that can happen when we activate the spaghetti timer. We just write down the events regarding the main machine **Blinking 10 min Timer**, and do so by listing the sequence of all triggers and actions as they happen:
 
 - initial transition
-- signal start received
+- message start received
 - entry action `start(t1, 1000)` in state `active`
 - entry action `send(on, blink)` in state `active`
 - timer `t1` expires
@@ -346,7 +351,9 @@ Lets just write down one trace of event that can happen when we activate the spa
 - timer `t2` expires
 - exit action `stop_beep()` in state `beeping`
 
-**Exercise:** Put your finger on the state machine **Blinking 10 min Timer** and follow through the trace above. Note that the event that timer `t1` expires happens _before_ the exit action `send(off, blink)` in state `active` happens. This is because the timer expiration of `t1` _causes_ this transition and action. (Some students find that not intuitive, since the timer `t1` is graphically outside of the state, and somehow looks graphically to happen later in time.)
+Here there is actually only a single behavior, because we go through the states based on the timeouts of the two timers `t1`and `t2`. A more realistic timers would also describe behavior where we could abort it, which would be another trace. 
+
+**Exercise:** Put your finger on the state machine **Blinking 10 min Timer** and follow through the trace above. Note that the event that timer `t1` expires happens _before_ the exit action `send(off, blink)` in state `active` happens. This is because the timer expiration of `t1` _causes_ this transition and action. (Some students find that not intuitive, since the timer `t1` is graphically outside of the state, and somehow looks graphically to happen "later" in time.)
 
 
 
@@ -418,7 +425,7 @@ caption: "An imaginary machine that illustrates how a state machine works."
 ---
 
 
-The state machine has an input queue for signals sent by other parts of the system. These may be other state machines within the same computing node, state machines from other nodes, or other parts of programs that send messages.
+The state machine has an input queue for messages sent by other parts of the system. These may be other state machines within the same computing node, state machines from other nodes, or other parts of programs that send messages.
 
 All messages arrive and are sorted in a first-in, first-out (or short FIFO) order. 
 
@@ -427,7 +434,7 @@ The state machine also manages a set of timers. The state machine starts these t
 The state machine interprets the state machine diagram. The diagram can be represented as a state-transition table, as we have seen above. In this table is written down in which current state of the state machine an event has which effect. The effect means the behaviour the state machine is executing. This includes to start and stop timers, run operations, and moving the state machine into its next state. The state machine can also keep track of other data by using variables. This is why this type of state machine is also called *extended* finite state machine.
 
 
-## Queue Semantics
+### Queue Semantics
 
 To understand how a state machine executes, it is important to understand how the input queue works. 
 
@@ -444,7 +451,8 @@ type: figure
 source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.12-1024x365.png
 ---
 
-In state *s1* above, for instance, *b* is not consumed. (The state machine is waiting for message *a*.) It is therefore discarded as soon as it arrives during state *s1*. Note that it is discarded even if it is consumed by the later state *s2*, which is not the current state.
+Look at the situation above. Assume that the state machine is currently in state `s1`.
+When message *b* arrives, it is not consumed, since state `s1` only has a transition with a trigger *a*, so the state machine only waits for *a*. Message *b* is therefore discarded as soon as it arrives during state *s1*. Note that it is discarded even if it is consumed by the later state *s2*, which is not the current state.
 
 
 <!--
@@ -452,7 +460,8 @@ In state *s1* above, for instance, *b* is not consumed. (The state machine is wa
 type: figure
 source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.18.png
 ---
-**Deferring events:** A state can *defer* some events. This means that the deferred events are ignored in this state. When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred. Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it). Deferred events are written within the state symbol following the keyword */defer*.
+**Deferring events:** A state can *defer* some events. This means that the deferred events are ignored in this state. When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred. 
+Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it). Deferred events are written within the state symbol following the keyword */defer*.
 -->
 
 <!--
@@ -464,5 +473,7 @@ Rule: make sure that all transitions are triggered by something-
 -->
 
 
+# That'a all.
 
+That was a lot of details about state machines, but that's all details we need. The coming weeks you will gain more experience in the actual engineering task, that is, decomposing a problem and designing a good state machine for it. That won't be easy, but its a rewarding and useful task that is also fun.
 

@@ -241,8 +241,6 @@ div.goals ul li {
 }
 
 div.goals ul li:before {
-  xcontent: '\f11e';
-  xcontent: '\f058';
   content: '\f0eb';
   font-family: 'Font Awesome 5 Free';
   font-size:20;
@@ -250,6 +248,34 @@ div.goals ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
+
+
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f058';
+  font-family: 'Font Awesome 5 Free';
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+
+
 
 a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
@@ -294,6 +320,23 @@ a.arrow:hover {
     text-decoration: none;
     background-color: #DDEAF4;
 }
+
+
+a.help:before {
+  content: '\f4cd';
+  font-family: 'Font Awesome 5 Free';
+  font-size:14;
+  background-color: #1481b8;
+  color: #ffffff;
+  margin: 2px
+}
+
+a.help {
+  background-color: #1481b8;
+  border-color: #1481b8;
+}
+
+
 
 code {
   font-size: 100%

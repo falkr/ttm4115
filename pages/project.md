@@ -16,3 +16,25 @@ Here are the videos from the previous years:
 
 
 # Hardware Box
+
+---
+type: figure
+source: figures/iotbox.jpg
+---
+
+Inside the box, you will find:
+
+- 2 Raspberry Pi 3
+- 2 2.5 A power supply
+- 2 16 GB micro SDHC w/Raspbian
+- 1 Solderless breadboard
+- 1 Adafruit T-Cobbler
+- 1 Sense Hat extension board
+- 1 Berryclip extension board
+- 1 PIR sensor
+- 1 Temperature sensor
+- 1 Resistor 4.7k
+- 1 USB webcam
+- 1 Speaker, with a mini USB cable and a 3.5 mm jack cable 1 HDMI cable
+- 10-15 Wires
+- 1 Padlock

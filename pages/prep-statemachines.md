@@ -77,7 +77,7 @@ type: figure
 source: figures/statemachines/traffic-light-1.jpg
 ---
 
-That already helps --- the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, we it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively _red_, _red-yellow_, _green_ and _yellow_. (The _red-yellow_ is common in many, but not all countries.)
+That already helps --- the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively _red_, _red-yellow_, _green_ and _yellow_. (The _red-yellow_ is common in many, but not all countries.)
 
 
 The photos already help explaining the traffic light. But imagine you want to explain on paper on which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:
@@ -201,6 +201,8 @@ source: figures/statemachines/tunnel-3.svg
 Here we have drawn the state symbol with a compartment and add entry and exit actions to it. Actions that are preceded with the prefix `entry/` are executed when the state machine enters the state, and actions preceded with the prefix `exit/` run when the machine exits the state. In the example this cleans up the entire diagram, since we also can remove the actions from the initial transition and the transitions that target the final states. When we before had to add actions to all transitions entering or exiting a state, it is now enough to only declare them once within the state.
 
 You can list as many entry and exit actions for a state as you need, just add a new line with the prefix `entry/` or `exit/` for each of them. And of course, it looks nice when you list all entry actions above the exit actions. 
+We also assume that they are executed in the way they are sorted, that means when we enter a state then the entry actions are executed in the order they are written, and the same for the exit actions when we exit the state.
+
 
 
 
@@ -212,11 +214,11 @@ caption: "Several entry and exit actions are possible."
 
 
 
-**Mind the Dash!** The dash on the transition labels separates the triggers from the actions. 
+**Mind the Slash!** The slash on the transition labels separates the triggers from the actions. 
 
 * For initial transitions (the ones originating at an initial state) that do not have an action, the label is empty. 
-* For initial transitions with actions, we add the dash before the actions: `/a1(); a2()`
-* For actions that do not start at the initial state, they need to declare exactly one trigger, followed by the dash. Optionally, they can declare actions as they need. For instance `t1/` or `t1/a1(); a2()`.
+* For initial transitions with actions, we add the slash before the actions: `/a1(); a2()`
+* For actions that do not start at the initial state, they need to declare exactly one trigger, followed by the slash. Optionally, they can declare actions as they need. For instance `t1/` or `t1/a1(); a2()`.
  
 
 
@@ -352,6 +354,7 @@ By looking at a state machine, we can write down possible sequences of events. L
 - exit action `stop_beep()` in state `beeping`
 
 Here there is actually only a single behavior, because we go through the states based on the timeouts of the two timers `t1`and `t2`. A more realistic timers would also describe behavior where we could abort it, which would be another trace. 
+
 
 **Exercise:** Put your finger on the state machine **Blinking 10 min Timer** and follow through the trace above. Note that the event that timer `t1` expires happens _before_ the exit action `send(off, blink)` in state `active` happens. This is because the timer expiration of `t1` _causes_ this transition and action. (Some students find that not intuitive, since the timer `t1` is graphically outside of the state, and somehow looks graphically to happen "later" in time.)
 

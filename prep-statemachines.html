@@ -276,7 +276,7 @@
 <img src="figures/statemachines/tunnel-3.svg" width="100%"/>
 </div>
 <p>Here we have drawn the state symbol with a compartment and add entry and exit actions to it. Actions that are preceded with the prefix <code>entry/</code> are executed when the state machine enters the state, and actions preceded with the prefix <code>exit/</code> run when the machine exits the state. In the example this cleans up the entire diagram, since we also can remove the actions from the initial transition and the transitions that target the final states. When we before had to add actions to all transitions entering or exiting a state, it is now enough to only declare them once within the state.</p>
-<p>You can list as many entry and exit actions for a state as you need, just add a new line with the prefix <code>entry/</code> or <code>exit/</code> for each of them. And of course, it looks nice when you list all entry actions above the exit actions.</p>
+<p>You can list as many entry and exit actions for a state as you need, just add a new line with the prefix <code>entry/</code> or <code>exit/</code> for each of them. And of course, it looks nice when you list all entry actions above the exit actions. We also assume that they are executed in the way they are sorted, that means when we enter a state then the entry actions are executed in the order they are written, and the same for the exit actions when we exit the state.</p>
 
 <div class="figure">
 <img src="figures/statemachines/many-actions.svg" alt="Several entry and exit actions are possible." width="100%"/>
@@ -395,6 +395,7 @@
 <li>exit action <code>stop_beep()</code> in state <code>beeping</code></li>
 </ul>
 <p>Here there is actually only a single behavior, because we go through the states based on the timeouts of the two timers <code>t1</code>and <code>t2</code>. A more realistic timers would also describe behavior where we could abort it, which would be another trace.</p>
+
 <p><strong>Exercise:</strong> Put your finger on the state machine <strong>Blinking 10 min Timer</strong> and follow through the trace above. Note that the event that timer <code>t1</code> expires happens <em>before</em> the exit action <code>send(off, blink)</code> in state <code>active</code> happens. This is because the timer expiration of <code>t1</code> <em>causes</em> this transition and action. (Some students find that not intuitive, since the timer <code>t1</code> is graphically outside of the state, and somehow looks graphically to happen “later” in time.)</p>
 
 <h2 id="state-transition-tables">State-Transition Tables</h2>

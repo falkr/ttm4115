@@ -19,7 +19,9 @@ the concurrency part is considered the most difficult one, and most developers h
 Just look at this:
 
 
-Aside: The reason for looking at state machines is simple: Concurrency in programming languages is simple, even for experienced developers. 
+
+
+Aside: The reason for looking at state machines is simple: Concurrency in programming languages is hard, even for experienced developers. 
 
 
 <table class="table">
@@ -257,6 +259,7 @@ We also need our own widgets in the notebooks, so run the following two commands
 * Start your Jupyter Notebook server
 * Open the first notebook, stored in the file **State Machines in Python - Part 1.ipynb**
 * Complete all the material in the notebook and come back here!
+* You can also [browse the notebook on Github](https://github.com/falkr/stmpy-notebooks/blob/master/State%20Machines%20in%20Python%20-%20Part%201.ipynb) (but not execute it).
 
 In this notebook you learn all the basics of state machines in STMPY. 
 

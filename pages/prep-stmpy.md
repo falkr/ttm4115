@@ -8,14 +8,13 @@ In this unit, you will learn how to implement state machines in Python. Achievin
 
 ## Benefits of State Machines in Code
 
-You have read before that developers sometimes realize that they *should* have used a state machine only after it is already too late. 
 In general, state machines are useful also at the code level when there is a lot of concurrency going on, 
 and a component needs to order a set of events that can come more or less in any order. 
-Remember Richard Stallman when he said "if this message comes before that message... it took us years to get it right." 
 You may think that there is support for threads in most programming languages, and that this is enough to handle concurrency. 
 However, sometimes also this support is very specific to certain problems and not simple to learn. 
 Usually when learning Java, which has a really extensive API for concurrency, 
 the concurrency part is considered the most difficult one, and most developers have to consider a book when doing more elaborate tasks. 
+Python has even less mature for concurrency and synchronization, and also this is hard to get right.
 Just look at this:
 
 
@@ -87,7 +86,7 @@ and because you can look at a trace of events that explains how they got there.
 It turns out, that state machines are also relatively easy to implement, 
 and we can run many different state machines within the same thread. 
 This means we can do a *lot* of concurrent things in just own thread, 
-and just one busy while loop, which can make our programs quite efficient.
+and **just one busy while loop**, which can make our programs quite efficient.
 
 But how can a state machine do it? With state machines, we have a notation that motivates us to define behavior in short pieces, which are the transitions. 
 Think of them as short little pieces of thread, as illustrated in the figure below. 
@@ -99,103 +98,27 @@ The states in between are just the ordering criteria between them.
 ---
 type: figure
 source: figures/statemachines/transition-sequencing.png
-caption: "A state machine takes many parallel transitions and sorts their execution, so that only one of them is executed at the same time."
+caption: "A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time."
 ---
 
+What you also gain immediately is the ability for parallel computing. State machines can be grouped and execute on a single process or thread, then occupying different CPUs. This is very helpful when we have a lot of tasks that also take some time, to utilize all computing resources we may have. 
 
 
 # From Diagram to Code
 
-So now that we motivated why we want to implement our state machines, how should we do this? 
-How should we get from the state machine diagram to running code? 
+There are many different possibilities when we want to come from a diagram to code. For this course, we have selected the following strategy:
 
-You have previously already read about *Degrees of UML*. Remember, there were three ways of looking at modelling:
-
-- **Models as a Sketch:** The models only serve the purpose to think and illustrate selected issues og of a system and are often only temporary, like on a piece of paper or a whiteboard. 
-- **Models as a Blueprint:** The models provide a detailed specification of the system, and are kept alongside the system, as part of the documentation. 
-- **Models as a Programming Language:** The models are so detailed that a compiler (in this case often called *code generator*) can take the model and derive the system code from it.
-
-
-These different views on modeling have both benefits and drawbacks:
-
-<table class="table">
-<thead>
-<tr>
-<th>Approach</th>
-<th>Benefit</th>
-<th>Drawback</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sketch</td>
-<td>
-<ul>
-<li>Quick and easy, requires no formal process or tools.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Models are often thrown away, and insights gained by models are lost.</li>
-<li>Not automatically synced with code, errors can be introduced when coding.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Blueprint</td>
-<td>
-<ul>
-<li>Quick and easy, requires no formal process or tools.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Models are often thrown away, and insights gained by models are lost.</li>
-<li>Not automatically synced with code, errors can be introduced when coding.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Programming Language</td>
-<td>
-<ul>
-<li>Model and code are in sync automatically through code generation.</li>
-<li>No introduction of errors into code (when code generator is mature).</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Depends on a tool.</li>
-<li>Model must be very expressive.</li>
-</ul>
-</td>
-</tr>
-
-</tbody>
-</table>
+* We define a Python package called **STMPY** that supports the creation of state machines.
+* STMPY provides the classes **Machine** and **Driver**, which execute state machine behavior.
+* States and transitions are defined using Python dicts together with code.
+* The dicts for state and transitions correspond to diagrams and are easy to create, but need manual work.
+* STMPY state machines can be combined with other Python code. Actions called from the state machine can execute other Python code, and Python programs can send messages into STMPY, so that they are received by state machines as triggers.
 
 
-To create code, we can in general distinguish between three techniques:
+Alternatives would be to generate code automatically from diagrams, but this requires a good state machine editor and very formal syntax for it. Yet another possibility would be to feed the state machine diagram directly to an interpreter that then executes it. But again, this would require a very detailed syntax for actions in the state machine. Instead, with STMPY, we have the flexibility to write state machines how we want, and then use all of Python, just with a little manual effort to code the state machines as Python data structures (dicts) and some extra glue code.
 
-* **Manual Coding:** All code is hand-written. 
-* **Framework and Support System:** Code is hand-written, but it makes use of libraries and a framework for support. 
-* **Code Generation:** A code generator is a program that works like a compiler. Instead of source code, it takes a model as input and produces source code, for instance Python. It may use a framework to make the code generation easier, but this does not affect the fact that the code is generated completely from the model.
+Despite the manual step with writing the code, our solution still has good **traceability**. This means it is be relatively easy to see how model (the state machine) and the code (in Python) correspond to each other. We can **trace back** the code from the model, and vice-versa, look at the code and trace back where in the model it is specified.
 
-For the programming language approach, we need the code generation approach. 
-For the sketch and the blueprint approach, we can either use manual coding or chose coding supported by a framework. In the following, we want to use a library as a support framework to help us implementing the code for state machines. This is useful for a "Sketch" or a "Blueprint" approach to modeling. It will give us the flexibility to use all functionalities of Python, but use the benefits of state machines for synchronizing concurrent behavior.
-
-
-
-## The Idea
-
-In the following, we want to build a support system to implement state machines in Python. Here are some elements that motivate the solution:
-
-- The idea is to create a state machine in graphics, and then manually code it, supported by a library.
-- Let's provide a library in Python that takes care of many technicalities around state machines. 
-- Let's declare states and transitions as Python data structures, so that they can be programmed quickly and also easily changed. We can reduce the amount of code to be written.
-- Let's keep a very strong connection to Python and how things are done there. It should be easy to combine the code for state machines with any other code in Python.
-- Because we have some support library, coding is much easier than coding the state machine entirely manual. This means our approach is more automized than the "Model as Sketch" approach, but less dependent on a specific tools like with the "Model as Programming Language" approach.
-- The library has an API, so that there are indirectly some rules how state machines are coded. This makes it easier to understand how diagram and code belong together. This property is also called *traceability*. 
 
 
 ## State Machine Execution
@@ -209,15 +132,16 @@ caption: "The original sketch from a whiteboard when planning the first release 
 ---
 
 
-* A state machine diagram is implemented by an instance of Python class **Machine** (in green). It takes care of the sequence in which transitions are executed, which states there are, and which (Python) methods are called by the actions in the state machine.
+* A state machine diagram is implemented by an instance of Python class **Machine** (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.
+* A driver (in blue) is executing several machines. **One driver keeps track of several machines.** It has **one event queue** that collects all the events (signals and timer expirations) for its state machines. 
 
-* A driver (in blue) is executing several machines. One driver keeps track of several machines. It has one event queue that collects all the events (signals and timer expirations) for its state machines. 
+* One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.
 
-* A driver also has a single while loop, running in a single thread. From this while loop, a driver executes all the state machines assigned to it, one at a time.
-
-* A driver also manages all timers for it state machines. 
+* A driver also manages all timers for all of its state machines. 
 
 * The red arrow show that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver. 
+
+* The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines, but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mappting between driver and machine more flexibly.
 
 
 We will go through machines and drivers and their Python API in the following notebooks. 
@@ -226,17 +150,9 @@ We will go through machines and drivers and their Python API in the following no
 # Python Notebooks
 
 
-Install Python Notebooks on your computer, following <a href="https://www.iik.ntnu.no/ttm4115/tools/jupyter/">these instructions</a>. In case you have trouble, find help on Piazza!
-
-
-
-Visit the Github repository [https://github.com/falkr/stmpy-notebooks](https://github.com/falkr/stmpy-notebooks) and download it. 
-
-You can either pull it via Git, or download directly the contents as a ZIP file, with this link:
-
-[https://github.com/falkr/stmpy-notebooks/archive/master.zip](https://github.com/falkr/stmpy-notebooks/archive/master.zip)
-
-Again, ask on Piazza if this is not working for you. 
+* Install Jupyter Notebooks on your computer, following [these instructions](tools-notebooks.html). 
+* Visit the Github repository [https://github.com/falkr/stmpy-notebooks](https://github.com/falkr/stmpy-notebooks) and download it. 
+  * You can either pull it via Git, or download directly the contents as a ZIP file, [using this link](https://github.com/falkr/stmpy-notebooks/archive/master.zip).
 
 
 ## Install Python Packages

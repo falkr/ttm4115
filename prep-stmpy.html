@@ -104,6 +104,7 @@
       <a class="dropdown-item" href="learning-reflection.html">Reflection</a>
       <a class="dropdown-item" href="feedback.html">Feedback</a>
       <a class="dropdown-item" href="learning-grading.html">Grading</a>
+      <a class="dropdown-item" href="learning-areas.html">Working Areas</a>
       <!--<a class="dropdown-item" href="learning-expectations.html">Expectations</a>-->
     </div>
   </li>
@@ -124,8 +125,165 @@
 
 
 <div class="page">
+    </section>
     <section class="content">
-<mark>This site is under construction.</mark>
+<h1 id="state-machines-in-python">State Machines in Python</h1>
+<p>In this unit, you will learn how to implement state machines in Python. Achieving this is valuable for several reasons:</p>
+<ul>
+<li>You will be able to deepen your understanding about state machines in general.</li>
+<li>You will be able to solve arbitarily complex synchronization tasks in Python.</li>
+<li>You will have a framework for the implementation during the semester project.</li>
+</ul>
+<h2 id="benefits-of-state-machines-in-code">Benefits of State Machines in Code</h2>
+<p>In general, state machines are useful also at the code level when there is a lot of concurrency going on, and a component needs to order a set of events that can come more or less in any order. You may think that there is support for threads in most programming languages, and that this is enough to handle concurrency. However, sometimes also this support is very specific to certain problems and not simple to learn. Usually when learning Java, which has a really extensive API for concurrency, the concurrency part is considered the most difficult one, and most developers have to consider a book when doing more elaborate tasks. Python has even less mature for concurrency and synchronization, and also this is hard to get right. Just look at this:</p>
+
+<table class="table">
+<tr>
+
+<td>
+Just two parallel threads.
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-1.png" alt="" width="100" class="alignnone size-large wp-image-467" />
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-1-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
+</td>
+
+</tr><tr>
+
+<td>
+Just two parallel threads, with one synchronization point.
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-2.png" alt="" width="100" class="alignnone size-large wp-image-467" />
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-2-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
+</td>
+</tr><tr>
+
+<td>
+Three parallel threads, with a few synchronization points.
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-3.png" alt="" width="100" class="alignnone size-large wp-image-467" />
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-3-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
+</td>
+</tr><tr>
+<td>
+Four f-ing threads!
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-4.png" alt="" width="100" class="alignnone size-large wp-image-467" />
+</td>
+<td>
+<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-4.png" alt="" width="250" class="alignnone size-large wp-image-467" />
+</td>
+
+</tr>
+</table>
+
+Many programmers cannot even handle very simple threading problems correctly. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A programmer had a problem. He thought to himself, &quot;I know, I&#39;ll solve it with threads!&quot;. has Now problems. two he</p>&mdash; Davidlohr Bueso (@davidlohr) <a href="https://twitter.com/davidlohr/status/288786300067270656?ref_src=twsrc%5Etfw">January 8, 2013</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
+<p>With state machines, we have a relatively simple model that scales nicely with various challenges in concurrency. This does not make concurrency problems vanish, but you have a good tool to solve challenges. State machines are relatively easy to debug, since you can check in which current state they are, and because you can look at a trace of events that explains how they got there.</p>
+<p>It turns out, that state machines are also relatively easy to implement, and we can run many different state machines within the same thread. This means we can do a <em>lot</em> of concurrent things in just own thread, and <strong>just one busy while loop</strong>, which can make our programs quite efficient.</p>
+<p>But how can a state machine do it? With state machines, we have a notation that motivates us to define behavior in short pieces, which are the transitions. Think of them as short little pieces of thread, as illustrated in the figure below. Threads of different color belong to different tasks. But because these tasks are executed concurrently, the state machine sorts them and executes one of them at a time. The states in between are just the ordering criteria between them. (If this analogy is not <em>entirely</em> clear to you now, don’t worry. You will understand more once we implement state machines.)</p>
+
+<div class="figure">
+<img src="figures/statemachines/transition-sequencing.png" alt="A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time." width="100%"/>
+<span name="figures/statemachines/transition-sequencing.png">&nbsp;</span>
+<aside name="figures/statemachines/transition-sequencing.png"><p><p>A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time.</p>
+</p></aside>
+</div>
+<p>What you also gain immediately is the ability for parallel computing. State machines can be grouped and execute on a single process or thread, then occupying different CPUs. This is very helpful when we have a lot of tasks that also take some time, to utilize all computing resources we may have.</p>
+
+    </section>
+    <section class="content">
+<h1 id="from-diagram-to-code">From Diagram to Code</h1>
+<p>There are many different possibilities when we want to come from a diagram to code. For this course, we have selected the following strategy:</p>
+<ul>
+<li>We define a Python package called <strong>STMPY</strong> that supports the creation of state machines.</li>
+<li>STMPY provides the classes <strong>Machine</strong> and <strong>Driver</strong>, which execute state machine behavior.</li>
+<li>States and transitions are defined using Python dicts together with code.</li>
+<li>The dicts for state and transitions correspond to diagrams and are easy to create, but need manual work.</li>
+<li>STMPY state machines can be combined with other Python code. Actions called from the state machine can execute other Python code, and Python programs can send messages into STMPY, so that they are received by state machines as triggers.</li>
+</ul>
+
+<p>Alternatives would be to generate code automatically from diagrams, but this requires a good state machine editor and very formal syntax for it. Yet another possibility would be to feed the state machine diagram directly to an interpreter that then executes it. But again, this would require a very detailed syntax for actions in the state machine. Instead, with STMPY, we have the flexibility to write state machines how we want, and then use all of Python, just with a little manual effort to code the state machines as Python data structures (dicts) and some extra glue code.</p>
+<p>Despite the manual step with writing the code, our solution still has good <strong>traceability</strong>. This means it is be relatively easy to see how model (the state machine) and the code (in Python) correspond to each other. We can <strong>trace back</strong> the code from the model, and vice-versa, look at the code and trace back where in the model it is specified.</p>
+
+<h2 id="state-machine-execution">State Machine Execution</h2>
+<p>As a first overview, have a look at the following whiteboard sketch:</p>
+
+<div class="figure">
+<img src="figures/statemachines/stmpy-sketch.jpg" alt="The original sketch from a whiteboard when planning the first release for STMPY." width="100%"/>
+<span name="figures/statemachines/stmpy-sketch.jpg">&nbsp;</span>
+<aside name="figures/statemachines/stmpy-sketch.jpg"><p><p>The original sketch from a whiteboard when planning the first release for STMPY.</p>
+</p></aside>
+</div>
+<ul>
+<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
+<li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
+<li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
+<li><p>A driver also manages all timers for all of its state machines.</p></li>
+<li><p>The red arrow show that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver.</p></li>
+<li><p>The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines, but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mappting between driver and machine more flexibly.</p></li>
+</ul>
+
+<p>We will go through machines and drivers and their Python API in the following notebooks.</p>
+
+    </section>
+    <section class="content">
+<h1 id="python-notebooks">Python Notebooks</h1>
+
+<ul>
+<li>Install Jupyter Notebooks on your computer, following <a href="tools-notebooks.html">these instructions</a>.</li>
+<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks" class="uri">https://github.com/falkr/stmpy-notebooks</a> and download it.
+<ul>
+<li>You can either pull it via Git, or download directly the contents as a ZIP file, <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">using this link</a>.</li>
+</ul></li>
+</ul>
+
+<h2 id="install-python-packages">Install Python Packages</h2>
+
+<p>First, install state machines for Python, stmpy:</p>
+<pre><code>pip install --upgrade stmpy</code></pre>
+
+<p>We also need our own widgets in the notebooks, so run the following two commands:</p>
+<pre><code>pip install ipywidgets
+jupyter nbextension enable --py widgetsnbextension</code></pre>
+
+<h2 id="state-machines-in-python---part-1">State Machines in Python - Part 1</h2>
+<ul>
+<li>Start your Jupyter Notebook server</li>
+<li>Open the first notebook, stored in the file <strong>State Machines in Python - Part 1.ipynb</strong></li>
+<li>Complete all the material in the notebook and come back here!</li>
+<li>You can also <a href="https://github.com/falkr/stmpy-notebooks/blob/master/State%20Machines%20in%20Python%20-%20Part%201.ipynb">browse the notebook on Github</a> (but not execute it).</li>
+</ul>
+<p>In this notebook you learn all the basics of state machines in STMPY.</p>
+<h2 id="state-machines-in-python---part-2">State Machines in Python - Part 2</h2>
+<ul>
+<li>Work through the content of the notebook <strong>State Machines in Python - Part 2.ipynb</strong></li>
+</ul>
+<p>You learn how we build very simple user interfaces in notebooks. We also use signals to send data from the user interface into the state machine.</p>
+<h2 id="state-machines-in-python---part-3">State Machines in Python - Part 3</h2>
+<ul>
+<li>Work through the content of the notebook <strong>State Machines in Python - Part 3.ipynb</strong></li>
+</ul>
+<p>You learn how you can also create states that have <strong>entry</strong> and <strong>exit</strong> actions.</p>
+
+<h2 id="state-machines-in-python---part-4">State Machines in Python - Part 4</h2>
+<ul>
+<li>Work through the content of the notebook <strong>State Machines in Python - Part 4.ipynb</strong></li>
+</ul>
+<p>You learn how to support decisions in state machines using <strong>compound transitions.</strong></p>
+
     </section>
 </div>
 

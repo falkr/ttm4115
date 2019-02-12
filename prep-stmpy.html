@@ -131,7 +131,7 @@
 <p>In this unit, you will learn how to implement state machines in Python. Achieving this is valuable for several reasons:</p>
 <ul>
 <li>You will be able to deepen your understanding about state machines in general.</li>
-<li>You will be able to solve arbitarily complex synchronization tasks in Python.</li>
+<li>You will be able to solve arbitrarily complex synchronization tasks in Python.</li>
 <li>You will have a framework for the implementation during the semester project.</li>
 </ul>
 <h2 id="benefits-of-state-machines-in-code">Benefits of State Machines in Code</h2>
@@ -211,7 +211,7 @@ Many programmers cannot even handle very simple threading problems correctly.
 <li>We define a Python package called <strong>STMPY</strong> that supports the creation of state machines.</li>
 <li>STMPY provides the classes <strong>Machine</strong> and <strong>Driver</strong>, which execute state machine behavior.</li>
 <li>States and transitions are defined using Python dicts together with code.</li>
-<li>The dicts for state and transitions correspond to diagrams and are easy to create, but need manual work.</li>
+<li>The dicts for state and transitions correspond to diagrams and are easy to create but need manual work.</li>
 <li>STMPY state machines can be combined with other Python code. Actions called from the state machine can execute other Python code, and Python programs can send messages into STMPY, so that they are received by state machines as triggers.</li>
 </ul>
 
@@ -232,8 +232,8 @@ Many programmers cannot even handle very simple threading problems correctly.
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>
-<li><p>The red arrow show that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver.</p></li>
-<li><p>The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines, but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mappting between driver and machine more flexibly.</p></li>
+<li><p>The red arrow shows that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver.</p></li>
+<li><p>The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mapping between driver and machine more flexibly.</p></li>
 </ul>
 
 <p>We will go through machines and drivers and their Python API in the following notebooks.</p>

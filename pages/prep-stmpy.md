@@ -3,7 +3,7 @@
 In this unit, you will learn how to implement state machines in Python. Achieving this is valuable for several reasons:
 
 - You will be able to deepen your understanding about state machines in general.
-- You will be able to solve arbitarily complex synchronization tasks in Python.
+- You will be able to solve arbitrarily complex synchronization tasks in Python.
 - You will have a framework for the implementation during the semester project.
 
 ## Benefits of State Machines in Code
@@ -111,7 +111,7 @@ There are many different possibilities when we want to come from a diagram to co
 * We define a Python package called **STMPY** that supports the creation of state machines.
 * STMPY provides the classes **Machine** and **Driver**, which execute state machine behavior.
 * States and transitions are defined using Python dicts together with code.
-* The dicts for state and transitions correspond to diagrams and are easy to create, but need manual work.
+* The dicts for state and transitions correspond to diagrams and are easy to create but need manual work.
 * STMPY state machines can be combined with other Python code. Actions called from the state machine can execute other Python code, and Python programs can send messages into STMPY, so that they are received by state machines as triggers.
 
 
@@ -139,9 +139,9 @@ caption: "The original sketch from a whiteboard when planning the first release 
 
 * A driver also manages all timers for all of its state machines. 
 
-* The red arrow show that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver. 
+* The red arrow shows that events for the queue come from expires timers, signals sent by other state machines, and signals that are sent by components out of the control of the driver. 
 
-* The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines, but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mappting between driver and machine more flexibly.
+* The separation of driver and machine gives us more flexibility. Since one driver corresponds to one thread or process, we can decide which state machines should run in the same thread. Giving each state machine their own thread can be too costly since we may want to have many state machines but assigning all state machines to the same thread or process is also not good for larger systems. Therefore, we can decide on the mapping between driver and machine more flexibly.
 
 
 We will go through machines and drivers and their Python API in the following notebooks. 

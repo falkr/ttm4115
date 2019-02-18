@@ -114,11 +114,9 @@ There are many different possibilities when we want to come from a diagram to co
 * The dicts for state and transitions correspond to diagrams and are easy to create but need manual work.
 * STMPY state machines can be combined with other Python code. Actions called from the state machine can execute other Python code, and Python programs can send messages into STMPY, so that they are received by state machines as triggers.
 
-
-Alternatives would be to generate code automatically from diagrams, but this requires a good state machine editor and very formal syntax for it. Yet another possibility would be to feed the state machine diagram directly to an interpreter that then executes it. But again, this would require a very detailed syntax for actions in the state machine. Instead, with STMPY, we have the flexibility to write state machines how we want, and then use all of Python, just with a little manual effort to code the state machines as Python data structures (dicts) and some extra glue code.
-
 Despite the manual step with writing the code, our solution still has good **traceability**. This means it is be relatively easy to see how model (the state machine) and the code (in Python) correspond to each other. We can **trace back** the code from the model, and vice-versa, look at the code and trace back where in the model it is specified.
 
+Alternatives would be to generate code automatically from diagrams, but this requires a good state machine editor and very formal syntax for it. Yet another possibility would be to feed the state machine diagram directly to an interpreter that then executes it. But again, this would require a very detailed syntax for actions in the state machine. Instead, with STMPY, we have the flexibility to write state machines how we want, and then use all of Python, just with a little manual effort to code the state machines as Python data structures (dicts) and some extra glue code.
 
 
 ## State Machine Execution

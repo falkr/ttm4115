@@ -13,7 +13,7 @@ Follow the instructions on this page to [install Jupyter](https://jupyter.org/in
 * Details are [explained here](https://jupyter.readthedocs.io/en/latest/running.html#running)
 * Usually, typing `jupyter notebook` on your terminal is enough.
 * A browser opens, by default to `http://localhost:8888`
-* Navigate with the integrated file bwoeser to the notebook you want to open, for example the ones you download form this course.
+* Navigate with the integrated file browser to the notebook you want to open, for example the ones you download form this course.
 
 I recommend that you get used to notebooks and routined at using them. They are super useful for all kinds of stuff, and I am using them daily. 
 

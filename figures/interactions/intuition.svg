@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="197.9252 3230.996 173.9134 154.07087" width="173.9134" height="154.07087">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="70.86614 3230.996 425.19686 154.07087" width="425.19686" height="154.07087">
   <defs>
     <font-face font-family="Calibri" font-size="12" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
       <font-face-src>
@@ -13,10 +13,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.9.2 
-    <dc:date>2018-12-02 13:03:41 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-18 11:07:24 +0000</dc:date>
   </metadata>
-  <g id="Canvas_1" fill-opacity="1" stroke="none" fill="none" stroke-opacity="1" stroke-dasharray="none">
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none">
     <title>Canvas 1</title>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
@@ -88,6 +88,7 @@
           <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".068359375" y="11">ja takk</tspan>
         </text>
       </g>
+      <g id="Graphic_470"/>
     </g>
   </g>
 </svg>

@@ -1,6 +1,6 @@
 # Airport Gate Control System
 
-You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We hav'nt formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)
+You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven't formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)
 
 ---
 type: figure
@@ -55,7 +55,7 @@ source: figures/interactions/airport-help.png
 ---
 
 
-## Task 2: Turnstile — Controller
+## Task 2: Turnstile - Controller
 
 We now want to consider the interaction between the turnstile and the controller.
 
@@ -79,3 +79,39 @@ Your sequence diagrams contain a situation that is called **mixed initiative**.
 * Add a new section *Reflection* to your document and compare your solution.
   * Is there any significant difference?
 * Deliver your final document on Blackboard.
+
+
+
+# Feedback on T1
+
+Via MS Teams you will receive all feedback documents from the others to your delivery T1. 
+Work through all of them and update your original T1.
+
+* You will resubmit most of T1 in T3.
+* You may adjust it to follow any changes in you project.
+
+
+
+# Checklist
+
+ 
+
+### Blackboard
+
+- Deliver the reflection over your solutions in comparison to the ones provided.
+
+### MS Teams
+
+- Ask for feedback in general
+- Report any errors with the provided solution
+- Discuss, with me or other teams
+
+### Team Reflection for This Unit 
+
+* Add another section to the team reflection document, just like every week. 
+
+### Individual Reflection
+
+* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
+* Copy the answers into a document that you maintain on your own.
+* Add any additional observations to your reflection diary.

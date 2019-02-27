@@ -1,15 +1,26 @@
----
-status: draft
----
-
-# Welcome to Unit 7!
+# Communication
 
 In this unit, we will have a look at communication at the level of an application. 
 This means, we will learn how communication protocols influence our application logic. 
 We will also study some of the details of specific protocols, in particular HTTP and MQTT.
 
+## Learning Goals
 
-Communication protocols are a subject on their own, because
+
+
+
+Goals: The learning goals specific for this week are the following:
+
+- Recognize and recite basic communication patterns and terminology.
+- Relate communication mechanisms to each other.
+- Select proper communication patterns and topologies for a given problem.
+- Reciting the basic mechanisms of HTTP and MQTT.
+- Designing an MQTT topic structure for a given system.
+
+
+
+
+Communication protocols easily fill a course on their own, because
 there are so many of them and because they rely on a lot of mechanisms
 that are worth studying. You have probably already learned about
 protocols like TCP and HTTP. In the following, we will have a look at
@@ -51,7 +62,10 @@ messages, or tell the user that something is wrong. So even good
 middleware, libraries of framework don't free you from the problems of
 communication; they may however, make life much easier.
 
-![image](figures/communication-failures.png){width="\linewidth"}
+---
+type: figure
+source: figures/communication/communication-errors.jpg
+---
 
 Let's have a look at three very different applications:
 
@@ -170,42 +184,40 @@ that are ideal for websites, and was later also used for REST-ful APIs.
 With topologies, we describe the patterns of the nodes and summarize
 some of their behavior. The following are the most important topologies:
 
-**Client-server:**
+**Client-server:** The client knows the address of the server. The server gets to know
+the client only after the client makes initial contact. Since only
+the client knows the address of the server initially, it is only the
+clients that can make the first contact and take initiative. In the
+world wide web, servers can host web sites and are contacted by
+browsers (the clients.) This is an example where there are many
+clients and only few servers, and where servers are optimized to
+server many clients. But there are also protocols in which the
+server is on a tiny sensor device, and "serves" the values of the
+sensor to any client that is interested in them.
 
-:   The client knows the address of the server. The server gets to know
-    the client only after the client makes initial contact. Since only
-    the client knows the address of the server initially, it is only the
-    clients that can make the first contact and take initiative. In the
-    world wide web, servers can host web sites and are contacted by
-    browsers (the clients.) This is an example where there are many
-    clients and only few servers, and where servers are optimized to
-    server many clients. But there are also protocols in which the
-    server is on a tiny sensor device, and "serves" the values of the
-    sensor to any client that is interested in them.
-    https://en.m.wikipedia.org/wiki/Client--server\_model
+<a class="arrow" href="https://en.m.wikipedia.org/wiki/Client--server\_model">Client-Server on Wikipedia</a>
 
-**Peer-to-peer:**
+**Peer-to-peer:** A peer is a node in a communication scenario. The word peer
+emphasizes that the nodes are equivalent, and each node can both
+send and receive messages, that means the communication is
+symmetric. This is in contrast to the client-server model, where the
+communication roles are very different (also called asymmetric).
+Peer-to-peer topologies are often used for applications where logic
+is distributed among several nodes, often without a central node for
+coordination. Examples are peer-to-peer networks for sharing data,
+or the protocol for the interactions used in blockchain protocols
+and currencies like Bitcoin.
 
-:   A peer is a node in a communication scenario. The word peer
-    emphasizes that the nodes are equivalent, and each node can both
-    send and receive messages, that means the communication is
-    symmetric. This is in contrast to the client-server model, where the
-    communication roles are very different (also called asymmetric).
-    Peer-to-peer topologies are often used for applications where logic
-    is distributed among several nodes, often without a central node for
-    coordination. Examples are peer-to-peer networks for sharing data,
-    or the protocol for the interactions used in blockchain protocols
-    and currencies like Bitcoin.
-    https://en.m.wikipedia.org/wiki/Peer-to-peer
+<a class="arrow" href="https://en.m.wikipedia.org/wiki/Peer-to-peer">Peer to Peer on Wikipedia</a>
 
-**Broker:**
 
-:   A message broker is a server that distributes messages. The message
-    broker usually does not care about the specific application or the
-    content of the message. Clients communicate with the server and send
-    messages to the broker, which then get distributed to those clients
-    that are interested in the events.
-    https://en.m.wikipedia.org/wiki/Broker\_Pattern
+**Broker:** A message broker is a server that distributes messages. The message
+broker usually does not care about the specific application or the
+content of the message. Clients communicate with the server and send
+messages to the broker, which then get distributed to those clients
+that are interested in the events.
+
+<a class="arrow" href="https://en.m.wikipedia.org/wiki/Broker\_Pattern">Broker on Wikipedia</a>
 
 # Message Exchange Patterns
 
@@ -218,12 +230,20 @@ communicate. Many protocols use similar message exchange patterns.
 The simplest pattern is a single message, sent from the sender to the
 receiver. The message can contain data or be empty.
 
-![image](figures/single-message.pdf){width="6cm"}
+---
+type: figure
+source: figures/communication/single-message.svg
+---
 
 Communication channels can be disturbed or disrupted, and messages can
 get lost.
 
-![image](figures/single-message-lost.pdf){width="5cm"}
+---
+type: figure
+source: figures/communication/single-message-lost.svg
+---
+
+
 
 ## Pattern: Request-Response {#request-response}
 
@@ -244,18 +264,32 @@ with a timer on the requestor side. If the requestor does not receive a
 response within a given time, it sends the request again, until it
 receives the response.
 
+
+
+
 In a *synchronous* communication, the sender and the receiver are
 directly connected, in the sense that the sender is not doing anything
 else while the communication is going on. A synchronous
-request-response, for instance, looks as follows:[^1]
+request-response, for instance, looks as follows:
 
-![image](figures/sync.pdf){width="\linewidth"}
+Aside: Note that we are now using the words synchronous and asynchronous 
+for the communication pattern, not to the specific modeling element
+of a synchronous or asynchronous messages in sequence diagrams. In 
+both examples, we use synchronous messages.
+
+---
+type: figure
+source: figures/communication/sync.svg
+---
 
 In contrast, *asynchronous* communication means that the sender and the
 receiver are decoupled. The sender can do other things while waiting for
 a response, or it may not wait for a response at all.
 
-![image](figures/async.pdf){width="\linewidth"}
+---
+type: figure
+source: figures/communication/async.svg
+---
 
 ## Pattern: Observe {#observe}
 
@@ -263,7 +297,10 @@ An observer can tell a server that it would like to get informed about
 events. Whenever the event happens, the server notifies the observer
 with a message.
 
-![image](figures/observer.pdf){width="5cm"}
+---
+type: figure
+source: figures/communication/observer.svg
+---
 
 ## Pattern: Publish-Subscribe {#publish-subscribe}
 
@@ -273,7 +310,11 @@ The broker sits in between the publisher and subscriber. It has the
 effect that publisher and subscriber do not have a direct connection
 with each other, each of them is only connected to the broker.
 
-![image](figures/publish-subscribe.pdf){width="\linewidth"}
+---
+type: figure
+source: figures/communication/publish-subscribe.svg
+---
+
 
 ## Pattern: Exclusive Pair {#exclusive-pair}
 
@@ -282,7 +323,7 @@ communication partners have a specific sequence of messages to get a
 specific job done, which depends on a specific application. The two
 communication partners execute a longer negotiation or conversation.
 
-#### Example: Application
+### Example: Application
 
 A mobile route planner application is an example. To get the shortest
 route, a user first has to set the destination, the start and send it to
@@ -295,7 +336,7 @@ exclusive pair interaction. Note, however, that the API in these
 examples is often structured so that this interaction decomposes into a
 series of request-response interactions coordinated by the application.
 
-#### Example: TCP
+### Example: TCP
 
 TCP is a protocol to provide a connection over a lossy channel (like the
 internet). It handles that packages are lost, duplicated, or arrive in
@@ -310,8 +351,8 @@ exclusive pair that together execute a specific protocol.
 This is only a very brief description of HTTP to relate it to the
 previously described communication topologies and message patterns. You
 have probably already heard about HTTP in other courses. Here, we look
-at it from an application?s perspective. If you are interested in more
-technical details, read for instance on Wikipedia.[^2]
+at it from an application's perspective. If you are interested in more
+technical details, read for instance on [Wikipedia](<https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>).
 
 HTTP is a request-response message pattern, and uses a client-server
 topology. The server usually provides resources to the client, which can
@@ -335,17 +376,17 @@ incredibly more advanced than ten years ago. Still, some of these old
 limitations are hard to get rid off.
 
 There are some mechanisms that work around these limitations of HTTP. If
-you are interested in the details, have a look at the Wikipedia article
-on Comet.[^3] To keep it brief; it's fascinating, but ugly. In essence,
+you are interested in the details, have a look at the [Wikipedia article
+on Comet](https://en.wikipedia.org/wiki/Comet_(programming)). To keep it brief; it's fascinating, but ugly. In essence,
 the workaround is that the client still initiates all communication, but
 client and server keep an HTTP connection alive, so that the server can
 send updates once there are some. When Google offered chat on their
-Gmail website, for instance, they used this mechanism to push new chat
-messages immediately from the server to the browser.[^4] Google Docs
-uses a similar mechanism.[^5]
+Gmail website, for instance, they used this mechanism to [push new chat
+messages immediately from the server to the browser](https://stackoverflow.com/questions/732705/how-is-gmail-chat-able-to-make-ajax-requests-without-client-interaction). Google Docs
+uses a [similar mechanism](https://stackoverflow.com/questions/35070217/what-technology-does-google-drive-use-to-get-real-time-updates).
 
 To address the needs of server to notify the client when new information
-is available, the WebSocket protocol[^6] was built. Like HTTP, it also
+is available, the [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) was built. Like HTTP, it also
 builds upon TCP, but offers full-duplex. With WebSockets, you can for
 instance build relatively simple web-applications running in the browser
 that support fine-grained, bi-directional interactions like chat or
@@ -358,18 +399,25 @@ implements a **publish-subscribe** message pattern. MQTT was invented in
 1999 by Andy Stanford-Clark from IBM and Arlen Nipper from Arcom. Today,
 MQTT is an Oasis standard.
 
+
+
+
 MQTT is often used in situations where events should be sent from many
 sensors and broadcast to several applications. IBM and others for
 instance use MQTT so that IoT devices can send updates into their cloud.
 When Facebook introduced their Messenger application as a standalone
 application, they also relied on MQTT to push messages to the
-clients.[^7] We consider MQTT in detail because this protocol is
+clients. We consider MQTT in detail because this protocol is
 relatively easy to understand, introduces concepts that are used in
 various form also in other protocols, and because its patterns and
 topology is complementary to those of HTTP. When you have understood
 MQTT and HTTP, many other application-level protocols will be easy to
 understand, too. There are also some more practical reasons why we
 recommend you to use MQTT for the semester project:
+
+Aside: Read the article [Building Facebook Messenger](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920)
+
+
 
 -   MQTT is simple to debug, since more than one entity can subscribe to
     the same topic. This means, you can work on the communication
@@ -395,7 +443,10 @@ There are three roles in MQTT. The **Publisher** sends messages to the
 
 A typical interaction looks as follows:
 
-![image](figures/mqtt-1.pdf){width="\linewidth"}
+---
+type: figure
+source: figures/communication/mqtt-1.svg
+---
 
 There can be any number of subscribers and any number of publishers in a
 system. Because of the publish-subscribe pattern, the subscribers do not
@@ -452,13 +503,13 @@ Examples:
 -   To receive all messages for lights in any zone (garage or kitchen),
     a subscriber can subscribe to `house/+/lights/+`
 
-#### Exercise:
+### Exercise:
 
 A publisher sends a message to the topic `a/b/c/d`. Which of the
 following 15 subscription topics will receive this message?
 
-       **Subscription Topic**   **Receive?**
-  ---- ------------------------ --------------
+       **Subscription Topic**  
+  ---- -------------------------
   1    `#`                      
   2    `+/+/+`                  
   3    `+/+/+/+`                
@@ -484,10 +535,13 @@ an application that needs the temperature in a room, it would have to
 wait until the sensor sends its temperature, which can be as long as
 about 10 minutes in the worst case.
 
-![Scenario without retained message: The subscriber misses the last
-update and has to wait until the next update is
-published.[]{label="fig:mqtt-r-1"}](figures/mqtt-retained-1.pdf){#fig:mqtt-r-1
-width="\linewidth"}
+---
+type: figure
+source: figures/communication/mqtt-retained-1.svg
+caption: "Scenario without retained message: The subscriber misses the last
+update and has to wait until the next update is published."
+---
+
 
 Instead, the sensor can mark its temperature message as a **retained**
 message. The broker will then store a copy of this message until it is
@@ -498,10 +552,14 @@ application does not have to wait until the sensor wakes up and sends
 again, but that it immediately receives the last temperature reading.
 (We show the reainted message with a trailing *R*.)
 
-![Scenario with retained message: The subscriber misses the last update,
-but receives the retained message from the
-broker.[]{label="fig:mqtt-r-2"}](figures/mqtt-retained-2.pdf){#fig:mqtt-r-2
-width="\linewidth"}
+---
+type: figure
+source: figures/communication/mqtt-retained-2.svg
+caption: "Scenario with retained message: The subscriber misses the last update,
+but receives the retained message from the broker."
+---
+
+
 
 ## Last Wills
 
@@ -536,40 +594,50 @@ on sending them:
 -   QoS=2 is also called *Exactly once*. This guarantees the delivery
     and avoids any duplication.
 
-You may immediately ask: *If QoS=2 is available, why would one ever use
-any of the lower QoS levels?* The answer is that the highest quality of
+You may immediately ask: _If QoS=2 is available, why would one ever use
+any of the lower QoS levels?_ The answer is that the highest quality of
 service is also more expensive with regards to transmission effort. To
 send a single QoS=2 message, several messages on the underlying channel
 are necessary. Therefore, an application should always choose the lowest
 QoS level it can work with. Below you see three diagrams that show how
 many control packages are involved to just send a single MQTT message
-with the different QoS levels.
+with the different QoS levels. (The grey message arrows that start end end at the same lifeline illustrate only local operations, not communication.)
 
-![Different QoS levels of MQTT and how they are
-implemented.[]{label="fig:mqtt-qos"}](figures/mqtt-qos-0.pdf "fig:"){#fig:mqtt-qos
-width="\linewidth"} ![Different QoS levels of MQTT and how they are
-implemented.[]{label="fig:mqtt-qos"}](figures/mqtt-qos-1.pdf "fig:"){#fig:mqtt-qos
-width="\linewidth"} ![Different QoS levels of MQTT and how they are
-implemented.[]{label="fig:mqtt-qos"}](figures/mqtt-qos-2.pdf "fig:"){#fig:mqtt-qos
-width="\linewidth"}
+---
+type: figure
+source: figures/communication/mqtt-qos-0.svg
+caption: "To send one MQTT message with QoS 0, only two messages on the lower layer are necessary."
+---
+
+---
+type: figure
+source: figures/communication/mqtt-qos-1.svg
+caption: "To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary."
+---
+
+---
+type: figure
+source: figures/communication/mqtt-qos-2.svg
+caption: "To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary."
+---
+
+
 
 ## Sequence Diagrams on Many Levels
 
 Maybe you wondered how some of the sequence diagrams we have seen on the
 last pages relate to those that you develop for a specific application.
 Assume the application uses MQTT. What should you show then in a
-sequence diagram? The answer: It depends on what you want to show.
+sequence diagram? The answer: _It depends on what you want to show._
 
--   The diagrams of Fig. [5](#fig:mqtt-qos){reference-type="ref"
-    reference="fig:mqtt-qos"} show how MQTT is implemented internally
+-   The diagrams **Quality of Service X** above show how MQTT is implemented internally
     and passes messages in order to publish one single message. These
     diagrams are only interesting when you need to understand if the
     MQTT protocol is suitable for your purposes, or you are concerned
     which QoS level to use. You will probably not use this level of
     detail for an application-level diagram.
 
--   The diagram in Fig. [2](#fig:mqtt-r-2){reference-type="ref"
-    reference="fig:mqtt-r-2"} show how MQTT uses retained messages. This
+-   The diagram above that shows MQTT using a retained message above
     is already closer to the application level, since *publish*,
     *subscribe* and *message* are shown as single, compact messages.
 
@@ -583,7 +651,7 @@ sequence diagram? The answer: It depends on what you want to show.
 
 # Solution
 
-  A    **Subscription Topic**   **Receive?**
+       **Topic**                **Receive?**
   ---- ------------------------ --------------
   1    `#`                      yes
   2    `+/+/+`                  no!
@@ -600,28 +668,3 @@ sequence diagram? The answer: It depends on what you want to show.
   13   `a/b/c/d`                yes
   14   `b/+/c/d`                no!
   15   `a/b/c/d/+`              no!
-
-[^1]: Note that we are now using the words synchronous and asynchronous
-    for the communication pattern, not to the specific modeling element
-    of a synchronous or asynchronous messages in sequence diagrams. In
-    both examples, we use synchronous messages.
-
-[^2]: <https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>
-
-[^3]: <https://en.wikipedia.org/wiki/Comet_(programming)>
-
-[^4]: <https://stackoverflow.com/questions/732705/how-is-gmail-chat-able-to-make-ajax-requests-without-client-interaction>
-
-[^5]: <https://stackoverflow.com/questions/35070217/what-technology-does-google-drive-use-to-get-real-time-updates>
-
-[^6]: <https://en.wikipedia.org/wiki/WebSocket>
-
-[^7]: <https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920>
-
-
-
-## Python Code and Notebooks
-
-We will soon add some notebooks to learn some code. Stay tuned.
-
-* Have a look at the demonstration on Polling with two State Machines. The notebook is accessible in the Github repository for Notebooks you are already familiar with. 

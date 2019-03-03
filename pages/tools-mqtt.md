@@ -99,6 +99,19 @@ client.loop_forever()
 More information on the paho package can be found here: <a href="https://pypi.python.org/pypi/paho-mqtt/">https://pypi.python.org/pypi/paho-mqtt/</a>
 
 
+If there is an error in the `on_message()` function, you may not see an error and nothing is happening, and it may look as if the client doesn't receive any messages. To prevent such errors, add a `print('Message received!')` line at the start of the message so you see it was called. Make sure this first statement does not have any problems (like unkown variables) so that it does not fail. 
+
+You can also place any code that could cause an error into a `try:` ... `except:` block to handle any exceptions locally.
+
+
+
+
+## Subscribe to system messages
+
+client.subscribe("$SYS/#")
+
+
+
 # Debugging With MQTT.FX
 
 MQTT.FX is a tool useful during development.

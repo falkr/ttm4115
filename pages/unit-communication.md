@@ -1,7 +1,7 @@
 # Communication
 
 
-The deployment diagram below shows today's setup:
+The deployment diagram below shows today's distributed setup:
 
 ---
 type: figure
@@ -10,22 +10,22 @@ source: figures/interactions/mqtt-setup-1.svg
 
 The setup consists of at least three components:
 
-* The MQTT Broker: This is ideally your own MQTT broker, but can also be a oublic MQTT test broker. 
-* MQTT.FX: This is a generic MQTT client that is suitable for debugging MQTT-based applications. you can connect to an MQTT broker and subscribe and publish to topics.
-* Jupyter Notebooks: We use MQTT client in notebooks to show you how to program in Python. 
+* The MQTT Broker: This is ideally your own MQTT broker, but can also be a public MQTT test broker. 
+* MQTT.FX: This is a generic MQTT client that is suitable for debugging MQTT-based applications. You can connect to an MQTT broker and subscribe and publish to topics.
+* Jupyter Notebooks: We use MQTT client in notebooks to show you how to program in Python. The application in the notebooks act as MQTT clients.
 
 
 ## Tips for This Unit
 
 * Document your progress and the result of all experiments in a document. 
-  * Deliverthe document on Blackboard at the end. 
+  * Deliver the document on Blackboard at the end. 
   * Include screenshots
 * The tasks don't require much engineering work this week, so you have enough time to care about the details and the setup.
 * Most tasks are related to running code, which can be difficult in teams of 6. 
   * This requires special attention from the facilitator. 
   * Make sure everyone is on board. 
   * Distribute tasks, but make sure everyone covers all. 
-  * Try to work distributed on several PCs for the communication task. (You can run Broker, MQTT.FX and Python iáll oon different computers or on the same one. We recoomend to try the distributed solution.)
+  * Try to work distributed on several PCs for the communication task. (You can run Broker, MQTT.FX and Python all on different computers, or run all on the same one. We recommend to try the distributed solution.)
 * Dare to ask questions, or repeat individually. 
 * The programming tasks are important for the remainder of the course.
 
@@ -40,18 +40,14 @@ Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker
 
 <a class="arrow" href="https://mqttfx.jensd.de">Download MQTT.FX</a> 
 
----
-type: figure
-source: figures/mqtt/mqtt-fx-publish.png
----
 
 ### Publishing Messages
 
-Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not doen with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.
+Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not done with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.
 
 ---
 type: figure
-source: figures/mqtt/mqtt-fx-subscribe.png
+source: figures/mqtt/mqtt-fx-publish.png
 ---
 
 
@@ -59,6 +55,10 @@ source: figures/mqtt/mqtt-fx-subscribe.png
 
 Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application  and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.
 
+---
+type: figure
+source: figures/mqtt/mqtt-fx-subscribe.png
+---
 
 ## Task: Obsrving a Public MQTT Broker
 
@@ -75,7 +75,7 @@ There are some public MQTT brokers to which anyone can connect.
 
 # Task: Running Your Own MQTT Broker
 
-You can alsways use such a public broerk for testing, but on most cases it is better to have your own broker running. 
+You can always use such a public broker for testing, but on most cases it is better to have your own broker running. 
 Install the **Mosquitto MQTT Broker** on your laptop. This is an open-source MQTT broker that is relatively easy to install and run. 
 
 * Install Mosquitto from [https://mosquitto.org/download/](https://mosquitto.org/download/)
@@ -85,7 +85,7 @@ Install the **Mosquitto MQTT Broker** on your laptop. This is an open-source MQT
   * For that to be possible, you need to be able to ping the PC that runs the broker.
   * You need to be on the same network.
   * If nothing works, you can also have MQTT.FX and the broker installed on the same PC, and use address `localhost`.
-* If you have trouble installing Mosquitto, try to find help woth others on MS Teams!
+* If you have trouble installing Mosquitto, try to find help with others on MS Teams!
 
 
 
@@ -93,7 +93,7 @@ Install the **Mosquitto MQTT Broker** on your laptop. This is an open-source MQT
 
 Now we are going to combine what we learned about MQTT with Python. 
 
-* Download the latest version of the repository with the [STAMPY notebooks from Github](https://github.com/falkr/stmpy-notebooks).
+* Download the latest version of the repository with the [STMPY notebooks from Github](https://github.com/falkr/stmpy-notebooks).
 
 ## MQTT Part 1 - Connect to Broker
 
@@ -108,9 +108,37 @@ This notebook extends the MQTT client and also publishes messages, forwarding to
 This notebook shows you how to connect the MQTT client with state machines in STMPY.
 
 
-# Checklist
+# Challenge: Quiz Show Buzzers
 
- 
+The tasks above did not require any programming from you so that you can focus on installing and setting up all the components as well as getting familiar with the APIs and how everything works. 
+
+* You now should have very detailed knowledge about how MQTT works, and operate both clients and a broker. 
+* You have also seen how we can connect MQTT with state machines written in STMPY. 
+* MQTT.FX can act as an input and output device into the system, as it can send and receive arbitrary MQTT messages. 
+
+So the following task should be doable now: 
+
+Create a small and very prototypical system that realizes the timer and buzzers for a quiz.
+
+* The quiz master starts a 20 second timer after asking a question. 
+* Any of the participants can press their buzzer, upon which the timer stops and the quiz master sees who presses first.
+* Create a central state machine to keep track of the timer and the incoming messages.
+* All participants use MQTT.FX as their interface to send in messages, which correspond to pressing a buzzer or resetting the timer.
+
+Some hints for the delivery:
+
+- Sketch a state machine together. 
+- Sketch the system with a deployment diagram and a sequence diagram.
+- Can you use this to separate into smaller teams that each work on a separate issue?
+- Prepare screenshots for your solution.
+- Rather build something simple that works than something large that doesn't.
+
+Document your achievement.
+
+
+
+
+# Checklist
 
 ### Blackboard
 

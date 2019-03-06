@@ -14,7 +14,11 @@ But don't get me wrong: Components are a fascinating subject! Components do not 
 
 ## Learning Goals
 
-Goals:
+
+
+
+
+Goals: The learning goals specific for this week are the following:
 
 - Be aware of the forces when decomposing a system into parts.
 - Understand and apply the mechanisms of services.
@@ -217,13 +221,20 @@ caption: "The two turnstile components both define the same interface."
 
 ## From Interfaces to Services
 
-The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a service. 
+The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a **service**. Have a look ath the three-step interaction below:
 
-1. **Service Registry:** A component _offering_ a service, such as a turnstile, first registers its capability in a service registry. 
-2. **Service Discovery:** A component requiring a service, like the gate controller needs a turnstile, looks up which turnstiles are available by asking the service registry. 
+---
+type: figure
+source: figures/components/airgate-discovery.png
+caption: "A possible component-based structure for the Airgate system."
+---
+
+
+1. **Service Registration:** A component _offering_ a service, such as a turnstile, first registers its capability in a service registry. In the example, the configuration manager could be the service registry that keeps an overview of all services available.
+2. **Service Discovery:** A component _requiring_ a service, like the gate controller needs a turnstile, looks up which turnstiles are available by asking the service registry. As part of this sidcovery, it somehow needs to describe what it is looking for. In the simplest case, this can be some identifier of a service.
 3. **Service Usage:** Once the user of a service got a reference to it, it can use the service, as if they would have been linked statically. 
 
-For this to work, we not only need a description of the interface, the interface only describes _how_ a specific function can be used (which methods to use, which messages to send). The description of a service hence contains such an interface description, together with information on any dependencies, and also a description of _what_ the service is providing. Loosely speaking, the service description is towards components about the same as an interface relative to a class. 
+For this to work, we not only need a description of the interface, the interface only describes _how_ a specific function can be used (which methods to use, which messages to send). The description of a service hence contains such an interface description, together with information on any dependencies, and also a description of _what_ the service is providing. Loosely speaking, the service description is towards components about the same as an interface relative to a class in object-orientation.  
 
 Services are the main way to structure modern systems, though in various forms and details. Services are the basis for many architectural styles. One of them is called _SOA - Service-Oriented Architecture_, and another one is that of _micro-sercvices_. However, you should know about the principles so you can understand the idea, independent of a specific style or hype. 
 

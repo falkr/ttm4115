@@ -35,6 +35,10 @@ For the following, you can just think of components as pieces of software that c
 
 To give you a more specific idea, you can think in our case of components as a set of classes or code libraries with a set of interfaces so that they can communicate with other components. Some of the code may realize STMPY state machines, and other code may do other stuff. 
 
+Components clearly focus on the **implementation** of the system. Hence they serve often several use cases, and one use case requires usually the effort of several components. That means, while we struggled with the use cases to structure the system according to the user's perspective and the requirements, the components structure the implementation of it. 
+
+
+
 ## Why Do We Need Components?
 
 So far in the course, we have considered small examples and  focused on single state machines that controlled some behavior, like the Headlamp, the Car Lock Controller and the Airport Gate Controller. For a realistic system, we cannot just deploy a single state machine, or a single file with some code. Here are just a few reasons that you may instantly agree with:

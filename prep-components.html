@@ -154,6 +154,8 @@
 <p>Surprisingly, there is not a single definition for the concept of components. Martin Fowler calls the term on its own as “semantic free”, allowing all types of interpretation, and a book on components offer various definitions, but is also open about that there is not a fixed definition that satisfies everyone.</p>
 <p>For the following, you can just think of components as pieces of software that can be combined together (“composed”) to create the entire software of our system.</p>
 <p>To give you a more specific idea, you can think in our case of components as a set of classes or code libraries with a set of interfaces so that they can communicate with other components. Some of the code may realize STMPY state machines, and other code may do other stuff.</p>
+<p>Components clearly focus on the <strong>implementation</strong> of the system. Hence they serve often several use cases, and one use case requires usually the effort of several components. That means, while we struggled with the use cases to structure the system according to the user’s perspective and the requirements, the components structure the implementation of it.</p>
+
 <h2 id="why-do-we-need-components">Why Do We Need Components?</h2>
 <p>So far in the course, we have considered small examples and focused on single state machines that controlled some behavior, like the Headlamp, the Car Lock Controller and the Airport Gate Controller. For a realistic system, we cannot just deploy a single state machine, or a single file with some code. Here are just a few reasons that you may instantly agree with:</p>
 <ul>

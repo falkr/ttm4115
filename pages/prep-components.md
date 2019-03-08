@@ -17,10 +17,9 @@ But don't get me wrong: Components are a fascinating subject! Components do not 
 
 
 
-
 Goals: The learning goals specific for this week are the following:
 
-- Be aware of the forces when decomposing a system into parts.
+- Be aware of the aspects when decomposing a system into parts.
 - Understand and apply the mechanisms of services.
 - Decompose the semester project into components.
 
@@ -36,9 +35,7 @@ For the following, you can just think of components as pieces of software that c
 
 To give you a more specific idea, you can think in our case of components as a set of classes or code libraries with a set of interfaces so that they can communicate with other components. Some of the code may realize STMPY state machines, and other code may do other stuff. 
 
-
-
-# Why Do We Need Components?
+## Why Do We Need Components?
 
 So far in the course, we have considered small examples and  focused on single state machines that controlled some behavior, like the Headlamp, the Car Lock Controller and the Airport Gate Controller. For a realistic system, we cannot just deploy a single state machine, or a single file with some code. Here are just a few reasons that you may instantly agree with:
 
@@ -53,7 +50,13 @@ Maybe you think _"Isn't this what objects and classes are for?"_. But that doesn
 
 You may well think of components as "objects" in terms of "things". And internally, when using an object-oriented language, they are  built from classes and objects. (They may even extend a class _Component_ provided by some component framework.) So if you want to think in object-oriented terms, think of a component as a set of classes and objects assembled into something bigger, with some extra properties that we look at in the following.
 
-## Example: Airgate 
+## Component-Based Software Engineering
+
+Working with components is not just about the components and how they are constructed and what they contain. 
+To create components also means to partition the entire system into components. This requires good overview of the system, and may result in hard choices about its architecture, and has a huge impact on the entire development project. Developing components is therefore much more strategic than just developing components, and the basis of a approach in software engineering called [component-based software engineering](https://en.wikipedia.org/wiki/Component-based_software_engineering). (You should have a look at the article to get an idea about the complexities of this subject.)
+
+
+# Example: Airgate 
 
 Imagine we are the producer of airport gates, Airgate, like the ones we treated in the last unit. The airport gate consists of the hardware, that means, the turnstile, the display, the scanner and so on, and of course also the software. The software runs in the gate in an embedded computer, and connects all the hardware components together and integrates with the IT infrastructure of the airport, since we need to evaluate the validness of a boarding pass and register if a passenger boarded.
 
@@ -72,7 +75,7 @@ Airgate does not only need a single software program that is the same on all the
 
 Instead, we decompose the software into a **set of components**, which itself contain classes, and code from different libraries.   The components vary in size; some contain only little code or a few state machines, other may include larger code libraries and more logic. Deciding exactly how to structure the system into components is difficult and requires some experience, and we need to consider a lot of criteria that we will look at closer below.
 
-# Component-based software for AIRGATE. 
+## Component-based Software for AIRGATE. 
 
 To let you better understand, we show a diagram with components for the Airgate System below. We will later use these as examples. 
 
@@ -94,7 +97,7 @@ At the bottom of the diagram you see six more components, each providing more ge
 * **Remote Management** offers a user interface so that operators can log into the software remotely and run diagnosis tests or change the configuration. 
 * **Web Server** contains a library to run a web server that is used by the remote management.
 
-## Modularity, Cohesion and Coupling
+# Modularity, Cohesion and Coupling
 
 The main goal of introducing the system is to introduce **modularity**. With modularity we understand the degree to which components can be separated from each other and combined. High modularity means we can separate components easier from each other and combine them in different ways, resulting in higher flexibility and variety.
 
@@ -179,7 +182,7 @@ All the aspects above make components also good candidates for being reused, tha
 
 In some situations, it may be smart to build a component with reuse in mind. However, this can also be dangerous, since it makes the initial development more expensive and shifts focus away on the specific system to build. There is always some uncertainty about if reuse will really happen, so there may be some overhead that in the end does not pay off. Therefore, be sceptic about the reuse argument in the first place. 
 
-## Communication Between Components
+# Communication Between Components
 
 Components can communicate with each other by various means. 
 

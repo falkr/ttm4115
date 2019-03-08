@@ -141,21 +141,20 @@
 <p>But don’t get me wrong: Components are a fascinating subject! Components do not only couple together a lot of the properties of a system, both at runtime and after deployment. They are the main subjects when we talk about software architecture, which is a changing field with different trends, ideas, fashions, faiths and also fantasies. When you learn, such discussions can be interesting but also confusing. What I want to achieve in the following unit is that you get the basic ideas and develop the skills to think about modularity in a system so you can adapt to whichever specific component framework and architectural style is used in your job. Here are, as always, the learning goals:</p>
 <h2 id="learning-goals">Learning Goals</h2>
 
-<p>Goals: The learning goals specific for this week are the following:</p>
+<div class="goals">
+<p>The learning goals specific for this week are the following:</p>
 <ul>
-<li>Be aware of the forces when decomposing a system into parts.</li>
+<li>Be aware of the aspects when decomposing a system into parts.</li>
 <li>Understand and apply the mechanisms of services.</li>
 <li>Decompose the semester project into components.</li>
 </ul>
 
+</div>
 <h2 id="what-are-components">What are Components?</h2>
 <p>Surprisingly, there is not a single definition for the concept of components. Martin Fowler calls the term on its own as “semantic free”, allowing all types of interpretation, and a book on components offer various definitions, but is also open about that there is not a fixed definition that satisfies everyone.</p>
 <p>For the following, you can just think of components as pieces of software that can be combined together (“composed”) to create the entire software of our system.</p>
 <p>To give you a more specific idea, you can think in our case of components as a set of classes or code libraries with a set of interfaces so that they can communicate with other components. Some of the code may realize STMPY state machines, and other code may do other stuff.</p>
-
-    </section>
-    <section class="content">
-<h1 id="why-do-we-need-components">Why Do We Need Components?</h1>
+<h2 id="why-do-we-need-components">Why Do We Need Components?</h2>
 <p>So far in the course, we have considered small examples and focused on single state machines that controlled some behavior, like the Headlamp, the Car Lock Controller and the Airport Gate Controller. For a realistic system, we cannot just deploy a single state machine, or a single file with some code. Here are just a few reasons that you may instantly agree with:</p>
 <ul>
 <li>Since most systems are distributed, we need to create different parts of the software for the different locations that can be deployed and started on their own.</li>
@@ -165,7 +164,12 @@
 <h2 id="components-and-classes-are-not-the-same">Components and Classes are not the Same</h2>
 <p>Maybe you think <em>“Isn’t this what objects and classes are for?”</em>. But that doesn’t quite fit. Individual objects are not deployed in a system, they are often too fine-grained.</p>
 <p>You may well think of components as “objects” in terms of “things”. And internally, when using an object-oriented language, they are built from classes and objects. (They may even extend a class <em>Component</em> provided by some component framework.) So if you want to think in object-oriented terms, think of a component as a set of classes and objects assembled into something bigger, with some extra properties that we look at in the following.</p>
-<h2 id="example-airgate">Example: Airgate</h2>
+<h2 id="component-based-software-engineering">Component-Based Software Engineering</h2>
+<p>Working with components is not just about the components and how they are constructed and what they contain. To create components also means to partition the entire system into components. This requires good overview of the system, and may result in hard choices about its architecture, and has a huge impact on the entire development project. Developing components is therefore much more strategic than just developing components, and the basis of a approach in software engineering called <a href="https://en.wikipedia.org/wiki/Component-based_software_engineering">component-based software engineering</a>. (You should have a look at the article to get an idea about the complexities of this subject.)</p>
+
+    </section>
+    <section class="content">
+<h1 id="example-airgate">Example: Airgate</h1>
 <p>Imagine we are the producer of airport gates, Airgate, like the ones we treated in the last unit. The airport gate consists of the hardware, that means, the turnstile, the display, the scanner and so on, and of course also the software. The software runs in the gate in an embedded computer, and connects all the hardware components together and integrates with the IT infrastructure of the airport, since we need to evaluate the validness of a boarding pass and register if a passenger boarded.</p>
 <p>The software part of the airport gate makes up a large part of the system. Much of the system quality and hence value will depend on it working well, and we need to spend quite some effort to develop it.</p>
 <p>Even though the functionality of the gateway seems simple, it has to take care of a long list of detailed requirements. Apart from the basic functionality that we already know, the gate has to log every passenger, allow for manual boarding, or take account for the central system being unreachable. Airgate is also selling many different configurations of airport gate.</p>
@@ -180,10 +184,7 @@
 <li>Decomposing the software into different objects and classes is already better, but different objects here are too fine-grained. It would be very complicated to select the right ones for the right installation.</li>
 </ul>
 <p>Instead, we decompose the software into a <strong>set of components</strong>, which itself contain classes, and code from different libraries. The components vary in size; some contain only little code or a few state machines, other may include larger code libraries and more logic. Deciding exactly how to structure the system into components is difficult and requires some experience, and we need to consider a lot of criteria that we will look at closer below.</p>
-
-    </section>
-    <section class="content">
-<h1 id="component-based-software-for-airgate.">Component-based software for AIRGATE.</h1>
+<h2 id="component-based-software-for-airgate.">Component-based Software for AIRGATE.</h2>
 <p>To let you better understand, we show a diagram with components for the Airgate System below. We will later use these as examples.</p>
 
 <div class="figure">
@@ -205,7 +206,10 @@
 <li><strong>Remote Management</strong> offers a user interface so that operators can log into the software remotely and run diagnosis tests or change the configuration.</li>
 <li><strong>Web Server</strong> contains a library to run a web server that is used by the remote management.</li>
 </ul>
-<h2 id="modularity-cohesion-and-coupling">Modularity, Cohesion and Coupling</h2>
+
+    </section>
+    <section class="content">
+<h1 id="modularity-cohesion-and-coupling">Modularity, Cohesion and Coupling</h1>
 <p>The main goal of introducing the system is to introduce <strong>modularity</strong>. With modularity we understand the degree to which components can be separated from each other and combined. High modularity means we can separate components easier from each other and combine them in different ways, resulting in higher flexibility and variety.</p>
 <p>Looking at the components from Airgate, we can say that they have good modularity: A new version of the scanner can most likely be introduced by just adding a new version of the scanner module, and adding an additional module for a specific customer with some extra functionality also seems possible. Operations like these are much easier when we have good modularity, or can be a nightmare if we don’t.</p>
 <p>Good modularity can also be explained by a <strong>high cohesion</strong> of modules and <strong>low coupling</strong> between them:</p>
@@ -257,7 +261,10 @@
 <h3 id="units-of-reuse">Units of Reuse</h3>
 <p>All the aspects above make components also good candidates for being reused, that means, across several, possibly very different systems. The logging component, for instance, is so general that it can be reused probably in any system, while the Gate controller is probably not suitable for reuse, and certainly not outside of the Airgate product range.</p>
 <p>In some situations, it may be smart to build a component with reuse in mind. However, this can also be dangerous, since it makes the initial development more expensive and shifts focus away on the specific system to build. There is always some uncertainty about if reuse will really happen, so there may be some overhead that in the end does not pay off. Therefore, be sceptic about the reuse argument in the first place.</p>
-<h2 id="communication-between-components">Communication Between Components</h2>
+
+    </section>
+    <section class="content">
+<h1 id="communication-between-components">Communication Between Components</h1>
 <p>Components can communicate with each other by various means.</p>
 <ul>
 <li>When components are written in the same programming language and execute on the same computer, they can communicate directly via method calls and passing data or objects between them, like different classes within the same program can communicate.</li>

@@ -229,7 +229,7 @@ The interfaces describe how to use a specific functionality of a component. And 
 ---
 type: figure
 source: figures/components/airgate-discovery.png
-caption: "A possible component-based structure for the Airgate system."
+caption: "The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services."
 ---
 
 

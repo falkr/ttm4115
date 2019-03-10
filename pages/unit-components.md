@@ -63,6 +63,10 @@ The text-to-speech just accepts a command that contains a sentence in English. F
 
 # Component Template
 
+You can use our code template for components that contains a lot of the boilerplate code that is useful for any component that connects STMPY state machines with MQTT:
+
+<a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py" class="arrow">TimerManager.py<a>
+
 ---
 type: figure
 source: figures/components/component-template.svg

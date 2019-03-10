@@ -1,16 +1,25 @@
+# Components
+
+
+So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yets. 
+This week we want to combine several concepts to build a more complete software component. 
+
 ---
-status: draft
+type: figure
+source: figures/components/meme.jpg
 ---
+
+
 
 # Timer Module for a Voice Assistant
 
 Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. Currently, Alexa can have these named timers, while Siri cannot. This means, a user should be able to say:
 
-> "Hey Assistant*, please start a 10-minute spaghetti timer."
+> "Hey Assistant, please start a 10-minute spaghetti timer."
 
 During this timer is active, the user can start another timer:
 
-> "Hey Assistant*, start a 2-minute green tea timer."
+> "Hey Assistant, start a 2-minute green tea timer."
 
 These timers are independent of each other. Once they expire, the assistant says:
 
@@ -21,7 +30,10 @@ And then later:
 > "Your spaghetti timer is ready!"
 
 
-https://youtu.be/VqAPibRlTvo
+---
+type: youtube
+video: VqAPibRlTvo
+---
 
 
 The part of the system you are concerned with looks as follows:
@@ -32,7 +44,7 @@ The part of the system you are concerned with looks as follows:
 
 * The voice command detection is responsible for listening for the activation command ("Hey Assistant"), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here. 
 
-* The text-to-speech engine runs locally. It receives strings that are then transformed into speech. Each act of speech is called an "utterance". It also pays attention that several utterances are queued up, i.e., when the module receives several utterances that would overlap, it plays them nicely one after the other.
+* The text-to-speech engine runs locally. It receives strings that are then transformed into speech. 
 
 You should design the timer manager in the middle. It receives commands from the voice command detection, should maintain the control over the necessary timers, and produce commands for the text-to-speech engine.
 
@@ -42,29 +54,146 @@ From the voice command detection, you may receive the following commands:
 * **Stopping a timer:** The command is called *timer_stop* and includes the *name* of the timer (string) that should be stopped.
 * **Status:** The command is called *timer_status*. The user can either ask for a specific timer, then the *name* is set. If the name is not set, the device should present a list of all currently active timers.
 
-The text-to-speech just accepts a command that contains a sentence in English. For the timers, you will probably produce the following utterances:
+The text-to-speech just accepts a command that contains a sentence in English. For the timers, you will probably produce the following texts:
 
 * "Your spaghetti timer is ready!"
 * "You have 30 seconds left on the spaghetti timer."
 * "Your have 2 active timers, spaghetti and green tea." 
 
 
+# Component Template
 
-## Hint 1: MQTT 
-
-* Have a look at the MQTT Notebook to get all necessary information on how to publish and subscribe using MQTT.
-
-## Hint 2: Serialization
-
-* Have a look at the Serialization with JSON Notebook, that tells you how to serialize structured data, like the commands above, into strings that can easily be sent for instance via MQTT.
-
-## Hint 3: Component Structure
-
-* Once challenge of the system is that it needs to maintain control over many (in principle and unlimited number of) timers at the same time. All of the timers have some stateful behavior, because they can expire at any time. You could create a system that continuously runs over a list of timers, determines which of them expired and then schedules the necessary test-to-speech utterances. However, this is a job that can be done by a set of state machines. **You should therefore create a new state machine instance for every timer that gets started.**
+---
+type: figure
+source: figures/components/component-template.svg
+caption: "Template for a component with an MQTT client and STMPY state machines."
+---
 
 
-* update STMPY to version 0.5.1. This latest version adds a method `get_timer(name)` in the Machine class so you can check the current state of a timer with a given name. The method returns the time in seconds remaining for the timer, or None if the timer is currently not active.
+## Logging
 
-* Install the application **MQTT.fx** from [here](http://mqttfx.jensd.de). With this application, you can send and receive MQTT messages. You can use it to simulate the functions of the text-to-speech engine and the voice command detection.
+Logging is important to figure out what the system is doing, especially when something is going wrong. 
+When configuring logging, we can select a log level, which determines which messages are printed. There are the following log levels:
 
-* Use the template TimerManager.py form the repository as optional starting point. https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py
+* **DEBUG:** Most fine-grained logging, printing everything
+* **INFO:**  Only the most important informational log items
+* **WARN:**  Show only warnings and errors.
+* **ERROR:** Show only error messages.
+
+Different parts of our component have different log levels, the code below registers the log level for the main component (with name `__name__`):
+
+```python
+debug_level = logging.DEBUG
+logger = logging.getLogger(__name__)
+logger.setLevel(debug_level)
+ch = logging.StreamHandler()
+ch.setLevel(debug_level)
+formatter = logging.Formatter('%(asctime)s - %(name)-12s - %(levelname)-8s - %(message)s')
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+```
+
+To change the log level for STMPY state machine:
+
+```python
+...
+logger = logging.getLogger('stmpy')
+...
+```
+
+
+## Communication: MQTT Client and JSON
+
+The component has its own MQTT client that gets configured and started with the main component. 
+
+### JSON
+
+JSON is a way to serialize data into strings. Have a look at the notebook below:
+
+<a href="https://github.com/falkr/stmpy-notebooks/blob/master/Serialization%20with%20JSON.ipynb" class="arrow">Notebook about JSON<a>
+
+
+For the timer system, you can use the following JSON encodings:
+
+```json
+{"command": "new_timer", "name": "spaghetti", "duration":50}
+```
+
+```json
+{"command": "status_all_timers"}
+```
+
+```json
+{"command": "status_single_timer", "name": "spaghetti"}
+```
+
+
+
+### Incoming Messages
+
+Messages arrive in the components function `on_message()`. In this message, we need to determine what the incoming message is, get any data it may have as payload, and then react on it. 
+
+If the payload is given as JSON-encoded string, we can get back a dictionary with the following lines:
+
+```python
+try:
+    payload = json.loads(msg.payload.decode("utf-8"))
+except Exception as err:
+    self._logger.error('Message sent to topic {} had no valid JSON. Message ignored. {}'.format(msg.topic, err))
+    return
+command = payload.get('command')
+```
+
+Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a meachine.
+
+```python
+self.stm_driver.send('report', timer_name)
+```
+
+
+### Publishing
+
+Publishing works via the NQTT client, for example in the effect of a transition of the state machine. 
+This works exactly like we used MQTT before, we get access to the client via the compoinent's variable.
+
+```python
+self.component.mqtt_client.publish('topic.../', message)
+```
+
+
+## Sessions: Several Instances of State Machines
+
+The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:
+
+---
+type: figure
+source: figures/components/timer-stm.png
+---
+
+
+In our example it is important that the assistant can keep track of **several timers** at the same time. 
+We want to do this by creating a single state machine instance for each timer.
+Each state machine can then take care of a single timer. 
+These state machine instances are also called **sessions**.
+This may seem like an overhead for this simple scenario, since the timer is a relatively easy behavior, but this is a clean solution that also works well for much more complicated interactions.
+
+
+In our component, we can create and start a new session with the following code:
+
+```python
+timer_name = ...
+duration = ...
+timer_stm = TimerLogic(timer_name, duration, self)
+self.stm_driver.add_machine(timer_stm)
+```
+
+
+# Task: Create the Timer Component
+
+* Use the component template, and add the required code in the places marked with `TODO`.
+  * Start your own broker.
+  * Choose topics.  
+* Send Timer commands into the component by using MQTT.FX. 
+* See if your components works as intended and sends the required messages to the Text To Speech component.
+  * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic
+

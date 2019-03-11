@@ -13,7 +13,7 @@ source: figures/components/meme.jpg
 
 # Timer Module for a Voice Assistant
 
-Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. Currently, Alexa can have these named timers, while Siri cannot. This means, a user should be able to say:
+Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. This means, a user should be able to say:
 
 > "Hey Assistant, please start a 10-minute spaghetti timer."
 
@@ -194,10 +194,40 @@ self.stm_driver.add_machine(timer_stm)
 
 # Task: Create the Timer Component
 
-* Use the component template, and add the required code in the places marked with `TODO`.
-  * Start your own broker.
-  * Choose topics.  
-* Send Timer commands into the component by using MQTT.FX. 
-* See if your components works as intended and sends the required messages to the Text To Speech component.
-  * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic
 
+* Create **two sequence diagrams** for the scenario with a 10 minute timer "spaghetti", and a 2 minute timer "green tea".
+  * Create one version in which you show the MQTT messages, including _publish_ and _subscribe_, including the MQTT broker as lifeline.
+  * Create another, more high-level sequence diagram, in which you don't show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.
+* Use [the component template](https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py), and add the required code in the places marked with `TODO`.
+  * Start your own broker.
+  * Choose topics.
+  * Use the JSON formats as suggested above.
+* Send Timer commands into the component by using MQTT.FX. 
+  * Directly send the JSON strings suggested above.
+* See if your component works as intended and sends the required messages to the Text To Speech component.
+  * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.
+* Reflect on your progress in a document. 
+* Create a **short and uncut demo video** using two named timers, simulated via MQTT.FX and your timer manager component.
+
+
+# Checklist
+
+### Blackboard
+
+- Deliver your document that shows progress and results. 
+
+### MS Teams
+
+- Ask for feedback in general
+- Report any errors with the provided solution
+- Discuss, with me or other teams
+
+### Team Reflection for This Unit 
+
+* Add another section to the team reflection document, just like every week. 
+
+### Individual Reflection
+
+* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
+* Copy the answers into a document that you maintain on your own.
+* Add any additional observations to your reflection diary.

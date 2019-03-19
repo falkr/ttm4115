@@ -5,7 +5,7 @@ In this delivery you should reveal some details on the design of your system. Th
 Some technical hints on the delivery:
 
 - Team delivery, one document per team
-- Please use the file name **ttm4115-2018-t2-team-XX.pdf**
+- Please use the file name **ttm4115-2019-t2-team-XX.pdf**
 - Include the team name on each page, in the footer or header
 
 
@@ -23,9 +23,7 @@ How much? Depends of course on your layout. If There fit two diagrams on a page,
 
 Create state machines for the components in the system. 
 
-* Build executable state machines, as introduced in the lecture notes. (This does not require to build the state machines in Python with STMPY.)
-* Use explicit timer actions
-* Try to use only simple states, and use composite states only when you really see a benefit with them. (Used in a wrong way, they make diagrams more complex.)
+* Build state machines, as introduced in the lecture notes. (This does not require to build the state machines in Python with STMPY.)
 * If a state machine is large, spread it on several pages by referring to states by name.
 * Work on the layout. A nice diagram is important, also for you to understand it.
 

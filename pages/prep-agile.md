@@ -1,20 +1,7 @@
----
-status: draft
----
+<mark>This site is under construction. Have a look if you like.</mark>
+
 
 # Agile vs. Architecture
-
-
-
-Goals: 
-
-## Learning Goals
-
-- Have fun
-- More Goals
-- even more goals
-
-
 
 
 
@@ -31,7 +18,6 @@ So far, we haven't spent a lot of time to talk about our development process. We
 
 When we talk about *development process* we mean how we should organize our work around these documents:
 When to create which document, how they depend on each other, and how to organize our team around these.
-
 Initially, we could follow this scheme:
 
 ---
@@ -46,11 +32,10 @@ caption:
 * When making the use cases, more questions come up that you have to clarify with the customer, and you need to refine the requirements. 
 * When making the sequence diagrams, you may also need to go back and reconsider use cases and requirements. 
 * You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code. 
-* ...
+
 
 The above model is also called "Waterfall Model", because the different stages follow each other. 
-(The original image was also moving downwards, and looked like a waterfall.) 
-Have a look into the following presentation: (The video is not part of the RAT.)
+Have a look into the following presentation: (The details of the video are not part of the RAT.)
 
 
 

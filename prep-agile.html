@@ -127,13 +127,9 @@
 
 
 <div class="page">
-    <section class="content">
-<mark>This site is under construction. Have a look if you like.</mark>
-
-
     </section>
     <section class="content">
-<h1 id="agile-vs.-architecture">Agile vs. Architecture</h1>
+<h1 id="agile-vs.architecture">Agile vs. Architecture</h1>
 
 <p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
 <ul>
@@ -153,6 +149,7 @@
 <aside name="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
 </p></aside>
 </div>
+<p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called “Waterfall Model”, because the different stages follow each other.</p>
 <p><strong>But this is not how real projects work!</strong> In reality, the following will happen:</p>
 <ul>
 <li>When making the use cases, more questions come up that you have to clarify with the customer, and you need to refine the requirements.</li>
@@ -160,7 +157,7 @@
 <li>You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code.</li>
 </ul>
 
-<p>The above model is also called “Waterfall Model”, because the different stages follow each other. Have a look into the following presentation: (The details of the video are not part of the RAT.)</p>
+<p>Have a look into the following presentation: (The details of the video are not part of the RAT.)</p>
 
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NP9AIUT9nos?start=525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -176,9 +173,9 @@
 <aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
 </p></aside>
 </div>
-<p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of planning, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking”. Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
+<p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of <strong>planning</strong>, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking.” Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
 <p>To popularize agile development, some engineers gathered and prepared the <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">Agile Manifesto</a>. This document explains some of the principles. It is short to read, and most developers have at some point heard about it.</p>
-<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
+<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success, but touch on complex issues and are often discussed based on anecdotes and in general a bit “fluffy”. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
 
 <h2 id="mandatory-preparation">Mandatory Preparation</h2>
 <p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working. As part of the preparation, you should read through the Scrum Guide:</p>
@@ -186,10 +183,16 @@
 <li><a href="http://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-us.pdf">The Scrum Guide</a> by Ken Schwaber and Jeff Sutherland</li>
 </ul>
 
-<h2 id="optional-material">Optional Material:</h2>
-<ul>
-<li>Explaining Agile - Martin Fowler and Neil Ford at USI</li>
-</ul>
+<h2 id="optional-material">Optional Material</h2>
+
+<p>The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I’ll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!</p>
+
+<h3 id="video-scrum-in-under-5-minutes">Video: Scrum in under 5 minutes</h3>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Vt7Ik8Ublw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3 id="video-explaining-agile---martin-fowler-and-neil-ford-at-usi">Video: Explaining Agile - Martin Fowler and Neil Ford at USI</h3>
 
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GE6lbPLEAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

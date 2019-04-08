@@ -1,6 +1,4 @@
----
-status: draft
----
+
 
 # Agile vs. Architecture
 
@@ -47,7 +45,7 @@ source: figures/agile-forces.png
 caption: A development faces forces (in red), and should react with strategies (in blue).
 ---
 
-The forces and strategies were identified by Waterman, Noble and Allan in their article How much up Front? A Grounded Theory of Agile Architecture. The following are the more detailed descriptions of the forces: (Paraphrased from the original article.)
+The forces and strategies were identified by Waterman, Noble and Allan in their article _How much up Front? A Grounded Theory of Agile Architecture_. The following are the more detailed descriptions of the **forces** (paraphrased from the original article):
 
 * **F1 (REQUIREMENTS INSTABILITY)** refers to the effect that unstable requirements have on up-front planning. Being able to respond to changing requirements is one of the underlying values of the Agile Manifesto and is central to our conceptual definition of agility.
 * **F2 (TECHNICAL RISK)** describes the effect that exposure to potentially negative outcome has on a team’s up-front effort. Risk is caused by complex architecture. 
@@ -56,9 +54,9 @@ The forces and strategies were identified by Waterman, Noble and Allan in their 
 * **F5 (CUSTOMER AGILITY)** describes the culture of the customer’s organisation and the huge impact that it has on the amount of up-front architecture design a team does. A customer must have an agile culture that is similar to the team’s culture, whether the team is in-house or an ISV (independent software vendor), for the team to be truly agile. A highly-agile team will not fit in well with a heavyweight process-oriented organisation that prefers planning and formal communication.
 * **F6 (EXPERIENCE)** describes the impact that an experienced architect’s tacit knowledge and implicit decision-making ability has on the time that an agile team spends on up-front design. Experienced architects have breadth of knowledge; they are more likely to be aware of suitable options for implementing a solution and better understand what will work and what will not.
 
-And here are the detailed strategies:
+And here are the detailed **strategies**:
 
-* A team’s ability to use **S1 (RESPOND TO CHANGE)** is directly related to how agile it is. S1 increases the architec- ture’s agility by increasing its modifiability and its tolerance of change, and allows the team to ensure the architecture continuously represents the best solution to the problem as it evolves.
+* A team's ability to use **S1 (RESPOND TO CHANGE)** is directly related to how agile it is. S1 increases the architecture’s agility by increasing its modifiability and its tolerance of change, and allows the team to ensure the architecture continuously represents the best solution to the problem as it evolves.
 * **S2 (ADDRESS RISK)** reduces the impact of risk before it causes problems, and is usually done up-front, particularly for risk relating to system-wide decisions (for example, risk in selecting the technology stack or top-level styles). Using S2, a team designs the architecture in sufficient detail that it is comfortable that it is actually possible to build the system with a satisfactory level of risk.
 * **S3 (EMERGENT ARCHITECTURE)** produces an architecture in which the team makes only the minimum architecture decisions up-front, such as selecting the technology stack and the highest level architectural styles and patterns. When using S3, the team only considers the requirements that are immediately needed for its design, ignoring even high- level requirements that are to be implemented in the longer term. 
 * **S4 (BIG DESIGN UP-FRONT)** requires that the team acquires a full set of requirements and completes a full architecture design before development starts. There are no emergent design decisions, although the architecture may evolve during development. 

@@ -30,3 +30,5 @@ Some more hints:
 
 - Delivery I3 is not meant as a feedback on the course. For this, please use any of the other channels for course feedback. The focus is your own learning, and reflection about it. Of course, if you develop a point that naturally includes some feedback about the course you may do so.
 
+- The recommended language for I3 is **English**. You can, however, also deliver in Norwegian, if you prefer.
+

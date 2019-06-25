@@ -76,7 +76,7 @@ video: ZxywNhDFXOc
 
 ---
 type: youtube
-video: KRvI2g4zBTo&t=160s
+video: KRvI2g4zBTo
 ---
 
 ## Team 12 

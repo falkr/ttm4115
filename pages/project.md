@@ -10,6 +10,7 @@ We let you choose what your system should do, because we really want you to work
 
 Here are the videos from the previous years:
 
+* [Videos from 2019](videos-2019.html)
 * [Videos from 2018](videos-2018.html)
 * [Videos from 2017](videos-2017.html)
 * [Videos from 2016](https://mediasite.ntnu.no/Mediasite/Catalog/catalogs/ttm4115-studentvideoer-v16) (Requires NTNU login.)

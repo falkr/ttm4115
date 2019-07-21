@@ -15,8 +15,6 @@ Goals: After this week, you will be able to:
 - Find and resolve implied scenarios.
 
 
----
-
 # PDF Script
 
 <a class="arrow" href="files/sequence-diagrams.pdf">This week's material is provided as a PDF.</a>

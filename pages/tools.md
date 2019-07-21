@@ -2,6 +2,7 @@
 status: draft
 ---
 
+
 ## Official Tools
 
 Blackboard: 
@@ -21,14 +22,13 @@ Microsoft Forms:
 - peer review
 - reflections
 
+
 Website
 - most learning material
 - schedule
 
 Email:
 - announcements
-
-
 
 
 ## Draw.io

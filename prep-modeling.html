@@ -133,8 +133,7 @@
 <p>In the following unit, we will first look at the task of <strong>modeling in general</strong>. In the second part, we will learn the first diagram type: <strong>deployment diagrams</strong>. They are perfect for getting a good overview of the parts of the system, which software runs on them and how they communicate.</p>
 <h2 id="learning-goals">Learning Goals</h2>
 
-<div class="goals">
-<p>The learning goals specific for this week are the following:</p>
+<p>Goals: The learning goals specific for this week are the following:</p>
 <ul>
 <li>Be aware of the overall importance of modeling in engineering.</li>
 <li>Understand what constitutes a model.</li>
@@ -143,7 +142,6 @@
 <li>Decide which elements of a deployment diagram are relevant and chose a suitable level of detail.</li>
 </ul>
 
-</div>
 <h2 id="the-problem">The Problem</h2>
 <blockquote>
 <p>You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money.</p>
@@ -285,12 +283,12 @@
 <p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype « execution environment».</p>
 <p>Examples for execution environments are runtime environment, application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
 
-<span name="0I30I"></span><aside name="0I30I"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
-</aside>
 <h2 id="nested-nodes">Nested Nodes</h2>
 <p>In some cases it makes sense to show nested nodes.</p>
 <p>You can show a <strong>device inside a device</strong>, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory. Obviously, you should only shiw such elements if there is something special you want to point out. Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.</p>
 <p>Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.</p>
+
+<p>Aside: I haven’t so far found a good example where an execution environment contains another execution environment.</p>
 
 <div class="figure">
 <img src="figures/deployment/nested-nodes.svg" width="100%"/>
@@ -373,28 +371,28 @@ Deployment diagrams most often show node instances
 </div>
     </section>
     <section class="content">
-<span name="ED3S2"></span><aside name="ED3S2"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
-</aside>
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>
 
+<p>Aside: The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Man81KkQyNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Man81KkQyNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5plFlvAI7Ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5plFlvAI7Ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O3DcU50aMDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O3DcU50aMDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fZrULbBqalc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fZrULbBqalc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DTOymPZmYkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DTOymPZmYkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nTtQwGoUUNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nTtQwGoUUNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
     </section>
 </div>

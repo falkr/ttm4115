@@ -140,8 +140,7 @@
 
 <p>State machines are precise artefacts that can take care of the detailed behavior, so they are suitable for unambiguously define how a system should work. In the end, you did a good job if you are able to map user requirements to a set of consistent, high-quality state machines.</p>
 
-<div class="check">
-<p>With high quality, we mean here that:</p>
+<p>Check: With high quality, we mean here that:</p>
 <ul>
 <li>The state machine is syntactically correct.</li>
 <li>The state machine describes behavior that makes sense and is clearly defined.</li>
@@ -150,7 +149,6 @@
 </ul>
 <p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts. Actually, I think I have never observed that even experts write down a state machine correctly on the first attempt, because there is always something that you forget. So, they key to creating a state machine: <strong>Don’t even try to make it correct on the first attempt, but approach it iteratively.</strong> Sometimes it is a good idea to separate the task of creating something from the test of validating it. Otherwise it is easy to get stuck. So for state machines, we switch between writing down a state machine and then checking it.</p>
 
-</div>
 <div class="figure">
 <img src="figures/statemachines/iterate.svg" alt="Switch between creating a state machine and checking it, so that you don't get stuck." width="100%"/>
 <span name="figures/statemachines/iterate.svg">&nbsp;</span>
@@ -194,7 +192,7 @@
 <p>For each <strong>timer</strong> you should check:</p>
 <ul>
 <li><strong>Are timers properly started?</strong> All timers must be started by the machine itself, so a timer that is not started will never expire and is hence not useful. Find a proper place to start it, either as part of a transition effect or as entry or exit actions, just like other actions.</li>
-<li><strong>Are timer expirations handled?</strong> Check what happens when a started timer expires. If a timeout happens in a state that does not declÃ¸are an outgoing transition triggered by it, it is simply ignored. This may be okay in your machine (because something else happended and you don’t need the timer anymore), but it can also be the sign of an error.</li>
+<li><strong>Are timer expirations handled?</strong> Check what happens when a started timer expires. If a timeout happens in a state that does not decløare an outgoing transition triggered by it, it is simply ignored. This may be okay in your machine (because something else happended and you don’t need the timer anymore), but it can also be the sign of an error.</li>
 </ul>
 <p>These are the rules that you can check even without knowing exactly what the application should do, just by looking at the state machines. These are generic rules, independent of a specific application, and if they don’t hold, it is very likely that you do have a problem. But then there are also errors that have to do with your specific <strong>application.</strong> This can be a bit harder to find out. You need to simulate the state machines using your fingers and go through it state by state and event by event. When the problem is not too big, this is possible. Next week, once we implement state machines in Python, you will also be able to build functioning prototypes, which you can use and test to see how the final state machine behaves.</p>
 <!--
@@ -263,7 +261,7 @@ example is the car lock. would work with variables, but better with a state.
 <p>You should build the state machine for the following device:</p>
 
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>It’s a kitchen timer. It has 4 LEDs and a button. When the button is pressed, the first LED is switched on, and the plug provides electricity, for instance for a coffee machine. After 15 minutes, the LED is switched off and the plug is turned off. Whenever the button is pressed when an LED is already on, the next LED is switched on and time timer is set to 30, 45, or 60 minutes, respectively. If all LEDs are on, and the button is pressed, all LEDs and the plug are switched off.</p>
 <p>You can ignore that the LED of the segment that is currently active is blinking, just assume it lights all the time.</p>

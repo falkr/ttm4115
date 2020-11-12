@@ -139,6 +139,8 @@
 <h2 id="benefits-of-state-machines-in-code">Benefits of State Machines in Code</h2>
 <p>In general, state machines are useful also at the code level when there is a lot of concurrency going on, and a component needs to order a set of events that can come more or less in any order. You may think that there is support for threads in most programming languages, and that this is enough to handle concurrency. However, sometimes also this support is very specific to certain problems and not simple to learn. Usually when learning Java, which has a really extensive API for concurrency, the concurrency part is considered the most difficult one, and most developers have to consider a book when doing more elaborate tasks. Python has even less mature for concurrency and synchronization, and also this is hard to get right. Just look at this:</p>
 
+<p>Aside: The reason for looking at state machines is simple: Concurrency in programming languages is hard, even for experienced developers.</p>
+
 <table class="table">
 <tr>
 
@@ -193,6 +195,8 @@ Many programmers cannot even handle very simple threading problems correctly.
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A programmer had a problem. He thought to himself, &quot;I know, I&#39;ll solve it with threads!&quot;. has Now problems. two he</p>&mdash; Davidlohr Bueso (@davidlohr) <a href="https://twitter.com/davidlohr/status/288786300067270656?ref_src=twsrc%5Etfw">January 8, 2013</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
+
+
 <p>With state machines, we have a relatively simple model that scales nicely with various challenges in concurrency. This does not make concurrency problems vanish, but you have a good tool to solve challenges. State machines are relatively easy to debug, since you can check in which current state they are, and because you can look at a trace of events that explains how they got there.</p>
 <p>It turns out, that state machines are also relatively easy to implement, and we can run many different state machines within the same thread. This means we can do a <em>lot</em> of concurrent things in just own thread, and <strong>just one busy while loop</strong>, which can make our programs quite efficient.</p>
 <p>But how can a state machine do it? With state machines, we have a notation that motivates us to define behavior in short pieces, which are the transitions. Think of them as short little pieces of thread, as illustrated in the figure below. Threads of different color belong to different tasks. But because these tasks are executed concurrently, the state machine sorts them and executes one of them at a time. The states in between are just the ordering criteria between them. (If this analogy is not <em>entirely</em> clear to you now, don’t worry. You will understand more once we implement state machines.)</p>
@@ -229,7 +233,7 @@ Many programmers cannot even handle very simple threading problems correctly.
 </p></aside>
 </div>
 <ul>
-<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
+<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>
@@ -245,7 +249,7 @@ Many programmers cannot even handle very simple threading problems correctly.
 
 <ul>
 <li>Install Jupyter Notebooks on your computer, following <a href="tools-notebooks.html">these instructions</a>.</li>
-<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks" class="uri">https://github.com/falkr/stmpy-notebooks</a> and download it.
+<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks">https://github.com/falkr/stmpy-notebooks</a> and download it.
 <ul>
 <li>You can either pull it via Git, or download directly the contents as a ZIP file, <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">using this link</a>.</li>
 </ul></li>

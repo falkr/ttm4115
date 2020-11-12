@@ -157,13 +157,14 @@
 </blockquote>
 
 <div class="figure">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VqAPibRlTvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VqAPibRlTvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>The part of the system you are concerned with looks as follows:</p>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS&amp;export=download&quot;}">
 
-</div>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS%26export%3Ddownload"></script>
+
+
 
 <ul>
 <li><p>The voice command detection is responsible for listening for the activation command (“Hey Assistant”), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here.</p></li>
@@ -205,18 +206,21 @@
 <li><strong>ERROR:</strong> Show only error messages.</li>
 </ul>
 <p>Different parts of our component have different log levels, the code below registers the log level for the main component (with name <code>__name__</code>):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1">debug_level <span class="op">=</span> logging.DEBUG</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">logger <span class="op">=</span> logging.getLogger(<span class="va">__name__</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">logger.setLevel(debug_level)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">ch <span class="op">=</span> logging.StreamHandler()</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">ch.setLevel(debug_level)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">formatter <span class="op">=</span> logging.Formatter(<span class="st">&#39;</span><span class="sc">%(asctime)s</span><span class="st"> - </span><span class="sc">%(name)-12s</span><span class="st"> - </span><span class="sc">%(levelname)-8s</span><span class="st"> - </span><span class="sc">%(message)s</span><span class="st">&#39;</span>)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7">ch.setFormatter(formatter)</a>
-<a class="sourceLine" id="cb1-8" data-line-number="8">logger.addHandler(ch)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>debug_level <span class="op">=</span> logging.DEBUG</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>logger <span class="op">=</span> logging.getLogger(<span class="va">__name__</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>logger.setLevel(debug_level)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>ch <span class="op">=</span> logging.StreamHandler()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>ch.setLevel(debug_level)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>formatter <span class="op">=</span> logging.Formatter(<span class="st">&#39;</span><span class="sc">%(asctime)s</span><span class="st"> - </span><span class="sc">%(name)-12s</span><span class="st"> - </span><span class="sc">%(levelname)-8s</span><span class="st"> - </span><span class="sc">%(message)s</span><span class="st">&#39;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>ch.setFormatter(formatter)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>logger.addHandler(ch)</span></code></pre></div>
+
 <p>To change the log level for STMPY state machine:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1">...</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">logger <span class="op">=</span> logging.getLogger(<span class="st">&#39;stmpy&#39;</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">...</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>logger <span class="op">=</span> logging.getLogger(<span class="st">&#39;stmpy&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>...</span></code></pre></div>
 
 <h2 id="communication-mqtt-client-and-json">Communication: MQTT Client and JSON</h2>
 <p>The component has its own MQTT client that gets configured and started with the main component.</p>
@@ -225,25 +229,32 @@
 <p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/Serialization%20with%20JSON.ipynb" class="arrow">Notebook about JSON<a></p>
 
 <p>For the timer system, you can use the following JSON encodings:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;new_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">,</span> <span class="dt">&quot;duration&quot;</span><span class="fu">:</span><span class="dv">50</span><span class="fu">}</span></a></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_all_timers&quot;</span><span class="fu">}</span></a></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_single_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">}</span></a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;new_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">,</span> <span class="dt">&quot;duration&quot;</span><span class="fu">:</span><span class="dv">50</span><span class="fu">}</span></span></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_all_timers&quot;</span><span class="fu">}</span></span></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_single_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">}</span></span></code></pre></div>
 
 <h3 id="incoming-messages">Incoming Messages</h3>
 <p>Messages arrive in the components function <code>on_message()</code>. In this message, we need to determine what the incoming message is, get any data it may have as payload, and then react on it.</p>
 <p>If the payload is given as JSON-encoded string, we can get back a dictionary with the following lines:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">try</span>:</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">    payload <span class="op">=</span> json.loads(msg.payload.decode(<span class="st">&quot;utf-8&quot;</span>))</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">    <span class="va">self</span>._logger.error(<span class="st">&#39;Message sent to topic </span><span class="sc">{}</span><span class="st"> had no valid JSON. Message ignored. </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(msg.topic, err))</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="cf">return</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">command <span class="op">=</span> payload.get(<span class="st">&#39;command&#39;</span>)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="cf">try</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    payload <span class="op">=</span> json.loads(msg.payload.decode(<span class="st">&quot;utf-8&quot;</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    <span class="va">self</span>._logger.error(<span class="st">&#39;Message sent to topic </span><span class="sc">{}</span><span class="st"> had no valid JSON. Message ignored. </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(msg.topic, err))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    <span class="cf">return</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>command <span class="op">=</span> payload.get(<span class="st">&#39;command&#39;</span>)</span></code></pre></div>
+
 <p>Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a meachine.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="va">self</span>.stm_driver.send(<span class="st">&#39;report&#39;</span>, timer_name)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="va">self</span>.stm_driver.send(<span class="st">&#39;report&#39;</span>, timer_name)</span></code></pre></div>
 
 <h3 id="publishing">Publishing</h3>
 <p>Publishing works via the NQTT client, for example in the effect of a transition of the state machine. This works exactly like we used MQTT before, we get access to the client via the compoinent’s variable.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="va">self</span>.component.mqtt_client.publish(<span class="st">&#39;topic.../&#39;</span>, message)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="va">self</span>.component.mqtt_client.publish(<span class="st">&#39;topic.../&#39;</span>, message)</span></code></pre></div>
 
 <h2 id="sessions-several-instances-of-state-machines">Sessions: Several Instances of State Machines</h2>
 <p>The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:</p>
@@ -254,10 +265,11 @@
 <p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time. We want to do this by creating a single state machine instance for each timer. Each state machine can then take care of a single timer. These state machine instances are also called <strong>sessions</strong>. This may seem like an overhead for this simple scenario, since the timer is a relatively easy behavior, but this is a clean solution that also works well for much more complicated interactions.</p>
 
 <p>In our component, we can create and start a new session with the following code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1">timer_name <span class="op">=</span> ...</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">duration <span class="op">=</span> ...</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">timer_stm <span class="op">=</span> TimerLogic(timer_name, duration, <span class="va">self</span>)</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="va">self</span>.stm_driver.add_machine(timer_stm)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>timer_name <span class="op">=</span> ...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>duration <span class="op">=</span> ...</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>timer_stm <span class="op">=</span> TimerLogic(timer_name, duration, <span class="va">self</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="va">self</span>.stm_driver.add_machine(timer_stm)</span></code></pre></div>
 
     </section>
     <section class="content">

@@ -8,69 +8,25 @@ In this unit, you will learn how to implement state machines in Python. Achievin
 
 ## Benefits of State Machines in Code
 
-In general, state machines are useful also at the code level when there is a lot of concurrency going on, 
+State machines are useful also at the code level when there is a lot of concurrency going on, 
 and a component needs to order a set of events that can come more or less in any order. 
 You may think that there is support for threads in most programming languages, and that this is enough to handle concurrency. 
 However, sometimes also this support is very specific to certain problems and not simple to learn. 
-Usually when learning Java, which has a really extensive API for concurrency, 
-the concurrency part is considered the most difficult one, and most developers have to consider a book when doing more elaborate tasks. 
-Python has even less mature for concurrency and synchronization, and also this is hard to get right.
+For example, when learning Java, which has extensive support for concurrency, 
+the concurrency part is considered the most difficult one, and most developers have to look into a book when doing more elaborate tasks. 
+Python has even less mature support for concurrency and synchronization, and also this is hard to get right.
 Just look at this:
 
+---
+type: figure
+source: figures/statemachines/threads.pdf
+---
+
+
+:aside: The reason for looking at state machines is simple: Concurrency in programming languages is hard, even for experienced developers. 
 
 
 
-Aside: The reason for looking at state machines is simple: Concurrency in programming languages is hard, even for experienced developers. 
-
-
-<table class="table">
-<tr>
-
-<td>
-Just two parallel threads.
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-1.png" alt="" width="100" class="alignnone size-large wp-image-467" />
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-1-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
-</td>
-
-</tr><tr>
-
-<td>
-Just two parallel threads, with one synchronization point.
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-2.png" alt="" width="100" class="alignnone size-large wp-image-467" />
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-2-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
-</td>
-</tr><tr>
-
-<td>
-Three parallel threads, with a few synchronization points.
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-3.png" alt="" width="100" class="alignnone size-large wp-image-467" />
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-3-1024x755.png" alt="" width="250" class="alignnone size-large wp-image-467" />
-</td>
-</tr><tr>
-<td>
-Four f-ing threads!
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/threads-4.png" alt="" width="100" class="alignnone size-large wp-image-467" />
-</td>
-<td>
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/dev-4.png" alt="" width="250" class="alignnone size-large wp-image-467" />
-</td>
-
-</tr>
-</table>
 
 Many programmers cannot even handle very simple threading problems correctly. 
 
@@ -78,9 +34,9 @@ Many programmers cannot even handle very simple threading problems correctly.
 
 
 
-With state machines, we have a relatively simple model that scales nicely with various challenges in concurrency. 
+With state machines, we have a simple model that scales nicely with various challenges in concurrency. 
 This does not make concurrency problems vanish, but you have a good tool to solve challenges. 
-State machines are relatively easy to debug, since you can check in which current state they are, 
+State machines are easy to debug, since you can check in which current state they are, 
 and because you can look at a trace of events that explains how they got there. 
 
 It turns out, that state machines are also relatively easy to implement, 
@@ -145,10 +101,10 @@ caption: "The original sketch from a whiteboard when planning the first release 
 We will go through machines and drivers and their Python API in the following notebooks. 
 
 
-# Python Notebooks
+# Python Jupyter Lab
 
 
-* Install Jupyter Notebooks on your computer, following [these instructions](tools-notebooks.html). 
+* Install Jupyter Lab on your computer, following [these instructions](tools-notebooks.html). 
 * Visit the Github repository [https://github.com/falkr/stmpy-notebooks](https://github.com/falkr/stmpy-notebooks) and download it. 
   * You can either pull it via Git, or download directly the contents as a ZIP file, [using this link](https://github.com/falkr/stmpy-notebooks/archive/master.zip).
 

@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -133,10 +140,13 @@
 
 <p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
 <ul>
-<li>understanding how to figure out the user requirements so that we built the right system</li>
+<li>understanding how to figure out the user requirements so that we built the right system</li>
 <li>understanding the intricacies with communication and interactions</li>
 <li>the documentation of system architecture</li>
 <li>the specification of use cases</li>
+</ul>
+<p>In the second part of the course, we will also learn how to describe:</p>
+<ul>
 <li>the detailed specification of interactions with sequence diagrams</li>
 <li>the detailed specification of component behavior using state machines</li>
 <li>and finally how to code state machines</li>
@@ -144,9 +154,9 @@
 <p>When we talk about <em>development process</em> we mean how we should organize our work around these documents: When to create which document, how they depend on each other, and how to organize our team around these. Initially, we could follow this scheme:</p>
 
 <div class="figure">
-<img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
-<span name="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg">&nbsp;</span>
-<aside name="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
+<img src="figures/method.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
+<span name="figures/method.jpg">&nbsp;</span>
+<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
 </p></aside>
 </div>
 <p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called “Waterfall Model”, because the different stages follow each other.</p>

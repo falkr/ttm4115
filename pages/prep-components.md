@@ -10,14 +10,14 @@ This was a difficult learning unit to prepare! The reason is that we have to int
 
 So in the following, we have a combination of these perspectives. Some theoretical treatment with the principles, some view into the real world, and some programming in the week ahead. 
 
-But don't get me wrong: Components are a fascinating subject! Components do not only couple together a lot of the properties of a system, both at runtime and after deployment. They are the main subjects when we talk about software architecture, which is a changing field with different trends, ideas, fashions, faiths and also fantasies. When you learn, such discussions can be interesting but also confusing. What I want to achieve in the following unit is that you get the basic ideas and develop the skills to think about modularity in a system so you can adapt to whichever specific component framework and architectural style is used in your job. Here are, as always, the learning goals:
+But don't get me wrong: Components are a fascinating subject! Components do not only couple together a lot of the properties of a system, both at runtime and after deployment. They are the main subjects when we talk about software architecture, which is a changing field with different trends, ideas, fashions, faiths and also fantasies. When you learn, such discussions can be interesting but also confusing. What I want to achieve in the following unit is that you get the basic ideas and develop the skills to think about modularity in a system so you can adapt to whichever specific component framework and architectural style is used in your job. Here are, as always, the learning :goals:
 
 ## Learning Goals
 
 
 
 
-Goals: The learning goals specific for this week are the following:
+:goals: The learning goals specific for this week are the following:
 
 - Be aware of the aspects when decomposing a system into parts.
 - Understand and apply the mechanisms of services.
@@ -46,11 +46,11 @@ So far in the course, we have considered small examples and  focused on single s
 - Since most systems are distributed, we need to create different parts of the software for the different locations that can be deployed and started on their own.
 - It is also likely that we want to use some existing code or even larger parts of the system that we get from elsewhere. This again makes it necessary to split the implementation into parts.
 
-But even if we would write all our code ourselves and new for each new system (good luck with that), and even if the system wouldn't be distributed, we need to decompose the system implementation into smaller parts to keep it manageable at all. Hence, it is not a question _if_ we should partition our system into parts, but rather _how_.
+But even if we wrote all our code ourselves and new for each new system (good luck with that), and even if the system wouldn't be distributed, we need to decompose the system implementation into smaller parts to keep it manageable at all. Hence, it is not a question _if_ we should partition our system into parts, but rather _how_.
 
-## Components and Classes are not the Same
+## Components and Classes Are Not the Same
 
-Maybe you think _"Isn't this what objects and classes are for?"_. But that doesn't quite fit. Individual objects are not deployed in a system, they are often too fine-grained. 
+Maybe you think _"Isn't this what objects and classes are for?"_ But that doesn't quite fit. Individual objects are not deployed in a system, they are often too fine-grained. 
 
 You may well think of components as "objects" in terms of "things". And internally, when using an object-oriented language, they are  built from classes and objects. (They may even extend a class _Component_ provided by some component framework.) So if you want to think in object-oriented terms, think of a component as a set of classes and objects assembled into something bigger, with some extra properties that we look at in the following.
 
@@ -62,7 +62,7 @@ To create components also means to partition the entire system into components. 
 
 # Example: Airgate 
 
-Imagine we are the producer of airport gates, Airgate, like the ones we treated in the last unit. The airport gate consists of the hardware, that means, the turnstile, the display, the scanner and so on, and of course also the software. The software runs in the gate in an embedded computer, and connects all the hardware components together and integrates with the IT infrastructure of the airport, since we need to evaluate the validness of a boarding pass and register if a passenger boarded.
+Imagine we are the producer of airport gates, Airgate, like the ones we treated in the last unit. The airport gate consists of the hardware, that means, the turnstile, the display, the scanner and so on, and, of course, also the software. The software runs in the gate in an embedded computer, and connects all the hardware components together and integrates with the IT infrastructure of the airport, since we need to evaluate the validity of a boarding pass and register if a passenger boarded.
 
 The software part of the airport gate makes up a large part of the system. Much of the system quality and hence value will depend on it working well, and we need to spend quite some effort to develop it. 
 
@@ -70,7 +70,7 @@ Even though the functionality of the gateway seems simple, it has to take care o
 
 - Different airports have different IT backends, and the system needs to integrate with each of them.
 - Gates can have a different number of turnstiles and displays. 
-- There are different types of turnstiles, with slightly different logic that have been developed over time, since the mechanics change with improvements and local changes to the different airports.
+- There are different types of turnstiles, with slightly different logic that has been developed over time, since the mechanics change with improvements and local changes to the different airports.
 
 Airgate does not only need a single software program that is the same on all their installations. Instead, almost all software installations are a bit different. How should this software be structured? 
 
@@ -89,14 +89,14 @@ source: figures/components/airgate-components.png
 caption: "A possible component-based structure for the Airgate system."
 ---
 
-* **Gate Controller** contains the main logic of the gate that ties together all hardware elements and the connection to the backend.
+* **Gate Controller** contains the main logic of the gate that ties together all hardware elements and the connection to the back end.
 * **Airport Interface** contains the code to adapt with various version for different airports.
 * **Turnstile**, **Display** and **Scanner** encapsulate all logic that is needed to adapt to the various versions of hardware Airgate has sold over time.
 
 At the bottom of the diagram you see six more components, each providing more generic functionality. Most of them are from open source projects (such as Apache), because they are also used in many other systems. 
 
 * **Logging** provides a logging framework so that all events happening are logged into files or a data base. 
-* **Data Base** provides a database to store passengers passing for some time, in case the backend system does not work. 
+* **Data Base** provides a database to store passengers passing for some time, in case the back-end system does not work. 
 * **Configuration Manager** is responsible for installing the proper component versions based on a configuration file and the specific hardware versions it detects. 
 * **Remote Management** offers a user interface so that operators can log into the software remotely and run diagnosis tests or change the configuration. 
 * **Web Server** contains a library to run a web server that is used by the remote management.
@@ -110,13 +110,13 @@ Looking at the components from Airgate, we can say that they have good modularit
 Good modularity can also be explained by a **high cohesion** of modules and **low coupling** between them:
 
 * **Cohesion** means the degree of how much the functions of a component belong together. A component with high cohesion focuses on only a few things it does, while a component with little cohesion does a lot of different things. 
-* **Coupling** means the relation between several components. Ideally, this should be low, meaning that there is relatively little communication or dependencies between them. When there is a very high coupling between two components, one should consider if it would be easier to merge these two components into a single one. 
+* **Coupling** means the relation between several components. Ideally, this should be low, meaning that there is relatively little communication or dependencies between them. When there is a high coupling between two components, one should consider if it were easier to merge these two components into a single one. 
 
-You see that cohesion and coupling can be in conflict with each other: When we distribute some tasks between several components, we could end up with a high coupling between them, but highly cohesive components. When we, on the other side, combine these components into a single one, we could en up with a component that is not very cohesive because it does all kind of things.  
+You see that cohesion and coupling can be in conflict with each other: When we distribute some tasks between several components, we could end up with a high coupling between them, but highly cohesive components. When we, on the other side, combine these components into a single one, we could end up with a component that is not very cohesive because it does all kinds of things.  
 
 # The Different Aspects of Modularity
 
-Let's have a look int he following at the different aspects we have to think of when separating a system into components. 
+Let's have a look in the following at the different aspects we have to think of when separating a system into components. 
 
 ### Units of Abstraction
 
@@ -126,7 +126,7 @@ But you can imagine that by structuring functions into suitable components, it i
 
 ### Units of Locality
 
-Usually, a single component is locate within a single computer that means, at a single location. It would be technically possible to run code belonging to the same component on distributed computers connected by a network, but this often requires more communication between these parts and makes the system more fragile. Instead, components should be physically concentrated. 
+Usually, a single component is located within a single computer that means, at a single location. It would be technically possible to run code belonging to the same component on distributed computers connected by a network, but this often requires more communication between these parts and makes the system more fragile. Instead, components should be physically concentrated. 
 
 ### Units of Delivery
 
@@ -134,7 +134,7 @@ Components can be a unit of delivery, that means, a company could outsource the 
 
 Single classes are often too small to be individual delivery items that are not worth the effort of ordering somewhere else, and often even classes cannot be developed by themselves because they are so closely coupled with other classes. 
 
-Components, instead, offer a unit that can be more suitable to deliver separately.For that, its interfaces and functionality must be described as precisely as possible for each component.
+Components, instead, offer a unit that can be more suitable to deliver separately. For that, its interfaces and functionality must be described as precisely as possible for each component.
 
 
 
@@ -155,20 +155,20 @@ Some requirements may also be so important that they require a deeper analysis t
 
 > Only a passenger with a validated boarding pass may enter the aircraft.
 
-This is kind of obvious, but where should we check if this requirement is fulfilled? We must analyze if it could open the turnstile even if it did not get an okay from the airport backend. This does not mean that we only need to analyze the gate controller, but this is where we can start and get an overview and then systematically check which other components are relevant for this requirement. 
+This is kind of obvious, but where should we check if this requirement is fulfilled? We must analyze if it could open the turnstile even if it did not get an okay from the airport back end. This does not mean that we only need to analyze the gate controller, but this is where we can start and get an overview and then systematically check which other components are relevant for this requirement. 
 
 
 
 ### Units of Fault Containment
 
-It's unrealistic to assume that software contains no errors. Sometimes errors do not show up even during extensive testing, but may be a combination of factors that only happen at runtime in a specific deployment. It's therefore good to have mechanisms  in place that handle errors and can help to contain them, so that the effects for the system are less severe. Components represent such a possible containment border for errors. Internally, they must thill be developed in a fault-tolerant way.
+It's unrealistic to assume that software contains no errors. Sometimes errors do not show up even during extensive testing, but may be a combination of factors that only happen at runtime in a specific deployment. It's therefore good to have mechanisms  in place that handle errors and can help to contain them, so that the effects for the system are less severe. Components represent such a possible containment border for errors. Internally, they must still be developed in a fault-tolerant way.
 
-For instance, there could be an error in the Airgate system that  leads to log files not being deleted as they should. Maybe the reason for this is even outside of the logging component, maybe because of some error in the configuration file for the file system or so. You see that it would be beneficial that the system could still operate and board passengers. This is possible if the error is contained within the logging component.   For instance, the logging component detects the error when trying to write the file, warns the management system about errors, but does not cause the calling component (for instance the gate controller) to fail itself. Via the remote management this error could even be temporarily mitigated by re-configuring the logging component. If the whole system would be a single program, this would be more difficult.
+For instance, there could be an error in the Airgate system that  leads to log files not being deleted as they should. Maybe the reason for this is even outside of the logging component, maybe because of some error in the configuration file for the file system or so. You see that it would be beneficial that the system could still operate and board passengers. This is possible if the error is contained within the logging component.   For instance, the logging component detects the error when trying to write the file, warns the management system about errors, but does not cause the calling component (for instance the gate controller) to fail itself. Via the remote management, this error could even be temporarily mitigated by reconfiguring the logging component. If the whole system would be a single program, this would be more difficult.
 
 
 ### Units of Testing
 
-Testing is a comprehensive task, and tests need to be created at all levels of system, and from many different views. For instance, there are test for individual functions, and tests for entire use cases that span over several components. But components are a suitable scope to define test cases, too. 
+Testing is a comprehensive task, and tests need to be created at all levels of the system, and from many different views. For instance, there are tests for individual functions, and tests for entire use cases that span over several components. But components are a suitable scope to define test cases, too. 
 
 
 ### Units of Maintenance
@@ -184,7 +184,7 @@ Depending on the capabilities of the specific component framework that is used, 
 
 All the aspects above make components also good candidates for being reused, that means, across several, possibly very different systems. The logging component, for instance, is so general that it can be reused probably in any system, while the Gate controller is probably not suitable for reuse, and certainly not outside of the Airgate product range.
 
-In some situations, it may be smart to build a component with reuse in mind. However, this can also be dangerous, since it makes the initial development more expensive and shifts focus away on the specific system to build. There is always some uncertainty about if reuse will really happen, so there may be some overhead that in the end does not pay off. Therefore, be sceptic about the reuse argument in the first place. 
+In some situations, it may be smart to build a component with reuse in mind. However, this can also be dangerous, since it makes the initial development more expensive and shifts focus away on the specific system to build. There is always some uncertainty about if reuse will really happen, so there may be some overhead that in the end does not pay off. Therefore, be skeptical about the reuse argument in the first place. 
 
 # Communication Between Components
 
@@ -192,23 +192,23 @@ Components can communicate with each other by various means.
 
 * When components are written in the same programming language and execute on the same computer, they can communicate directly via method calls and passing data or objects between them, like different classes within the same program can communicate. 
 * Communication can also happen by a local message queue. This means that a component can send a message to another component. This allows for a more decoupled communication, i.e., the sender does not wait for the receiver and the message queue in between takes care of the delivery.
-* Components may also use other ways of communication, like an enterprise messaging system that communicates also between different locations. 
+* Components may also use other means of communication, like an enterprise messaging system that also communicates between different locations. 
 
 This list of possibilities is not complete, and should just give you a glimpse of the vast number of possibilities there are. 
 
 In the Airgate system, for example, the Gate Controller uses a local messaging system to send and receive messages between Turnstile, Display and Scanner. (These correspond to commands like `unlock`, `lock`, etc.) 
 
-The remote management components uses the web server functionality heavily and on a very fine-grained level, and therefore directly communicates via objects and method calls. 
+The remote management components use the web server functionality heavily and on a very fine-grained level, and therefore directly communicates via objects and method calls. 
 
 The airport interface uses an extra communication component that connects to the airport system. This communication component is responsible for serializing data into messages that are then transported via HTTPS and a more comprehensive infrastructure. 
 
 # Components, Interfaces and Services
 
 
-We have introduced above the idea that there can be different components for different variants of, for instance, the turnstile hardware. One cold be a turnstile that has a wheel, the other variant could be one with a little door. Imagine further that this has influence on the component directly interacting with the turnstile. We hence have two components managing the different variants of the turnstile; one for the turnstile with a wheel, one for the turnstile with doors. Their internal differences could be significant. The manufacturers of the turnstiles could use different wiring and communication busses. The turnstiles could also require different signals and different timing of them. That means, the state machines probably used inside the turnstile components could be very different. 
+We have introduced above the idea that there can be different components for different variants of, for instance, the turnstile hardware. One cold be a turnstile that has a wheel, the other variant could be one with a little door. Imagine further that this has influence on the component directly interacting with the turnstile. We hence have two components managing the different variants of the turnstile; one for the turnstile with a wheel, one for the turnstile with doors. Their internal differences could be significant. The manufacturers of the turnstiles could use different wiring and communication buses. The turnstiles could also require different signals and different timing of them. That means, the state machines probably used inside the turnstile components could be very different. 
 
 
-For the logic inside the gate controller, i.e., the component coordinating the turnstiles, scanners, displays with the airport backend, these differences should ideally have no influence. It just requires that the turnstile can be locked or unlocked, and that it gives information if a passenger passed or not. With other words, it wants to know less about the details and just work with a more abstract form of the turnstile. 
+For the logic inside the gate controller, i.e., the component coordinating the turnstiles, scanners, displays with the airport back end, these differences should ideally have no influence. It just requires that the turnstile can be locked or unlocked, and that it gives information if a passenger passed or not. With other words, it wants to know less about the details and just work with a more abstract form of the turnstile. 
 
 ## Interfaces
 
@@ -228,7 +228,7 @@ caption: "The two turnstile components both define the same interface."
 
 ## From Interfaces to Services
 
-The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a **service**. Have a look ath the three-step interaction below:
+The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a **service**. Have a look at the three-step interaction below:
 
 ---
 type: figure
@@ -238,12 +238,12 @@ caption: "The interactions going on between the components to provide and use th
 
 
 1. **Service Registration:** A component _offering_ a service, such as a turnstile, first registers its capability in a service registry. In the example, the configuration manager could be the service registry that keeps an overview of all services available.
-2. **Service Discovery:** A component _requiring_ a service, like the gate controller needs a turnstile, looks up which turnstiles are available by asking the service registry. As part of this sidcovery, it somehow needs to describe what it is looking for. In the simplest case, this can be some identifier of a service.
-3. **Service Usage:** Once the user of a service got a reference to it, it can use the service, as if they would have been linked statically. 
+2. **Service Discovery:** A component _requiring_ a service, like the gate controller needs a turnstile, looks up which turnstiles are available by asking the service registry. As part of this discovery, it somehow needs to describe what it is looking for. In the simplest case, this can be some identifier of a service.
+3. **Service Usage:** Once the user of a service got a reference to it, it can use the service, as if they had been linked statically. 
 
-For this to work, we not only need a description of the interface, the interface only describes _how_ a specific function can be used (which methods to use, which messages to send). The description of a service hence contains such an interface description, together with information on any dependencies, and also a description of _what_ the service is providing. Loosely speaking, the service description is towards components about the same as an interface relative to a class in object-orientation.  
+For this to work, we not only need a description of the interface, the interface only describes _how_ a specific function can be used (which methods to use, which messages to send). The description of a service hence contains such an interface description, together with information on any dependencies, and also a description of _what_ the service is providing. Loosely speaking, the service description is towards components about the same as an interface relative to a class in object orientation.  
 
-Services are the main way to structure modern systems, though in various forms and details. Services are the basis for many architectural styles. One of them is called _SOA - Service-Oriented Architecture_, and another one is that of _micro-sercvices_. However, you should know about the principles so you can understand the idea, independent of a specific style or hype. 
+Services are the main way to structure modern systems, though in various forms and details. Services are the basis for many architectural styles. One of them is called _SOA - Service-Oriented Architecture_, and another one is that of _micro-services_. However, you should know about the principles so you can understand the idea, independent of a specific style or hype. 
 
 
 # Component Frameworks
@@ -254,7 +254,7 @@ Instead, component frameworks are often defined separately, and contain rules fo
 
 In Java, for instance, OSGi is a packaging mechanisms that defines so-called bundles that are like a container for Java classes. These are effectively zip files with additional files internally that tell the OSGi runtime what to do with them. Based on OSGi there are at least three different component models (iPOJO, Blueprints, Declarative Services) that offer the concept of services.
 
-Sun, the original company behind Java, also defined a component model for enterprise software, called Java EE (Java Enterprise Edition), which defined components separate from the Java language, as its own library and product. 
+Sun, the original company behind Java, also defined a component model for enterprise software, called Java EE (Java Enterprise Edition), which defined components separately from the Java language, as its own library and product. 
 
 Similar frameworks exist for many other languages. You can look at the (messy) list provided on the [Wikipedia article on component-based software engineering](https://en.wikipedia.org/wiki/Component-based_software_engineering) to get a more complete picture.
 
@@ -262,12 +262,12 @@ The list of features is also long.
 
 - **Lifecycle management:** Components need to be installed, started, stopped. The component framework implements such lifecycle functions.
 - **Service registration and discovery:** A component framework can offer functionality to register services. The principle for that is simple, but the implementation can be complex.
-- **Persistence:** Components may save their states and data when the computer is shutdown, and the component framework can restore them at a later time. This function is called persistence. 
+- **Persistence:** Components may save their states and data when the computer is shut down, and the component framework can restore them at a later time. This function is called persistence. 
 - **Communication:** Component frameworks may also offer functionality for components to communicate with each other, and offer methods to manage channels and connections. 
 - **Logging:** Components may log events to make the monitoring of the system easier. 
 
 These are just a few examples of functionalities offered by component frameworks. 
 
 
-Aside: Only recently Java 9 was published with a framework called Java Jigsaw that [introduces a module system for Java](https://jaxenter.com/java-9-interview-marcus-biel-137836.html). 
+:aside: Only recently Java 9 was published with a framework called Java Jigsaw that [introduces a module system for Java](https://jaxenter.com/java-9-interview-marcus-biel-137836.html). 
 

@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -133,7 +140,7 @@
 <p>In this unit, we will have a look at communication at the level of an application. This means, we will learn how communication protocols influence our application logic. We will also study some of the details of specific protocols, in particular HTTP and MQTT.</p>
 <h2 id="learning-goals">Learning Goals</h2>
 
-<p>Goals: The learning goals specific for this week are the following:</p>
+<div class="goals"><p>The learning goals specific for this week are the following:</p>
 <ul>
 <li>Recognize and recite basic communication patterns and terminology.</li>
 <li>Relate communication mechanisms to each other.</li>
@@ -141,13 +148,13 @@
 <li>Reciting the basic mechanisms of HTTP and MQTT.</li>
 <li>Designing an MQTT topic structure for a given system.</li>
 </ul>
-
+</div>
 <p>Communication protocols easily fill a course on their own, because there are so many of them and because they rely on a lot of mechanisms that are worth studying. You have probably already learned about protocols like TCP and HTTP. In the following, we will have a look at protocols from the viewpoint of an application. From this perspective, we are concerned with the entire system, the user requirements and also the development process to build that system.</p>
 
 <div class="figure">
-<img src="https://imgs.xkcd.com/comics/wifi_vs_cellular.png" alt="Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/" width="100%"/>
-<span name="https://imgs.xkcd.com/comics/wifi_vs_cellular.png">&nbsp;</span>
-<aside name="https://imgs.xkcd.com/comics/wifi_vs_cellular.png"><p><p>Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</p>
+<img src="figures/communication/wifi_vs_cellular.png" alt="Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/" width="100%"/>
+<span name="figures/communication/wifi_vs_cellular.png">&nbsp;</span>
+<aside name="figures/communication/wifi_vs_cellular.png"><p><p>Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</p>
 </p></aside>
 </div>
 <p>Communication between components has a great influence on the system, its performance, its behavior, its robustness and its security, to name a few. Communication is probably most brittle part of our logic, since it depends on many factors that we don’t have control over. For instance, communication can <em>always</em> fail, either because the communication channel has errors, or our communication partner failed. Communication often takes a long time compared to local operations that we have more control over. We are never sure about the state of our system until we receive something back.</p>
@@ -215,8 +222,8 @@
 
 <p>In a <em>synchronous</em> communication, the sender and the receiver are directly connected, in the sense that the sender is not doing anything else while the communication is going on. A synchronous request-response, for instance, looks as follows:</p>
 
-<p>Aside: Note that we are now using the words synchronous and asynchronous for the communication pattern, not to the specific modeling element of a synchronous or asynchronous messages in sequence diagrams. In both examples, we use synchronous messages.</p>
-
+<span name="e4c801"></span><aside name="e4c801"><p>Note that we are now using the words synchronous and asynchronous for the communication pattern, not to the specific modeling element of a synchronous or asynchronous messages in sequence diagrams. In both examples, we use synchronous messages.</p>
+</aside>
 <div class="figure">
 <img src="figures/communication/sync.svg" width="100%"/>
 </div>
@@ -261,8 +268,8 @@
 
 <p>MQTT is often used in situations where events should be sent from many sensors and broadcast to several applications. IBM and others for instance use MQTT so that IoT devices can send updates into their cloud. When Facebook introduced their Messenger application as a standalone application, they also relied on MQTT to push messages to the clients. We consider MQTT in detail because this protocol is relatively easy to understand, introduces concepts that are used in various form also in other protocols, and because its patterns and topology is complementary to those of HTTP. When you have understood MQTT and HTTP, many other application-level protocols will be easy to understand, too. There are also some more practical reasons why we recommend you to use MQTT for the semester project:</p>
 
-<p>Aside: Read the article <a href="https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920">Building Facebook Messenger</a></p>
-
+<span name="b32115"></span><aside name="b32115"><p>Read the article <a href="https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920">Building Facebook Messenger</a></p>
+</aside>
 <ul>
 <li><p>MQTT is simple to debug, since more than one entity can subscribe to the same topic. This means, you can work on the communication between two entities, but observe all communication by subscribing to these topics with a debugging tool.</p></li>
 <li><p>You only need to handle the IP address of the MQTT broker. All other addressing happens indirectly via topics.</p></li>
@@ -280,11 +287,14 @@
 <p>The brokers only implement generic functionality, this means, they do not depend on the specific application. Therefore, the broker is a component in a system that can be reused. There are several MQTT brokers available. Examples are Mosquitto, RSMB, HiveMQ.</p>
 <h2 id="topics">Topics</h2>
 <p>Usually, subscribers are not interested in all messages that all publishers send. Subscribers therefore only subscribe to specific topics, which depend on the application. The topics are organized in a hierarchy, separated by a dash (“/”). The following is an example for topics that an application for home automation can use:</p>
+
 <pre><code>house/garage/lights/l1
 house/garage/lights/l2
 house/garage/sensors/pi1
 house/garage/doors/d1</code></pre>
+
 <p>The light <em>l1</em> for instance subscribes to the topic <code>house/garage/lights/l1</code> so that it can receive messages that switch it on or off. The passive infrared sensor <em>pi1</em> publishes messages to the topic <code>house/garage/sensors/pi1</code> every time it detects a movement. An application to switch on the lights whenever a movement is detected can then work like this: (In pseudo code)</p>
+
 <pre><code>subscribe to house/garage/sensors/pi1
 whenever an MQTT messages arrives at house/garage/sensors/pi1:
     send a message 
@@ -292,6 +302,7 @@ whenever an MQTT messages arrives at house/garage/sensors/pi1:
     
     after some time, send a message
         to house/garage/lights/l1 with payload &quot;off&quot;</code></pre>
+
 <p>Topics can include wildcards, which make it possible for a subscriber to subscribe to several topics with a single pattern:</p>
 <ul>
 <li><p>The “+” is used as a wildcard for a single level</p></li>

@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -136,16 +143,6 @@
 <li>Find the document <strong>Team Overview</strong> on Teams.</li>
 <li>Write in your regular timeslots.</li>
 </ul>
-<p>You make take the availability of group areas into account. If enough teams can select the same timeslot, we can reserve a group area.</p>
-<ul>
-<li>Monday 10:00 – 12:00: Smia</li>
-<li>Tuesday 8:00 – 10:00: Smia</li>
-<li>Tuesday 10:00 – 12:00: Smia</li>
-<li>Wednesday 10:00 – 12:00: R2</li>
-<li>Wednesday 18:00 – 20:00: R2</li>
-<li>Friday 8:00 – 10:00: R2</li>
-<li>Friday 14:00 – 16:00: Smia</li>
-</ul>
 
     </section>
     <section class="content">
@@ -159,8 +156,8 @@
 <h3 id="time-check">Time Check</h3>
 <p>Try to briefly get an overview of today’s tasks, and come up with a rough time plan.</p>
 
-<p>Aside: This team setup should become a normal routine for each week.</p>
-
+<span name="7ee756"></span><aside name="7ee756"><p>This team setup should become a normal routine for each week.</p>
+</aside>
     </section>
     <section class="content">
 <h1 id="team-reflection">Team Reflection</h1>
@@ -213,13 +210,13 @@
 <li>Create one final version for the whole team.</li>
 </ul>
 
-<p>Aside: Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.</p>
-
+<span name="a7a4a2"></span><aside name="a7a4a2"><p>Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.</p>
+</aside>
 <h2 id="more-detailed-role-descriptions">More Detailed Role Descriptions</h2>
 <p>For this activity, we work with three simplified roles. In reality, they can be more subtle and vague, and some roles are combined. What is important for now is that you start getting aware that different roles during development exist, and that they have different tasks and responsibilities, and therefore have different motivations, interests and require different skills.</p>
 
-<p>Aside: Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.</p>
-
+<span name="2c630b"></span><aside name="2c630b"><p>Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.</p>
+</aside>
 <h3 id="role-developers">Role: Developers</h3>
 <p>Developers usually work in a team of several developers. This will also be most likely your first position when you work in industry as an engineers. With respect to software, it often means that the task involve programming or building a system, but it can also mean to work on requirements with customers, do testing or other technical tasks. Developers are the one with technical expertise and know about how to build a system or product, but are not necessarily the ones answering why a certain product should be built or which features it should have.</p>
 <h3 id="role-product-owner">Role: Product Owner</h3>
@@ -249,17 +246,6 @@
 
     </section>
     <section class="content">
-<h1 id="task-initial-project-ideas">Task: Initial Project Ideas</h1>
-<p>Go through the individual ideas that you have for the semester project. The goal is that you get inspired by the ideas of the others. You don’t yet have to decide on a system today.</p>
-<ul>
-<li>Make a list of all project ideas.</li>
-<li>Briefly explain the idea.</li>
-<li>Combine similar ideas, or briefly sketch new ones.</li>
-<li>Create a final list of ideas for today.</li>
-</ul>
-
-    </section>
-    <section class="content">
 <h1 id="team-reflection-for-this-unit">Team Reflection for This Unit</h1>
 <p>It may seem like an overhead to reflect already now during the setup and with these relatively simple tasks. But this team reflection should become a routine from now on. Fill out the section for today’s week:</p>
 <h3 id="roles">Roles</h3>
@@ -277,8 +263,8 @@
 <li>Did you reach the goals?</li>
 </ul>
 
-<p>Aside: This team reflection should become a natural routine for each week.</p>
-
+<span name="33b829"></span><aside name="33b829"><p>This team reflection should become a natural routine for each week.</p>
+</aside>
     </section>
     <section class="content">
 <h1 id="individual-reflection">Individual Reflection</h1>
@@ -296,9 +282,6 @@
 <ul>
 <li>Setup regular meeting times and written them into the common Team Overview document.</li>
 <li>First Team Reflection (in the public channel for your team).</li>
-</ul>
-<p>Deliveries via Blackboard:</p>
-<ul>
 <li>Learning Goals Relevance (PDF)</li>
 <li>Balances in Teamwork (PDF)</li>
 </ul>

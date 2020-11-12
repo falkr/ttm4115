@@ -7,67 +7,40 @@ In this course you should try different roles regularly.
 As a start, we define at least the following roles:
 
 
-<div>
-<table class="table">
-  <tr>
-    <th></th>
-    <th>Roles</th>
-    <th>Tasks</th>
-  </tr>
-  <tr>
-  <tr>
-  	<td><i class="fas fa-user-cog"></i></td>
-    <td>Developer </td>
-    <td><ul><li><strong>everybody is a developer, during each unit.</strong></li><li>contributes to the technical work.</li></td>
-  </tr>
-  <tr>
-  <td><i class="fas fa-users"></i></td>
-    <td>Facilitator </td>
-    <td>
-    	<ul>
-    		<li>makes sure everybody is heard</li>
-    		<li>makes sure everybody participates</li>
-    		<li>keeps focus</li>
-    	</ul>
-    </td>
-  </tr>
-  <tr>
-  <td><i class="fas fa-user-clock"></i></td>
-    <td>Timekeeper </td>
-    <td>
-        <ul>
-    	<li>guides the creation of a time plan for the week or day</li>
-    	<li>keeps an eye on the time</li>
-    	<li>ensures progress</li>
-    	</ul>
-    </td>
-  </tr>
-  <tr>
-  <td><i class="fas fa-user-check"></i></td>
-    <td>Delivery </td>
-    <td>
-    	<ul>
-    		<li>delivers final outcome for that unit</li>
-    		<li>makes sure definition of done is clear</li>
-    		<li>checks that delivery is okay</li>
-    		<li>scratches the scratch card during the RAT, delivers it</li>
-    	</ul>
-    </td>
-  </tr>
-  <tr>
-  <td><i class="fas fa-user-edit"></i></td>
-    <td>Reflection </td>
-    <td>
-    	<ul>
-    		<li>observes the team</li>
-    		<li>keeps track of team process goals, follow-ups</li>
-    		<li>makes notes</li>
-    		<li>guides through entry into team reflection document</li>
-    	</ul>
-    </td>
-  </tr>
-</table>
-</div>
+**Developer:**
+
+* everybody is a developer, during each unit
+* contributes to the technical work
+
+
+**Facilitator:**
+
+* makes sure everybody is heard
+* makes sure everybody participates
+* keeps focus
+
+
+**Timekeeper:**
+
+* guides the creation of a time plan for the week or day
+* keeps an eye on the time
+* ensures progress
+
+
+**Delivery:**
+
+* delivers final outcome for that unit
+* makes sure definition of done is clear
+* checks that delivery is okay
+* scratches the scratch card during the RAT, delivers it
+
+
+**Reflection:**
+
+* observes the team
+* keeps track of team process goals, follow-ups
+* makes notes
+* guides through entry into team reflection document
 
 
 Make sure that you switch roles each week, and that everybody has each role several times during the course.

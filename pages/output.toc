@@ -1,0 +1,475 @@
+\contentsline {chapter}{\numberline {1}One}{9}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Airport Gate Control System}{9}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}Task 1: Selected Scenarios}{9}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Task 2: State Machine Design}{9}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Task 2: Turnstile - Controller}{10}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}Solution, Delivery and Reflection}{10}{subsection.1.1.4}% 
+\contentsline {section}{\numberline {1.2}Feedback on T1}{10}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Checklist}{10}{section.1.3}% 
+\contentsline {subsubsection}{MS Teams}{10}{section*.2}% 
+\contentsline {subsubsection}{Team Reflection for This Unit}{10}{section*.3}% 
+\contentsline {subsubsection}{Individual Reflection}{10}{section*.4}% 
+\contentsline {section}{\numberline {1.4}Requirements and Design Thinking}{11}{section.1.4}% 
+\contentsline {subsection}{\numberline {1.4.1}Learning Goals}{11}{subsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.4.2}Preparation}{11}{subsection.1.4.2}% 
+\contentsline {subsection}{\numberline {1.4.3}System Ideas}{11}{subsection.1.4.3}% 
+\contentsline {subsection}{\numberline {1.4.4}Optional Preparation}{11}{subsection.1.4.4}% 
+\contentsline {section}{\numberline {1.5}STMPY - State Machines in Python}{12}{section.1.5}% 
+\contentsline {subsection}{\numberline {1.5.1}STMPY Components}{12}{subsection.1.5.1}% 
+\contentsline {section}{\numberline {1.6}Use Cases}{13}{section.1.6}% 
+\contentsline {subsection}{\numberline {1.6.1}What are Good Use Cases?}{13}{subsection.1.6.1}% 
+\contentsline {subsubsection}{Step 1: Teamwork}{13}{section*.5}% 
+\contentsline {subsubsection}{Step 2: Merge Results}{13}{section*.6}% 
+\contentsline {section}{\numberline {1.7}Use Case Levels}{13}{section.1.7}% 
+\contentsline {section}{\numberline {1.8}Use Cases for Your Project}{13}{section.1.8}% 
+\contentsline {subsection}{\numberline {1.8.1}Use Case Levels}{13}{subsection.1.8.1}% 
+\contentsline {subsection}{\numberline {1.8.2}Use Case Diagram}{13}{subsection.1.8.2}% 
+\contentsline {subsection}{\numberline {1.8.3}Tabular Use Case Specification}{14}{subsection.1.8.3}% 
+\contentsline {section}{\numberline {1.9}Plan T1}{14}{section.1.9}% 
+\contentsline {section}{\numberline {1.10}Checklist}{14}{section.1.10}% 
+\contentsline {subsubsection}{Team Reflection for This Unit}{14}{section*.7}% 
+\contentsline {subsubsection}{Individual Reflection}{14}{section*.8}% 
+\contentsline {section}{\numberline {1.11}State Machines}{15}{section.1.11}% 
+\contentsline {section}{\numberline {1.12}Creating High-Quality State Machines}{15}{section.1.12}% 
+\contentsline {subsection}{\numberline {1.12.1}Writing Down a State Machine}{15}{subsection.1.12.1}% 
+\contentsline {subsection}{\numberline {1.12.2}Checking State Machines}{16}{subsection.1.12.2}% 
+\contentsline {section}{\numberline {1.13}Getting Started: Bus Stop}{16}{section.1.13}% 
+\contentsline {subsection}{\numberline {1.13.1}Create a State Machine, Individually}{16}{subsection.1.13.1}% 
+\contentsline {subsection}{\numberline {1.13.2}Create a State Machine, Together}{16}{subsection.1.13.2}% 
+\contentsline {subsection}{\numberline {1.13.3}Solution}{16}{subsection.1.13.3}% 
+\contentsline {section}{\numberline {1.14}Kitchen Timer}{17}{section.1.14}% 
+\contentsline {subsection}{\numberline {1.14.1}Create a State Machine, Individually}{17}{subsection.1.14.1}% 
+\contentsline {subsection}{\numberline {1.14.2}Create a State Machine, Together}{17}{subsection.1.14.2}% 
+\contentsline {subsection}{\numberline {1.14.3}Solution}{17}{subsection.1.14.3}% 
+\contentsline {section}{\numberline {1.15}Checklist}{17}{section.1.15}% 
+\contentsline {subsubsection}{Blackboard}{17}{section*.9}% 
+\contentsline {subsubsection}{MS Teams}{17}{section*.10}% 
+\contentsline {subsubsection}{Team Reflection for This Unit}{17}{section*.11}% 
+\contentsline {subsubsection}{Individual Reflection}{17}{section*.12}% 
+\contentsline {section}{\numberline {1.16}Communication}{18}{section.1.16}% 
+\contentsline {subsection}{\numberline {1.16.1}Tips for This Unit}{18}{subsection.1.16.1}% 
+\contentsline {section}{\numberline {1.17}Task: Running MQTT.FX}{18}{section.1.17}% 
+\contentsline {subsubsection}{Publishing Messages}{18}{section*.13}% 
+\contentsline {subsubsection}{Observing Communication}{18}{section*.14}% 
+\contentsline {subsection}{\numberline {1.17.1}Task: Observing a Public MQTT Broker}{18}{subsection.1.17.1}% 
+\contentsline {section}{\numberline {1.18}Task: Running Your Own MQTT Broker}{18}{section.1.18}% 
+\contentsline {section}{\numberline {1.19}Task: Python Notebooks}{19}{section.1.19}% 
+\contentsline {subsection}{\numberline {1.19.1}MQTT Part 1 - Connect to Broker}{19}{subsection.1.19.1}% 
+\contentsline {subsection}{\numberline {1.19.2}MQTT Part 2 - Connect and Publish}{19}{subsection.1.19.2}% 
+\contentsline {subsection}{\numberline {1.19.3}MQTT Part 3 - MQTT and STMPY}{19}{subsection.1.19.3}% 
+\contentsline {section}{\numberline {1.20}Challenge: Quiz Show Buzzers}{19}{section.1.20}% 
+\contentsline {section}{\numberline {1.21}Checklist}{19}{section.1.21}% 
+\contentsline {subsubsection}{Blackboard}{19}{section*.15}% 
+\contentsline {subsubsection}{MS Teams}{19}{section*.16}% 
+\contentsline {subsubsection}{Team Reflection for This Unit}{19}{section*.17}% 
+\contentsline {subsubsection}{Individual Reflection}{19}{section*.18}% 
+\contentsline {section}{\numberline {1.22}Use Cases}{20}{section.1.22}% 
+\contentsline {subsection}{\numberline {1.22.1}Learning Goals}{20}{subsection.1.22.1}% 
+\contentsline {subsection}{\numberline {1.22.2}Preparation}{20}{subsection.1.22.2}% 
+\contentsline {section}{\numberline {1.23}Use Case Levels}{20}{section.1.23}% 
+\contentsline {subsection}{\numberline {1.23.1}Good Use Cases at Sea-Level}{21}{subsection.1.23.1}% 
+\contentsline {section}{\numberline {1.24}Optional Preparation}{21}{section.1.24}% 
+\contentsline {section}{\numberline {1.25}State Machines: Data vs.\nobreakspace {}States}{22}{section.1.25}% 
+\contentsline {subsubsection}{Example}{22}{section*.19}% 
+\contentsline {section}{\numberline {1.26}MQTT}{23}{section.1.26}% 
+\contentsline {section}{\numberline {1.27}MQTT Broker}{23}{section.1.27}% 
+\contentsline {subsection}{\numberline {1.27.1}Install Mosquitto on a Raspberry Pi}{23}{subsection.1.27.1}% 
+\contentsline {subsubsection}{Mosquitto Broker}{23}{section*.20}% 
+\contentsline {subsubsection}{Mosquitto Command-Line Clients}{23}{section*.21}% 
+\contentsline {subsubsection}{Testing Mosquitto}{23}{section*.22}% 
+\contentsline {subsubsection}{Enabling Websockets}{23}{section*.23}% 
+\contentsline {section}{\numberline {1.28}NTNU MQTT Broker}{23}{section.1.28}% 
+\contentsline {section}{\numberline {1.29}MQTT in Python}{23}{section.1.29}% 
+\contentsline {subsection}{\numberline {1.29.1}Subscribe to system messages}{23}{subsection.1.29.1}% 
+\contentsline {section}{\numberline {1.30}Debugging With MQTT.FX}{23}{section.1.30}% 
+\contentsline {subsection}{\numberline {1.30.1}Publishing Messages}{24}{subsection.1.30.1}% 
+\contentsline {subsection}{\numberline {1.30.2}Observing Communication}{24}{subsection.1.30.2}% 
+\contentsline {section}{\numberline {1.31}Delivery I1}{25}{section.1.31}% 
+\contentsline {subsection}{\numberline {1.31.1}Input}{25}{subsection.1.31.1}% 
+\contentsline {subsection}{\numberline {1.31.2}Document 1: Providing Feedback for the other Team}{25}{subsection.1.31.2}% 
+\contentsline {subsection}{\numberline {1.31.3}Document 2: Feedback for your own Teams T1}{25}{subsection.1.31.3}% 
+\contentsline {subsection}{\numberline {1.31.4}Document 3: Individual Reflection}{25}{subsection.1.31.4}% 
+\contentsline {subsection}{\numberline {1.31.5}Document}{26}{subsection.1.31.5}% 
+\contentsline {subsection}{\numberline {1.31.6}Screencast}{26}{subsection.1.31.6}% 
+\contentsline {subsection}{\numberline {1.31.7}Code}{26}{subsection.1.31.7}% 
+\contentsline {section}{\numberline {1.32}User Interfaces}{27}{section.1.32}% 
+\contentsline {section}{\numberline {1.33}AppJar}{27}{section.1.33}% 
+\contentsline {subsubsection}{Install AppJar}{27}{section*.24}% 
+\contentsline {subsection}{\numberline {1.33.1}Example}{27}{subsection.1.33.1}% 
+\contentsline {subsection}{\numberline {1.33.2}Documentation}{27}{subsection.1.33.2}% 
+\contentsline {section}{\numberline {1.34}State Machines and GUI}{27}{section.1.34}% 
+\contentsline {subsection}{\numberline {1.34.1}User Interface to State Machine}{27}{subsection.1.34.1}% 
+\contentsline {subsection}{\numberline {1.34.2}State Machine to User Interface}{28}{subsection.1.34.2}% 
+\contentsline {subsection}{\numberline {1.34.3}Kitchen Timer Example}{28}{subsection.1.34.3}% 
+\contentsline {section}{\numberline {1.35}Agile vs.\nobreakspace {}Architecture}{30}{section.1.35}% 
+\contentsline {subsection}{\numberline {1.35.1}Discussion}{30}{subsection.1.35.1}% 
+\contentsline {subsection}{\numberline {1.35.2}Task}{31}{subsection.1.35.2}% 
+\contentsline {section}{\numberline {1.36}Semester Project}{32}{section.1.36}% 
+\contentsline {subsection}{\numberline {1.36.1}Requirements for the System}{32}{subsection.1.36.1}% 
+\contentsline {section}{\numberline {1.37}Hardware Box}{32}{section.1.37}% 
+\contentsline {section}{\numberline {1.38}The Headphone Story}{33}{section.1.38}% 
+\contentsline {section}{\numberline {1.39}State Machines in Python}{38}{section.1.39}% 
+\contentsline {subsection}{\numberline {1.39.1}Benefits of State Machines in Code}{38}{subsection.1.39.1}% 
+\contentsline {section}{\numberline {1.40}From Diagram to Code}{39}{section.1.40}% 
+\contentsline {subsection}{\numberline {1.40.1}State Machine Execution}{39}{subsection.1.40.1}% 
+\contentsline {section}{\numberline {1.41}Python Jupyter Lab}{40}{section.1.41}% 
+\contentsline {subsection}{\numberline {1.41.1}Install Python Packages}{40}{subsection.1.41.1}% 
+\contentsline {subsection}{\numberline {1.41.2}State Machines in Python - Part 1}{40}{subsection.1.41.2}% 
+\contentsline {subsection}{\numberline {1.41.3}State Machines in Python - Part 2}{40}{subsection.1.41.3}% 
+\contentsline {subsection}{\numberline {1.41.4}State Machines in Python - Part 3}{40}{subsection.1.41.4}% 
+\contentsline {subsection}{\numberline {1.41.5}State Machines in Python - Part 4}{40}{subsection.1.41.5}% 
+\contentsline {section}{\numberline {1.42}Requirements and Design Thinking}{41}{section.1.42}% 
+\contentsline {section}{\numberline {1.43}Team Setup}{41}{section.1.43}% 
+\contentsline {section}{\numberline {1.44}Initial System Ideas}{41}{section.1.44}% 
+\contentsline {section}{\numberline {1.45}Tiles Workshop}{41}{section.1.45}% 
+\contentsline {section}{\numberline {1.46}Partial Vision and Scope Document}{41}{section.1.46}% 
+\contentsline {section}{\numberline {1.47}Peer Review of Vision and Scope Document}{41}{section.1.47}% 
+\contentsline {section}{\numberline {1.48}Team Reflection for This Unit}{41}{section.1.48}% 
+\contentsline {section}{\numberline {1.49}Individual Reflection}{41}{section.1.49}% 
+\contentsline {section}{\numberline {1.50}Checklist}{42}{section.1.50}% 
+\contentsline {section}{\numberline {1.51}Delivery T2}{43}{section.1.51}% 
+\contentsline {subsection}{\numberline {1.51.1}Plans for UI Components}{43}{subsection.1.51.1}% 
+\contentsline {subsection}{\numberline {1.51.2}Updated Deployment Diagram}{43}{subsection.1.51.2}% 
+\contentsline {subsection}{\numberline {1.51.3}Sequence Diagrams}{43}{subsection.1.51.3}% 
+\contentsline {subsection}{\numberline {1.51.4}State Machines}{43}{subsection.1.51.4}% 
+\contentsline {subsection}{\numberline {1.51.5}Overall Delivery}{43}{subsection.1.51.5}% 
+\contentsline {section}{\numberline {1.52}Reflection and Request for Feedback}{43}{section.1.52}% 
+\contentsline {subsection}{\numberline {1.52.1}Your Own Assessment}{43}{subsection.1.52.1}% 
+\contentsline {subsection}{\numberline {1.52.2}Request for Feedback}{43}{subsection.1.52.2}% 
+\contentsline {section}{\numberline {1.53}Books}{46}{section.1.53}% 
+\contentsline {section}{\numberline {1.54}Modeling and Deployment Diagrams}{47}{section.1.54}% 
+\contentsline {subsection}{\numberline {1.54.1}Learning Goals}{47}{subsection.1.54.1}% 
+\contentsline {subsection}{\numberline {1.54.2}The Problem}{47}{subsection.1.54.2}% 
+\contentsline {subsection}{\numberline {1.54.3}Modeling}{47}{subsection.1.54.3}% 
+\contentsline {subsection}{\numberline {1.54.4}Models are Everywhere}{47}{subsection.1.54.4}% 
+\contentsline {subsection}{\numberline {1.54.5}Models of Software}{47}{subsection.1.54.5}% 
+\contentsline {subsection}{\numberline {1.54.6}Why Modeling Software?}{48}{subsection.1.54.6}% 
+\contentsline {subsection}{\numberline {1.54.7}Where Does Modeling Happen?}{48}{subsection.1.54.7}% 
+\contentsline {section}{\numberline {1.55}UML --- Unified Modeling Language}{48}{section.1.55}% 
+\contentsline {subsection}{\numberline {1.55.1}Degrees of UML}{48}{subsection.1.55.1}% 
+\contentsline {subsection}{\numberline {1.55.2}Views and Diagrams}{49}{subsection.1.55.2}% 
+\contentsline {section}{\numberline {1.56}Deployment Diagrams}{49}{section.1.56}% 
+\contentsline {subsection}{\numberline {1.56.1}Nodes: Devices}{49}{subsection.1.56.1}% 
+\contentsline {subsection}{\numberline {1.56.2}Nodes: Execution Environments}{49}{subsection.1.56.2}% 
+\contentsline {subsection}{\numberline {1.56.3}Nested Nodes}{49}{subsection.1.56.3}% 
+\contentsline {subsection}{\numberline {1.56.4}Showing Node Instances}{49}{subsection.1.56.4}% 
+\contentsline {subsection}{\numberline {1.56.5}Communication Paths}{50}{subsection.1.56.5}% 
+\contentsline {subsection}{\numberline {1.56.6}Artifacts}{50}{subsection.1.56.6}% 
+\contentsline {subsubsection}{Deploying Artifacts}{50}{section*.25}% 
+\contentsline {subsubsection}{Manifestation}{50}{section*.26}% 
+\contentsline {subsection}{\numberline {1.56.7}Notes}{50}{subsection.1.56.7}% 
+\contentsline {section}{\numberline {1.57}Optional Preparation}{51}{section.1.57}% 
+\contentsline {section}{\numberline {1.58}Recycling Park}{52}{section.1.58}% 
+\contentsline {subsection}{\numberline {1.58.1}Technical Installation}{52}{subsection.1.58.1}% 
+\contentsline {subsection}{\numberline {1.58.2}Goals and Functions}{52}{subsection.1.58.2}% 
+\contentsline {subsection}{\numberline {1.58.3}Communication and Deployment}{52}{subsection.1.58.3}% 
+\contentsline {subsection}{\numberline {1.58.4}messages}{52}{subsection.1.58.4}% 
+\contentsline {subsection}{\numberline {1.58.5}Task: Car Entry}{52}{subsection.1.58.5}% 
+\contentsline {subsection}{\numberline {1.58.6}Task: Car Exit}{53}{subsection.1.58.6}% 
+\contentsline {subsection}{\numberline {1.58.7}Task: Complete Single Visit}{53}{subsection.1.58.7}% 
+\contentsline {subsection}{\numberline {1.58.8}Task: Robust Car Entry}{53}{subsection.1.58.8}% 
+\contentsline {section}{\numberline {1.59}Today's Delivery}{53}{section.1.59}% 
+\contentsline {section}{\numberline {1.60}Introduction and Course Setup}{54}{section.1.60}% 
+\contentsline {section}{\numberline {1.61}Read About This Course}{54}{section.1.61}% 
+\contentsline {section}{\numberline {1.62}Install Software}{54}{section.1.62}% 
+\contentsline {section}{\numberline {1.63}System Ideas}{54}{section.1.63}% 
+\contentsline {subsubsection}{Watch Videos from Previous Years}{54}{section*.27}% 
+\contentsline {subsubsection}{Three Own Ideas}{54}{section*.28}% 
+\contentsline {section}{\numberline {1.64}All done!}{54}{section.1.64}% 
+\contentsline {section}{\numberline {1.65}Interactions}{55}{section.1.65}% 
+\contentsline {subsection}{\numberline {1.65.1}Learning Goals}{55}{subsection.1.65.1}% 
+\contentsline {section}{\numberline {1.66}Intuition on Sequence Diagrams}{55}{section.1.66}% 
+\contentsline {subsection}{\numberline {1.66.1}Participants and Lifelines}{55}{subsection.1.66.1}% 
+\contentsline {subsection}{\numberline {1.66.2}Messages}{56}{subsection.1.66.2}% 
+\contentsline {subsection}{\numberline {1.66.3}Creation and Destruction}{56}{subsection.1.66.3}% 
+\contentsline {section}{\numberline {1.67}What do Sequence Diagrams Represent?}{57}{section.1.67}% 
+\contentsline {section}{\numberline {1.68}Combined Fragments}{57}{section.1.68}% 
+\contentsline {subsection}{\numberline {1.68.1}alt}{57}{subsection.1.68.1}% 
+\contentsline {subsection}{\numberline {1.68.2}opt}{57}{subsection.1.68.2}% 
+\contentsline {subsection}{\numberline {1.68.3}loop}{58}{subsection.1.68.3}% 
+\contentsline {subsection}{\numberline {1.68.4}assert and neg}{58}{subsection.1.68.4}% 
+\contentsline {subsection}{\numberline {1.68.5}ref}{58}{subsection.1.68.5}% 
+\contentsline {subsection}{\numberline {1.68.6}Time Constraints}{58}{subsection.1.68.6}% 
+\contentsline {section}{\numberline {1.69}Event Orderings and Semantics}{58}{section.1.69}% 
+\contentsline {subsection}{\numberline {1.69.1}Co-Regions}{59}{subsection.1.69.1}% 
+\contentsline {section}{\numberline {1.70}Implied Scenarios}{60}{section.1.70}% 
+\contentsline {subsection}{\numberline {1.70.1}Message Loss}{60}{subsection.1.70.1}% 
+\contentsline {subsection}{\numberline {1.70.2}Non-Causal Orderings}{60}{subsection.1.70.2}% 
+\contentsline {subsection}{\numberline {1.70.3}Mixed Initiatives}{61}{subsection.1.70.3}% 
+\contentsline {section}{\numberline {1.71}Epilogue: The Value of Sequence Diagrams}{61}{section.1.71}% 
+\contentsline {subsection}{\numberline {1.71.1}Overview}{63}{subsection.1.71.1}% 
+\contentsline {subsubsection}{Final Grading}{63}{section*.29}% 
+\contentsline {subsection}{\numberline {1.71.2}Technical Tips}{63}{subsection.1.71.2}% 
+\contentsline {section}{\numberline {1.72}Jupyter Notebooks}{64}{section.1.72}% 
+\contentsline {subsection}{\numberline {1.72.1}Install JupyterLab}{64}{subsection.1.72.1}% 
+\contentsline {subsection}{\numberline {1.72.2}Running Notebooks}{64}{subsection.1.72.2}% 
+\contentsline {subsection}{\numberline {1.72.3}Binder}{64}{subsection.1.72.3}% 
+\contentsline {section}{\numberline {1.73}Troubleshooting}{64}{section.1.73}% 
+\contentsline {section}{\numberline {1.74}Delivery T1: Requirements}{65}{section.1.74}% 
+\contentsline {subsection}{\numberline {1.74.1}Grading}{65}{subsection.1.74.1}% 
+\contentsline {section}{\numberline {1.75}Content}{65}{section.1.75}% 
+\contentsline {subsection}{\numberline {1.75.1}Requirements Part}{65}{subsection.1.75.1}% 
+\contentsline {subsubsection}{1. Problem and Background}{65}{section*.30}% 
+\contentsline {subsubsection}{2. Vision}{65}{section*.31}% 
+\contentsline {subsubsection}{3. Objectives}{65}{section*.32}% 
+\contentsline {subsubsection}{4. Stakeholders}{65}{section*.33}% 
+\contentsline {subsubsection}{Criteria for the Requirements Part}{65}{section*.34}% 
+\contentsline {subsection}{\numberline {1.75.2}Use Case Part}{65}{subsection.1.75.2}% 
+\contentsline {subsubsection}{5. Use Case Sea-Level Hierarchy}{65}{section*.35}% 
+\contentsline {subsubsection}{6. Use Cases in Table Form}{65}{section*.36}% 
+\contentsline {subsubsection}{Criteria for the Use Case Part}{65}{section*.37}% 
+\contentsline {subsection}{\numberline {1.75.3}Architecture Part}{65}{subsection.1.75.3}% 
+\contentsline {subsubsection}{7. Deployment Diagram}{65}{section*.38}% 
+\contentsline {subsubsection}{Criteria for the Deployment Diagram}{65}{section*.39}% 
+\contentsline {section}{\numberline {1.76}Formatting Rules for Deliveries}{66}{section.1.76}% 
+\contentsline {section}{\numberline {1.77}I3: Final Individual Delivery}{68}{section.1.77}% 
+\contentsline {section}{\numberline {1.78}How to Make an Argument}{68}{section.1.78}% 
+\contentsline {subsubsection}{Language}{68}{section*.40}% 
+\contentsline {subsubsection}{Write Efficiently}{68}{section*.41}% 
+\contentsline {subsubsection}{Use Paragraphs Strategically}{68}{section*.42}% 
+\contentsline {section}{\numberline {1.79}Levels}{68}{section.1.79}% 
+\contentsline {section}{\numberline {1.80}Look at your Sentences}{68}{section.1.80}% 
+\contentsline {section}{\numberline {1.81}Examples for Topics}{69}{section.1.81}% 
+\contentsline {section}{\numberline {1.82}Grading}{69}{section.1.82}% 
+\contentsline {section}{\numberline {1.83}Final Hints}{69}{section.1.83}% 
+\contentsline {section}{\numberline {1.84}Team Setup}{70}{section.1.84}% 
+\contentsline {section}{\numberline {1.85}Modeling and Deployment Diagrams}{70}{section.1.85}% 
+\contentsline {subsubsection}{Step 1: Individual Read-Through}{70}{section*.43}% 
+\contentsline {subsubsection}{Step 2: Discuss the System}{70}{section*.44}% 
+\contentsline {subsubsection}{Step 3: Individual Diagram Sketches}{70}{section*.45}% 
+\contentsline {subsubsection}{Step 4: Sketch of Diagram}{70}{section*.46}% 
+\contentsline {subsubsection}{Step 5: Diagram}{70}{section*.47}% 
+\contentsline {section}{\numberline {1.86}Peer Review of Diagrams}{70}{section.1.86}% 
+\contentsline {section}{\numberline {1.87}Team Reflection for This Unit}{70}{section.1.87}% 
+\contentsline {section}{\numberline {1.88}Individual Reflection}{70}{section.1.88}% 
+\contentsline {section}{\numberline {1.89}State Machines in Python}{71}{section.1.89}% 
+\contentsline {section}{\numberline {1.90}Task 1: Traffic Light}{71}{section.1.90}% 
+\contentsline {section}{\numberline {1.91}Task 2: Kitchen Timer}{71}{section.1.91}% 
+\contentsline {section}{\numberline {1.92}Task 3: Head Lamp}{71}{section.1.92}% 
+\contentsline {subsection}{\numberline {1.92.1}State Machine Design}{71}{subsection.1.92.1}% 
+\contentsline {subsection}{\numberline {1.92.2}Implementation in Python}{71}{subsection.1.92.2}% 
+\contentsline {subsection}{\numberline {1.92.3}Debugging the State Machine}{71}{subsection.1.92.3}% 
+\contentsline {section}{\numberline {1.93}Deliveries}{71}{section.1.93}% 
+\contentsline {subsection}{\numberline {1.93.1}Reflection Document about State Machine Implementation}{71}{subsection.1.93.1}% 
+\contentsline {subsection}{\numberline {1.93.2}Team Reflection}{71}{subsection.1.93.2}% 
+\contentsline {subsection}{\numberline {1.93.3}Individual Reflection}{71}{subsection.1.93.3}% 
+\contentsline {section}{\numberline {1.94}Components}{72}{section.1.94}% 
+\contentsline {section}{\numberline {1.95}STMPY Components + MQTT}{72}{section.1.95}% 
+\contentsline {section}{\numberline {1.96}State Machines as Sessions}{72}{section.1.96}% 
+\contentsline {section}{\numberline {1.97}Timer Module for a Voice Assistant}{72}{section.1.97}% 
+\contentsline {section}{\numberline {1.98}Component Template}{73}{section.1.98}% 
+\contentsline {subsection}{\numberline {1.98.1}Logging}{73}{subsection.1.98.1}% 
+\contentsline {subsection}{\numberline {1.98.2}Communication: MQTT Client and JSON}{73}{subsection.1.98.2}% 
+\contentsline {subsubsection}{JSON}{73}{section*.48}% 
+\contentsline {subsubsection}{Incoming Messages}{73}{section*.49}% 
+\contentsline {subsubsection}{Publishing}{73}{section*.50}% 
+\contentsline {subsection}{\numberline {1.98.3}Sessions: Several Instances of State Machines}{73}{subsection.1.98.3}% 
+\contentsline {section}{\numberline {1.99}Task: Create the Timer Component}{74}{section.1.99}% 
+\contentsline {subsection}{\numberline {1.99.1}Step 1: Sequence Diagrams}{74}{subsection.1.99.1}% 
+\contentsline {subsection}{\numberline {1.99.2}Step 2: Start the Command Component}{74}{subsection.1.99.2}% 
+\contentsline {subsection}{\numberline {1.99.3}Step 2: Implement the Components}{74}{subsection.1.99.3}% 
+\contentsline {section}{\numberline {1.100}Checklist}{74}{section.1.100}% 
+\contentsline {subsubsection}{Blackboard}{74}{section*.51}% 
+\contentsline {subsubsection}{MS Teams}{74}{section*.52}% 
+\contentsline {subsubsection}{Team Reflection for This Unit}{75}{section*.53}% 
+\contentsline {subsubsection}{Individual Reflection}{75}{section*.54}% 
+\contentsline {section}{\numberline {1.101}Car Lock}{76}{section.1.101}% 
+\contentsline {section}{\numberline {1.102}Grading}{77}{section.1.102}% 
+\contentsline {section}{\numberline {1.103}RATs}{77}{section.1.103}% 
+\contentsline {section}{\numberline {1.104}Team Deliveries T1, T2, T3}{77}{section.1.104}% 
+\contentsline {section}{\numberline {1.105}Individual Deliveries I1, I2, I3}{77}{section.1.105}% 
+\contentsline {section}{\numberline {1.106}Peer Evaluation}{77}{section.1.106}% 
+\contentsline {section}{\numberline {1.107}Grading Criteria}{77}{section.1.107}% 
+\contentsline {subsection}{\numberline {1.107.1}Overall, Generic Criteria}{77}{subsection.1.107.1}% 
+\contentsline {subsection}{\numberline {1.107.2}Specific Criteria}{77}{subsection.1.107.2}% 
+\contentsline {section}{\numberline {1.108}Design of Communicating Systems}{79}{section.1.108}% 
+\contentsline {subsubsection}{Step 1: Prepare for Monday, Jan.\nobreakspace {}13th 2019}{79}{section*.55}% 
+\contentsline {subsubsection}{Step 2: Class!}{79}{section*.56}% 
+\contentsline {section}{\numberline {1.109}Course Content}{79}{section.1.109}% 
+\contentsline {section}{\numberline {1.110}Schedule}{79}{section.1.110}% 
+\contentsline {section}{\numberline {1.111}Learning}{79}{section.1.111}% 
+\contentsline {section}{\numberline {1.112}Grading}{79}{section.1.112}% 
+\contentsline {section}{\numberline {1.113}Tips for Diagrams}{81}{section.1.113}% 
+\contentsline {section}{\numberline {1.114}Have a Strategic Layout}{81}{section.1.114}% 
+\contentsline {section}{\numberline {1.115}Use PDF or PNG}{81}{section.1.115}% 
+\contentsline {section}{\numberline {1.116}Videos from 2017}{83}{section.1.116}% 
+\contentsline {subsection}{\numberline {1.116.1}Team 1}{83}{subsection.1.116.1}% 
+\contentsline {subsection}{\numberline {1.116.2}Team 2}{83}{subsection.1.116.2}% 
+\contentsline {subsection}{\numberline {1.116.3}Team 3}{83}{subsection.1.116.3}% 
+\contentsline {subsection}{\numberline {1.116.4}Team 4}{83}{subsection.1.116.4}% 
+\contentsline {subsection}{\numberline {1.116.5}Team 5}{83}{subsection.1.116.5}% 
+\contentsline {subsection}{\numberline {1.116.6}Team 6}{83}{subsection.1.116.6}% 
+\contentsline {subsection}{\numberline {1.116.7}Team 7}{83}{subsection.1.116.7}% 
+\contentsline {subsection}{\numberline {1.116.8}Team 8}{83}{subsection.1.116.8}% 
+\contentsline {subsection}{\numberline {1.116.9}Team 9}{83}{subsection.1.116.9}% 
+\contentsline {subsection}{\numberline {1.116.10}Team 10}{83}{subsection.1.116.10}% 
+\contentsline {subsection}{\numberline {1.116.11}Team 11}{83}{subsection.1.116.11}% 
+\contentsline {subsection}{\numberline {1.116.12}Team 12}{83}{subsection.1.116.12}% 
+\contentsline {subsection}{\numberline {1.116.13}Team 13}{83}{subsection.1.116.13}% 
+\contentsline {section}{\numberline {1.117}Agile vs.\nobreakspace {}Architecture}{84}{section.1.117}% 
+\contentsline {subsection}{\numberline {1.117.1}Mandatory Preparation}{84}{subsection.1.117.1}% 
+\contentsline {subsection}{\numberline {1.117.2}Optional Material}{85}{subsection.1.117.2}% 
+\contentsline {subsubsection}{Video: Scrum in under 5 minutes}{85}{section*.57}% 
+\contentsline {subsubsection}{Video: Explaining Agile - Martin Fowler and Neil Ford at USI}{85}{section*.58}% 
+\contentsline {section}{\numberline {1.118}Communication}{86}{section.1.118}% 
+\contentsline {subsection}{\numberline {1.118.1}Learning Goals}{86}{subsection.1.118.1}% 
+\contentsline {section}{\numberline {1.119}Basic Terms and Mechanisms}{87}{section.1.119}% 
+\contentsline {subsection}{\numberline {1.119.1}Communication Layers and Stacks}{87}{subsection.1.119.1}% 
+\contentsline {section}{\numberline {1.120}Communication Topologies}{87}{section.1.120}% 
+\contentsline {section}{\numberline {1.121}Message Exchange Patterns}{88}{section.1.121}% 
+\contentsline {subsection}{\numberline {1.121.1}Pattern: Single Message}{88}{subsection.1.121.1}% 
+\contentsline {subsection}{\numberline {1.121.2}Pattern: Request-Response}{88}{subsection.1.121.2}% 
+\contentsline {subsection}{\numberline {1.121.3}Pattern: Observe}{88}{subsection.1.121.3}% 
+\contentsline {subsection}{\numberline {1.121.4}Pattern: Publish-Subscribe}{88}{subsection.1.121.4}% 
+\contentsline {subsection}{\numberline {1.121.5}Pattern: Exclusive Pair}{88}{subsection.1.121.5}% 
+\contentsline {subsubsection}{Example: Application}{88}{section*.59}% 
+\contentsline {subsubsection}{Example: TCP}{88}{section*.60}% 
+\contentsline {section}{\numberline {1.122}HTTP - Hypertext Transfer Protocol}{88}{section.1.122}% 
+\contentsline {subsection}{Getting Bi-Directional}{89}{section*.61}% 
+\contentsline {section}{\numberline {1.123}MQTT}{89}{section.1.123}% 
+\contentsline {subsection}{\numberline {1.123.1}Roles}{89}{subsection.1.123.1}% 
+\contentsline {subsection}{\numberline {1.123.2}Topics}{89}{subsection.1.123.2}% 
+\contentsline {subsubsection}{Exercise:}{90}{section*.62}% 
+\contentsline {subsection}{\numberline {1.123.3}Retained Messages}{90}{subsection.1.123.3}% 
+\contentsline {subsection}{\numberline {1.123.4}Last Wills}{90}{subsection.1.123.4}% 
+\contentsline {subsection}{\numberline {1.123.5}Quality of Service}{90}{subsection.1.123.5}% 
+\contentsline {subsection}{\numberline {1.123.6}Sequence Diagrams on Many Levels}{90}{subsection.1.123.6}% 
+\contentsline {section}{\numberline {1.124}Solution}{91}{section.1.124}% 
+\contentsline {section}{\numberline {1.125}Python}{92}{section.1.125}% 
+\contentsline {section}{\numberline {1.126}For Mac}{92}{section.1.126}% 
+\contentsline {subsection}{\numberline {1.126.1}Via PiP}{92}{subsection.1.126.1}% 
+\contentsline {section}{\numberline {1.127}Delivery I2}{93}{section.1.127}% 
+\contentsline {subsection}{\numberline {1.127.1}Feedback on T2}{93}{subsection.1.127.1}% 
+\contentsline {section}{\numberline {1.128}State Machines}{94}{section.1.128}% 
+\contentsline {subsection}{\numberline {1.128.1}Learning Goals}{94}{subsection.1.128.1}% 
+\contentsline {subsection}{\numberline {1.128.2}Hello, State Machines!}{94}{subsection.1.128.2}% 
+\contentsline {section}{\numberline {1.129}Example: Traffic Light}{94}{section.1.129}% 
+\contentsline {section}{\numberline {1.130}State Machine Diagrams}{95}{section.1.130}% 
+\contentsline {subsection}{\numberline {1.130.1}States}{95}{subsection.1.130.1}% 
+\contentsline {subsection}{\numberline {1.130.2}Transitions}{95}{subsection.1.130.2}% 
+\contentsline {subsection}{\numberline {1.130.3}Actions}{96}{subsection.1.130.3}% 
+\contentsline {subsection}{\numberline {1.130.4}Timers}{96}{subsection.1.130.4}% 
+\contentsline {subsubsection}{Spaghetti Timer Example}{97}{section*.63}% 
+\contentsline {subsection}{\numberline {1.130.5}Internal Transitions}{97}{subsection.1.130.5}% 
+\contentsline {subsection}{\numberline {1.130.6}Choice States}{97}{subsection.1.130.6}% 
+\contentsline {subsection}{\numberline {1.130.7}Transitions, Revisited}{97}{subsection.1.130.7}% 
+\contentsline {subsubsection}{Transition Labels}{97}{section*.64}% 
+\contentsline {subsection}{\numberline {1.130.8}States, Revisited}{98}{subsection.1.130.8}% 
+\contentsline {subsection}{\numberline {1.130.9}Sending Messages}{98}{subsection.1.130.9}% 
+\contentsline {subsection}{\numberline {1.130.10}Traces}{98}{subsection.1.130.10}% 
+\contentsline {subsection}{\numberline {1.130.11}State-Transition Tables}{98}{subsection.1.130.11}% 
+\contentsline {subsection}{\numberline {1.130.12}A Physical State Machine Model}{99}{subsection.1.130.12}% 
+\contentsline {subsubsection}{Queue Semantics}{99}{section*.65}% 
+\contentsline {section}{\numberline {1.131}That'a all.}{99}{section.1.131}% 
+\contentsline {section}{\numberline {1.132}Components}{100}{section.1.132}% 
+\contentsline {section}{\numberline {1.133}STMPY Components + MQTT}{100}{section.1.133}% 
+\contentsline {section}{\numberline {1.134}State Machines as Sessions}{100}{section.1.134}% 
+\contentsline {section}{\numberline {1.135}Regular Team Meeting Times}{101}{section.1.135}% 
+\contentsline {section}{\numberline {1.136}Team Setup}{101}{section.1.136}% 
+\contentsline {subsubsection}{Team Roles for This Week}{101}{section*.66}% 
+\contentsline {subsubsection}{Time Check}{101}{section*.67}% 
+\contentsline {section}{\numberline {1.137}Team Reflection}{101}{section.1.137}% 
+\contentsline {subsubsection}{Create a Team Reflection Document}{101}{section*.68}% 
+\contentsline {subsubsection}{Find a Team Name}{101}{section*.69}% 
+\contentsline {subsubsection}{Picture}{101}{section*.70}% 
+\contentsline {subsubsection}{Create a Week Entry}{101}{section*.71}% 
+\contentsline {subsubsection}{Attendance}{101}{section*.72}% 
+\contentsline {subsubsection}{Where and When?}{101}{section*.73}% 
+\contentsline {section}{\numberline {1.138}Task: Learning Goals Relevance}{101}{section.1.138}% 
+\contentsline {subsection}{\numberline {1.138.1}More Detailed Role Descriptions}{101}{subsection.1.138.1}% 
+\contentsline {subsubsection}{Role: Developers}{102}{section*.74}% 
+\contentsline {subsubsection}{Role: Product Owner}{102}{section*.75}% 
+\contentsline {subsubsection}{Role: Project Manager}{102}{section*.76}% 
+\contentsline {section}{\numberline {1.139}Balances in Teamwork}{102}{section.1.139}% 
+\contentsline {section}{\numberline {1.140}Team Reflection for This Unit}{102}{section.1.140}% 
+\contentsline {subsubsection}{Roles}{102}{section*.77}% 
+\contentsline {subsubsection}{Improvements}{102}{section*.78}% 
+\contentsline {subsubsection}{Today's Performance}{102}{section*.79}% 
+\contentsline {section}{\numberline {1.141}Individual Reflection}{102}{section.1.141}% 
+\contentsline {section}{\numberline {1.142}Checklist}{102}{section.1.142}% 
+\contentsline {section}{\numberline {1.143}Videos from 2018}{103}{section.1.143}% 
+\contentsline {subsection}{\numberline {1.143.1}Team 7- Se7en}{103}{subsection.1.143.1}% 
+\contentsline {subsection}{\numberline {1.143.2}Team 08}{103}{subsection.1.143.2}% 
+\contentsline {subsection}{\numberline {1.143.3}Team 09 - Niners}{103}{subsection.1.143.3}% 
+\contentsline {subsection}{\numberline {1.143.4}Team 10}{103}{subsection.1.143.4}% 
+\contentsline {subsection}{\numberline {1.143.5}Team 11}{103}{subsection.1.143.5}% 
+\contentsline {subsection}{\numberline {1.143.6}Team 12 - Monkeys}{103}{subsection.1.143.6}% 
+\contentsline {subsection}{\numberline {1.143.7}Team 13 - Uflax \GenericError {(inputenc) }{Package inputenc Error: Unicode character 🍀 (U+1F340)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{You may provide a definition with\MessageBreak \GenericError { }{LaTeX Error: Can be used only in preamble}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}}{103}{subsection.1.143.7}% 
+\contentsline {subsection}{\numberline {1.143.8}Team 14 - Four Team}{103}{subsection.1.143.8}% 
+\contentsline {subsection}{\numberline {1.143.9}Team 15 - 0xF}{103}{subsection.1.143.9}% 
+\contentsline {subsection}{\numberline {1.143.10}Team 16}{103}{subsection.1.143.10}% 
+\contentsline {subsection}{\numberline {1.143.11}Team 17}{103}{subsection.1.143.11}% 
+\contentsline {subsection}{\numberline {1.143.12}Team 18 -- The Sick Team}{103}{subsection.1.143.12}% 
+\contentsline {subsection}{\numberline {1.143.13}Team 21}{103}{subsection.1.143.13}% 
+\contentsline {section}{\numberline {1.144}Reflection}{104}{section.1.144}% 
+\contentsline {section}{\numberline {1.145}Expectations}{105}{section.1.145}% 
+\contentsline {section}{\numberline {1.146}What I Expect From You:}{105}{section.1.146}% 
+\contentsline {section}{\numberline {1.147}What You Can Expect From Me:}{105}{section.1.147}% 
+\contentsline {section}{\numberline {1.148}The TTM4115 Base Architecture}{106}{section.1.148}% 
+\contentsline {section}{\numberline {1.149}Team Roles}{107}{section.1.149}% 
+\contentsline {section}{\numberline {1.150}Rules and Guidelines}{107}{section.1.150}% 
+\contentsline {section}{\numberline {1.151}Team-Based Learning}{108}{section.1.151}% 
+\contentsline {subsection}{\numberline {1.151.1}How TBL Works}{108}{subsection.1.151.1}% 
+\contentsline {subsection}{\numberline {1.151.2}Phase 1: Preparation}{108}{subsection.1.151.2}% 
+\contentsline {subsection}{\numberline {1.151.3}Phase 2: Individual RAT}{108}{subsection.1.151.3}% 
+\contentsline {subsection}{\numberline {1.151.4}Phase 3: Team RAT}{108}{subsection.1.151.4}% 
+\contentsline {subsection}{\numberline {1.151.5}Phase 4: Mini-Lectures}{109}{subsection.1.151.5}% 
+\contentsline {subsection}{\numberline {1.151.6}Phase 5: Team Activities}{109}{subsection.1.151.6}% 
+\contentsline {subsection}{\numberline {1.151.7}Questions and Answers}{109}{subsection.1.151.7}% 
+\contentsline {section}{\numberline {1.152}Videos about TBL}{109}{section.1.152}% 
+\contentsline {subsubsection}{Team-Based Learning at Duke University}{109}{section*.80}% 
+\contentsline {subsubsection}{Team-Based Learning at Bradford}{109}{section*.81}% 
+\contentsline {subsubsection}{Sheri Wall on TBL}{109}{section*.82}% 
+\contentsline {subsubsection}{On Forming Teams}{109}{section*.83}% 
+\contentsline {section}{\numberline {1.153}Feedback}{110}{section.1.153}% 
+\contentsline {subsection}{\numberline {1.153.1}Reference Group}{110}{subsection.1.153.1}% 
+\contentsline {subsection}{\numberline {1.153.2}Contact}{110}{subsection.1.153.2}% 
+\contentsline {section}{\numberline {1.154}Learning Areas}{111}{section.1.154}% 
+\contentsline {subsection}{\numberline {1.154.1}Smia}{111}{subsection.1.154.1}% 
+\contentsline {section}{\numberline {1.155}Videos from 2019}{112}{section.1.155}% 
+\contentsline {subsection}{\numberline {1.155.1}Team 1}{112}{subsection.1.155.1}% 
+\contentsline {subsection}{\numberline {1.155.2}Team 2}{112}{subsection.1.155.2}% 
+\contentsline {subsection}{\numberline {1.155.3}Team 3}{112}{subsection.1.155.3}% 
+\contentsline {subsection}{\numberline {1.155.4}Team 4}{112}{subsection.1.155.4}% 
+\contentsline {subsection}{\numberline {1.155.5}Team 5}{112}{subsection.1.155.5}% 
+\contentsline {subsection}{\numberline {1.155.6}Team 6}{112}{subsection.1.155.6}% 
+\contentsline {subsection}{\numberline {1.155.7}Team 7}{112}{subsection.1.155.7}% 
+\contentsline {subsection}{\numberline {1.155.8}Team 8}{112}{subsection.1.155.8}% 
+\contentsline {subsection}{\numberline {1.155.9}Team 9}{112}{subsection.1.155.9}% 
+\contentsline {subsection}{\numberline {1.155.10}Team 10}{112}{subsection.1.155.10}% 
+\contentsline {subsection}{\numberline {1.155.11}Team 11: Bike Parking System}{112}{subsection.1.155.11}% 
+\contentsline {subsection}{\numberline {1.155.12}Team 12}{112}{subsection.1.155.12}% 
+\contentsline {subsection}{\numberline {1.155.13}Team 13}{112}{subsection.1.155.13}% 
+\contentsline {subsection}{\numberline {1.155.14}Team 14}{112}{subsection.1.155.14}% 
+\contentsline {section}{\numberline {1.156}Components}{113}{section.1.156}% 
+\contentsline {subsection}{\numberline {1.156.1}Learning Goals}{113}{subsection.1.156.1}% 
+\contentsline {subsection}{\numberline {1.156.2}What are Components?}{113}{subsection.1.156.2}% 
+\contentsline {subsection}{\numberline {1.156.3}Why Do We Need Components?}{113}{subsection.1.156.3}% 
+\contentsline {subsection}{\numberline {1.156.4}Components and Classes Are Not the Same}{113}{subsection.1.156.4}% 
+\contentsline {subsection}{\numberline {1.156.5}Component-Based Software Engineering}{113}{subsection.1.156.5}% 
+\contentsline {section}{\numberline {1.157}Example: Airgate}{114}{section.1.157}% 
+\contentsline {subsection}{\numberline {1.157.1}Component-based Software for AIRGATE.}{114}{subsection.1.157.1}% 
+\contentsline {section}{\numberline {1.158}Modularity, Cohesion and Coupling}{114}{section.1.158}% 
+\contentsline {section}{\numberline {1.159}The Different Aspects of Modularity}{115}{section.1.159}% 
+\contentsline {subsubsection}{Units of Abstraction}{115}{section*.84}% 
+\contentsline {subsubsection}{Units of Locality}{115}{section*.85}% 
+\contentsline {subsubsection}{Units of Delivery}{115}{section*.86}% 
+\contentsline {subsubsection}{Units of Compilation, Deployment and Installation}{115}{section*.87}% 
+\contentsline {subsubsection}{Units of Analysis and Understanding}{115}{section*.88}% 
+\contentsline {subsubsection}{Units of Fault Containment}{115}{section*.89}% 
+\contentsline {subsubsection}{Units of Testing}{116}{section*.90}% 
+\contentsline {subsubsection}{Units of Maintenance}{116}{section*.91}% 
+\contentsline {subsubsection}{Units of System Management}{116}{section*.92}% 
+\contentsline {subsubsection}{Units of Reuse}{116}{section*.93}% 
+\contentsline {section}{\numberline {1.160}Communication Between Components}{116}{section.1.160}% 
+\contentsline {section}{\numberline {1.161}Components, Interfaces and Services}{116}{section.1.161}% 
+\contentsline {subsection}{\numberline {1.161.1}Interfaces}{116}{subsection.1.161.1}% 
+\contentsline {subsection}{\numberline {1.161.2}From Interfaces to Services}{117}{subsection.1.161.2}% 
+\contentsline {section}{\numberline {1.162}Component Frameworks}{117}{section.1.162}% 
+\contentsline {section}{\numberline {1.163}Learning Goals}{118}{section.1.163}% 
+\contentsline {subsection}{\numberline {1.163.1}Knowledge}{118}{subsection.1.163.1}% 
+\contentsline {subsection}{\numberline {1.163.2}Skills}{118}{subsection.1.163.2}% 
+\contentsline {subsection}{\numberline {1.163.3}General Competence}{118}{subsection.1.163.3}% 
+\contentsline {subsection}{\numberline {1.163.4}Official Tools}{119}{subsection.1.163.4}% 
+\contentsline {subsection}{\numberline {1.163.5}Draw.io}{119}{subsection.1.163.5}% 
+\contentsline {subsection}{\numberline {1.163.6}Trello}{119}{subsection.1.163.6}% 

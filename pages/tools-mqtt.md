@@ -1,55 +1,63 @@
----
-status: draft
----
-
 # MQTT
+
+We use MQTT as the protocol to connect all system components.
 
 # MQTT Broker
 
-<h2>Hosting your own MQTT broker</h2>
-Hosting your own MQTT broker on a Raspberry Pi, by using Mosquitto:
+## Install Mosquitto on a Raspberry Pi
 
-All commands needed for the Pi are marked in <strong>bold</strong>
 
-Start by making a new directory for Mosquitto:
+### Mosquitto Broker
 
-<strong>mkdir mosquitto</strong>
+```bash
+sudo apt-get install mosquitto
+```
 
-<strong>cd mosquitto/</strong>
+### Mosquitto Command-Line Clients
 
-Now get a key and add it:
+```bash
+sudo apt-get install mosquitto-clients
+```
 
-<strong>wget http://repo.mosquitto.org/debian/http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key</strong>
-
-<strong>sudo apt-key add mosquitto-repo.gpg.key</strong>
-
-Make repository available to apt:
-
-<strong>cd /etc/apt/sources.list.d/</strong>
-
-<strong>sudo wget http://repo.mosquitto.org/debian/mosquitto-stretch.list</strong>
-
-Now update the package-lists and install mosquitto:
-
-<strong>sudo apt-get update</strong>
-
-<strong>sudo apt-get install mosquitto</strong>
-
-You should now have a working MQTT broker! (This broker listens on port 1883 by default)
-<h3>Quick test</h3>
-If you want to test this, it can be done easily by installing Mosquitto MQTT-clients aswell:
-
-<strong>sudo apt-get install mosquitto-clients</strong>
+### Testing Mosquitto
 
 You can now try to subscribe to a topic
 
-<strong>mosquitto_sub -d -t example_topic</strong>
+```bash
+mosquitto_sub -d -t example_topic
+```
 
 and publish something on that topic:
 
-<strong>mosquitto_pub -d -t example_topic -m "Time for a coffee"</strong>
+```bash
+mosquitto_pub -d -t example_topic -m "Time for a coffee"
+```
 
 <img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/mqtt_example-300x231.png" alt="" width="525" height="404" class="alignnone wp-image-368" />
+
+### Enabling Websockets
+
+If you want to connect to the MQTT broker also via MQTT over websockets (usually from Javascript) then you need to enable Websockets. For that, create a file called `mosquitto.conf` in the folder `/etc/mosquitto/conf.d` and add the follwing lines:
+
+    listener 1883
+    protocol mqtt
+    
+    listener 1884
+    protocol websockets
+
+
+
+# NTNU MQTT Broker
+
+We have setup an MQTT broker with the address `mqtt.item.ntnu.no`. It is configured with the default ports `1883` for connections via TCP and `1884` for connections via websockets.
+
+    listener 1883
+    protocol mqtt
+    
+    listener 1884
+    protocol websockets
+
+
 
 
 # MQTT in Python

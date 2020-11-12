@@ -1,0 +1,104 @@
+output: output.tex
+content:
+- name: "Unit 1 — Welcome"
+  type: chapter
+  content:
+    - index.md
+    - prep-introduction.md
+    - unit-setup.md
+- name: "Unit 1 — Modeling"
+  type: chapter
+  content:
+    - prep-modeling.md
+    - unit-modeling.md
+    - unit-modeling-diagram-tips.md
+
+- name: "Unit 1 — State Machines"
+  type: chapter
+  content:
+    - prep-statemachines.md
+    - unit-statemachines.md
+    - unit-statemachines-data.md
+    - unit-statemachines-extra.md
+    - unit-statemachines-car.md
+    - prep-stmpy.md
+    - unit-stmpy.md
+
+- name: "Unit 2 — Interactions"
+  type: chapter
+  content:
+    - prep-interactions.md
+    - unit-interactions.md
+    - unit-interaction-recycling.md
+
+- name: "Unit 2 — Interactions"
+  type: chapter
+  content:
+    - prep-requirements.md
+    - unit-requirements.md
+
+- name: "Unit 2 — Interactions"
+  type: chapter
+  content:
+    - prep-communication.md
+    - unit-communication.md
+
+- name: "Unit 2 — Interactions"
+  type: chapter
+  content:
+    - prep-components.md
+    - unit-components.md
+    - unit-components-stmpy.md
+
+- name: "Unit 2 — Interactions"
+  type: chapter
+  content:
+    - prep-agile.md
+    - unit-agile.md
+
+- name: "Unit 2 — Use Cases"
+  type: chapter
+  content:
+    - prep-use-cases.md
+    - unit-use-cases.md
+
+- name: "Deliveries"
+  type: chapter
+  content:
+    - project.md
+    - deliveries.md
+    - deliveries-t1.md
+    - deliveries-i1.md
+    - deliveries-i2.md
+    - deliveries-t2.md
+    - deliveries-t3.md
+    - deliveries-i3.md
+
+- name: "Tools"
+  type: chapter
+  content:
+    - tools.md
+    - tools-base.md
+    - tools-python.md
+    - tools-notebooks.md
+    - tools-gui.md
+    - tools-mqtt.md
+    - tools-stmpy.md
+- name: "Learning"
+  type: chapter
+  content:
+    - learning.md
+    - learning-goals.md
+    - learning-grading.md
+    - learning-reflection.md
+    - learning-expectations.md
+    - learning-teamwork.md
+    - learning-tbl.md
+    - feedback.md
+    - learning-areas.md
+
+    - videos-2017.md
+    - videos-2018.md
+    - videos-2019.md
+
+

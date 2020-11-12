@@ -23,7 +23,7 @@ This week you are going to implement state machines in Python. As a delivery you
 
 You should design the state machine for the controller of a headlamp. This headlamp is used for outdoor activities in the snow. Therefore, it has an infrared sensor attached, so that the LED can be switched on and off without fiddling with delicate buttons. It’s enough to swipe the hand in front of the sensor and the LED turns off. Another swipe turns the LED on again. However, to prevent the LED from turning off unintentionally, the swipe has to happen within a short time. If the hand is in front of the IR sensor for more than one second, the gesture is ignored.
 
-The communication diagram below shows the context of the controller. It receives the signals hand and no_hand from the IR sensor, and it con- trols the LED with signals on and off.
+The communication diagram below shows the context of the controller. It receives the signals `hand` and `no_hand` from the IR sensor, and it controls the LED with signals on and off.
 
 ---
 type: figure
@@ -57,12 +57,12 @@ When running the implementation, does the state machine behave as intended? If n
 # Deliveries
 
 
-## Reflection Document about State Machine implementation
+## Reflection Document about State Machine Implementation
 
 * Write down your observations.
 * Document the results.
 * Pay especially attention on the process around the head lamp, and delivering it in a high-quality process.
-* Deliver on Blackboard
+* Deliver on Teams
 
 ## Team Reflection
 

@@ -116,7 +116,7 @@ when all are available. The team activities are timed to fit in an 2-hour block.
 You finish each team activity with a delivery and also a team reflection.
 Depending on the type of activity and delivery, you'll get some feedback on it in the next week.
 
-Aside: Apart from the team activities that are scheduled each week, you will also work on a semester project. These result in the deliveries T1, T2, T3, but you are more free to schedule your time.
+:aside: Apart from the team activities that are scheduled each week, you will also work on a semester project. These result in the deliveries T1, T2, T3, but you are more free to schedule your time.
 
 
 

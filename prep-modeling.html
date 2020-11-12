@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -133,7 +140,7 @@
 <p>In the following unit, we will first look at the task of <strong>modeling in general</strong>. In the second part, we will learn the first diagram type: <strong>deployment diagrams</strong>. They are perfect for getting a good overview of the parts of the system, which software runs on them and how they communicate.</p>
 <h2 id="learning-goals">Learning Goals</h2>
 
-<p>Goals: The learning goals specific for this week are the following:</p>
+<div class="goals"><p>The learning goals specific for this week are the following:</p>
 <ul>
 <li>Be aware of the overall importance of modeling in engineering.</li>
 <li>Understand what constitutes a model.</li>
@@ -141,7 +148,7 @@
 <li>Create deployment diagrams.</li>
 <li>Decide which elements of a deployment diagram are relevant and chose a suitable level of detail.</li>
 </ul>
-
+</div>
 <h2 id="the-problem">The Problem</h2>
 <blockquote>
 <p>You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money.</p>
@@ -280,7 +287,7 @@
 <p>These device types are not built into UML, you can decide on your own. Which ones make sense depends on your project. Is it relevant and informative that you are talking about a Raspberry Pi? If yes, fine! If it doesn’t matter, use a more generic device type.</p>
 
 <h2 id="nodes-execution-environments">Nodes: Execution Environments</h2>
-<p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype « execution environment».</p>
+<p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype «execution environment».</p>
 <p>Examples for execution environments are runtime environment, application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
 
 <h2 id="nested-nodes">Nested Nodes</h2>
@@ -288,8 +295,8 @@
 <p>You can show a <strong>device inside a device</strong>, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory. Obviously, you should only shiw such elements if there is something special you want to point out. Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.</p>
 <p>Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.</p>
 
-<p>Aside: I haven’t so far found a good example where an execution environment contains another execution environment.</p>
-
+<span name="cc4d44"></span><aside name="cc4d44"><p>I haven’t so far found a good example where an execution environment contains another execution environment.</p>
+</aside>
 <div class="figure">
 <img src="figures/deployment/nested-nodes.svg" width="100%"/>
 </div>
@@ -374,8 +381,8 @@ Deployment diagrams most often show node instances
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>
 
-<p>Aside: The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
-
+<span name="600ff0"></span><aside name="600ff0"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+</aside>
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Man81KkQyNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

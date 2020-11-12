@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -131,15 +138,11 @@
     <section class="content">
 <h1 id="design-of-communicating-systems">Design of Communicating Systems</h1>
 
-<h3 id="step-1-boarding-survey">Step 1: Boarding Survey</h3>
-<p>Tell us that you are taking the course and provide us with some additional information so we can create effective teams.</p>
-
-<a class="ntnu-button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUNFE0UUpVTkZUT1g3UVhBS0FQOTRKUTJXNS4u">TTM4115 Boarding Survey</a>
-<h3 id="step-2-prepare-for-monday-jan.-14th-2019">Step 2: Prepare for Monday, Jan. 14th 2019</h3>
+<h3 id="step-1-prepare-for-monday-jan.-13th-2019">Step 1: Prepare for Monday, Jan. 13th 2019</h3>
 <p>Work through the following material <em>before</em> class time:</p>
 <p><a href="prep-introduction.html" class="arrow">Preparation Material</a></p>
-<h3 id="step-3-class">Step 3: Class!</h3>
-<p>Come to the <mark>first class on Monday, Jan. 14th</mark> in <a href="http://bit.ly/2SK81sC">R7</a>. If you can’t come, follow the instructions at the end of the preparation material above.</p>
+<h3 id="step-2-class">Step 2: Class!</h3>
+<p>Come to the <mark>first class on Monday, Jan. 13th</mark> in <a href="http://bit.ly/2p6mAhe">EL-23</a>. If you can’t come, follow the instructions at the end of the preparation material above.</p>
 
     </section>
     <section class="content">
@@ -168,83 +171,151 @@
 <p>Each week, we follow the same schedule:</p>
 <ul>
 <li>Individual preparation before class time.</li>
-<li><strong>Monday 8:15-10:00</strong> Class time in <a href="http://bit.ly/2SK81sC">R7</a></li>
+<li><strong>Monday 10:15-12:00</strong> Class time in <a href="http://bit.ly/2p6mAhe">EL-23</a></li>
 <li>Teamwork on week activities, ca. 2 hours</li>
 <li>Teamwork on semester project</li>
 </ul>
 <p>Here is the schedule:</p>
 
-<div>
-<table class="table table-sm">
-<caption style=""></caption>
+<table class="schedule">
 <thead>
-<tr class="row-1">
-<th>Week</th><th>Date</th><th>RAT</th><th>Preparation</th><th>Deliveries</th>
+<tr class="header">
+<th><p>Week</p></th>
+<th><p>Date</p></th>
+<th><p>RAT</p></th>
+<th><p>Preparation</p></th>
+<th><p>Deliveries</p></th>
 </tr>
 </thead>
-<tbody class="row-hover">
-<tr class="row-2">
-<td class="column-1">2</td><td class="column-2">7. Jan.</td><td></td><td class="column-3"><em><span class="minor">no class on campus</span></em></td><td class="column-4"></td>
+<tbody>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>6. Jan.</p></td>
+<td></td>
+<td><p><em><span class="minor">no class on campus</span></em></p></td>
+<td></td>
 </tr>
-<tr class="row-3">
-<td class="column-1">3</td><td class="column-2">14. Jan.</td><td><span class="badge badge-secondary" style="background-color: #bbbbbb">RAT 0</span></td><td class="column-3"><a href="prep-setup.html">Introduction and Course Setup</a></td><td class="column-4"></td>
+<tr class="even">
+<td><p>3</p></td>
+<td><p>13. Jan.</p></td>
+<td><p><span class="badge badge-secondary" style="background-color: #bbbbbb">RAT 0</span></p></td>
+<td><p><a href="prep-setup.html" title="wikilink">Introduction and Course Setup</a></p></td>
+<td></td>
 </tr>
-<tr class="row-4">
-<td class="column-1">4</td><td class="column-2">21. Jan.</td><td><span class="badge badge-secondary">RAT 1</span></td><td class="column-3"><a href="prep-modeling.html">Modeling and Deployment</a></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>4</p></td>
+<td><p>20. Jan.</p></td>
+<td><p><span class="badge badge-secondary">RAT 1</span></p></td>
+<td><p><a href="prep-modeling.html" title="wikilink">Modeling and Deployment</a></p></td>
+<td></td>
 </tr>
-<tr class="row-5">
-<td class="column-1">5</td><td class="column-2">28. Jan.</td><td><span class="badge badge-secondary">RAT 2</span></td><td class="column-3"><a href="prep-requirements.html">Requirements and Design Thinking</a></td><td class="column-4"></td>
+<tr class="even">
+<td><p>5</p></td>
+<td><p>27. Jan.</p></td>
+<td><p><span class="badge badge-secondary">RAT 2</span></p></td>
+<td><p><a href="prep-requirements.html" title="wikilink">Requirements and Design Thinking</a></p></td>
+<td></td>
 </tr>
-<tr class="row-6">
-<td class="column-1">6</td><td class="column-2">4. Feb.</td><td><span class="badge badge-secondary">RAT 3</span></td><td class="column-3"><a href="prep-use-cases.html">Use Cases</a></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>6</p></td>
+<td><p>3. Feb.</p></td>
+<td><p><span class="badge badge-secondary">RAT 3</span></p></td>
+<td><p><a href="prep-use-cases.html" title="wikilink">Use Cases</a></p></td>
+<td></td>
 </tr>
-<tr class="row-7">
-<td class="column-1">7</td><td class="column-2">11. Feb.</td><td><span class="badge badge-secondary">RAT 4</span></td><td class="column-3"><a href="prep-statemachines.html">State Machines</a></td><td class="column-4"><span class="badge badge-danger">T1</span></td>
+<tr class="even">
+<td><p>7</p></td>
+<td><p>10. Feb.</p></td>
+<td><p><span class="badge badge-secondary">RAT 4</span></p></td>
+<td><p><a href="prep-agile.html" title="wikilink">Agile Development</a></p></td>
+<td><p><span class="badge badge-danger">T2</span></p></td>
 </tr>
-<tr class="row-8">
-<td class="column-1">8</td><td class="column-2">18. Feb.</td><td><span class="badge badge-secondary">RAT 5</span></td><td class="column-3"><a href="prep-stmpy.html">State Machines in Python</a></td><td class="column-4"><span class="badge badge-primary">I1</span> <span class="badge badge-warning">PEER1</span></td>
+<tr class="odd">
+<td><p>8</p></td>
+<td><p>17. Feb.</p></td>
+<td><p><span class="badge badge-secondary">RAT 5</span></p></td>
+<td><p><a href="prep-statemachines.html" title="wikilink">State Machines</a></p></td>
+<td><p><span class="badge badge-danger">T1</span></p></td>
 </tr>
-<tr class="row-9">
-<td class="column-1">9</td><td class="column-2">25. Feb.</td><td><span class="badge badge-secondary">RAT 6</span></td><td class="column-3"><a href="prep-interactions.html">Interactions</a></td><td class="column-4"> </td>
+<tr class="even">
+<td><p>9</p></td>
+<td><p>24. Feb.</p></td>
+<td><p><span class="badge badge-secondary">RAT 6</span></p></td>
+<td><p><a href="prep-stmpy.html" title="wikilink">State Machines in Python</a></p></td>
+<td><p><span class="badge badge-primary">I1</span></p></td>
 </tr>
-<tr class="row-10">
-<td class="column-1">10</td><td class="column-2">4. Mar.</td><td><span class="badge badge-secondary">RAT 7</span></td><td class="column-3"><a href="prep-communication.html">Communication</a></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>10</p></td>
+<td><p>2. Mar.</p></td>
+<td><p><span class="badge badge-secondary">RAT 7</span></p></td>
+<td><p><a href="prep-interactions.html" title="wikilink">Interactions</a></p></td>
+<td></td>
 </tr>
-<tr class="row-11">
-<td class="column-1">11</td><td class="column-2">11. Mar.</td><td><span class="badge badge-secondary">RAT 8</span></td><td class="column-3"><a href="prep-components.html">Components</a></td><td class="column-4"></td>
+<tr class="even">
+<td><p>11</p></td>
+<td><p>9. Mar.</p></td>
+<td><p><span class="badge badge-secondary">RAT 8</span></p></td>
+<td><p><a href="prep-communication.html" title="wikilink">Communication</a></p></td>
+<td></td>
 </tr>
-<tr class="row-12">
-<td class="column-1">12</td><td class="column-2">18. Mar.</td><td></td><td class="column-3"> <em>Focus on T2</em>  </td><td class="column-4"><span class="badge badge-danger">T2</span></td>
+<tr class="odd">
+<td><p>12</p></td>
+<td><p>16. Mar.</p></td>
+<td><p><span class="badge badge-secondary">RAT 9</span></p></td>
+<td><p><a href="prep-components.html" title="wikilink">Components</a></p></td>
+<td></td>
 </tr>
-<tr class="row-13">
-<td class="column-1">13</td><td class="column-2">25. Mar.</td><td></td><td class="column-3"><em>Focus on T3</em></td><td class="column-4"><span class="badge badge-primary">I2</span> <span class="badge badge-warning">PEER2</span></td>
+<tr class="even">
+<td><p>13</p></td>
+<td><p>23. Mar.</p></td>
+<td></td>
+<td><p>Focus on T2, online</p></td>
+<td><p><span class="badge badge-primary">I1</span></p></td>
 </tr>
-<tr class="row-14">
-<td class="column-1">14</td><td class="column-2">1. Apr.</td><td></td><td class="column-3"><em>Focus on T3</em></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>14</p></td>
+<td><p>30. Mar.</p></td>
+<td></td>
+<td><p>Focus on T2, online</p></td>
+<td></td>
 </tr>
-<tr class="row-15">
-<td class="column-1">15</td><td class="column-2">8. Apr.</td><td><span class="badge badge-secondary">RAT 9</span></td><td class="column-3"><a href="prep-agile.html">Agile Development</a></td><td class="column-4">  </td>
+<tr class="even">
+<td><p>15</p></td>
+<td><p>6. Apr.</p></td>
+<td></td>
+<td><p>Focus on I2, T3, online</p></td>
+<td><p><span class="badge badge-primary">I2</span></p></td>
 </tr>
-<tr class="row-16">
-<td class="column-1">16</td><td class="column-2">15. Apr.</td><td></td><td class="column-3"><em><span class="minor">no class on campus (easter)</span></em></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>16</p></td>
+<td><p>13. Apr.</p></td>
+<td></td>
+<td><p><em><span class="minor">no class on campus (easter)</span></em></p></td>
+<td></td>
 </tr>
-<tr class="row-17">
-<td class="column-1">17</td><td class="column-2">22. Apr.</td><td></td><td class="column-3"><em><span class="minor">no class on campus (easter)</span></em></td><td class="column-4"></td>
+<tr class="even">
+<td><p>17</p></td>
+<td><p>20. Apr.</p></td>
+<td></td>
+<td><p>Focus on T3, I3, online</p></td>
+<td></td>
 </tr>
-<tr class="row-18">
-<td class="column-1">18</td><td class="column-2">29. Apr.</td><td></td><td class="column-3"><em><span class="minor">no class on campus</span></em></td><td class="column-4"></td>
+<tr class="odd">
+<td><p>18</p></td>
+<td><p>27. Apr.</p></td>
+<td></td>
+<td><p>Focus on T3, I3, online</p></td>
+<td><p><span class="badge badge-danger">T3</span></p></td>
 </tr>
-<tr class="row-19">
-<td class="column-1">18</td><td class="column-2">6. May</td><td></td><td class="column-3">Launch Day</td><td class="column-4"><span class="badge badge-danger">T3</span> </td>
-</tr>
-<tr class="row-19">
-<td class="column-1">19</td><td class="column-2">13. May</td><td></td><td class="column-3"><em><span class="minor">no class on campus</span></em></td><td class="column-4"><span class="badge badge-primary">I3</span> <span class="badge badge-warning">PEER3</span></td>
+<tr class="even">
+<td><p>19</p></td>
+<td><p>4. May</p></td>
+<td></td>
+<td></td>
+<td><p><span class="badge badge-danger">I3</span></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-
-
 
     </section>
     <section class="content">

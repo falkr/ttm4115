@@ -44,7 +44,7 @@ Design a state machine for the controller based on the sequence diagrams.
 
 * Use the sequence diagrams as input.
 * Focus on the lifeline for the controller.
-* For eahc incoming message, declare a transition into a new state, and add as effects any messages the controller needs to send. 
+* For each incoming message, declare a transition into a new state, and add as effects any messages the controller needs to send. 
 * Add timers and corresponding actions and triggers as needed.
 
 Some help for starting:
@@ -94,14 +94,11 @@ Work through all of them and update your original T1.
 
 # Checklist
 
- 
-
-### Blackboard
-
-- Deliver the reflection over your solutions in comparison to the ones provided.
+ - 
 
 ### MS Teams
 
+- Deliver the reflection over your solutions in comparison to the ones provided.
 - Ask for feedback in general
 - Report any errors with the provided solution
 - Discuss, with me or other teams

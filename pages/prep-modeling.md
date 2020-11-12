@@ -7,7 +7,7 @@ In the following unit, we will first look at the task of **modeling in general**
 
 
 
-Goals: The learning goals specific for this week are the following:
+:goals: The learning goals specific for this week are the following:
 
 - Be aware of the overall importance of modeling in engineering.
 - Understand what constitutes a model.
@@ -187,7 +187,7 @@ These device types are not built into UML, you can decide on your own. Which one
 
 ## Nodes: Execution Environments
 
-Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype &laquo; execution environment&raquo;.
+Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype &laquo;execution environment&raquo;.
 
 Examples for execution environments are runtime environment,
 application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.
@@ -201,7 +201,7 @@ You can show a **device inside a device**, for instance when you want to show a 
    
 Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices. 
 
-Aside: I haven't so far found a good example where an execution environment contains another execution environment. 
+:aside: I haven't so far found a good example where an execution environment contains another execution environment. 
 
 ---
 type: figure
@@ -311,7 +311,7 @@ caption: "Notes can show additional information that is difficult to express in 
 
 If you want, have a look at the following videos that show how to create deployment diagrams.
 
-Aside: The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.
+:aside: The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.
 
 ---
 type: youtube

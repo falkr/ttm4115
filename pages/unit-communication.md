@@ -60,7 +60,7 @@ type: figure
 source: figures/mqtt/mqtt-fx-subscribe.png
 ---
 
-## Task: Obsrving a Public MQTT Broker
+## Task: Observing a Public MQTT Broker
 
 There are some public MQTT brokers to which anyone can connect. 
 

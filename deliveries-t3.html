@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -136,34 +143,25 @@
 <li>Vision</li>
 <li>Objectives</li>
 <li>Stakeholders</li>
-<li>Use Case Diagram for Overview</li>
+<li>Use Case Sea-Level Overview</li>
 <li>Use Cases in Table Form</li>
 <li>Deployment Diagram</li>
 <li>Sequence Diagrams</li>
 <li>State Machine Diagrams</li>
 <li>Implementation Comments: This part is a brief comment on the implementation. How much of the demonstrated system actually works? What are the parts of the system you are most proud of, and which you want to highlight? This will usually fit on a single page.</li>
 </ol>
-<h2 id="video">Video</h2>
-<p>The video should be a short, concise and self-contained presentation of your system. The intended audience are the students of the next years. You have complete freedom how to make the video. However, usually a form following Why-How-What will be most effective:</p>
+<h2 id="screencast">Screencast</h2>
+<p>Record a video or a screencast where you demonstrate the system.</p>
 <ul>
-<li>Why: Explain the purpose of your system, why it is useful or interesting.</li>
-<li>How: Demonstrate how it works. If not all is ready, you make simulate functionality in the video. (Mention this in the PDF of your delivery, as explained above.)</li>
-<li>What: Explain key elements in the system, i.e., what you have done.</li>
-</ul>
-<p>Don’t worry too much about production quality, but focus on clarity and effectiveness of your demonstration. Don’t pretend to sell the system, just show what you did. Being entertaining is good as long as it helps to make your point. Expected length is under 5 minutes. And since we have international students in this course, make the video in English. Please publish the video on Youtube. Do not include any video footage or music or other material that you do not own.</p>
-<ul>
-<li><a href="videos-2018.html">Videos from 2018</a></li>
-<li><a href="videos-2017.html">Videos from 2017</a></li>
-<li><a href="https://mediasite.ntnu.no/Mediasite/Catalog/catalogs/ttm4115-studentvideoer-v16">Videos from 2016</a> (Requires NTNU login.)</li>
+<li>Demonstrate the main use cases.</li>
+<li>Don’t worry too much about production quality, but focus on clarity and effectiveness of your demonstration.</li>
+<li>Don’t pretend to sell the system, just show what you did.</li>
+<li>Expected length is under 5 minutes.</li>
+<li>Do not include any video footage or music or other material that you do not own.</li>
 </ul>
 
-<h2 id="tips">Tips</h2>
-<p><strong>How should you assign your resources between video, documents and the actual system that you implement?</strong></p>
-<p>You need to find a good balance here. You should spend time on building and implementing the system, and get as much running as possible with in that time. In general, it is easier to make a video and document something that works, and it is also more fun. However, don’t spend too much time on the system so that you don’t have enough time for the video and the documents, either!</p>
-<p>In the Implementation Comments you need to document which parts of the system you have implemented. This gives you the possibility to make some shortcuts and simplifications. For instance, you may replace a data base with some hard coded records, or a detailed user interface with some more simple prototype. Also, we don’t expect you to write a 100% polished app. You need to judge yourself which parts of the systems should receive the most attention. Remember that this course is about communicating systems with several components,</p>
-<p><strong>How will the grading work?</strong></p>
-<p>The external censor will watch the video (we will do that all together), and look at the document describing the system. We will also check the previous deliveries. However, as said before, they only indirectly contribute to the grade. We can see how you improved and how the system evolved. (Hence, it is allowed to change details over time, and T1, T2, T3 are expected to evolve.)</p>
-<p>Note that we are indeed not asking you to deliver the code. We may decide to ask you to show us the running system after the delivery, just to confirm that the video and what you claim in the implementation comments is consistent, but this is nothing to worry about.</p>
+<h2 id="code">Code</h2>
+<p>Provide the code of your system, ideally as a well-orgnized Git repository.</p>
 
     </section>
 </div>

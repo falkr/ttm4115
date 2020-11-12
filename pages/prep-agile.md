@@ -1,14 +1,15 @@
 # Agile vs. Architecture
 
 
-
-
 So far, we haven't spent a lot of time to talk about our development process. We have spent most effort into: 
 
-* understanding how to figure out the user requirements so that we built the right system
+* understanding how to figure out the user requirements so that we built the right system
 * understanding the intricacies with communication and interactions
 * the documentation of system architecture
 * the specification of use cases
+
+In the second part of the course, we will also learn how to describe:
+
 * the detailed specification of interactions with sequence diagrams
 * the detailed specification of component behavior using state machines
 * and finally how to code state machines
@@ -19,7 +20,7 @@ Initially, we could follow this scheme:
 
 ---
 type: figure
-source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/03/method-1024x315.jpg
+source: figures/method.jpg
 caption:
   "An idealized method that connects the requirements to the final system given in code."
 --- 

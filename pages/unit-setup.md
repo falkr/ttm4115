@@ -6,19 +6,6 @@ You need to find time slots when your team can meet each week. Ideally, these ar
 * Find the document **Team Overview** on Teams.
 * Write in your regular timeslots.
 
-You make take the availability of group areas into account. 
-If enough teams can select the same timeslot, we can reserve a group area. 
-
-* Monday 10:00 -- 12:00: Smia
-* Tuesday 8:00 -- 10:00: Smia
-* Tuesday 10:00 -- 12:00: Smia
-* Wednesday 10:00 -- 12:00: R2
-* Wednesday 18:00 -- 20:00: R2
-* Friday 8:00 -- 10:00: R2
-* Friday 14:00 -- 16:00: Smia
-
-
-
 
 # Team Setup
 
@@ -33,7 +20,7 @@ Have a quick look again at the [team roles](learning-teamwork.html) that you hav
 
 Try to briefly get an overview of today's tasks, and come up with a rough time plan.
 
-Aside: This team setup should become a normal routine for each week. 
+:aside: This team setup should become a normal routine for each week. 
 
 
 # Team Reflection 
@@ -96,7 +83,7 @@ In the following, you should estimate how relevant the learning goals of this co
 - Discuss then in team an compare your results, agree on a common solution.
 - Create one final version for the whole team.
 
-Aside: Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.
+:aside: Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.
 
 
 
@@ -104,7 +91,7 @@ Aside: Working first individually and then together is a helpful pattern to coll
 
 For this activity, we work with three simplified roles. In reality, they can be more subtle and vague, and some roles are combined. What is important for now is that you start getting aware that different roles during development exist, and that they have different tasks and responsibilities, and therefore have different motivations, interests and require different skills.
 
-Aside: Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.
+:aside: Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.
 
 
 
@@ -144,16 +131,6 @@ These are just examples of balances.
 
 
 
-# Task: Initial Project Ideas
-
-Go through the individual ideas that you have for the semester project. The goal is that you get inspired by the ideas of the others. You don't yet have to decide on a system today.
-
-- Make a list of all project ideas.
-- Briefly explain the idea.
-- Combine similar ideas, or briefly sketch new ones.
-- Create a final list of ideas for today.
-
-
 # Team Reflection for This Unit 
 
 It may seem like an overhead to reflect already now during the setup and with these relatively simple tasks. But this team reflection should become a routine from now on. Fill out the section for today's week:
@@ -175,7 +152,7 @@ Think about the following points:
 
 * Did you reach the goals? 
 
-Aside: This team reflection should become a natural routine for each week. 
+:aside: This team reflection should become a natural routine for each week. 
 
 
 # Individual Reflection
@@ -194,9 +171,6 @@ Deliver via Teams:
 
 * Setup regular meeting times and written them into the common Team Overview document.
 * First Team Reflection (in the public channel for your team).
-
-Deliveries via Blackboard:
-
 * Learning Goals Relevance (PDF)
 * Balances in Teamwork (PDF)
 

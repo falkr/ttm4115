@@ -1,0 +1,116 @@
+{|
+! Week
+! Date
+! RAT
+! Preparation
+! Deliveries
+|-
+| 2
+| 6. Jan.
+|
+| ''<span class="minor">no class on campus</span>''
+|
+|-
+| 3
+| 13. Jan.
+| <span class="badge badge-secondary" style="background-color: #bbbbbb">RAT 0</span>
+| [[prep-setup.html|Introduction and Course Setup]]
+|
+|-
+| 4
+| 20. Jan.
+| <span class="badge badge-secondary">RAT 1</span>
+| [[prep-modeling.html|Modeling and Deployment]]
+|
+|-
+| 5
+| 27. Jan.
+| <span class="badge badge-secondary">RAT 2</span>
+| [[prep-requirements.html|Requirements and Design Thinking]]
+|
+|-
+| 6
+| 3. Feb.
+| <span class="badge badge-secondary">RAT 3</span>
+| [[prep-use-cases.html|Use Cases]]
+|
+|-
+| 7
+| 10. Feb.
+| <span class="badge badge-secondary">RAT 4</span>
+| [[prep-agile.html|Agile Development]]
+| <span class="badge badge-danger">T2</span>
+|-
+| 8
+| 17. Feb.
+| <span class="badge badge-secondary">RAT 5</span>
+| [[prep-statemachines.html|State Machines]]
+| <span class="badge badge-danger">T1</span>
+|-
+| 9
+| 24. Feb.
+| <span class="badge badge-secondary">RAT 6</span>
+| [[prep-stmpy.html|State Machines in Python]]
+| <span class="badge badge-primary">I1</span>
+|-
+| 10
+| 2. Mar.
+| <span class="badge badge-secondary">RAT 7</span>
+| [[prep-interactions.html|Interactions]]
+|
+|-
+| 11
+| 9. Mar.
+| <span class="badge badge-secondary">RAT 8</span>
+| [[prep-communication.html|Communication]]
+|
+|-
+| 12
+| 16. Mar.
+| <span class="badge badge-secondary">RAT 9</span>
+| [[prep-components.html|Components]]
+|
+|-
+| 13
+| 23. Mar.
+|
+| Focus on T2, online
+| <span class="badge badge-primary">I1</span>
+|-
+| 14
+| 30. Mar.
+|
+| Focus on T2, online
+|
+|-
+| 15
+| 6. Apr.
+|
+| Focus on I2, T3, online
+| <span class="badge badge-primary">I2</span>
+|-
+| 16
+| 13. Apr.
+|
+| ''<span class="minor">no class on campus (easter)</span>''
+|
+|-
+| 17
+| 20. Apr.
+|
+| Focus on T3, I3, online
+|
+|-
+| 18
+| 27. Apr.
+|
+| Focus on T3, I3, online
+| <span class="badge badge-danger">T3</span>
+|-
+| 19
+| 4. May
+|
+| 
+| <span class="badge badge-danger">I3</span>
+|}
+

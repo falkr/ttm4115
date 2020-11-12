@@ -15,7 +15,13 @@ Today's team activity is about a system to control rice irrigation in Malaysia. 
 
 <a href="https://www.kontron.com/downloads/application_stories/bu-ind/as_abbaco_en.pdf" class="arrow">Adding IoT to Water Works Wonders for Malaysian Rice Growers</a>
 
-Your task will be to create a deployment diagram for this system, based on the information from the story. If you need to add information or make assumptions, feel free to do so.
+Your task will be to create a deployment diagram for this system, based on the information from the story.
+
+:tip: When reading through, you will at some places meet a lot of details, where you may wonder if they are important or not.
+In other parts of the description you may see a need for more detailed explanations. 
+This is part of the reason why we create the deployment diagram first. 
+Think and decide for yourself which details are important at this stage.
+If you need to add information or make assumptions, feel free to do so.
 
 
 ### Step 1: Individual Read-Through
@@ -51,7 +57,7 @@ Based on the previous step, create a polished diagram. For this time, we recomme
 - Include _relevant_ details.
 - Try to build a good layout. Have several attempts, the first one may not be the best one.
 
-Deliver the diagram on Blackboard immediately.
+Deliver the diagram immediately.
 
 
 # Peer Review of Diagrams
@@ -65,12 +71,12 @@ Have a look at the diagram of the other team. Add notes into their diagram (ask 
 
 ---
 type: figure
-source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/01/Screen-Shot-2018-01-22-at-09.07.51-1024x599.png"
+source: figures/comments.png
 ---
 
 Use **red** for errors, **green** for general comments or recommendations, **yellow** for ambiguous cases.
 
-Deliver this other team's diagram with your comments as PDF on Blackboard, and notify the other team so that they are aware of your comments. 
+Deliver this other team's diagram with your comments as PDF, and notify the other team so that they are aware of your comments. 
 
 
 

@@ -7,13 +7,14 @@ In the previous units, we learned how to capture and understand our user's requi
 
 
 
-Goals: After this week, you will be able to:
+:goals: After this week, you will be able to:
 
 - Create syntactically correct state machines.
 - Interpret and explain detailed state machine behavior.
 - Recite the main features of state machines.
 
 With these basic skills you have every concept of state machines covered we need for the course. However, learning to design good state machines will require some more experience, which you will acquire over the following weeks.
+
 
 ## Hello, State Machines!
 
@@ -29,7 +30,7 @@ Another example is the specification of the TCP protocol, also using a state mac
 
 ---
 type: figure
-source: figures/statemachines/state-machines-tcp.gif
+source: figures/statemachines/state-machines-tcp.jpg
 caption: "The TCP protocol uses state machines to describe parts of its behavior."
 ---
 
@@ -80,7 +81,7 @@ source: figures/statemachines/traffic-light-1.jpg
 That already helps --- the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively _red_, _red-yellow_, _green_ and _yellow_. (The _red-yellow_ is common in many, but not all countries.)
 
 
-The photos already help explaining the traffic light. But imagine you want to explain on paper on which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:
+The photos already help explaining the traffic light. But imagine you want to explain on paper in which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:
 
 ---
 type: figure
@@ -265,7 +266,7 @@ caption: "Declaration of an internal transition, triggered by event A."
 
 The state _s1_ above declares an internal transition `A/a_2()`. It is triggered when the event `A` is happening. When that happens, action `a_2()` is executed. Because it is an internal transition, the entry and exit actions are **not** executed. Also, because the state stays the same, we can react many times to the event `A`. Whenever it occurs and we are in state _s1_, action `a_2()` will be executed.
 
-**Note:** When you look at the entry and exit actions, you see that they almost look the same as an internal transition. And the notation is quite consistent, because the prefix _entry_ and _exit_ before the `/` really do describe when the action behind the dash is executed. But these are not transitions, just declarations of entry and exit actions.
+**Note:** When you look at the entry and exit actions, you see that they almost look the same as an internal transition. And the notation is quite consistent, because the prefix _entry_ and _exit_ before the `/` really do describe when the action behind the slash is executed. But these are not transitions, just declarations of entry and exit actions.
 
 
 
@@ -302,7 +303,7 @@ We have seen now all the types of elements that we can add into the label of a t
 * **Guards:** Transitions originating in a choice state must have them.
 * **Triggers:** All transitions originating in a normal state must declare a trigger, which is either the reception of a message or the expiration of a timer. Pseudostates like initial states or choice states are transient, and the outgoing transitions therefore do not declare a trigger.
 * **Effects:** Any transition can declare any number of action that it executes. Several actions are separated by a semicolon. 
-* **Dash (/):** The dash separates triggers from actions. When a transition has either of them, we write the dash.
+* **Slash (/):** The slash separates triggers from actions. When a transition has either of them, we write the slash.
  
 
 ## States, Revisited
@@ -373,48 +374,41 @@ type: figure
 source: figures/statemachines/tunnel-2.svg
 --- 
 
-<div>
-<table class="table">
-	<tr>
-		<td>Source State</td>
-		<td>Trigger</td>
-		<td>Actions</td>
-		<td>Target State</td>
-	</tr>
-	<tr>
-		<td>initial</td>
-		<td>-</td>
-		<td>left_on()</td>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>left</td>
-		<td>t1</td>
-		<td>left_off(); right_on()</td>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>left</td>
-		<td>off</td>
-		<td>left_off()</td>
-		<td>final</td>
-	</tr>
-	<tr>
-		<td>right</td>
-		<td>t2</td>
-		<td>right_off(); left_on()</td>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>right</td>
-		<td>off</td>
-		<td>right_off()</td>
-		<td>final</td>
-	</tr>
-</table>
-</div>
 
-
+---
+type: table
+---
+{|
+| Source State
+| Trigger
+| Actions
+| Target State
+|-
+| initial
+| -
+| left_on()
+| left
+|-
+| left
+| t1
+| left_off(); right_on()
+| right
+|-
+| left
+| off
+| left_off()
+| final
+|-
+| right
+| t2
+| right_off(); left_on()
+| left
+|-
+| right
+| off
+| right_off()
+| final
+|}
 
 
 ## A Physical State Machine Model
@@ -451,7 +445,7 @@ To understand how a state machine executes, it is important to understand how th
 
 ---
 type: figure
-source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.12-1024x365.png
+source: figures/statemachines/discard.png
 ---
 
 Look at the situation above. Assume that the state machine is currently in state `s1`.

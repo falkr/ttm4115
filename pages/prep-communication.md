@@ -9,7 +9,7 @@ We will also study some of the details of specific protocols, in particular HTTP
 
 
 
-Goals: The learning goals specific for this week are the following:
+:goals: The learning goals specific for this week are the following:
 
 - Recognize and recite basic communication patterns and terminology.
 - Relate communication mechanisms to each other.
@@ -30,7 +30,7 @@ the development process to build that system.
 
 ---
 type: figure
-source: https://imgs.xkcd.com/comics/wifi_vs_cellular.png
+source: figures/communication/wifi_vs_cellular.png
 caption: "Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/"
 ---
 
@@ -272,7 +272,7 @@ directly connected, in the sense that the sender is not doing anything
 else while the communication is going on. A synchronous
 request-response, for instance, looks as follows:
 
-Aside: Note that we are now using the words synchronous and asynchronous 
+:aside: Note that we are now using the words synchronous and asynchronous 
 for the communication pattern, not to the specific modeling element
 of a synchronous or asynchronous messages in sequence diagrams. In 
 both examples, we use synchronous messages.
@@ -415,7 +415,7 @@ MQTT and HTTP, many other application-level protocols will be easy to
 understand, too. There are also some more practical reasons why we
 recommend you to use MQTT for the semester project:
 
-Aside: Read the article [Building Facebook Messenger](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920)
+:aside: Read the article [Building Facebook Messenger](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920)
 
 
 
@@ -467,10 +467,12 @@ topics, which depend on the application. The topics are organized in a
 hierarchy, separated by a dash ("/"). The following is an example for
 topics that an application for home automation can use:
 
-    house/garage/lights/l1
-    house/garage/lights/l2
-    house/garage/sensors/pi1
-    house/garage/doors/d1
+```
+house/garage/lights/l1
+house/garage/lights/l2
+house/garage/sensors/pi1
+house/garage/doors/d1
+```
 
 The light *l1* for instance subscribes to the topic
 `house/garage/lights/l1` so that it can receive messages that switch it
@@ -479,13 +481,15 @@ topic `house/garage/sensors/pi1` every time it detects a movement. An
 application to switch on the lights whenever a movement is detected can
 then work like this: (In pseudo code)
 
-    subscribe to house/garage/sensors/pi1
-    whenever an MQTT messages arrives at house/garage/sensors/pi1:
-        send a message 
-            to house/garage/lights/l1 with payload "on"@
-        
-        after some time, send a message
-            to house/garage/lights/l1 with payload "off"
+```
+subscribe to house/garage/sensors/pi1
+whenever an MQTT messages arrives at house/garage/sensors/pi1:
+    send a message 
+        to house/garage/lights/l1 with payload "on"@
+    
+    after some time, send a message
+        to house/garage/lights/l1 with payload "off"
+```
 
 Topics can include wildcards, which make it possible for a subscriber to
 subscribe to several topics with a single pattern:

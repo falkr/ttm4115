@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -134,23 +141,283 @@
 <p>Some technical hints on the delivery:</p>
 <ul>
 <li>Team delivery, one document per team</li>
-<li>Please use the file name <strong>ttm4115-2019-t2-team-XX.pdf</strong></li>
+<li>Please use the file name <strong>ttm4115-2020-t2-team-XX.pdf</strong></li>
 <li>Include the team name on each page, in the footer or header</li>
 </ul>
 
+<h2 id="plans-for-ui-components">Plans for UI Components</h2>
+<p>Your system will be fully virtual, that means, not contain any specific hardware or sensors. Instead, you should create <a href="tools-gui.html">GUI components</a> that simulate the hardware components. Please include a list of all GUI components you intend to create for your system, and provide a first sketch of them.</p>
+
 <h2 id="updated-deployment-diagram">Updated Deployment Diagram</h2>
-<p>Create a deployment diagram of the system. You can copy the one from T1 and adapt it to any changes in plans. Also, take into account what you have learned about components and state machines and about communication. Usually a deployment diagram should fit on a single page.</p>
-<h2 id="sequence-diagrams">Sequence Diagrams</h2>
-<p>Prepare sequence diagrams for the main use cases of the system. As you have learned in the team activities, it is hard to cover all details on sequence diagrams, and they may loose their value once we make them too complicated. Instead, cover the most important scenarios in an effective way. Use fragments (alt, opt,…) where they make sense, but also consider to just cover the same use case with several sequence diagrams that show a different scenario, dependent for instance on user choices.</p>
-<p>How much? Depends of course on your layout. If There fit two diagrams on a page, most of your use cases should be covered within 4 pages. Use your own judgement.</p>
-<h2 id="state-machines">State Machines</h2>
-<p>Create state machines for the components in the system.</p>
+<p>Create a deployment diagram of the system. You can copy the one from T1 and adapt it to any changes in your plans.</p>
 <ul>
-<li>Build state machines, as introduced in the lecture notes. (This does not require to build the state machines in Python with STMPY.)</li>
-<li>If a state machine is large, spread it on several pages by referring to states by name.</li>
-<li>Work on the layout. A nice diagram is important, also for you to understand it.</li>
+<li>Take into account what you have learned about components, state machines and about communication.</li>
+<li>Include the GUI components outlined above.</li>
+<li>Identify components that include state machines.</li>
 </ul>
-<p>How to select which state machines to build: Of course, make the state machine for components that coordinate several interactions and that are complicated. Usually, there should be one or two such components in the system. Optionally add state machines for simpler components. In total, you should have about 4 pages of state machines. (It is difficult to give a guideline; be reasonable.) If you only have trivial machines, make sure that your system handles message losses and works with acknowledgements and timeouts.</p>
+<p><strong>Hints:</strong></p>
+<ul>
+<li>Usually a deployment diagram should fit on a single page.</li>
+<li>Use landscape format if you want.</li>
+</ul>
+
+<table class="rubric">
+<thead>
+<tr class="header">
+<th></th>
+<th><p>Excellent</p></th>
+<th><p>Good</p></th>
+<th><p>Sufficient</p></th>
+<th><p>Not rateable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Layout</p></td>
+<td><p>Layout follows a strategy that helps to understand the diagram.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is unstructured and random.</p></td>
+</tr>
+<tr class="even">
+<td><p>Syntax</p></td>
+<td><p>Correct syntax.</p></td>
+<td><p>Correct Syntax.</p></td>
+<td><p>Overall good syntax, with a few minor errors.</p></td>
+<td><p>Major syntactical flaws.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Level of Detail</p></td>
+<td><p>Consistent and intentional level of detail.</p></td>
+<td><p>Adequate detailing.</p></td>
+<td><p>Some inconsistencies, too much focus on some details on the expense of others.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<span name="files/rubrics/deployment.mw">&nbsp;</span>
+<aside name="files/rubrics/deployment.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
+</p></aside>
+<ul>
+<li>Tips for <a href="unit-modeling-diagram-tips.html">diagram layout</a></li>
+<li>Syntax for <a href="prep-modeling.html">deployment diagrams</a></li>
+<li>Level of detail: Details that are included matter, and are not accidental.</li>
+</ul>
+<h2 id="sequence-diagrams">Sequence Diagrams</h2>
+<p>Prepare sequence diagrams for the main use cases of the system. As you have learned in the team activities, it is hard to cover all details on sequence diagrams, and they may lose their value once we make them too complicated or too comprehensive. Therefore, cover the most important scenarios in an effective way. Use fragments (alt, opt,…) where they make sense, but also consider to just cover the same use case with several sequence diagrams that show different scenarios, dependent for instance on important alternatives and exceptions.</p>
+<p>The level of detail should be so that it helps you to convey the overall system interactions, help you to create the state machines and uncover critical situations that require clarifications.</p>
+<p>How much? Depends of course on your layout. If two diagrams fit on a page, most of your use cases should be covered within 4 pages. Use your own judgment.</p>
+
+<table class="rubric">
+<thead>
+<tr class="header">
+<th></th>
+<th><p>Excellent</p></th>
+<th><p>Good</p></th>
+<th><p>Sufficient</p></th>
+<th><p>Not rateable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Coverage</p></td>
+<td><p>All relevant scenarios are handled with an appropriate level of detail and clearness.</p></td>
+<td><p>All relevant scenarios are handled.</p></td>
+<td><p>Most relevant scenarios are handled.</p></td>
+<td><p>Important scenarios are missing.</p></td>
+</tr>
+<tr class="even">
+<td><p>Implied Scenarios</p></td>
+<td><p>All relevant implied scenarios are handled and clarified.</p></td>
+<td><p>Some implied scenarios are handled.</p></td>
+<td><p>No implied scenarios are described.</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Combined Fragments</p></td>
+<td><p>Appropriate use of combined fragments where relevant.</p></td>
+<td></td>
+<td><p>Occasional inappropriate use, that means used where they are not necessary or lack of use where they would help.</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Level of Detail</p></td>
+<td><p>Consistent and intentional level of detail.</p></td>
+<td><p>Adequate detailing.</p></td>
+<td><p>Some inconsistencies, too much focus on some details at the expense of others.</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Layout</p></td>
+<td><p>Layout follows a strategy that helps to understand the diagram.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is unstructured and random.</p></td>
+</tr>
+<tr class="even">
+<td><p>Syntax</p></td>
+<td><p>Correct syntax.</p></td>
+<td><p>Correct Syntax.</p></td>
+<td><p>Overall good syntax, with a few minor errors.</p></td>
+<td><p>Major syntactical flaws.</p></td>
+</tr>
+</tbody>
+</table>
+
+<span name="files/rubrics/interactions.mw">&nbsp;</span>
+<aside name="files/rubrics/interactions.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
+</p></aside>
+<ul>
+<li><a href="prep-interactions.html">Syntax for interactions</a>.</li>
+<li>Pay attention that you select which scnarios to show so that it not only provides coverage, but also helps to understand.</li>
+<li>It is, in principle, possible to not use any combined fragments. They should be applied where they help.</li>
+<li>If you don’t find any implied scenarios, make sure your system is suitable for the course and not overly simplifying reality. If despite this there are no implied scenarios, add a comment.</li>
+</ul>
+
+<h2 id="state-machines">State Machines</h2>
+<p>Create state machines for selected components in the system.</p>
+<ul>
+<li>State machines must be syntactically correct.</li>
+<li>State machines must be complete.</li>
+<li>State machines must be implementable in STMPY (in principle), but you don’t have to implement them yet.</li>
+</ul>
+
+<table class="rubric">
+<thead>
+<tr class="header">
+<th></th>
+<th><p>Excellent</p></th>
+<th><p>Good</p></th>
+<th><p>Sufficient</p></th>
+<th><p>Not rateable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Control States</p></td>
+<td><p>Appropriate use of control states that helps to make the machine understandable.</p></td>
+<td><p>Overall good use of control states.</p></td>
+<td><p>Overall okay use of control states, with some flaws.</p></td>
+<td><p>Wrong use of control states. (1)</p></td>
+</tr>
+<tr class="even">
+<td><p>Events</p></td>
+<td><p>Explicit and understandable handling of events by correct use of transitions or <em>/defer</em>.</p></td>
+<td><p>All relevant events are handled in all relevant states.</p></td>
+<td><p>Most relevant events are handled in most states where they matter.</p></td>
+<td><p>Major events are not handled.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Semantics</p></td>
+<td><p>Machine is consistent and critical situations explained in comments.</p></td>
+<td><p>Machine is free of design flaws.</p></td>
+<td><p>Some few minor issues.</p></td>
+<td><p>There are major design errors.</p></td>
+</tr>
+<tr class="even">
+<td><p>Implementability</p></td>
+<td><p>Clear how the machine can be implemented in STMPY, ambiguous cases are commented.</p></td>
+<td><p>Machine is implementable in STMPY.</p></td>
+<td><p>Machine is apart from a few isolated issues implementable in STMPY.</p></td>
+<td><p>Machine contains several constructs that are unclear how to implement.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Level of Detail</p></td>
+<td><p>Consistent and intentional level of detail.</p></td>
+<td><p>Adequate detailing.</p></td>
+<td><p>Some inconsistencies, too much focus on some details on the expense of others.</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Layout</p></td>
+<td><p>Layout follows a strategy that helps to understand the diagram.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is structured.</p></td>
+<td><p>Layout is unstructured and random.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Syntax</p></td>
+<td><p>Correct syntax.</p></td>
+<td><p>Correct Syntax.</p></td>
+<td><p>Overall good syntax, with a few minor errors.</p></td>
+<td><p>Major syntactical flaws.</p></td>
+</tr>
+</tbody>
+</table>
+
+<span name="files/rubrics/statemachines.mw">&nbsp;</span>
+<aside name="files/rubrics/statemachines.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
+</p></aside>
+<ul>
+<li><a href="prep-statemachines.html">Syntax for state machines</a>.</li>
+<li>A wrong use of control states would be when variables are used to keep track of information that is more suitable for control states. See <a href="unit-statemachines-data.html">here</a>.</li>
+<li>The state machine should be consistent with respect to states and transition and the requirements. For instance, it does not end up in a deadlocked state or ignore an event unless the requirements are okay with this.</li>
+</ul>
+
+<h2 id="overall-delivery">Overall Delivery</h2>
+<p>At this stage, you should also have a look at the overall quality of the delivery, that means, how the individual parts are connected.</p>
+
+<table class="rubric">
+<thead>
+<tr class="header">
+<th></th>
+<th><p>Excellent</p></th>
+<th><p>Good</p></th>
+<th><p>Sufficient</p></th>
+<th><p>Not rateable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Complexity and scope</p></td>
+<td><p>The chosen scope for the system is appropriate.</p></td>
+<td><p>The chosen scope for the system is appropriate.</p></td>
+<td><p>The chosen scope for the system is appropriate.</p></td>
+<td><p>System is too simple to apply learned material.</p></td>
+</tr>
+<tr class="even">
+<td><p>Consistency</p></td>
+<td><p>All parts of the delivery are consistent.</p></td>
+<td><p>Overall good consistency.</p></td>
+<td><p>Some minor errors with the consistency.</p></td>
+<td><p>Major inconsistencies between the parts.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Report</p></td>
+<td><p>Show clear signs of organization and consistence, comments where appropriate.</p></td>
+<td><p>Generally consistent, and well organized.</p></td>
+<td><p>Complete report following the rules for deliveries.</p></td>
+<td><p>Major flaws in layout and structure.</p></td>
+</tr>
+<tr class="even">
+<td><p>Delivery</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Late delivery or wrong format.</p></td>
+</tr>
+</tbody>
+</table>
+
+<span name="files/rubrics/overall.mw">&nbsp;</span>
+<aside name="files/rubrics/overall.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
+</p></aside>
+    </section>
+    <section class="content">
+<h1 id="reflection-and-request-for-feedback">Reflection and Request for Feedback</h1>
+<p>In the last part of the delivery, please add a section in which you reflect about how well you have answered the individual criteria from above.</p>
+<h2 id="your-own-assessment">Your Own Assessment</h2>
+<ul>
+<li>For each ot the criteria tables, mark for the different criteria rows which level you think you have achieved.</li>
+<li>Below the table, add a short comment on your choice.</li>
+<li>Comment on what you think could further be improved.</li>
+<li>Comment on what you think is solved nicely.</li>
+<li>Comment also if you think that the criteria are not covering a performance well.</li>
+</ul>
+
+<h2 id="request-for-feedback">Request for Feedback</h2>
+<p>For each of the criteria tables, tell us what you wonder about most, that means, ask explicitly for the points you are most unsure, or items you want to have tips for.</p>
 
     </section>
 </div>

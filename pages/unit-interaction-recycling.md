@@ -20,7 +20,7 @@ The area for the payed waste has a gate at its entrance and a gate at its exit. 
 
 ## Goals and Functions
 
-The system must serve two main goals:
+The system must serve two main :goals:
 
 1. The number of cars within the payed area is limited to 30 cars at a time.
 2. Cars are registered with their weight at the entrance and exit, and customers are billed for the waste according to the difference of their car's weight.

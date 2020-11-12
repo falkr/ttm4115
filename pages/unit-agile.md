@@ -54,7 +54,7 @@ The forces and strategies were identified by Waterman, Noble and Allan in their 
 * **F5 (CUSTOMER AGILITY)** describes the culture of the customer’s organisation and the huge impact that it has on the amount of up-front architecture design a team does. A customer must have an agile culture that is similar to the team’s culture, whether the team is in-house or an ISV (independent software vendor), for the team to be truly agile. A highly-agile team will not fit in well with a heavyweight process-oriented organisation that prefers planning and formal communication.
 * **F6 (EXPERIENCE)** describes the impact that an experienced architect’s tacit knowledge and implicit decision-making ability has on the time that an agile team spends on up-front design. Experienced architects have breadth of knowledge; they are more likely to be aware of suitable options for implementing a solution and better understand what will work and what will not.
 
-And here are the detailed **strategies**:
+And here are the detailed **strategies**, which help to mitigate the challenges caused by the forces:
 
 * A team's ability to use **S1 (RESPOND TO CHANGE)** is directly related to how agile it is. S1 increases the architecture’s agility by increasing its modifiability and its tolerance of change, and allows the team to ensure the architecture continuously represents the best solution to the problem as it evolves.
 * **S2 (ADDRESS RISK)** reduces the impact of risk before it causes problems, and is usually done up-front, particularly for risk relating to system-wide decisions (for example, risk in selecting the technology stack or top-level styles). Using S2, a team designs the architecture in sufficient detail that it is comfortable that it is actually possible to build the system with a satisfactory level of risk.
@@ -67,7 +67,9 @@ And here are the detailed **strategies**:
 
 Make a copy of the diagram below, and move the forces on the right side to the right place.
 
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL&amp;export=download&quot;}"></div>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL%26export%3Ddownload"></script>
+
+Here is also a [link to the diagram](https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing).
 
 With some discussion you should be able to place all forces and strategies so that the entire diagram makes sense. These are the considerations you have to do in a development project!

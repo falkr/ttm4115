@@ -25,7 +25,7 @@ You may think now that you could have done this also without use cases, just by 
 
 
 
-Goals: The learning goals specific for this week are the following:
+:goals: The learning goals specific for this week are the following:
 
 - Appreciate the value of thinking in terms of use cases.
 - Creating use case overview diagrams and use case tables.
@@ -49,6 +49,7 @@ Goals: The learning goals specific for this week are the following:
 _You should read through the following material, but you don't have to remember it for the RAT._
 
 Not all use cases are at the same level. Alistair Cockburn proposes in his book _Writing Effective Use Cases_ to sort them according to the levels inspired by a horizon, as shown in the table below. 
+
 
 <div>
 <table class="table">

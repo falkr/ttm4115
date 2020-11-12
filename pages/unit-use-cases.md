@@ -16,12 +16,8 @@ You have now already learned a lot about use cases and seen some examples, and k
 * Discuss and select the **three most important** characteristics. 
   - Mark the them with a star, or highlight them in yellow.
 
-### Step 2: Submit to Blackboard
 
-Submit this list with your favorite characteristics marked into Blackboard. **Especially: Submit to Blackboard before starting with Step 3.** 
-
-
-### Step 3: Merge Results
+### Step 2: Merge Results
 
 On Teams, under General / Files / Unit 3, you find a document called **Use Case Characteristics.docx**. This document contains a large table, and each team has their column. The first column is from Team Frank. 
 
@@ -100,7 +96,7 @@ For your system, you also need to deliver the tabular specification of the use c
 
 * Start outlining all three tables.
   * Review if your use case really is at sea-level.
-* Finish the use case tables. Ideally, these will be close to the ones you submit into T1.
+* Finish the use case tables if you have time left. Ideally, these will be close to the ones you submit into T1.
 
 
 # Plan T1
@@ -117,16 +113,6 @@ At this point, you have all information and knowledge needed for the delivery of
 
 # Checklist
 
-Since the use cases you develop are part of T1, there is no formal delivery for them. 
-
-### Blackboard
-
-- Only blackboard delivery for this week is the list of good use case characteristics from the first task.
-
-### MS Teams
-
-- Entry of your use case characteristics
-- Ask for feedback in general
 
 ### Team Reflection for This Unit 
 

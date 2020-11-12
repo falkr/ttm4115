@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -131,7 +138,7 @@
     <section class="content">
 <h1 id="jupyter-notebooks">Jupyter Notebooks</h1>
 
-<h2 id="install-jupyter-notebooks">Install Jupyter Notebooks</h2>
+<h2 id="install-jupyterlab">Install JupyterLab</h2>
 <p>Follow the instructions on this page to <a href="https://jupyter.org/install">install Jupyter</a>.</p>
 <ul>
 <li>I recommend the <strong>installation via pip</strong>, since it usually gives you better control over your Python interpreter.</li>
@@ -140,11 +147,11 @@
 <h2 id="running-notebooks">Running Notebooks</h2>
 <ul>
 <li>Details are <a href="https://jupyter.readthedocs.io/en/latest/running.html#running">explained here</a></li>
-<li>Usually, typing <code>jupyter notebook</code> on your terminal is enough.</li>
+<li>Usually, typing <code>jupyter lab</code> on your terminal is enough.</li>
 <li>A browser opens, by default to <code>http://localhost:8888</code></li>
 <li>Navigate with the integrated file browser to the notebook you want to open, for example the ones you download form this course.</li>
 </ul>
-<p>I recommend that you get used to notebooks and routined at using them. They are super useful for all kinds of stuff, and I am using them daily.</p>
+<p>I recommend that you get used to lab and notebooks and routined at using them. They are super useful for all kinds of stuff, and I am using them daily.</p>
 
 <h2 id="binder">Binder</h2>
 <p>If you don’t manage to install Jupyter notebooks and run them, you can also try to use the following website that lets you use a notebook online with noetbooks you downloaded from a Git repository.</p>

@@ -42,12 +42,14 @@
       <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="prep-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="prep-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
       <a class="dropdown-item" href="prep-communication.html">Communication</a>
       <a class="dropdown-item" href="prep-components.html">Components</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
     </div>
   </li>
   
@@ -58,14 +60,19 @@
       <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
       <a class="dropdown-item" href="unit-requirements.html">Requirements and Design Thinking</a>
       <a class="dropdown-item" href="unit-use-cases.html">Use Cases</a>
+	  <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
       <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
       <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
       <a class="dropdown-item" href="unit-communication.html">Communication</a>
       <a class="dropdown-item" href="unit-components.html">Components</a>
-      <a class="dropdown-item" href="unit-agile.html">Agile Developments</a>
+
       <div class="dropdown-divider"></div>
+	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
+	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     </div>
   </li>
   
@@ -88,12 +95,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="tools.html">Tools</a>
-      <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="tools-python.html">Python</a>
+	  <a class="dropdown-item" href="tools-gui.html">Python GUIs with appJar</a>
       <a class="dropdown-item" href="tools-notebooks.html">Python Notebooks</a>
       <a class="dropdown-item" href="tools-mqtt.html">MQTT</a>
       <a class="dropdown-item" href="tools-stmpy.html">STMPY</a>
+	  <a class="dropdown-item" href="tools-base.html">Base Architecture</a>
     </div>
   </li>
   
@@ -131,85 +138,123 @@
 <h2 id="overview">Overview</h2>
 <p>During the semester, you need to hand in the following deliveries:</p>
 
-<table class="table">
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
-<th>Date</th>
-<th>Type</th>
-<th>Content</th>
-<th>Evaluation</th>
+<th><p>Date</p></th>
+<th><p>Type</p></th>
+<th><p>Content</p></th>
+<th><p>Evaluation</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>T1</td>
-<td>2019-02-15</td>
-<td>Team</td>
-<td><a href="delivery-t1/">Requirements</a></td>
-<td>Pass/Fail</td>
+<tr class="odd">
+<td><p>T1</p></td>
+<td><p>2019-02-15</p></td>
+<td><p>Team</p></td>
+<td><p><a href="delivery-t1/" title="wikilink">Requirements</a></p></td>
+<td><p>Pass/Fail</p></td>
 </tr>
-<tr>
-<td>I1</td>
-<td>2019-02-22</td>
-<td>Individual</td>
-<td><a href="delivery-i1/">Feedback on T1</a></td>
-<td>Pass/Fail</td>
+<tr class="even">
+<td><p>I1</p></td>
+<td><p>2019-02-22</p></td>
+<td><p>Individual</p></td>
+<td><p><a href="delivery-i1/" title="wikilink">Feedback on T1</a></p></td>
+<td><p>Pass/Fail</p></td>
 </tr>
-<tr>
-<td>T2</td>
-<td>2019-03-22</td>
-<td>Team</td>
-<td><a href="delivery-t2/">Specification and Design</a></td>
-<td>Pass/Fail</td>
+<tr class="odd">
+<td><p>T2</p></td>
+<td><p>2019-03-22</p></td>
+<td><p>Team</p></td>
+<td><p><a href="delivery-t2/" title="wikilink">Specification and Design</a></p></td>
+<td><p>Pass/Fail</p></td>
 </tr>
-<tr>
-<td>I2</td>
-<td>2019-03-29</td>
-<td>Individual</td>
-<td><a href="delivery-i2/">Feedback on T2</a></td>
-<td>Pass/Fail</td>
+<tr class="even">
+<td><p>I2</p></td>
+<td><p>2019-03-29</p></td>
+<td><p>Individual</p></td>
+<td><p><a href="delivery-i2/" title="wikilink">Feedback on T2</a></p></td>
+<td><p>Pass/Fail</p></td>
 </tr>
-<tr>
-<td>T3</td>
-<td>2019-05-06</td>
-<td>Team</td>
-<td><a href="delivery-t3/">Final System, Video</a></td>
-<td>Grade (40%)</td>
-</tr>
-<tr>
-<td>I3</td>
-<td>2018-05-13</td>
-<td>Individual</td>
-<td><a href="delivery-i3/">Reflection</a></td>
-<td>Grade (30%)</td>
-</tr>
-<tr>
-<td>RATx</td>
+<tr class="odd">
+<td><p>T3</p></td>
+<td><p>2019-05-06</p></td>
+<td><p>Team</p></td>
+<td><p><a href="delivery-t3/" title="wikilink">Final System and Spec</a></p></td>
 <td></td>
-<td>Individual+Team</td>
-<td>RATs are done during class.</td>
-<td>Grade (30%)</td>
+</tr>
+<tr class="even">
+<td><p>RATx</p></td>
+<td></td>
+<td><p>Individual+Team</p></td>
+<td><p>RATs are done during class.</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>I3</p></td>
+<td><p>2018-05-13</p></td>
+<td><p>Individual</p></td>
+<td><p><a href="delivery-i3/" title="wikilink">Individual Portfolio</a></p></td>
+<td><p>Final Grade</p></td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1q4XGKWjO-yyzqCEL_tUC_vVavv_xcQJQ&amp;export=download&quot;}">
-
-</div>
-<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1q4XGKWjO-yyzqCEL_tUC_vVavv_xcQJQ%26export%3Ddownload"></script>
-
-<p>Aside: The deliveries are aligned with each other, which is why they require less work than you may initially think.</p>
-
 <ul>
-<li>T1, T2, T3 are <strong>team deliveries</strong> (one delivery per team) and consist of the team activities, and documents about the system you build. Deliveries T1 and T2 are milestones towards T3. This means, you need to deliver them, and they are graded passed/failed. T3 contains elements of T1 and T2, and is the delivery that is graded.</li>
-<li>I1, I2 and I3 are <strong>individual deliveries</strong>. Each student needs to deliver them. I1 and I2 are feedback to the corresponding team deliveries T1 and T2. They are graded passed/failed. I3 is a final reflection document that builds upon all material delivered before, and is graded.</li>
-<li>RATs 1 to 9 are quizzes done during class time. The best 7 of them count. They have an individual component (70%) and a team component (30%).</li>
+<li><p>T1, T2, T3 are <strong>team deliveries</strong> (one delivery per team) and consist of the team activities, and documents about the system you build. Deliveries T1 and T2 are milestones towards T3. This means, you need to deliver them, and they are graded passed/failed. T3 contains elements of T1 and T2, and is the delivery that is graded.</p></li>
+<li><p>I1, I2 and I3 are <strong>individual deliveries</strong>. Each student needs to deliver them. I1 and I2 are feedback to the corresponding team deliveries T1 and T2. They are graded passed/failed. I3 is the final portfolio document that builds upon all material delivered before, and is graded.</p></li>
+<li><p>RATs 1 to 9 are quizzes done during class time. The best 7 of them count. They have an individual component (70%) and a team component (30%).</p></li>
 </ul>
+
+<div class="figure">
+<img src="figures/course-overview.png" width="100%"/>
+</div>
+<h3 id="final-grading">Final Grading</h3>
+<p>The final grading is individual and based on the individual portfolio that you hand in at the end. This portfolio consists of the elements from T3 (which are based on T1, T2) and a new, individual part that puts T3 into perspective and connects its parts together. The 7 best RATs are also part of the portfolio.</p>
+<p>The grade is given as a whole on the entire portfolio, according to NTNU’s grading scale:</p>
+
+<table>
+<thead>
+<tr class="header">
+<th><p><strong>Symbol</strong></p></th>
+<th><p><strong>Description</strong></p></th>
+<th><p><strong>General, qualitative description of valuation criteria</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>A</p></td>
+<td><p>Excellent</p></td>
+<td><p>An excellent performance, clearly outstanding. The candidate demonstrates excellent judgement and a high degree of independent thinking.</p></td>
+</tr>
+<tr class="even">
+<td><p>B</p></td>
+<td><p>Very good</p></td>
+<td><p>A very good performance. The candidate demonstrates sound judgement and a very good degree of independent thinking.</p></td>
+</tr>
+<tr class="odd">
+<td><p>C</p></td>
+<td><p>Good</p></td>
+<td><p>A good performance in most areas. The candidate demonstrates a reasonable degree of judgement and independent thinking in the most important areas.</p></td>
+</tr>
+<tr class="even">
+<td><p>D</p></td>
+<td><p>Satisfactory</p></td>
+<td><p>A satisfactory performance, but with significant shortcomings. The candidate demonstrates a limited degree of judgement and independent thinking.</p></td>
+</tr>
+<tr class="odd">
+<td><p>E</p></td>
+<td><p>Sufficient</p></td>
+<td><p>A performance that meets the minimum criteria, but no more. The candidate demonstrates a very limited degree of judgement and independent thinking.</p></td>
+</tr>
+<tr class="even">
+<td><p>F</p></td>
+<td><p>Fail</p></td>
+<td><p>A performance that does not meet the minimum academic criteria. The candidate demonstrates an absence of both judgement and independent thinking.</p></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="technical-tips">Technical Tips</h2>
 <ul>

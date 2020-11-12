@@ -1,0 +1,16 @@
+{|
+| Learning Goal
+| Comment
+|-
+| '''1.''' Classify different types of requirements, and explain the main activities during requirements development. Recite potential problems during requirements engineering.
+| Learn to ask the right questions. You have an idea about what can go wrong, you anticipate customer concerns, even if they don't know themselves.
+|-
+| '''2.''' Recognize modeling elements in UML, properly explain their semantics, and correctly map them to program code. This comprises use case, sequence, state machine and deployment diagrams, among others.
+| UML defines many standard modeling diagrams. The actual syntax does not matter too much, but we need precision to detect flaws and achieve consistency. Once you have understood the basic diagram types, you can easily learn others (like for example BPEL).
+|-
+| '''3.''' Understand and describe the main features of application protocols (like HTTP and MQTT), and select and apply them efficiently and correctly to a system architecture.
+| Communication is what keeps system components together and makes them form a whole. Often, different system components are realized by different stakeholders. Fragile communication between system components is therefore a major concern.
+|-
+| '''4.''' List and explain the main elements in a development method as for instance Scrum, and reason about their applicability in a given development context.
+| Agile methods of some form are now used for many projects. Learn about the key concepts in agile methods.
+|}

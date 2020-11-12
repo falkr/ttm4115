@@ -1,13 +1,40 @@
 # Components
 
 
-So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yets. 
+So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet. 
 This week we want to combine several concepts to build a more complete software component. 
 
 ---
 type: figure
 source: figures/components/meme.jpg
 ---
+
+# STMPY Components + MQTT
+
+To ensure a **low degree of coupling**, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.
+
+The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically **a better degree of cohesion**.
+
+These means alone do not ensure a low degree of coupling and a high degree of cohesion.
+A good component design depends on how we manage to group the functions we need for a system or application into the different components.
+This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps. 
+
+
+# State Machines as Sessions
+
+So far, we have only looked at singe instances of state machines, because they controlled a single resource. 
+
+* The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.
+* The bus stop had a single button and signal light, which we could take care of with a single state machine.
+
+In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.
+
+And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.
+
+For such cases, we keep on using a single state machine per resource it represents.
+But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a `session`. 
+
+For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.
 
 
 
@@ -59,7 +86,7 @@ The text-to-speech just accepts a command that contains a sentence in English. F
 
 * "Your spaghetti timer is ready!"
 * "You have 30 seconds left on the spaghetti timer."
-* "Your have 2 active timers, spaghetti and green tea." 
+* "You have 2 active timers, spaghetti and green tea." 
 
 
 # Component Template
@@ -149,7 +176,7 @@ except Exception as err:
 command = payload.get('command')
 ```
 
-Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a meachine.
+Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a machine.
 
 ```python
 self.stm_driver.send('report', timer_name)
@@ -158,8 +185,8 @@ self.stm_driver.send('report', timer_name)
 
 ### Publishing
 
-Publishing works via the NQTT client, for example in the effect of a transition of the state machine. 
-This works exactly like we used MQTT before, we get access to the client via the compoinent's variable.
+Publishing works via the MQTT client, for example in the effect of a transition of the state machine. 
+This works exactly like we used MQTT before, we get access to the client via the component's variable.
 
 ```python
 self.component.mqtt_client.publish('topic.../', message)
@@ -196,19 +223,44 @@ self.stm_driver.add_machine(timer_stm)
 # Task: Create the Timer Component
 
 
-* Create **two sequence diagrams** for the scenario with a 10 minute timer "spaghetti", and a 2 minute timer "green tea".
-  * Create one version in which you show the MQTT messages, including _publish_ and _subscribe_, including the MQTT broker as lifeline.
-  * Create another, more high-level sequence diagram, in which you don't show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.
+## Step 1: Sequence Diagrams
+
+Create **two sequence diagrams** for the scenario with a 10-minute timer "spaghetti", and a 2-minute timer "green tea".
+
+* Create one version in which you show the MQTT messages, including _publish_ and _subscribe_, including the MQTT broker as lifeline.
+* Create another, more high-level sequence diagram, in which you don't show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.
+
+## Step 2: Start the Command Component
+
+Because we don't have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:
+
+---
+type: figure
+source: figures/components/command-sender.png
+caption: "Simple GUI to dispatch commands via MQTT."
+---
+
+Do the following:
+
+  * ~~Start your own broker.~~
+  * Use `mqtt.item.ntnu.no` with port `1883` as broker.
+  * Download the [code of the command component](https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py) and study it.
+  * Adjust the topics.
+  * Run the component and see commands coming in by using MQTT.fx for debugging.
+
+## Step 2: Implement the Components
+
 * Use [the component template](https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py), and add the required code in the places marked with `TODO`.
-  * Start your own broker.
-  * Choose topics.
-  * Use the JSON formats as suggested above.
-* Send Timer commands into the component by using MQTT.FX. 
-  * Directly send the JSON strings suggested above.
+
+* Send Timer commands into the component using the GUI. 
+
 * See if your component works as intended and sends the required messages to the Text To Speech component.
   * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.
 * Reflect on your progress in a document. 
 * Create a **short and uncut demo video** using two named timers, simulated via MQTT.FX and your timer manager component.
+
+
+
 
 
 # Checklist

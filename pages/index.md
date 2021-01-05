@@ -1,44 +1,28 @@
 # Design of Communicating Systems
 
 
-### Step 1: Prepare for Monday, Jan. 13th 2019
+### Step 1: Onboarding
 
-Work through the following material _before_ class time:
-
-<a href="prep-introduction.html" class="arrow">Preparation Material</a>
-
-### Step 2: Class!
-
-Come to the <mark>first class on Monday, Jan. 13th</mark> in [EL-23](http://bit.ly/2p6mAhe).
-If you can't come, follow the instructions at the end of the preparation material above.
-
-
-# Course Content
-
-
-
-In this course you will learn about systems in which communication is an important part of functionality. We will study technologies to build these systems, how communication protocols can be used in combination with components and program code. 
+Please fill out the onboarding scheme so we can register some more information about you.
+We will use this for a faster startup and the creation of working teams.
 
 ---
-type: figure
-source: figures/ttm4115-content-systems.png
+type: button
+text: "Onboarding Scheme"
+url: https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUNFE0UUpVTkZUT1g3UVhBS0FQOTRKUTJXNS4u
 ---
 
-You will also learn how to describe these types of systems. We will create system models with various notations, at various levels of detail and with different degree of rigor. This includes formal modeling in terms of state machines, but also simple and effective sketches of the system on a whiteboard. As part of this, you will learn how to think in states and transitions, and how to describe complex interactions efficiently.
 
----
-type: figure
-source: figures/ttm4115-content-descriptions.png
----
+### Step 2: Preparation
 
-Part of system development is also the coordination of a team of developers and the management of resources. You will therefore learn about development processes and directly experience the dynamics in a team.
+Read and work through the [preparation material for setting up the course](prep-setup.html). 
 
----
-type: figure
-source: figures/ttm4115-content-people.png
----
 
-<a class="arrow" href="learning-goals.html">Read more about the Learning Goals</a>
+### Step 3: First Class Meeting
+
+Our first class time will be on **Friday, January 15th 2021**, 13:15--14:00 via Zoom. You will find the login details on Blackboard and in the announcement.
+
+
 
 
 
@@ -47,34 +31,19 @@ source: figures/ttm4115-content-people.png
 Each week, we follow the same schedule:
 
 * Individual preparation before class time.
-* **Monday 10:15-12:00** Class time in [EL-23](http://bit.ly/2p6mAhe)
-* Teamwork on week activities, ca. 2 hours
-* Teamwork on semester project
+* **Monday 09:15-10:00** Weekly Tests (digital, Zoom)
+* **Tuesday 08:15-12:00** Teamwork on week activities (digital, start in Zoom)
+* **Friday 13:15-14:00** Summary of the Unit (digital, Zoom)
 
-Here is the schedule: 
+Here is the weekly schedule for 2021: 
 
 
 ---
 type: table
-file: files/tables/schedule.mw
-class: schedule
+file: tables/schedule.mw
+class: schedule table-sm table-bordered
 ---
 
 
-# Learning
-
-<mark>This course combines team-based learning with a semester project.</mark>
-During the course, you will develop a system together with your teammates. The units each week support you during this task, from a requirements analysis, use case analysis towards a robust system specification and design that you then implement. During the semester you will need to hand in deliveries that document the different stages of your system. This is similar to a process in industry you will encounter later, just a bit adapted so it fits into a semester.
-
-Though there is lots of team work, there is enough room for you to also work individually. The course requires preparation each week, which you can complete at your own speed and schedule. This preparation gives you the basic knowledge and understanding to work together, and it will be tested in class so that you get immediate feedback on your own progress.
-
-<a class="arrow" href="learning-tbl.html">Read more about Team-based Learning</a>
 
 
-# Grading
-
-<mark>There is no final written exam in the course.</mark> 
-The grading scheme is based on the RATs (quizzes) during class and the deliveries you hand in as teams as well as the ones you do individually. 
-All these items give enough material for robust and balanced grading.
-
-<a class="arrow" href="learning-grading.html">Read more about Grading</a>

@@ -1,0 +1,56 @@
+{|
+! Item
+! System Spec, Version 1
+! System Spec, Version 2
+! System Spec, Final Version
+|-
+| Deployment Diagram
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Problem and Background
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Vision
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Objectives
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Stakeholders
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Use Case Hierarchy
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Selected Use Cases
+| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Interactions
+| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| State Machines
+| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|-
+| Model Checking Analysis
+| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+|}

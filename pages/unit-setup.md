@@ -1,19 +1,10 @@
-# Regular Team Meeting Times
-
-You need to find time slots when your team can meet each week. Ideally, these are at the same time each week to make scheduling much easier. You need two timeslots with two hours. Ideally, the first timeslot is early in the week (Monday, Tuesday) and the other one later during the week. This split should make it possible that you can receive feedback during the week. The timeslots are public so that other teams that may provide feedback to you or receive feedback from you know about your schedule.
-
-* Take out your calendars and find timesplots that fit for everyone.
-* Find the document **Team Overview** on Teams.
-* Write in your regular timeslots.
-
-
 # Team Setup
 
 ### Team Roles for This Week
 
 Have a quick look again at the [team roles](learning-teamwork.html) that you have read through during the preparation.
 
-- Assign the roles
+- Assign the roles for this week.
 - Go through the tasks of the roles and find out if you have the same understanding about them.
 
 ### Time Check

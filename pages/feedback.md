@@ -19,7 +19,6 @@ The reference group meets several times during the semester and gives feedback t
 Members of the reference group are listed below.
 The main concern is to provide constructive feedback on the learning outcome in the course, and anything related to that.
 
-**Since we are only few students in 2020, we organize reference gorup meeting with the entire class.** 
 
 :aside:
 <a class="arrow" href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/Referansegruppe+-+kvalitetssikring+av+utdanning">Reference Group Resources</a>
@@ -43,10 +42,10 @@ The main concern is to provide constructive feedback on the learning outcome in 
     <td>B223</td>
   </tr>
   <tr>
-    <td>Anders E. Braaten</td>
+    <td>tbd</td>
     <td>Teaching Assistant</td>
-    <td>anders.e.braten@ntnu.no</td>
-    <td>B222</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 </div>

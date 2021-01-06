@@ -10,7 +10,7 @@ For the activities during this week, you need to read through the following page
 * [Read about Learning Goals](learning-goals.html)
 * [Read about Reflection](learning-reflection.html)
 
-As a dry-run, we will do a RAT during the next class.
+To get familiar with all procedures we will do a RAT during the next class.
 
 
 

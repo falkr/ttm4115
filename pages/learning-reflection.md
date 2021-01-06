@@ -1,6 +1,6 @@
 # Reflection
 
-Reflecting about one's work is helpful for gaining insights and better learning. For system development, reflection contains the ability to manage the team and the processes around it, and is the basis for improvements. In this course, reflection is also an explicit part of the grade. Delivery I3 will include an individual reflection. 
+Reflecting about one's work is helpful for gaining insights and better learning. For system development, reflection contains the ability to manage the team and the processes around it, and is the basis for improvements. In this course, reflection is also an explicit part of the grade. Your portfolio will contain a reflective essay.
 
 To remind you of reflection and allocate enough time for it, we include two reflections during each unit:
 

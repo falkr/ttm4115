@@ -34,6 +34,14 @@ Each week, we follow the same schedule:
 * **Monday 09:15-10:00** Weekly Tests (digital, Zoom)
 * **Tuesday 08:15-12:00** Teamwork on week activities (digital, start in Zoom)
 * **Friday 13:15-14:00** Summary of the Unit (digital, Zoom)
+* In some weeks, you need to schedule additional time for teamwork on the semester project and deliverables.
+
+---
+type: figure
+source: figures/weekplan-2021.png
+caption: "Week plan of scheduled class time for 2021."
+---
+
 
 Here is the weekly schedule for 2021: 
 

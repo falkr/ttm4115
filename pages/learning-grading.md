@@ -62,8 +62,27 @@ file: files/tables/grading-ntnu.mw
 ---
 
 The final grade is assigned based on the individual scores of the team deliveries (the system specification) together with the other contents in the portfolio.
+Many of the items are commented by rubrics, which have scores like *excellent*, *good*, *sufficient* and *not rateable*.
+The portfolio is graded **as a whole.** 
+This means that there is not a simple mathematical formula to map the different rubric scores to a final result. 
+Instead, grading is always approached top-down, starting with the definitions in the table above, with the scores of the rubrics aiding to find evidence for the different grades. 
 
+Still, you can expect the following:
 
+* Grade **A** requires mostly excellent items, and especially an outstanding reflective essay that demonstrates independent thinking.
+* Grade **B** requires mostly excellent items, some good, with a good or very good reflective essay.
+* Grade **C** requires mostly good items, some excellent, with a good reflective essay.
+* The grading is focused on substance. For instance, a single "sufficient" item does not necessarily spoil an A. 
+* Teamwork vs. individual effort will also be taken into account. Team work has a tendency towards an average, but it should still be possible to achieve a very good mark individually.
 
+Before you get too nervous. From looking at the results of previous years:
 
+* Most students achieve a good result in the course.
+* Achieving an **A** is not simple, but possible. 
+
+I think the grading is well aligned with the assessment, so you don't have to worry too much about the grading and can focus on learning. Simply working on all required items will guide you towards a good result.
+
+* Participate in the weekly activities and study the material
+* Apply the learned stuff in the semester project
+* Spend the necessary effort for the reflective essay and you will achieve a very good result. 
 

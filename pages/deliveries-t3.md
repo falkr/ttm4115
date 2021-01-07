@@ -1,6 +1,6 @@
-Delivery T3 consists of two parts, a document and a video.
+# Final System Specification, Code and Demo
 
-## Document
+## System Specification
 
 This contains all main parts of the delivery T1 and T2, with improvements as you see need, based on the feedback you received.
 
@@ -30,4 +30,4 @@ Record a video or a screencast where you demonstrate the system.
 
 ## Code
 
-Provide the code of your system, ideally as a well-orgnized Git repository.
+Provide the code of your system, ideally as a well-organized Git repository.

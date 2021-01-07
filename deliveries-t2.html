@@ -135,23 +135,83 @@
 <div class="page">
     </section>
     <section class="content">
-<h1 id="delivery-t2">Delivery T2</h1>
+<h1 id="system-spec-version-2">System Spec, Version 2</h1>
 <p>In this delivery you should reveal some details on the design of your system. The design should cover the main functionality of the system and include the most important critical details. Obviously, once you implement the system, there may turn up more details. The kitchen timer was an idealized example for this. Each team created decent state machines that documented the important details of the kitchen timer. The subsequent implementation could then focus more on the details how to implement specific actions in Python, but the overall logic was settled.</p>
-<p>Some technical hints on the delivery:</p>
-<ul>
-<li>Team delivery, one document per team</li>
-<li>Please use the file name <strong>ttm4115-2020-t2-team-XX.pdf</strong></li>
-<li>Include the team name on each page, in the footer or header</li>
-</ul>
 
-<h2 id="plans-for-ui-components">Plans for UI Components</h2>
-<p>Your system will be fully virtual, that means, not contain any specific hardware or sensors. Instead, you should create <a href="tools-gui.html">GUI components</a> that simulate the hardware components. Please include a list of all GUI components you intend to create for your system, and provide a first sketch of them.</p>
+    </section>
+    <section class="content">
+<h1 id="use-cases">Use Cases</h1>
+<h3 id="use-cases-in-table-form">Use Cases in Table Form</h3>
+<p>Describe 3 use cases for the major features of your system. Choose use cases at the sea-level. Follow the table format proposed in the book and shown on page 150.</p>
+<p><strong>Hints:</strong> Most likely, each of the use cases will fit on a single page in portrait orientation. (So use about 3 pages in total.)</p>
+
+<h3 id="criteria-for-the-use-case-part">Criteria for the Use Case Part</h3>
+<p>The main function of the use cases is to provide a clearer picture of the needed system functionality before anything is implemented. The value of this part hence is based on its usefulness for the upcoming process.</p>
+
+<table class="rubric">
+<thead>
+<tr class="header">
+<th></th>
+<th><p>Excellent</p></th>
+<th><p>Good</p></th>
+<th><p>Sufficient</p></th>
+<th><p>Not rateable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Exceptions and Alternatives</p></td>
+<td><p>Consistent handling of relevant exceptions and alternatives.</p></td>
+<td><p>Most relevant exceptions and alterntives described.</p></td>
+<td><p>Some inconsistencies.</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Alignment</p></td>
+<td><p>Consistent with user requirements, vision and system.</p></td>
+<td><p>Good alignment to the user requirements.</p></td>
+<td><p>Minor inconsistencies.</p></td>
+<td><p>Missing alignment.</p></td>
+</tr>
+<tr class="odd">
+<td><p>Descriptions</p></td>
+<td><p>Concise descriptions.</p></td>
+<td><p>Use cases have good, descriptive names.</p></td>
+<td></td>
+<td><p>Major language errors and typos.</p></td>
+</tr>
+<tr class="even">
+<td><p>Value</p></td>
+<td><p>The use cases provide excellent value for the development by addressing relevant issues in a compact form.</p></td>
+<td><p>The described use cases form a cohesive, focused whole that are a good basis for planning the upcoming development of the system.</p></td>
+<td><p>Some value for further development, but inconsistent.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<span name="files/rubrics/usecases.mw">&nbsp;</span>
+<aside name="files/rubrics/usecases.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
+</p></aside>
+<!--
+## Plans for UI Components
+Your system will be fully virtual, that means, not contain any specific hardware or sensors.
+Instead, you should create [GUI components](tools-gui.html) that simulate the hardware components.
+Please include a list of all GUI components you intend to create for your system, and provide a first sketch of them.
+-->
+
+
+
+    </section>
+    <section class="content">
+<h1 id="plans-for-prototype-implementation">Plans for Prototype Implementation</h1>
+<p>Depending on some practicalities we need to decide how to build prototypes of the implementation. (This section will be updated.)</p>
 
 <h2 id="updated-deployment-diagram">Updated Deployment Diagram</h2>
-<p>Create a deployment diagram of the system. You can copy the one from T1 and adapt it to any changes in your plans.</p>
+<p>Create an updated deployment diagram of the system.</p>
 <ul>
 <li>Take into account what you have learned about components, state machines and about communication.</li>
-<li>Include the GUI components outlined above.</li>
+<li>Include the prototype components outlined above.</li>
 <li>Identify components that include state machines.</li>
 </ul>
 <p><strong>Hints:</strong></p>

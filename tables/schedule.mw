@@ -1,5 +1,5 @@
 {|
-! Week
+! W
 ! Day
 ! Time
 ! Material
@@ -21,20 +21,20 @@
 |
 | Fri, 15. Jan.
 | 13:15-14:00 ([[tools.html#zoom|Zoom]])
-|
+| Welcome and Startup
 |
 
 |-
 | 3
 | Mon, 18. Jan.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| [[prep-setup.html|Introduction and Course Setup]]
-|
+| <span class="badge badge-secondary">RAT</span> [[prep-setup.html|Course Setup]]
+| 
 |-
 |
 | Tue, 19. Jan.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-setup.html|Team Setup]]
 |
 |-
 |
@@ -47,13 +47,13 @@
 | 4
 | Mon, 25. Jan.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 1</span> [[prep-modeling.html|Modeling and Deployment]]
+| <span class="badge badge-secondary">RAT</span> [[prep-modeling.html|Modeling]]
 |
 |-
 |
 | Tue, 26. Jan.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-modeling.html|Modeling]]
 |
 |-
 |
@@ -66,13 +66,13 @@
 | 5
 | Mon, 1. Feb.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 2</span> [[prep-statemachines.html|State Machines]]
+| <span class="badge badge-secondary">RAT</span> [[prep-statemachines.html|State Machines]]
 |
 |-
 |
 | Tue, 2. Feb.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-| 
+| <span class="badge badge-danger">TA</span> [[unit-statemachines.html|State Machines]]
 |
 |-
 |
@@ -85,13 +85,13 @@
 | 6
 | Mon, 8. Feb.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 3</span> [[prep-stmpy.html|State Machines in Python]]
+| <span class="badge badge-secondary">RAT</span> [[prep-stmpy.html|State Machines in Python]]
 |
 |-
 |
 | Tue, 9. Feb.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-stmpy.html|State Machines in Python]]
 |
 |-
 |
@@ -104,13 +104,13 @@
 | 7
 | Mon, 15. Feb.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 4</span> [[prep-user-requirements.html|User Requirements]]
+| <span class="badge badge-secondary">RAT</span> [[prep-user-requirements.html|User Requirements]]
 |
 |-
 |
 | Tue, 16. Feb.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-user-requirements.html|User Requirements]]
 |
 |-
 |
@@ -123,13 +123,13 @@
 | 8
 | Mon, 22. Feb.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 5</span> [[prep-agile.html|Agile Development]]
+| <span class="badge badge-secondary">RAT</span> [[prep-agile.html|Agile Development]]
 |
 |-
 |
 | Tue, 23. Feb.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-agile.html|Agile Development]]
 |
 |-
 |
@@ -142,32 +142,32 @@
 | 9
 | Mon, 1. Mar.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 6</span> [[prep-communication.html|Communication]]
+| <span class="badge badge-secondary">RAT</span> [[prep-communication.html|Communication]]
 |
 |-
 |
 | Tue, 2. Mar.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-communication.html|Communication]]
 |
 |-
 |
 | Fri, 5. Mar.
 | 13:15-14:00 ([[tools.html#zoom|Zoom]])
 |
-| [[deliveries-i2.html|Feedback to v.2]]
+| [[deliveries-i1.html|Feedback to v.1]]
 
 |-
 | 10
 | Mon, 8. Mar.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 7</span> [[prep-interactions.html|Interactions]]
+| <span class="badge badge-secondary">RAT</span> [[prep-interactions.html|Interactions]]
 |
 |-
 |
 | Tue, 9. Mar.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-interactions.html|Interactions]]
 |
 |-
 |
@@ -180,13 +180,13 @@
 | 11
 | Mon, 15. Mar.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| <span class="badge badge-secondary">RAT 8</span> [[prep-components.html|Components]]
+| <span class="badge badge-secondary">RAT</span> [[prep-components.html|Components]]
 |
 |-
 |
 | Tue, 16. Mar.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| <span class="badge badge-danger">TA</span> [[unit-components.html|Components]]
 |
 |-
 |
@@ -199,13 +199,13 @@
 | 12
 | Mon, 22. Mar.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| Concurrency and Threads
+| Concurrency, Threads (tbd)
 |
 |-
 |
 | Tue, 23. Mar.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| (tbd)
 |
 |-
 |
@@ -237,13 +237,13 @@
 | 14
 | Mon, 5. Apr.
 | 9:15-10:00 ([[tools.html#zoom|Zoom]])
-| Model Checking
+| Model Checking (tbd)
 |
 |-
 |
 | Tue, 6. Apr.
 | 8:15-12:00 ([[tools.html#zoom|Zoom]])
-|
+| (tbd)
 |
 |-
 |

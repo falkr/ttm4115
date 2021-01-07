@@ -1,17 +1,10 @@
-# Delivery T1: Requirements
+# System Spec, Version 1
 
 This delivery is a partial Vision and Scope document that focuses on why the system exists and what it should do, 
 but without all detailed requirements listed. 
-
 This delivery shows already a part of the system solution, by illustrating it with a deployment diagram.
 
 
-
-## Grading
-
-**Grading:** You don't receive a grade for this document directly. You will receive feedback on its content from other students, and will re-submit all content as part of the final submission. However, the better this initial submission is, the easier it is to receive valuable comments, and the easier it will be to create a very good final version. (So simply assume that already this version is graded.)
-
-**Rejection:** Since this document is the basis for further work, we may reject it if it does not meet some criteria, both in form or content. You will then need to resubmit an improved version.
 
 
 # Content
@@ -59,7 +52,7 @@ Objectives do not yet explain how the system is implemented, but are oriented to
 
 
 ### 4. Stakeholders
-	
+
 Identify the main stakeholders in the system. Identify their values and interest. Present all in a table. 
 
 **Hints:** 
@@ -96,24 +89,7 @@ Show at least three use cases at the sea level. Add relevant ones at the fish-le
 * **Hints:** Present a use case diagram that covers the major features of your system. Most likely, the use case diagram will fit on a single A4 page in landscape orientation. This diagram can show more use cases than you will detail in the next task. **This diagram type is shown in the compendium, page 149.** 
 -->
 
-### 6. Use Cases in Table Form
 
-Describe 3 use cases for the major features of your system. Choose use cases at the sea-level. Follow the table format proposed in the book and shown on page 150.
-
-**Hints:** Most likely, each of the use cases will fit on a single page in portrait orientation. (So use about 3 pages in total.)
-
-
-### Criteria for the Use Case Part
-
-The main function of the use cases is to provide a clearer picture of the needed system functionality before anything is implemented. 
-The value of this part hence is based on its usefulness for the upcoming process.
-
----
-type: table
-file: files/rubrics/usecases.mw
-class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
----
 
 
 ## Architecture Part
@@ -142,9 +118,4 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 ---
 
 
-# Formatting Rules for Deliveries
 
-* Start each section on a new page. 
-* Make sure to include team name on each page, in the header or footer of the document.
-* Filename: **ttm4115-2018-XX-team-YY.pdf**, where XX is the delivery, like `T1` and YY is your team number, for instance 01 or 13. Consistent file name makes it much easier for us to process all deliveries!
-* Diagrams can be included in landscape format, but must be readable from the right. (That means, they must be readable when the page is turned 90 degrees clockwise.

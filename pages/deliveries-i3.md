@@ -1,4 +1,4 @@
-# I3: Final Individual Delivery
+# Individual Reflective Essay
 
 
 

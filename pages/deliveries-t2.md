@@ -1,27 +1,50 @@
-# Delivery T2
+# System Spec, Version 2
 
 In this delivery you should reveal some details on the design of your system. The design should cover the main functionality of the system and include the most important critical details. Obviously, once you implement the system, there may turn up more details. The kitchen timer was an idealized example for this. Each team created decent state machines that documented the important details of the kitchen timer. The subsequent implementation could then focus more on the details how to implement specific actions in Python, but the overall logic was settled. 
 
-Some technical hints on the delivery:
-
-- Team delivery, one document per team
-- Please use the file name **ttm4115-2020-t2-team-XX.pdf**
-- Include the team name on each page, in the footer or header
 
 
+# Use Cases
+
+### Use Cases in Table Form
+
+Describe 3 use cases for the major features of your system. Choose use cases at the sea-level. Follow the table format proposed in the book and shown on page 150.
+
+**Hints:** Most likely, each of the use cases will fit on a single page in portrait orientation. (So use about 3 pages in total.)
+
+
+### Criteria for the Use Case Part
+
+The main function of the use cases is to provide a clearer picture of the needed system functionality before anything is implemented. 
+The value of this part hence is based on its usefulness for the upcoming process.
+
+---
+type: table
+file: files/rubrics/usecases.mw
+class: rubric
+caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
+---
+
+
+<!--
 ## Plans for UI Components
-
 Your system will be fully virtual, that means, not contain any specific hardware or sensors.
 Instead, you should create [GUI components](tools-gui.html) that simulate the hardware components.
 Please include a list of all GUI components you intend to create for your system, and provide a first sketch of them.
+-->
+
+
+# Plans for Prototype Implementation
+
+Depending on some practicalities we need to decide how to build prototypes of the implementation. (This section will be updated.)
 
 
 ## Updated Deployment Diagram
 
-Create a deployment diagram of the system. You can copy the one from T1 and adapt it to any changes in your plans. 
+Create an updated deployment diagram of the system. 
 
 * Take into account what you have learned about components, state machines and about communication.
-* Include the GUI components outlined above.
+* Include the prototype components outlined above.
 * Identify components that include state machines.
 
 **Hints:**

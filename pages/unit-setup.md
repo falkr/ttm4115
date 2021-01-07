@@ -1,5 +1,18 @@
 # Team Setup
 
+
+Throughout the entire semester, you must maintain a team reflection document. 
+This is a single document, one per team, in which you reflect over teamwork and roles.
+After each team activity you visit this document and add an entry for the week.
+
+The team reflection document is also part of your final submission T3. 
+It is not graded, but contributes as context for grading all other deliveries.
+
+### Create a Team Reflection Document
+
+- Find the template for the document in the general channel on Teams.
+- Make a copy, and place it in the files section of the public channel for your team.
+
 ### Team Roles for This Week
 
 Have a quick look again at the [team roles](learning-teamwork.html) that you have read through during the preparation.
@@ -13,20 +26,6 @@ Try to briefly get an overview of today's tasks, and come up with a rough time p
 
 :aside: This team setup should become a normal routine for each week. 
 
-
-# Team Reflection 
-
-Throughout the entire semester, you must maintain a team reflection document. 
-This is a single document, one per team, in which you reflect over teamwork and roles.
-After each team activity you visit this document and add an entry for the week.
-
-The team reflection document is also part of your final submission T3. 
-It is not graded, but contributes as context for grading all other deliveries.
-
-### Create a Team Reflection Document
-
-- Find the template for the document in the general channel on Teams.
-- Make a copy, and place it in the files section of the public channel for your team.
 
 ### Find a Team Name
 
@@ -45,11 +44,8 @@ Create an entry for this week as a new section.
 ### Attendance
 
 Note the attendance of the team members during the week. 
-If someone is missing,try to find out why and make a note.  
+If someone is missing, try to find out why and make a note.  
 
-### Where and When?
-
-Take a not on when you were working, and where (which room or area).
 
 _We will come back to the team reflection document at the end._
 
@@ -148,7 +144,7 @@ Think about the following points:
 
 # Individual Reflection
 
-Each weak you should in addition complete an **individual reflection**, that makes up your **individual reflection diary**. These reflections will help you to collect material for the individual deliveries.
+Each week you should in addition complete an **individual reflection**, that makes up your **individual reflection diary**. These reflections will help you to collect material for the individual deliveries.
 To ensure progress during the semester and also as some form of feedback to us, the individual reflection is kicked off with an individual reflection survey.
 
 * Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
@@ -160,13 +156,9 @@ To ensure progress during the semester and also as some form of feedback to us, 
 
 Deliver via Teams:
 
-* Setup regular meeting times and written them into the common Team Overview document.
 * First Team Reflection (in the public channel for your team).
 * Learning Goals Relevance (PDF)
 * Balances in Teamwork (PDF)
 
-Other:
 
-* Initial Project Ideas (For yourself, anywhere)
-* First Individual Reflection (individual, via Office Forms)
 

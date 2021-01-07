@@ -24,8 +24,6 @@ Our first class time will be on **Friday, January 15th 2021**, 13:15--14:00 via 
 
 
 
-
-
 # Schedule
 
 Each week, we follow the same schedule:

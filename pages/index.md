@@ -41,6 +41,16 @@ caption: "Week plan of scheduled class time for 2021."
 ---
 
 
+<!--
+---
+type: table
+file: tables/week.mw
+class: schedule table-sm table-bordered
+format: html
+---
+-->
+
+
 Here is the weekly schedule for 2021: 
 
 

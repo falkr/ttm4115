@@ -147,6 +147,7 @@ Below is an example for a deployment diagram, showing the elements of a fitness 
 ---
 type: figure
 source: figures/deployment/fitbit-1.svg
+caption: "Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device."
 ---
 
 What can we learn from this diagram?
@@ -165,6 +166,7 @@ When we apply some color, we can see that deployment diagrams basically consist 
 ---
 type: figure
 source: figures/deployment/fitbit-2.svg
+caption: "Colored version of the original deployment diagram."
 ---
 
 ## Nodes: Devices
@@ -206,6 +208,7 @@ Usually, execution environment are contained within devices, since software need
 ---
 type: figure
 source: figures/deployment/nested-nodes.svg
+caption: "Devices can be nested inside devices, if it is worth emphasizing them."
 ---
 
 ## Showing Node Instances
@@ -215,6 +218,7 @@ Sometimes you want to show several nodes of the same type, but want to express t
 ---
 type: figure
 source: figures/deployment/node-instances.svg
+caption: "Two instances of the same type of device."
 ---
 
 

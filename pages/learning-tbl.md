@@ -19,7 +19,7 @@ Some features of team-based and active learning:
 The course consists of separate units, roughly one for each week. Each week will be organized in a very similar way:
 
 1. You need to prepare for the unit. 
-2. At class time (every Monday 8:15) we start with a test about the reading material, a so-called RAT.
+2. At class time we start with a test about the reading material, a so-called RAT.
 3. After the RAT, you get special activities that you do together in your team. Depending on the activities, there are different ways of handing in the results. 
 
  
@@ -29,7 +29,7 @@ The preparation happens individually. Sometimes it is one or two chapters of a b
 This gives you the opportunity to study at your own pace and get familiar with a new topic.
 Of course it will vary how much time each student will spend on the preparation material, and it also depends on the unit, but roughly 2 hours is a good guideline, sometimes more and sometimes less. 
 
-* Have a look at the schedule. It shows on which Mondays we have RATs, with a link to the corresponding preparation material.
+* Have a look at the schedule. It shows on which days we have RATs, with a link to the corresponding preparation material.
 
 
 ## Phase 2: Individual RAT

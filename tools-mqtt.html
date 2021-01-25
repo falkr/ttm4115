@@ -123,10 +123,10 @@
 </ul>
 
 <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
-             <a class="navbar-brand" href="https://ntnu.edu">
+             <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
       	<svg width="100" height="30">
       		<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
-      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
+      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%" alt="NTNU Logo"></image>
       	</svg>
       </a>
     </nav>
@@ -145,20 +145,20 @@
 
 <h3 id="mosquitto-broker">Mosquitto Broker</h3>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">sudo</span> apt-get install mosquitto</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">sudo</span> apt-get install mosquitto</a></code></pre></div>
 
 <h3 id="mosquitto-command-line-clients">Mosquitto Command-Line Clients</h3>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">sudo</span> apt-get install mosquitto-clients</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">sudo</span> apt-get install mosquitto-clients</a></code></pre></div>
 
 <h3 id="testing-mosquitto">Testing Mosquitto</h3>
 <p>You can now try to subscribe to a topic</p>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">mosquitto_sub</span> -d -t example_topic</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">mosquitto_sub</span> -d -t example_topic</a></code></pre></div>
 
 <p>and publish something on that topic:</p>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">mosquitto_pub</span> -d -t example_topic -m <span class="st">&quot;Time for a coffee&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">mosquitto_pub</span> -d -t example_topic -m <span class="st">&quot;Time for a coffee&quot;</span></a></code></pre></div>
 
 <p><img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/mqtt_example-300x231.png" alt="" width="525" height="404" class="alignnone wp-image-368" /></p>
 <h3 id="enabling-websockets">Enabling Websockets</h3>
@@ -186,36 +186,36 @@ protocol websockets</code></pre>
 <pre><code>python -m pip install paho-mqtt</code></pre>
 <p>We can now make a simple script that is able to <strong>publish</strong> information on a topic, to the broker:</p>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>port<span class="op">=</span><span class="dv">1883</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">def</span> on_publish(client,userdata,result):</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;data published </span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>    <span class="cf">pass</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>client1<span class="op">=</span> mqtt.Client(<span class="st">&quot;test1&quot;</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>client1.on_publish <span class="op">=</span> on_publish</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>client1.<span class="ex">connect</span>(broker,port)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>ret<span class="op">=</span> client1.publish(<span class="st">&quot;mqtt_test&quot;</span>,<span class="st">&quot;The broker is working properly&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</a>
+<a class="sourceLine" id="cb1-2" title="2">port<span class="op">=</span><span class="dv">1883</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">def</span> on_publish(client,userdata,result):</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;data published </span><span class="ch">\n</span><span class="st">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="cf">pass</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8">client1<span class="op">=</span> mqtt.Client(<span class="st">&quot;test1&quot;</span>)</a>
+<a class="sourceLine" id="cb1-9" title="9">client1.on_publish <span class="op">=</span> on_publish</a>
+<a class="sourceLine" id="cb1-10" title="10">client1.<span class="ex">connect</span>(broker,port)</a>
+<a class="sourceLine" id="cb1-11" title="11">ret<span class="op">=</span> client1.publish(<span class="st">&quot;mqtt_test&quot;</span>,<span class="st">&quot;The broker is working properly&quot;</span>)</a></code></pre></div>
 
 <p>Now we need a <strong>subscriber</strong> to connect to the broker and recieve the messages we publish:</p>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">def</span> on_connect(client, userdata, flags, rc):</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Connected with result code &quot;</span><span class="op">+</span><span class="bu">str</span>(rc))</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>client.subscribe(<span class="st">&quot;mqtt_test/#&quot;</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="kw">def</span> on_message(client, userdata, msg):</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Topic: &quot;</span> <span class="op">+</span> msg.topic)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Message: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(msg.payload))</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>client <span class="op">=</span> mqtt.Client()</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>client.on_connect <span class="op">=</span> on_connect</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>client.on_message <span class="op">=</span> on_message</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>client.<span class="ex">connect</span>(<span class="st">&quot;192.168.10.168&quot;</span>, <span class="dv">1883</span>, <span class="dv">60</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a>client.loop_forever()</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">def</span> on_connect(client, userdata, flags, rc):</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="bu">print</span>(<span class="st">&quot;Connected with result code &quot;</span><span class="op">+</span><span class="bu">str</span>(rc))</a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">client.subscribe(<span class="st">&quot;mqtt_test/#&quot;</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="kw">def</span> on_message(client, userdata, msg):</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;Topic: &quot;</span> <span class="op">+</span> msg.topic)</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;Message: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(msg.payload))</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10">client <span class="op">=</span> mqtt.Client()</a>
+<a class="sourceLine" id="cb1-11" title="11">client.on_connect <span class="op">=</span> on_connect</a>
+<a class="sourceLine" id="cb1-12" title="12">client.on_message <span class="op">=</span> on_message</a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14">client.<span class="ex">connect</span>(<span class="st">&quot;192.168.10.168&quot;</span>, <span class="dv">1883</span>, <span class="dv">60</span>)</a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16">client.loop_forever()</a></code></pre></div>
 
 <p>More information on the paho package can be found here: <a href="https://pypi.python.org/pypi/paho-mqtt/">https://pypi.python.org/pypi/paho-mqtt/</a></p>
 

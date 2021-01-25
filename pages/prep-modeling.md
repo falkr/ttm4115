@@ -295,7 +295,6 @@ Nodes that are devices describe physical pieces of hardware that you can touch. 
 They are real, but you cannot touch them. 
 Execution environments, which are nodes, are a bit more subtle. You cannot touch them, but
 they provide a place of executing software, which comes in the form of artifacts.  
- 
 
 
 

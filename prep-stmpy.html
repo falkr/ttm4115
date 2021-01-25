@@ -123,10 +123,10 @@
 </ul>
 
 <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
-             <a class="navbar-brand" href="https://ntnu.edu">
+             <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
       	<svg width="100" height="30">
       		<image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg" 
-      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%"></image>
+      		src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%" height="100%" alt="NTNU Logo"></image>
       	</svg>
       </a>
     </nav>
@@ -195,7 +195,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 </p></aside>
 </div>
 <ul>
-<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
+<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>

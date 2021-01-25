@@ -428,3 +428,22 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 .rubric th {font-size:12px; vertical-align:top; }
 .rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
 .rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+
+
+
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}

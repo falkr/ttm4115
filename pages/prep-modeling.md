@@ -1,11 +1,9 @@
 # Modeling and Deployment Diagrams
 
-In the following unit, we will first look at the task of **modeling in general**. In the second part, we will learn the first diagram type: **deployment diagrams**. They are perfect for getting a good overview of the parts of the system, which software runs on them and how they communicate. 
+In the following unit, we will first look at the task of **modeling in general**. In the second part, we will learn the first diagram type: **deployment diagrams**. They are perfect for getting an overview of the parts of the system, which software runs on them and how they communicate. 
+
 
 ## Learning Goals
-
-
-
 
 :goals: The learning goals specific for this week are the following:
 
@@ -16,18 +14,17 @@ In the following unit, we will first look at the task of **modeling in general**
 - Decide which elements of a deployment diagram are relevant and chose a suitable level of detail.
 
 
-
- 
 ## The Problem
 
 > You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money. 
 
-Doesn't this sound like a nice story? Unfortunately, it's complete bullshit. Why?
+Doesn't this sound like a nice story? Unfortunately, it's bullshit. --- _Why?_
 
 * Systems are rarely created by a single person. Most systems are the effort of a team of developers, or rather _several_ teams of developers, changing over time. 
 * Most systems are not just built once, but maintained, extended and adapted over many years. 
 
 In this process, the code of the system, that is, the machine instructions needed to run it, are only one part of the descriptions and specifications that are created throughout the entire lifecycle of a system. With _lifecycle_ we mean from the beginning of its conception, the idea, its creation and the following maintenance. During these phases, engineers create many documents that describe different aspects of it. Some descriptions have the purpose to make new programmers understand what has already been built and how the different parts of the system work together. Other descriptions are suitable to simulate the system, so we can check it for important properties like safety, security or performance. Yet again other descriptions are only created temporarily, before making a technical decision.
+
 
 ## Modeling
 
@@ -76,14 +73,14 @@ Altogether, through modeling all participants in a development project can gain 
 
 ## Where Does Modeling Happen?
 
-We have seen that models come in a variety of forms. There's no specific property models needs to have to be called _model_ other than being _a model of something_. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a useful model. The act of modeling can therefore take place in different forms:
+We have seen that models come in a variety of forms. There's no specific property models needs to have to be called _model_ other than being _a model of something_. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a _useful_ model. The act of modeling can therefore take place in different forms:
 
 - **In your head.** This is kind of obvious. Engineers have a representation of the system they work in their heads. These are models, too. The only problem of these models is that they are local and hard to transfer from one developer to another.
 - **At a whiteboard or on a piece of paper.** When discussing, engineers often draw spontaneously to illustrate a part of a system, so that they can understand a system aspect better or communicate it to other developers.
 - **In a general-purpose graphical editor.** For documentation or planning, engineers create more detailed models using graphical editors. _General-purpose_ means that the editor is not specific for software but for drawing diagrams in general. Text can also be part of that description. 
 - **In a modeling editor.** In contrast to a general-purpose editor, a modeling editor knows more about the type of models you want to create. With this knowledge, it can for instance offer connections between modeling elements, or check if there are errors in the model. 
 
-Any of these models can be valuable, and one is not inherently more valuable than another. Models are always as valuable as they contribute to clarify and increase system quality. A model is not more valuable just because it is done in a tool, the value depends on its context. 
+Any of these models can be valuable, and one is not inherently more valuable than another. Models are always as valuable as they contribute to clarify and increase system quality. A model is not more valuable just because it is done in a tool, its value depends on its context. 
 
 With regard to this course, we focus in the first three: You will be able to improve the models you have of a system in your own head. I also want you to get much better at just taking a pen during a discussion and sketching a relevant model on a whiteboard to show to some colleagues. This is an underestimated skill. Finally, once you should produce a delivery document or plan ahead your project in greater detail, you will also be able to create some decent diagrams. 
 
@@ -93,7 +90,7 @@ There are lots of languages, notations or standards for modeling software. In th
 
 This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.
 
-However, UML itself is not really important in this course.  This is not a "UML course." It's a course about _designing systems_, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:
+However, UML itself is not really important in this course.  This is not a UML course. It's a course about _designing systems_, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:
 
 - Deployment Diagrams
 - Use Case Diagrams
@@ -118,9 +115,6 @@ Depending on how and when we create our models and which details they show, we c
 Depending on whom you ask, you may hear very strong arguments for any of these ways of using UML. Which one is the "right" one depends on many factors, and may differ from project to project and development team. But independent of that, any of these levels can produce models that have some value: "Just sketching" doesn't mean a model is not valuable. In this course, we are going to use UML mostly as a blueprint and as a sketch.
 
 
-
-
-
 ## Views and Diagrams
 
 The model of a building can have different **views**, like showing the building from different perspectives. There can also be plans for different parts of the infrastructure, like one plan showing the electricity, one focusing on ventilation and another on fire safety. 
@@ -128,9 +122,6 @@ The model of a building can have different **views**, like showing the building 
 Similarly, the UML model of a system provides different views on it using various diagrams. These diagrams are like a window into the model. For instance, a physical view can show how a system is organized into nodes and distributed (deployment diagram). Another dynamic view can show how a component behaves in terms of state machines and interactions. Yet another structural view can show how the use cases in a system are organized. 
 
 These different views all provide perspectives on the same model, and ideally, are consistent with each other. 
-
-
-
 
 
 # Deployment Diagrams
@@ -199,11 +190,13 @@ application server, web server, operating system, Java virtual machine (JVM) or 
 
 In some cases it makes sense to show nested nodes. 
 
-You can show a **device inside a device**, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory. Obviously, you should only shiw such elements if there is something special you want to point out. Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.
+You can show a **device inside a device**, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory.
+You should only show such elements if there is something special you want to point out.
+Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.
    
-Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices. 
+Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.
 
-:aside: I haven't so far found a good example where an execution environment contains another execution environment. 
+In some cases, you might want to points out that an execution environment is nested inside another execution environment, like when you want to point out that Python runs within Docker, in a Linux operating system on a server. Again---assess for your specific case which information is relevant. 
 
 ---
 type: figure
@@ -223,7 +216,6 @@ caption: "Two instances of the same type of device."
 
 
 ## Communication Paths
-
 
 When two nodes communicate, they are connected by a solid line. This line can be labelled with a stereotype that says something about the way of communication, by referring to a standard or a protocol, as for instance:
  

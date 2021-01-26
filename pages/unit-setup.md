@@ -61,7 +61,7 @@ Try to briefly get an overview of today's tasks, and come up with a rough time p
 
 ### Picture
 
-- Take a picture together. 
+- Take a picture together. (Be creative --- a screenshot of your Teams window also works!)
 - Annotate the picture with your names. 
 
 Share your picture also in the padlet below. (You'll find the password in the Information section on Blackboard.)

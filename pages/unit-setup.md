@@ -16,6 +16,8 @@ You can ask the following:
 :aside: It's a good idea to use a timer in this exercise, for example the one you have on your phone. Use max. 5 minutes for each one in your team.
 
 
+# Team Reflection Document
+
 ### Find Your Team Channel
 
 In the Team for the course (TTM4115 2021) you find a channel for each team.
@@ -83,10 +85,6 @@ If someone is missing, try to find out why and make a note.
 _We will come back to the team reflection document at the end._
 
 
-
-# Team Introduction
-
-Time to get to know each other a little: 
 
 
 

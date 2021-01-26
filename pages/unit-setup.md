@@ -18,7 +18,7 @@ You can ask the following:
 
 # Team Reflection Document
 
-### Find Your Team Channel
+### Find Your Teams Channel
 
 In the Team for the course (TTM4115 2021) you find a channel for each team.
 (It may be listed under *hidden channels*.)
@@ -51,9 +51,9 @@ Have a quick look again at the [team roles](learning-teamwork.html) that you hav
 
 ### Time Check
 
-Try to briefly get an overview of today's tasks, and come up with a rough time plan.
+Try to briefly get an overview of today's tasks, and come up with a rough time plan. Don't forget to schedule some breaks, too.
 
-:aside: This team setup should become a normal routine for each week. 
+:aside: This team setup (assigning roles and planning your time) should become a normal routine for each week. 
 
 
 ### Find a Team Name
@@ -134,7 +134,7 @@ The product owner is usually a single person, with the responsibility to maximiz
 
 The project manager is usually a single person, with the responsibility to manage the development team. This means to assign tasks and plan ahead, so that all resources are available. The project manager usually does not any detailed technical work, which is delegated to the developers. 
 
-> **Example for Roles:** A software house _ABC Software_ (name invented) with 100 employees in total gets a contract to develop a new information system for bus stops in a city. The bus operator pays for the software development and will then own the system, as part of their contract with the system. The users of the application will be the persons taking the bus, but also some of the employees of the bus operator. The **development team** consists of three developers, which do the programming of the backend, the monitors at the bus stops and integrate and update code for a mobile application. The **product owner** is also employed at ABC software, but is responsible for several products and keeps contact with the bus operator. In ABC software, the role of the **project manager** is also fulfilled by the product owner, but for the product owner this feels like a different task and has sometimes troubles of keeping the two apart, which is a bit stressful.
+> **Example for Roles:** A software house with 100 employees gets a contract to develop a new information system for bus stops in a city. The bus operator pays for the software development and will then own the system, as part of their contract with the system. The users of the application will be the persons taking the bus, but also some of the employees of the bus operator. The **development team** consists of three developers, which do the programming of the backend, the monitors at the bus stops and integrate and update code for a mobile application. The **product owner** is also employed at ABC software, but is responsible for several products and keeps contact with the bus operator. In ABC software, the role of the **project manager** is also fulfilled by the product owner, but for the product owner this feels like a different task and has sometimes troubles of keeping the two apart, which is a bit stressful.
 
 
 :delivery:
@@ -149,7 +149,7 @@ Copy the PPTX with your final answer into the general channel / Files and folder
 Ideally, your team works in a balanced way. Below with examples for balances you should be aware of:
 
 * **Level of Talking:** Is there too much talking going on? Are there some persons that talk all the time, while others say almost nothing? 
-* **Level of Focus:** Are you working focused in enough so that you reach your goal?
+* **Level of Focus:** Are you working focused enough so that you reach your goal?
 * **Attitudes: Critical vs. Naïve:** Does your team just blindly accept any contribution, or do you dare to challenge each other's ideas in a constructive way?
 
 These are just examples of balances. 
@@ -160,7 +160,8 @@ These are just examples of balances.
 * Conclude on the last page with expectations that you have towards each other.
 
 :delivery:
-Copy the PPTX with your final answer into the general channel / Files and folder for this unit.  Done!
+Copy the PPTX with your final answer into the general channel / Files and deliveries folder for this unit.
+Done!
 
 
 
@@ -210,8 +211,11 @@ To ensure progress during the semester and also as some form of feedback to us, 
 Deliver via Teams:
 
 * First Team Reflection (in the public channel for your team).
-* Learning Goals Relevance (DOCX in the folder for this unit)
-* Balances in Teamwork (PPTX in the folder for this unit)
+* Learning Goals Relevance (DOCX in the deliveries folder for this unit)
+* Balances in Teamwork (PPTX in the deliveries folder for this unit)
+
+Deliver via Forms:
+
 * Individual reflection
 
 

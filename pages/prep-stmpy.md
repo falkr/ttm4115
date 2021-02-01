@@ -6,6 +6,12 @@ In this unit, you will learn how to implement state machines in Python. Achievin
 - You will be able to solve arbitrarily complex synchronization tasks in Python.
 - You will have a framework for the implementation during the semester project.
 
+
+### For the Semester Project
+
+To have your code in sync with your state machine diagrams and handle concurrency in an effective way, you will program parts of your semester project using STMPY.
+
+
 ## Benefits of State Machines in Code
 
 State machines are useful also at the code level when there is a lot of concurrency going on, 

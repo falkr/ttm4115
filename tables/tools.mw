@@ -1,4 +1,4 @@
-{| class="wikitable" 
+{| class="bi-wikitable" 
 |-
 ! 
 ! Blackboard
@@ -9,90 +9,90 @@
 ! Website
 |-
 ! Announcements
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle-half"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Learning Material
-| <img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle-half"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
 |-
 ! Private Questions
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
 |-
 ! Public Questions
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Deliveries
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Individual RATs
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Team RATs
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Online Lectures
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
 |-
 ! Contact with Teaching Assistants
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
 |-
 ! Contact among Students
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
 |-
 ! Document Collaboration
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16">
-| <img src="assets/icons/circle.svg" alt="OK" width="16" height="16">
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
+| <i class="bi-circle"></i>
 |}

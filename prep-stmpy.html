@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
 
 <!--<script src="jquery-1.10.1.min.js"></script>-->
 <script src="assets/script-aside.js"></script>
@@ -142,6 +143,10 @@
 <li>You will be able to solve arbitrarily complex synchronization tasks in Python.</li>
 <li>You will have a framework for the implementation during the semester project.</li>
 </ul>
+
+<h3 id="for-the-semester-project">For the Semester Project</h3>
+<p>To have your code in sync with your state machine diagrams and handle concurrency in an effective way, you will program parts of your semester project using STMPY.</p>
+
 <h2 id="benefits-of-state-machines-in-code">Benefits of State Machines in Code</h2>
 <p>State machines are useful also at the code level when there is a lot of concurrency going on, and a component needs to order a set of events that can come more or less in any order. You may think that there is support for threads in most programming languages, and that this is enough to handle concurrency. However, sometimes also this support is very specific to certain problems and not simple to learn. For example, when learning Java, which has extensive support for concurrency, the concurrency part is considered the most difficult one, and most developers have to look into a book when doing more elaborate tasks. Python has even less mature support for concurrency and synchronization, and also this is hard to get right. Just look at this:</p>
 
@@ -195,7 +200,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 </p></aside>
 </div>
 <ul>
-<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
+<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>

@@ -14,6 +14,15 @@ In the following unit, we will first look at the task of **modeling in general**
 - Decide which elements of a deployment diagram are relevant and chose a suitable level of detail.
 
 
+### For the Semester Project
+
+In the semester project you will provide a systems specification, which is a model, and most of your effort lies in the activity of modelling. 
+You will often need to decide which information to include, and what makes a good model. 
+
+The second part of this unit about deployment diagrams is also directly relevant as you need to provide several iterations of your system as a deployment diagram.
+
+
+
 ## The Problem
 
 > You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money. 

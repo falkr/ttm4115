@@ -23,13 +23,16 @@ components may not even be software.
 - Compare sequence diagrams based on their trace semantics.
 - Find and resolve implied scenarios.
 
+### For the Semester Project
+
+
+
+# Intuition on Sequence Diagrams
 
 An important difference to state machines is that sequence diagrams
 usually do not model complete behaviors, but only show selected
 scenarios that a developer wants to show. More on that later. Let's
 first get some intuition on sequence diagrams.
-
-# Intuition on Sequence Diagrams
 
 Sequence diagrams are an effective and intuitive way to describe the
 communication between several communicating partners. Have a look at the

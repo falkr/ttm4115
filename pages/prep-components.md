@@ -15,14 +15,13 @@ But don't get me wrong: Components are a fascinating subject! Components do not 
 ## Learning Goals
 
 
-
-
 :goals: The learning goals specific for this week are the following:
 
 - Be aware of the aspects when decomposing a system into parts.
 - Understand and apply the mechanisms of services.
 - Decompose the semester project into components.
 
+### For the Semester Project
 
 
 

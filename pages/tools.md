@@ -18,7 +18,6 @@ class: table table-sm check
 * Microsoft Teams we use for document sharing, collaboration within your teams and contact with the teaching assistants. 
 
 
-
 ## Make Sure You are on Blackboard
 
 Most students are registered automatically on Blackboard, so that TTM4115 for 2021 comes up in your list of courses. 

@@ -6,9 +6,6 @@ We will also study some of the details of specific protocols, in particular HTTP
 
 ## Learning Goals
 
-
-
-
 :goals: The learning goals specific for this week are the following:
 
 - Recognize and recite basic communication patterns and terminology.
@@ -18,7 +15,12 @@ We will also study some of the details of specific protocols, in particular HTTP
 - Designing an MQTT topic structure for a given system.
 
 
+### For the Semester Project
 
+
+
+
+# Communication Protocols
 
 Communication protocols easily fill a course on their own, because
 there are so many of them and because they rely on a lot of mechanisms

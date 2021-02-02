@@ -86,7 +86,7 @@ Based on the previous step, create a polished diagram. For this time, we recomme
 
 ### Step 6: Self-Evaluation
 
-On Teams find the template for the self-evaluation document `Files > Unit 1... > Rice Farming Team XX.pdf`. Fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
+On Teams find the template for the self-evaluation document `Files > Unit 1... > Rice Farming Team XX.docx`. Fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
 
 Copy the diagram into the document. 
 

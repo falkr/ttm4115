@@ -138,12 +138,10 @@
     <section class="content">
 <h1 id="tips-for-diagrams">Tips for Diagrams</h1>
 
-    </section>
-    <section class="content">
-<h1 id="have-a-strategic-layout">Have a Strategic Layout</h1>
+<h2 id="have-a-strategic-layout">Have a Strategic Layout</h2>
 
-<p>The layout determines where you place your elements in the diagram. This is an opportunity to convey extra information to the reader and emphasize structural elements in the diagram that go beyond how the graph is connected.</p>
-<p>The figure below shows a deployment diagram where the strategy is to place the nodes not only dependent to their graph strcuture, but also to their hierarchy in the system. Devices running in the cloud are shown at the top and devices running as endpoints (like small devices) are shown in the lowest layer. This already conveys some form of order to the diagram.</p>
+<p>The layout determines where you place your elements in the diagram. This is not just about making it look nice and tidy; it is another opportunity to convey extra information to the reader and emphasize structural elements in the diagram that go beyond how the graph is connected.</p>
+<p>The figure below shows a deployment diagram where the strategy is to place the nodes not only dependent to their graph structure, but also to their hierarchy in the system. Devices running in the cloud are shown at the top and devices running as endpoints (like small devices) are shown in the lowest layer. This already conveys some form of order to the diagram.</p>
 
 <div class="figure">
 <img src="figures/diagrams/deployment-tiers.png" alt="Layout that follows the system hierarchy." width="100%"/>
@@ -161,6 +159,47 @@
 </div>
 <p>For state machines, experiment with the arrangement of states. Usually it is easiert for the reader to get a good sense of orientation if you begin with the initial state in the upper left corner, like in a written document.</p>
 
+<h2 id="tidying-up-the-graphics">Tidying up the Graphics</h2>
+<p>After your layout is stable, have a look at the finer details.</p>
+
+<h3 id="lines">Lines</h3>
+<p>Avoid corners in lines that are not necessary.</p>
+
+<div class="figure">
+<img src="figures/diagrams/layout-lines.png" alt="" width="100%"/>
+<span name="figures/diagrams/layout-lines.png">&nbsp;</span>
+<aside name="figures/diagrams/layout-lines.png"><p>
+</p></aside>
+</div>
+<h3 id="nodes">Nodes</h3>
+<p>Make sure nodes are aligned. Some tools offer a grid for placement. Often working in a coarse grid is simpler than in a very fine one.</p>
+
+<div class="figure">
+<img src="figures/diagrams/layout-alignment.png" alt="" width="100%"/>
+<span name="figures/diagrams/layout-alignment.png">&nbsp;</span>
+<aside name="figures/diagrams/layout-alignment.png"><p>
+</p></aside>
+</div>
+<h3 id="color">Color</h3>
+<p>Coloring nodes can make nodes easier to see and distinguish, but can also make them harder to read. Below the coloring seems useful for T1 and T2, but SSD and TPM are harder to read.</p>
+
+<span name="256fc4"></span><aside name="256fc4"><p>Note that there is a considerable number of people that are <a href="https://en.wikipedia.org/wiki/Color_blindness">colorblind</a>.</p>
+</aside>
+<div class="figure">
+<img src="figures/diagrams/layout-coloring.png" alt="" width="100%"/>
+<span name="figures/diagrams/layout-coloring.png">&nbsp;</span>
+<aside name="figures/diagrams/layout-coloring.png"><p>
+</p></aside>
+</div>
+<h3 id="syntax-details">Syntax Details</h3>
+<p>This one may be a very fine detail, but why not doing things right? In UML, stereotypes are using the single-character braces (<code>«</code> and <code>»</code>), which are also called <a href="https://en.wikipedia.org/wiki/Guillemet">guillemets</a>. Use the proper character instead of imitating them with two (like <code>&lt;&lt;</code> and <code>&gt;&gt;</code>).</p>
+
+<div class="figure">
+<img src="figures/diagrams/layout-guillemets.png" alt="" width="100%"/>
+<span name="figures/diagrams/layout-guillemets.png">&nbsp;</span>
+<aside name="figures/diagrams/layout-guillemets.png"><p>
+</p></aside>
+</div>
     </section>
     <section class="content">
 <h1 id="use-pdf-or-png">Use PDF or PNG</h1>

@@ -241,8 +241,8 @@ div.goals ul li {
 }
 
 div.goals ul li:before {
-  content: '\f0eb';
-  font-family: 'Font Awesome 5 Free';
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
   font-size:20;
   float: left;
   margin-left: -1.5em;
@@ -274,7 +274,7 @@ div.check ul li {
 
 div.check ul li:before {
   content: '\f058';
-  font-family: 'Font Awesome 5 Free';
+  font-family: bootstrap-icons !important;
   font-size:20;
   float: left;
   margin-left: -1.5em;
@@ -310,14 +310,20 @@ a.ntnu-button:hover {
 
 
 a.arrow:before {
-  content: '\f0a9';
-  font-family: 'Font Awesome 5 Free';
-  font-size:14;
+  content: '\f133';
+  font-family: bootstrap-icons !important;
+  line-height: 1.5;
+  vertical-align: text-top;
+  Xfont-size:14;
   xfloat: left;
   xmargin-left: -1.5em;
   color: #1481b8;
   xdisplay: block;
-  margin: 2px
+  xmargin: 2px
+}
+
+a.arrow {
+line-height: 1.5;
 }
 
 a.arrow:hover {
@@ -330,7 +336,7 @@ a.arrow:hover {
 
 a.help:before {
   content: '\f4cd';
-  font-family: 'Font Awesome 5 Free';
+  font-family: bootstrap-icons !important;
   font-size:14;
   background-color: #1481b8;
   color: #ffffff;

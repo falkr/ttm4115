@@ -1,11 +1,8 @@
 # Team Setup
 
-* Assign team roles, just like last week. 
+* Assign team roles, just like last week.
+* Briefly discuss the roles, and consider to change or clarify them. 
 * See if you had any improvements or follow-ups from last week, and act on them.
-
-
-
-
 
 
 # Modeling and Deployment Diagrams
@@ -17,12 +14,6 @@ Today's team activity is about a system to control rice irrigation in Malaysia. 
 
 Your task will be to create a deployment diagram for this system, based on the information from the story.
 
-:tip: When reading through, you will at some places meet a lot of details, where you may wonder if they are important or not.
-In other parts of the description you may see a need for more detailed explanations. 
-This is part of the reason why we create the deployment diagram first. 
-Think and decide for yourself which details are important at this stage.
-If you need to add information or make assumptions, feel free to do so.
-
 
 ### Step 1: Individual Read-Through
 
@@ -32,9 +23,18 @@ Read the application story individually, and pay attention on the technical deta
 - Highlight portions of the text that you find relevant. 
 - Lookup terms that you don't understand.
 
+
+:tip: When reading through, you will at some places meet a lot of details, where you may wonder if they are important or not.
+In other parts of the description you may see a need for more detailed explanations. 
+This is part of the reason why we create the deployment diagram first. 
+Think and decide for yourself which details are important at this stage.
+If you need to add information or make assumptions, feel free to do so.
+
+
 ### Step 2: Discuss the System
 
 Discuss the system together. Discuss how it works, how it is structured, what its goals are. 
+
 
 ### Step 3: Individual Diagram Sketches
 
@@ -43,48 +43,83 @@ Each on their own, make some sketches **using pen and paper** for a deployment d
 - Don't necessarily try to make the entire diagram yet. 
 - Study different alternatives or modeling elements.
 
+
 ### Step 4: Sketch of Diagram 
 
-- Compare your ideas and find commonalities, discuss differences. 
+- Compare your ideas and find commonalities, discuss differences. (Take a photo with your phone and share it.)
 - Iteratively agree on a diagram you want to build.
-- Outline the diagram, ideally on a whiteboard, blackboard or a shared piece of paper. 
+- Outline the diagram, ideally on a whiteboard, blackboard or a shared piece of paper. (Update for 2021: Be practical and inventive how to do that digitally via Teams. There is a digital whiteboard, or you can send photos of your sketches.)
+
+
+### Step 5: Quality Awareness
+
+Before you start with the final diagram, let's ask: _What makes a **good** deployment diagram?_
+Learning to evaluate a diagram is part of the learning process. 
+In the end, a diagram is good when it is _useful_. 
+Describing this is difficult, but we can at least come up with a list of criteria and points to consider. 
+
+Have a look at the table below, which is also called a [rubric](https://en.wikipedia.org/wiki/Rubric_(academic)).
+It lists criteria in different categories, which should help as a framework to understand the quality of a diagram.
+
+---
+type: table
+file: files/rubrics/deployment.mw
+class: rubric
+caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
+---
+
+* Some tips for [strategic layout](unit-modeling-diagram-tips.html#have-a-strategic-layout).
+* Some tips for [tidy graphics](unit-modeling-diagram-tips.html#tidying-up-the-graphics).
+* [Syntax for deployment diagrams](prep-modeling.html#deployment-diagrams) from the preparation.
+* Getting the level of detail right may require the most judgement. Think which information is useful to the reader of your diagram, and which information rather clutters it up.
+
+
+
 
 ### Step 5: Diagram 
 
-Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool **Draw.io**, because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
+Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool [Draw.io](draw.io), because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
 
 - Try to create a diagram that provides you with a good overview of the system.
 - Include _relevant_ details.
 - Try to build a good layout. Have several attempts, the first one may not be the best one.
 
-Deliver the diagram immediately.
+### Step 6: Self-Evaluation
+
+On Teams find the template for the self-evaluation document `Files > Unit 1... > Rice Farming Team XX.pdf`. Fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
+
+Copy the diagram into the document. 
+
+:delivery: Deliver the docx document including your self-evaluation and diagram, and deliver it on Teams with the filename `Rice Farming Team XX.docx`. Store it under `Files > Unit 1... > Diagrams`.
+
 
 
 # Peer Review of Diagrams
 
-Ask another team for their diagram. This may require some coordination, since you have scheduled different timeslots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
+Ask another team for their diagram and self-evaluation. This may require some coordination, since you have scheduled different time slots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
 
-* Use the channel **Exchange** on Teams.
-* In the Exchange channel, find a document called _Unit 1 - Deployment Diagrams Exchange.docx_ where you list which team you review.
 
-Have a look at the diagram of the other team. Add notes into their diagram (ask them for access to the document.) Comments by adding UML note elements:
+Have a look at the diagram of the other team. We recommend to do this on the original online version. (Ask them for sharing access or duplicating the diagram). Add notes into their diagram, using UML comments.
 
 ---
 type: figure
 source: figures/comments.png
+caption: "The comment element in the Draw.io editor."
 ---
 
 Use **red** for errors, **green** for general comments or recommendations, **yellow** for ambiguous cases.
 
-Deliver this other team's diagram with your comments as PDF, and notify the other team so that they are aware of your comments. 
 
+:delivery: Create a PDF from the diagram, and deliver it on Teams with the filename `Rice Farming Team XX comments by Team YY.pdf`. Store it under `Files > Unit 1... > Diagrams with Comments`.
 
 
 
 
 # Team Reflection for This Unit 
 
-* Add another section to the team reflection document, just like last week. 
+* Add another section to the team reflection document, just like last week.
+* How did the roles work today? 
+
 
 # Individual Reflection
 

@@ -96,7 +96,16 @@ Copy the diagram into the document.
 
 # Peer Review of Diagrams
 
-Ask another team for their diagram and self-evaluation. This may require some coordination, since you have scheduled different time slots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
+Now you ask another team for their diagram and self-evaluation. This requires some coordination, so that each team gets another diagram to comment on, and all diagrams are commented.
+
+* We don't do the assignment beforehand since not all of you may be ready at the same time.
+* We can't simply use pairs of teams for all (like Team 1 and Team 2 reviewing each other's diagrams) since we have an odd number of teams. 
+* Check in the document Coordination.docx on Teams and note there on which team you comment.
+* Check with the student assistants.
+
+
+
+, since you have scheduled different time slots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
 
 
 Have a look at the diagram of the other team. We recommend to do this on the original online version. (Ask them for sharing access or duplicating the diagram). Add notes into their diagram, using UML comments.
@@ -109,8 +118,10 @@ caption: "The comment element in the Draw.io editor."
 
 Use **red** for errors, **green** for general comments or recommendations, **yellow** for ambiguous cases.
 
+Include your commented diagram in a copy of the original document.
 
-:delivery: Create a PDF from the diagram, and deliver it on Teams with the filename `Rice Farming Team XX comments by Team YY.pdf`. Store it under `Files > Unit 1... > Diagrams with Comments`.
+
+:delivery: Deliver your comments on Teams with the filename `Rice Farming Team XX comments by Team YY.docx`. Store it under `Files > Unit 1... > Diagrams with Comments`.
 
 
 

@@ -63,7 +63,7 @@
           <rect x="0" y="0" width="90.70866" height="14.173229"/>
         </clipPath>
         <text clip-path="url(#clip_path)" transform="translate(169.40945 4974.055)" fill="black">
-          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / start(t1, 60000)</tspan>
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / start(t1, 600000)</tspan>
         </text>
       </g>
       <g id="Graphic_11548">

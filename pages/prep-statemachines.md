@@ -505,7 +505,7 @@ When message *b* arrives, it is not consumed, since state `s1` only has a transi
 
 ### Deferring Events
 
-What if you design a state machine, and know that an event (`B`) can arrive at any time, but you can only handle it _after_ you have received another event `A`.
+What if you design a state machine, and know that two events (`A` and `B`) can arrive in any order, but you can only handle event `A` _after_ you have received event `B`. (For instance because what to do with `A` depends on the content of `B`. 
 For this case, you can **defer** an event in some states. 
 
 A state can defer an event by naming it inside the state body like a transition, but following the keyword `/defer`.

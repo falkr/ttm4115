@@ -136,8 +136,12 @@
 <div class="page">
     </section>
     <section class="content">
+<span name="1813e5"></span><aside name="1813e5"><p>In 2021, we have pulled state machines a bit forward to give you more a concrete and detailed model earlier, so you don’t get the impression that modelling is somewhat vague and fluffy. (There’s nothing fluffy about a state machine.)</p>
+</aside>
 <h1 id="state-machines">State Machines</h1>
-<p>In the previous units, we learned how to capture and understand our user’s requirements for a system, and structure the functionality that the system should provide to its users in the form of use cases. We have also learned how to use deployment diagrams to reveal already some details about the structure of the system. This week, we start with the specification of <strong>how the system actually works.</strong> This will be more technical and on a more detailed level as before.</p>
+<p>In the previous unit, we learned how to use deployment diagrams to reveal already some details about the structure of the system. This week, we start with the specification of <strong>how the system actually works.</strong> This will be more technical and on a more detailed level as before.</p>
+<p>During this and the following weeks, you get several opportunities to design state machines. This is useful, since it allows you to handle concurrency in systems correctly, which is useful no matter which programming language or framework you will later use. Also, creating state machines is a task that trains your generic skills as an engineer, and many problems can be mapped to that of state machines.</p>
+
 <h2 id="learning-goals">Learning Goals</h2>
 
 <div class="goals"><p>After this week, you will be able to:</p>
@@ -149,7 +153,7 @@
 <p>With these basic skills you have every concept of state machines covered we need for the course. However, learning to design good state machines will require some more experience, which you will acquire over the following weeks.</p>
 </div>
 <h2 id="hello-state-machines">Hello, State Machines!</h2>
-<p>In the following, we are going to learn the concept of state machines. Besides sequence diagrams and activities, state machines are one of the fundamental ways to describe behavior. They are used to specify communication protocols, logic in embedded systems, and in general behavior where events need to be coordinated in a complex way. Here is an intuitive example of a sketch for a state machine that illustrates in a compact way how a traffic light works:</p>
+<p>State machines are one of the fundamental diagrams to describe behavior. They are used to specify communication protocols, logic in embedded systems, and in general behavior where events need to be coordinated in a complex way. Here is an intuitive example of a sketch for a state machine that illustrates in a compact way how a traffic light works:</p>
 
 <div class="figure">
 <img src="figures/statemachines/state-machines-traffic-light.jpg" alt="A state machine describing the sequence of phases in a traffic light." width="100%"/>
@@ -165,7 +169,8 @@
 <aside name="figures/statemachines/state-machines-tcp.jpg"><p><p>The TCP protocol uses state machines to describe parts of its behavior.</p>
 </p></aside>
 </div>
-<p>Another example is the construction of the kernel for GNU. The behavior quickly became very complex. Have a look at the interview with Richard Stallman (starting at 0:25:25):</p>
+<h2 id="why-state-machines">Why State Machines?</h2>
+<p>Have a look at the short interview section with Richard Stallman (starting at 0:25:25), about the construction of the operating system kernel for GNU:</p>
 
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jw8K460vx1c?start=1525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -173,8 +178,12 @@
 <aside name="jw8K460vx1c"><p><p>Interview with Richard Stallman, from 0:25:25 until 0:26:30, from the movie <em>Revolution OS</em>. You may watch the entire movie later.</p>
 </p></aside>
 </div>
-<p>When he says <em>“It took us years to get the thing to work.”</em>, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control. There are problems that look simple but that can quickly grow very complex, and state machines offer a way to handle complexity that plays out very beneficial in such situations.</p>
-<p>A bit of a problem with state machines is that developers often only understand they they should have used a state machine for a problem <em>after</em> it is too late, and they already spent much effort on trying to solve a task in other ways. Have a look at this blog post from developer Alan Skorkin, <a href="https://www.skorks.com/2011/09/why-developers-never-use-state-machines/">Why Developers Never Use State Machines</a>.</p>
+<p>When he says <em>“It took us years to get the thing to work.”</em>, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control. There are problems that look simple but that can quickly grow complex, and state machines offer a way to handle complexity in such situations.</p>
+
+<span name="c07d7d"></span><aside name="c07d7d"><p>Have a look at this blog post from developer Alan Skorkin, <a href="https://www.skorks.com/2011/09/why-developers-never-use-state-machines/">Why Developers Never Use State Machines</a>. It describes how developers often detect to late that they should have started with a state machine.</p>
+</aside>
+<p>A bit of a problem with state machines is that developers often only understand they should have used a state machine for a problem <em>after</em> it is too late, and they already spent much effort on trying to solve a task in other ways. <strong>We tend to underestimate the amount of concurrency and complexity that some situations contain.</strong></p>
+
 <p>With state machines, you can structure complex behavior such that:</p>
 <ul>
 <li>It is easy to debug and understand precisely what happened.</li>
@@ -182,37 +191,48 @@
 <li>You have detailed control over concurrency.</li>
 </ul>
 
-<p>Given the complexity they handle, state machines are relatively easy to understand. There is also more than one way to approach an understanding of state machines:</p>
+<h2 id="understanding-state-machines">Understanding State Machines</h2>
+<p>Given the complexity they handle, state machines are relatively easy to understand as they only contain a handlful of concepts to model behavior. There is also more than one way to approach an understanding of state machines, and in this course you will get the chance to approach state machines from three angles:</p>
 <ul>
-<li>State machines as a mathematical concept</li>
-<li>State machines as a diagram</li>
-<li>State machines as implementation pattern in code</li>
-<li>State machines as abstract machines that execute some behavior</li>
+<li>State machines as a diagram (following below)</li>
+<li>State machines as abstract machines that execute some behavior (later below)</li>
+<li>State machines as implementation pattern in code (in another unit)</li>
 </ul>
-<p>This week, we will introduce state machines by their diagrams and explain their meaning by describing an abstract machine. Next week, we will introduce how you can implement state machines in Python. So this gives you three different entry points into the concept of state machines.</p>
+<p>This week, we will introduce state machines by their diagrams and explain their meaning by describing an abstract machine. Later, we will introduce how you can implement state machines in Python. This gives you three different entry points into the concept of state machines.</p>
 
     </section>
     <section class="content">
 <h1 id="example-traffic-light">Example: Traffic Light</h1>
-
 <p>Let’s assume we need to describe how a traffic light works. One idea is to just take pictures of a traffic light, like this:</p>
 
 <div class="figure">
-<img src="figures/statemachines/traffic-light-1.jpg" width="100%"/>
+<img src="figures/statemachines/traffic-light-1.jpg" alt="A set of pictures of a traffic light that represent the different states it can be in." width="100%"/>
+<span name="figures/statemachines/traffic-light-1.jpg">&nbsp;</span>
+<aside name="figures/statemachines/traffic-light-1.jpg"><p><p>A set of pictures of a traffic light that represent the different states it can be in.</p>
+</p></aside>
 </div>
-<p>That already helps — the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively <em>red</em>, <em>red-yellow</em>, <em>green</em> and <em>yellow</em>. (The <em>red-yellow</em> is common in many, but not all countries.)</p>
+<p>That already helps; the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively <em>red</em>, <em>red-yellow</em>, <em>green</em> and <em>yellow</em>. (The <em>red-yellow</em> is common in many, but not all countries.)</p>
 
 <p>The photos already help explaining the traffic light. But imagine you want to explain on paper in which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:</p>
 
 <div class="figure">
-<img src="figures/statemachines/traffic-light-2.jpg" width="100%"/>
+<img src="figures/statemachines/traffic-light-2.jpg" alt="The photos of the traffic light in a sequential order." width="100%"/>
+<span name="figures/statemachines/traffic-light-2.jpg">&nbsp;</span>
+<aside name="figures/statemachines/traffic-light-2.jpg"><p><p>The photos of the traffic light in a sequential order.</p>
+</p></aside>
 </div>
 <p>Of course, the picture above is a simplification. Some trafic lights are switched off at night and just blink yellow. The same happens as a default state in case there is an error in the controller. We can show this blinking with the two additional photos <em>blink-off</em> and <em>blink-on</em>. The two arrows between them show how the blinking is created by two phases, one with the yellow light on and one with all lights off. We also show that blinking can be started from any of the other phases, because an error can always happen, and the lights may be switched off at any time. When we get out of the blinking sequence, we go towards the phase <em>red</em> for safety.</p>
 
 <div class="figure">
-<img src="figures/statemachines/traffic-light-3.jpg" width="100%"/>
+<img src="figures/statemachines/traffic-light-3.jpg" alt="A more advanced state machine for the traffic light." width="100%"/>
+<span name="figures/statemachines/traffic-light-3.jpg">&nbsp;</span>
+<aside name="figures/statemachines/traffic-light-3.jpg"><p><p>A more advanced state machine for the traffic light.</p>
+</p></aside>
 </div>
 <p>That’s a complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into <em>red</em> first.</p>
+<p>The photos depict the traffic light in phases. Some of these phases are shorter than others, but all of them last for some time. In the traffic light, these phases have also in common that they correspond to lights being switched on or off. In state machine terminology, we call these phases <strong>states</strong>, and sometimes for clarification we say it is a <strong>control state</strong>, to distinguish the term from the more general English word <em>state</em>.</p>
+<p>The arrows between the states are called <strong>transitions</strong>.</p>
+<p>Maybe you see nothing special here yet, and you may think that this is really easy. One word of caution however: Beginners with state machines have often trouble to distinguish between states and transitions once they start creating their own machines. So, remember this simple example to understand the difference between them, as a guide for cases where the distinction between states and transitions is maybe less obvious.</p>
 
     </section>
     <section class="content">
@@ -221,9 +241,12 @@
 <p>For the traffic light above we described actually a state machine. Since taking photos of real objects is cumbersome, and we also want to describe abstract things we cannot take a photo off, we replace the photos above with a more convenient symbol, a rectangle with rounded corners. These are the states in which the traffic light can be. A state machine for the traffic light looks hence like this:</p>
 
 <div class="figure">
-<img src="figures/statemachines/traffic-light-4.svg" width="100%"/>
+<img src="figures/statemachines/traffic-light-4.svg" alt="A state machine of the traffic light using the syntax of UML." width="100%"/>
+<span name="figures/statemachines/traffic-light-4.svg">&nbsp;</span>
+<aside name="figures/statemachines/traffic-light-4.svg"><p><p>A state machine of the traffic light using the syntax of UML.</p>
+</p></aside>
 </div>
-<p>Noice the detailed elements in this diagram:</p>
+<p>Have a look at the detailed elements in this diagram:</p>
 <ul>
 <li>The frame has a five-cornered compartment at the top, showing the name of the state machine, prefixed with the keyword <code>stm</code>.</li>
 <li>The states are shown as rounded rectangles. The state names are shown in bold text. As a naming convention, we only use lowercase letters, numbers, and underscores for state machine names, similar to rules for variable names in programming languages.</li>
@@ -234,7 +257,10 @@
 <p>State symbols with the same name refer to the same state. This means, we can use a copy of the state symbol to make our layout easier, without changing what we actually mean by the diagram. For instance, we can remove the long arrow from state <code>yellow</code> to state <code>red</code> just by having another copy of the symbol for state <code>red</code>:</p>
 
 <div class="figure">
-<img src="figures/statemachines/traffic-light-5.svg" width="100%"/>
+<img src="figures/statemachines/traffic-light-5.svg" alt="Another version that uses two state symbols for the state red." width="100%"/>
+<span name="figures/statemachines/traffic-light-5.svg">&nbsp;</span>
+<aside name="figures/statemachines/traffic-light-5.svg"><p><p>Another version that uses two state symbols for the state red.</p>
+</p></aside>
 </div>
 <p>The diagram describes exactly the same behavior. Both state symbols for the state <code>red</code> refer to the same state, so our traffic light still has the same number of states, just its layout changed. In this simple state machine this doesn’t really matter, but this can help you to create better layouts once state machines become larger.</p>
 
@@ -242,7 +268,10 @@
 <p>Pay attention to the state symbol. It’s a rectangle with some rounded corners, nothing else!</p>
 
 <div class="figure">
-<img src="figures/statemachines/state-shapes.svg" width="100%"/>
+<img src="figures/statemachines/state-shapes.svg" alt="The correct symbol for a state is a rounded rectangle." width="100%"/>
+<span name="figures/statemachines/state-shapes.svg">&nbsp;</span>
+<aside name="figures/statemachines/state-shapes.svg"><p><p>The correct symbol for a state is a rounded rectangle.</p>
+</p></aside>
 </div>
 <h2 id="transitions">Transitions</h2>
 <p>The arrows between the states are called <strong>transitions</strong>. We have said above that the state machine is at any point in time in exactly one of its states. It is not in two or more of them at the same time, and it is never somewhere in between. Conceptually, this means that a state machine switches from one state to another <strong>within no time at all</strong>, meaning that <strong>transitions take no time</strong>. This sounds magical, but we will come back to this.</p>
@@ -258,14 +287,20 @@
 <p>Let’s have a look at a blinking light that you find often at the entry of tunnels. The light blinks with two lamps to indicate that the tunnel is closed. The blinking happens so that either the left lamp or the right lamp are on, and they switch every second.</p>
 
 <div class="figure">
-<img src="figures/statemachines/tunnel.jpg" width="100%"/>
+<img src="figures/statemachines/tunnel.jpg" alt="A picture of a traffic light for a tunnel." width="100%"/>
+<span name="figures/statemachines/tunnel.jpg">&nbsp;</span>
+<aside name="figures/statemachines/tunnel.jpg"><p><p>A picture of a traffic light for a tunnel.</p>
+</p></aside>
 </div>
 <p>From our experience with the more complex traffic light, this should be an easy state machine to write down. It has two states, <code>left</code>and <code>right</code>, corresponding to one of the lamps being switched on. We also added labels to some of the transitions. They describe that the state machine switches from state <code>left</code> to state <code>right</code> triggered by an event <code>t1</code>. This is a timer. It switches back with a timer <code>t2</code>. The detailed timer operations are not yet visible, we come later to that. In this blinking light we also show how to switch it off. This happens by an event called <code>off</code>, and it can happen in any of the two states.</p>
 
 <div class="figure">
-<img src="figures/statemachines/tunnel-1.svg" width="100%"/>
+<img src="figures/statemachines/tunnel-1.svg" alt="A simple state machine for the blinking light." width="100%"/>
+<span name="figures/statemachines/tunnel-1.svg">&nbsp;</span>
+<aside name="figures/statemachines/tunnel-1.svg"><p><p>A simple state machine for the blinking light.</p>
+</p></aside>
 </div>
-<p>Now we also want to specify the actions to switch the individual lamps on and off. We assume that we have for this the actions <code>left_on()</code>, <code>left_off()</code>, and <code>right_on()</code>, <code>right_off()</code>. We already use Python syntax for these actions. In our state machine diagram we can use these actions and add them to the transitions.</p>
+<p>We also want to specify the actions to switch the individual lamps on and off. We assume that we have for this the actions <code>left_on()</code>, <code>left_off()</code>, and <code>right_on()</code>, <code>right_off()</code>. We already use Python syntax for these actions. In our state machine diagram we can use these actions and add them to the transitions.</p>
 
 <p>The actions are also called an <strong>effect</strong> of the transition, and happen at the same instant the transition is executed, that means, when we switch states. The effects are written behind the <code>/</code> of the transition label.</p>
 <ul>
@@ -276,12 +311,18 @@
 </ul>
 
 <div class="figure">
-<img src="figures/statemachines/tunnel-2.svg" width="100%"/>
+<img src="figures/statemachines/tunnel-2.svg" alt="This version adds actions to turn lights on and off." width="100%"/>
+<span name="figures/statemachines/tunnel-2.svg">&nbsp;</span>
+<aside name="figures/statemachines/tunnel-2.svg"><p><p>This version adds actions to turn lights on and off.</p>
+</p></aside>
 </div>
 <p>Another way to execute actions is to add them to a state, and run them when we enter or exit the state. For some problems, such as the blinking light, this makes the diagram much nicer. Have a look at the functionally equivalent diagram:</p>
 
 <div class="figure">
-<img src="figures/statemachines/tunnel-3.svg" width="100%"/>
+<img src="figures/statemachines/tunnel-3.svg" alt="Equivalent representation with entry and exit actions." width="100%"/>
+<span name="figures/statemachines/tunnel-3.svg">&nbsp;</span>
+<aside name="figures/statemachines/tunnel-3.svg"><p><p>Equivalent representation with entry and exit actions.</p>
+</p></aside>
 </div>
 <p>Here we have drawn the state symbol with a compartment and add entry and exit actions to it. Actions that are preceded with the prefix <code>entry/</code> are executed when the state machine enters the state, and actions preceded with the prefix <code>exit/</code> run when the machine exits the state. In the example this cleans up the entire diagram, since we also can remove the actions from the initial transition and the transitions that target the final states. When we before had to add actions to all transitions entering or exiting a state, it is now enough to only declare them once within the state.</p>
 <p>You can list as many entry and exit actions for a state as you need, just add a new line with the prefix <code>entry/</code> or <code>exit/</code> for each of them. And of course, it looks nice when you list all entry actions above the exit actions. We also assume that they are executed in the way they are sorted, that means when we enter a state then the entry actions are executed in the order they are written, and the same for the exit actions when we exit the state.</p>
@@ -383,12 +424,15 @@
 <p><strong>Example:</strong> We want to extend our spaghetti timer from above. The new timer should blink a light while it is active. Have a look at the two coupled state machines below. The one at the top has the control of the 10 minute timer, and waits until a user activates it via message <code>start</code>. This message can come from a user interface, which we don’t show here. Once this message arrives, the machine switches into state <code>active</code>, which declares the entry actions that start the 10 minute countdown timer <code>t1</code>, and another entry action that sends message <code>on</code> to the machine to the right. This machine takes only care of the blinking light, 1 sec on and 1 sec off.</p>
 
 <div class="figure">
-<img src="figures/statemachines/blinking-timer.svg" width="100%"/>
+<img src="figures/statemachines/blinking-timer.svg" alt="Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages." width="100%"/>
+<span name="figures/statemachines/blinking-timer.svg">&nbsp;</span>
+<aside name="figures/statemachines/blinking-timer.svg"><p><p>Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages.</p>
+</p></aside>
 </div>
-<p>Now we <em>could</em> build a single state machine for it, which handles the 10 minutes timeout and the 1 sec blinking at the same time. But imagine that the timer has more complicated functions, like restarting, pausing, or it would be an entire different application with more functions to integrate. Then it comes in very handy that you can start and stop a sub-function such as blinking a light just by sending messages to it from another machine.</p>
+<p>We <em>could</em> build a single state machine for it, which handles the 10 minutes timeout and the 1 sec blinking at the same time. But imagine that the timer has more complicated functions, like restarting, pausing, or it would be an entire different application with more functions to integrate. Then it helps to reduce complexity when you can start and stop a sub-function such as blinking a light just by sending messages to it from another machine.</p>
 
 <h2 id="traces">Traces</h2>
-<p>Once you get more experienced with state machines, you will be able to simulate them in your head, just by figuring out the sequences in which the different events may happen. Since at any time, more than one event could happen, the same state machine could create many different sequences of events, also called <strong>traces</strong>. When you will design state machines, it means to get control over all of these traces, so that in the end, any possible behavior (that means, any possible trace of events) is okay for the system. State machines hence describe <strong>complete behavior</strong>. (We will later see how another diagram type, interactions, describe usually only partial behavior.) For state machines, this means that what they don’t describe, they can’t do.</p>
+<p>Once you get more experienced with state machines, you will be able to simulate them in your head, just by figuring out the sequences in which the different events may happen. Since at any time more than one event could happen, the same state machine could create many different sequences of events, also called <strong>traces</strong>. When you will design state machines, it means to get control over all of these traces, so that in the end, any possible behavior (that means, any possible trace of events) is okay for the system. State machines hence describe <strong>complete behavior</strong>. (We will later see how another diagram type, interactions, describe usually only partial behavior.) For state machines, this means that what they don’t describe, they can’t do.</p>
 <p>By looking at a state machine, we can write down possible sequences of events. Lets just write down <strong>one</strong> trace of events that can happen when we activate the spaghetti timer. We just write down the events regarding the main machine <strong>Blinking 10 min Timer</strong>, and do so by listing the sequence of all triggers and actions as they happen:</p>
 <ul>
 <li>initial transition</li>
@@ -402,17 +446,20 @@
 <li>timer <code>t2</code> expires</li>
 <li>exit action <code>stop_beep()</code> in state <code>beeping</code></li>
 </ul>
-<p>Here there is actually only a single behavior, because we go through the states based on the timeouts of the two timers <code>t1</code>and <code>t2</code>. A more realistic timers would also describe behavior where we could abort it, which would be another trace.</p>
+<p>Here there is actually only a single behavior, because we go through the states based on the timeouts of the two timers <code>t1</code> and <code>t2</code>. A more realistic timers would also describe behavior where we could abort it, which would be another trace.</p>
 
-<p><strong>Exercise:</strong> Put your finger on the state machine <strong>Blinking 10 min Timer</strong> and follow through the trace above. Note that the event that timer <code>t1</code> expires happens <em>before</em> the exit action <code>send(off, blink)</code> in state <code>active</code> happens. This is because the timer expiration of <code>t1</code> <em>causes</em> this transition and action. (Some students find that not intuitive, since the timer <code>t1</code> is graphically outside of the state, and somehow looks graphically to happen “later” in time.)</p>
+<p><strong>Exercise:</strong> Put your finger on the state machine <strong>Blinking 10 min Timer</strong> and follow through the trace above. Note that the event that timer <code>t1</code> expiration happens <em>before</em> the exit action <code>send(off, blink)</code> in state <code>active</code> happens. This is because the timer expiration of <code>t1</code> <em>causes</em> this transition and action. (Some students find that not intuitive, since the timer <code>t1</code> is graphically outside of the state, and somehow looks graphically to happen “later” in time.)</p>
 
 <h2 id="state-transition-tables">State-Transition Tables</h2>
 <p>So far, we used diagrams to write down our state machine. Instead we can also use a table that lists all the transitions. This will be the basis for implementing state machines in Python. There’s not much more to say about this table, other than that it offers another way of looking at a state machine, and understand them systematically. Below you see again the state machine for the tunnel light, and the table that describes the same behavior. Check if you understand what each row means, and how it corresponds line by line to the diagram.</p>
 
 <div class="figure">
-<img src="figures/statemachines/tunnel-2.svg" width="100%"/>
+<img src="figures/statemachines/tunnel-2.svg" alt="The state machine from the tunnel light." width="100%"/>
+<span name="figures/statemachines/tunnel-2.svg">&nbsp;</span>
+<aside name="figures/statemachines/tunnel-2.svg"><p><p>The state machine from the tunnel light.</p>
+</p></aside>
 </div>
-<table>
+<table class="table">
 <tbody>
 <tr class="odd">
 <td><p>Source State</p></td>
@@ -453,8 +500,11 @@
 </tbody>
 </table>
 
+<span name="ff237d">&nbsp;</span>
+<aside name="ff237d"><p><p>A transition table with equivalent content.</p>
+</p></aside>
 <h2 id="a-physical-state-machine-model">A Physical State Machine Model</h2>
-<p>State machines are implemented in code and executed by a computer. To understand how a state machine works, you can also think of them as a physical machine, which executes almost like a mechanical clockwork. The figure below illustrates such a machine.</p>
+<p>We promised you another way to get an intuitive understanding of state machines. To understand how a state machine works, you can also think of them as a physical machine, which executes almost like a mechanical clockwork. The figure below illustrates such a machine.</p>
 
 <div class="figure">
 <img src="figures/statemachines/state-machine-machine.svg" alt="An imaginary machine that illustrates how a state machine works." width="100%"/>
@@ -463,47 +513,48 @@
 </p></aside>
 </div>
 <p>The state machine has an input queue for messages sent by other parts of the system. These may be other state machines within the same computing node, state machines from other nodes, or other parts of programs that send messages.</p>
-<p>All messages arrive and are sorted in a first-in, first-out (or short FIFO) order.</p>
+<p>All messages arrive and are sorted in a first-in, first-out order, also called <em>FIFO</em>.</p>
 <p>The state machine also manages a set of timers. The state machine starts these timers as part of its behaviour. When a timer expires, it places an event in the same event queue as the one for incoming messages. Timer expiration events are placed at the front of the queue, since an event from a timer should be processed as close to its actual expiration time as possible.</p>
-<p>The state machine interprets the state machine diagram. The diagram can be represented as a state-transition table, as we have seen above. In this table is written down in which current state of the state machine an event has which effect. The effect means the behaviour the state machine is executing. This includes to start and stop timers, run operations, and moving the state machine into its next state. The state machine can also keep track of other data by using variables. This is why this type of state machine is also called <em>extended</em> finite state machine.</p>
-
-<h3 id="queue-semantics">Queue Semantics</h3>
-<p>To understand how a state machine executes, it is important to understand how the input queue works.</p>
-<ul>
-<li>Messages arriving at the input of the state machine are placed <strong>at the end</strong> of the queue.</li>
-<li>Time events are placed at the <strong>front of the queue</strong> when the corresponding timer expires.</li>
-<li>States can defer events. (See below.)</li>
-<li>Events that are not consumed or deferred are simply discarded, that means thrown away.</li>
-</ul>
-
-<p><strong>Discarding events:</strong> When the state machine is in a state that does not declare a transition that is triggered by the event at the head of the queue, the event is taken from the queue and discarded, that means thrown away.</p>
-
-<div class="figure">
-<img src="figures/statemachines/discard.png" width="100%"/>
-</div>
-<p>Look at the situation above. Assume that the state machine is currently in state <code>s1</code>. When message <em>b</em> arrives, it is not consumed, since state <code>s1</code> only has a transition with a trigger <em>a</em>, so the state machine only waits for <em>a</em>. Message <em>b</em> is therefore discarded as soon as it arrives during state <em>s1</em>. Note that it is discarded even if it is consumed by the later state <em>s2</em>, which is not the current state.</p>
-
-<!--
----
-type: figure
-source: https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/Screen-Shot-2018-02-06-at-10.32.18.png
----
-**Deferring events:** A state can *defer* some events. This means that the deferred events are ignored in this state. When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred. 
-Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it). Deferred events are written within the state symbol following the keyword */defer*.
--->
-
-<!--
-# Repetitions
-This was a lot on syntax and semantics. We will make a lot of exercises to design state machines, and this is somethig that requires experience. 
-
-
-
-<p>Rule: make sure that all transitions are triggered by something- –&gt;</p>
+<p>The state machine interprets the state machine diagram. The diagram can be represented as a state-transition table, as we have seen above. This table encodes in which current state of the state machine an event has which effect. The effect means the behaviour the state machine is executing. This includes to start and stop timers, run operations, and moving the state machine into its next state. The state machine can also keep track of other data by using variables. This is why this type of state machine is also called <em>extended</em> finite state machine.</p>
 
     </section>
     <section class="content">
-<h1 id="thata-all.">That’a all.</h1>
-<p>That was a lot of details about state machines, but that’s all details we need. The coming weeks you will gain more experience in the actual engineering task, that is, decomposing a problem and designing a good state machine for it. That won’t be easy, but its a rewarding and useful task that is also fun.</p>
+<h1 id="some-finer-details-of-event-handling">Some Finer Details of Event Handling</h1>
+<p>In the following, we want to consider more detailed cases of event handling. If you have understood everything above, then these should be okay to understand too. If you feel that the basic state machines are still a but unfamiliar and you need to get used to, then don’t worry too much about the details below. We will come back to them at a later point too.</p>
+
+<h3 id="discarding-events">Discarding Events</h3>
+<p>As described above, when an event arrives in the input queue, it is consumed by the state machine by executing whatever transition is triggered by that event from the current state. But what if the current state does not say anything about the incoming event?</p>
+<p>When the state machine is in a state that does not declare a transition that is triggered by the event at the head of the queue, the event is taken from the queue and <strong>discarded</strong>, that means thrown away.</p>
+
+<div class="figure">
+<img src="figures/statemachines/discard.png" alt="An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it." width="100%"/>
+<span name="figures/statemachines/discard.png">&nbsp;</span>
+<aside name="figures/statemachines/discard.png"><p><p>An illustration how a message is discarded. In the current state <code>s1</code>, an arriving message <code>b</code> is discarded because <code>s1</code> does not handle it.</p>
+</p></aside>
+</div>
+<p>Look at the situation above. Assume that the state machine is currently in state <code>s1</code>. When message <em>b</em> arrives, it is not consumed, since state <code>s1</code> only has a transition with a trigger <em>a</em>, so the state machine only waits for <em>a</em>. Message <em>b</em> is therefore discarded as soon as it arrives during state <em>s1</em>. Note that it is discarded even if it is consumed by the later state <em>s2</em>, which is not the current state.</p>
+
+<h3 id="deferring-events">Deferring Events</h3>
+<p>What if you design a state machine, and know that an event (<code>B</code>) can arrive at any time, but you can only handle it <em>after</em> you have received another event <code>A</code>. For this case, you can <strong>defer</strong> an event in some states.</p>
+<p>A state can defer an event by naming it inside the state body like a transition, but following the keyword <code>/defer</code>. When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred. Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it).</p>
+
+<div class="figure">
+<img src="figures/statemachines/defer.jpg" alt="State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`." width="100%"/>
+<span name="figures/statemachines/defer.jpg">&nbsp;</span>
+<aside name="figures/statemachines/defer.jpg"><p><p>State <code>s1</code> <em>defers</em> event <code>A</code> so that it is stored in the queue until after the arrival of event <code>B</code>.</p>
+</p></aside>
+</div>
+<h3 id="summary-of-queue-semantics">Summary of Queue Semantics</h3>
+<p>Many of the semantics we have learned now are about how the input queue of the machine is handled. We can summarize them with the following points:</p>
+<ul>
+<li>Messages arriving at the input of the state machine are placed <strong>at the end</strong> of the queue.</li>
+<li>Time events are placed at the <strong>front of the queue</strong> when the corresponding timer expires, so that timers can be handled as close to their actual expiration as possible.</li>
+<li>States can defer events, in which case they are only regarded when the state machine switches into a new state.</li>
+<li>Events that are not consumed or deferred are simply discarded, that means thrown away.</li>
+</ul>
+
+<p>These were most of the thing you will need to know about state machines, and you are good to go for the test. For your next team activity, you will create state machines. You can already now read about some tips to create state machines. Read on if you have some energy left.</p>
+<p><a type="button" href="unit-statemachines-creation.html" class="btn btn-outline-secondary float-right">Creating State Machines <i class="fas fa-arrow-right"></i></a></p>
 
     </section>
 </div>

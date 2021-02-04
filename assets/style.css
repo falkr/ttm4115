@@ -273,7 +273,7 @@ div.check ul li {
 }
 
 div.check ul li:before {
-  content: '\f058';
+  content: '\f26a';
   font-family: bootstrap-icons !important;
   font-size:20;
   float: left;

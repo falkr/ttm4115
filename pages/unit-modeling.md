@@ -74,9 +74,7 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 * Getting the level of detail right may require the most judgement. Think which information is useful to the reader of your diagram, and which information rather clutters it up.
 
 
-
-
-### Step 5: Diagram 
+### Step 6: The Final Diagram 
 
 Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool [Draw.io](draw.io), because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
 
@@ -84,7 +82,7 @@ Based on the previous step, create a polished diagram. For this time, we recomme
 - Include _relevant_ details.
 - Try to build a good layout. Have several attempts, the first one may not be the best one.
 
-### Step 6: Self-Evaluation
+### Step 7: Self-Evaluation
 
 On Teams find the template for the self-evaluation document `Files > Unit 1... > Rice Farming Team XX.docx`. Fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
 

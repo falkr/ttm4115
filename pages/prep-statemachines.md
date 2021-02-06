@@ -325,7 +325,7 @@ Now you have seen many kinds of transitions, and we can summarize all the differ
 * An **initial transition** originates at an initial state. It does not declare a trigger, since it is executed immediately when the state machine starts.
 * A **self-transition** is simply a transition that starts and ends in the same state.
 * An **internal transition** is a transition that starts and ends in the same state, but which does not invoke any of the state's entry and exit actions. 
-* An **external transition** is the type of transition that is _not an internal transition_. That means, a "normal" transition form one state to another, a self-transition, or an initial transition.
+* An **external transition** is the type of transition that is _not an internal transition_. That means, a "normal" transition from one state to another, a self-transition, or an initial transition.
  
 
 ### Transition Labels

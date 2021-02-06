@@ -180,6 +180,12 @@ p {
   margin: 15px 0 15px 0
 }
 
+.anchorjs-link:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #1481b8;
+}
+
 h1 {
   font: 200 40px "Source Sans Pro", Georgia, serif;
   color: #1481b8;

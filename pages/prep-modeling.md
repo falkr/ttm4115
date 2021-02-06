@@ -328,7 +328,6 @@ caption: "Most of the practical combinations of multiplicity bounds."
 
 The first column shows the multiplicity in `n..m` format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words. 
 
-
 We can use these multiplicities at both sides of a connection between nodes. 
 If no multiplicity is specified, it means `*`, which implies _many_. 
 

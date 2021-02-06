@@ -22,10 +22,11 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
+
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
 
-<!--<script src="jquery-1.10.1.min.js"></script>-->
+<script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
 </head>
 <body id="top">
@@ -200,7 +201,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 </p></aside>
 </div>
 <ul>
-<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
+<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>
@@ -261,5 +262,9 @@ jupyter nbextension enable --py widgetsnbextension</code></pre>
 
 
 <footer></footer>
+<script>
+  anchors.options.visible = 'touch';
+  anchors.add("h1, h2, h3");
+</script>
 </body>
 </html>

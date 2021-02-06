@@ -22,10 +22,11 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
+
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
 
-<!--<script src="jquery-1.10.1.min.js"></script>-->
+<script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
 </head>
 <body id="top">
@@ -213,11 +214,11 @@
 
     </section>
     <section class="content">
-<span name="829c00"></span><aside name="829c00"><p>The <a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML specification</a> is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It’s a detailed specification for toolmakers and those who need to know all the details.</p>
-</aside>
 <h1 id="uml-unified-modeling-language">UML — Unified Modeling Language</h1>
 <p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job. This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
 
+<span name="829c00"></span><aside name="829c00"><p>The <a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML specification</a> is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It’s a detailed specification for toolmakers and those who need to know all the details.</p>
+</aside>
 <p>However, UML itself is not really important in this course. This is not a UML course. It’s a course about <em>designing systems</em>, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:</p>
 <ul>
 <li>Deployment Diagrams</li>
@@ -444,7 +445,6 @@ Deployment diagrams most often show node instances
 <aside name="tables/multiplicities.mw"><p><p>Most of the practical combinations of multiplicity bounds.</p>
 </p></aside>
 <p>The first column shows the multiplicity in <code>n..m</code> format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words.</p>
-
 <p>We can use these multiplicities at both sides of a connection between nodes. If no multiplicity is specified, it means <code>*</code>, which implies <em>many</em>.</p>
 <p>In most practical cases, you don’t need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are:</p>
 <ul>
@@ -461,11 +461,11 @@ Deployment diagrams most often show node instances
 </div>
     </section>
     <section class="content">
-<span name="600ff0"></span><aside name="600ff0"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
-</aside>
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>
 
+<span name="600ff0"></span><aside name="600ff0"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+</aside>
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Man81KkQyNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -489,5 +489,9 @@ Deployment diagrams most often show node instances
 
 
 <footer></footer>
+<script>
+  anchors.options.visible = 'touch';
+  anchors.add("h1, h2, h3");
+</script>
 </body>
 </html>

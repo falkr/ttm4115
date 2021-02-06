@@ -448,8 +448,8 @@ Deployment diagrams most often show node instances
 <p>We can use these multiplicities at both sides of a connection between nodes. If no multiplicity is specified, it means <code>*</code>, which implies <em>many</em>.</p>
 <p>In most practical cases, you don’t need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are:</p>
 <ul>
-<li><p>One server is connected to many gateways.</p></li>
-<li><p>For the Fitbit example, we could emphasize that the Fitbit only can sync with a single mobile phone.</p></li>
+<li>One Fitbit only can sync with a single mobile phone, emphasized by a one-to-one relationship.</li>
+<li>One server is connected to many gateways.</li>
 </ul>
 <p>If the number varies at runtime, use <code>0..*</code> or <code>*</code> in short, just implying <em>many</em>.</p>
 

@@ -334,9 +334,8 @@ If no multiplicity is specified, it means `*`, which implies _many_.
 
 In most practical cases, you don't need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are: 
 
+* One Fitbit only can sync with a single mobile phone, emphasized by a one-to-one relationship.
 * One server is connected to many gateways.
-
-* For the Fitbit example, we could emphasize that the Fitbit only can sync with a single mobile phone.
 
 If the number varies at runtime, use `0..*` or `*` in short, just implying _many_. 
 

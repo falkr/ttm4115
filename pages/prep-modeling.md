@@ -96,8 +96,10 @@ With regard to this course, we focus in the first three: You will be able to imp
 # UML --- Unified Modeling Language
 
 There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job.
-
 This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.
+
+:aside: The [UML specification](https://www.omg.org/spec/UML/2.5.1/PDF) is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It's a detailed specification for toolmakers and those who need to know all the details.
+
 
 However, UML itself is not really important in this course.  This is not a UML course. It's a course about _designing systems_, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:
 
@@ -309,6 +311,41 @@ type: figure
 source: figures/deployment/notes-1.png
 caption: "Notes can show additional information that is difficult to express in other ways."
 ---
+
+
+## Multiplicities
+
+In some cases we can add useful information to the deployment diagram by showing how many instances of a pair of nodes are connected with each other. 
+
+A multiplicity specification is a tuple in the form `n..m` where `n` denotes the lower bound and `m` the upper one. (This implies that `n` is smaller than `m`.) To keep the upper value unbounded, we use the asterisk `*`. This leads to the following possible combinations in practice:
+
+---
+type: table
+file: tables/multiplicities.mw
+class: table-sm table-bordered
+caption: "Most of the practical combinations of multiplicity bounds."
+---
+
+The first column shows the multiplicity in `n..m` format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words. 
+
+
+We can use these multiplicities at both sides of a connection between nodes. 
+If no multiplicity is specified, it means `*`, which implies _many_. 
+
+In most practical cases, you don't need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are: 
+
+* One server is connected to many gateways.
+
+* For the Fitbit example, we could emphasize that the Fitbit only can sync with a single mobile phone.
+
+If the number varies at runtime, use `0..*` or `*` in short, just implying _many_. 
+
+---
+type: figure
+source: figures/deployment/multiplicity.svg
+caption: "Examples of multiplicity between nodes."
+---
+
 
 
 # Optional Preparation

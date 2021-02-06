@@ -213,9 +213,11 @@
 
     </section>
     <section class="content">
+<span name="829c00"></span><aside name="829c00"><p>The <a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML specification</a> is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It’s a detailed specification for toolmakers and those who need to know all the details.</p>
+</aside>
 <h1 id="uml-unified-modeling-language">UML — Unified Modeling Language</h1>
-<p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job.</p>
-<p>This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
+<p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job. This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
+
 <p>However, UML itself is not really important in this course. This is not a UML course. It’s a course about <em>designing systems</em>, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:</p>
 <ul>
 <li>Deployment Diagrams</li>
@@ -390,6 +392,71 @@ Deployment diagrams most often show node instances
 <img src="figures/deployment/notes-1.png" alt="Notes can show additional information that is difficult to express in other ways." width="100%"/>
 <span name="figures/deployment/notes-1.png">&nbsp;</span>
 <aside name="figures/deployment/notes-1.png"><p><p>Notes can show additional information that is difficult to express in other ways.</p>
+</p></aside>
+</div>
+<h2 id="multiplicities">Multiplicities</h2>
+<p>In some cases we can add useful information to the deployment diagram by showing how many instances of a pair of nodes are connected with each other.</p>
+<p>A multiplicity specification is a tuple in the form <code>n..m</code> where <code>n</code> denotes the lower bound and <code>m</code> the upper one. (This implies that <code>n</code> is smaller than <code>m</code>.) To keep the upper value unbounded, we use the asterisk <code>*</code>. This leads to the following possible combinations in practice:</p>
+
+<table class="table-sm table-bordered">
+<thead>
+<tr class="header">
+<th><p>Multiplicity</p></th>
+<th><p>Shorthand</p></th>
+<th><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>n..m</p></td>
+<td></td>
+<td><p>Minimum n elements, maximum m. (m&gt;n)</p></td>
+</tr>
+<tr class="even">
+<td><p>0..1</p></td>
+<td></td>
+<td><p>optional value</p></td>
+</tr>
+<tr class="odd">
+<td><p>1..1</p></td>
+<td><p>1</p></td>
+<td><p>exactly one</p></td>
+</tr>
+<tr class="even">
+<td><p>0..*</p></td>
+<td><p>*</p></td>
+<td><p>any number of elements, "many"</p></td>
+</tr>
+<tr class="odd">
+<td><p>n..*</p></td>
+<td></td>
+<td><p>n or more</p></td>
+</tr>
+<tr class="even">
+<td><p>n..n</p></td>
+<td><p>n</p></td>
+<td><p>exactly n</p></td>
+</tr>
+</tbody>
+</table>
+
+<span name="tables/multiplicities.mw">&nbsp;</span>
+<aside name="tables/multiplicities.mw"><p><p>Most of the practical combinations of multiplicity bounds.</p>
+</p></aside>
+<p>The first column shows the multiplicity in <code>n..m</code> format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words.</p>
+
+<p>We can use these multiplicities at both sides of a connection between nodes. If no multiplicity is specified, it means <code>*</code>, which implies <em>many</em>.</p>
+<p>In most practical cases, you don’t need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are:</p>
+<ul>
+<li><p>One server is connected to many gateways.</p></li>
+<li><p>For the Fitbit example, we could emphasize that the Fitbit only can sync with a single mobile phone.</p></li>
+</ul>
+<p>If the number varies at runtime, use <code>0..*</code> or <code>*</code> in short, just implying <em>many</em>.</p>
+
+<div class="figure">
+<img src="figures/deployment/multiplicity.svg" alt="Examples of multiplicity between nodes." width="100%"/>
+<span name="figures/deployment/multiplicity.svg">&nbsp;</span>
+<aside name="figures/deployment/multiplicity.svg"><p><p>Examples of multiplicity between nodes.</p>
 </p></aside>
 </div>
     </section>

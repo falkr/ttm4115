@@ -442,7 +442,9 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 .rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
 
 
-
+div.rat ol {
+  list-style-type: upper-alpha;
+}
 
 div.delivery p {
   padding: 10px;

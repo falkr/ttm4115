@@ -1,6 +1,76 @@
 # State Machines
 
-Until now, you have learned about all the features that we need for state machines, but you have not yet created one on your own. 
+Until now, you have learned about all the features that we need for state machines, but you have not yet created one on your own.
+
+
+Revisit the [preparation material on how to create state machines](unit-statemachines-creation.html).
+Assign one in the group who guides a brief summary through the points, and discuss any things that you may need clarification for. 
+
+This is just to ensure that you remember the proceedings as you will need them today.
+
+
+# Errors in State Machines
+
+Before we create our own state machines, let's criticize some others and find mistakes in them first.
+
+For each of the state machines, formulate a short sentence (or two) that describe what's wrong with them. 
+Collect these sentences in a text document while you work, then submit them as a form given below.
+
+ 
+### State Machine 1
+
+---
+type: figure
+source: figures/statemachines/stm-e-1.png
+caption: ""
+---
+
+
+### State Machine 2
+
+---
+type: figure
+source: figures/statemachines/stm-e-2.png
+caption: ""
+---
+
+
+### State Machine 3
+
+---
+type: figure
+source: figures/statemachines/stm-e-3.png
+caption: ""
+---
+
+
+### State Machine 4
+
+---
+type: figure
+source: figures/statemachines/stm-e-4.png
+caption: ""
+---
+
+
+### State Machine 5
+
+---
+type: figure
+source: figures/statemachines/stm-e-5.png
+caption: ""
+---
+
+
+### State Machine 6
+
+---
+type: figure
+source: figures/statemachines/stm-e-6.png
+caption: ""
+---
+
+:delivery: Delivery your diagnostics on the state machines in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQ0ZTRFVIODBUNlNTRzFEUU02VUJVMTc0Mi4u).
 
 
 # Getting Started: Bus Stop
@@ -16,7 +86,6 @@ caption: "Sketch of the bus stop."
 ---
 
 
-
 Here are the detailed functional requirements:
 
 * Passengers waiting at the bus stop can press a button, upon which the signal lamp switches on.
@@ -27,7 +96,7 @@ Here are the detailed functional requirements:
 Use the following elements:
 
 * actions `lamp_on()`, `lamp_off()`, `start_timer('t', 600000)`
-* triggers `switch`, `bus`, `t`
+* triggers `button`, `bus`, `t`
 * states `on`, `off`, and an initial state
 
 You can ignore for now that the system may be switched off, so you need no final state.
@@ -49,13 +118,15 @@ You can ignore for now that the system may be switched off, so you need no final
 ## Solution
 
 * Once you are happy with your solution, have a look at [my solution](files/bus-stop.pdf).
-* Compare the solutions in detail.
-* If you find that my solution has any flaws, please discuss on MS Teams!
+* Compare the solutions in detail. (If you find that my solution has any flaws, please discuss on MS Teams!)
 * Prepare a document where you show your solution and mine side-by-side, and compare.
 * Reflect about your process towards this machine.
   * What did you get right immediately? 
   * What was difficult? 
   * Were there misunderstandings?
+  
+:delivery: Store your document from above in the Teams folder for this unit. Use filname `ttm4115-2020-bus-stop-team-XX.docx`
+
 
 # Kitchen Timer
 
@@ -105,25 +176,16 @@ You can assume that whenever the button is pressed, the state machine will recei
   * Were there misunderstandings?
 
 
+:delivery: Store your document from above in the Teams folder for this unit. Use filename `ttm4115-2020-kitchen-timer-team-XX.docx`.
 
-# Checklist
 
- 
+# Team Reflection for This Unit 
 
-### Blackboard
+* Add another section to the team reflection document, just like last week.
+* How did the roles work today? 
 
-- Deliver the reflection over your solutions in comparison to the ones provided, both for the bus stop and the kitchen timer.
 
-### MS Teams
-
-- Ask for feedback in general
-- Report any errors with the provided solution
-
-### Team Reflection for This Unit 
-
-* Add another section to the team reflection document, just like last week. 
-
-### Individual Reflection
+# Individual Reflection
 
 * Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
 * Copy the answers into a document that you maintain on your own.

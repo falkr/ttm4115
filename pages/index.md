@@ -34,21 +34,15 @@ Each week, we follow the same schedule:
 * **Friday 13:15-14:00** Summary of the Unit (digital, Zoom)
 * In some weeks, you need to schedule additional time for teamwork on the semester project and deliverables.
 
----
-type: figure
-source: figures/weekplan-2021.png
-caption: "Week plan of scheduled class time for 2021."
----
 
 
-<!--
+
 ---
 type: table
 file: tables/week.mw
-class: schedule table-sm table-bordered
+class: weekplan table-sm table-bordered
 format: html
 ---
--->
 
 
 Here is the weekly schedule for 2021: 

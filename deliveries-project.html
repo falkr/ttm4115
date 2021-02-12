@@ -137,77 +137,56 @@
 <div class="page">
     </section>
     <section class="content">
-<h1 id="agile-vs.-architecture">Agile vs. Architecture</h1>
+<h1 id="semester-project">Semester Project</h1>
 
-<p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
+<p>In contrast to previous years, we constrain the type of system that you should build. The reason for this is that many students find it hard to come up with a good idea that isn’t too similar to what we already had. In addition, this has the benefit that you are more focused and interested when providing feedback to the other teams, as they try to solve a similar problem.</p>
+<p>We sill expect that there is enough variation in your priorization, selection, interpretation and implementation of the system functionality that you all end up with different systems.</p>
+
+    </section>
+    <section class="content">
+<h1 id="digital-walkie-talkies">2021: Digital Walkie Talkies</h1>
+<p>The base idea is to create a communication device for workers.</p>
+<p>The core functionality is to send short voice messages to another colleague, without waiting for the colleague to take the call (there is no “call”), just by somehow selecting the receiver, recording a message and sending it.</p>
+<p>Such a function is also called <em>push-to-talk</em> communication, and you probably know it from the way the crew members communicate on Star Trek.</p>
+
+<h2 id="robust-reliable-responsive">Robust, Reliable, Responsive</h2>
+<p>The most important feature of your system should be its reliability in all circumstances. This means, that it does not loose a message, but would try to reach a receiver and only if there’s no other way to deliver the message tell the sender about it.</p>
+<p>The system should also be designed so that several messages arriving at the same time are handled somehow.</p>
+<p>At all times, the sender and the receiver should find that their device is responsive in some way, that means, they know what it is doing and maybe can record the next message to another colleague even if another one is not yet played to the receiver.</p>
+
+<h2 id="domain">Domain</h2>
+<p>Decide if you want to optimize the system for a specific domain, or if you want to make it work in several settings. You could for instance focus on healthcare, offshore workers, farmers, athletes, just to name a few. This is a good point where your can distinguish your setup from that of others.</p>
+
+<h2 id="example-features">Example Features</h2>
 <ul>
-<li>understanding how to figure out the user requirements so that we built the right system</li>
-<li>understanding the intricacies with communication and interactions</li>
-<li>the documentation of system architecture</li>
-<li>the specification of use cases</li>
-</ul>
-<p>In the second part of the course, we will also learn how to describe:</p>
-<ul>
-<li>the detailed specification of interactions with sequence diagrams</li>
-<li>the detailed specification of component behavior using state machines</li>
-<li>and finally how to code state machines</li>
-</ul>
-<p>When we talk about <em>development process</em> we mean how we should organize our work around these documents: When to create which document, how they depend on each other, and how to organize our team around these. Initially, we could follow this scheme:</p>
-
-<div class="figure">
-<img src="figures/method.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
-<span name="figures/method.jpg">&nbsp;</span>
-<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
-</p></aside>
-</div>
-<p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called “Waterfall Model”, because the different stages follow each other.</p>
-<p><strong>But this is not how real projects work!</strong> In reality, the following will happen:</p>
-<ul>
-<li>When making the use cases, more questions come up that you have to clarify with the customer, and you need to refine the requirements.</li>
-<li>When making the sequence diagrams, you may also need to go back and reconsider use cases and requirements.</li>
-<li>You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code.</li>
-</ul>
-
-<p>Have a look into the following presentation: (The details of the video are not part of the RAT.)</p>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NP9AIUT9nos?start=525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<span name="NP9AIUT9nos">&nbsp;</span>
-<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p>
-</p></aside>
-</div>
-<p>We can look at the waterfall model as one side in a spectrum of methods:</p>
-
-<div class="figure">
-<img src="figures/agile-spectrum.png" alt="**The spectrum of development methods:** Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right." width="100%"/>
-<span name="figures/agile-spectrum.png">&nbsp;</span>
-<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
-</p></aside>
-</div>
-<p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of <strong>planning</strong>, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking.” Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
-<p>To popularize agile development, some engineers gathered and prepared the <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">Agile Manifesto</a>. This document explains some of the principles. It is short to read, and most developers have at some point heard about it.</p>
-<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success, but touch on complex issues and are often discussed based on anecdotes and in general a bit “fluffy”. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
-
-<h2 id="mandatory-preparation">Mandatory Preparation</h2>
-<p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working. As part of the preparation, you should read through the Scrum Guide:</p>
-<ul>
-<li><a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100">The Scrum Guide</a> by Ken Schwaber and Jeff Sutherland (An earlier version of this page linked to a previous version of the guide, but there are only minor adjustments.)</li>
+<li>Send short voice messages</li>
+<li>Avoid collisions if several messages arrive at the same time</li>
+<li>Replay for noisy environments</li>
+<li>Transcript (Speech to text)</li>
+<li>Detection of status, and handling of incoming messages accordingly</li>
+<li>Detection of network bandwidth, resubmissions</li>
 </ul>
 
-<h2 id="optional-material">Optional Material</h2>
+<h2 id="implementation">Implementation</h2>
 
-<p>The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I’ll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!</p>
+<p>You should have a working demonstrator or prototype that shows some or most of the functionality you planned.</p>
+<p>Some more advanced functions are the following:</p>
+<ul>
+<li><p>Voice activation: Detection of activation words, followed by a detection of the recipient of a message, and detection when the message is complete.</p></li>
+<li><p>Speech-to-text: Creation of a written form of the message, so the receiver could receive them as text instead, wither to save bandwidth on the receiver side or in noisy environments, or as accessibility feature.</p></li>
+<li><p>Text-to-speech: One could think of functionality where a message is transmitted as text and should be synthesized into speech for the receive to listen.</p></li>
+</ul>
+<p>The thing is: All of these functions are probably helpful, and we/you may implement some of them. But for the overall system design, we could replace some of these functions by code that imitates them. This is especially true when we assume that these functions are achieved by independent system components. Then we can, for instance, replace a voice activation module with a module that imitates the voice activation, for instance with a graphical user interface, but has the same interface.</p>
+<p>The main part of your implementation must be in Python, and you need to implement some components using the state machine framework STMPY. This is to ensure that you can apply the learning material in the course.</p>
 
-<h3 id="video-scrum-in-under-5-minutes">Video: Scrum in under 5 minutes</h3>
+<h2 id="devices">Devices</h2>
+<p>There are several options to run the demo:</p>
+<ul>
+<li>Your laptop</li>
+<li>A Raspberry Pi</li>
+<li>A BBC Microbit</li>
+</ul>
 
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2Vt7Ik8Ublw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<h3 id="video-explaining-agile---martin-fowler-and-neil-ford-at-usi">Video: Explaining Agile - Martin Fowler and Neil Ford at USI</h3>
-
-<div class="figure">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GE6lbPLEAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
     </section>
 </div>
 

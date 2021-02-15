@@ -201,7 +201,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 </p></aside>
 </div>
 <ul>
-<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
+<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>
@@ -213,49 +213,56 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 
     </section>
     <section class="content">
-<h1 id="python-jupyter-lab">Python Jupyter Lab</h1>
+<h1 id="jupyter-notebooks-introducing-stmpy">Jupyter Notebooks Introducing STMPY</h1>
+<p>To introduce STMPY you step by step and while executing code, we created a series of Python notebooks. You have two possibilities to run them</p>
 
+<h3 id="alternative-1-install-notebooks-on-your-computer">Alternative 1: Install Notebooks on Your Computer</h3>
+<p>In this solution, you run Jupyter on your own computer.</p>
 <ul>
 <li>Install Jupyter Lab on your computer, following <a href="tools-notebooks.html">these instructions</a>.</li>
-<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks">https://github.com/falkr/stmpy-notebooks</a> and download it.
-<ul>
-<li>You can either pull it via Git, or download directly the contents as a ZIP file, <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">using this link</a>.</li>
-</ul></li>
+<li>Install the STMPY library:</li>
 </ul>
 
-<h2 id="install-python-packages">Install Python Packages</h2>
-
-<p>First, install state machines for Python, stmpy:</p>
-<pre><code>pip install --upgrade stmpy</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">python3</span> -m pip install --upgrade stmpy</span></code></pre></div>
 
 <p>We also need our own widgets in the notebooks, so run the following two commands:</p>
-<pre><code>pip install ipywidgets
-jupyter nbextension enable --py widgetsnbextension</code></pre>
 
-<h2 id="state-machines-in-python---part-1">State Machines in Python - Part 1</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">python3</span> -m pip install ipywidgets</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">jupyter</span> nbextension enable --py widgetsnbextension</span></code></pre></div>
+
 <ul>
-<li>Start your Jupyter Notebook server</li>
-<li>Open the first notebook, stored in the file <strong>State Machines in Python - Part 1.ipynb</strong></li>
-<li>Complete all the material in the notebook and come back here!</li>
-<li>You can also <a href="https://github.com/falkr/stmpy-notebooks/blob/master/State%20Machines%20in%20Python%20-%20Part%201.ipynb">browse the notebook on Github</a> (but not execute it).</li>
+<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks">https://github.com/falkr/stmpy-notebooks</a> and download it.</li>
+<li>You can either pull it via Git, or download directly the contents as a ZIP file, <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">using this link</a>.</li>
 </ul>
-<p>In this notebook you learn all the basics of state machines in STMPY.</p>
-<h2 id="state-machines-in-python---part-2">State Machines in Python - Part 2</h2>
+
+<h3 id="alternative-2-use-binder">Alternative 2: Use Binder</h3>
+<p>Binder runs notebooks online. Use this method if you have troubles running the notebooks on your own computer.</p>
+<p><a href="https://mybinder.org/v2/gh/falkr/stmpy-notebooks/HEAD"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+
+<h2 id="run-the-notebooks">Run the Notebooks</h2>
+
+<h3 id="state-machines-in-python---part-1">State Machines in Python - Part 1</h3>
+<ul>
+<li>Open the first notebook, stored in the file <strong>State Machines in Python - Part 1.ipynb</strong></li>
+<li>In this notebook you learn all the basics of state machines in STMPY.</li>
+</ul>
+
+<h3 id="state-machines-in-python---part-2">State Machines in Python - Part 2</h3>
 <ul>
 <li>Work through the content of the notebook <strong>State Machines in Python - Part 2.ipynb</strong></li>
+<li>You learn how we build very simple user interfaces in notebooks. We also use signals to send data from the user interface into the state machine.</li>
 </ul>
-<p>You learn how we build very simple user interfaces in notebooks. We also use signals to send data from the user interface into the state machine.</p>
-<h2 id="state-machines-in-python---part-3">State Machines in Python - Part 3</h2>
+<h3 id="state-machines-in-python---part-3">State Machines in Python - Part 3</h3>
 <ul>
 <li>Work through the content of the notebook <strong>State Machines in Python - Part 3.ipynb</strong></li>
+<li>You learn how you can also create states that have <strong>entry</strong> and <strong>exit</strong> actions.</li>
 </ul>
-<p>You learn how you can also create states that have <strong>entry</strong> and <strong>exit</strong> actions.</p>
 
-<h2 id="state-machines-in-python---part-4">State Machines in Python - Part 4</h2>
+<h3 id="state-machines-in-python---part-4">State Machines in Python - Part 4</h3>
 <ul>
 <li>Work through the content of the notebook <strong>State Machines in Python - Part 4.ipynb</strong></li>
+<li>You learn how to support decisions in state machines using <strong>compound transitions.</strong></li>
 </ul>
-<p>You learn how to support decisions in state machines using <strong>compound transitions.</strong></p>
 
     </section>
 </div>

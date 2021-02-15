@@ -51,7 +51,9 @@ This should guide the technical development, and contribute to achieve the visio
   * See Compendium, Vision and Scope Document, p.577, 1.6
 
 
-This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session. **Write down any questions you have for the session on Friday.** 
+This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session. 
+You will most likely have question about this document. [Submit them in this form](https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMFg3OFQzWTdBQ0RTWUUxNUpNMzhFSVVCUi4u). We will collect these questions, group similar ones and then answer them. 
+
 Based on the coarse idea of the system you will describe a set of use cases in the following. 
 
 :delivery: You don't need to deliver this document this week, as it will be part of the delivery for the semester project. Create a folder in your own Team channel where you store all semester project related documents. You can also create a private team for that, where only you can access the documents. 

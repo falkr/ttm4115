@@ -154,3 +154,77 @@ caption: "Example use cases on their respective levels for a toilet paper manage
 * Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
 * Copy the answers into a document that you maintain on your own.
 * Add any additional observations to your reflection diary.
+
+
+
+
+# Questions and Answers
+
+
+### Risks
+
+The Vision-and-Scope document lists _business_ risks, which may be difficult for us to come up with. (These would be related to the operation and for instance financial aspects of the system.) Instead, think about the risks that can affect your specific situation of being able to delivering a the semester project with high quality.
+
+**For the risks, are you looking for the risks for planning the system, for the production of the system or our teams risks?**
+
+* All of the above. Whatever can affect the development of the system.
+
+**How many risks should be included? There are plenty of different risks, both regarding development and once in production.**
+
+* Focus on the most important ones that affect your development the most. 
+
+
+### Objectives
+
+**How business-oriented should the objectives be?**
+
+* The should concern the domain of the users and related to what they can get out of the system, so they are oriented towards their "business". (For some systems the term "business" is not a good one.)
+
+
+**Regarding business objectives: are we supposed to have numbers and percentages in our goals, or do we use more of a qualitative approach?**
+
+* The objectives should be specific. In some cases, we can measure some metrics and then state some expected improvements. In other cases, it is more natural to describe qualitative improvements.
+
+
+**How specific should the objectives be? Should we just use our imagination, or find some possible source?**
+
+* See the answer above. Making the objectives specific will help you to design functionality that implement the objectives. Therefore it may also be a good idea to target specific domains, so that the objectives can be more specific.
+
+
+**We have a question about the field objectives. Can we make assumptions on how the workplace is today, if we want to come up with some measurable values for improvement?**
+
+Similar question:
+
+**How big assumptions can we make? Concerning background: can we assume there are problems with the prior system and that we have solutions for this?**
+
+And yet another similar one:
+
+**Do we need to consider already existing solutions? Compare whether our solution is better?**
+
+* Make assumptions that the users have another way of communicating and that this system is intended to make their communication better.
+
+
+### Stakeholders
+
+**Are developers stakeholders?**
+
+* No, developers are not stakeholders. Stakeholders are owners of the systems, the ones operating it, the different user groups and so on.
+
+
+### Scope and Functions
+
+**Is encryption/security something we should think about in this project?**
+
+* For the system, security is of course a main issue. We need for instance to protect the confidentiality of the messages, maintain availability and protect the system from other misuse.
+Implementing the security correctly is a challenging task, and goes easily beyond what you can manage during this semester. For this reason, you can decide if you want to take security issues into account at all. 
+
+
+**Is there a specific way to determine the right person to talk to when speaking into the walkie-talkie? Does one say the name to send the message to? Or can we decide?**
+
+* Selecting a person hands-free by telling their name is one solution, which you can also mimic with a user interface that lets you select that name (instead of implementing the speech recognition). 
+But you can decide on your own, maybe you have a good idea how to solve this.
+
+
+**How much do we have to realize in reality? What should we implement?**
+
+* You must implement a selected subset of the functions of the system, preferably so that you can make a good and interesting demo. Some features are more interesting for the coordination and interactions in the system, while others (like for instance a database with user names) may be less interesting and can be provided by a simulated component (like a hardcoded lookup table used instead of a data base.)

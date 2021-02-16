@@ -122,21 +122,25 @@ Your task is to assign these use cases to the level where they fit best. The exe
 
 Turn your attention now to your semester project. 
 
-For your project delivery, you should focus on **three** use cases **at the sea-level**. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail, but may be valuable when implemeting the system. 
+For your project delivery, you should focus on **three** use cases **at the sea-level**. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail, but may be valuable when implementing the system. 
 
 * Make a copy of the [use case level document](https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing), and start filling it with some use cases for your system.
 * Be critical so that you capture the most important three use cases at the sea-level of your system. 
   * Look at higher-level ones, how they can be decomposed into sea-level use cases.
   * Look at lower-level ones to see if they can be aggregates into sea-level ones.
   * Ignore clam-level use cases.
-* Store a screenshot of your results for your T1 delivery.
+* In case you struggle to condense your plans into a single such overview, consider to create one or two alternatives. 
+* Also, "three use cases at the sea-level" is just meant as a guide.
 
-As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems. My focus is at the sea-level, where I added two and think about a third one. I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases. 
+As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems that were popular when students could choose their own systems. The focus is at the sea-level, where I added two use cases (a third one is yet unspecified). I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases. 
 
 ---
 type: figure
 source: figures/use-cases/toilet-paper.png
+caption: "Example use cases on their respective levels for a toilet paper management system."
 ---
+
+:delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)**
 
 
 # Team Reflection for This Unit 

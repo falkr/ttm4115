@@ -2,6 +2,11 @@
 status: draft
 ---
 
+
+https://imgs.xkcd.com/comics/python_environment.png
+
+
+
 # Python
 
 # For Mac
@@ -16,3 +21,17 @@ For Mac, you will need to install PiP. This can be done with the following comma
 
     sudo easy_install pip
 
+
+
+
+
+# Troubleshooting
+
+
+
+Find out which Python interpreter your notebook is using, create a cell with the following code and run it:
+
+```
+import sys
+sys.executable
+```

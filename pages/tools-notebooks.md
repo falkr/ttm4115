@@ -1,11 +1,12 @@
 # Jupyter Notebooks
 
+Jupyter Notebooks lets you execute Python interactively in your browser by running snippets of code in cells.
+The newer Jupyter Lab has more functionality as you can have several notebooks opened in the same browser tab.
 
-## Install JupyterLab
+
+## Install Jupyter Lab
 
 Follow the instructions on this page to [install Jupyter](https://jupyter.org/install).
-
-* I recommend the **installation via pip**, since it usually gives you better control over your Python interpreter.
 
 
 ## Running Notebooks
@@ -27,15 +28,5 @@ If you don't manage to install Jupyter notebooks and run them, you can also try 
 
 
 
-# Troubleshooting
-
-
-
-Find out which Python interpreter your notebook is using, create a cell with the following code and run it:
-
-```
-import sys
-sys.executable
-```
 
 

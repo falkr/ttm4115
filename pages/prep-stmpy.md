@@ -25,7 +25,8 @@ Just look at this:
 
 ---
 type: figure
-source: figures/statemachines/threads.pdf
+source: figures/statemachines/threads.png
+caption: "Concurrent behavior starts simple and gets quickly so complex that even the best developers give up when using the wrong approach."
 ---
 
 

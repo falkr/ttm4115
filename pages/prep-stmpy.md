@@ -131,8 +131,9 @@ python3 -m pip install ipywidgets
 jupyter nbextension enable --py widgetsnbextension
 ```
 
-* Visit the Github repository [https://github.com/falkr/stmpy-notebooks](https://github.com/falkr/stmpy-notebooks) and download it. 
-* You can either pull it via Git, or download directly the contents as a ZIP file, [using this link](https://github.com/falkr/stmpy-notebooks/archive/master.zip).
+* Visit the Github repository [https://github.com/falkr/stmpy-notebooks](https://github.com/falkr/stmpy-notebooks). 
+    * You can pull the repository via Git, or 
+    * Download directly the contents [as a ZIP file, using this link](https://github.com/falkr/stmpy-notebooks/archive/master.zip).
 
 
 ### Alternative 2: Use Binder
@@ -146,6 +147,8 @@ Use this method if you have troubles running the notebooks on your own computer.
 
 ## Run the Notebooks
 
+The following notebooks will introduce you to STMPY step by step. 
+At this time, you don't have to program anything on your own, just execute the cells and observe what's happening. So make sure you are not rushing through the cells too fast.
 
 ### State Machines in Python - Part 1
 

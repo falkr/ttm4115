@@ -201,7 +201,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 </p></aside>
 </div>
 <ul>
-<li><p>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</p></li>
+<li>A state machine diagram is implemented by an instance of Python class <strong>Machine</strong> (in green). It takes care of the sequence in which transitions are executed, which states there are, and which Python methods are called by the actions in the state machine.</li>
 <li><p>A driver (in blue) is executing several machines. <strong>One driver keeps track of several machines.</strong> It has <strong>one event queue</strong> that collects all the events (signals and timer expirations) for its state machines.</p></li>
 <li><p>One driver also has a single while loop, running in a single thread or process. From this while loop, a driver executes all the state machines assigned to it, one at a time.</p></li>
 <li><p>A driver also manages all timers for all of its state machines.</p></li>
@@ -223,16 +223,19 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 <li>Install the STMPY library:</li>
 </ul>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">python3</span> -m pip install --upgrade stmpy</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">python3</span> -m pip install --upgrade stmpy</a></code></pre></div>
 
 <p>We also need our own widgets in the notebooks, so run the following two commands:</p>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">python3</span> -m pip install ipywidgets</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">jupyter</span> nbextension enable --py widgetsnbextension</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">python3</span> -m pip install ipywidgets</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="ex">jupyter</span> nbextension enable --py widgetsnbextension</a></code></pre></div>
 
 <ul>
-<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks">https://github.com/falkr/stmpy-notebooks</a> and download it.</li>
-<li>You can either pull it via Git, or download directly the contents as a ZIP file, <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">using this link</a>.</li>
+<li>Visit the Github repository <a href="https://github.com/falkr/stmpy-notebooks">https://github.com/falkr/stmpy-notebooks</a>.
+<ul>
+<li>You can pull the repository via Git, or</li>
+<li>Download directly the contents <a href="https://github.com/falkr/stmpy-notebooks/archive/master.zip">as a ZIP file, using this link</a>.</li>
+</ul></li>
 </ul>
 
 <h3 id="alternative-2-use-binder">Alternative 2: Use Binder</h3>
@@ -240,7 +243,7 @@ A programmer had a problem. He thought to himself, “I know, I'll solve it with
 <p><a href="https://mybinder.org/v2/gh/falkr/stmpy-notebooks/HEAD"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
 
 <h2 id="run-the-notebooks">Run the Notebooks</h2>
-
+<p>The following notebooks will introduce you to STMPY step by step. At this time, you don’t have to program anything on your own, just execute the cells and observe what’s happening. So make sure you are not rushing through the cells too fast.</p>
 <h3 id="state-machines-in-python---part-1">State Machines in Python - Part 1</h3>
 <ul>
 <li>Open the first notebook, stored in the file <strong>State Machines in Python - Part 1.ipynb</strong></li>

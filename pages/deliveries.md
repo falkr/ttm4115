@@ -9,8 +9,6 @@ class: table table-sm check
 ---
 
 
-
-
 # System Specification
 
 During the semester you will work on a system specification in your development teams. 
@@ -21,8 +19,6 @@ type: table
 file: tables/spec.mw
 class: table table-sm check
 ---
-
-
 
 
 # Format and Template 

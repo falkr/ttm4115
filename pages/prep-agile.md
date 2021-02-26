@@ -33,11 +33,7 @@ We start by analyzing the user requirements, and develop the use cases based on 
 * When making the sequence diagrams, you may also need to go back and reconsider use cases and requirements. 
 * You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code. 
 
-
-
-Have a look into the following presentation: (The details of the video are not part of the RAT.)
-
-
+Have a look into the following presentation: (The part about the Waterfall model starts at 8:45, and lasts a few minutes. The details of the video are not part of the RAT.)
 
 ---
 type: youtube

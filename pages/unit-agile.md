@@ -70,3 +70,11 @@ With some discussion you should be able to place all forces and strategies so th
 
 Copy a screenshot of the final puzzle into the document where you also made notes on the examples for each of the forces. Deliver on Teams in the folder for this unit, under file name `ttm4115-team-xx-agile-forces.docx`.
 
+
+### Team Reflection
+
+* As always, update your document about the team process and roles.
+
+### Individual Reflection 
+
+* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.

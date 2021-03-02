@@ -17,7 +17,7 @@ We will also study some of the details of specific protocols, in particular HTTP
 
 ### For the Semester Project
 
-
+Your semester project will require a high degree of communication between the components, and you should use HTTP and MQTT for that as introduced in the following.
 
 
 # Communication Protocols

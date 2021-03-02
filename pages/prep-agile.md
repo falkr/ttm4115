@@ -40,7 +40,7 @@ type: youtube
 video: NP9AIUT9nos
 start: 525
 caption: 
-  "Talk at a developer conference about the waterfall model and its problems. "
+  "Talk at a developer conference about the waterfall model and its problems."
 ---
 
 
@@ -72,7 +72,6 @@ As part of the preparation, you should read through the Scrum Guide:
 
 
 ## Optional Material
-
 
 The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I'll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!
 

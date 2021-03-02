@@ -33,7 +33,7 @@ It highlights what is new or special with the system.
 **Hints:**
 
 * Formulate the vision in complete sentences, not bullet points.
-* The vision should be ca. ¼th of a page.
+* The vision should be ca. a quarter of a page.
 
 ### 3. Objectives
 
@@ -58,10 +58,12 @@ Identify the main stakeholders in the system. Identify their values and interest
 
 All sections in the requirement part are evaluated together with the following criteria:
 
+---
 caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: files/rubrics/requirements.mw
 type: table
+---
 
 ## Use Case Part
 
@@ -77,10 +79,12 @@ Show at least three use cases at the sea level. Add relevant ones at the fish-le
 * **Hints:** Present a use case diagram that covers the major features of your system. Most likely, the use case diagram will fit on a single A4 page in landscape orientation. This diagram can show more use cases than you will detail in the next task. **This diagram type is shown in the compendium, page 149.** 
 -->
 
+---
 caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: files/rubrics/usecases-level.mw
 type: table
+---
 
 ## Architecture Part
 
@@ -94,8 +98,24 @@ Present a first version of a deployment diagram of your system. Identify the mai
 
 The deployment diagram is evaluated based on general criteria for diagrams.
 
+---
 caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: files/rubrics/deployment.mw
 type: table
+---
 
+# Feedback Document
+
+On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v1-team-xx.docx`.
+Create a copy, and fill it out for your own team:
+
+* Add team name and team members
+* Follow the instructions in the document
+    * For each rubric, evaluate which level you have achieved for each criteria. Comment where necessary.
+    * Add up to three questions at the end of the document where you ask about particular help.
+
+
+# Delivery
+
+Deliver both the system specification and the feedback document via Blackboard.

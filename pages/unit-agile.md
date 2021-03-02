@@ -4,11 +4,13 @@ No matter which development method you will use for a project, there is one very
 
 Remember the diagram from the preparation, that listed some development methods based on the amount of planning:
 
+---
 caption: '**The spectrum of development methods:** Aligned on an axis that goes from
   a waterfall model with lots of planning on the left towards pure hacking without
   planning to the right.'
 source: figures/agile-spectrum.png
 type: figure
+---
 
 Think of your own semester project: 
 
@@ -21,7 +23,7 @@ So how much *should* you plan?
 
 Before we continue, let's have a discussion on the challenges and benefits with planning:
 
-* Use 3 minutes and think individually about the tradeoff between planning ahead and making plan as you go ahead.
+* Use 3 minutes and think individually about the tradeoff between planning ahead and making plan as you go along.
 * Discuss your findings around the table. 
 * Write down concrete challenges you face in your particular project you have observed. What can you do to mitigate these problems.
 
@@ -29,10 +31,12 @@ Unfortunately, there is no simple answer. Instead, managing a development projec
 
 The figure below illustrates the forces (in red) that influence a development team, and the strategies (in blue) that can be applied to mitigate them:
 
+---
 caption: A development faces forces (in red), and should react with strategies (in
   blue).
 source: figures/agile-forces.png
 type: figure
+---
 
 The forces and strategies were identified by Waterman, Noble and Allan in their article _How much up Front? A Grounded Theory of Agile Architecture_. The following are the more detailed descriptions of the **forces** (paraphrased from the original article). 
 

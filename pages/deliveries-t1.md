@@ -4,9 +4,6 @@ This delivery is a partial Vision and Scope document that focuses on why the sys
 but without all detailed requirements listed. 
 This delivery shows already a part of the system solution, by illustrating it with a deployment diagram.
 
-
-
-
 # Content
 
 The delivery must contain the following sections:
@@ -24,7 +21,6 @@ Provide a brief description of the problem you want to solve. It should provide 
 * Focus on the problem and add as much background as necessary for the reader to understand the problem.
 * In this part you should not mention the system at all.
 
-
 ### 2. Vision	
 
 Provide a vision for the system to build.
@@ -39,7 +35,6 @@ It highlights what is new or special with the system.
 * Formulate the vision in complete sentences, not bullet points.
 * The vision should be ca. ¼th of a page.
 
-
 ### 3. Objectives
 
 State at least three objectives, but not much more than five. Objectives are goals that your system can achieve. They need to be specific, and they need to be verifiable. State the objective, and state how it can be verified.
@@ -50,7 +45,6 @@ Objectives do not yet explain how the system is implemented, but are oriented to
 * Describe the objectives, not the features of the system.
 * Show the objectives as a list.
 
-
 ### 4. Stakeholders
 
 Identify the main stakeholders in the system. Identify their values and interest. Present all in a table. 
@@ -60,22 +54,16 @@ Identify the main stakeholders in the system. Identify their values and interest
 * Expected length: half a page to a full page.
 * Stakeholders are humans or organizations.
 
-
 ### Criteria for the Requirements Part
 
 All sections in the requirement part are evaluated together with the following criteria:
 
----
-type: table
-file: files/rubrics/requirements.mw
+caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
----
+file: files/rubrics/requirements.mw
+type: table
 
 ## Use Case Part
-
-
-
 
 ### 5. Use Case Sea-Level Hierarchy
 
@@ -89,33 +77,25 @@ Show at least three use cases at the sea level. Add relevant ones at the fish-le
 * **Hints:** Present a use case diagram that covers the major features of your system. Most likely, the use case diagram will fit on a single A4 page in landscape orientation. This diagram can show more use cases than you will detail in the next task. **This diagram type is shown in the compendium, page 149.** 
 -->
 
-
-
+caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
+class: rubric
+file: files/rubrics/usecases-level.mw
+type: table
 
 ## Architecture Part
-
-
 
 ### 7. Deployment Diagram
 
 Present a first version of a deployment diagram of your system. Identify the main execution nodes of your system and how they are connected. Identify critical hardware components (even if you later chose to simulate them.) Identify communication protocols that you are already aware of, and identify execution environments.
 
-
 **Hints:** Most likely, the deployment diagram will fit on a single A4 page in landscape orientation.
-
 
 ### Criteria for the Deployment Diagram
 
-
 The deployment diagram is evaluated based on general criteria for diagrams.
 
-
----
-type: table
-file: files/rubrics/deployment.mw
+caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
----
-
-
+file: files/rubrics/deployment.mw
+type: table
 

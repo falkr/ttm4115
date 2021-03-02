@@ -1,20 +1,14 @@
-
-
 # Agile vs. Architecture
 
 No matter which development method you will use for a project, there is one very important questions, that all of them need to address: **How much should we plan ahead?**
 
 Remember the diagram from the preparation, that listed some development methods based on the amount of planning:
 
----
-type: figure
+caption: '**The spectrum of development methods:** Aligned on an axis that goes from
+  a waterfall model with lots of planning on the left towards pure hacking without
+  planning to the right.'
 source: figures/agile-spectrum.png
-caption:
-  "**The spectrum of development methods:**  
-  Aligned on an axis that goes from a waterfall model with lots of planning
-  on the left towards pure hacking without planning to the right."
----
-
+type: figure
 
 Think of your own semester project: 
 
@@ -22,7 +16,6 @@ Think of your own semester project:
 * On the other side, planning can also be hard. You don't know how something works out before you have done it. There are a lot of unknowns ahead, and sometimes you just need to try something out.
 
 So how much *should* you plan? 
-
 
 ## Discussion
 
@@ -32,20 +25,18 @@ Before we continue, let's have a discussion on the challenges and benefits with 
 * Discuss your findings around the table. 
 * Write down concrete challenges you face in your particular project you have observed. What can you do to mitigate these problems.
 
-
-
-
 Unfortunately, there is no simple answer. Instead, managing a development project means to constantly think about adequate planning. It means to review progress, routines and watch out for warning signs. What helps is to be aware of the different forces that are at work during development, forces that can either require to plan more or to plan less. 
 
 The figure below illustrates the forces (in red) that influence a development team, and the strategies (in blue) that can be applied to mitigate them:
 
----
-type: figure
+caption: A development faces forces (in red), and should react with strategies (in
+  blue).
 source: figures/agile-forces.png
-caption: A development faces forces (in red), and should react with strategies (in blue).
----
+type: figure
 
-The forces and strategies were identified by Waterman, Noble and Allan in their article _How much up Front? A Grounded Theory of Agile Architecture_. The following are the more detailed descriptions of the **forces** (paraphrased from the original article):
+The forces and strategies were identified by Waterman, Noble and Allan in their article _How much up Front? A Grounded Theory of Agile Architecture_. The following are the more detailed descriptions of the **forces** (paraphrased from the original article). 
+
+**Task:** Go through them, one by one. To understand them better, try to identify what they mean by naming examples from your specific semester project. Make notes. 
 
 * **F1 (REQUIREMENTS INSTABILITY)** refers to the effect that unstable requirements have on up-front planning. Being able to respond to changing requirements is one of the underlying values of the Agile Manifesto and is central to our conceptual definition of agility.
 * **F2 (TECHNICAL RISK)** describes the effect that exposure to potentially negative outcome has on a team’s up-front effort. Risk is caused by complex architecture. 
@@ -62,7 +53,6 @@ And here are the detailed **strategies**, which help to mitigate the challenges 
 * **S4 (BIG DESIGN UP-FRONT)** requires that the team acquires a full set of requirements and completes a full architecture design before development starts. There are no emergent design decisions, although the architecture may evolve during development. 
 * **S5 (USE FRAMEWORKS AND TEMPLATE ARCHITECTURES)** is the use of software frameworks, and template and reference architectures sourced from particular framework vendors for use with those frameworks. Frameworks … include default architectural patterns which constrain the systems to these patterns. S4 provides the benefit of standard solutions to standard problems, which means that software engineers do not need to make as many architectural decisions, and can greatly reduce the effort required to design a system and get it up and running. 
 
-
 ## Task
 
 Make a copy of the diagram below, and move the forces on the right side to the right place.
@@ -73,3 +63,6 @@ Make a copy of the diagram below, and move the forces on the right side to the r
 Here is also a [link to the diagram](https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing).
 
 With some discussion you should be able to place all forces and strategies so that the entire diagram makes sense. These are the considerations you have to do in a development project!
+
+Copy a screenshot of the final puzzle into the document where you also made notes on the examples for each of the forces. Deliver on Teams in the folder for this unit, under file name `ttm4115-team-xx-agile-forces.docx`.
+

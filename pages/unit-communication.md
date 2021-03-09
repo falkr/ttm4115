@@ -10,18 +10,19 @@ source: figures/interactions/mqtt-setup-1.svg
 
 The setup consists of at least three components:
 
-* The MQTT Broker: This is ideally your own MQTT broker, but can also be a public MQTT test broker. 
+* The MQTT Broker: This can be the MQTT broker for this course (`mqtt.item.ntnu.no`) or a broker running on your local machine.
 * MQTT.FX: This is a generic MQTT client that is suitable for debugging MQTT-based applications. You can connect to an MQTT broker and subscribe and publish to topics.
 * Jupyter Notebooks: We use MQTT client in notebooks to show you how to program in Python. The application in the notebooks act as MQTT clients.
+
+**Note:** When you work from home, you can work on your own MQTT broker too. However, other students not part of your home network may not be able to reach your MQTT broker. If you want to connect your applications and are in different networks (like in the last task) work with the central broker at NTNU, (`mqtt.item.ntnu.no`).
 
 
 ## Tips for This Unit
 
 * Document your progress and the result of all experiments in a document. 
-  * Deliver the document on Blackboard at the end. 
   * Include screenshots
 * The tasks don't require much engineering work this week, so you have enough time to care about the details and the setup.
-* Most tasks are related to running code, which can be difficult in teams of 6. 
+* Most tasks are related to running code, which can be difficult in teams. 
   * This requires special attention from the facilitator. 
   * Make sure everyone is on board. 
   * Distribute tasks, but make sure everyone covers all. 
@@ -34,9 +35,9 @@ The setup consists of at least three components:
 MQTT.FX is a desktop application that connects to an MQTT broker and that can publish and subscribe to arbitrary topics.
 This is a very tool useful during development.
 (If you wonder, the name _MQTT.FX_ just comes from the fact that it is implemented in Java FX, but you can forget about that.)
+Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTT.FX has a generic user interface, you can use MQTT.FX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
 Using MQTT.FX is really simple, but because we have now talked about brokers, clients, publishers and subscribers, you may loose track and wonder what this MQTT.FX does: Think of it as a debugger for MQTT, and you can use it like Wireshark. Once the system is done, you don't need MQTT.FX anymore.
 
-Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTT.FX has a generic user interface, you can use MQTT.FX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
 
 <a class="arrow" href="https://mqttfx.jensd.de">Download MQTT.FX</a> 
 
@@ -73,7 +74,7 @@ There are some public MQTT brokers to which anyone can connect.
 
 
 
-# Task: Running Your Own MQTT Broker
+# Task: Running Your Own MQTT Broker (Optional)
 
 You can always use such a public broker for testing, but on most cases it is better to have your own broker running. 
 Install the **Mosquitto MQTT Broker** on your laptop. This is an open-source MQTT broker that is relatively easy to install and run. 
@@ -95,15 +96,18 @@ Now we are going to combine what we learned about MQTT with Python.
 
 * Download the latest version of the repository with the [STMPY notebooks from Github](https://github.com/falkr/stmpy-notebooks).
 
-## MQTT Part 1 - Connect to Broker
+
+### MQTT Part 1 - Connect to Broker
 
 This notebook explains Paho, the Python client for MQTT and connects to a broker. 
 
-## MQTT Part 2 - Connect and Publish
+
+### MQTT Part 2 - Connect and Publish
 
 This notebook extends the MQTT client and also publishes messages, forwarding to another topic.
 
-## MQTT Part 3 - MQTT and STMPY
+
+### MQTT Part 3 - MQTT and STMPY
 
 This notebook shows you how to connect the MQTT client with state machines in STMPY.
 
@@ -133,22 +137,16 @@ Some hints for the delivery:
 - Prepare screenshots for your solution.
 - Rather build something simple that works than something large that doesn't.
 
-Document your achievement.
+Document your achievement in your document.
+
+:delivery: Put the document of your unit on Teams, into the folder for this week.
 
 
 
 
-# Checklist
+# Reflection
 
-### Blackboard
 
-- Deliver your document that shows progress and results. 
-
-### MS Teams
-
-- Ask for feedback in general
-- Report any errors with the provided solution
-- Discuss, with me or other teams
 
 ### Team Reflection for This Unit 
 

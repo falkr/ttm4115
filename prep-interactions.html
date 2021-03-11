@@ -139,7 +139,7 @@
     </section>
     <section class="content">
 <h1 id="interactions">Interactions</h1>
-<p>State machines are suitable to show the behavior of a single component at a time, and define its behavior in terms of states and transitions. We have also seen that state machines are used to define a protocol, as for instance TCP, by showing the behavior of each of the communication partners. Sequence diagrams, on the other hand, are used to specify the interactions between the components of a system. Interactions can happen through method-, function- or operation-calls, or via signals. Sequence diagrams specify therefor behavior by looking at the sequences of interactions <em>between</em> several components. These components can be within the same computer or far away from each other. Some of the components may not even be software.</p>
+<p>State machines are suitable to show the behavior of a single component at a time, and define its behavior in terms of states and transitions. We have also seen that state machines are used to define a protocol, as for instance TCP, by showing the behavior of each of the communication partners. Sequence diagrams, on the other hand, are used to specify the interactions between the components of a system. Interactions can happen through method-, function- or operation-calls, or via signals. Sequence diagrams specify therefore behavior by looking at the sequences of interactions <em>between</em> several components. These components can be within the same computer or far away from each other. Some of the components may not even be software.</p>
 
 <h2 id="learning-goals">Learning Goals</h2>
 
@@ -152,6 +152,7 @@
 <li>Find and resolve implied scenarios.</li>
 </ul>
 <h3 id="for-the-semester-project">For the Semester Project</h3>
+<p>You’ll need sequence diagrams to develop the interactions between the components.</p>
 </div>
     </section>
     <section class="content">
@@ -181,7 +182,7 @@
 <div class="figure">
 <img src="figures/interactions/home-system.png" width="100%"/>
 </div>
-<p>A lifeline requires at least a role name or a class name. The selector is optional. Note that the class name is always preceded by a colon (“:”). Usually, role names are in lowercase letters, and class names are written in CamelCase.</p>
+<p>A lifeline requires at least a role name or a class name. The selector is optional. Note that the class name is always preceded by a colon. (“:”). Usually, role names are in lowercase letters, and class names are written in CamelCase.</p>
 <h2 id="messages">Messages</h2>
 <p>The horizontal arrows are called <strong>messages</strong>. They represent either the transmission of a <strong>signal</strong>, or the <strong>call of an operation</strong>.</p>
 <ul>
@@ -278,13 +279,13 @@
     </section>
     <section class="content">
 <h1 id="event-orderings-and-semantics">Event Orderings and Semantics</h1>
-<p>Let’s have a closer look at the semantics of sequence diagrams, that is, what they mean in detail. We do this by looking at the detailed events that happen as part of an interaction. understanding in which order they are supposed to happen, means to understand what the interaction really means.</p>
+<p>Let’s have a closer look at the semantics of sequence diagrams, that is, what they mean in detail. We do this by looking at the detailed events that happen as part of an interaction. Understanding in which order they are supposed to happen, means to understand what the interaction really means.</p>
 <p>The passing of a message <strong>A</strong> consists of two events:</p>
 <ul>
 <li><p>The message is sent, written as <strong>!A</strong>.</p></li>
 <li><p>The message is received, written as <strong>?A</strong>.</p></li>
 </ul>
-<p><strong>Ordering Rule 1:</strong> Because our universe seems to act causally, <strong>a message must be sent before it can be received</strong>. For a message A, the only sequence of events that it possible is <span class="math inline">⟨!<em>A</em>, ?<em>A</em>⟩</span>.</p>
+<p><strong>Ordering Rule 1:</strong> Because our universe seems to act causally, <strong>a message must be sent before it can be received</strong>. For a message A, the only sequence of events that is possible is <span class="math inline">⟨!<em>A</em>, ?<em>A</em>⟩</span>.</p>
 <p><strong>Ordering Rule 2:</strong> A second ordering rule is that of lifelines: <strong>Events along the <em>same</em> lifeline are in a total order.</strong> Below, this means that lifeline Y receives signal A before it receives B, <span class="math inline">⟨?<em>A</em>, ?<em>B</em>⟩</span>.</p>
 
 <div class="figure">
@@ -298,7 +299,7 @@
 <aside name="figures/interactions/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
 </p></aside>
 </div>
-<p>For some, this non-ordering of events on different lifelines may not be intuitive at the first glance. The following illustration may help you to understand it: Imagine that the events along a lifeline are connected to it by rings. The rings can move up and down along the lifeline, and the message can get a different slope depending on the position on the rings. Rings attached to the same lifeline can not pass each other. Therefore, the diagrams below all look different, but imply the same ordering among the events, irrespective of their absolute position on the lifelines. What counts is that <span class="math inline"><em>A</em></span> is received before <span class="math inline"><em>B</em></span>, and this does not change in any of the diagrams.</p>
+<p>For some, this non-ordering of events on different lifelines may not be intuitive at the first glance. The following illustration may help you to understand it: Imagine that the events along a lifeline are connected to it by rings. The rings can move up and down along the lifeline, and the message can get a different slope depending on the position on the rings. Rings attached to the same lifeline cannot pass each other. Therefore, the diagrams below all look different, but imply the same ordering among the events, irrespective of their absolute position on the lifelines. What counts is that <span class="math inline"><em>A</em></span> is received before <span class="math inline"><em>B</em></span>, and this does not change in any of the diagrams.</p>
 
 <div class="figure">
 <img src="figures/interactions/ex-12.png" width="100%"/>
@@ -335,7 +336,7 @@
 <div class="figure">
 <img src="figures/interactions/ex-3.png" width="100%"/>
 </div>
-<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if the events within the co-region (<span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span>) can happen in any order?</p>
+<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible if the events within the co-region (<span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span>) can happen in any order?</p>
 <p><strong>Exercise:</strong> Is there a way to handle the situation also in another way? For instance, can you, just by adding a message (and without a co-region), reduce the number of traces so that there is only one possible trace left for diagram <em>Beta-C</em>?</p>
 
 <div class="figure">
@@ -387,7 +388,7 @@
 <div class="figure">
 <img src="figures/interactions/ex-9.png" width="100%"/>
 </div>
-<p>So what to do about this? If you only provide the sequence diagrams above, it is not clear how an implementation should respond in this situation, i.e., when an alarm is both confirmed and cancelled. In this case, you need to find out what the application should do. Depending on what kind of alarm it is, the stopping may overrule the confirmation, or vice-versa. The diagram <em>Confirm and Stop</em> shows one way to address the mixed initiative, using a simple comment.</p>
+<p>So what to do about this? If you only provide the sequence diagrams above, it is not clear how an implementation should respond in this situation, i.e., when an alarm is both confirmed and canceled. In this case, you need to find out what the application should do. Depending on what kind of alarm it is, the stopping may overrule the confirmation, or vice versa. The diagram <em>Confirm and Stop</em> shows one way to address the mixed initiative, using a simple comment.</p>
 
 <div class="figure">
 <img src="figures/interactions/ex-91.png" width="100%"/>

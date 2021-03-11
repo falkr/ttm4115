@@ -7,7 +7,7 @@ for instance TCP, by showing the behavior of each of the communication
 partners. Sequence diagrams, on the other hand, are used to specify the
 interactions between the components of a system. Interactions can happen
 through method-, function- or operation-calls, or via signals. Sequence
-diagrams specify therefor behavior by looking at the sequences of
+diagrams specify therefore behavior by looking at the sequences of
 interactions *between* several components. These components can be
 within the same computer or far away from each other. Some of the
 components may not even be software.
@@ -25,7 +25,7 @@ components may not even be software.
 
 ### For the Semester Project
 
-
+You'll need sequence diagrams to develop the interactions between the components.
 
 # Intuition on Sequence Diagrams
 
@@ -358,7 +358,7 @@ the signal *inform* must be received within two hours.
 
 Let's have a closer look at the semantics of sequence diagrams, that is,
 what they mean in detail. We do this by looking at the detailed events
-that happen as part of an interaction. understanding in which order they
+that happen as part of an interaction. Understanding in which order they
 are supposed to happen, means to understand what the interaction really
 means.
 
@@ -370,7 +370,7 @@ The passing of a message **A** consists of two events:
 
 **Ordering Rule 1:** Because our universe seems to act causally, **a
 message must be sent before it can be received**. For a message A, the
-only sequence of events that it possible is $\langle !A, ?A \rangle$.
+only sequence of events that is possible is $\langle !A, ?A \rangle$.
 
 **Ordering Rule 2:** A second ordering rule is that of lifelines:
 **Events along the *same* lifeline are in a total order.** Below, this
@@ -405,7 +405,7 @@ intuitive at the first glance. The following illustration may help you
 to understand it: Imagine that the events along a lifeline are connected
 to it by rings. The rings can move up and down along the lifeline, and
 the message can get a different slope depending on the position on the
-rings. Rings attached to the same lifeline can not pass each other.
+rings. Rings attached to the same lifeline cannot pass each other.
 Therefore, the diagrams below all look different, but imply the same
 ordering among the events, irrespective of their absolute position on
 the lifelines. What counts is that $A$ is received before $B$, and this
@@ -437,8 +437,6 @@ traces, we may start by writing down all possible different combinations
 we can get from these events. With 4 events, we end up with 24 different
 traces:
 
-
-
 $\langle !A,?A,!B,?B \rangle,
 \langle !A,?A,?B,!B \rangle,
 \langle !A,!B,?A,?B \rangle,
@@ -467,7 +465,6 @@ $\langle ?B,!A,?A,!B \rangle,
 \langle ?B,!B,!A,?A \rangle,
 \langle ?B,!B,?A,!A \rangle$
 
-
 Because of the ordering rules from above, not all of these traces are
 possible. The sequence diagram *Alpha* from above relates the four
 events with each other.
@@ -484,7 +481,6 @@ events with each other.
 
 **Exercise:** Can you find the traces that violate any of the two
 ordering rules, and strike them out?
-
 
 ## Co-Regions
 
@@ -661,10 +657,10 @@ source: figures/interactions/ex-9.png
 
 So what to do about this? If you only provide the sequence diagrams
 above, it is not clear how an implementation should respond in this
-situation, i.e., when an alarm is both confirmed and cancelled. In this
+situation, i.e., when an alarm is both confirmed and canceled. In this
 case, you need to find out what the application should do. Depending on
 what kind of alarm it is, the stopping may overrule the confirmation, or
-vice-versa. The diagram *Confirm and Stop* shows one way to address the
+vice versa. The diagram *Confirm and Stop* shows one way to address the
 mixed initiative, using a simple comment.
 
 ---
@@ -700,3 +696,4 @@ interactions changes your view on the system, leads to good design
 choices and prevents errors in the first place. A single relevant
 sequence diagram, sketched on a paper that uncovers problems in your
 system design early, can save millions in whatever currency.
+

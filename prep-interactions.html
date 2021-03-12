@@ -182,7 +182,7 @@
 <div class="figure">
 <img src="figures/interactions/home-system.png" width="100%"/>
 </div>
-<p>A lifeline requires at least a role name or a class name. The selector is optional. Note that the class name is always preceded by a colon. (“:”). Usually, role names are in lowercase letters, and class names are written in CamelCase.</p>
+<p>A lifeline requires at least a role name or a class name. The selector is optional. Note that the class name is always preceded by a colon (“:”). Usually, role names are in lowercase letters, and class names are written in CamelCase.</p>
 <h2 id="messages">Messages</h2>
 <p>The horizontal arrows are called <strong>messages</strong>. They represent either the transmission of a <strong>signal</strong>, or the <strong>call of an operation</strong>.</p>
 <ul>
@@ -311,19 +311,16 @@
 <img src="figures/interactions/ex-1.png" width="100%"/>
 </div>
 <p>Intuitively, we already know one sequence in which these events can happen, that is, we know that <span class="math inline">⟨!<em>A</em>, ?<em>A</em>, !<em>B</em>, ?<em>B</em>⟩</span> is one valid trace. However, it is not the only possible trace. To find the other traces, we may start by writing down all possible different combinations we can get from these events. With 4 events, we end up with 24 different traces:</p>
-
 <p><span class="math inline">⟨!<em>A</em>, ?<em>A</em>, !<em>B</em>, ?<em>B</em>⟩, ⟨!<em>A</em>, ?<em>A</em>, ?<em>B</em>, !<em>B</em>⟩, ⟨!<em>A</em>, !<em>B</em>, ?<em>A</em>, ?<em>B</em>⟩, ⟨!<em>A</em>, !<em>B</em>, ?<em>B</em>, ?<em>A</em>⟩, ⟨!<em>A</em>, ?<em>B</em>, ?<em>A</em>, !<em>B</em>⟩, ⟨!<em>A</em>, ?<em>B</em>, !<em>B</em>, ?<em>A</em>⟩</span></p>
 <p><span class="math inline">⟨?<em>A</em>, !<em>A</em>, !<em>B</em>, ?<em>B</em>⟩, ⟨?<em>A</em>, !<em>A</em>, ?<em>B</em>, !<em>B</em>⟩, ⟨?<em>A</em>, !<em>B</em>, !<em>A</em>, ?<em>B</em>⟩, ⟨?<em>A</em>, !<em>B</em>, ?<em>B</em>, !<em>A</em>⟩, ⟨?<em>A</em>, ?<em>B</em>, !<em>A</em>, !<em>B</em>⟩, ⟨?<em>A</em>, ?<em>B</em>, !<em>B</em>, !<em>A</em>⟩</span></p>
 <p><span class="math inline">⟨!<em>B</em>, !<em>A</em>, ?<em>A</em>, ?<em>B</em>⟩, ⟨!<em>B</em>, !<em>A</em>, ?<em>B</em>, ?<em>A</em>⟩, ⟨!<em>B</em>, ?<em>A</em>, !<em>A</em>, ?<em>B</em>⟩, ⟨!<em>B</em>, ?<em>A</em>, ?<em>B</em>, !<em>A</em>⟩, ⟨!<em>B</em>, ?<em>B</em>, !<em>A</em>, ?<em>A</em>⟩, ⟨!<em>B</em>, ?<em>B</em>, ?<em>A</em>, !<em>A</em>⟩</span></p>
 <p><span class="math inline">⟨?<em>B</em>, !<em>A</em>, ?<em>A</em>, !<em>B</em>⟩, ⟨?<em>B</em>, !<em>A</em>, !<em>B</em>, ?<em>A</em>⟩, ⟨?<em>B</em>, ?<em>A</em>, !<em>A</em>, !<em>B</em>⟩, ⟨?<em>B</em>, ?<em>A</em>, !<em>B</em>, !<em>A</em>⟩, ⟨?<em>B</em>, !<em>B</em>, !<em>A</em>, ?<em>A</em>⟩, ⟨?<em>B</em>, !<em>B</em>, ?<em>A</em>, !<em>A</em>⟩</span></p>
-
 <p>Because of the ordering rules from above, not all of these traces are possible. The sequence diagram <em>Alpha</em> from above relates the four events with each other.</p>
 <ul>
 <li><p>Because of message ordering, we know that only those traces are valid ones, in which a signal is sent before it is received. This means, <span class="math inline">!<em>A</em></span> must happen before <span class="math inline">?<em>A</em></span> and <span class="math inline">!<em>B</em></span> must happen before <span class="math inline">?<em>B</em></span>.</p></li>
 <li><p>Because of lifeline ordering, we also know that those traces, in which events do not follow the order of the lifeline, are invalid. This means <span class="math inline">!<em>A</em></span> must happen before <span class="math inline">!<em>B</em></span>, and <span class="math inline">?<em>A</em></span> must happen before <span class="math inline">?<em>B</em></span>.</p></li>
 </ul>
 <p><strong>Exercise:</strong> Can you find the traces that violate any of the two ordering rules, and strike them out?</p>
-
 <h2 id="co-regions">Co-Regions</h2>
 <p>The diagram <em>Beta</em> below only covers the scenario that <span class="math inline"><em>A</em></span> is received by <span class="math inline"><em>Y</em></span> before <span class="math inline"><em>B</em></span>.</p>
 
@@ -336,7 +333,7 @@
 <div class="figure">
 <img src="figures/interactions/ex-3.png" width="100%"/>
 </div>
-<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible if the events within the co-region (<span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span>) can happen in any order?</p>
+<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if the events within the co-region (<span class="math inline">?<em>A</em></span> and <span class="math inline">?<em>B</em></span>) can happen in any order?</p>
 <p><strong>Exercise:</strong> Is there a way to handle the situation also in another way? For instance, can you, just by adding a message (and without a co-region), reduce the number of traces so that there is only one possible trace left for diagram <em>Beta-C</em>?</p>
 
 <div class="figure">

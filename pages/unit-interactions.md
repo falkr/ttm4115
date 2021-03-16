@@ -78,32 +78,25 @@ Your sequence diagrams contain a situation that is called **mixed initiative**.
 * Of course, don't look at it before you created your own solution.
 * Add a new section *Reflection* to your document and compare your solution.
   * Is there any significant difference?
-* Deliver your final document on Blackboard.
+* Deliver your final document on Teams
 
 
 
-# Feedback on T1
+# Feedback on Specification Version 1
 
-Via MS Teams you will receive all feedback documents from the others to your delivery T1. 
-Work through all of them and update your original T1.
+Via MS Teams you will receive all feedback documents from the others to your first version of the system specification. 
+Read through all of them and conclude on which feedback to react on in the next version.
+A suggestion for the working style:
 
-* You will resubmit most of T1 in T3.
-* You may adjust it to follow any changes in you project.
+* Each one of you opens one of the feedback documents
+* You go through them item by item, comparing the feedback
+* One of you collects your conclusion or todos to each element in a new working document
 
 
 
-# Checklist
+# Reflection
 
- - 
-
-### MS Teams
-
-- Deliver the reflection over your solutions in comparison to the ones provided.
-- Ask for feedback in general
-- Report any errors with the provided solution
-- Discuss, with me or other teams
-
-### Team Reflection for This Unit 
+### Team Reflection
 
 * Add another section to the team reflection document, just like every week. 
 

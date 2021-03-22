@@ -55,7 +55,7 @@ source: figures/interactions/airport-help.png
 ---
 
 
-## Task 2: Turnstile - Controller
+## Task 3: Turnstile - Controller
 
 We now want to consider the interaction between the turnstile and the controller.
 

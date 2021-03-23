@@ -10,7 +10,7 @@ In this delivery you should reveal some details on the design of your system. Th
 
 Describe 3 use cases for the major features of your system. Choose use cases at the sea-level. Follow the table format proposed in the book and shown on page 150.
 
-**Hints:** Most likely, each of the use cases will fit on a single page in portrait orientation. (So use about 3 pages in total.)
+**Hints:** Most likely, each of the use cases will fit on a single page.
 
 
 ### Criteria for the Use Case Part
@@ -34,16 +34,11 @@ Please include a list of all GUI components you intend to create for your system
 -->
 
 
-# Plans for Prototype Implementation
-
-Depending on some practicalities we need to decide how to build prototypes of the implementation. (This section will be updated.)
-
-
-## Updated Deployment Diagram
+# Updated Deployment Diagram
 
 Create an updated deployment diagram of the system. 
 
-* Take into account what you have learned about components, state machines and about communication.
+* Take into account what you have learned about components, state machines and communication.
 * Include the prototype components outlined above.
 * Identify components that include state machines.
 
@@ -64,7 +59,8 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 * Syntax for [deployment diagrams](prep-modeling.html)
 * Level of detail: Details that are included matter, and are not accidental.
 
-## Sequence Diagrams
+
+# Sequence Diagrams
 
 Prepare sequence diagrams for the main use cases of the system. As you have learned in the team activities, it is hard to cover all details on sequence diagrams, and they may lose their value once we make them too complicated or too comprehensive. Therefore, cover the most important scenarios in an effective way. Use fragments (alt, opt,...) where they make sense, but also consider to just cover the same use case with several sequence diagrams that show different scenarios, dependent for instance on important alternatives and exceptions.
 
@@ -86,7 +82,7 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 * If you don't find any implied scenarios, make sure your system is suitable for the course and not overly simplifying reality. If despite this there are no implied scenarios, add a comment.
 
 
-## State Machines
+# State Machines
 
 Create state machines for selected components in the system.
 
@@ -118,19 +114,17 @@ class: rubric
 caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
-# Reflection and Request for Feedback
+# Feedback Document and Delivery
 
-In the last part of the delivery, please add a section in which you reflect about how well you have answered the individual criteria from above. 
+On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v1-team-xx.docx`.
+Create a copy, and fill it out for your own team:
 
-## Your Own Assessment
-
-* For each ot the criteria tables, mark for the different criteria rows which level you think you have achieved. 
-* Below the table, add a short comment on your choice.
-* Comment on what you think could further be improved.
-* Comment on what you think is solved nicely.
-* Comment also if you think that the criteria are not covering a performance well.
+* Add team name and team members
+* Follow the instructions in the document
+    * For each rubric, evaluate which level you have achieved for each criteria. Comment where necessary.
+    * Add up to three questions at the end of the document where you ask about particular help.
 
 
-## Request for Feedback
+# Delivery
 
-For each of the criteria tables, tell us what you wonder about most, that means, ask explicitly for the points you are most unsure, or items you want to have tips for.
+Deliver both the system specification and the feedback document via Blackboard.

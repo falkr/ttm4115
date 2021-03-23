@@ -105,7 +105,7 @@ file: files/rubrics/deployment.mw
 type: table
 ---
 
-# Feedback Document
+# Feedback Document and Delivery
 
 On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v1-team-xx.docx`.
 Create a copy, and fill it out for your own team:

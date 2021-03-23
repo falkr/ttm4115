@@ -39,8 +39,13 @@ Please include a list of all GUI components you intend to create for your system
 Create an updated deployment diagram of the system. 
 
 * Take into account what you have learned about components, state machines and communication.
-* Include the prototype components outlined above.
-* Identify components that include state machines.
+* Identify components that include state machines, for instance by using a stereotype &laquo;stm&raquo;.
+
+To demo your system, you will use some GUI elements for user input and control. 
+If you want, and already have a clearer picture about them, you can already represent them in the deployment diagram as well.
+
+
+
 
 **Hints:**
 
@@ -116,7 +121,7 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 
 # Feedback Document and Delivery
 
-On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v1-team-xx.docx`.
+On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v2-team-xx.docx`.
 Create a copy, and fill it out for your own team:
 
 * Add team name and team members
@@ -126,5 +131,7 @@ Create a copy, and fill it out for your own team:
 
 
 # Delivery
+
+*For this week, no individual reflection is necessary, we do it when we have the weekly activity on components.*
 
 Deliver both the system specification and the feedback document via Blackboard.

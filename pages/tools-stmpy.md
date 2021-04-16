@@ -15,4 +15,4 @@ Useful links:
 
 Have a look at the [STMPY Components repository](https://github.com/falkr/stmpy-components). It provides examples how to make a component that contains state machines and that communicates via MQTT and JSON. 
 
-* [Timer Manager Source Code](https://falkr.github.io/stmpy-components/TimerManager.m.html)
+* [Timer Manager Source Code](https://falkr.github.io/stmpy-components/TimerManager.html)

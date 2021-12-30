@@ -7,6 +7,7 @@ We use a lot of tools, but they all have their specific purpose.
 type: table
 file: tables/tools.mw
 class: table table-sm check
+format: html
 ---
 
 

@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -146,18 +226,25 @@
 <li>Filename: <strong>ttm4115-2018-XX-team-YY.pdf</strong>, where XX is the delivery, like <code>T1</code> and YY is your team number, for instance 01 or 13. Consistent file name makes it much easier for us to process all deliveries!</li>
 <li>Diagrams can be included in landscape format, but must be readable from the right. (That means, they must be readable when the page is turned 90 degrees clockwise.</li>
 </ul>
-
 <p>Rubric:</p>
 <p>Styles: use consistent document styles. Fonts, font sizes, margins.</p>
 <p>Use template for front page</p>
 <p>user headers and footers</p>
 <p>page x/total, team, year, course, version</p>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

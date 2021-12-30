@@ -28,6 +28,45 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+</style>
 </head>
 <body id="top">
 
@@ -139,7 +178,6 @@
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-
 <div class="rat"><p>Ideally, we want to have a system…</p>
 <ol type="1">
 <li>With high modularity, high cohesion and high coupling.</li>
@@ -147,8 +185,7 @@
 <li>With high modularity, low cohesion and low coupling.</li>
 <li>With high modularity, high cohesion and low coupling.</li>
 </ol>
-<h2 id="question-2">Question 2</h2>
-</div>
+<h2 id="question-2">Question 2</h2></div>
 <div class="rat"><p>What is the difference between component cohesion and component coupling?</p>
 <ol type="1">
 <li>Coupling looks inside a component, cohesion at the entire system.</li>
@@ -156,8 +193,7 @@
 <li>More coupling is better than more cohesion.</li>
 <li>Cohesion is a system property, coupling looks at pairs of components.</li>
 </ol>
-<h2 id="question-3">Question 3</h2>
-</div>
+<h2 id="question-3">Question 3</h2></div>
 <div class="rat"><p>How do components map to use cases?</p>
 <ol type="1">
 <li>One use case, in general, invokes several components.</li>
@@ -165,8 +201,7 @@
 <li>Ideally, a component should focus on a single use case only.</li>
 <li>Several use cases are needed to describe a single component.</li>
 </ol>
-<h2 id="question-4">Question 4</h2>
-</div>
+<h2 id="question-4">Question 4</h2></div>
 <div class="rat"><p>Which statement about objects and components is true?</p>
 <ol type="1">
 <li>A component can be programmed using objects and classes, but is not the same.</li>
@@ -174,8 +209,7 @@
 <li>Components have nothing to do with classes or objects.</li>
 <li>Most object-oriented languages have special constructs for components built in.</li>
 </ol>
-<h2 id="question-5">Question 5</h2>
-</div>
+<h2 id="question-5">Question 5</h2></div>
 <div class="rat"><p>Services are to components…</p>
 <ol type="1">
 <li>What objects are to classes.</li>
@@ -183,8 +217,7 @@
 <li>What classes are to interfaces.</li>
 <li>What classes are to objects.</li>
 </ol>
-<h2 id="question-6">Question 6</h2>
-</div>
+<h2 id="question-6">Question 6</h2></div>
 <div class="rat"><p>When we say that components offer a unit of abstraction, we mean:</p>
 <ol type="1">
 <li>To structure functions into suitable components.</li>
@@ -192,8 +225,7 @@
 <li>To outsource the programming for a specific component.</li>
 <li>To structure the system into parts that can be understood and analyzed separately from each other.</li>
 </ol>
-<h2 id="question-7">Question 7</h2>
-</div>
+<h2 id="question-7">Question 7</h2></div>
 <div class="rat"><p>Which definition fits best for “component-based software engineering” ?</p>
 <ol type="1">
 <li>It is an approach for structuring functions into components and defining the interfaces between them.</li>
@@ -201,16 +233,14 @@
 <li>It is an approach to define, implement and compose loosely coupled components into systems.</li>
 <li>It is an approach for programming the components in a modular system</li>
 </ol>
-<h2 id="question-8">Question 8</h2>
-</div>
+<h2 id="question-8">Question 8</h2></div>
 <div class="rat"><p>Which three claims about modularity are CORRECT?</p>
 <ol type="1">
 <li>2), 3) and 4)</li>
 <li>2), 4) and 5)</li>
 <li>1), 2) and 3)</li>
 <li>1), 3) and 5)</li>
-</ol>
-</div>
+</ol></div>
 <ol type="1">
 <li>By structuring functions into suitable components, it is easier to understand the system.</li>
 <li>Components help to structure the system into parts that can be understood and analyzed separately from each other.</li>
@@ -218,12 +248,20 @@
 <li>Functions structured into components are easy to reuse.</li>
 <li>When making changes to system, a component can be analyzed in isoloation.</li>
 </ol>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

@@ -1,14 +1,67 @@
-{| class="wikitable"
-!colspan="6"|Shopping List
+{|
+! Time
+! Mon
+! Tue
+! Wed
+! Thu
+! Fri
 |-
-|rowspan="2"|Bread & Butter
-|Pie
-|Buns
-|Danish
-|colspan="2"|Croissant
+| 08:15
+| 
+| 
+| 
+|
+|
 |-
-|Cheese
-|colspan="2"|Ice cream
-|Butter
-|Yogurt
+| 09:15
+|
+|
+|
+|
+|
+|-
+| 10:15
+| rowspan="2" | RAT + Summary
+|
+|
+|
+|
+|-
+| 11:15
+|
+|
+|
+|
+|-
+| 12:15
+|
+|
+|
+|
+| rowspan=4 | Teamwork
+|-
+| 13:15
+|
+|
+|
+|
+|-
+| 14:15
+|
+|
+|
+|
+|-
+| 15:15
+|
+|
+|
+|
+|-
+| 16:15
+|
+|
+|
+|
+|
 |}

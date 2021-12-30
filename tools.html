@@ -28,6 +28,210 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body id="top">
 
@@ -141,10 +345,8 @@
     <section class="content">
 <h1 id="tools">Tools</h1>
 <p>We use a lot of tools, but they all have their specific purpose.</p>
-
-<table class="table table-sm check">
-<thead>
-<tr class="header">
+<table class="check table table-sm">
+<tr>
 <th></th>
 <th><p>Blackboard</p></th>
 <th><p>Email</p></th>
@@ -153,10 +355,8 @@
 <th><p>Teams</p></th>
 <th><p>Website</p></th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Announcements</p></td>
+<tr>
+<th><p>Announcements</p></th>
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle-half"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -164,8 +364,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="even">
-<td><p>Learning Material</p></td>
+<tr>
+<th><p>Learning Material</p></th>
 <td><p><i class="bi-circle-half"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -173,8 +373,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle-fill"></i></p></td>
 </tr>
-<tr class="odd">
-<td><p>Private Questions</p></td>
+<tr>
+<th><p>Private Questions</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -182,8 +382,8 @@
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="even">
-<td><p>Public Questions</p></td>
+<tr>
+<th><p>Public Questions</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle-fill"></i></p></td>
@@ -191,8 +391,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="odd">
-<td><p>Deliveries</p></td>
+<tr>
+<th><p>Deliveries</p></th>
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -200,8 +400,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="even">
-<td><p>Individual RATs</p></td>
+<tr>
+<th><p>Individual RATs</p></th>
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -209,8 +409,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="odd">
-<td><p>Team RATs</p></td>
+<tr>
+<th><p>Team RATs</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -218,8 +418,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="even">
-<td><p>Online Lectures</p></td>
+<tr>
+<th><p>Online Lectures</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -227,8 +427,8 @@
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="odd">
-<td><p>Contact with Teaching Assistants</p></td>
+<tr>
+<th><p>Contact with Teaching Assistants</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle-fill"></i></p></td>
@@ -236,8 +436,8 @@
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="even">
-<td><p>Contact among Students</p></td>
+<tr>
+<th><p>Contact among Students</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -245,8 +445,8 @@
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-<tr class="odd">
-<td><p>Document Collaboration</p></td>
+<tr>
+<th><p>Document Collaboration</p></th>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
@@ -254,9 +454,7 @@
 <td><p><i class="bi-circle-fill"></i></p></td>
 <td><p><i class="bi-circle"></i></p></td>
 </tr>
-</tbody>
 </table>
-
 <ul>
 <li>Announcements are always done via Blackboard and accessible there. They are also forwarded by email.</li>
 <li>Most learning material is available directly from this website, so you can access it anytime and anywhere without logging in. Some material may be distributed via Blackboard.</li>
@@ -265,18 +463,14 @@
 <li>For the team RATs and the online lectures, we use Zoom. The meeting details are available as announcement or note on Blackboard.</li>
 <li>Microsoft Teams we use for document sharing, collaboration within your teams and contact with the teaching assistants.</li>
 </ul>
-
 <h2 id="make-sure-you-are-on-blackboard">Make Sure You are on Blackboard</h2>
 <p>Most students are registered automatically on Blackboard, so that TTM4115 for 2021 comes up in your list of courses. If you are not registered, please send a mail to kraemer@ntnu.no.</p>
-
 <h2 id="zoom">Zoom</h2>
 <ul>
 <li><a href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/zoom+-+last+ned+og+installer">Install Zoom</a>.</li>
 <li>You can find the meeting ID and password for Zoom in the information section in Blackboard.</li>
 </ul>
-
-<span name="a4f960"></span><aside name="a4f960"><p><img width="50px" src="figures/msteams.jpg"/></p>
-</aside>
+<span name="a4f960"></span><aside name="a4f960"><p><img width="50px" src="figures/msteams.jpg"/></p></aside>
 <h2 id="microsoft-teams">Microsoft Teams</h2>
 <p>For many aspects of collaboration, we are going to use Microsoft Teams in this course. It has functions for chat as well as sharing and collaborating on files.</p>
 <ul>
@@ -286,12 +480,26 @@
 <li>Select <em>Join a team with a code</em></li>
 <li>You can find the team code in the information section in Blackboard.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

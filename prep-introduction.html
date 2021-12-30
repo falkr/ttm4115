@@ -28,6 +28,128 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -141,7 +263,6 @@
     <section class="content">
 <h1 id="introduction-and-course-setup">Introduction and Course Setup</h1>
 <p>In this week, we get started with teamwork, get an overview of the learning goals in this course, and introduce team-based learning.</p>
-
     </section>
     <section class="content">
 <h1 id="read-about-this-course">Read About This Course</h1>
@@ -153,11 +274,9 @@
 <li><a href="learning-reflection.html">Read about Reflection</a></li>
 </ul>
 <p>As a dry-run, we will do a RAT during the next class. This first one is about the course and does not yet count to the final grade.</p>
-
     </section>
     <section class="content">
-<span name="a4f960"></span><aside name="a4f960"><p><img width="50px" src="figures/msteams.jpg"/></p>
-</aside>
+<span name="a4f960"></span><aside name="a4f960"><p><img width="50px" src="figures/msteams.jpg"/></p></aside>
 <h1 id="install-software">Install Software</h1>
 <p>For many aspects of collaboration, we are going to use Microsoft Teams in this course. It has functions for chat as well as sharing and collaborating on files.</p>
 <ul>
@@ -165,7 +284,6 @@
 <li>Install it on your mobile devices (Android or iOS), too.</li>
 <li>You will receive an invitation link to the team <em>TTM4115 (2020)</em> later.</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="system-ideas">System Ideas</h1>
@@ -180,19 +298,27 @@
 </ul>
 <h3 id="three-own-ideas">Three Own Ideas</h3>
 <p><strong>Write down three ideas for systems.</strong> These do not have to be mature ideas or well-thought-out, since you will work on them in your teams. However, some raw material in form of initial ideas is important and valuable in that process.</p>
-
     </section>
     <section class="content">
 <h1 id="all-done">All done!</h1>
 <p>We meet on Monday Jan. 13th, 10:15 in <a href="http://bit.ly/2p6mAhe">EL-23</a>.</p>
-
 <p>In case you cannot come, please send a short mail to kraemer@ntnu.no. This is important for the teamwork.</p>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

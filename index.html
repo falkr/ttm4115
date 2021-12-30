@@ -28,6 +28,60 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body id="top">
 
@@ -140,55 +194,51 @@
     </section>
     <section class="content">
 <h1 id="design-of-communicating-systems">Design of Communicating Systems</h1>
-
 <h3 id="step-1-onboarding">Step 1: Onboarding</h3>
 <p>Please fill out the onboarding scheme so we can register some more information about you. We will use this for a faster startup and the creation of working teams.</p>
-
-<a class="ntnu-button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUNFE0UUpVTkZUT1g3UVhBS0FQOTRKUTJXNS4u">Onboarding Scheme</a>
+<a class="ntnu-button" href="https://forms.office.com/r/y39LwZtWeF">Onboarding Scheme</a>
 <h3 id="step-2-preparation">Step 2: Preparation</h3>
 <p>Read and work through the <a href="prep-setup.html">preparation material for setting up the course</a>.</p>
-
-<h3 id="step-3-first-class-meeting">Step 3: First Class Meeting</h3>
-<p>Our first class time will be on <strong>Friday, January 15th 2021</strong>, 13:15–14:00 via Zoom. You will find the login details on Blackboard and in the announcement.</p>
-
+<h3 id="step-3-first-class-time">Step 3: First Class Time</h3>
+<p>Our first class time will be on <strong>Friday, January 14th 2022</strong>, 12:15 via Zoom. You will find the login details on Blackboard and in the announcement.</p>
     </section>
     <section class="content">
 <h1 id="schedule">Schedule</h1>
 <p>Each week, we follow the same schedule:</p>
 <ul>
 <li>Individual preparation before class time.</li>
-<li><strong>Monday 09:15-10:00</strong> Weekly Tests (digital, Zoom)</li>
-<li><strong>Tuesday 08:15-12:00</strong> Teamwork on week activities (digital, start in Zoom)</li>
-<li><strong>Friday 13:15-14:00</strong> Summary of the Unit (digital, Zoom)</li>
+<li><strong>Monday 10:15-12:00</strong> Weekly Tests (digital, Zoom) and summary from the week before</li>
+<li><strong>Friday 12:15-16:00</strong> Teamwork on week activities</li>
 <li>In some weeks, you need to schedule additional time for teamwork on the semester project and deliverables.</li>
 </ul>
-
-<table class="weekplan table-sm table-bordered">
+<table class="weekplan table table-sm">
 <tr>
-<td>Time</td>
-<td>Mon</td>
-<td>Tue</td>
-<td>Wed</td>
-<td>Thu</td>
-<td>Fri</td>
+<th>Time</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
 </tr>
 <tr>
 <td>08:15</td>
 <td></td>
-<td rowspan="4">Team Activities</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>09:15</td>
-<td>RATs</td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>10:15</td>
+<td rowspan="2">RAT + Summary</td>
 <td></td>
 <td></td>
 <td></td>
@@ -207,7 +257,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td rowspan="4">Teamwork</td>
 </tr>
 <tr>
 <td>13:15</td>
@@ -215,7 +265,6 @@
 <td></td>
 <td></td>
 <td></td>
-<td>Summary</td>
 </tr>
 <tr>
 <td>14:15</td>
@@ -223,11 +272,9 @@
 <td></td>
 <td></td>
 <td></td>
-<td></td>
 </tr>
 <tr>
 <td>15:15</td>
-<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -242,370 +289,300 @@
 <td></td>
 </tr>
 </table>
-<p>Here is the weekly schedule for 2021:</p>
-
-<table class="schedule table-sm table-bordered">
-<thead>
-<tr class="header">
-<th><p>W</p></th>
-<th><p>Day</p></th>
-<th><p>Time</p></th>
-<th><p>Material</p></th>
-<th><p>Deliveries</p></th>
+<p>Here is the semester schedule for 2022. Note that this is a tentative plan that we may adjust during the semester. We start in 2022 fully digitally for the first two weeks and wait for further guidelines how to proceed after that.</p>
+<table class="schedule table table-sm">
+<tr>
+<th>W</th>
+<th>Day</th>
+<th>Time</th>
+<th>Space</th>
+<th>Material</th>
+<th>Deliveries</th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Mon, 11. Jan.</p></td>
-<td><p>-</p></td>
-<td></td>
+<tr>
+<td>2</td>
+<td>Mon., 10. Jan 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td>-</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Tue, 12. Jan.</p></td>
-<td><p>-</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 15. Jan.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p>Welcome and Startup</p></td>
+<td>Fri., 14. Jan 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td>Course Startup</td>
 <td></td>
 </tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><p>Mon, 18. Jan.</p></td>
-<td><p>-</p></td>
-<td><p>- (cancelled due to IT-dagene)</p></td>
+<tr>
+<td>3</td>
+<td>Mon., 17. Jan 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-setup.html">Team Setup</a></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Tue, 19. Jan.</p></td>
-<td><p>-</p></td>
-<td><p>- (cancelled due to IT-dagene)</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 22. Jan.</p></td>
-<td><p>-</p></td>
-<td><p>- (cancelled due to IT-dagene)</p></td>
+<td>Fri., 21. Jan 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="unit-setup.html">Team Setup</a></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td><p>4</p></td>
-<td><p>Mon, 25. Jan.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-setup.html" title="wikilink">Course Setup</a></p></td>
+<tr>
+<td>4</td>
+<td>Mon., 24. Jan 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-modeling.html">Modeling</a></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Tue, 26. Jan.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-setup.html" title="wikilink">Team Setup</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 29. Jan.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
+<td>Fri., 28. Jan 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-modeling.html">Modeling</a></td>
 <td></td>
 </tr>
-<tr class="even">
-<td><p>5</p></td>
-<td><p>Mon, 1. Feb.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-modeling.html" title="wikilink">Modeling</a></p></td>
+<tr>
+<td>5</td>
+<td>Mon., 31. Jan 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-statemachines.html">State Machines</a></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Tue, 2. Feb.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-modeling.html" title="wikilink">Modeling</a></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 5. Feb.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
+<td>Fri., 04. Feb 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-statemachines.html">State Machines</a></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td><p>6</p></td>
-<td><p>Mon, 8. Feb.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-statemachines.html" title="wikilink">State Machines</a></p></td>
+<tr>
+<td>6</td>
+<td>Mon., 07. Feb 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-user-requirements.html">User Requirements</a></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Tue, 9. Feb.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-statemachines.html" title="wikilink">State Machines</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 12. Feb.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
+<td>Fri., 11. Feb 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-user-requirements.html">User Requirements</a></td>
 <td></td>
 </tr>
-<tr class="even">
-<td><p>7</p></td>
-<td><p>Mon, 15. Feb.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-user-requirements.html" title="wikilink">User Requirements</a></p></td>
+<tr>
+<td>7</td>
+<td>Mon., 14. Feb 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-stmpy.html">State Machines in Python</a></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Tue, 16. Feb.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-user-requirements.html" title="wikilink">User Requirements</a></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 19. Feb.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
+<td>Fri., 18. Feb 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-stmpy.html">State Machines in Python</a></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td><p>8</p></td>
-<td><p>Mon, 22. Feb.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-stmpy.html" title="wikilink">State Machines in Python</a></p></td>
+<tr>
+<td>8</td>
+<td>Mon., 21. Feb 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-agile.html">Agile Development</a></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Tue, 23. Feb.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-stmpy.html" title="wikilink">State Machines in Python</a></p></td>
+<td>Fri., 25. Feb 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-agile.html">Agile Development</a></td>
+<td><a href="deliveries-t1.html">Spec v.1</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Mon., 28. Feb 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-communication.html">Communication</a></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Fri, 26. Feb.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
+<td>Fri., 04. Mar 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-communication.html">Communication</a></td>
+<td><a href="deliveries-i1.html">Feedback to Spec v.1</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Mon., 07. Mar 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-interactions.html">Interactions</a></td>
 <td></td>
 </tr>
-<tr class="even">
-<td><p>9</p></td>
-<td><p>Mon, 1. Mar.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-agile.html" title="wikilink">Agile Development</a></p></td>
+<tr>
+<td></td>
+<td>Fri., 11. Mar 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-interactions.html">Interactions</a></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td></td>
-<td><p>Tue, 2. Mar.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-agile.html" title="wikilink">Agile Development</a></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 5. Mar.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td><p><a href="deliveries-t1.html" title="wikilink">System Spec, v.1</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>10</p></td>
-<td><p>Mon, 8. Mar.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-communication.html" title="wikilink">Communication</a></p></td>
+<tr>
+<td>11</td>
+<td>Mon., 14. Mar 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
+<td><a href="prep-components.html">Components</a></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Tue, 9. Mar.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-communication.html" title="wikilink">Communication</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 12. Mar.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td><p><a href="deliveries-i1.html" title="wikilink">Feedback to v.1</a></p></td>
-</tr>
-<tr class="even">
-<td><p>11</p></td>
-<td><p>Mon, 15. Mar.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-interactions.html" title="wikilink">Interactions</a></p></td>
+<td>Fri., 18. Mar 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td><a href="unit-components.html">Components</a></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td></td>
-<td><p>Tue, 16. Mar.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-interactions.html" title="wikilink">Interactions</a></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 19. Mar.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<tr>
+<td>12</td>
+<td>Mon., 21. Mar 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td><p>12</p></td>
-<td><p>Mon, 22. Mar.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-secondary">RAT</span> <a href="prep-components.html" title="wikilink">Components</a></p></td>
+<tr>
 <td></td>
+<td>Fri., 25. Mar 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td></td>
+<td><a href="deliveries-t2.html">Spec v.2</a></td>
 </tr>
-<tr class="even">
-<td></td>
-<td><p>Tue, 23. Mar.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p><span class="badge badge-danger">TA</span> <a href="unit-components.html" title="wikilink">Components</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 26. Mar.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td><p><a href="deliveries-t2.html" title="wikilink">System Spec, v.2</a></p></td>
-</tr>
-<tr class="even">
-<td><p>13</p></td>
-<td><p>Mon, 29. Mar.</p></td>
-<td><p>-</p></td>
+<tr>
+<td>13</td>
+<td>Mon., 28. Mar 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Tue, 30. Mar.</p></td>
-<td><p>-</p></td>
+<td>Fri., 01. Apr 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
+<td></td>
+<td><a href="deliveries-i2.html">Feedback to Spec v.2</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Mon., 04. Apr 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Fri, 2. Apr.</p></td>
-<td><p>-</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>14</p></td>
-<td><p>Mon, 5. Apr.</p></td>
-<td><p>-</p></td>
+<td>Fri., 08. Apr 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
-<td></td>
-<td><p>Tue, 6. Apr.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td><p>(tbd)</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Fri, 9. Apr.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td><p><a href="deliveries-i2.html" title="wikilink">Feedback to v.2</a></p></td>
-</tr>
-<tr class="even">
-<td><p>15</p></td>
-<td><p>Mon, 12. Apr.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<tr>
+<td>15</td>
+<td>Mon., 11. Apr 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Tue, 13. Apr.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Fri, 16. Apr.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<td>Fri., 15. Apr 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td><p>16</p></td>
-<td><p>Mon, 19. Apr.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<tr>
+<td>16</td>
+<td>Mon., 18. Apr 2022</td>
+<td>-</td>
 <td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Tue, 20. Apr.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
-<td><p>Fri, 23. Apr.</p></td>
-<td><p>13:15-14:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>17</p></td>
-<td><p>Mon, 26. Apr.</p></td>
-<td><p>9:15-10:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<td>Fri., 22. Apr 2022</td>
+<td>12:15 - 16:00</td>
+<td><a href="https://link.mazemap.com/YoKHciaS">GL-HB</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
-<td></td>
-<td><p>Tue, 27. Apr.</p></td>
-<td><p>8:15-12:00 (<a href="tools.html#zoom" title="wikilink">Zoom</a>)</p></td>
+<tr>
+<td>17</td>
+<td>Mon., 25. Apr 2022</td>
+<td>10:15 - 12:00</td>
+<td><a href="tools.html">Zoom</a></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
-<td><p>Fri, 30. Apr.</p></td>
-<td><p>-</p></td>
+<td>Fri., 29. Apr 2022</td>
+<td>-</td>
+<td>-</td>
 <td></td>
-<td><p><a href="deliveries-t3.html" title="wikilink">System Spec, v.3</a></p></td>
+<td><a href="deliveries-t3.html">Spec v.3</a></td>
 </tr>
-<tr class="odd">
-<td><p>18</p></td>
-<td><p>Fri, 7. May</p></td>
-<td><p>-</p></td>
+<tr>
+<td>18</td>
+<td>Mon., 02. May 2022</td>
+<td>-</td>
+<td>-</td>
 <td></td>
-<td><p><a href="deliveries-i3.html" title="wikilink">Reflective Essay</a></p></td>
+<td></td>
 </tr>
-</tbody>
+<tr>
+<td></td>
+<td>Fri., 06. May 2022</td>
+<td>-</td>
+<td>-</td>
+<td></td>
+<td><a href="deliveries-i3.html">Reflective Essay</a></td>
+</tr>
 </table>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

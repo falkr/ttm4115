@@ -28,6 +28,210 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body id="top">
 
@@ -140,7 +344,6 @@
     </section>
     <section class="content">
 <h1 id="agile-vs.-architecture">Agile vs. Architecture</h1>
-
 <p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
 <ul>
 <li>understanding how to figure out the user requirements so that we built the right system</li>
@@ -155,12 +358,10 @@
 <li>and finally how to code state machines</li>
 </ul>
 <p>When we talk about <em>development process</em> we mean how we should organize our work around these documents: When to create which document, how they depend on each other, and how to organize our team around these. Initially, we could follow this scheme:</p>
-
 <div class="figure">
 <img src="figures/method.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
 <span name="figures/method.jpg">&nbsp;</span>
-<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
-</p></aside>
+<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p></p></aside>
 </div>
 <p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called “Waterfall Model”, because the different stages follow each other.</p>
 <p><strong>But this is not how real projects work!</strong> In reality, the following will happen:</p>
@@ -170,41 +371,32 @@
 <li>You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code.</li>
 </ul>
 <p>Have a look into the following presentation: (The part about the Waterfall model starts at 8:45, and lasts a few minutes. The details of the video are not part of the RAT.)</p>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NP9AIUT9nos?start=525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <span name="NP9AIUT9nos">&nbsp;</span>
-<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p>
-</p></aside>
+<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p></p></aside>
 </div>
 <p>We can look at the waterfall model as one side in a spectrum of methods:</p>
-
 <div class="figure">
 <img src="figures/agile-spectrum.png" alt="**The spectrum of development methods:** Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right." width="100%"/>
 <span name="figures/agile-spectrum.png">&nbsp;</span>
-<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
-</p></aside>
+<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p></p></aside>
 </div>
 <p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of <strong>planning</strong>, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking.” Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
 <p>To popularize agile development, some engineers gathered and prepared the <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">Agile Manifesto</a>. This document explains some of the principles. It is short to read, and most developers have at some point heard about it.</p>
 <p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success, but touch on complex issues and are often discussed based on anecdotes and in general a bit “fluffy”. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
-
 <h2 id="mandatory-preparation">Mandatory Preparation</h2>
 <p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working. As part of the preparation, you should read through the Scrum Guide:</p>
 <ul>
 <li><a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100">The Scrum Guide</a> by Ken Schwaber and Jeff Sutherland (An earlier version of this page linked to a previous version of the guide, but there are only minor adjustments.)</li>
 </ul>
-
 <h2 id="optional-material">Optional Material</h2>
 <p>The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I’ll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!</p>
-
 <h3 id="video-scrum-in-under-5-minutes">Video: Scrum in under 5 minutes</h3>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2Vt7Ik8Ublw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <h3 id="video-explaining-agile---martin-fowler-and-neil-ford-at-usi">Video: Explaining Agile - Martin Fowler and Neil Ford at USI</h3>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GE6lbPLEAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -213,6 +405,21 @@
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

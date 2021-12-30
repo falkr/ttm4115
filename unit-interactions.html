@@ -28,6 +28,45 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+</style>
 </head>
 <body id="top">
 
@@ -141,12 +180,10 @@
     <section class="content">
 <h1 id="airport-gate-control-system">Airport Gate Control System</h1>
 <p>You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven’t formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)</p>
-
 <div class="figure">
 <img src="figures/interactions/airport.png" alt="A communication diagram for the controller and its connected components." width="100%"/>
 <span name="figures/interactions/airport.png">&nbsp;</span>
-<aside name="figures/interactions/airport.png"><p><p>A communication diagram for the controller and its connected components.</p>
-</p></aside>
+<aside name="figures/interactions/airport.png"><p><p>A communication diagram for the controller and its connected components.</p></p></aside>
 </div>
 <ul>
 <li>The controller is connected to the turnstile, the LEDs, a display, the scanner and a backend server. All units communicate with the messages listed at the respective links.</li>
@@ -161,9 +198,7 @@
 <li>The turnstile is unlocked for 3 seconds. If the passenger does not react within that time and pass through the turnstile, it is locked again.</li>
 <li>The display shows the message “Scan your boarding pass” by default (message <code>scan</code>). When the passenger may pass, the display shows “Welcome aboard” (message <code>welcome</code>). If passing is denied, the display shows an error message “Please contact the counter for help” (message <code>help</code>).</li>
 </ul>
-
 <p><strong>Delivery and Process:</strong> Create a single Word document with all your diagrams and answers combined.</p>
-
 <h2 id="task-1-selected-scenarios">Task 1: Selected Scenarios</h2>
 <p>Design three separate sequence diagrams that include all components. These diagrams should document three different, selected scenarios, not the entire behavior possible. (Read the hints below before you start.)</p>
 <ul>
@@ -177,7 +212,6 @@
 <li>Do not use any fragments in this task, just messages and lifelines.</li>
 <li>Use copy-paste to copy parts that are similar on the diagrams.</li>
 </ul>
-
 <h2 id="task-2-state-machine-design">Task 2: State Machine Design</h2>
 <p>Design a state machine for the controller based on the sequence diagrams.</p>
 <ul>
@@ -187,7 +221,6 @@
 <li>Add timers and corresponding actions and triggers as needed.</li>
 </ul>
 <p>Some help for starting:</p>
-
 <div class="figure">
 <img src="figures/interactions/airport-help.png" width="100%"/>
 </div>
@@ -208,7 +241,6 @@
 <li>Is this a severe problem? Also look at your state machine.</li>
 <li>How can you fox this situation?</li>
 </ul>
-
 <h2 id="solution-delivery-and-reflection">Solution, Delivery and Reflection</h2>
 <ul>
 <li>The example solution is <a href="files/airport-system-solution.pdf">here</a>.</li>
@@ -219,7 +251,6 @@
 </ul></li>
 <li>Deliver your final document on Teams</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="feedback-on-specification-version-1">Feedback on Specification Version 1</h1>
@@ -229,7 +260,6 @@
 <li>You go through them item by item, comparing the feedback</li>
 <li>One of you collects your conclusion or todos to each element in a new working document</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="reflection">Reflection</h1>
@@ -243,12 +273,20 @@
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

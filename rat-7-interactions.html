@@ -28,6 +28,210 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body id="top">
 
@@ -139,7 +343,6 @@
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-
 <div class="rat"><p>What do sequence diagrams cover?</p>
 <ol type="1">
 <li>They cover selected interaction scenarios in a system.</li>
@@ -147,21 +350,18 @@
 <li>They cover selected interaction scenarios of a single system component.</li>
 <li>They cover the behavior of a system.</li>
 </ol>
-<h2 id="question-2">Question 2</h2>
-</div>
+<h2 id="question-2">Question 2</h2></div>
 <div class="rat"><p>Look for the figure with the arrows. Which of the arrows represent which type of message?</p>
 <ol type="1">
 <li>synchronous (1), return (2), asynchronous (3)</li>
 <li>asynchronous (1), return (2), synchronous (3)</li>
 <li>synchronous (1), asynchronous (2), return (3)</li>
 <li>asynchronous (1), synchronous (2), return (3)</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/arrows.png" width="100%"/>
 </div>
 <h2 id="question-3">Question 3</h2>
-
 <div class="rat"><p>Sequence diagrams can define <strong>ref</strong> fragments.</p>
 <ol type="1">
 <li>The <strong>ref</strong> fragment can only be used with object-oriented languages.</li>
@@ -169,8 +369,7 @@
 <li>The <strong>ref</strong> fragment helps to reuse diagrams and manage large ones.</li>
 <li>The <strong>ref</strong> fragment is resolved at runtime.</li>
 </ol>
-<h2 id="question-4">Question 4</h2>
-</div>
+<h2 id="question-4">Question 4</h2></div>
 <div class="rat"><p>Which lines in sequence diagrams do never cross each other?</p>
 <ol type="1">
 <li>Only nested messages can cross each other.</li>
@@ -178,8 +377,7 @@
 <li>A message does not cross another message.</li>
 <li>A message does not cross a lifeline.</li>
 </ol>
-<h2 id="question-5">Question 5</h2>
-</div>
+<h2 id="question-5">Question 5</h2></div>
 <div class="rat"><p>Creation and destruction of lifelines:</p>
 <ol type="1">
 <li><strong>create</strong> and <strong>destroy</strong> can be used independently.</li>
@@ -187,8 +385,7 @@
 <li>Only lifelines created dynamically with a <strong>create</strong> can be destroyed dynamically with a <strong>destroy</strong>.</li>
 <li>All other statements are wrong.</li>
 </ol>
-<h2 id="question-6">Question 6</h2>
-</div>
+<h2 id="question-6">Question 6</h2></div>
 <div class="rat"><p>Which of the following alternatives contain only valid fragment types?</p>
 <ol type="1">
 <li>alt, break, ref, neg, opt, switch</li>
@@ -196,60 +393,67 @@
 <li>alt, break, do, loop, opt, ref</li>
 <li>alt, assert, ref, break, neg, opt, switch</li>
 </ol>
-<h2 id="question-7">Question 7</h2>
-</div>
+<h2 id="question-7">Question 7</h2></div>
 <div class="rat"><p>The following answer alternatives show short traces of events. Which alternative shows traces that are <strong>not</strong> described by diagram X?</p>
 <ol type="1">
 <li>!C,?C and ?C,!D</li>
 <li>!D,?D and ?C,!D</li>
 <li>?A,?B and ?D,?E</li>
 <li>?B,!C and !E,?E</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/sdx.png" width="100%"/>
 </div>
 <h2 id="question-8">Question 8</h2>
-
 <div class="rat"><p>Have a look at diagram Y. How can we call this scenario?</p>
 <ol type="1">
 <li>mixed-initiative</li>
 <li>non-causal ordering</li>
 <li>sequential ordering</li>
 <li>parallel messages</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/sdy.png" width="100%"/>
 </div>
 <h2 id="question-9">Question 9</h2>
-
 <div class="rat"><p>Have a look at diagram Z. How can we call this scenario?</p>
 <ol type="1">
 <li>non-causal ordering</li>
 <li>mixed-initiative</li>
 <li>sequential ordering</li>
 <li>parallel messages</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/sdz.png" width="100%"/>
 </div>
 <h2 id="question-10">Question 10</h2>
-
 <div class="rat"><p>Why is it important to consider also implied scenarios?</p>
 <ol type="1">
 <li>They can reveal bugs or trouble spots in the system.</li>
 <li>Because all implied scenarios need to be resolved.</li>
 <li>Implied scenario are a sure sign of a bug or trouble spot.</li>
 <li>Implied scenarios require a fix of the original specification.</li>
-</ol>
-</div>
+</ol></div>
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

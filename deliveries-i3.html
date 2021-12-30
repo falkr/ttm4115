@@ -28,6 +28,128 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -140,10 +262,8 @@
     </section>
     <section class="content">
 <h1 id="individual-reflective-essay">Individual Reflective Essay</h1>
-
 <p>In the individual delivery, you need to deliver further evidence that you have reached the learning goals of the course and think independently about the course topics. The subject of your reflection can be anything relevant to the course and its learning goals. This means systems and system architectures, their description, the development process and the process during teamwork.</p>
 <p>This part is highly individual. It depends on your personal observations and reflections, and it should be unique. You need to provide a maximum of 3 written pages in which you reflect about selected issues that relate to the learning goals of the course. You can decide what to write about, and you decide if you want to address a single point or several ones. We recommend not to try to address more than 3 topics, because you should provide a certain depth to each of them and provide consistent arguments.</p>
-
     </section>
     <section class="content">
 <h1 id="how-to-make-an-argument">How to Make an Argument</h1>
@@ -154,31 +274,26 @@
 <li>Discuss your claim. Consider counter-arguments, or tradeoffs, evidence against your argument.</li>
 <li>Draw a conclusion, repeat or reinforce your main point.</li>
 </ul>
-
 <h3 id="language">Language</h3>
 <p>Of course, expressing yourself well will always be a benefit, and we encourage you to acquire excellent language skills. Also, check your delivery for typos and grammar. We will, however, ignore language issues as long as we understand what you mean.</p>
 <h3 id="write-efficiently">Write Efficiently</h3>
 <p>Use repetition only carefully when it makes sense to do so, for instance to summarize or compare one point to an earlier one. Don’t just repeat something because you are unsure if we got it. We are going through your text carefully, so there is no danger that we miss an arguments. We are looking for them.</p>
 <h3 id="use-paragraphs-strategically">Use Paragraphs Strategically</h3>
 <p>A paragraph should only contain one main idea or argument. Outline this argument early on in the paragraph, and use the rest of the paragraph to develop the argument, provide evidence, discuss alternatives. For longer argumentations, use several paragraphs.</p>
-
     </section>
     <section class="content">
 <h1 id="levels">Levels</h1>
 <p>To understand what makes a good argument, we may consider the three highest levels in the <a href="https://en.wikipedia.org/wiki/Structure_of_observed_learning_outcome">SOLO taxonomy</a>. This taxonomy is used to assess learning outcomes, but it also works when looking at arguments. For a good argumentation, you should aim for the level of extended abstract.</p>
-
 <div class="figure">
 <img src="figures/solo-arguments.png" alt="Each level comes with an illustration that tries to convey the very abstract idea behind each level." width="100%"/>
 <span name="figures/solo-arguments.png">&nbsp;</span>
-<aside name="figures/solo-arguments.png"><p><p>Each level comes with an illustration that tries to convey the very abstract idea behind each level.</p>
-</p></aside>
+<aside name="figures/solo-arguments.png"><p><p>Each level comes with an illustration that tries to convey the very abstract idea behind each level.</p></p></aside>
 </div>
 <ul>
 <li><p><strong>Multi-structural:</strong> You present multiple pieces of information, but they are not linked.</p></li>
 <li><p><strong>Relational:</strong> You present multiple pieces of information, and also provide links between them.</p></li>
 <li><p><strong>Extended Abstract:</strong> You present a reasonable multiple pieces of information, and also provide links between them, and extend your discussion beyond what was said in the course.</p></li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="look-at-your-sentences">Look at your Sentences</h1>
@@ -189,20 +304,17 @@
 <li>Explaining some parts of your specification.</li>
 <li>Provide background information.</li>
 </ul>
-
 <p>The following sentences are often examples for building relations between information. Such sentences are useful in the course of a discussion, to build up an argument.</p>
 <ul>
 <li>Comparing alternatives.</li>
 <li>Discussing benefits and drawbacks.</li>
 </ul>
-
 <p>Now, make a statement with an idea that provides a more abstract view on your knowledge or extends it beyond what was already covered in the course. Examples for that are sentences like the following:</p>
 <ul>
 <li>Analyzing causes for something.</li>
 <li>Generalize from a specific situation to more general one.</li>
 <li>Reasoning, drawing logic conclusions, developping an argument.</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="examples-for-topics">Examples for Topics</h1>
@@ -217,12 +329,10 @@
 <li>Your learning process, in relation to specific course concepts.</li>
 <li>…any item of your choice, as long as they are connected to the learning goals of the course.</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="grading">Grading</h1>
 <p>The individual delivery is part of your portfolio, and it will weigh around 30 % for the final grade. For the performance level, we will apply <a href="learning-grading.html#overall-generic-criteria">NTNU’s general grading criteria</a>. Notice the significance of <em>independent thinking</em> in the performance levels.</p>
-
     </section>
     <section class="content">
 <h1 id="final-hints">Final Hints</h1>
@@ -236,12 +346,23 @@
 <li>Delivery I3 is not meant as a feedback on the course. For this, please use any of the other channels for course feedback. The focus is your own learning, and reflection about it. Of course, if you develop a point that naturally includes some feedback about the course you may do so.</li>
 <li>The recommended language for I3 is <strong>English</strong>. You can, however, also deliver in Norwegian, if you prefer.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

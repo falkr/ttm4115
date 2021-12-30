@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -141,76 +221,58 @@
     <section class="content">
 <h1 id="state-machines">State Machines</h1>
 <p>Until now, you have learned about all the features that we need for state machines, but you have not yet created one on your own.</p>
-
 <p>Revisit the <a href="unit-statemachines-creation.html">preparation material on how to create state machines</a>. Assign one in the group who guides a brief summary through the points, and discuss any things that you may need clarification for.</p>
 <p>This is just to ensure that you remember the proceedings as you will need them today.</p>
-
     </section>
     <section class="content">
 <h1 id="errors-in-state-machines">Errors in State Machines</h1>
 <p>Before we create our own state machines, let’s criticize some others and find mistakes in them first.</p>
 <p>For each of the state machines, formulate a short sentence (or two) that describe what’s wrong with them. Collect these sentences in a text document while you work, then submit them as a form given below.</p>
-
 <h3 id="state-machine-1">State Machine 1</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-1.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-1.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-1.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-1.png"><p></p></aside>
 </div>
 <h3 id="state-machine-2">State Machine 2</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-2.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-2.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-2.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-2.png"><p></p></aside>
 </div>
 <h3 id="state-machine-3">State Machine 3</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-3.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-3.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-3.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-3.png"><p></p></aside>
 </div>
 <h3 id="state-machine-4">State Machine 4</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-4.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-4.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-4.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-4.png"><p></p></aside>
 </div>
 <h3 id="state-machine-5">State Machine 5</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-5.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-5.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-5.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-5.png"><p></p></aside>
 </div>
 <h3 id="state-machine-6">State Machine 6</h3>
-
 <div class="figure">
 <img src="figures/statemachines/stm-e-6.png" alt="" width="100%"/>
 <span name="figures/statemachines/stm-e-6.png">&nbsp;</span>
-<aside name="figures/statemachines/stm-e-6.png"><p>
-</p></aside>
+<aside name="figures/statemachines/stm-e-6.png"><p></p></aside>
 </div>
-<div class="delivery"><p>Delivery your diagnostics on the state machines in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQ0ZTRFVIODBUNlNTRzFEUU02VUJVMTc0Mi4u">this form</a>.</p>
-</div>
+<div class="delivery"><p>Delivery your diagnostics on the state machines in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQ0ZTRFVIODBUNlNTRzFEUU02VUJVMTc0Mi4u">this form</a>.</p></div>
     </section>
     <section class="content">
 <h1 id="getting-started-bus-stop">Getting Started: Bus Stop</h1>
 <p>You should build the state machine for a bus stop signal light. It is intended for bus stops where busses only halt when there are passengers, and which are located so that it is difficult for a bus driver to see passengers when they approach. It may also be that they need to get off a larger road, but can stay on that road if there are not passengers. The solution is a signal light that passengers can activate at the buss top and which is better visible for the approaching bus.</p>
-
 <div class="figure">
 <img src="figures/statemachines/bus-1.png" alt="Sketch of the bus stop." width="100%"/>
 <span name="figures/statemachines/bus-1.png">&nbsp;</span>
-<aside name="figures/statemachines/bus-1.png"><p><p>Sketch of the bus stop.</p>
-</p></aside>
+<aside name="figures/statemachines/bus-1.png"><p><p>Sketch of the bus stop.</p></p></aside>
 </div>
 <p>Here are the detailed functional requirements:</p>
 <ul>
@@ -227,19 +289,16 @@
 </ul>
 <p>You can ignore for now that the system may be switched off, so you need no final state.</p>
 <h2 id="create-a-state-machine-individually">Create a State Machine, Individually</h2>
-
 <ul>
 <li>Use some time to find a first solution each one on your own.</li>
 <li>Use pencil and paper.</li>
 </ul>
-
 <h2 id="create-a-state-machine-together">Create a State Machine, Together</h2>
 <ul>
 <li>Compare your solutions, one at a time.</li>
 <li>Starting again with an empty screen, whiteboard or paper, design the state machine once again, together.</li>
 <li>Play through this simple scenario, and correct your state machine if necessary.</li>
 </ul>
-
 <h2 id="solution">Solution</h2>
 <ul>
 <li>Once you are happy with your solution, have a look at <a href="files/bus-stop.pdf">my solution</a>.</li>
@@ -252,14 +311,11 @@
 <li>Were there misunderstandings?</li>
 </ul></li>
 </ul>
-
-<div class="delivery"><p>Store your document from above in the Teams folder for this unit. Use filname <code>ttm4115-2020-bus-stop-team-XX.docx</code></p>
-</div>
+<div class="delivery"><p>Store your document from above in the Teams folder for this unit. Use filname <code>ttm4115-2020-bus-stop-team-XX.docx</code></p></div>
     </section>
     <section class="content">
 <h1 id="kitchen-timer">Kitchen Timer</h1>
 <p>You should build the state machine for the following device:</p>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -274,19 +330,16 @@
 </ul>
 <p>You can assume that whenever the button is pressed, the state machine will receive a signal with the name <code>switch</code>.</p>
 <h2 id="create-a-state-machine-individually">Create a State Machine, Individually</h2>
-
 <ul>
 <li>Use some time to find a first solution each one on your own.</li>
 <li>Use pencil and paper.</li>
 </ul>
-
 <h2 id="create-a-state-machine-together">Create a State Machine, Together</h2>
 <ul>
 <li>Compare your solutions, one at a time.</li>
 <li>Starting again with an empty screen, whiteboard or paper, design the state machine once again, together.</li>
 <li>Play through this simple scenario, and correct your state machine if necessary.</li>
 </ul>
-
 <h2 id="solution">Solution</h2>
 <ul>
 <li>Once you are happy with your solution, have a look at <a href="files/kitchen-timer.pdf">my solution</a>.</li>
@@ -300,9 +353,7 @@
 <li>Were there misunderstandings?</li>
 </ul></li>
 </ul>
-
-<div class="delivery"><p>Store your document from above in the Teams folder for this unit. Use filename <code>ttm4115-2020-kitchen-timer-team-XX.docx</code>.</p>
-</div>
+<div class="delivery"><p>Store your document from above in the Teams folder for this unit. Use filename <code>ttm4115-2020-kitchen-timer-team-XX.docx</code>.</p></div>
     </section>
     <section class="content">
 <h1 id="team-reflection-for-this-unit">Team Reflection for This Unit</h1>
@@ -310,7 +361,6 @@
 <li>Add another section to the team reflection document, just like last week.</li>
 <li>How did the roles work today?</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="individual-reflection">Individual Reflection</h1>
@@ -319,12 +369,20 @@
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -140,25 +220,20 @@
     </section>
     <section class="content">
 <h1 id="semester-project">Semester Project</h1>
-
 <p>In contrast to previous years, we constrain the type of system that you should build. The reason for this is that many students find it hard to come up with a good idea that isn’t too similar to what we already had. In addition, this has the benefit that you are more focused and interested when providing feedback to the other teams, as they try to solve a similar problem.</p>
 <p>We sill expect that there is enough variation in your priorization, selection, interpretation and implementation of the system functionality that you all end up with different systems.</p>
-
     </section>
     <section class="content">
 <h1 id="digital-walkie-talkies">2021: Digital Walkie Talkies</h1>
 <p>The base idea is to create a communication device for workers.</p>
 <p>The core functionality is to send short voice messages to another colleague, without waiting for the colleague to take the call (there is no “call”), just by somehow selecting the receiver, recording a message and sending it.</p>
 <p>Such a function is also called <em>push-to-talk</em> communication, and you probably know it from the way the crew members communicate on Star Trek.</p>
-
 <h2 id="robust-reliable-responsive">Robust, Reliable, Responsive</h2>
 <p>The most important feature of your system should be its reliability in all circumstances. This means, that it does not loose a message, but would try to reach a receiver and only if there’s no other way to deliver the message tell the sender about it.</p>
 <p>The system should also be designed so that several messages arriving at the same time are handled somehow.</p>
 <p>At all times, the sender and the receiver should find that their device is responsive in some way, that means, they know what it is doing and maybe can record the next message to another colleague even if another one is not yet played to the receiver.</p>
-
 <h2 id="domain">Domain</h2>
 <p>Decide if you want to optimize the system for a specific domain, or if you want to make it work in several settings. You could for instance focus on healthcare, offshore workers, farmers, athletes, just to name a few. This is a good point where your can distinguish your setup from that of others.</p>
-
 <h2 id="example-features">Example Features</h2>
 <ul>
 <li>Send short voice messages</li>
@@ -168,9 +243,7 @@
 <li>Detection of status, and handling of incoming messages accordingly</li>
 <li>Detection of network bandwidth, resubmissions</li>
 </ul>
-
 <h2 id="implementation">Implementation</h2>
-
 <p>You should have a working demonstrator or prototype that shows some or most of the functionality you planned.</p>
 <p>Some more advanced functions are the following:</p>
 <ul>
@@ -180,7 +253,6 @@
 </ul>
 <p>The thing is: All of these functions are probably helpful, and we/you may implement some of them. But for the overall system design, we could replace some of these functions by code that imitates them. This is especially true when we assume that these functions are achieved by independent system components. Then we can, for instance, replace a voice activation module with a module that imitates the voice activation, for instance with a graphical user interface, but has the same interface.</p>
 <p>The main part of your implementation must be in Python, and you need to implement some components using the state machine framework STMPY. This is to ensure that you can apply the learning material in the course.</p>
-
 <h2 id="devices">Devices</h2>
 <p>There are several options for hardware to run the demo:</p>
 <ul>
@@ -189,12 +261,20 @@
 <li>A BBC Microbit</li>
 </ul>
 <p>Here we haven’t yet sorted out all the details and practicalities. One robust solution and maybe programming-wise the simplest would be to just use your own computers.</p>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

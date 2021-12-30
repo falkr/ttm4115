@@ -28,6 +28,21 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+</style>
 </head>
 <body id="top">
 
@@ -139,7 +154,6 @@
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-
 <div class="rat"><p>What is the difference between normal states and pseudostates, like the initial state and choice states?</p>
 <ol type="1">
 <li>Pseudo states are mutual exclusive to each other.</li>
@@ -147,8 +161,7 @@
 <li>Pseudo states are only seldom used.</li>
 <li>Pseudo states are a shorthand notation for a structure of simple states.</li>
 </ol>
-<h2 id="question-2">Question 2</h2>
-</div>
+<h2 id="question-2">Question 2</h2></div>
 <div class="rat"><p>Which of the statements is true about internal transitions?</p>
 <ol type="1">
 <li>An internal transition executes internal behavior, not visible outside the state machine.</li>
@@ -156,21 +169,18 @@
 <li>An internal transition is drawn with the same notation as a transition that connects two states.</li>
 <li>An internal transition invokes entry and exit actions.</li>
 </ol>
-<h2 id="question-3">Question 3</h2>
-</div>
+<h2 id="question-3">Question 3</h2></div>
 <div class="rat"><p>The state machine below contains some actions. Only one of the four sequences of actions and triggering events is actually possible. Which?</p>
 <ol type="1">
 <li>a, c</li>
 <li>a, d, op4</li>
 <li>a, op1, c, d, op4</li>
 <li>a, op1, c, op3, d, op2, op4</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/stm-1.png" width="100%"/>
 </div>
 <h2 id="question-4">Question 4</h2>
-
 <div class="rat"><p>Which of the elements in a label for a transition (that means, triggering event, guard, behavior) are optional?</p>
 <ol type="1">
 <li>all (triggering event, guard, behavior) are optional</li>
@@ -178,21 +188,18 @@
 <li>only guards and behavior are optional</li>
 <li>when a guard is specified, there must also be a trigger</li>
 </ol>
-<h2 id="question-5">Question 5</h2>
-</div>
+<h2 id="question-5">Question 5</h2></div>
 <div class="rat"><p>Look at the picture below.</p>
 <ol type="1">
 <li>two!</li>
 <li>three!</li>
 <li>four!</li>
 <li>one!</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/stm-2.png" width="100%"/>
 </div>
 <h2 id="question-6">Question 6</h2>
-
 <div class="rat"><p>Which of the following statements is true?</p>
 <ol type="1">
 <li>Entry and exit actions are forms of internal transitions.</li>
@@ -200,21 +207,18 @@
 <li>Transition can take a long time.</li>
 <li>The choice pseudostate has exactly one outgoing and any number of incoming transitions.</li>
 </ol>
-<h2 id="question-7">Question 7</h2>
-</div>
+<h2 id="question-7">Question 7</h2></div>
 <div class="rat"><p>Assume the state machine below is in state <code>A</code>, and x has the value 5. What happens when the event <code>e3</code> happens?</p>
 <ol type="1">
 <li>x keeps its value of 5.</li>
 <li>The entry action resets x to 2.</li>
 <li>Nothing happens.</li>
 <li>The exit action increases x to 6.</li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/stm-4.png" width="100%"/>
 </div>
 <h2 id="question-8">Question 8</h2>
-
 <div class="rat"><p>What about self-transitions?</p>
 <ol type="1">
 <li>A self-transition can have different source and target states.</li>
@@ -222,8 +226,7 @@
 <li>A self transition is triggered by the termination of an action.</li>
 <li>A self-transition is drawn with the same notation as a transition that connects two different states.</li>
 </ol>
-<h2 id="question-9">Question 9</h2>
-</div>
+<h2 id="question-9">Question 9</h2></div>
 <div class="rat"><p>What kind of behavior do state machines present?</p>
 <ol type="1">
 <li>State machines specify complete behavior, i.e., all possible sequences of events.</li>
@@ -231,21 +234,28 @@
 <li>State machines only specify sequential behavior without choices.</li>
 <li>State machines specify concurrent partial behavior.</li>
 </ol>
-<h2 id="question-10">Question 10</h2>
-</div>
+<h2 id="question-10">Question 10</h2></div>
 <div class="rat"><p>Which statement is true about choice states?</p>
 <ol type="1">
 <li>Choices should have an outgoing else branch.</li>
 <li>Choices only model different traces, not decisions like if-statements do.</li>
 <li>Choices states must have incoming transitions with else branches.</li>
 <li>Choices can originate from internal transitions.</li>
-</ol>
-</div>
+</ol></div>
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

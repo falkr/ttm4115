@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -143,28 +223,22 @@
 <p>During requirements engineering, we are focused on the needs of the users and the stakeholders of the systems. We don’t yet think of how to implement or how to structure the system. Maybe some of the structure is indirectly obvious because we know users will use a mobile phone or a PC, and that there is a data center involved. But during requirements engineering we do not yet decompose the system into more fine-grained components.</p>
 <p>Before we think about the system, we first structure its functionality as seen from the outside, and for that we describe the system’s <strong>use cases</strong>. This forces us to ask questions like <em>“Which are the (five) most important jobs a user wants to accomplish?”</em> We say <em>five</em> here because that gives you an idea for the number of high-level use cases that we should think of in the first place. (There may be more finer-grained use cases.)</p>
 <p>Having good use cases is often undervalued. But it is exactly in this phase where clever thinking and a thorough process pays off manyfold. Use cases are at a level where we work so specific that we can find problems with our understanding of the user requirements, and we can identify inconsistencies within the requirements. We start to get an idea how much effort the system will probably take, although that requires some experience. We can also understand dead ends, i.e., solutions that will probably not work, or some that won’t add any value to the system or product.</p>
-
 <p>I have an example: As you know, we write the RATs for this course on paper, and I made a Python program to read in the codes you submit and then generate all feedback from it. This is a very small software project, but even here use cases pay off. Before I started implementing the first version of the program, I made the following diagram:</p>
-
 <div class="figure">
 <img src="figures/use-cases/teampy.jpg" alt="A simple sketch of the use cases for the system to read in RAT results. Even though this was a simple diagram, it saved a lot of work as it revealed one of the use cases to be unnecessary." width="100%"/>
 <span name="figures/use-cases/teampy.jpg">&nbsp;</span>
-<aside name="figures/use-cases/teampy.jpg"><p><p>A simple sketch of the use cases for the system to read in RAT results. Even though this was a simple diagram, it saved a lot of work as it revealed one of the use cases to be unnecessary.</p>
-</p></aside>
+<aside name="figures/use-cases/teampy.jpg"><p><p>A simple sketch of the use cases for the system to read in RAT results. Even though this was a simple diagram, it saved a lot of work as it revealed one of the use cases to be unnecessary.</p></p></aside>
 </div>
 <p><strong>This is a use case diagram.</strong> It describes the main functions a system provides to its environment, depicted as actors. Here, the main actors are <em>teacher</em> and <em>student</em>. As you can see, there is a use case <em>Enter Results</em>. Originally, I thought this could be done by students on their own, using a web formular. However, as you know, during the RAT you are not allowed to use your phone, so how should we have done this? Also, how to ensure that everyone is reporting their own, correct results? Just by thinking at this level of use cases I then decided that this was a task for the teaching assistant, and changed the use case.</p>
 <p>You may think now that you could have done this also without use cases, just by thinking about the system. But this is exactly what we are talking about: The use cases make your thinking on a high level about the system visible to your development team, your boss, your customers, and yourself. This is why use cases are important, and why skipping them can cost you time and money.</p>
-
 <h2 id="learning-goals">Learning Goals</h2>
-
 <div class="goals"><p>The learning goals specific for this week are the following:</p>
 <ul>
 <li>Appreciate the value of thinking in terms of use cases.</li>
 <li>Creating use case overview diagrams and use case tables.</li>
 <li>Sorting use cases according to their level of detail.</li>
 <li>Breaking use cases into finer ones, or aggregating them into more high-level ones.</li>
-</ul>
-</div>
+</ul></div>
 <h2 id="preparation">Preparation</h2>
 <p><strong>Read carefully through the following book chapter from the compendium:</strong></p>
 <ul>
@@ -174,13 +248,11 @@
 <li>The relationships <em>extend</em> and <em>include</em> are subtle. Read through but don’t worry too much about them.</li>
 </ul></li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="use-case-levels">Use Case Levels</h1>
 <p><em>You should read through the following material, but you don’t have to remember it for the RAT.</em></p>
 <p>Not all use cases are at the same level. Alistair Cockburn proposes in his book <em>Writing Effective Use Cases</em> to sort them according to the levels inspired by a horizon, as shown in the table below.</p>
-
 <div>
 <table class="table">
 <tr style="background-color: #F8FCFF">
@@ -272,12 +344,10 @@ This hierarchy distinguished use cases at three levels:
 <li>ask the question <em>why</em> the actor is doing something</li>
 <li>remove details and merge steps</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>Have a look at the following videos that show how to create deployment diagrams.</p>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tLJXJLfLCCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -304,6 +374,15 @@ This hierarchy distinguished use cases at three levels:
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

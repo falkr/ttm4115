@@ -28,6 +28,134 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -140,9 +268,7 @@
     </section>
     <section class="content">
 <h1 id="grading">Grading</h1>
-
 <p>The final grade in the course is based on a portfolio, with the intention to facilitate learning and to provide feedback to students throughout the semester, and enable learning in the context of realistic development conditions through a semester project.</p>
-
 <h2 id="portfolio-contents">Portfolio Contents</h2>
 <p>The portfolio contains the following elements:</p>
 <ul>
@@ -151,7 +277,6 @@
 <li><p>Each student works individually on a reflective essay, which is part of the portfolio.</p></li>
 </ul>
 <p>The language for all material is English.</p>
-
 <h2 id="compulsory-deliveries">Compulsory Deliveries</h2>
 <p>The following items are a compulsory prerequisite to hand in the portfolio:</p>
 <ul>
@@ -161,97 +286,81 @@
 <li><p>The delivery of the system specification in their first two versions is compulsory.</p></li>
 </ul>
 <p>The language for all material is English.</p>
-
 <h2 id="specific-criteria">Specific Criteria</h2>
 <p>For all deliveries, we will define tables for the criteria, also called <a href="https://en.wikipedia.org/wiki/Rubric_(academic)">rubrics</a>. These criteria give you an orientation about how to reach the learning goals of the course. The speficic tables explain how the performance levels and general criteria map to the specific task or learning outcome they cover. The example blow show a rubrics that applies for diagrams in general.</p>
-
-<table class="rubric">
-<thead>
-<tr class="header">
-<th></th>
+<table class="rubric table table-sm">
+<tr>
+<th>&nbsp;</th>
 <th><p>Excellent</p></th>
 <th><p>Good</p></th>
 <th><p>Sufficient</p></th>
 <th><p>Not rateable</p></th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Layout</p></td>
 <td><p>Layout follows a strategy that helps to understand the diagram.</p></td>
 <td><p>Layout is structured.</p></td>
 <td><p>Layout is structured.</p></td>
 <td><p>Layout is unstructured and random.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Syntax</p></td>
 <td><p>Correct syntax.</p></td>
 <td><p>Correct Syntax.</p></td>
 <td><p>Overall good syntax, with a few minor errors.</p></td>
 <td><p>Major syntactical flaws.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Level of Detail</p></td>
 <td><p>Consistent and intentional level of detail.</p></td>
 <td><p>Adequate detailing.</p></td>
 <td><p>Some inconsistencies, too much focus on some details on the expense of others.</p></td>
-<td></td>
+<td>&nbsp;</td>
 </tr>
-</tbody>
 </table>
-
 <span name="files/rubrics/deployment.mw">&nbsp;</span>
-<aside name="files/rubrics/deployment.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p>
-</p></aside>
+<aside name="files/rubrics/deployment.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p></p></aside>
 <p>The rows show a number of individual criteria groups, as for instance <em>Layout</em>. The individual columns then show what characterizes a layout on different performance levels <em>excellent</em>, <em>good</em>, <em>sufficient</em>. It also describes when a layout is not rateable.</p>
-
 <p>We work together in the course to elaborate criteria to better understand what signifies for instance an <em>excellent</em> score for an item and how it is different from a <em>good</em> one.</p>
-
 <h2 id="portfolio-grading">Portfolio Grading</h2>
 <p>The portfolio is evaluated as a whole according to <a href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/Karakterskalaen">NTNUs grading scheme</a>.</p>
-
-<table>
-<thead>
-<tr class="header">
-<th><p><strong>Symbol</strong></p></th>
-<th><p><strong>Description</strong></p></th>
-<th><p><strong>General, qualitative description of valuation criteria</strong></p></th>
+<table class="table table-sm">
+<tr>
+<th><p>’‘’Symbol’’’</p></th>
+<th><p>’‘’Description’’’</p></th>
+<th><p>’‘’General, qualitative description of valuation criteria’’’</p></th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>A</p></td>
 <td><p>Excellent</p></td>
 <td><p>An excellent performance, clearly outstanding. The candidate demonstrates excellent judgement and a high degree of independent thinking.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>B</p></td>
 <td><p>Very good</p></td>
 <td><p>A very good performance. The candidate demonstrates sound judgement and a very good degree of independent thinking.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>C</p></td>
 <td><p>Good</p></td>
 <td><p>A good performance in most areas. The candidate demonstrates a reasonable degree of judgement and independent thinking in the most important areas.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>D</p></td>
 <td><p>Satisfactory</p></td>
 <td><p>A satisfactory performance, but with significant shortcomings. The candidate demonstrates a limited degree of judgement and independent thinking.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>E</p></td>
 <td><p>Sufficient</p></td>
 <td><p>A performance that meets the minimum criteria, but no more. The candidate demonstrates a very limited degree of judgement and independent thinking.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>F</p></td>
 <td><p>Fail</p></td>
 <td><p>A performance that does not meet the minimum academic criteria. The candidate demonstrates an absence of both judgement and independent thinking.</p></td>
 </tr>
-</tbody>
 </table>
-
 <p>The final grade is assigned based on the individual scores of the team deliveries (the system specification) together with the other contents in the portfolio. Many of the items are commented by rubrics, which have scores like <em>excellent</em>, <em>good</em>, <em>sufficient</em> and <em>not rateable</em>. The portfolio is graded <strong>as a whole.</strong> This means that there is not a simple mathematical formula to map the different rubric scores to a final result. Instead, grading is always approached top-down, starting with the definitions in the table above, with the scores of the rubrics aiding to find evidence for the different grades.</p>
 <p>Still, you can expect the following:</p>
 <ul>
@@ -272,12 +381,24 @@
 <li>Apply the learned stuff in the semester project</li>
 <li>Spend the necessary effort for the reflective essay and you will achieve a very good result.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

@@ -28,6 +28,210 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body id="top">
 
@@ -139,7 +343,6 @@
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-
 <div class="rat"><p>A TBL unit works in the following sequence:</p>
 <ol type="1">
 <li>reading, team RAT, individual RAT, mini-lectures, team activities</li>
@@ -147,8 +350,7 @@
 <li>individual RAT, team RAT, mini-lectures, reading, team activities</li>
 <li>reading, individual RAT, team RAT, mini-lectures, team activities</li>
 </ol>
-<h2 id="question-2">Question 2</h2>
-</div>
+<h2 id="question-2">Question 2</h2></div>
 <div class="rat"><p>The readiness assurance test (RAT) is done with the following helping material:</p>
 <ol type="1">
 <li>Open books.</li>
@@ -156,8 +358,7 @@
 <li>No helping material (closed books).</li>
 <li>It doesn’t really matter.</li>
 </ol>
-<h2 id="question-3">Question 3</h2>
-</div>
+<h2 id="question-3">Question 3</h2></div>
 <div class="rat"><p>When do students get the feedback to the RATs?</p>
 <ol type="1">
 <li>Immediately within the team RAT.</li>
@@ -165,8 +366,7 @@
 <li>In class, before starting the team application activity.</li>
 <li>Offline, after the class.</li>
 </ol>
-<h2 id="question-4">Question 4</h2>
-</div>
+<h2 id="question-4">Question 4</h2></div>
 <div class="rat"><p>What about the composition of teams?</p>
 <ol type="1">
 <li>Teams are formed randomly, at the start of each class.</li>
@@ -174,8 +374,7 @@
 <li>Teams are remixed once during the semester.</li>
 <li>Teams are formed by the instructor.</li>
 </ol>
-<h2 id="question-5">Question 5</h2>
-</div>
+<h2 id="question-5">Question 5</h2></div>
 <div class="rat"><p>What is the optimal size for teams?</p>
 <ol type="1">
 <li>more than 5 students</li>
@@ -183,8 +382,7 @@
 <li>4 to 6 students</li>
 <li>4 students</li>
 </ol>
-<h2 id="question-6">Question 6</h2>
-</div>
+<h2 id="question-6">Question 6</h2></div>
 <div class="rat"><p>Which of the following are <strong>not</strong> roles in a team?</p>
 <ol type="1">
 <li>delivery responsible</li>
@@ -192,8 +390,7 @@
 <li>facilitator</li>
 <li>reflection responsible</li>
 </ol>
-<h2 id="question-7">Question 7</h2>
-</div>
+<h2 id="question-7">Question 7</h2></div>
 <div class="rat"><p>Which role does everybody have at all times?</p>
 <ol type="1">
 <li>developer</li>
@@ -201,21 +398,34 @@
 <li>timekeeper</li>
 <li>delivery responsible</li>
 </ol>
-<h2 id="question-8">Question 8</h2>
-</div>
+<h2 id="question-8">Question 8</h2></div>
 <div class="rat"><p>Which of the following statements about reflection is <strong>false</strong>?</p>
 <ol type="1">
 <li>Reflection is done in teams and individually.</li>
 <li>Reflection is part of the learning goals of this course.</li>
 <li>Reflection is only done at the end of the semester.</li>
 <li>Reflection is part of the final portfolio.</li>
-</ol>
-</div>
+</ol></div>
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

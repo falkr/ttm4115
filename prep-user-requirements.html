@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -141,9 +221,7 @@
     <section class="content">
 <h1 id="user-requirements">User Requirements</h1>
 <p>Before we actually start to build a system <strong>right</strong>, we need to ensure that we actually build the <strong>right system</strong>. This is part of systems development is called <strong>requirements engineering</strong>.</p>
-
 <h2 id="learning-goals">Learning Goals</h2>
-
 <div class="goals"><p>The learning goals specific for this week are the following:</p>
 <ul>
 <li>Understand how critical requirements are for the development process.</li>
@@ -152,32 +230,27 @@
 <li>Appreciate the value of thinking in terms of use cases.</li>
 <li>Creating use case overview diagrams and use case tables.</li>
 <li>Sorting use cases according to their level of detail.</li>
-</ul>
-</div>
+</ul></div>
 <h2 id="preparation">Preparation</h2>
 <p>Read carefully through the following book chapters from the compendium:</p>
 <ul>
 <li><p>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. <strong>Chapter 1: The Essential Software Requirement.</strong> pp 3–23 (20 pages). This is a classic book on requirements, and this first chapter introduces all terms and illustrates them nicely.</p></li>
-<li>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. (In the Digital Compendium, via Blackboard) <strong>Chapter 8: Understanding User Requirements.</strong> pp 143-165 (22 pages).
+<li><p>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. (In the Digital Compendium, via Blackboard) <strong>Chapter 8: Understanding User Requirements.</strong> pp 143-165 (22 pages).</p>
 <ul>
 <li>The relationships <em>extend</em> and <em>include</em> are subtle. Don’t worry too much about them.</li>
 </ul></li>
 </ul>
-
-<span name="60a0e6"></span><aside name="60a0e6"><p>You find the book chapter as part of the compendium on Blackboard.</p>
-</aside>
+<span name="60a0e6"></span><aside name="60a0e6"><p>You find the book chapter as part of the compendium on Blackboard.</p></aside>
 <p>Optionally, read through the following chapter from the compendium: <em>(You will need to create such a document as part of the semester project, but can also take a look at it then.)</em></p>
 <ul>
 <li>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press.<br />
 <strong>Appendix C: Sample Requirements Document.</strong> pp 575–580 (6 pages). This is a sample requirements document, similar to one that you also will have to deliver for your project. The RAT will not contain question that require you to remember details from the document, but this document provides a valuable context for Chapter 1.</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="use-case-levels">Use Case Levels</h1>
 <p><em>You should read through the following material before the team activity, but you don’t have to remember it for the RAT.</em></p>
 <p>Not all use cases are at the same level. Alistair Cockburn proposes in his book <em>Writing Effective Use Cases</em> to sort them according to the levels inspired by a horizon, as shown in the table below.</p>
-
 <div>
 <table class="table">
 <tr style="background-color: #F8FCFF">
@@ -247,7 +320,6 @@
 <li>At the top, there are use cases that represent <strong>summary goals</strong>. They describe high-level goals and why the system exist, but are a bit abstract so that it may be difficult to be sure how they are implemented. On this summary goal level, we distinguish between the very high level <strong>cloud</strong>, of which a system only should have very few. For the loan application system, <em>Offer Student Loans</em> would be such a use case. One step further down we have <strong>kites</strong>, which describe use cases that are a bit more concrete than cloud-levels. An example is <em>Check Student Loan Credibility</em>.</li>
 <li>At the bottom, we have the level for <strong>subfunctions</strong>. Here, we can have useful use cases that we characterize as <strong>fishes</strong>. <em>Check Submitted Formular</em> may be a function related to several goals in the system, and necessary, but is itself not a goal of a user. It’s more a detailed subfunction. Below the fishes, there are even more low-level use cases, called <strong>clams</strong>. They are so low-level that we shouldn’t even write them down. An example would be <em>Enter Student Name</em>. Instead, these should be integrated into higher level use cases. (Sorry, clams…)</li>
 </ul>
-
 <h2 id="good-use-cases-at-sea-level">Good Use Cases at Sea-Level</h2>
 <p>A good use case specification requires good use cases especially at the sea-level. Now you may also appreciate the analogy with the sky, the sea-level and the water. The ones in the sky are a bit fluffy and abstract, but provide the necessary goals. The ones under water are necessary, but you can get lost in them. And the ones you should focus on are at the sea-level. Good guidelines for use cases at the sea-level are the following:</p>
 <ul>
@@ -269,12 +341,10 @@
 <li>ask the question <em>why</em> the actor is doing something</li>
 <li>remove details and merge steps</li>
 </ul>
-
     </section>
     <section class="content">
 <h1 id="optional-preparation">Optional Preparation</h1>
 <p>Have a look at the following videos that show how to create deployment diagrams.</p>
-
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tLJXJLfLCCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -301,6 +371,15 @@
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

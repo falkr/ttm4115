@@ -28,6 +28,128 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -141,146 +263,133 @@
     <section class="content">
 <h1 id="deliveries">Deliveries</h1>
 <p>During the semester, you need to hand in the following deliveries:</p>
-
-<table class="table table-sm check">
-<thead>
-<tr class="header">
+<table class="check table table-sm">
+<tr>
 <th></th>
 <th><p>Date</p></th>
 <th><p>Type</p></th>
 <th><p>Content</p></th>
 <th></th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>System Spec, version 1</p></td>
 <td><p>Week 9</p></td>
 <td><p>Team</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Feedback to version 1</p></td>
 <td><p>Week 10</p></td>
 <td><p>Individual</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>System Spec, version 2</p></td>
 <td><p>Week 12</p></td>
 <td><p>Team</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Feedback to version 2</p></td>
 <td><p>Week 14</p></td>
 <td><p>Individual</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>System Spec, final version</p></td>
 <td><p>Week 17</p></td>
 <td><p>Team</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>RATx</p></td>
 <td></td>
 <td><p>Individual+Team</p></td>
 <td><p>RATs are done during class.</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Reflective Essay</p></td>
 <td><p>Week 18</p></td>
 <td><p>Individual</p></td>
 <td></td>
 <td></td>
 </tr>
-</tbody>
 </table>
-
     </section>
     <section class="content">
 <h1 id="system-specification">System Specification</h1>
 <p>During the semester you will work on a system specification in your development teams. This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
-
-<table class="table table-sm check">
-<thead>
-<tr class="header">
+<table class="check table table-sm">
+<tr>
 <th><p>Item</p></th>
 <th><p>System Spec, Version 1</p></th>
 <th><p>System Spec, Version 2</p></th>
 <th><p>System Spec, Final Version</p></th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr>
 <td><p>Deployment Diagram</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Problem and Background</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Vision</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Objectives</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Stakeholders</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Use Case Hierarchy</p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Selected Use Cases</p></td>
 <td><p><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Interactions</p></td>
 <td><p><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>State Machines</p></td>
 <td><p><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 <td><p><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></p></td>
 </tr>
-</tbody>
 </table>
-
     </section>
     <section class="content">
 <h1 id="format-and-template">Format and Template</h1>
-
 <ul>
 <li>All delivery documents must be in <em>PDF</em> format.</li>
 <li>You can include diagrams and figures in landscape mode for entire pages. In this case, they need to be readable <strong>from the right</strong>.</li>
@@ -288,12 +397,22 @@
 <li>The header on each page must contain your team number and the delivery name.</li>
 <li>For individual deliveries, your name must be in the header.</li>
 </ul>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

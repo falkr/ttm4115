@@ -28,6 +28,158 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -142,25 +294,20 @@
 <h1 id="creating-state-machines">Creating State Machines</h1>
 <p>Creating state machines is a valuable engineering task. While you do it, you understand gradually more of your system and the task it should solve. Usually, this is difficult in the beginning but gets easier as you learn more. In some cases it may also happen that you need to start over, because you have understood, for example, that it is easier to model some behavior with a set of state machines instead of a single one. This will get much better with some experience. But it is not always difficult. Often, you manage to handle a problem after some attempts and then you “see” that you have a good solution. In that respect, state machines are very nice, because a problem, once modelled properly, can be easily checked by executing the state machines.</p>
 <p>State machines are precise artefacts that can take care of the detailed behavior, so they are suitable for unambiguously define how a system should work. In the end, you did a good job if you are able to map user requirements to a set of consistent, high-quality state machines.</p>
-
 <div class="check"><p>With high quality, we mean here that:</p>
 <ul>
 <li>The state machine is syntactically correct.</li>
 <li>The state machine describes behavior that makes sense and is clearly defined.</li>
 <li>The state machine has a good layout that conveys how it works and helps the reader to understand it.</li>
 <li>The state machine can be implemented in code.</li>
-</ul>
-</div>
+</ul></div>
 <p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts. Actually, I think I have never observed that even experts write down a state machine correctly on the first attempt, because there is always something that you forget. So, they key to creating a state machine: <strong>Don’t even try to make it correct on the first attempt, but approach it iteratively.</strong> Sometimes it is a good idea to separate the task of creating something from the test of validating it. Otherwise it is easy to get stuck. So for state machines, we switch between writing down a state machine and then checking it.</p>
-
 <div class="figure">
 <img src="figures/statemachines/iterate.svg" alt="Switch between creating a state machine and checking it, so that you don't get stuck." width="100%"/>
 <span name="figures/statemachines/iterate.svg">&nbsp;</span>
-<aside name="figures/statemachines/iterate.svg"><p><p>Switch between creating a state machine and checking it, so that you don’t get stuck.</p>
-</p></aside>
+<aside name="figures/statemachines/iterate.svg"><p><p>Switch between creating a state machine and checking it, so that you don’t get stuck.</p></p></aside>
 </div>
 <h2 id="writing-down-a-state-machine">Writing Down a State Machine</h2>
-
 <p>To create down a state machine, don’t ba afraid to just sketch a first version. The following tips may help:</p>
 <ul>
 <li><strong>Start with pencil and paper</strong>. Sometimes it is easier to explore design when you work alone, very focused and only with pencil and paper, where you can quickly sketch some states and transitions, without the pressure to make it work completely immediately. I have lots of experience in designing state machines. I still start with pencil and paper each time, before I go over to an electronic editor.</li>
@@ -173,12 +320,10 @@
 <li><strong>Explore the problem</strong>. Most likely, you will explore the problem and find out that you haven’t understood everything, or that there are details that you have overlooked in the beginning. Be aware of what you learn, and how you can represent it with states and transitions. he state machine challenges you to learn more about the system.</li>
 <li><strong>Start fresh</strong>. When you get completely stuck, throw your sketch away and start fresh.</li>
 </ul>
-
 <div class="figure">
 <img src="figures/statemachines/sketching.jpg" alt="It's a good idea to start with a sketch using paper and pencil and start simple." width="100%"/>
 <span name="figures/statemachines/sketching.jpg">&nbsp;</span>
-<aside name="figures/statemachines/sketching.jpg"><p><p>It’s a good idea to start with a sketch using paper and pencil and start simple.</p>
-</p></aside>
+<aside name="figures/statemachines/sketching.jpg"><p><p>It’s a good idea to start with a sketch using paper and pencil and start simple.</p></p></aside>
 </div>
 <h2 id="checking-state-machines">Checking State Machines</h2>
 <p>Once you have a state machine, even a partial one, you can check if it can actually work.</p>
@@ -191,7 +336,6 @@
 <li><strong>Are triggers clear?</strong> A state must not have two or more outgoing transitions that declare the same triggering event and also the same guard. This means, when an event occurs, it must be clear which transition will be chosen.</li>
 <li><strong>Consume, defer or discard.</strong> Make sure that for each state, an event is either consumed (by an outgoing transition) or deferred. If a state says nothing about an event, the event is implicitly discarded in case it arrives. A state must not defer an event that also triggers one of its outgoing transitions.</li>
 </ul>
-
 <p>For each <strong>transition</strong> you should check:</p>
 <ul>
 <li><strong>Does every transition have a triggering event?</strong> This means that every transition must declare a trigger in the form of a message reception, a timer expiration, unless it is an initial transition or following a choice pseudo state.</li>
@@ -207,12 +351,24 @@
 <li>Are all events that you need to receive handled, and are they properly handled (consumed, deferred or discarded) in each state? Are there events that are never handled?</li>
 </ul>
 <p>These are the rules that you can check even without knowing exactly what the application should do, just by looking at the state machines. These are generic rules, independent of a specific application, and if they don’t hold, it is very likely that you do have a problem. But then there are also errors that have to do with your specific <strong>application.</strong> This can be a bit harder to find out. You need to simulate the state machines using your fingers and go through it state by state and event by event. When the problem is not too big, this is possible. Later, once we implement state machines in Python, you will also be able to build functioning prototypes, which you can use and test to see how the final state machine behaves.</p>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

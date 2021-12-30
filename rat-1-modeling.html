@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -139,7 +219,6 @@
 <div class="page">
     <section class="content">
 <h2 id="question-1">Question 1</h2>
-
 <div class="rat"><p>What does it mean when we speak about “degrees” of UML?</p>
 <ol type="1">
 <li>Everything is a model, also code, so talking about “degrees of UML” is not really helpful.</li>
@@ -147,8 +226,7 @@
 <li>To be valuable, models need to be detailed and formal.</li>
 <li>Using “UML as a Blueprint” means to automatically generate code from the UML models.</li>
 </ol>
-<h2 id="question-2">Question 2</h2>
-</div>
+<h2 id="question-2">Question 2</h2></div>
 <div class="rat"><p>About modeling in general, which one of the following statements is true?</p>
 <ol type="1">
 <li>A model is a detailed digital representation of the reality.</li>
@@ -156,8 +234,7 @@
 <li>A diagram is like a window into a model.</li>
 <li>A modeling language must be graphical, otherwise it does not serve its purpose.</li>
 </ol>
-<h2 id="question-3">Question 3</h2>
-</div>
+<h2 id="question-3">Question 3</h2></div>
 <div class="rat"><p>Which of the following statements on models and code is <strong>false</strong>?</p>
 <ol type="1">
 <li>UML is so expressive that it corresponds to code.</li>
@@ -165,8 +242,7 @@
 <li>Code does not tell you how the software is to be used or by whom.</li>
 <li>To understand a system that is only described by code, you have to understand the code.</li>
 </ol>
-<h2 id="question-4">Question 4</h2>
-</div>
+<h2 id="question-4">Question 4</h2></div>
 <div class="rat"><p>What are the reasons to invest time into preparing a system model, for instance in UML?</p>
 <ol type="1">
 <li>Testing will be practically unnecessary.</li>
@@ -174,8 +250,7 @@
 <li>In many development processes, modeling is a mandatory activity.</li>
 <li>All project participants can gain a better understanding.</li>
 </ol>
-<h2 id="question-5">Question 5</h2>
-</div>
+<h2 id="question-5">Question 5</h2></div>
 <div class="rat"><p>What do deployment diagrams show?</p>
 <ol type="1">
 <li>The logical elements of the system.</li>
@@ -183,8 +258,7 @@
 <li>How the pieces of the system communicate.</li>
 <li>Both how software is assigned to hardware and how the pieces of the system communicate.</li>
 </ol>
-<h2 id="question-6">Question 6</h2>
-</div>
+<h2 id="question-6">Question 6</h2></div>
 <div class="rat"><p>Which of the following statements is true:</p>
 <ol type="1">
 <li>artifacts cannot represent executable files</li>
@@ -192,8 +266,7 @@
 <li>devices cannot model an application server</li>
 <li>artifacts cannot represent library files</li>
 </ol>
-<h2 id="question-7">Question 7</h2>
-</div>
+<h2 id="question-7">Question 7</h2></div>
 <div class="rat"><p>Which stereotypes fits best into the picture (at their respective placeholders)?</p>
 <ol type="1">
 <li><ol type="1">
@@ -208,13 +281,11 @@
 <li><ol type="1">
 <li>deploy, (2) artifact, (3) device</li>
 </ol></li>
-</ol>
-</div>
+</ol></div>
 <div class="figure">
 <img src="figures/rats/deployment-1.png" width="100%"/>
 </div>
 <h2 id="question-8">Question 8</h2>
-
 <div class="rat"><p>What should a deployment diagram show?</p>
 <ol type="1">
 <li>The more complete a deployment diagram is, the more useful it is during the actual deployment.</li>
@@ -222,8 +293,7 @@
 <li>It is important to only show relevant details of a system.</li>
 <li>A deployment diagram should be complete.</li>
 </ol>
-<h2 id="question-9">Question 9</h2>
-</div>
+<h2 id="question-9">Question 9</h2></div>
 <div class="rat"><p>Which relationship or connection between two elements can also be represented by nesting, i.e., by drawing one node into another one?</p>
 <ol type="1">
 <li>communication</li>
@@ -231,21 +301,28 @@
 <li>dependency between two artifacts</li>
 <li>deploy</li>
 </ol>
-<h2 id="question-10">Question 10</h2>
-</div>
+<h2 id="question-10">Question 10</h2></div>
 <div class="rat"><p>Deployment diagrams…</p>
 <ol type="1">
 <li>Are useful at all stages of development.</li>
 <li>Are useful at all later stages of development.</li>
 <li>Are useful during system deployment.</li>
 <li>Are useful during the system implementation.</li>
-</ol>
-</div>
+</ol></div>
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

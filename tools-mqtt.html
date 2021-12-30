@@ -28,6 +28,86 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+
+</style>
 </head>
 <body id="top">
 
@@ -141,29 +221,19 @@
     <section class="content">
 <h1 id="mqtt">MQTT</h1>
 <p>We use MQTT as the protocol to connect all system components.</p>
-
     </section>
     <section class="content">
 <h1 id="mqtt-broker">MQTT Broker</h1>
 <h2 id="install-mosquitto-on-a-raspberry-pi">Install Mosquitto on a Raspberry Pi</h2>
-
 <h3 id="mosquitto-broker">Mosquitto Broker</h3>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">sudo</span> apt-get install mosquitto</a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">sudo</span> apt-get install mosquitto</span></code></pre></div>
 <h3 id="mosquitto-command-line-clients">Mosquitto Command-Line Clients</h3>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">sudo</span> apt-get install mosquitto-clients</a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">sudo</span> apt-get install mosquitto-clients</span></code></pre></div>
 <h3 id="testing-mosquitto">Testing Mosquitto</h3>
 <p>You can now try to subscribe to a topic</p>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">mosquitto_sub</span> -d -t example_topic</a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">mosquitto_sub</span> -d -t example_topic</span></code></pre></div>
 <p>and publish something on that topic:</p>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">mosquitto_pub</span> -d -t example_topic -m <span class="st">&quot;Time for a coffee&quot;</span></a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">mosquitto_pub</span> -d -t example_topic -m <span class="st">&quot;Time for a coffee&quot;</span></span></code></pre></div>
 <p><img src="https://www.iik.ntnu.no/ttm4115/wp-content/uploads/2018/02/mqtt_example-300x231.png" alt="" width="525" height="404" class="alignnone wp-image-368" /></p>
 <h3 id="enabling-websockets">Enabling Websockets</h3>
 <p>If you want to connect to the MQTT broker also via MQTT over websockets (usually from Javascript) then you need to enable Websockets. For that, create a file called <code>mosquitto.conf</code> in the folder <code>/etc/mosquitto/conf.d</code> and add the follwing lines:</p>
@@ -172,7 +242,6 @@ protocol mqtt
 
 listener 1884
 protocol websockets</code></pre>
-
     </section>
     <section class="content">
 <h1 id="ntnu-mqtt-broker">NTNU MQTT Broker</h1>
@@ -182,77 +251,75 @@ protocol mqtt
 
 listener 1884
 protocol websockets</code></pre>
-
     </section>
     <section class="content">
 <h1 id="mqtt-in-python">MQTT in Python</h1>
 <p>After setting up your broker, you can easily make use MQTT in Python with the paho-mqtt package. To install this package with pip, use the command:</p>
 <pre><code>python -m pip install paho-mqtt</code></pre>
 <p>We can now make a simple script that is able to <strong>publish</strong> information on a topic, to the broker:</p>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</a>
-<a class="sourceLine" id="cb1-2" title="2">port<span class="op">=</span><span class="dv">1883</span></a>
-<a class="sourceLine" id="cb1-3" title="3"></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">def</span> on_publish(client,userdata,result):</a>
-<a class="sourceLine" id="cb1-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;data published </span><span class="ch">\n</span><span class="st">&quot;</span>)</a>
-<a class="sourceLine" id="cb1-6" title="6">    <span class="cf">pass</span></a>
-<a class="sourceLine" id="cb1-7" title="7"></a>
-<a class="sourceLine" id="cb1-8" title="8">client1<span class="op">=</span> mqtt.Client(<span class="st">&quot;test1&quot;</span>)</a>
-<a class="sourceLine" id="cb1-9" title="9">client1.on_publish <span class="op">=</span> on_publish</a>
-<a class="sourceLine" id="cb1-10" title="10">client1.<span class="ex">connect</span>(broker,port)</a>
-<a class="sourceLine" id="cb1-11" title="11">ret<span class="op">=</span> client1.publish(<span class="st">&quot;mqtt_test&quot;</span>,<span class="st">&quot;The broker is working properly&quot;</span>)</a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>port<span class="op">=</span><span class="dv">1883</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">def</span> on_publish(client,userdata,result):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;data published </span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>    <span class="cf">pass</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>client1<span class="op">=</span> mqtt.Client(<span class="st">&quot;test1&quot;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>client1.on_publish <span class="op">=</span> on_publish</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>client1.<span class="ex">connect</span>(broker,port)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>ret<span class="op">=</span> client1.publish(<span class="st">&quot;mqtt_test&quot;</span>,<span class="st">&quot;The broker is working properly&quot;</span>)</span></code></pre></div>
 <p>Now we need a <strong>subscriber</strong> to connect to the broker and recieve the messages we publish:</p>
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</a>
-<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">def</span> on_connect(client, userdata, flags, rc):</a>
-<a class="sourceLine" id="cb1-3" title="3">    <span class="bu">print</span>(<span class="st">&quot;Connected with result code &quot;</span><span class="op">+</span><span class="bu">str</span>(rc))</a>
-<a class="sourceLine" id="cb1-4" title="4"></a>
-<a class="sourceLine" id="cb1-5" title="5">client.subscribe(<span class="st">&quot;mqtt_test/#&quot;</span>)</a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="kw">def</span> on_message(client, userdata, msg):</a>
-<a class="sourceLine" id="cb1-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;Topic: &quot;</span> <span class="op">+</span> msg.topic)</a>
-<a class="sourceLine" id="cb1-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;Message: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(msg.payload))</a>
-<a class="sourceLine" id="cb1-9" title="9"></a>
-<a class="sourceLine" id="cb1-10" title="10">client <span class="op">=</span> mqtt.Client()</a>
-<a class="sourceLine" id="cb1-11" title="11">client.on_connect <span class="op">=</span> on_connect</a>
-<a class="sourceLine" id="cb1-12" title="12">client.on_message <span class="op">=</span> on_message</a>
-<a class="sourceLine" id="cb1-13" title="13"></a>
-<a class="sourceLine" id="cb1-14" title="14">client.<span class="ex">connect</span>(<span class="st">&quot;192.168.10.168&quot;</span>, <span class="dv">1883</span>, <span class="dv">60</span>)</a>
-<a class="sourceLine" id="cb1-15" title="15"></a>
-<a class="sourceLine" id="cb1-16" title="16">client.loop_forever()</a></code></pre></div>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="im">import</span> paho.mqtt.client <span class="im">as</span> mqtt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="kw">def</span> on_connect(client, userdata, flags, rc):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Connected with result code &quot;</span><span class="op">+</span><span class="bu">str</span>(rc))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>client.subscribe(<span class="st">&quot;mqtt_test/#&quot;</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="kw">def</span> on_message(client, userdata, msg):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Topic: &quot;</span> <span class="op">+</span> msg.topic)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>    <span class="bu">print</span>(<span class="st">&quot;Message: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(msg.payload))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>client <span class="op">=</span> mqtt.Client()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>client.on_connect <span class="op">=</span> on_connect</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>client.on_message <span class="op">=</span> on_message</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>client.<span class="ex">connect</span>(<span class="st">&quot;192.168.10.168&quot;</span>, <span class="dv">1883</span>, <span class="dv">60</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a>client.loop_forever()</span></code></pre></div>
 <p>More information on the paho package can be found here: <a href="https://pypi.python.org/pypi/paho-mqtt/">https://pypi.python.org/pypi/paho-mqtt/</a></p>
-
 <p>If there is an error in the <code>on_message()</code> function, you may not see an error and nothing is happening, and it may look as if the client doesn’t receive any messages. To prevent such errors, add a <code>print('Message received!')</code> line at the start of the message so you see it was called. Make sure this first statement does not have any problems (like unkown variables) so that it does not fail.</p>
 <p>You can also place any code that could cause an error into a <code>try:</code> … <code>except:</code> block to handle any exceptions locally.</p>
-
 <h2 id="subscribe-to-system-messages">Subscribe to system messages</h2>
 <p>client.subscribe(“$SYS/#”)</p>
-
     </section>
     <section class="content">
 <h1 id="debugging-with-mqtt.fx">Debugging With MQTT.FX</h1>
 <p>MQTT.FX is a tool useful during development. (If you wonder, the name <em>MQTT.FX</em> just comes from the fact that it is implemented in Java FX, but you can forget about that.) Using MQTT.FX is really simple, but because we have now talked about brokers, clients, publishers and subscribers, you may loose track and wonder what this MQTT.FX does: Think of it as a debugger for MQTT, and you can use it like Wireshark. Once the system is done, you don’t need MQTT.FX anymore.</p>
 <p>Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTT.FX has a generic user interface, you can use MQTT.FX while you construct your application to see how the other system components publish messages, and you can also “inject” messages into the system, by publishing to any topic you want.</p>
 <p><a class="arrow" href="https://mqttfx.jensd.de">Download MQTT.FX</a></p>
-
 <div class="figure">
 <img src="figures/mqtt/mqtt-fx-publish.png" width="100%"/>
 </div>
 <h2 id="publishing-messages">Publishing Messages</h2>
 <p>Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not doen with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.</p>
-
 <div class="figure">
 <img src="figures/mqtt/mqtt-fx-subscribe.png" width="100%"/>
 </div>
 <h2 id="observing-communication">Observing Communication</h2>
 <p>Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.</p>
-
     </section>
 </div>
 
 
 <footer></footer>
+<script>
+
+
+
+
+
+
+
+</script>
 <script>
   anchors.options.visible = 'touch';
   anchors.add("h1, h2, h3");

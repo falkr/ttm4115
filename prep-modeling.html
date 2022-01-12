@@ -167,6 +167,47 @@ div.card-footer a {
 div.rat ol {
   list-style-type: upper-alpha;
 }
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
 
 
 </style>
@@ -661,6 +702,7 @@ function quiz_confirm(quiz_id, correct) {
         }
     }
 }
+
 
 
 

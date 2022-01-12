@@ -17,133 +17,133 @@
 | Fri., 14. Jan 2022
 | 12:15 - 16:00
 | <a href="tools.html">Zoom</a>
-| Course Startup
+| <a href="unit-setup.html">Team Setup</a>
 | 
 |-
 | 3
 | Mon., 17. Jan 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
-| <a href="prep-setup.html">Team Setup</a>
+| <a href="prep-modeling.html">Modeling</a>
 | 
 |-
 |  
 | Fri., 21. Jan 2022
 | 12:15 - 16:00
 | <a href="tools.html">Zoom</a>
-| <a href="unit-setup.html">Team Setup</a>
+| <a href="unit-modeling.html">Modeling</a>
 | 
 |-
 | 4
 | Mon., 24. Jan 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
-| <a href="prep-modeling.html">Modeling</a>
+| <a href="prep-statemachines.html">State Machines</a>
 | 
 |-
 |  
 | Fri., 28. Jan 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
-| <a href="unit-modeling.html">Modeling</a>
+| <a href="unit-statemachines.html">State Machines</a>
 | 
 |-
 | 5
 | Mon., 31. Jan 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
-| <a href="prep-statemachines.html">State Machines</a>
+| <a href="prep-user-requirements.html">User Requirements</a>
 | 
 |-
 |  
 | Fri., 04. Feb 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
-| <a href="unit-statemachines.html">State Machines</a>
+| <a href="unit-user-requirements.html">User Requirements</a>
 | 
 |-
 | 6
 | Mon., 07. Feb 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
-| <a href="prep-user-requirements.html">User Requirements</a>
+| <a href="prep-stmpy.html">State Machines in Python</a>
 | 
 |-
 |  
 | Fri., 11. Feb 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
-| <a href="unit-user-requirements.html">User Requirements</a>
+| <a href="unit-stmpy.html">State Machines in Python</a>
 | 
 |-
 | 7
 | Mon., 14. Feb 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
-| <a href="prep-stmpy.html">State Machines in Python</a>
+| <a href="prep-agile.html">Agile Development</a>
 | 
 |-
 |  
 | Fri., 18. Feb 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
-| <a href="unit-stmpy.html">State Machines in Python</a>
-| 
-|-
-| 8
-| Mon., 21. Feb 2022
-| 10:15 - 12:00
-| <a href="tools.html">Zoom</a>
-| <a href="prep-agile.html">Agile Development</a>
-| 
-|-
-|  
-| Fri., 25. Feb 2022
-| 12:15 - 16:00
-| <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
 | <a href="unit-agile.html">Agile Development</a>
 | <a href="deliveries-t1.html">Spec v.1</a>
 |-
-| 9
-| Mon., 28. Feb 2022
+| 8
+| Mon., 21. Feb 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
 | <a href="prep-communication.html">Communication</a>
 | 
 |-
 |  
-| Fri., 04. Mar 2022
+| Fri., 25. Feb 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
 | <a href="unit-communication.html">Communication</a>
 | <a href="deliveries-i1.html">Feedback to Spec v.1</a>
 |-
-| 10
-| Mon., 07. Mar 2022
+| 9
+| Mon., 28. Feb 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
 | <a href="prep-interactions.html">Interactions</a>
 | 
 |-
 |  
-| Fri., 11. Mar 2022
+| Fri., 04. Mar 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
 | <a href="unit-interactions.html">Interactions</a>
 | 
 |-
-| 11
-| Mon., 14. Mar 2022
+| 10
+| Mon., 07. Mar 2022
 | 10:15 - 12:00
 | <a href="tools.html">Zoom</a>
 | <a href="prep-components.html">Components</a>
 | 
 |-
 |  
-| Fri., 18. Mar 2022
+| Fri., 11. Mar 2022
 | 12:15 - 16:00
 | <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
 | <a href="unit-components.html">Components</a>
+| 
+|-
+| 11
+| Mon., 14. Mar 2022
+| 10:15 - 12:00
+| <a href="tools.html">Zoom</a>
+| 
+| 
+|-
+|  
+| Fri., 18. Mar 2022
+| 12:15 - 16:00
+| <a href="https://link.mazemap.com/YoKHciaS">GL-HB</a>
+| 
 | 
 |-
 | 12

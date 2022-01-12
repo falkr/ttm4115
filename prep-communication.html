@@ -15,13 +15,15 @@
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<link href="assets/bootstrap.min.css" rel="stylesheet">
+
+<!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
+-->
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
@@ -151,6 +153,68 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
+ol.quiz li {
+  padding-left:3rem;
+  cursor: pointer;
+  }
+ol.quiz li::before {
+  font-family: bootstrap-icons !important;
+  padding-top:0.3rem;
+  padding-right: 1rem;
+  margin-left:-2rem;
+  font-size: 1rem;
+  vertical-align: top;
+  }
+ol.quiz li.unselected::before {
+  content: "\f28a";
+  }
+ol.quiz li.unselected:hover::before {
+  content: "\f287";
+  }
+ol.quiz li.selected::before {
+  content: "\f287";
+  color: #666666;
+  }
+ol.quiz li.unselected-true::before {
+  content: "\f26b";
+  color: #5CA551;
+  }
+ol.quiz li.selected-true::before {
+  content: "\f26a";
+  color: #5CA551;
+  }
+ol.quiz li.unselected-false::before {
+  content: "\f5e7";
+  }
+ol.quiz li.selected-false::before {
+  content: "\f5e6";
+  color: #FF3B30;
+  }
+ol.quiz li.selected-false {
+  color:#666666;
+  background-color: #FFD6D3;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.selected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.unselected-false {
+  color:lightgray;
+  }
+ol.quiz li.unselected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+div.card-footer a {
+  cursor: pointer;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
 /*tr.rubric_title {background-color: lightgrey}*/
 /*tr.rubric_a {background-color: #D0E8DC}
 tr.rubric_b {background-color: #EEF7DB}
@@ -198,9 +262,6 @@ div.tip p {
   background-color: #d9eaf2;
   border-radius: 5px;
   border-left: 6px solid #1481b8
-}
-div.rat ol {
-  list-style-type: upper-alpha;
 }
 
 table.weekplan {
@@ -450,7 +511,7 @@ table.weekplan a {
 <h1 id="http---hypertext-transfer-protocol">HTTP - Hypertext Transfer Protocol</h1>
 <p>This is only a very brief description of HTTP to relate it to the previously described communication topologies and message patterns. You have probably already heard about HTTP in other courses. Here, we look at it from an application’s perspective. If you are interested in more technical details, read for instance on <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Wikipedia</a>.</p>
 <p>HTTP is a request-response message pattern, and uses a client-server topology. The server usually provides resources to the client, which can be a web browser. In HTTP, the initiatives for communication are uni-directional. This means, the client takes initiative and contacts the server, not the other way round. For the original purpose of HTTP (requesting documents from a server) this is suitable characteristic, since it simplifies the construction of efficient servers and how documents can be cached.</p>
-<h2 class="unnumbered" id="getting-bi-directional">Getting Bi-Directional</h2>
+<h2 id="getting-bi-directional" class="unnumbered">Getting Bi-Directional</h2>
 <p>One websites should get more interactive, this is a limitation we are all aware of. We are used to refresh a website to see if there is new information available. And when booking a flight or paying via credit card, you see clumsy messages like “Don’t reload this page.” This is so inelegant because technology was never intended to this stuff with a browser! With this example you also see which fundamental effect communication topologies and message patterns have. Websites today are incredibly more advanced than ten years ago. Still, some of these old limitations are hard to get rid off.</p>
 <p>There are some mechanisms that work around these limitations of HTTP. If you are interested in the details, have a look at the <a href="https://en.wikipedia.org/wiki/Comet_(programming)">Wikipedia article on Comet</a>. To keep it brief; it’s fascinating, but ugly. In essence, the workaround is that the client still initiates all communication, but client and server keep an HTTP connection alive, so that the server can send updates once there are some. When Google offered chat on their Gmail website, for instance, they used this mechanism to <a href="https://stackoverflow.com/questions/732705/how-is-gmail-chat-able-to-make-ajax-requests-without-client-interaction">push new chat messages immediately from the server to the browser</a>. Google Docs uses a <a href="https://stackoverflow.com/questions/35070217/what-technology-does-google-drive-use-to-get-real-time-updates">similar mechanism</a>.</p>
 <p>To address the needs of server to notify the client when new information is available, the <a href="https://en.wikipedia.org/wiki/WebSocket">WebSocket protocol</a> was built. Like HTTP, it also builds upon TCP, but offers full-duplex. With WebSockets, you can for instance build relatively simple web-applications running in the browser that support fine-grained, bi-directional interactions like chat or games.</p>
@@ -710,6 +771,7 @@ whenever an MQTT messages arrives at house/garage/sensors/pi1:
 
 
 <footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
 
 
@@ -717,6 +779,68 @@ whenever an MQTT messages arrives at house/garage/sensors/pi1:
 
 
 
+function quiz_select(quiz_id, alternative) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
+            if (i == alternative) {
+                li.classList.add('selected')
+                li.classList.remove('unselected')
+            } else {
+                li.classList.add('unselected')
+                li.classList.remove('selected')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "instructions") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == "confirm") {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
+
+function quiz_confirm(quiz_id, correct) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    let selected = -1;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (i == correct) {
+            if (li.classList.contains('selected')) {
+                // selected and true
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-true')
+            } else if (li.classList.contains('unselected')) {
+                // unselected but true
+                li.classList.remove('unselected')
+                li.classList.add('unselected-true')
+            }
+        } else {
+            if (li.classList.contains('selected')) {
+                // selected but false
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-false')
+            } else if (li.classList.contains('unselected')) {
+                // unselected and false
+                li.classList.remove('unselected')
+                li.classList.add('unselected-false')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "confirm") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == selected) {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
 
 
 

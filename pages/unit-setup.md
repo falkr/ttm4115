@@ -20,7 +20,7 @@ You can ask the following:
 
 ### Find Your Teams Channel
 
-In the Team for the course (TTM4115 2021) you find a channel for each team.
+In the Team for the course you find a channel for each team.
 (It may be listed under *hidden channels*.)
 
 Use this (public) channel when you meet and share your video, so others can join your meeting. 

@@ -25,12 +25,19 @@ Our first class time will be on **Friday, January 14th 2022**, 12:15 via Zoom. Y
 
 # Schedule
 
-Each week, we follow the same schedule:
 
-* Individual preparation before class time.
-* **Monday 10:15-12:00** Weekly Tests (digital, Zoom) and summary from the week before
-* **Friday 12:15-16:00** Teamwork on week activities
-* In some weeks, you need to schedule additional time for teamwork on the semester project and deliverables.
+For each unit, we follow the same schedule:
+
+* You will receive a Blackboard announcement with a link to preparation material. (But even without the announcement, the preparation material is already accessible on the website.)
+* We meet on **Fridays at 12:15** (on Zoom for now), where we start with the individual RAT and the team RAT, ca 45 minutes.
+* You continue on Friday with teamwork until at least 16:00, solving the week activities, which are available from the website.
+* On **Mondays at 10:15** we meet together on Zoom. (This part of the course will be digital for the entire semester.) In this session, three things happen: 
+  1. You can ask questions on the currently ongoing team activity.
+  2. I provide sometimes more content on a subject.
+  3. We provide some feedback on the team activity from the previous unit.
+* In some weeks, you need more time together, especially once we start with the semester project. Here you need to find a time slot where all in your team can meet. 
+* The delivery of the week activity has a deadline in the beginning of the next week, so that you still manage to meet together and conclude the week's team activity.
+
 
 
 ---

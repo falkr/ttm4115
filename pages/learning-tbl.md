@@ -87,14 +87,13 @@ caption: Digital version of the scratch card.
 ## Phase 4: Team Activities
 
 After the team-RAT we continue with the team activities for this learning unit. 
-In the current schedule this happens the day after.
 We will introduce the activities and clarify any questions about the task, 
 the expectations, and how you deliver your results. 
 
 After the class time you can either continue working in your team or schedule a time
 when all are available. The team activities are timed to fit in an 2-hour block. 
 You finish each team activity with a delivery and also a team reflection.
-Depending on the type of activity and delivery, you'll get some feedback on it in the next week.
+Depending on the type of activity and delivery, you'll get some feedback on it during the next week.
 
 :aside: Apart from the team activities that are scheduled each week, you will also work on a semester project.
 

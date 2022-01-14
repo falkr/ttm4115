@@ -44,128 +44,6 @@ div.delivery p::before {
   display: inline;
   font-weight: bold;
 }
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
-}
-
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
-}
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-.w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.w3active, .w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 0 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
-div.rat ol {
-  list-style-type: upper-alpha;
-}
 /*tr.rubric_title {background-color: lightgrey}*/
 /*tr.rubric_a {background-color: #D0E8DC}
 tr.rubric_b {background-color: #EEF7DB}
@@ -207,13 +85,6 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 .rubric th {font-size:12px; vertical-align:top; }
 .rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
 .rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
-
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
 
 </style>
 </head>
@@ -428,7 +299,7 @@ div.tip p {
 <li>Grade <strong>B</strong> requires mostly excellent items, some good, with a good or very good reflective essay.</li>
 <li>Grade <strong>C</strong> requires mostly good items, some excellent, with a good reflective essay.</li>
 <li>The grading is focused on substance. For instance, a single “sufficient” item does not necessarily spoil an A.</li>
-<li>Teamwork vs. individual effort will also be taken into account. Team work has a tendency towards an average, but it should still be possible to achieve a very good mark individually.</li>
+<li>Teamwork vs. individual effort is also be taken into account. Team work has a tendency towards an average, but it is still possible to achieve a very good grade individually.</li>
 </ul>
 <p>Before you get too nervous. From looking at the results of previous years:</p>
 <ul>
@@ -438,8 +309,8 @@ div.tip p {
 <p>I think the grading is well aligned with the assessment, so you don’t have to worry too much about the grading and can focus on learning. Simply working on all required items will guide you towards a good result.</p>
 <ul>
 <li>Participate in the weekly activities and study the material</li>
-<li>Apply the learned stuff in the semester project</li>
-<li>Spend the necessary effort for the reflective essay and you will achieve a very good result.</li>
+<li>Apply the learned concepts in the semester project</li>
+<li>Spend the necessary effort for the reflective essay and you will achieve a very good or even excellent result.</li>
 </ul>
     </section>
 </div>
@@ -448,74 +319,6 @@ div.tip p {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-
-
-
-
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-
 
 
 

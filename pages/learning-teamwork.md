@@ -66,7 +66,7 @@ We therefore formulate a set of rules and guidelines that you should follow, and
 Depending on the number of exchange students, most teams will have a member that does not speak Norwegian. In this case, the working language is English.
 
 * Don't worry about the quality of your English, it will only get better.
-* Have *all* conversations in English, not only when you speak directly to a English-only-speaking member.
-* If you don't know an English term, fallback to Norwegian is of course fine. In that case, lookup a good translation so everybody has learned something. 
+* Have *all* conversations in English, not only when you speak directly to an English-only member.
+* If you don't know an English term, falling back to Norwegian is fine. In that case, lookup a good translation so everybody has learned something. 
 
 

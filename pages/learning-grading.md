@@ -73,7 +73,7 @@ Still, you can expect the following:
 * Grade **B** requires mostly excellent items, some good, with a good or very good reflective essay.
 * Grade **C** requires mostly good items, some excellent, with a good reflective essay.
 * The grading is focused on substance. For instance, a single "sufficient" item does not necessarily spoil an A. 
-* Teamwork vs. individual effort will also be taken into account. Team work has a tendency towards an average, but it should still be possible to achieve a very good mark individually.
+* Teamwork vs. individual effort is also be taken into account. Team work has a tendency towards an average, but it is still possible to achieve a very good grade individually.
 
 Before you get too nervous. From looking at the results of previous years:
 
@@ -83,6 +83,6 @@ Before you get too nervous. From looking at the results of previous years:
 I think the grading is well aligned with the assessment, so you don't have to worry too much about the grading and can focus on learning. Simply working on all required items will guide you towards a good result.
 
 * Participate in the weekly activities and study the material
-* Apply the learned stuff in the semester project
-* Spend the necessary effort for the reflective essay and you will achieve a very good result. 
+* Apply the learned concepts in the semester project
+* Spend the necessary effort for the reflective essay and you will achieve a very good or even excellent result. 
 

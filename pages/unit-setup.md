@@ -65,12 +65,9 @@ Try to briefly get an overview of today's tasks, and come up with a rough time p
 
 - Take a picture together. (Be creative --- a screenshot of your Teams window also works!)
 - Annotate the picture with your names. 
+- Put the picture into your Team document.
+- Copy your picture also in the document "Team Pictures.pptx" on Teams.
 
-Share your picture also in the padlet below. (You'll find the password in the Information section on Blackboard.)
-
-<div>
-<div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/aicjqciyuxdnphr" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
-</div>
 
 ### Create a Week Entry
 
@@ -85,6 +82,15 @@ If someone is missing, try to find out why and make a note.
 _We will come back to the team reflection document at the end._
 
 
+
+# Task: Use Piazza
+
+We use Piazza as the forum to ask and answer questions, both from teams or individually. To get started and into the habit of using Piazza:
+
+* Access Piazza from Blackboard
+* Everybody in the team should pose a question, for instance about the organization of the course. If you don't have a real question, as maybe something that you already know but that may still be relevant.
+* Answer at least one question asked by someone in another team.
+* Done!
 
 
 
@@ -139,7 +145,6 @@ The project manager is usually a single person, with the responsibility to manag
 
 :delivery:
 Copy the DOCX with your final answer into the general channel / Files and folder for this unit. (This is why you should change the XX in the filename to your team name.) Done!
-(We will have a look at all deliveries and point out interesting details of each of them in the Friday summary.)
 
 
  

@@ -40,6 +40,34 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
 </style>
 </head>
 <body id="top">
@@ -53,32 +81,32 @@ div.figurefullwitdth {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -152,12 +180,14 @@ div.figurefullwitdth {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="airport-gate-control-system">Airport Gate Control System</h1>
-<p>You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven’t formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)</p>
+<h1>Airport Gate Control System</h1>
+<p>You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven't formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)</p>
+
 <div class="figure">
 <img src="figures/interactions/airport.png" alt="A communication diagram for the controller and its connected components." width="100%"/>
 <span name="figures/interactions/airport.png">&nbsp;</span>
-<aside name="figures/interactions/airport.png"><p><p>A communication diagram for the controller and its connected components.</p></p></aside>
+<aside name="figures/interactions/airport.png"><p><p>A communication diagram for the controller and its connected components.</p>
+</p></aside>
 </div>
 <ul>
 <li>The controller is connected to the turnstile, the LEDs, a display, the scanner and a backend server. All units communicate with the messages listed at the respective links.</li>
@@ -168,12 +198,15 @@ div.figurefullwitdth {
 <li>If the boarding pass is valid (message <code>ok</code>), the turnstile gets unlocked, the green LED lights up and the passenger passes. A passing passenger is then reported to the backend via <code>boarded</code>.</li>
 <li>If the boarding pass is not valid (message <code>no</code>), the red LEDs light, and the turnstile stays locked. A message is shown to the display.</li>
 <li>If the passenger does not pass the turnstile, the passenger is not reported as boarded to the backend.</li>
-</ul></li>
+</ul>
+</li>
 <li>The turnstile is unlocked for 3 seconds. If the passenger does not react within that time and pass through the turnstile, it is locked again.</li>
 <li>The display shows the message “Scan your boarding pass” by default (message <code>scan</code>). When the passenger may pass, the display shows “Welcome aboard” (message <code>welcome</code>). If passing is denied, the display shows an error message “Please contact the counter for help” (message <code>help</code>).</li>
 </ul>
+
 <p><strong>Delivery and Process:</strong> Create a single Word document with all your diagrams and answers combined.</p>
-<h2 id="task-1-selected-scenarios">Task 1: Selected Scenarios</h2>
+
+<h2>Task 1: Selected Scenarios</h2>
 <p>Design three separate sequence diagrams that include all components. These diagrams should document three different, selected scenarios, not the entire behavior possible. (Read the hints below before you start.)</p>
 <ul>
 <li>Diagram <strong>Boarding Success</strong> should document a successful boarding process.</li>
@@ -186,7 +219,8 @@ div.figurefullwitdth {
 <li>Do not use any fragments in this task, just messages and lifelines.</li>
 <li>Use copy-paste to copy parts that are similar on the diagrams.</li>
 </ul>
-<h2 id="task-2-state-machine-design">Task 2: State Machine Design</h2>
+
+<h2>Task 2: State Machine Design</h2>
 <p>Design a state machine for the controller based on the sequence diagrams.</p>
 <ul>
 <li>Use the sequence diagrams as input.</li>
@@ -195,17 +229,19 @@ div.figurefullwitdth {
 <li>Add timers and corresponding actions and triggers as needed.</li>
 </ul>
 <p>Some help for starting:</p>
+
 <div class="figure">
 <img src="figures/interactions/airport-help.png" width="100%"/>
 </div>
-<h2 id="task-3-turnstile---controller">Task 3: Turnstile - Controller</h2>
+<h2>Task 3: Turnstile - Controller</h2>
 <p>We now want to consider the interaction between the turnstile and the controller.</p>
 <ul>
 <li>From the two diagrams <strong>Boarding Success</strong> and <strong>Valid Pass No Entry</strong>, extract only the lifelines for the controller and the turnstile, and the messages between these two, <code>unlock</code>, <code>lock</code>, and <code>passed</code>.
 <ul>
 <li>You get two partial diagrams.</li>
 <li>Place the controller to the left, the turnstile to the right. This makes it easier to compare solutions.</li>
-</ul></li>
+</ul>
+</li>
 <li>Using a suitable combined fragment, create a <strong>single</strong> diagram that covers both cases.</li>
 </ul>
 <p>Your sequence diagrams contain a situation that is called <strong>mixed initiative</strong>.</p>
@@ -215,38 +251,45 @@ div.figurefullwitdth {
 <li>Is this a severe problem? Also look at your state machine.</li>
 <li>How can you fox this situation?</li>
 </ul>
-<h2 id="solution-delivery-and-reflection">Solution, Delivery and Reflection</h2>
+
+<h2>Solution, Delivery and Reflection</h2>
 <ul>
 <li>The example solution is <a href="files/airport-system-solution.pdf">here</a>.</li>
-<li>Of course, don’t look at it before you created your own solution.</li>
+<li>Of course, don't look at it before you created your own solution.</li>
 <li>Add a new section <em>Reflection</em> to your document and compare your solution.
 <ul>
 <li>Is there any significant difference?</li>
-</ul></li>
+</ul>
+</li>
 <li>Deliver your final document on Teams</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="feedback-on-specification-version-1">Feedback on Specification Version 1</h1>
-<p>Via MS Teams you will receive all feedback documents from the others to your first version of the system specification. Read through all of them and conclude on which feedback to react on in the next version. A suggestion for the working style:</p>
+<h1>Feedback on Specification Version 1</h1>
+<p>Via MS Teams you will receive all feedback documents from the others to your first version of the system specification.
+Read through all of them and conclude on which feedback to react on in the next version.
+A suggestion for the working style:</p>
 <ul>
 <li>Each one of you opens one of the feedback documents</li>
 <li>You go through them item by item, comparing the feedback</li>
 <li>One of you collects your conclusion or todos to each element in a new working document</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="reflection">Reflection</h1>
-<h3 id="team-reflection">Team Reflection</h3>
+<h1>Reflection</h1>
+<h3>Team Reflection</h3>
 <ul>
 <li>Add another section to the team reflection document, just like every week.</li>
 </ul>
-<h3 id="individual-reflection">Individual Reflection</h3>
+<h3>Individual Reflection</h3>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
+
     </section>
 </div>
 
@@ -254,6 +297,9 @@ div.figurefullwitdth {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
+
+
+
 
 
 

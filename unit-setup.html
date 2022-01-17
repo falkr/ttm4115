@@ -29,7 +29,55 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.delivery p {
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
   font-family: "Source Sans Pro", Georgia, serif;
@@ -44,6 +92,146 @@ div.delivery p::before {
   display: inline;
   font-weight: bold;
 }
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+div.rat ol {
+  list-style-type: upper-alpha;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 </style>
 </head>
 <body id="top">
@@ -57,32 +245,32 @@ div.delivery p::before {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -156,9 +344,11 @@ div.delivery p::before {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="team-setup">Team Setup</h1>
-<span name="556618"></span><aside name="556618"><p>It’s a good idea to use a timer in this exercise, for example the one you have on your phone. Use max. 5 minutes for each one in your team.</p></aside>
-<h3 id="introduction-round">Introduction Round</h3>
+<h1>Team Setup</h1>
+
+<span name="556618"></span><aside name="556618"><p>It's a good idea to use a timer in this exercise, for example the one you have on your phone. Use max. 5 minutes for each one in your team.</p>
+</aside>
+<h3>Introduction Round</h3>
 <p>Have an introduction round. To make it more fun, start with one student that interviews another one, then move to the next student, so that each one gets interviewed and each one poses the questions once.</p>
 <p>You can ask the following:</p>
 <ul>
@@ -167,60 +357,74 @@ div.delivery p::before {
 <li>What did you have for breakfast?</li>
 </ul>
 <p>(Or anything else you want to know.)</p>
+
     </section>
     <section class="content">
-<h1 id="team-reflection-document">Team Reflection Document</h1>
-<h3 id="find-your-teams-channel">Find Your Teams Channel</h3>
-<p>In the Team for the course you find a channel for each team. (It may be listed under <em>hidden channels</em>.)</p>
-<p>Use this (public) channel when you meet and share your video, so others can join your meeting. This is a bit like working together in a big room and you can visit the table of another team.</p>
-<p>Store all your documents in the files section of your team’s channel.</p>
-<span name="731676"></span><aside name="731676"><p>This team setup (assigning roles and planning your time) should become a normal routine for each week.</p></aside>
-<h3 id="create-a-team-reflection-document">Create a Team Reflection Document</h3>
-<p>Throughout the entire semester, you must maintain a team reflection document. This is a single document, one per team, in which you reflect over teamwork and roles. After each team activity you visit this document and add an entry for the week.</p>
-<p>The team reflection document is also part of your final portfolio. It is not graded, but contributes as context for grading all other deliveries.</p>
+<h1>Team Reflection Document</h1>
+<h3>Find Your Teams Channel</h3>
+<p>In the Team for the course you find a channel for each team.
+(It may be listed under <em>hidden channels</em>.)</p>
+<p>Use this (public) channel when you meet and share your video, so others can join your meeting.
+This is a bit like working together in a big room and you can visit the table of another team.</p>
+<p>Store all your documents in the files section of your team's channel.</p>
+
+<span name="731676"></span><aside name="731676"><p>This team setup (assigning roles and planning your time) should become a normal routine for each week.</p>
+</aside>
+<h3>Create a Team Reflection Document</h3>
+<p>Throughout the entire semester, you must maintain a team reflection document.
+This is a single document, one per team, in which you reflect over teamwork and roles.
+After each team activity you visit this document and add an entry for the week.</p>
+<p>The team reflection document is also part of your final portfolio.
+It is not graded, but contributes as context for grading all other deliveries.</p>
 <ul>
 <li>Find the template for the team reflection document in the general channel on Teams. It has the name <code>Team Reflection Team XX.docx</code>.</li>
 <li>Make a copy, replace the <code>XX</code> with your two-digit team number, and place it in the files section of the public channel for your team.</li>
 <li>Since this is a document you will need every week, you can make a Tab out of it, if you want.</li>
 </ul>
-<h3 id="team-roles-for-this-week">Team Roles for This Week</h3>
+<h3>Team Roles for This Week</h3>
 <p>Have a quick look again at the <a href="learning-teamwork.html">team roles</a> that you have read through during the preparation.</p>
 <ul>
 <li>Assign the roles for this week.</li>
 <li>Go through the tasks of the roles and find out if you have the same understanding about them.</li>
 </ul>
-<h3 id="time-check">Time Check</h3>
-<p>Try to briefly get an overview of today’s tasks, and come up with a rough time plan. Don’t forget to schedule some breaks, too.</p>
-<h3 id="find-a-team-name">Find a Team Name</h3>
+<h3>Time Check</h3>
+<p>Try to briefly get an overview of today's tasks, and come up with a rough time plan. Don't forget to schedule some breaks, too.</p>
+
+<h3>Find a Team Name</h3>
 <ul>
 <li>Find a name you like.</li>
 <li>Put it also in the <strong>Team Reflection</strong> document.</li>
 </ul>
-<h3 id="picture">Picture</h3>
+<h3>Picture</h3>
 <ul>
-<li>Take a picture together. (Be creative — a screenshot of your Teams window also works!)</li>
+<li>Take a picture together. (Be creative --- a screenshot of your Teams window also works!)</li>
 <li>Annotate the picture with your names.</li>
 <li>Put the picture into your Team document.</li>
-<li>Copy your picture also in the document “Team Pictures.pptx” on Teams.</li>
+<li>Copy your picture also in the document &quot;Team Pictures.pptx&quot; on Teams.</li>
 </ul>
-<h3 id="create-a-week-entry">Create a Week Entry</h3>
+
+<h3>Create a Week Entry</h3>
 <p>Create an entry for this week as a new section.</p>
-<h3 id="attendance">Attendance</h3>
-<p>Note the attendance of the team members during the week. If someone is missing, try to find out why and make a note.</p>
+<h3>Attendance</h3>
+<p>Note the attendance of the team members during the week.
+If someone is missing, try to find out why and make a note.</p>
+
 <p><em>We will come back to the team reflection document at the end.</em></p>
+
     </section>
     <section class="content">
-<h1 id="task-use-piazza">Task: Use Piazza</h1>
+<h1>Task: Use Piazza</h1>
 <p>We use Piazza as the forum to ask and answer questions, both from teams or individually. To get started and into the habit of using Piazza:</p>
 <ul>
 <li>Access Piazza from Blackboard</li>
-<li>Everybody in the team should pose a question, for instance about the organization of the course. If you don’t have a real question, as maybe something that you already know but that may still be relevant.</li>
+<li>Everybody in the team should pose a question, for instance about the organization of the course. If you don't have a real question, as maybe something that you already know but that may still be relevant.</li>
 <li>Answer at least one question asked by someone in another team.</li>
 <li>Done!</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="task-learning-goals-relevance">Task: Learning Goals Relevance</h1>
+<h1>Task: Learning Goals Relevance</h1>
 <p>It is very likely that you will find the learning goals of this course useful in your later career, no matter what your detailed role is. For simplicity, we can distinguish between three different roles: developer, product owner, and project manager.</p>
 <ul>
 <li><strong>Developers</strong> plan and build the actual system, from the requirements towards the running code.</li>
@@ -228,7 +432,9 @@ div.delivery p::before {
 <li><strong>Project managers</strong> lead a team of developers and are responsible towards the product owner to deliver a system.</li>
 </ul>
 <p>In the following, you should estimate how relevant the learning goals of this course are for the different roles.</p>
-<span name="a7a4a2"></span><aside name="a7a4a2"><p>Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.</p></aside>
+
+<span name="a7a4a2"></span><aside name="a7a4a2"><p>Working first individually and then together is a helpful pattern to collect more ideas and give each one the ability to think on their own. You should always consider this approach and use it when possible.</p>
+</aside>
 <ul>
 <li>Find the document <strong>Learning Goal Relevance</strong>, and make a copy.</li>
 <li>Assign the relative importance of the goal to the individual roles.
@@ -236,32 +442,40 @@ div.delivery p::before {
 <li><code>-</code> for <em>not relevant</em></li>
 <li><code>+</code> for <em>relevant</em></li>
 <li><code>++</code> for <em>very relevant</em></li>
-</ul></li>
+</ul>
+</li>
 <li>Work first individually, and assign the relevance on your own.</li>
 <li>Discuss then in team and compare your results, agree on a common solution.</li>
 <li>Create one final version for the whole team.</li>
 </ul>
-<span name="2c630b"></span><aside name="2c630b"><p>Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.</p></aside>
-<h2 id="more-detailed-role-descriptions">More Detailed Role Descriptions</h2>
+
+<span name="2c630b"></span><aside name="2c630b"><p>Agile methods often define these roles with more details and sharper. Later during the course we will for instance look at the Scrum method, and how it defines the roles of developer, product owner and Scrum master, which is similar to a project manager.</p>
+</aside>
+<h2>More Detailed Role Descriptions</h2>
 <p>For this activity, we work with three simplified roles. In reality, they can be more subtle and vague, and some roles are combined. What is important for now is that you start getting aware that different roles during development exist, and that they have different tasks and responsibilities, and therefore have different motivations, interests and require different skills.</p>
-<h3 id="role-developers">Role: Developers</h3>
-<p>Developers usually work in a team of several developers. This will also be most likely your first position when you work in industry as an engineers. With respect to software, it often means that the task involve programming or building a system, but it can also mean to work on requirements with customers, do testing or other technical tasks. Developers are the one with technical expertise and know about how to build a system or product, but are not necessarily the ones answering why a certain product should be built or which features it should have.</p>
-<h3 id="role-product-owner">Role: Product Owner</h3>
+
+<h3>Role: Developers</h3>
+<p>Developers usually work in a team of several developers.
+This will also be most likely your first position when you work in industry as an engineers. With respect to software, it often means that the task involve programming or building a system, but it can also mean to work on requirements with customers, do testing or other technical tasks.
+Developers are the one with technical expertise and know about how to build a system or product, but are not necessarily the ones answering why a certain product should be built or which features it should have.</p>
+<h3>Role: Product Owner</h3>
 <p>The product owner is usually a single person, with the responsibility to maximize the value of the product to its owner, which usually pay for the development in the first place. Note that the owners of a system are distinct from its users.</p>
-<h3 id="role-project-manager">Role: Project Manager</h3>
+<h3>Role: Project Manager</h3>
 <p>The project manager is usually a single person, with the responsibility to manage the development team. This means to assign tasks and plan ahead, so that all resources are available. The project manager usually does not any detailed technical work, which is delegated to the developers.</p>
 <blockquote>
 <p><strong>Example for Roles:</strong> A software house with 100 employees gets a contract to develop a new information system for bus stops in a city. The bus operator pays for the software development and will then own the system, as part of their contract with the system. The users of the application will be the persons taking the bus, but also some of the employees of the bus operator. The <strong>development team</strong> consists of three developers, which do the programming of the backend, the monitors at the bus stops and integrate and update code for a mobile application. The <strong>product owner</strong> is also employed at ABC software, but is responsible for several products and keeps contact with the bus operator. In ABC software, the role of the <strong>project manager</strong> is also fulfilled by the product owner, but for the product owner this feels like a different task and has sometimes troubles of keeping the two apart, which is a bit stressful.</p>
 </blockquote>
-<div class="delivery"><p>Copy the DOCX with your final answer into the general channel / Files and folder for this unit. (This is why you should change the XX in the filename to your team name.) Done!</p></div>
+
+<div class="delivery"><p>Copy the DOCX with your final answer into the general channel / Files and folder for this unit. (This is why you should change the XX in the filename to your team name.) Done!</p>
+</div>
     </section>
     <section class="content">
-<h1 id="balances-in-teamwork">Balances in Teamwork</h1>
+<h1>Balances in Teamwork</h1>
 <p>Ideally, your team works in a balanced way. Below with examples for balances you should be aware of:</p>
 <ul>
 <li><strong>Level of Talking:</strong> Is there too much talking going on? Are there some persons that talk all the time, while others say almost nothing?</li>
 <li><strong>Level of Focus:</strong> Are you working focused enough so that you reach your goal?</li>
-<li><strong>Attitudes: Critical vs. Naïve:</strong> Does your team just blindly accept any contribution, or do you dare to challenge each other’s ideas in a constructive way?</li>
+<li><strong>Attitudes: Critical vs. Naïve:</strong> Does your team just blindly accept any contribution, or do you dare to challenge each other's ideas in a constructive way?</li>
 </ul>
 <p>These are just examples of balances.</p>
 <ul>
@@ -270,43 +484,51 @@ div.delivery p::before {
 <li>Discuss guidelines for working with each other.</li>
 <li>Conclude on the last page with expectations that you have towards each other.</li>
 </ul>
-<div class="delivery"><p>Copy the PPTX with your final answer into the general channel / Files and deliveries folder for this unit. Done!</p></div>
+
+<div class="delivery"><p>Copy the PPTX with your final answer into the general channel / Files and deliveries folder for this unit.
+Done!</p>
+</div>
     </section>
     <section class="content">
-<h1 id="team-reflection-for-this-unit">Team Reflection for This Unit</h1>
-<p>It may seem like an overhead to reflect already now during the setup and with these relatively simple tasks. But this team reflection should become a routine from now on. Fill out the section for today’s week:</p>
-<h3 id="roles">Roles</h3>
+<h1>Team Reflection for This Unit</h1>
+<p>It may seem like an overhead to reflect already now during the setup and with these relatively simple tasks. But this team reflection should become a routine from now on. Fill out the section for today's week:</p>
+<h3>Roles</h3>
 <p>Reflect about the following points:</p>
 <ul>
 <li>How did you assign roles today?</li>
 <li>Are the roles clear? Do you need to change them?</li>
 </ul>
-<h3 id="improvements">Improvements</h3>
+<h3>Improvements</h3>
 <p>Reflect about the following points:</p>
 <ul>
 <li>Is there anything that you can do to improve the way you work?</li>
 <li>What are things you want to observe or follow up on next week?</li>
 <li>Did you actually improve things you noted last time? (This is the first time today.)</li>
 </ul>
-<span name="33b829"></span><aside name="33b829"><p>This team reflection should become a natural routine for each week.</p></aside>
-<h3 id="todays-performance">Today’s Performance</h3>
+
+<span name="33b829"></span><aside name="33b829"><p>This team reflection should become a natural routine for each week.</p>
+</aside>
+<h3>Today's Performance</h3>
 <p>Reflect about the following points:</p>
 <ul>
 <li>Did you reach the goals?</li>
 <li>What could be improved?</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="individual-reflection">Individual Reflection</h1>
-<p>Each week you should in addition complete an <strong>individual reflection</strong>, that makes up your <strong>individual reflection diary</strong>. These reflections will help you to collect material for the individual deliveries. To ensure progress during the semester and also as some form of feedback to us, the individual reflection is kicked off with an individual reflection survey.</p>
+<h1>Individual Reflection</h1>
+<p>Each week you should in addition complete an <strong>individual reflection</strong>, that makes up your <strong>individual reflection diary</strong>. These reflections will help you to collect material for the individual deliveries.
+To ensure progress during the semester and also as some form of feedback to us, the individual reflection is kicked off with an individual reflection survey.</p>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional, maybe more private, observations to your reflection notes.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="checklist">Checklist</h1>
+<h1>Checklist</h1>
 <p>Deliver via Teams:</p>
 <ul>
 <li>First Team Reflection (in the public channel for your team).</li>
@@ -317,6 +539,7 @@ div.delivery p::before {
 <ul>
 <li>Individual reflection</li>
 </ul>
+
     </section>
 </div>
 
@@ -324,6 +547,17 @@ div.delivery p::before {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>

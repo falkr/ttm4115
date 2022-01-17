@@ -128,65 +128,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -252,32 +193,32 @@ div.tip p {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -351,51 +292,66 @@ div.tip p {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="creating-state-machines">Creating State Machines</h1>
-<p>Creating state machines is a valuable engineering task. While you do it, you understand gradually more of your system and the task it should solve. Usually, this is difficult in the beginning but gets easier as you learn more. In some cases it may also happen that you need to start over, because you have understood, for example, that it is easier to model some behavior with a set of state machines instead of a single one. This will get much better with some experience. But it is not always difficult. Often, you manage to handle a problem after some attempts and then you “see” that you have a good solution. In that respect, state machines are very nice, because a problem, once modelled properly, can be easily checked by executing the state machines.</p>
-<p>State machines are precise artefacts that can take care of the detailed behavior, so they are suitable for unambiguously define how a system should work. In the end, you did a good job if you are able to map user requirements to a set of consistent, high-quality state machines.</p>
+<h1>Creating State Machines</h1>
+<p>Creating state machines is a valuable engineering task.
+While you do it, you understand gradually more of your system and the task it should solve.
+Usually, this is difficult in the beginning but gets easier as you learn more.
+In some cases it may also happen that you need to start over, because you have understood, for example, that it is easier to model some behavior with a set of state machines instead of a single one.
+This will get much better with some experience.
+But it is not always difficult. Often, you manage to handle a problem after some attempts and then you &quot;see&quot; that you have a good solution. In that respect, state machines are very nice, because a problem, once modelled properly, can be easily checked by executing the state machines.</p>
+<p>State machines are precise artefacts that can take care of the detailed behavior, so they are suitable for unambiguously define how a system should work.
+In the end, you did a good job if you are able to map user requirements to a set of consistent, high-quality state machines.</p>
+
 <div class="check"><p>With high quality, we mean here that:</p>
 <ul>
 <li>The state machine is syntactically correct.</li>
 <li>The state machine describes behavior that makes sense and is clearly defined.</li>
 <li>The state machine has a good layout that conveys how it works and helps the reader to understand it.</li>
 <li>The state machine can be implemented in code.</li>
-</ul></div>
-<p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts. Actually, I think I have never observed that even experts write down a state machine correctly on the first attempt, because there is always something that you forget. So, they key to creating a state machine: <strong>Don’t even try to make it correct on the first attempt, but approach it iteratively.</strong> Sometimes it is a good idea to separate the task of creating something from the test of validating it. Otherwise it is easy to get stuck. So for state machines, we switch between writing down a state machine and then checking it.</p>
+</ul>
+</div>
+<p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts.
+Actually, I think I have never observed that even experts write down a state machine correctly on the first attempt, because there is always something that you forget. So, they key to creating a state machine: <strong>Don't even try to make it correct on the first attempt, but approach it iteratively.</strong>
+Sometimes it is a good idea to separate the task of creating something from the test of validating it. Otherwise it is easy to get stuck. So for state machines, we switch between writing down a state machine and then checking it.</p>
+
 <div class="figure">
 <img src="figures/statemachines/iterate.svg" alt="Switch between creating a state machine and checking it, so that you don't get stuck." width="100%"/>
 <span name="figures/statemachines/iterate.svg">&nbsp;</span>
-<aside name="figures/statemachines/iterate.svg"><p><p>Switch between creating a state machine and checking it, so that you don’t get stuck.</p></p></aside>
+<aside name="figures/statemachines/iterate.svg"><p><p>Switch between creating a state machine and checking it, so that you don't get stuck.</p>
+</p></aside>
 </div>
-<h2 id="writing-down-a-state-machine">Writing Down a State Machine</h2>
-<p>To create down a state machine, don’t ba afraid to just sketch a first version. The following tips may help:</p>
+<h2>Writing Down a State Machine</h2>
+
+<p>To create down a state machine, don't ba afraid to just sketch a first version. The following tips may help:</p>
 <ul>
 <li><strong>Start with pencil and paper</strong>. Sometimes it is easier to explore design when you work alone, very focused and only with pencil and paper, where you can quickly sketch some states and transitions, without the pressure to make it work completely immediately. I have lots of experience in designing state machines. I still start with pencil and paper each time, before I go over to an electronic editor.</li>
 <li><strong>Identify all triggering events</strong>. Identify and write down all kinds of events that can trigger a transition in the state machine. Make a list of all incoming messages you may react to, and all timers that are necessary. Often these triggers are determined by the problem to solve.</li>
 <li><strong>Identify all actions.</strong> Make a list of all actions that are used by your state machine to achieve its purpose. In this course, we use actions that we can use in Python.</li>
 <li><strong>Identify any messages to send.</strong> If the state machine communicates with another one, you should list all messages it may send to the other machine, which you can treat just like an action. Note that all messages to receive is already included in the list of triggers above.</li>
 <li><strong>Introduce one state after the other</strong>, and try to map states to states of whatever your state machine describes. Sometimes, some states are quite obvious, like the states of a lamp, which are <code>on</code> and <code>off</code>. Sometimes, you discover that your problem has actually more states than you initially thought. For example can an electronic door lock have more than the obvious states <code>locked</code> and <code>unlocked</code>. The lock may be <code>engaged</code> meaning that it can be potentially opened, but if the user does not open it, it goes back into its <code>locked</code> state. Working with the problem will reveal this.</li>
-<li><strong>Identify a default state</strong>. For some problems, it may help to think of a default state that the state machine should be in. It may then be easier to explore the other states based on this. For example, think of a doorlock. It may be easier to design a state machine for it when you start thinking of it being locked first when the system starts, and then think what should happen to open it.<br />
-</li>
-<li><strong>Explore the problem</strong>. Most likely, you will explore the problem and find out that you haven’t understood everything, or that there are details that you have overlooked in the beginning. Be aware of what you learn, and how you can represent it with states and transitions. he state machine challenges you to learn more about the system.</li>
+<li><strong>Identify a default state</strong>. For some problems, it may help to think of a default state that the state machine should be in. It may then be easier to explore the other states based on this. For example, think of a doorlock. It may be easier to design a state machine for it when you start thinking of it being locked first when the system starts, and then think what should happen to open it.</li>
+<li><strong>Explore the problem</strong>. Most likely, you will explore the problem and find out that you haven't understood everything, or that there are details that you have overlooked in the beginning. Be aware of what you learn, and how you can represent it with states and transitions. he state machine challenges you to learn more about the system.</li>
 <li><strong>Start fresh</strong>. When you get completely stuck, throw your sketch away and start fresh.</li>
 </ul>
+
 <div class="figure">
 <img src="figures/statemachines/sketching.jpg" alt="It's a good idea to start with a sketch using paper and pencil and start simple." width="100%"/>
 <span name="figures/statemachines/sketching.jpg">&nbsp;</span>
-<aside name="figures/statemachines/sketching.jpg"><p><p>It’s a good idea to start with a sketch using paper and pencil and start simple.</p></p></aside>
+<aside name="figures/statemachines/sketching.jpg"><p><p>It's a good idea to start with a sketch using paper and pencil and start simple.</p>
+</p></aside>
 </div>
-<h2 id="checking-state-machines">Checking State Machines</h2>
+<h2>Checking State Machines</h2>
 <p>Once you have a state machine, even a partial one, you can check if it can actually work.</p>
 <p>For each of its <strong>states</strong>, you should check:</p>
 <ul>
-<li><strong>Initial state?</strong> Make sure the state machine has an initial state. Otherwise, we don’t know where to start.</li>
-<li><strong>Are all states reachable?</strong> This means, can you start at the initial state and from there reach any of the other states by following a sequence of events? Or are there some states that you can never reach? Obviously, that must be a mistake, because if these states are not reachable, what’s the point in having them? Din the missing transitions towards these states and try again.</li>
+<li><strong>Initial state?</strong> Make sure the state machine has an initial state. Otherwise, we don't know where to start.</li>
+<li><strong>Are all states reachable?</strong> This means, can you start at the initial state and from there reach any of the other states by following a sequence of events? Or are there some states that you can never reach? Obviously, that must be a mistake, because if these states are not reachable, what's the point in having them? Din the missing transitions towards these states and try again.</li>
 <li><strong>Is there a deadlock?</strong> This means, is there a state from which you cannot find out way out, for instance to a final state that terminates the machine? If there is a state that you cannot leave anymore, is that intended by the application?</li>
 <li><strong>Are all possible events handled?</strong> In each state, did you think of any events that may arrive? Remember, that events arriving at the head of the queue and that are not executed in the form of triggers are discarded, that means, thrown away. Check if you have missed some!</li>
 <li><strong>Are triggers clear?</strong> A state must not have two or more outgoing transitions that declare the same triggering event and also the same guard. This means, when an event occurs, it must be clear which transition will be chosen.</li>
 <li><strong>Consume, defer or discard.</strong> Make sure that for each state, an event is either consumed (by an outgoing transition) or deferred. If a state says nothing about an event, the event is implicitly discarded in case it arrives. A state must not defer an event that also triggers one of its outgoing transitions.</li>
 </ul>
+
 <p>For each <strong>transition</strong> you should check:</p>
 <ul>
 <li><strong>Does every transition have a triggering event?</strong> This means that every transition must declare a trigger in the form of a message reception, a timer expiration, unless it is an initial transition or following a choice pseudo state.</li>
@@ -404,13 +360,14 @@ div.tip p {
 <p>For each <strong>timer</strong> you should check:</p>
 <ul>
 <li><strong>Are timers properly started?</strong> All timers must be started by the machine itself, so a timer that is not started will never expire and is hence not useful. Find a proper place to start it, either as part of a transition effect or as entry or exit actions, just like other actions.</li>
-<li><strong>Are timer expirations handled?</strong> Check what happens when a started timer expires. If a timeout happens in a state that does not declare an outgoing transition triggered by it, it is simply ignored. This may be okay in your machine (because something else happened and you don’t need the timer anymore), but it can also be the sign of an error.</li>
+<li><strong>Are timer expirations handled?</strong> Check what happens when a started timer expires. If a timeout happens in a state that does not declare an outgoing transition triggered by it, it is simply ignored. This may be okay in your machine (because something else happened and you don't need the timer anymore), but it can also be the sign of an error.</li>
 </ul>
 <p>For each <strong>event</strong> you should check:</p>
 <ul>
 <li>Are all events that you need to receive handled, and are they properly handled (consumed, deferred or discarded) in each state? Are there events that are never handled?</li>
 </ul>
-<p>These are the rules that you can check even without knowing exactly what the application should do, just by looking at the state machines. These are generic rules, independent of a specific application, and if they don’t hold, it is very likely that you do have a problem. But then there are also errors that have to do with your specific <strong>application.</strong> This can be a bit harder to find out. You need to simulate the state machines using your fingers and go through it state by state and event by event. When the problem is not too big, this is possible. Later, once we implement state machines in Python, you will also be able to build functioning prototypes, which you can use and test to see how the final state machine behaves.</p>
+<p>These are the rules that you can check even without knowing exactly what the application should do, just by looking at the state machines. These are generic rules, independent of a specific application, and if they don't hold, it is very likely that you do have a problem. But then there are also errors that have to do with your specific <strong>application.</strong> This can be a bit harder to find out. You need to simulate the state machines using your fingers and go through it state by state and event by event. When the problem is not too big, this is possible. Later, once we implement state machines in Python, you will also be able to build functioning prototypes, which you can use and test to see how the final state machine behaves.</p>
+
     </section>
 </div>
 
@@ -423,68 +380,6 @@ div.tip p {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

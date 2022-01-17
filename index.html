@@ -152,65 +152,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -304,32 +245,32 @@ table.weekplan a {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -403,31 +344,39 @@ table.weekplan a {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="design-of-communicating-systems">Design of Communicating Systems</h1>
-<h3 id="step-1-onboarding">Step 1: Onboarding</h3>
-<p>Please fill out the onboarding scheme so we can register some more information about you. We will use this for a faster startup and the creation of working teams.</p>
+<h1>Design of Communicating Systems</h1>
+
+<h3>Step 1: Onboarding</h3>
+<p>Please fill out the onboarding scheme so we can register some more information about you.
+We will use this for a faster startup and the creation of working teams.</p>
+
 <a class="ntnu-button" href="https://forms.office.com/r/y39LwZtWeF">Onboarding Scheme</a>
-<h3 id="step-2-preparation">Step 2: Preparation</h3>
+<h3>Step 2: Preparation</h3>
 <p>Read and work through the <a href="prep-setup.html">preparation material for setting up the course</a>.</p>
-<h3 id="step-3-first-class-time">Step 3: First Class Time</h3>
+
+<h3>Step 3: First Class Time</h3>
 <p>Our first class time will be on <strong>Friday, January 14th 2022</strong>, 12:15 via Zoom. You will find the login details on Blackboard and in the announcement.</p>
+
     </section>
     <section class="content">
-<h1 id="schedule">Schedule</h1>
+<h1>Schedule</h1>
+
 <p>For each unit, we follow the same schedule:</p>
 <ul>
 <li>You will receive a Blackboard announcement with a link to preparation material. (But even without the announcement, the preparation material is already accessible on the website.)</li>
 <li>We meet on <strong>Fridays at 12:15</strong> (on Zoom for now), where we start with the individual RAT and the team RAT, ca 45 minutes.</li>
 <li>You continue on Friday with teamwork until at least 16:00, solving the week activities, which are available from the website.</li>
 <li>On <strong>Mondays at 10:15</strong> we meet together on Zoom. (This part of the course will be digital for the entire semester.) In this session, three things happen:
-<ol type="1">
+<ol>
 <li>You can ask questions on the currently ongoing team activity.</li>
 <li>I provide sometimes more content on a subject.</li>
 <li>We provide some feedback on the team activity from the previous unit.</li>
-</ol></li>
+</ol>
+</li>
 <li>In some weeks, you need more time together, especially once we start with the semester project. Here you need to find a time slot where all in your team can meet.</li>
-<li>The delivery of the week activity has a deadline in the beginning of the next week, so that you still manage to meet together and conclude the week’s team activity.</li>
+<li>The delivery of the week activity has a deadline in the beginning of the next week, so that you still manage to meet together and conclude the week's team activity.</li>
 </ul>
+
 <table class="weekplan table table-sm">
 <tr>
 <th>Time</th>
@@ -506,7 +455,9 @@ table.weekplan a {
 <td></td>
 </tr>
 </table>
-<p>Here is the semester schedule for 2022. Note that this is a tentative plan that we may adjust during the semester. We start in 2022 fully digitally for the first two weeks and wait for further guidelines how to proceed after that.</p>
+<p>Here is the semester schedule for 2022. Note that this is a tentative plan that we may adjust during the semester.
+We start in 2022 fully digitally for the first two weeks and wait for further guidelines how to proceed after that.</p>
+
 <table class="schedule table table-sm">
 <tr>
 <th>W</th>
@@ -802,68 +753,6 @@ table.weekplan a {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

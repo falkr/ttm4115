@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -222,32 +163,32 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -321,14 +262,17 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <div class="page">
     </section>
     <section class="content">
-<h1 id="system-spec-version-1">System Spec, Version 1</h1>
-<p>This delivery is a partial Vision and Scope document that focuses on why the system exists and what it should do, but without all detailed requirements listed. This delivery shows already a part of the system solution, by illustrating it with a deployment diagram.</p>
+<h1>System Spec, Version 1</h1>
+<p>This delivery is a partial Vision and Scope document that focuses on why the system exists and what it should do,
+but without all detailed requirements listed.
+This delivery shows already a part of the system solution, by illustrating it with a deployment diagram.</p>
+
     </section>
     <section class="content">
-<h1 id="content">Content</h1>
+<h1>Content</h1>
 <p>The delivery must contain the following sections:</p>
-<h2 id="requirements-part">Requirements Part</h2>
-<h3 id="problem-and-background">1. Problem and Background</h3>
+<h2>Requirements Part</h2>
+<h3>1. Problem and Background</h3>
 <p>Provide a brief description of the problem you want to solve. It should provide the context so that the reader can understand your vision in the next section.</p>
 <p><strong>Hints:</strong></p>
 <ul>
@@ -337,84 +281,120 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <li>Focus on the problem and add as much background as necessary for the reader to understand the problem.</li>
 <li>In this part you should not mention the system at all.</li>
 </ul>
-<h3 id="vision">2. Vision</h3>
-<p>Provide a vision for the system to build. All team members should be aware of this vision and share it. Be concise and specific. Ideally, the vision connects the objectives with the problem description. The vision provides some details about the system that explain in very coarse language how the system will tackle the problem. It highlights what is new or special with the system.</p>
+<h3>2. Vision</h3>
+<p>Provide a vision for the system to build.
+All team members should be aware of this vision and share it.
+Be concise and specific.
+Ideally, the vision connects the objectives with the problem description.
+The vision provides some details about the system that explain in very coarse language how the system will tackle the problem.
+It highlights what is new or special with the system.</p>
 <p><strong>Hints:</strong></p>
 <ul>
 <li>Formulate the vision in complete sentences, not bullet points.</li>
 <li>The vision should be ca. a quarter of a page.</li>
 </ul>
-<h3 id="objectives">3. Objectives</h3>
-<p>State at least three objectives, but not much more than five. Objectives are goals that your system can achieve. They need to be specific, and they need to be verifiable. State the objective, and state how it can be verified. Objectives do not yet explain how the system is implemented, but are oriented towards the users’ domain.</p>
+<h3>3. Objectives</h3>
+<p>State at least three objectives, but not much more than five. Objectives are goals that your system can achieve. They need to be specific, and they need to be verifiable. State the objective, and state how it can be verified.
+Objectives do not yet explain how the system is implemented, but are oriented towards the users' domain.</p>
 <p><strong>Hints:</strong></p>
 <ul>
 <li>Describe the objectives, not the features of the system.</li>
 <li>Show the objectives as a list.</li>
 </ul>
-<h3 id="stakeholders">4. Stakeholders</h3>
+<h3>4. Stakeholders</h3>
 <p>Identify the main stakeholders in the system. Identify their values and interest. Present all in a table.</p>
 <p><strong>Hints:</strong></p>
 <ul>
 <li>Expected length: half a page to a full page.</li>
 <li>Stakeholders are humans or organizations.</li>
 </ul>
-<h3 id="criteria-for-the-requirements-part">Criteria for the Requirements Part</h3>
+<h3>Criteria for the Requirements Part</h3>
 <p>All sections in the requirement part are evaluated together with the following criteria:</p>
+
 <table class="rubric table table-sm">
 <tr>
 <th>&nbsp;</th>
-<th><p>Excellent</p></th>
-<th><p>Good</p></th>
-<th><p>Sufficient</p></th>
-<th><p>Not rateable</p></th>
+<th><p>Excellent</p>
+</th>
+<th><p>Good</p>
+</th>
+<th><p>Sufficient</p>
+</th>
+<th><p>Not rateable</p>
+</th>
 </tr>
 <tr>
-<td><p>Alignment</p></td>
-<td><p>Noticable and consistent alignment between all parts.</p></td>
-<td><p>Overall good alignment between all parts.</p></td>
-<td><p>Minor inconsisentcies in alignment.</p></td>
-<td><p>Missing alignment.</p></td>
+<td><p>Alignment</p>
+</td>
+<td><p>Noticable and consistent alignment between all parts.</p>
+</td>
+<td><p>Overall good alignment between all parts.</p>
+</td>
+<td><p>Minor inconsisentcies in alignment.</p>
+</td>
+<td><p>Missing alignment.</p>
+</td>
 </tr>
 <tr>
-<td><p>Descriptions</p></td>
-<td><p>Concise descriptions with focused formulations.</p></td>
-<td><p>Overall good language.</p></td>
-<td><p>Minor flaws in formulations and language.</p></td>
-<td><p>Major language errors and typos.</p></td>
+<td><p>Descriptions</p>
+</td>
+<td><p>Concise descriptions with focused formulations.</p>
+</td>
+<td><p>Overall good language.</p>
+</td>
+<td><p>Minor flaws in formulations and language.</p>
+</td>
+<td><p>Major language errors and typos.</p>
+</td>
 </tr>
 <tr>
-<td><p>Problem Description</p></td>
+<td><p>Problem Description</p>
+</td>
 <td>&nbsp;</td>
-<td><p>Clearly identified, motivated and explained.</p></td>
-<td><p>Problem is addressed and somewhat aligned with objectives and vision.</p></td>
+<td><p>Clearly identified, motivated and explained.</p>
+</td>
+<td><p>Problem is addressed and somewhat aligned with objectives and vision.</p>
+</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><p>Vision</p></td>
-<td><p>Vision serves as overall, consistent goal for the entire system.</p></td>
-<td><p>Vision is well aligned with the problem and objectives.</p></td>
-<td><p>Vision is provided, but somewhat lacking in overall value.</p></td>
+<td><p>Vision</p>
+</td>
+<td><p>Vision serves as overall, consistent goal for the entire system.</p>
+</td>
+<td><p>Vision is well aligned with the problem and objectives.</p>
+</td>
+<td><p>Vision is provided, but somewhat lacking in overall value.</p>
+</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><p>Objectives</p></td>
-<td><p>Objectives are focused, compact, specific and relevant.</p></td>
-<td><p>Objectives are specific.</p></td>
-<td><p>A few good objectives are given.</p></td>
+<td><p>Objectives</p>
+</td>
+<td><p>Objectives are focused, compact, specific and relevant.</p>
+</td>
+<td><p>Objectives are specific.</p>
+</td>
+<td><p>A few good objectives are given.</p>
+</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><p>Stakeholders</p></td>
-<td><p>Reveal valuable requirements and motivation.</p></td>
-<td><p>Are complete.</p></td>
+<td><p>Stakeholders</p>
+</td>
+<td><p>Reveal valuable requirements and motivation.</p>
+</td>
+<td><p>Are complete.</p>
+</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 </table>
 <span name="files/rubrics/requirements.mw">&nbsp;</span>
-<aside name="files/rubrics/requirements.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p></p></aside>
-<h2 id="use-case-part">Use Case Part</h2>
-<h3 id="use-case-sea-level-hierarchy">5. Use Case Sea-Level Hierarchy</h3>
+<aside name="files/rubrics/requirements.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria...</a></p>
+</p></aside>
+<h2>Use Case Part</h2>
+<h3>5. Use Case Sea-Level Hierarchy</h3>
 <p>This is not an official diagram type, but it turned out so useful for the development process that we decided to add it as part of the delivery.</p>
 <p>Show at least three use cases at the sea level. Add relevant ones at the fish-level that support the sea-level use cases. Also, make sure to have at least one cloud-level use case and relevant ones at the kit level to connect cloud-level with sea-level. Make sure that the use cases are at the right level and relevant for the vision and objectives of the system.</p>
 <!--
@@ -422,92 +402,134 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 * **Evaluation:** Completeness, plausibility, correctness of syntax, layout, clarity.
 * **Hints:** Present a use case diagram that covers the major features of your system. Most likely, the use case diagram will fit on a single A4 page in landscape orientation. This diagram can show more use cases than you will detail in the next task. **This diagram type is shown in the compendium, page 149.** 
 -->
+
 <table class="rubric table table-sm">
 <tr>
 <th>&nbsp;</th>
-<th><p>Excellent</p></th>
-<th><p>Good</p></th>
-<th><p>Sufficient</p></th>
-<th><p>Not rateable</p></th>
+<th><p>Excellent</p>
+</th>
+<th><p>Good</p>
+</th>
+<th><p>Sufficient</p>
+</th>
+<th><p>Not rateable</p>
+</th>
 </tr>
 <tr>
-<td><p>Hierarchy</p></td>
-<td><p>Clear connection between use cases at different levels.</p></td>
+<td><p>Hierarchy</p>
+</td>
+<td><p>Clear connection between use cases at different levels.</p>
+</td>
 <td>&nbsp;</td>
-<td><p>Connections between use cases of different levels.</p></td>
-<td><p>No connection between use cases at different levels.</p></td>
+<td><p>Connections between use cases of different levels.</p>
+</td>
+<td><p>No connection between use cases at different levels.</p>
+</td>
 </tr>
 <tr>
-<td><p>Levels</p></td>
-<td><p>All use cases at proper levels.</p></td>
-<td><p>All use cases at the sea level are relevant and correctly placed.</p></td>
-<td><p>Most use cases are at a relevant level.</p></td>
-<td><p>Use cases are not at the correct level.</p></td>
+<td><p>Levels</p>
+</td>
+<td><p>All use cases at proper levels.</p>
+</td>
+<td><p>All use cases at the sea level are relevant and correctly placed.</p>
+</td>
+<td><p>Most use cases are at a relevant level.</p>
+</td>
+<td><p>Use cases are not at the correct level.</p>
+</td>
 </tr>
 <tr>
-<td><p>Relevance</p></td>
-<td><p>Clear relevance of the selected use cases for the requirements.</p></td>
+<td><p>Relevance</p>
+</td>
+<td><p>Clear relevance of the selected use cases for the requirements.</p>
+</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><p>Selection of use cases appears random.</p></td>
+<td><p>Selection of use cases appears random.</p>
+</td>
 </tr>
 </table>
 <span name="files/rubrics/usecases-level.mw">&nbsp;</span>
-<aside name="files/rubrics/usecases-level.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p></p></aside>
-<h2 id="architecture-part">Architecture Part</h2>
-<h3 id="deployment-diagram">7. Deployment Diagram</h3>
+<aside name="files/rubrics/usecases-level.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria...</a></p>
+</p></aside>
+<h2>Architecture Part</h2>
+<h3>7. Deployment Diagram</h3>
 <p>Present a first version of a deployment diagram of your system. Identify the main execution nodes of your system and how they are connected. Identify critical hardware components (even if you later chose to simulate them.) Identify communication protocols that you are already aware of, and identify execution environments.</p>
 <p><strong>Hints:</strong> Most likely, the deployment diagram will fit on a single A4 page in landscape orientation.</p>
-<h3 id="criteria-for-the-deployment-diagram">Criteria for the Deployment Diagram</h3>
+<h3>Criteria for the Deployment Diagram</h3>
 <p>The deployment diagram is evaluated based on general criteria for diagrams.</p>
+
 <table class="rubric table table-sm">
 <tr>
 <th>&nbsp;</th>
-<th><p>Excellent</p></th>
-<th><p>Good</p></th>
-<th><p>Sufficient</p></th>
-<th><p>Not rateable</p></th>
+<th><p>Excellent</p>
+</th>
+<th><p>Good</p>
+</th>
+<th><p>Sufficient</p>
+</th>
+<th><p>Not rateable</p>
+</th>
 </tr>
 <tr>
-<td><p>Layout</p></td>
-<td><p>Layout follows a strategy that helps to understand the diagram.</p></td>
-<td><p>Layout is structured.</p></td>
-<td><p>Layout is structured.</p></td>
-<td><p>Layout is unstructured and random.</p></td>
+<td><p>Layout</p>
+</td>
+<td><p>Layout follows a strategy that helps to understand the diagram.</p>
+</td>
+<td><p>Layout is structured.</p>
+</td>
+<td><p>Layout is structured.</p>
+</td>
+<td><p>Layout is unstructured and random.</p>
+</td>
 </tr>
 <tr>
-<td><p>Syntax</p></td>
-<td><p>Correct syntax.</p></td>
-<td><p>Correct Syntax.</p></td>
-<td><p>Overall good syntax, with a few minor errors.</p></td>
-<td><p>Major syntactical flaws.</p></td>
+<td><p>Syntax</p>
+</td>
+<td><p>Correct syntax.</p>
+</td>
+<td><p>Correct Syntax.</p>
+</td>
+<td><p>Overall good syntax, with a few minor errors.</p>
+</td>
+<td><p>Major syntactical flaws.</p>
+</td>
 </tr>
 <tr>
-<td><p>Level of Detail</p></td>
-<td><p>Consistent and intentional level of detail.</p></td>
-<td><p>Adequate detailing.</p></td>
-<td><p>Some inconsistencies, too much focus on some details on the expense of others.</p></td>
+<td><p>Level of Detail</p>
+</td>
+<td><p>Consistent and intentional level of detail.</p>
+</td>
+<td><p>Adequate detailing.</p>
+</td>
+<td><p>Some inconsistencies, too much focus on some details on the expense of others.</p>
+</td>
 <td>&nbsp;</td>
 </tr>
 </table>
 <span name="files/rubrics/deployment.mw">&nbsp;</span>
-<aside name="files/rubrics/deployment.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria…</a></p></p></aside>
+<aside name="files/rubrics/deployment.mw"><p><p><a href="learning-grading.html#grading-criteria">Read more about these criteria...</a></p>
+</p></aside>
     </section>
     <section class="content">
-<h1 id="feedback-document-and-delivery">Feedback Document and Delivery</h1>
-<p>On Teams, you find a template for the evaluation document, under <code>Semester Project / feedback-v1-team-xx.docx</code>. Create a copy, and fill it out for your own team:</p>
+<h1>Feedback Document and Delivery</h1>
+<p>On Teams, you find a template for the evaluation document, under <code>Semester Project / feedback-v1-team-xx.docx</code>.
+Create a copy, and fill it out for your own team:</p>
 <ul>
 <li>Add team name and team members</li>
 <li>Follow the instructions in the document
 <ul>
 <li>For each rubric, evaluate which level you have achieved for each criteria. Comment where necessary.</li>
 <li>Add up to three questions at the end of the document where you ask about particular help.</li>
-</ul></li>
 </ul>
+</li>
+</ul>
+
     </section>
     <section class="content">
-<h1 id="delivery">Delivery</h1>
+<h1>Delivery</h1>
 <p>Deliver both the system specification and the feedback document via Blackboard.</p>
+
     </section>
 </div>
 
@@ -519,68 +541,6 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

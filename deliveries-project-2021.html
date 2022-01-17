@@ -107,48 +107,6 @@ div.goals ul li:before {
 div.rat ol {
   list-style-type: upper-alpha;
 }
-/*tr.rubric_title {background-color: lightgrey}*/
-/*tr.rubric_a {background-color: #D0E8DC}
-tr.rubric_b {background-color: #EEF7DB}
-tr.rubric_c {background-color: #FCFDE3}
-tr.rubric_d {background-color: #FDF3D6}
-tr.rubric_e {background-color: #F8D9C2}
-tr.rubric_f {background-color: #EBBCB9}
-
-tr.rubric_title {background-color: white; 
-	border-top: 2px black solid; 
-	border-bottom: 2px black solid;}
-td.rubric_title {background-color: white;}
-td.rubric_a {background-color: #D0E8DC}
-td.rubric_b {background-color: #EEF7DB}
-td.rubric_c {background-color: #FCFDE3}
-td.rubric_d {background-color: #FDF3D6}
-td.rubric_e {background-color: #F8D9C2}
-td.rubric_f {background-color: #EBBCB9}
-
-th.rubric_title {background-color: white}
-th.rubric_a {background-color: #D0E8DC}
-th.rubric_b {background-color: #EEF7DB}
-th.rubric_c {background-color: #FCFDE3}
-th.rubric_d {background-color: #FDF3D6}
-th.rubric_e {background-color: #F8D9C2}
-th.rubric_f {background-color: #EBBCB9}
-
-table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
-	vertical-align:top;}
-table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
-
-.rubric p {margin: 0px}
-.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
-.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
-.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
-.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
-.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
-.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
-.rubric th {font-size:12px; vertical-align:top; }
-.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
-.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
-
 
 </style>
 </head>
@@ -262,183 +220,66 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <div class="page">
     </section>
     <section class="content">
-<h1>Deliveries</h1>
-<p>During the semester, you need to hand in the following deliveries:</p>
+<h1>Semester Project</h1>
 
-<table class="check table table-sm">
-<tr>
-<th></th>
-<th><p>Date</p>
-</th>
-<th><p>Type</p>
-</th>
-<th><p>Content</p>
-</th>
-<th></th>
-</tr>
-<tr>
-<td><p>System Spec, version 1</p>
-</td>
-<td><p>Week 9</p>
-</td>
-<td><p>Team</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><p>Feedback to version 1</p>
-</td>
-<td><p>Week 10</p>
-</td>
-<td><p>Individual</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><p>System Spec, version 2</p>
-</td>
-<td><p>Week 12</p>
-</td>
-<td><p>Team</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><p>Feedback to version 2</p>
-</td>
-<td><p>Week 14</p>
-</td>
-<td><p>Individual</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><p>System Spec, final version</p>
-</td>
-<td><p>Week 17</p>
-</td>
-<td><p>Team</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><p>RATx</p>
-</td>
-<td></td>
-<td><p>Individual+Team</p>
-</td>
-<td><p>RATs are done during class.</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td><p>Reflective Essay</p>
-</td>
-<td><p>Week 18</p>
-</td>
-<td><p>Individual</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p>In contrast to previous years, we constrain the type of system that you should build. The reason for this is that many students find it hard to come up with a good idea that isn't too similar to what we already had. In addition, this has the benefit that you are more focused and interested when providing feedback to the other teams, as they try to solve a similar problem.</p>
+<p>We sill expect that there is enough variation in your priorization, selection, interpretation and implementation of the system functionality that you all end up with different systems.</p>
+
     </section>
     <section class="content">
-<h1>System Specification</h1>
-<p>During the semester you will work on a system specification in your development teams.
-This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
+<h1>2021: Digital Walkie Talkies</h1>
+<p>The base idea is to create a communication device for workers.</p>
+<p>The core functionality is to send short voice messages to another colleague, without waiting for the colleague to take the call (there is no &quot;call&quot;), just by somehow selecting the receiver, recording a message and sending it.</p>
+<p>Such a function is also called <em>push-to-talk</em> communication, and you probably know it from the way the crew members communicate on Star Trek.</p>
 
-<table class="check table table-sm">
-<tr>
-<th><p>Item</p>
-</th>
-<th><p>System Spec, Version 1</p>
-</th>
-<th><p>System Spec, Version 2</p>
-</th>
-<th><p>System Spec, Final Version</p>
-</th>
-</tr>
-<tr>
-<td><p>Deployment Diagram</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Problem and Background</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Vision</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Objectives</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Stakeholders</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Use Case Hierarchy</p>
-</td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Selected Use Cases</p>
-</td>
-<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>Interactions</p>
-</td>
-<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-<tr>
-<td><p>State Machines</p>
-</td>
-<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
-</tr>
-</table>
-    </section>
-    <section class="content">
-<h1>Format and Template</h1>
+<h2>Robust, Reliable, Responsive</h2>
+<p>The most important feature of your system should be its reliability in all circumstances.
+This means, that it does not loose a message, but would try to reach a receiver and only if there's no other way to deliver the message tell the sender about it.</p>
+<p>The system should also be designed so that several messages arriving at the same time are handled somehow.</p>
+<p>At all times, the sender and the receiver should find that their device is responsive in some way, that means, they know what it is doing and maybe can record the next message to another colleague even if another one is not yet played to the receiver.</p>
 
+<h2>Domain</h2>
+<p>Decide if you want to optimize the system for a specific domain, or if you want to make it work in several settings. You could for instance focus on healthcare, offshore workers, farmers, athletes, just to name a few. This is a good point where your can distinguish your setup from that of others.</p>
+
+<h2>Example Features</h2>
 <ul>
-<li>All delivery documents must be in <em>PDF</em> format.</li>
-<li>You can include diagrams and figures in landscape mode for entire pages. In this case, they need to be readable <strong>from the right</strong>.</li>
-<li>Check which pattern for the filename we require. This makes file handling for us faster.</li>
-<li>The header on each page must contain your team number and the delivery name.</li>
-<li>For individual deliveries, your name must be in the header.</li>
+<li>Send short voice messages</li>
+<li>Avoid collisions if several messages arrive at the same time</li>
+<li>Replay for noisy environments</li>
+<li>Transcript (Speech to text)</li>
+<li>Detection of status, and handling of incoming messages accordingly</li>
+<li>Detection of network bandwidth, resubmissions</li>
 </ul>
+
+<h2>Implementation</h2>
+
+<p>You should have a working demonstrator or prototype that shows some or most of the functionality you planned.</p>
+<p>Some more advanced functions are the following:</p>
+<ul>
+<li>
+<p>Voice activation: Detection of activation words, followed by a detection of the recipient of a message, and detection when the message is complete.</p>
+</li>
+<li>
+<p>Speech-to-text: Creation of a written form of the message, so the receiver could receive them as text instead, wither to save bandwidth on the receiver side or in noisy environments, or as accessibility feature.</p>
+</li>
+<li>
+<p>Text-to-speech: One could think of functionality where a message is transmitted as text and should be synthesized into speech for the receive to listen.</p>
+</li>
+</ul>
+<p>The thing is: All of these functions are probably helpful, and we/you may implement some of them. But for the overall system design, we could replace some of these functions by code that imitates them.
+This is especially true when we assume that these functions are achieved by independent system components.
+Then we can, for instance, replace a voice activation module with a module that imitates the voice activation, for instance with a graphical user interface, but has the same interface.</p>
+<p>The main part of your implementation must be in Python, and you need to implement some components using the state machine framework STMPY. This is to ensure that you can apply the learning material in the course.</p>
+
+<h2>Devices</h2>
+<p>There are several options for hardware to run the demo:</p>
+<ul>
+<li>Your laptop</li>
+<li>A Raspberry Pi</li>
+<li>A BBC Microbit</li>
+</ul>
+<p>Here we haven't yet sorted out all the details and practicalities.
+One robust solution and maybe programming-wise the simplest would be to just use your own computers.</p>
 
     </section>
 </div>
@@ -447,8 +288,6 @@ This work is the basis for the entire course, and it will be delivered in severa
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-
-
 
 
 

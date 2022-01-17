@@ -29,7 +29,22 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.figure {
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
 }
@@ -39,6 +54,30 @@ div.figurefullwitdth {
   margin-left: -33px;
   margin-right: -33px;
   width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
 }
 .w3collapsible {
   background-color:#f0e9db;
@@ -68,6 +107,7 @@ div.figurefullwitdth {
 div.rat ol {
   list-style-type: upper-alpha;
 }
+
 </style>
 </head>
 <body id="top">
@@ -81,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -180,28 +220,32 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="use-cases">Use Cases</h1>
-<h2 id="what-are-good-use-cases">What are Good Use Cases?</h2>
+<h1>Use Cases</h1>
+<h2>What are Good Use Cases?</h2>
 <p>You have now already learned a lot about use cases and seen some examples, and know which goal we have when designing use cases. So what are the characteristics of <strong>good</strong> use cases?</p>
-<h3 id="step-1-teamwork">Step 1: Teamwork</h3>
+<h3>Step 1: Teamwork</h3>
 <ul>
 <li>Use 3 to 5 minutes of silence where each of you thinks about what are characteristics of a good use case.
 <ul>
 <li>Each one should come up with about 3 to 5 such suggestions.</li>
 <li>Rank these suggestions.</li>
 <li>Try to be compact, either a word or a short phrase for each characteristic.</li>
-</ul></li>
+</ul>
+</li>
 <li>Take rounds where each of you takes their top choice, and compile a complete list of attributes.
 <ul>
 <li>Take rounds until you have listed all characteristics.</li>
 <li>Eliminate or rephrase similar characteristics as you go, to remove making the same point several times.</li>
-</ul></li>
+</ul>
+</li>
 <li>Discuss and select the <strong>three most important</strong> characteristics.
 <ul>
 <li>Mark the them with a star, or highlight them in yellow.</li>
-</ul></li>
 </ul>
-<h3 id="step-2-merge-results">Step 2: Merge Results</h3>
+</li>
+</ul>
+
+<h3>Step 2: Merge Results</h3>
 <p>On Teams, under General / Files / Unit 3, you find a document called <strong>Use Case Characteristics.docx</strong>. This document contains a large table, and each team has their column. The first column is from Team Frank.</p>
 <p>Add the <strong>10 highest ranked characteristics</strong> into the table. For each characteristic you add, see if another team has already written a very similar one.</p>
 <ul>
@@ -209,14 +253,14 @@ div.rat ol {
 <li>If your characteristic is new, add it in a new row. If necessary, expand the table.</li>
 <li>Mark your three most important ones with a yellow highlight.</li>
 </ul>
-<p>In the end, when we look at the entire document, we should see that each row describes similar characteristics but maybe with different words. Some cells stay empty if you have different choices, obviously. That’s just fine. We will talk about our different choices the week after.</p>
+<p>In the end, when we look at the entire document, we should see that each row describes similar characteristics but maybe with different words. Some cells stay empty if you have different choices, obviously. That's just fine. We will talk about our different choices the week after.</p>
+
     </section>
     <section class="content">
-<h1 id="use-case-levels">Use Case Levels</h1>
-<p>Recall the different levels of use cases from the preparation, where we assigned use cases to different levels on a horizon:</p>
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg&amp;export=download&quot;}">
+<h1>Use Case Levels</h1>
 
-</div>
+<p>Recall the different levels of use cases from the preparation, where we assigned use cases to different levels on a horizon:</p>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg%26export%3Ddownload"></script>
 <p>In the document above, you see all use cases lined up at the sea-level, but many of them belong either to a higher or a lower level. In case you have troubles with the document, here is a list of all the use cases it lists:</p>
 <ul>
@@ -234,16 +278,18 @@ div.rat ol {
 <ul>
 <li>Argue why they should be on a certain level.</li>
 <li>Compare the use cases with each other, and see if the level also fits relative to each other.</li>
-</ul></li>
+</ul>
+</li>
 <li>Once you are happy with the level of all use cases, <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMk1CS1gxMDhIVEtZS1pFMEJGSkRTWjBVNC4u">fill out the quiz (once per team.)</a></li>
 <li>See if you agree with the answers. If not, discuss on MS Teams!</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="use-cases-for-your-project">Use Cases for Your Project</h1>
+<h1>Use Cases for Your Project</h1>
 <p>For the delivery T1 that covers requirements, you will need to deliver a set of use cases. Today, you should start delivering them.</p>
-<h2 id="use-case-levels">Use Case Levels</h2>
-<p>For your project delivery, you should focus on <strong>three</strong> use cases <strong>at the sea-level</strong>. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system’s goals and purpose, but are more abstract. The ones below sea-level provide too much detail.</p>
+<h2>Use Case Levels</h2>
+<p>For your project delivery, you should focus on <strong>three</strong> use cases <strong>at the sea-level</strong>. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail.</p>
 <ul>
 <li>Make a copy of the <a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">use case level document</a>, and start filling it with some use cases for your system.</li>
 <li>Be critical so that you capture the most important three use cases at the sea-level of your system.
@@ -251,57 +297,67 @@ div.rat ol {
 <li>Look at higher-level ones, how they can be decomposed into sea-level use cases.</li>
 <li>Look at lower-level ones to see if they can be aggregates into sea-level ones.</li>
 <li>Ignore clam-level use cases.</li>
-</ul></li>
+</ul>
+</li>
 <li>Store a screenshot of your results for your T1 delivery.</li>
 </ul>
 <p>As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems. My focus is at the sea-level, where I added two and think about a third one. I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases.</p>
+
 <div class="figure">
 <img src="figures/use-cases/toilet-paper.png" width="100%"/>
 </div>
-<h2 id="use-case-diagram">Use Case Diagram</h2>
-<p>Remember that the diagrams with the sea-level are not use case diagrams, they are just a tool to find the use cases at the right level and relate them to each other. You should now start to create a use case diagram for your system. (See compendium <strong>Fig. 8-2</strong> on p. 149.)</p>
+<h2>Use Case Diagram</h2>
+<p>Remember that the diagrams with the sea-level are not use case diagrams, they are just a tool to find the use cases at the right level and relate them to each other. You should now start to create a use case diagram for your system. (See compendium <strong>Fig. 8-2</strong> on p. 149.)</p>
 <ul>
 <li>Based on the three use cases at the sea-level you found above, create a use case diagram.</li>
 <li>Identify the actors connected to each use case.</li>
 <li>Store this diagram, as you will need it for the T1 delivery.</li>
 </ul>
-<h2 id="tabular-use-case-specification">Tabular Use Case Specification</h2>
+
+<h2>Tabular Use Case Specification</h2>
 <p>For your system, you also need to deliver the tabular specification of the use cases, like the one in <strong>Fig. 8-3</strong> on page 150. Each table should fit on one A4 page.</p>
 <ul>
 <li>Start outlining all three tables.
 <ul>
 <li>Review if your use case really is at sea-level.</li>
-</ul></li>
+</ul>
+</li>
 <li>Finish the use case tables if you have time left. Ideally, these will be close to the ones you submit into T1.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="plan-t1">Plan T1</h1>
+<h1>Plan T1</h1>
 <p>At this point, you have all information and knowledge needed for the delivery of T1.</p>
 <ul>
 <li>Read through <a class="arrow" href="deliveries-t1.html">Delivery T1</a>
 <ul>
 <li>Plan how you will complete the work.</li>
 <li>Ask any question on MS Teams, ideally in public.</li>
-</ul></li>
+</ul>
+</li>
 <li>Talk through the <a class="arrow" href="learning-grading.html">peer evaluation</a>.
 <ul>
 <li>What do you think should count?</li>
-</ul></li>
 </ul>
+</li>
+</ul>
+
     </section>
     <section class="content">
-<h1 id="checklist">Checklist</h1>
-<h3 id="team-reflection-for-this-unit">Team Reflection for This Unit</h3>
+<h1>Checklist</h1>
+
+<h3>Team Reflection for This Unit</h3>
 <ul>
 <li>Add another section to the team reflection document, just like last week.</li>
 </ul>
-<h3 id="individual-reflection">Individual Reflection</h3>
+<h3>Individual Reflection</h3>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
+
     </section>
 </div>
 
@@ -309,6 +365,9 @@ div.rat ol {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
+
+
+
 
 
 

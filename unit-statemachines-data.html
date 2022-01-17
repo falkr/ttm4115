@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -279,29 +220,40 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="state-machines-data-vs.-states">State Machines: Data vs. States</h1>
-<p>As you have seen, state machines can have choice states so that transitions can contain decisions, similar to if-statements in programming languages. In principle, you could design a state machine that only has a single state, yet handles many incoming messages and timers. This state machine could store all information in its variables, and use lots of guards on the transitions. It would obey all rules of a consistent state machine we have listed so far.</p>
+<h1>State Machines: Data vs. States</h1>
+
+<p>As you have seen, state machines can have choice states so that transitions can contain decisions, similar to if-statements in programming languages.
+In principle, you could design a state machine that only has a single state, yet handles many incoming messages and timers. This state machine could store all information in its variables, and use lots of guards on the transitions. It would obey all rules of a consistent state machine we have listed so far.</p>
+
 <div class="figure">
 <img src="figures/statemachines/stateless-machine.png" alt="A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended." width="100%"/>
 <span name="figures/statemachines/stateless-machine.png">&nbsp;</span>
-<aside name="figures/statemachines/stateless-machine.png"><p><p>A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.</p></p></aside>
+<aside name="figures/statemachines/stateless-machine.png"><p><p>A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.</p>
+</p></aside>
 </div>
 <p>Above we see a machine that is syntactically correct. It consists of only a single state <code>s_1</code>, and declares outgoing triggers <code>A</code>, <code>B</code>, <code>C</code>. For each of these triggers it defines compound transitions that contain a choice state with an outgoing guard. These guards determine what the state machine is doing, like execurting actions attached to the branches of the transitions (not shown here). So this is a valid state machine, and totally possible to produce. But is it a good idea?</p>
-<p>In most cases, this is a <strong>bad design</strong> for a state machine. It does not use the concept of control states, and will be hard to understand. States are really hidden in the data of the machine. Instead, the states should follow what is happening in the real world or follow the state of an interaction explicitly by using its control states.</p>
+
+<p>In most cases, this is a <strong>bad design</strong> for a state machine. It does not use the concept of control states, and will be hard to understand.
+States are really hidden in the data of the machine.
+Instead, the states should follow what is happening in the real world or follow the state of an interaction explicitly by using its control states.</p>
 <p>Of course, variables should be used to store values, and in some cases, these values have an influence on the guards of choice states. But variables should not be stored to remember the state of an interactions, like a variable that would store if you have previously received a specific message. Equally, you should not access an API to check if a timer is still active or allready expired. This you should express with states and dedicated transitions.</p>
-<h3 id="example">Example</h3>
+<h3>Example</h3>
 <p>Similar to the strategy with the decisions above, we could realize the state machine shown below. It should monitor the arrival of a message <code>A</code>. If it arrives in time (i.e., before timer <code>t</code> expires), we want to go into state <code>in_time</code>, otherwise we go into state <code>too_late</code>. The solution below uses a decision once the message <code>A</code> arrives and checks iof the timer alreay expired, to then decide where to go.</p>
+
 <div class="figure">
 <img src="figures/statemachines/stateless-timer-1.svg" alt="Using a choice state with a decision to query the state of the timer. Not recommended." width="100%"/>
 <span name="figures/statemachines/stateless-timer-1.svg">&nbsp;</span>
-<aside name="figures/statemachines/stateless-timer-1.svg"><p><p>Using a choice state with a decision to query the state of the timer. Not recommended.</p></p></aside>
+<aside name="figures/statemachines/stateless-timer-1.svg"><p><p>Using a choice state with a decision to query the state of the timer. Not recommended.</p>
+</p></aside>
 </div>
-<p>Although the solution above is syntactically okay, it is not a good design. Obviously, the fact if the message arrived in time or too late has something to do with the flow of the conversation between this state machine and wherever <code>A</code> comes from. The fact that the timer <code>t</code> expired is n the design above not visible form the control state. When we debug the state machine, we don’t see that it is in a differnet state, and we also have to look at the timer queue to understand the current state of the system.</p>
+<p>Although the solution above is syntactically okay, it is not a good design. Obviously, the fact if the message arrived in time or too late has something to do with the flow of the conversation between this state machine and wherever <code>A</code> comes from. The fact that the timer <code>t</code> expired is n the design above not visible form the control state. When we debug the state machine, we don't see that it is in a differnet state, and we also have to look at the timer queue to understand the current state of the system.</p>
 <p>The solution below is much better. Here we use states the way they are useful. When the timer expires, the state machine switches into state <code>still_waiting</code>, which already signifies that <code>A</code> is late. In this design, the control flow follows the flow of the conversation, and encodes that the timer expires.</p>
+
 <div class="figure">
 <img src="figures/statemachines/stateless-timer-2.svg" alt="Recommended, state-based design realizing the same functionality." width="100%"/>
 <span name="figures/statemachines/stateless-timer-2.svg">&nbsp;</span>
-<aside name="figures/statemachines/stateless-timer-2.svg"><p><p>Recommended, state-based design realizing the same functionality.</p></p></aside>
+<aside name="figures/statemachines/stateless-timer-2.svg"><p><p>Recommended, state-based design realizing the same functionality.</p>
+</p></aside>
 </div>
     </section>
 </div>
@@ -314,68 +266,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

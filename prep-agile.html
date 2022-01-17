@@ -152,65 +152,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -304,32 +245,32 @@ table.weekplan a {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -403,8 +344,9 @@ table.weekplan a {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="agile-vs.-architecture">Agile vs. Architecture</h1>
-<p>So far, we haven’t spent a lot of time to talk about our development process. We have spent most effort into:</p>
+<h1>Agile vs. Architecture</h1>
+
+<p>So far, we haven't spent a lot of time to talk about our development process. We have spent most effort into:</p>
 <ul>
 <li>understanding how to figure out the user requirements so that we built the right system</li>
 <li>understanding the intricacies with communication and interactions</li>
@@ -417,13 +359,17 @@ table.weekplan a {
 <li>the detailed specification of component behavior using state machines</li>
 <li>and finally how to code state machines</li>
 </ul>
-<p>When we talk about <em>development process</em> we mean how we should organize our work around these documents: When to create which document, how they depend on each other, and how to organize our team around these. Initially, we could follow this scheme:</p>
+<p>When we talk about <em>development process</em> we mean how we should organize our work around these documents:
+When to create which document, how they depend on each other, and how to organize our team around these.
+Initially, we could follow this scheme:</p>
+
 <div class="figure">
 <img src="figures/method.jpg" alt="An idealized method that connects the requirements to the final system given in code." width="100%"/>
 <span name="figures/method.jpg">&nbsp;</span>
-<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p></p></aside>
+<aside name="figures/method.jpg"><p><p>An idealized method that connects the requirements to the final system given in code.</p>
+</p></aside>
 </div>
-<p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called “Waterfall Model”, because the different stages follow each other.</p>
+<p>We start by analyzing the user requirements, and develop the use cases based on them. Then, we look at the necessary system components and interactions between them. Once the interactions look okay, we develop the detailed state machines for the individual components, and then implement the state machines in code. The above model is also called &quot;Waterfall Model&quot;, because the different stages follow each other.</p>
 <p><strong>But this is not how real projects work!</strong> In reality, the following will happen:</p>
 <ul>
 <li>When making the use cases, more questions come up that you have to clarify with the customer, and you need to refine the requirements.</li>
@@ -431,32 +377,42 @@ table.weekplan a {
 <li>You may also wonder if a specific operation is possible at all, and may want to implement a simple prototype first, i.e., invest some time to test out some code.</li>
 </ul>
 <p>Have a look into the following presentation: (The part about the Waterfall model starts at 8:45, and lasts a few minutes. The details of the video are not part of the RAT.)</p>
+
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NP9AIUT9nos?start=525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <span name="NP9AIUT9nos">&nbsp;</span>
-<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p></p></aside>
+<aside name="NP9AIUT9nos"><p><p>Talk at a developer conference about the waterfall model and its problems.</p>
+</p></aside>
 </div>
 <p>We can look at the waterfall model as one side in a spectrum of methods:</p>
+
 <div class="figure">
 <img src="figures/agile-spectrum.png" alt="**The spectrum of development methods:** Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right." width="100%"/>
 <span name="figures/agile-spectrum.png">&nbsp;</span>
-<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p></p></aside>
+<aside name="figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
+</p></aside>
 </div>
-<p>This image is based on one from an article called “Get Ready for Agile Methods, With Care.” To the left are methods that require a lot of <strong>planning</strong>, like waterfall. To the right, we have methods that require less (or no) planning, like just plain “hacking.” Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
+<p>This image is based on one from an article called &quot;Get Ready for Agile Methods, With Care.&quot; To the left are methods that require a lot of <strong>planning</strong>, like waterfall.  To the right, we have methods that require less (or no) planning, like just plain &quot;hacking.&quot; Somewhere in between, we have methods such as milestone-driven approaches, extreme programming, and <strong>agile methods</strong>. Those last ones have received a lot of attention in industry, and it is very likely that you will work with an agile method in the future.</p>
 <p>To popularize agile development, some engineers gathered and prepared the <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/">Agile Manifesto</a>. This document explains some of the principles. It is short to read, and most developers have at some point heard about it.</p>
-<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project’s success, but touch on complex issues and are often discussed based on anecdotes and in general a bit “fluffy”. What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don’t stop thinking. (Which is probably a generally good advice for many things in life.)</p>
-<h2 id="mandatory-preparation">Mandatory Preparation</h2>
-<p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working. As part of the preparation, you should read through the Scrum Guide:</p>
+<p>A word of caution: There are a lot of people that have very strong opinions about development methods. This is understandable, since development methods can have a lot of influence on a project's success, but touch on complex issues and are often discussed based on anecdotes and in general a bit &quot;fluffy&quot;.  What is important in the course in the following is that you develop an understanding for the different forces between the need for planning and the ability to adapt to changes. For a project to be successful, you will need both planning and agility. In fact, all agile methods include some amount of planning. So it is important that you look at the arguments, observe, make your own conclusions and don't stop thinking. (Which is probably a generally good advice for many things in life.)</p>
+
+<h2>Mandatory Preparation</h2>
+<p>One popular agile method is <em>Scrum</em>. It is very likely that you will be invited to a course in Scrum when you start working.
+As part of the preparation, you should read through the Scrum Guide:</p>
 <ul>
 <li><a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100">The Scrum Guide</a> by Ken Schwaber and Jeff Sutherland (An earlier version of this page linked to a previous version of the guide, but there are only minor adjustments.)</li>
 </ul>
-<h2 id="optional-material">Optional Material</h2>
-<p>The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I’ll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!</p>
-<h3 id="video-scrum-in-under-5-minutes">Video: Scrum in under 5 minutes</h3>
+
+<h2>Optional Material</h2>
+<p>The guide above may be a bit dry to read, but contains all the essential information about SCRUM. I hence recommend that you find some more videos or other material that help you to get a more vivid picture and some illustrations, and watch them in addition to reading the guide. I'll leave the choice of videos to yourself, but give you two as a starting point below. Also, if you find one that you like, tell me and the others on MS Teams!</p>
+
+<h3>Video: Scrum in under 5 minutes</h3>
+
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2Vt7Ik8Ublw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<h3 id="video-explaining-agile---martin-fowler-and-neil-ford-at-usi">Video: Explaining Agile - Martin Fowler and Neil Ford at USI</h3>
+<h3>Video: Explaining Agile - Martin Fowler and Neil Ford at USI</h3>
+
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GE6lbPLEAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -473,68 +429,6 @@ table.weekplan a {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

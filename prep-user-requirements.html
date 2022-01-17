@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -279,9 +220,12 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="user-requirements">User Requirements</h1>
-<p>Before we actually start to build a system <strong>right</strong>, we need to ensure that we actually build the <strong>right system</strong>. This is part of systems development is called <strong>requirements engineering</strong>.</p>
-<h2 id="learning-goals">Learning Goals</h2>
+<h1>User Requirements</h1>
+<p>Before we actually start to build a system <strong>right</strong>, we need to ensure that we actually build the <strong>right system</strong>.
+This is part of systems development is called <strong>requirements engineering</strong>.</p>
+
+<h2>Learning Goals</h2>
+
 <div class="goals"><p>The learning goals specific for this week are the following:</p>
 <ul>
 <li>Understand how critical requirements are for the development process.</li>
@@ -290,27 +234,40 @@ div.rat ol {
 <li>Appreciate the value of thinking in terms of use cases.</li>
 <li>Creating use case overview diagrams and use case tables.</li>
 <li>Sorting use cases according to their level of detail.</li>
-</ul></div>
-<h2 id="preparation">Preparation</h2>
+</ul>
+</div>
+<h2>Preparation</h2>
 <p>Read carefully through the following book chapters from the compendium:</p>
 <ul>
-<li><p>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. <strong>Chapter 1: The Essential Software Requirement.</strong> pp 3–23 (20 pages). This is a classic book on requirements, and this first chapter introduces all terms and illustrates them nicely.</p></li>
-<li>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. (In the Digital Compendium, via Blackboard) <strong>Chapter 8: Understanding User Requirements.</strong> pp 143-165 (22 pages).
+<li>
+<p>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press.
+<strong>Chapter 1: The Essential Software Requirement.</strong> pp 3--23 (20 pages).
+This is a classic book on requirements, and this first chapter introduces all terms and illustrates them nicely.</p>
+</li>
+<li>
+<p>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. (In the Digital Compendium, via Blackboard) <strong>Chapter 8: Understanding User Requirements.</strong> pp 143-165 (22 pages).</p>
 <ul>
-<li>The relationships <em>extend</em> and <em>include</em> are subtle. Don’t worry too much about them.</li>
-</ul></li>
+<li>The relationships <em>extend</em> and <em>include</em> are subtle. Don't worry too much about them.</li>
 </ul>
-<span name="60a0e6"></span><aside name="60a0e6"><p>You find the book chapter as part of the compendium on Blackboard.</p></aside>
+</li>
+</ul>
+
+<span name="60a0e6"></span><aside name="60a0e6"><p>You find the book chapter as part of the compendium on Blackboard.</p>
+</aside>
 <p>Optionally, read through the following chapter from the compendium: <em>(You will need to create such a document as part of the semester project, but can also take a look at it then.)</em></p>
 <ul>
 <li>Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press.<br />
-<strong>Appendix C: Sample Requirements Document.</strong> pp 575–580 (6 pages). This is a sample requirements document, similar to one that you also will have to deliver for your project. The RAT will not contain question that require you to remember details from the document, but this document provides a valuable context for Chapter 1.</li>
+<strong>Appendix C: Sample Requirements Document.</strong> pp 575--580 (6 pages).
+This is a sample requirements document, similar to one that you also will have to deliver for your project.
+The RAT will not contain question that require you to remember details from the document, but this document provides a valuable context for Chapter 1.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="use-case-levels">Use Case Levels</h1>
-<p><em>You should read through the following material before the team activity, but you don’t have to remember it for the RAT.</em></p>
+<h1>Use Case Levels</h1>
+<p><em>You should read through the following material before the team activity, but you don't have to remember it for the RAT.</em></p>
 <p>Not all use cases are at the same level. Alistair Cockburn proposes in his book <em>Writing Effective Use Cases</em> to sort them according to the levels inspired by a horizon, as shown in the table below.</p>
+
 <div>
 <table class="table">
 <tr style="background-color: #F8FCFF">
@@ -377,10 +334,11 @@ div.rat ol {
 <p>This hierarchy distinguished use cases at three levels:</p>
 <ul>
 <li>In the middle, we have the level of <strong>user goals</strong>, represented by the <strong>sea-level</strong>. These are the use cases with the greatest interest for us and that we should spend most time with. They are at a medium level of detail compared to the other levels. Think of a function like <em>Register Student Information</em> as part of a loan application system.</li>
-<li>At the top, there are use cases that represent <strong>summary goals</strong>. They describe high-level goals and why the system exist, but are a bit abstract so that it may be difficult to be sure how they are implemented. On this summary goal level, we distinguish between the very high level <strong>cloud</strong>, of which a system only should have very few. For the loan application system, <em>Offer Student Loans</em> would be such a use case. One step further down we have <strong>kites</strong>, which describe use cases that are a bit more concrete than cloud-levels. An example is <em>Check Student Loan Credibility</em>.</li>
-<li>At the bottom, we have the level for <strong>subfunctions</strong>. Here, we can have useful use cases that we characterize as <strong>fishes</strong>. <em>Check Submitted Formular</em> may be a function related to several goals in the system, and necessary, but is itself not a goal of a user. It’s more a detailed subfunction. Below the fishes, there are even more low-level use cases, called <strong>clams</strong>. They are so low-level that we shouldn’t even write them down. An example would be <em>Enter Student Name</em>. Instead, these should be integrated into higher level use cases. (Sorry, clams…)</li>
+<li>At the top, there are use cases that represent <strong>summary goals</strong>. They describe high-level goals and why the system exist, but are a bit abstract so that it may be difficult to be sure how they are implemented. On this summary goal level, we distinguish between the very high level <strong>cloud</strong>, of which  a system only should have very few. For the loan application system, <em>Offer Student Loans</em> would be such a use case. One step further down we have <strong>kites</strong>, which describe use cases that are a bit more concrete than cloud-levels. An example is <em>Check Student Loan Credibility</em>.</li>
+<li>At the bottom, we have the level for <strong>subfunctions</strong>. Here, we can have useful use cases that we characterize as <strong>fishes</strong>. <em>Check Submitted Formular</em> may be a function related to several goals in the system, and necessary, but is itself not a goal of a user. It's more a detailed subfunction. Below the fishes, there are even more low-level use cases, called <strong>clams</strong>. They are so low-level that we shouldn't even write them down. An example would be <em>Enter Student Name</em>. Instead, these should be integrated into higher level use cases. (Sorry, clams...)</li>
 </ul>
-<h2 id="good-use-cases-at-sea-level">Good Use Cases at Sea-Level</h2>
+
+<h2>Good Use Cases at Sea-Level</h2>
 <p>A good use case specification requires good use cases especially at the sea-level. Now you may also appreciate the analogy with the sky, the sea-level and the water. The ones in the sky are a bit fluffy and abstract, but provide the necessary goals. The ones under water are necessary, but you can get lost in them. And the ones you should focus on are at the sea-level. Good guidelines for use cases at the sea-level are the following:</p>
 <ul>
 <li>Can the user achieve their goals in this use case within 2 to 20 minutes?</li>
@@ -401,10 +359,12 @@ div.rat ol {
 <li>ask the question <em>why</em> the actor is doing something</li>
 <li>remove details and merge steps</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="optional-preparation">Optional Preparation</h1>
+<h1>Optional Preparation</h1>
 <p>Have a look at the following videos that show how to create deployment diagrams.</p>
+
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tLJXJLfLCCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -437,68 +397,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

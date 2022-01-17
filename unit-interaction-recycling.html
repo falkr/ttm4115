@@ -104,68 +104,51 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
 
 </style>
 </head>
@@ -180,32 +163,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -279,27 +262,32 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="recycling-park">Recycling Park</h1>
+<h1>Recycling Park</h1>
+
 <div class="figure">
 <img src="figures/interactions/heggstadmoen-photo.jpg" width="100%"/>
 </div>
 <p>A recycling park is an area where people can deliver all sorts of special waste, like wood, scrap (old metall), gardening waste, electric devices, batteries and general waste. Some waste is free to deliver, and some waste is subject to a charge. The recycling park is therefore split in two areas: The first area has parking spaces where people can park their car and get rid of the free waste types. The second area is for the paid waste.</p>
+
 <div class="figure">
 <img src="figures/interactions/heggstadmoen-map.jpg" width="100%"/>
 </div>
-<h2 id="technical-installation">Technical Installation</h2>
+<h2>Technical Installation</h2>
 <p>The area for the payed waste has a gate at its entrance and a gate at its exit. The gate has lights (red or green) and an arm that can open to let a car drive through. The gates are combined with big weight scales integrated into the road where an entire car can drive on. With them, the weight car can be measured before and after. At the entry and exit, customers swipe their credit card. Note that they swipe it also at the entry, and the credit card number is used to identify a customer on their way out, so that entry and exit weight of the same customer can be compared.</p>
-<h2 id="goals-and-functions">Goals and Functions</h2>
+
+<h2>Goals and Functions</h2>
 <p>The system must serve two main :goals:</p>
-<ol type="1">
+<ol>
 <li>The number of cars within the payed area is limited to 30 cars at a time.</li>
-<li>Cars are registered with their weight at the entrance and exit, and customers are billed for the waste according to the difference of their car’s weight.</li>
+<li>Cars are registered with their weight at the entrance and exit, and customers are billed for the waste according to the difference of their car's weight.</li>
 </ol>
 <p>Other functions of the system can be to record detailed statistics about the number of cars each day, and figure out the most busy visiting times. But these functions are not relevant now.</p>
-<h2 id="communication-and-deployment">Communication and Deployment</h2>
-<p>It’s a modern installation. All units (lights, weights, gates, card readers) are connected to an IP-based communication bus (Wi-Fi or Ethernet). There is a central computer in the recycling park that runs the application to connect the system. It can send and receive messages with the different units.</p>
-<h2 id="messages">messages</h2>
-<p>Let’s have a closer look at the messages that all the deployed units can send. The suffix <code>_x</code> behind the message names can be replaced with (<code>_1</code>) or (<code>_2</code>), to address the units at the entry (<code>_1</code>) or the exit (<code>_2</code>). We do not show the format of any values that the messages may carry (like image format or weight or payment unit), you may ignore these details.</p>
+
+<h2>Communication and Deployment</h2>
+<p>It's a modern installation. All units (lights, weights, gates, card readers) are connected to an IP-based communication bus (Wi-Fi or Ethernet). There is a central computer in the recycling park that runs the application to connect the system. It can send and receive messages with the different units.</p>
+
+<h2>messages</h2>
+<p>Let's have a closer look at the messages that all the deployed units can send. The suffix <code>_x</code> behind the message names can be replaced with (<code>_1</code>) or (<code>_2</code>), to address the units at the entry (<code>_1</code>) or the exit (<code>_2</code>). We do not show the format of any values that the messages may carry (like image format or weight or payment unit), you may ignore these details.</p>
 <p>The <strong>gate</strong> simply opens for a while so that a car can pass through when it receives the message <code>OPEN_x</code>.</p>
 <p>The <strong>lights</strong> are either red or green. Green means that the customer can drive in, red means that they have to wait, either for weighing the car, processing the payment or because too many cars are already in the area. The light can be controlled with the messages <code>RED_x</code> and <code>GREEN_x</code>.</p>
 <p>The <strong>weight</strong> is place before the gate. To make a reading, the message <code>GET_WEIGHT_x</code> can be sent to the weight. It then answers with the message <code>WEIGHT_x</code>. (This message includes the weight as a value.)</p>
@@ -307,7 +295,8 @@ div.rat ol {
 <p>The <strong>card reader at the exit</strong> register a credit card once a customer wants to exit. They swipe their card, and the card reader sends message <code>CARD_x</code>.</p>
 <p>The <strong>payment service</strong> is an online web service. For simplicity we assume it is also reachable via messages. Assume it accepts messages <code>PAY</code> when a payment should be made, and it answers with message <code>PAY_OK</code>.</p>
 <p>We assume in the following that all payments are okay, both weights work perfectly, and all customers behave nicely. We also assume that customers do not mix up their cards, i.e., only card that have been swiped at the entry are used at the exit.</p>
-<h2 id="task-car-entry">Task: Car Entry</h2>
+
+<h2>Task: Car Entry</h2>
 <p>Develop the sequence diagram <strong>Car Entry</strong> that shows how a car enters the payed area. Assume that no messages are lost and all components are working well.</p>
 <p>Cover the following lifelines:</p>
 <ul>
@@ -317,7 +306,8 @@ div.rat ol {
 <li><code>w_1: Weight</code></li>
 <li><code>c: Computer</code></li>
 </ul>
-<h2 id="task-car-exit">Task: Car Exit</h2>
+
+<h2>Task: Car Exit</h2>
 <p>Develop the sequence diagram <strong>Car Exit</strong> that show hows a car exits the payed area. Assume that no messages are lost and all components are working well.</p>
 <p>Cover the following lifelines:</p>
 <ul>
@@ -328,7 +318,7 @@ div.rat ol {
 <li><code>card_2: Card Reader</code></li>
 <li><code>w_2: Weight</code></li>
 </ul>
-<h2 id="task-complete-single-visit">Task: Complete Single Visit</h2>
+<h2>Task: Complete Single Visit</h2>
 <p>Using the two existing diagrams, develop one that specifies the complete visit of a single car. Use the following ordering of lifelines:</p>
 <ul>
 <li><code>gate_1: Gate</code></li>
@@ -342,23 +332,26 @@ div.rat ol {
 <li><code>card_2: Card Reader</code></li>
 <li><code>w_2: Weight</code></li>
 </ul>
-<h2 id="task-robust-car-entry">Task: Robust Car Entry</h2>
+
+<h2>Task: Robust Car Entry</h2>
 <p>Create a new sequence diagram <strong>Robust Car Entry</strong> that is an improved version of the original diagram. Assume now that pretty much everything can fail:</p>
 <ul>
 <li>components can break down</li>
 <li>operations in the components can fail</li>
 <li>messages may be lost</li>
 </ul>
-<p>Look first at the original diagram and think about how the behavior can be improved so that the system handles errors “a little bit better.” (What that means in detail is up to your interpretation.) You may for instance introduce additional messages and timers. Show timers as messages sent from a lifeline back to itself. <strong>Briefly document your reasoning as comments in the diagram.</strong></p>
+<p>Look first at the original diagram and think about how the behavior can be improved so that the system handles errors &quot;a little bit better.&quot; (What that means in detail is up to your interpretation.) You may for instance introduce additional messages and timers. Show timers as messages sent from a lifeline back to itself. <strong>Briefly document your reasoning as comments in the diagram.</strong></p>
+
     </section>
     <section class="content">
-<h1 id="todays-delivery">Today’s Delivery</h1>
+<h1>Today's Delivery</h1>
 <ul>
 <li>Create a single PDF with all diagrams from today.</li>
 <li>Filename must be <code>ttm4115-2019-TA-interactions-TXX.pdf</code>, where <code>XX</code> refers to your team number.</li>
 <li>Complete the Team Reflection, and copy the content into your <a href="team-reflection.html">Team Reflection Document</a></li>
 <li>Clean up the working area.</li>
 </ul>
+
     </section>
 </div>
 
@@ -370,68 +363,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -278,96 +219,111 @@ div.rat ol {
 
 <div class="page">
     <section class="content">
-<h2 id="question-1">Question 1</h2>
+<h2>Question 1</h2>
+
 <div class="rat"><p>What should happen if another system component wants to trigger a transition of a state machine?</p>
-<ol type="1">
+<ol>
 <li>It adds a transition into the transition table.</li>
 <li>It sends a message to the driver of the state machine.</li>
 <li>It directly triggers the transition of the state machine by calling the transition method.</li>
 <li>It adds an event into the transition table.</li>
 </ol>
-<h2 id="question-2">Question 2</h2></div>
+<h2>Question 2</h2>
+</div>
 <div class="rat"><p>How are decisions in transitions implemented in STMPY?</p>
-<ol type="1">
+<ol>
 <li>With a switch statement.</li>
 <li>With a compound transitions pointing to a Python function.</li>
 <li>With choice states and guards.</li>
 <li>With a decision table that includes choice pseudostates.</li>
 </ol>
-<h2 id="question-3">Question 3</h2></div>
+<h2>Question 3</h2>
+</div>
 <div class="rat"><p>Which relationship do the classes Machine and Driver have?</p>
-<ol type="1">
+<ol>
 <li>One machine can have many parallel drivers.</li>
 <li>One machine object can run many driver objects.</li>
 <li>One driver object can run many machine objects.</li>
 <li>One driver object is associated with one machine object.</li>
 </ol>
-<h2 id="question-4">Question 4</h2></div>
+<h2>Question 4</h2>
+</div>
 <div class="rat"><p>How do we get the code for the state machines in STMPY?</p>
-<ol type="1">
+<ol>
 <li>Code is generated automatically from the diagrams.</li>
 <li>Parts of the code are written manually, parts are generated.</li>
 <li>Models are interpreted, so that there is no need for code.</li>
 <li>Parts of the code are written manually, parts are provided by a library.</li>
 </ol>
-<h2 id="question-5">Question 5</h2></div>
+<h2>Question 5</h2>
+</div>
 <div class="rat"><p>Which of the code listings is correct to define a transition?</p>
-<ol type="1">
+<ol>
 <li>Listing 3 is correct.</li>
 <li>Listing 2 is correct.</li>
 <li>Listing 4 is correct.</li>
 <li>Listing 1 is correct.</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/stmpy-transitions.jpg" alt="Different listings of transition definitions. Only one is correct." width="100%"/>
 <span name="figures/rats/stmpy-transitions.jpg">&nbsp;</span>
-<aside name="figures/rats/stmpy-transitions.jpg"><p><p>Different listings of transition definitions. Only one is correct.</p></p></aside>
+<aside name="figures/rats/stmpy-transitions.jpg"><p><p>Different listings of transition definitions. Only one is correct.</p>
+</p></aside>
 </div>
-<h2 id="question-6">Question 6</h2>
+<h2>Question 6</h2>
+
 <div class="rat"><p>Look at the following code. Why is nothing happening when you execute it?</p>
-<ol type="1">
+<ol>
 <li>There is no initial transition.</li>
 <li>There is no initial state.</li>
 <li>The driver is not started.</li>
 <li>The machine is not started.</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/stmpy-starting.jpg" alt="Code listing with an error." width="100%"/>
 <span name="figures/rats/stmpy-starting.jpg">&nbsp;</span>
-<aside name="figures/rats/stmpy-starting.jpg"><p><p>Code listing with an error.</p></p></aside>
+<aside name="figures/rats/stmpy-starting.jpg"><p><p>Code listing with an error.</p>
+</p></aside>
 </div>
-<h2 id="question-7">Question 7</h2>
+<h2>Question 7</h2>
+
 <div class="rat"><p>A user presses a button, and this should trigger a transition. Which is the best solution?</p>
-<ol type="1">
+<ol>
 <li>The press of the button sends a message into the state machine via the driver.</li>
 <li>The press of the button directly triggers a transition function.</li>
 <li>The state machine continuously checks whether the button has been pressed.</li>
 <li>The driver has built-in support for user interfaces.</li>
 </ol>
-<h2 id="question-8">Question 8</h2></div>
-<div class="rat"><p>The preparation material named the term “traceability”. What did it mean in this context?</p>
-<ol type="1">
+<h2>Question 8</h2>
+</div>
+<div class="rat"><p>The preparation material named the term &quot;traceability&quot;. What did it mean in this context?</p>
+<ol>
 <li>How diagram and code belong together.</li>
 <li>How behavior can be presented as traces.</li>
 <li>That state machines execute traces of behavior.</li>
 <li>The traces that the sequences of states leave behind.</li>
 </ol>
-<h2 id="question-9">Question 9</h2></div>
+<h2>Question 9</h2>
+</div>
 <div class="rat"><p>How are while-loops used in STMPY?</p>
-<ol type="1">
+<ol>
 <li>All drivers share a single while-loop.</li>
 <li>A driver has a while-loop, serving all its state machines.</li>
 <li>Each state machine has its own while-loop.</li>
 <li>STMPY is implemented <em>without</em> while-loops.</li>
 </ol>
-<h2 id="question-10">Question 10</h2></div>
+<h2>Question 10</h2>
+</div>
 <div class="rat"><p>How do state machines break down the complexity of concurrent behavior?</p>
-<ol type="1">
+<ol>
 <li>State machines efficiently assign programming statements to while-loops.</li>
 <li>State machines define events that are efficiently scheduled.</li>
 <li>State machines break down concurrent behavior into short pieces of behavior (the transitions) and execute them one at a time.</li>
 <li>State machines allow to run many programming threads at the same time.</li>
-</ol></div>
+</ol>
+</div>
     </section>
 </div>
 
@@ -379,68 +335,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

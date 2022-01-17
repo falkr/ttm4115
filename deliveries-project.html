@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -279,48 +220,26 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="semester-project">Semester Project</h1>
-<p>In contrast to previous years, we constrain the type of system that you should build. The reason for this is that many students find it hard to come up with a good idea that isn’t too similar to what we already had. In addition, this has the benefit that you are more focused and interested when providing feedback to the other teams, as they try to solve a similar problem.</p>
+<h1>Semester Project</h1>
+
+<p>In contrast to previous years, we constrain the type of system that you should build. The reason for this is that many students find it hard to come up with a good idea that isn't too similar to what we already had. In addition, this has the benefit that you are more focused and interested when providing feedback to the other teams, as they try to solve a similar problem.</p>
 <p>We sill expect that there is enough variation in your priorization, selection, interpretation and implementation of the system functionality that you all end up with different systems.</p>
+
     </section>
     <section class="content">
-<h1 id="digital-walkie-talkies">2021: Digital Walkie Talkies</h1>
-<p>The base idea is to create a communication device for workers.</p>
-<p>The core functionality is to send short voice messages to another colleague, without waiting for the colleague to take the call (there is no “call”), just by somehow selecting the receiver, recording a message and sending it.</p>
-<p>Such a function is also called <em>push-to-talk</em> communication, and you probably know it from the way the crew members communicate on Star Trek.</p>
-<h2 id="robust-reliable-responsive">Robust, Reliable, Responsive</h2>
-<p>The most important feature of your system should be its reliability in all circumstances. This means, that it does not loose a message, but would try to reach a receiver and only if there’s no other way to deliver the message tell the sender about it.</p>
-<p>The system should also be designed so that several messages arriving at the same time are handled somehow.</p>
-<p>At all times, the sender and the receiver should find that their device is responsive in some way, that means, they know what it is doing and maybe can record the next message to another colleague even if another one is not yet played to the receiver.</p>
-<h2 id="domain">Domain</h2>
-<p>Decide if you want to optimize the system for a specific domain, or if you want to make it work in several settings. You could for instance focus on healthcare, offshore workers, farmers, athletes, just to name a few. This is a good point where your can distinguish your setup from that of others.</p>
-<h2 id="example-features">Example Features</h2>
+<h1>2022: Digital-Physical Interaction for Distributed Teams</h1>
+<p>The base idea is to create a communication device for members of a development team or office that is distributed in at least 2 office locations, together with persons working from home.</p>
+<p>How can we enable informal, &quot;accidental&quot; conversations, like when you meet someone in the kitchen in a physical office. How could such interactions also span across several locations?</p>
+<p>For example:</p>
 <ul>
-<li>Send short voice messages</li>
-<li>Avoid collisions if several messages arrive at the same time</li>
-<li>Replay for noisy environments</li>
-<li>Transcript (Speech to text)</li>
-<li>Detection of status, and handling of incoming messages accordingly</li>
-<li>Detection of network bandwidth, resubmissions</li>
+<li>A screen, camera, speakers, microphone, movement detection besides the coffee machine.</li>
+<li>How can a worker in a home office detect when someone is brewing a coffee and join in?</li>
+<li>Can there be a fun game to play across the offices?</li>
 </ul>
-<h2 id="implementation">Implementation</h2>
-<p>You should have a working demonstrator or prototype that shows some or most of the functionality you planned.</p>
-<p>Some more advanced functions are the following:</p>
-<ul>
-<li><p>Voice activation: Detection of activation words, followed by a detection of the recipient of a message, and detection when the message is complete.</p></li>
-<li><p>Speech-to-text: Creation of a written form of the message, so the receiver could receive them as text instead, wither to save bandwidth on the receiver side or in noisy environments, or as accessibility feature.</p></li>
-<li><p>Text-to-speech: One could think of functionality where a message is transmitted as text and should be synthesized into speech for the receive to listen.</p></li>
-</ul>
-<p>The thing is: All of these functions are probably helpful, and we/you may implement some of them. But for the overall system design, we could replace some of these functions by code that imitates them. This is especially true when we assume that these functions are achieved by independent system components. Then we can, for instance, replace a voice activation module with a module that imitates the voice activation, for instance with a graphical user interface, but has the same interface.</p>
-<p>The main part of your implementation must be in Python, and you need to implement some components using the state machine framework STMPY. This is to ensure that you can apply the learning material in the course.</p>
-<h2 id="devices">Devices</h2>
-<p>There are several options for hardware to run the demo:</p>
-<ul>
-<li>Your laptop</li>
-<li>A Raspberry Pi</li>
-<li>A BBC Microbit</li>
-</ul>
-<p>Here we haven’t yet sorted out all the details and practicalities. One robust solution and maybe programming-wise the simplest would be to just use your own computers.</p>
+<p>There is an element of uncertainty in this system, which is important as we learn how to manage this uncertainty.</p>
+<p>This base idea leaves some room for suggestions and ideas on your side.</p>
+<p>We will refine this idea together and incorporate your ideas over time.</p>
+
     </section>
 </div>
 
@@ -332,68 +251,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

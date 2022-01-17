@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -222,32 +163,32 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -321,42 +262,62 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <div class="page">
     </section>
     <section class="content">
-<h1 id="individual-reflective-essay">Individual Reflective Essay</h1>
-<p>In the individual delivery, you need to deliver further evidence that you have reached the learning goals of the course and think independently about the course topics. The subject of your reflection can be anything relevant to the course and its learning goals. This means systems and system architectures, their description, the development process and the process during teamwork.</p>
-<p>This part is highly individual. It depends on your personal observations and reflections, and it should be unique. You need to provide a maximum of 3 written pages in which you reflect about selected issues that relate to the learning goals of the course. You can decide what to write about, and you decide if you want to address a single point or several ones. We recommend not to try to address more than 3 topics, because you should provide a certain depth to each of them and provide consistent arguments.</p>
+<h1>Individual Reflective Essay</h1>
+
+<p>In the individual delivery, you need to deliver further evidence that you have reached the learning goals of the course and think independently about the course topics.
+The subject of your reflection can be anything relevant to the course and its learning goals.
+This means systems and system architectures, their description, the development process and the process during teamwork.</p>
+<p>This part is highly individual. It depends on your personal observations and reflections, and it should be unique.
+You need to provide a maximum of 3 written pages in which you reflect about selected issues that relate to the learning goals of the course.
+You can decide what to write about, and you decide if you want to address a single point or several ones.
+We recommend not to try to address more than 3 topics, because you should provide a certain depth to each of them and provide consistent arguments.</p>
+
     </section>
     <section class="content">
-<h1 id="how-to-make-an-argument">How to Make an Argument</h1>
-<p>No matter what you choose to write about, you need to make good arguments. Good arguments are based on logically consistent reasoning, are based on facts and observations, are explained well and have an explicit conclusion.</p>
+<h1>How to Make an Argument</h1>
+<p>No matter what you choose to write about, you need to make good arguments.
+Good arguments are based on logically consistent reasoning, are based on facts and observations, are explained well and have an explicit conclusion.</p>
 <ul>
 <li>You need to collect evidence for your argument. Explain situations that happened during the semester, point to diagrams or code, or point to the learning material.</li>
 <li>Construct a claim, and explain it. Make sure the reader understands your point.</li>
 <li>Discuss your claim. Consider counter-arguments, or tradeoffs, evidence against your argument.</li>
 <li>Draw a conclusion, repeat or reinforce your main point.</li>
 </ul>
-<h3 id="language">Language</h3>
+
+<h3>Language</h3>
 <p>Of course, expressing yourself well will always be a benefit, and we encourage you to acquire excellent language skills. Also, check your delivery for typos and grammar. We will, however, ignore language issues as long as we understand what you mean.</p>
-<h3 id="write-efficiently">Write Efficiently</h3>
-<p>Use repetition only carefully when it makes sense to do so, for instance to summarize or compare one point to an earlier one. Don’t just repeat something because you are unsure if we got it. We are going through your text carefully, so there is no danger that we miss an arguments. We are looking for them.</p>
-<h3 id="use-paragraphs-strategically">Use Paragraphs Strategically</h3>
+<h3>Write Efficiently</h3>
+<p>Use repetition only carefully when it makes sense to do so, for instance to summarize or compare one point to an earlier one. Don't just repeat something because you are unsure if we got it.
+We are going through your text carefully, so there is no danger that we miss an arguments. We are looking for them.</p>
+<h3>Use Paragraphs Strategically</h3>
 <p>A paragraph should only contain one main idea or argument. Outline this argument early on in the paragraph, and use the rest of the paragraph to develop the argument, provide evidence, discuss alternatives. For longer argumentations, use several paragraphs.</p>
+
     </section>
     <section class="content">
-<h1 id="levels">Levels</h1>
+<h1>Levels</h1>
 <p>To understand what makes a good argument, we may consider the three highest levels in the <a href="https://en.wikipedia.org/wiki/Structure_of_observed_learning_outcome">SOLO taxonomy</a>. This taxonomy is used to assess learning outcomes, but it also works when looking at arguments. For a good argumentation, you should aim for the level of extended abstract.</p>
+
 <div class="figure">
 <img src="figures/solo-arguments.png" alt="Each level comes with an illustration that tries to convey the very abstract idea behind each level." width="100%"/>
 <span name="figures/solo-arguments.png">&nbsp;</span>
-<aside name="figures/solo-arguments.png"><p><p>Each level comes with an illustration that tries to convey the very abstract idea behind each level.</p></p></aside>
+<aside name="figures/solo-arguments.png"><p><p>Each level comes with an illustration that tries to convey the very abstract idea behind each level.</p>
+</p></aside>
 </div>
 <ul>
-<li><p><strong>Multi-structural:</strong> You present multiple pieces of information, but they are not linked.</p></li>
-<li><p><strong>Relational:</strong> You present multiple pieces of information, and also provide links between them.</p></li>
-<li><p><strong>Extended Abstract:</strong> You present a reasonable multiple pieces of information, and also provide links between them, and extend your discussion beyond what was said in the course.</p></li>
+<li>
+<p><strong>Multi-structural:</strong> You present multiple pieces of information, but they are not linked.</p>
+</li>
+<li>
+<p><strong>Relational:</strong> You present multiple pieces of information, and also provide links between them.</p>
+</li>
+<li>
+<p><strong>Extended Abstract:</strong> You present a reasonable multiple pieces of information, and also provide links between them, and extend your discussion beyond what was said in the course.</p>
+</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="look-at-your-sentences">Look at your Sentences</h1>
+<h1>Look at your Sentences</h1>
 <p>You can also consider each of your sentences to get an indication of the quality of your argument. For some, it may be too restrictive when doing this before writing. So you may also do this after you have written a couple of sentences, to plan how to proceed.</p>
 <p>The following type of sentences are examples for providing some information. Such sentences are useful to provide evidence and to lay the ground for further argumentation. Just make sure that you only include such sentences to support your argumentation, and not just fill up the page.</p>
 <ul>
@@ -364,22 +325,26 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <li>Explaining some parts of your specification.</li>
 <li>Provide background information.</li>
 </ul>
+
 <p>The following sentences are often examples for building relations between information. Such sentences are useful in the course of a discussion, to build up an argument.</p>
 <ul>
 <li>Comparing alternatives.</li>
 <li>Discussing benefits and drawbacks.</li>
 </ul>
+
 <p>Now, make a statement with an idea that provides a more abstract view on your knowledge or extends it beyond what was already covered in the course. Examples for that are sentences like the following:</p>
 <ul>
 <li>Analyzing causes for something.</li>
 <li>Generalize from a specific situation to more general one.</li>
 <li>Reasoning, drawing logic conclusions, developping an argument.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="examples-for-topics">Examples for Topics</h1>
+<h1>Examples for Topics</h1>
 <p>You should select the topic or topics to write about for yourself. You may also try to work on several topics, and then select the ones where you were most successful with the argumentation. There is no requirement that you cover <em>all</em> aspects, learning goals, or topics addressed in the course.</p>
-<p>Ideally, chose a topic that you care about, or where you gained the most insights, as this will probably improve your argumentation. For this reason, it’s probably not a good idea that we show you a list with possible topics, as this may limit your creativity and maybe keep you from writing about a more unique topic. But we know that you will ask, so here is a list of examples and ideas anyway:</p>
+<p>Ideally, chose a topic that you care about, or where you gained the most insights, as this will probably improve your argumentation. For this reason, it's probably not a good idea that we show you a list with possible topics, as this may limit your creativity and maybe keep you from writing about a more unique topic.
+But we know that you will ask, so here is a list of examples and ideas anyway:</p>
 <ul>
 <li>About the system design and architecture choices.</li>
 <li>Quality of the state machine, correspondence between state machine and sequence diagram, or correspondence between state machine and implementation.</li>
@@ -387,15 +352,17 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <li>Observations and insights into the development process.</li>
 <li>The quality of your delivery, maybe a critique of it.</li>
 <li>Your learning process, in relation to specific course concepts.</li>
-<li>…any item of your choice, as long as they are connected to the learning goals of the course.</li>
+<li>...any item of your choice, as long as they are connected to the learning goals of the course.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="grading">Grading</h1>
-<p>The individual delivery is part of your portfolio, and it will weigh around 30 % for the final grade. For the performance level, we will apply <a href="learning-grading.html#overall-generic-criteria">NTNU’s general grading criteria</a>. Notice the significance of <em>independent thinking</em> in the performance levels.</p>
+<h1>Grading</h1>
+<p>The individual delivery is part of your portfolio, and it will weigh around 30 % for the final grade. For the performance level, we will apply <a href="learning-grading.html#overall-generic-criteria">NTNU's general grading criteria</a>. Notice the significance of <em>independent thinking</em> in the performance levels.</p>
+
     </section>
     <section class="content">
-<h1 id="final-hints">Final Hints</h1>
+<h1>Final Hints</h1>
 <ul>
 <li>Be individual and unique. We not only recommend to work on your own, but also to not discuss your delivery with others.</li>
 <li><strong>The maximum length is 3 pages.</strong> You can add an appendix (within the same PDF file) that consists of screenshots of material that you can annotate. For instance, you can include a screenshot of a diagram and point out an issue that you refer to in your report.</li>
@@ -406,6 +373,7 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 <li>Delivery I3 is not meant as a feedback on the course. For this, please use any of the other channels for course feedback. The focus is your own learning, and reflection about it. Of course, if you develop a point that naturally includes some feedback about the course you may do so.</li>
 <li>The recommended language for I3 is <strong>English</strong>. You can, however, also deliver in Norwegian, if you prefer.</li>
 </ul>
+
     </section>
 </div>
 
@@ -417,68 +385,6 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

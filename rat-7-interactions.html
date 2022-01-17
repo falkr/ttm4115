@@ -152,65 +152,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -304,32 +245,32 @@ table.weekplan a {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -402,98 +343,114 @@ table.weekplan a {
 
 <div class="page">
     <section class="content">
-<h2 id="question-1">Question 1</h2>
+<h2>Question 1</h2>
+
 <div class="rat"><p>What do sequence diagrams cover?</p>
-<ol type="1">
+<ol>
 <li>They cover selected interaction scenarios in a system.</li>
 <li>They cover all interactions in a system.</li>
 <li>They cover selected interaction scenarios of a single system component.</li>
 <li>They cover the behavior of a system.</li>
 </ol>
-<h2 id="question-2">Question 2</h2></div>
-<div class="rat"><p>Look for the figure with the arrows. Which of the arrows represent which type of message?</p>
-<ol type="1">
+<h2>Question 2</h2>
+</div>
+<div class="rat"><p>Look for the figure with the arrows.
+Which of the arrows represent which type of message?</p>
+<ol>
 <li>synchronous (1), return (2), asynchronous (3)</li>
 <li>asynchronous (1), return (2), synchronous (3)</li>
 <li>synchronous (1), asynchronous (2), return (3)</li>
 <li>asynchronous (1), synchronous (2), return (3)</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/arrows.png" width="100%"/>
 </div>
-<h2 id="question-3">Question 3</h2>
+<h2>Question 3</h2>
+
 <div class="rat"><p>Sequence diagrams can define <strong>ref</strong> fragments.</p>
-<ol type="1">
+<ol>
 <li>The <strong>ref</strong> fragment can only be used with object-oriented languages.</li>
 <li>The <strong>ref</strong> fragment defines a reference that all other diagrams must follow.</li>
 <li>The <strong>ref</strong> fragment helps to reuse diagrams and manage large ones.</li>
 <li>The <strong>ref</strong> fragment is resolved at runtime.</li>
 </ol>
-<h2 id="question-4">Question 4</h2></div>
+<h2>Question 4</h2>
+</div>
 <div class="rat"><p>Which lines in sequence diagrams do never cross each other?</p>
-<ol type="1">
+<ol>
 <li>Only nested messages can cross each other.</li>
-<li>Lifelines don’t cross lifelines.</li>
+<li>Lifelines don't cross lifelines.</li>
 <li>A message does not cross another message.</li>
 <li>A message does not cross a lifeline.</li>
 </ol>
-<h2 id="question-5">Question 5</h2></div>
+<h2>Question 5</h2>
+</div>
 <div class="rat"><p>Creation and destruction of lifelines:</p>
-<ol type="1">
+<ol>
 <li><strong>create</strong> and <strong>destroy</strong> can be used independently.</li>
 <li>Lifelines created with a <strong>create</strong> also have to be destroyed with a <strong>destroy</strong>.</li>
 <li>Only lifelines created dynamically with a <strong>create</strong> can be destroyed dynamically with a <strong>destroy</strong>.</li>
 <li>All other statements are wrong.</li>
 </ol>
-<h2 id="question-6">Question 6</h2></div>
+<h2>Question 6</h2>
+</div>
 <div class="rat"><p>Which of the following alternatives contain only valid fragment types?</p>
-<ol type="1">
+<ol>
 <li>alt, break, ref, neg, opt, switch</li>
 <li>alt, assert, break, opt, ref</li>
 <li>alt, break, do, loop, opt, ref</li>
 <li>alt, assert, ref, break, neg, opt, switch</li>
 </ol>
-<h2 id="question-7">Question 7</h2></div>
+<h2>Question 7</h2>
+</div>
 <div class="rat"><p>The following answer alternatives show short traces of events. Which alternative shows traces that are <strong>not</strong> described by diagram X?</p>
-<ol type="1">
+<ol>
 <li>!C,?C and ?C,!D</li>
 <li>!D,?D and ?C,!D</li>
 <li>?A,?B and ?D,?E</li>
 <li>?B,!C and !E,?E</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/sdx.png" width="100%"/>
 </div>
-<h2 id="question-8">Question 8</h2>
+<h2>Question 8</h2>
+
 <div class="rat"><p>Have a look at diagram Y. How can we call this scenario?</p>
-<ol type="1">
+<ol>
 <li>mixed-initiative</li>
 <li>non-causal ordering</li>
 <li>sequential ordering</li>
 <li>parallel messages</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/sdy.png" width="100%"/>
 </div>
-<h2 id="question-9">Question 9</h2>
+<h2>Question 9</h2>
+
 <div class="rat"><p>Have a look at diagram Z. How can we call this scenario?</p>
-<ol type="1">
+<ol>
 <li>non-causal ordering</li>
 <li>mixed-initiative</li>
 <li>sequential ordering</li>
 <li>parallel messages</li>
-</ol></div>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/sdz.png" width="100%"/>
 </div>
-<h2 id="question-10">Question 10</h2>
+<h2>Question 10</h2>
+
 <div class="rat"><p>Why is it important to consider also implied scenarios?</p>
-<ol type="1">
+<ol>
 <li>They can reveal bugs or trouble spots in the system.</li>
 <li>Because all implied scenarios need to be resolved.</li>
 <li>Implied scenario are a sure sign of a bug or trouble spot.</li>
 <li>Implied scenarios require a fix of the original specification.</li>
-</ol></div>
+</ol>
+</div>
     </section>
 </div>
 
@@ -507,68 +464,6 @@ table.weekplan a {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

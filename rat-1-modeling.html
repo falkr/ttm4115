@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -278,97 +219,102 @@ div.rat ol {
 
 <div class="page">
     <section class="content">
-<h2 id="question-1">Question 1</h2>
-<div class="rat"><p>What does it mean when we speak about “degrees” of UML?</p>
-<ol type="1">
-<li>Everything is a model, also code, so talking about “degrees of UML” is not really helpful.</li>
+<h2>Question 1</h2>
+
+<div class="rat"><p>What does it mean when we speak about &quot;degrees&quot; of UML?</p>
+<ol>
+<li>Everything is a model, also code, so talking about &quot;degrees of UML&quot; is not really helpful.</li>
 <li>UML can be used in an informal way, for instance when sketching something on a whiteboard.</li>
 <li>To be valuable, models need to be detailed and formal.</li>
-<li>Using “UML as a Blueprint” means to automatically generate code from the UML models.</li>
+<li>Using &quot;UML as a Blueprint&quot; means to automatically generate code from the UML models.</li>
 </ol>
-<h2 id="question-2">Question 2</h2></div>
+<h2>Question 2</h2>
+</div>
 <div class="rat"><p>About modeling in general, which one of the following statements is true?</p>
-<ol type="1">
+<ol>
 <li>A model is a detailed digital representation of the reality.</li>
 <li>UML only describes a notation for models.</li>
 <li>A diagram is like a window into a model.</li>
 <li>A modeling language must be graphical, otherwise it does not serve its purpose.</li>
 </ol>
-<h2 id="question-3">Question 3</h2></div>
+<h2>Question 3</h2>
+</div>
 <div class="rat"><p>Which of the following statements on models and code is <strong>false</strong>?</p>
-<ol type="1">
+<ol>
 <li>UML is so expressive that it corresponds to code.</li>
 <li>Code is also a model, but only describes the implementation of the software.</li>
 <li>Code does not tell you how the software is to be used or by whom.</li>
 <li>To understand a system that is only described by code, you have to understand the code.</li>
 </ol>
-<h2 id="question-4">Question 4</h2></div>
+<h2>Question 4</h2>
+</div>
 <div class="rat"><p>What are the reasons to invest time into preparing a system model, for instance in UML?</p>
-<ol type="1">
+<ol>
 <li>Testing will be practically unnecessary.</li>
 <li>Since UML is precise, the implementation comes automatically.</li>
 <li>In many development processes, modeling is a mandatory activity.</li>
 <li>All project participants can gain a better understanding.</li>
 </ol>
-<h2 id="question-5">Question 5</h2></div>
+<h2>Question 5</h2>
+</div>
 <div class="rat"><p>What do deployment diagrams show?</p>
-<ol type="1">
+<ol>
 <li>The logical elements of the system.</li>
 <li>How software is assigned to hardware.</li>
 <li>How the pieces of the system communicate.</li>
 <li>Both how software is assigned to hardware and how the pieces of the system communicate.</li>
 </ol>
-<h2 id="question-6">Question 6</h2></div>
+<h2>Question 6</h2>
+</div>
 <div class="rat"><p>Which of the following statements is true:</p>
-<ol type="1">
+<ol>
 <li>artifacts cannot represent executable files</li>
 <li>nodes cannot represent execution environments</li>
 <li>devices cannot model an application server</li>
 <li>artifacts cannot represent library files</li>
 </ol>
-<h2 id="question-7">Question 7</h2></div>
+<h2>Question 7</h2>
+</div>
 <div class="rat"><p>Which stereotypes fits best into the picture (at their respective placeholders)?</p>
-<ol type="1">
-<li><ol type="1">
-<li>artifact, (2) manifest, (3) device</li>
-</ol></li>
-<li><ol type="1">
-<li>artifact, (2) deploy, (3) device</li>
-</ol></li>
-<li><ol type="1">
-<li>device, (2) deploy, (3) artifact</li>
-</ol></li>
-<li><ol type="1">
-<li>deploy, (2) artifact, (3) device</li>
-</ol></li>
-</ol></div>
+<ol>
+<li>(1) artifact, (2) manifest, (3) device</li>
+<li>(1) artifact, (2) deploy, (3) device</li>
+<li>(1) device, (2) deploy, (3) artifact</li>
+<li>(1) deploy, (2) artifact, (3) device</li>
+</ol>
+</div>
 <div class="figure">
 <img src="figures/rats/deployment-1.png" width="100%"/>
 </div>
-<h2 id="question-8">Question 8</h2>
+<h2>Question 8</h2>
+
 <div class="rat"><p>What should a deployment diagram show?</p>
-<ol type="1">
+<ol>
 <li>The more complete a deployment diagram is, the more useful it is during the actual deployment.</li>
 <li>Some details always remain hidden.</li>
 <li>It is important to only show relevant details of a system.</li>
 <li>A deployment diagram should be complete.</li>
 </ol>
-<h2 id="question-9">Question 9</h2></div>
-<div class="rat"><p>Which relationship or connection between two elements can also be represented by nesting, i.e., by drawing one node into another one?</p>
-<ol type="1">
+<h2>Question 9</h2>
+</div>
+<div class="rat"><p>Which relationship or connection between two elements can also be represented by nesting,
+i.e., by drawing one node into another one?</p>
+<ol>
 <li>communication</li>
 <li>manifest</li>
 <li>dependency between two artifacts</li>
 <li>deploy</li>
 </ol>
-<h2 id="question-10">Question 10</h2></div>
-<div class="rat"><p>Deployment diagrams…</p>
-<ol type="1">
+<h2>Question 10</h2>
+</div>
+<div class="rat"><p>Deployment diagrams...</p>
+<ol>
 <li>Are useful at all stages of development.</li>
 <li>Are useful at all later stages of development.</li>
 <li>Are useful during system deployment.</li>
 <li>Are useful during the system implementation.</li>
-</ol></div>
+</ol>
+</div>
     </section>
 </div>
 
@@ -380,68 +326,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

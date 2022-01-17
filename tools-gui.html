@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -180,32 +121,32 @@ div.rat ol {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -279,173 +220,192 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="user-interfaces">User Interfaces</h1>
-<p>User interfaces are a critical part for many systems, as they should present the system functionality to the user in an intuitive way and provide the appropriate level of information. Making such good interfaces is a topic on its own, and not part of the learning goals of this course, where we focus more on the overall system design and the interactions between components.</p>
-<p>What we do care about is to make user-friendly systems, and we want to ensure that systems fulfill user requirements. As we treat communication between components, we also care about responsive user interfaces, that means, that the user is informed what at each stage of an interaction happens and we don’t leave them waiting with an unresponsive progress bar. Or even worse, we don’t even show a progress bar and the user does not know if the system has an error or is indeed working on something. But, as said, we don’t care if our user interfaces look very polished or use nice animations. This is part of other courses.</p>
+<h1>User Interfaces</h1>
+
+<p>User interfaces are a critical part for many systems, as they should present the system functionality to the user in an intuitive way and provide the appropriate level of information.
+Making such good interfaces is a topic on its own, and not part of the learning goals of this course, where we focus more on the overall system design and the interactions between components.</p>
+<p>What we do care about is to make user-friendly systems, and we want to ensure that systems fulfill user requirements.
+As we treat communication between components, we also care about responsive user interfaces, that means, that the user is informed what at each stage of an interaction happens and we don't leave them waiting with an unresponsive progress bar. Or even worse, we don't even show a progress bar and the user does not know if the system has an error or is indeed working on something.
+But, as said, we don't care if our user interfaces look very polished or use nice animations. This is part of other courses.</p>
 <p>In our base architecture, we will use simple uses interfaces with three goals:</p>
 <ul>
 <li>As a source of user events and data. For example, a user interface may represent a mobile application or a website.</li>
-<li>As a replacement for real hardware. For example, a user interface may represent the button and LEDs and plug of the kitchen timer, so we don’t have to work with the real hardware.</li>
+<li>As a replacement for real hardware. For example, a user interface may represent the button and LEDs and plug of the kitchen timer, so we don't have to work with the real hardware.</li>
 <li>As a debugging tool to simulate other devices.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="appjar">AppJar</h1>
-<p>As user interface for Python, we are going to use a simple library called <a href="http://appjar.info">appJar</a>. It is an open-source library for Python that runs on the main operating systems and should be robust to install and use. It’s a very simple UI library, and not suitable for professional applications. But for learning together, it is exactly what we need.</p>
-<h3 id="install-appjar">Install AppJar</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">pip3</span> install appJar</a></code></pre></div>
-<h2 id="example">Example</h2>
+<h1>AppJar</h1>
+<p>As user interface for Python, we are going to use a simple library called <a href="http://appjar.info">appJar</a>. It is an open-source library for Python that runs on the main operating systems and should be robust to install and use. It's a very simple UI library, and not suitable for professional applications. But for learning together, it is exactly what we need.</p>
+
+<h3>Install AppJar</h3>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip3</span> install appJar</span></code></pre></div>
+<h2>Example</h2>
 <p>The code below shows a small example with some of the elements:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> appJar <span class="im">import</span> gui</a>
-<a class="sourceLine" id="cb1-2" title="2"></a>
-<a class="sourceLine" id="cb1-3" title="3">app <span class="op">=</span> gui()</a>
-<a class="sourceLine" id="cb1-4" title="4">app.addLabelEntry(<span class="st">&#39;Text&#39;</span>)</a>
-<a class="sourceLine" id="cb1-5" title="5">app.setEntry(<span class="st">&#39;Text&#39;</span>, <span class="st">&#39;Frank&#39;</span>)</a>
-<a class="sourceLine" id="cb1-6" title="6"></a>
-<a class="sourceLine" id="cb1-7" title="7"><span class="kw">def</span> on_button_pressed(title):</a>
-<a class="sourceLine" id="cb1-8" title="8">    <span class="bu">print</span>(<span class="st">&#39;Button with title &quot;</span><span class="sc">{}</span><span class="st">&quot; pressed!&#39;</span>.<span class="bu">format</span>(title))</a>
-<a class="sourceLine" id="cb1-9" title="9">    text <span class="op">=</span> app.getEntry(<span class="st">&#39;Text&#39;</span>)</a>
-<a class="sourceLine" id="cb1-10" title="10">    <span class="bu">print</span>(<span class="st">&#39;And the current text field shows &quot;</span><span class="sc">{}</span><span class="st">&quot;.&#39;</span>.<span class="bu">format</span>(text))</a>
-<a class="sourceLine" id="cb1-11" title="11"></a>
-<a class="sourceLine" id="cb1-12" title="12">app.addButton(<span class="st">&quot;Press Button&quot;</span>, on_button_pressed)</a>
-<a class="sourceLine" id="cb1-13" title="13">app.go()</a></code></pre></div>
-<h2 id="documentation">Documentation</h2>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> appJar <span class="im">import</span> gui</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>app <span class="op">=</span> gui()</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>app.addLabelEntry(<span class="st">&#39;Text&#39;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>app.setEntry(<span class="st">&#39;Text&#39;</span>, <span class="st">&#39;Frank&#39;</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> on_button_pressed(title):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;Button with title &quot;</span><span class="sc">{}</span><span class="st">&quot; pressed!&#39;</span>.<span class="bu">format</span>(title))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> app.getEntry(<span class="st">&#39;Text&#39;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&#39;And the current text field shows &quot;</span><span class="sc">{}</span><span class="st">&quot;.&#39;</span>.<span class="bu">format</span>(text))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>app.addButton(<span class="st">&quot;Press Button&quot;</span>, on_button_pressed)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>app.go()</span></code></pre></div>
+<h2>Documentation</h2>
 <ul>
 <li><a href="http://appjar.info">appJar Website</a></li>
 <li><a href="https://github.com/jarvisteach/appJar/">appJar on Github</a></li>
 <li><a href="appjarapi.html">appJar API (for Reference)</a></li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="state-machines-and-gui">State Machines and GUI</h1>
+<h1>State Machines and GUI</h1>
 <p>To connect the user interface with a state machine, there are two directions we need to take care of:</p>
-<ol type="1">
+<ol>
 <li>From the user interface to the state machines</li>
 <li>From the state machines to the user interface.</li>
 </ol>
-<h2 id="user-interface-to-state-machine">User Interface to State Machine</h2>
+<h2>User Interface to State Machine</h2>
 <p>User events can happen at any time, whenever the user decides to do so. The best way to handle these events is by using <strong>messages</strong> that we send into the state machine.</p>
-<p>The example below shows a button. It declares a function that is executed once the button is pressed. This function sends the message <code>activate</code> directly into the state machine, using the variable <code>stm</code>. The corresponding transition is <code>t1</code>, which is then triggered and has the <code>startTimer</code> function as an effect.</p>
-<p>The timer function uses the signature <code>start_timer(*)</code> with the <code>*</code> that tells the machine to use the arguments provided by the message. The send message provides these arguments with the line <code>self.stm.send('activate', args=['t', duration])</code> Note that we are casting the string of the text field as an integer (with <code>int(...)</code>) in the line above. When you run the system, look at the command line and the printed statements. You can vary the timer expiration with the text field.</p>
+<p>The example below shows a button. It declares a function that is executed once the button is pressed. This function sends the message <code>activate</code> directly into the state machine, using the variable <code>stm</code>.
+The corresponding transition is <code>t1</code>, which is then triggered and has the <code>startTimer</code> function as an effect.</p>
+<p>The timer function uses the signature <code>start_timer(*)</code> with the <code>*</code> that tells the machine to use the arguments provided by the message.
+The send message provides these arguments with the line <code>self.stm.send('activate', args=['t', duration])</code>
+Note that we are casting the string of the text field as an integer (with <code>int(...)</code>) in the line above.
+When you run the system, look at the command line and the printed statements. You can vary the timer expiration with the text field.</p>
+
 <div class="figure">
 <img src="figures/timer-gui.png" width="100%"/>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> appJar <span class="im">import</span> gui</a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="im">from</span> stmpy <span class="im">import</span> Machine, Driver</a>
-<a class="sourceLine" id="cb1-3" title="3"></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">class</span> TimerGUI():</a>
-<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb1-6" title="6">        <span class="va">self</span>.app <span class="op">=</span> gui()</a>
-<a class="sourceLine" id="cb1-7" title="7">        <span class="va">self</span>.app.addLabelEntry(<span class="st">&#39;Duration&#39;</span>)</a>
-<a class="sourceLine" id="cb1-8" title="8">        <span class="va">self</span>.app.setEntry(<span class="st">&#39;Duration&#39;</span>, <span class="st">&#39;2000&#39;</span>)</a>
-<a class="sourceLine" id="cb1-9" title="9">        <span class="kw">def</span> on_button_pressed(title):</a>
-<a class="sourceLine" id="cb1-10" title="10">            <span class="bu">print</span>(<span class="st">&#39;Button with title &quot;</span><span class="sc">{}</span><span class="st">&quot; pressed!&#39;</span>.<span class="bu">format</span>(title))</a>
-<a class="sourceLine" id="cb1-11" title="11">            duration <span class="op">=</span> <span class="bu">int</span>(<span class="va">self</span>.app.getEntry(<span class="st">&#39;Duration&#39;</span>))</a>
-<a class="sourceLine" id="cb1-12" title="12">            <span class="va">self</span>.stm.send(<span class="st">&#39;activate&#39;</span>, args<span class="op">=</span>[<span class="st">&#39;t&#39;</span>, duration])</a>
-<a class="sourceLine" id="cb1-13" title="13">        <span class="va">self</span>.app.addButton(<span class="st">&quot;Start Timer&quot;</span>, on_button_pressed)</a>
-<a class="sourceLine" id="cb1-14" title="14"></a>
-<a class="sourceLine" id="cb1-15" title="15">    <span class="kw">def</span> printx(<span class="va">self</span>, what):</a>
-<a class="sourceLine" id="cb1-16" title="16">        <span class="bu">print</span>(what)</a>
-<a class="sourceLine" id="cb1-17" title="17"></a>
-<a class="sourceLine" id="cb1-18" title="18">t0 <span class="op">=</span> {<span class="st">&#39;source&#39;</span>: <span class="st">&#39;initial&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</a>
-<a class="sourceLine" id="cb1-19" title="19">t1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;activate&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;active&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;start_timer(*)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-20" title="20">t2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;active&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;printx(&quot;Timeout&quot;)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-21" title="21"></a>
-<a class="sourceLine" id="cb1-22" title="22">timer_gui <span class="op">=</span> TimerGUI()</a>
-<a class="sourceLine" id="cb1-23" title="23">stm_timer <span class="op">=</span> Machine(name<span class="op">=</span><span class="st">&#39;stm_timer&#39;</span>, transitions<span class="op">=</span>[t0, t1, t2], obj<span class="op">=</span>timer_gui)</a>
-<a class="sourceLine" id="cb1-24" title="24">timer_gui.stm <span class="op">=</span> stm_timer</a>
-<a class="sourceLine" id="cb1-25" title="25">driver <span class="op">=</span> Driver()</a>
-<a class="sourceLine" id="cb1-26" title="26">driver.add_machine(stm_timer)</a>
-<a class="sourceLine" id="cb1-27" title="27">driver.start()</a>
-<a class="sourceLine" id="cb1-28" title="28"></a>
-<a class="sourceLine" id="cb1-29" title="29">timer_gui.app.go()</a></code></pre></div>
-<h2 id="state-machine-to-user-interface">State Machine to User Interface</h2>
-<p>Above you have seen that we created class <code>TimerGUI</code>. In that class we can also place function that manipulate widgets of the user interface, such as replacing a text or switching an image. For images, for example, two functions are useful:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> appJar <span class="im">import</span> gui</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> stmpy <span class="im">import</span> Machine, Driver</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TimerGUI():</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app <span class="op">=</span> gui()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addLabelEntry(<span class="st">&#39;Duration&#39;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.setEntry(<span class="st">&#39;Duration&#39;</span>, <span class="st">&#39;2000&#39;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> on_button_pressed(title):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&#39;Button with title &quot;</span><span class="sc">{}</span><span class="st">&quot; pressed!&#39;</span>.<span class="bu">format</span>(title))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            duration <span class="op">=</span> <span class="bu">int</span>(<span class="va">self</span>.app.getEntry(<span class="st">&#39;Duration&#39;</span>))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.stm.send(<span class="st">&#39;activate&#39;</span>, args<span class="op">=</span>[<span class="st">&#39;t&#39;</span>, duration])</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addButton(<span class="st">&quot;Start Timer&quot;</span>, on_button_pressed)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> printx(<span class="va">self</span>, what):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(what)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> {<span class="st">&#39;source&#39;</span>: <span class="st">&#39;initial&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;activate&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;active&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;start_timer(*)&#39;</span>}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;active&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;printx(&quot;Timeout&quot;)&#39;</span>}</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>timer_gui <span class="op">=</span> TimerGUI()</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>stm_timer <span class="op">=</span> Machine(name<span class="op">=</span><span class="st">&#39;stm_timer&#39;</span>, transitions<span class="op">=</span>[t0, t1, t2], obj<span class="op">=</span>timer_gui)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>timer_gui.stm <span class="op">=</span> stm_timer</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>driver <span class="op">=</span> Driver()</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>driver.add_machine(stm_timer)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>driver.start()</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>timer_gui.app.go()</span></code></pre></div>
+<h2>State Machine to User Interface</h2>
+
+<p>Above you have seen that we created class <code>TimerGUI</code>. In that class we can also place function that manipulate widgets of the user interface, such as replacing a text or switching an image.
+For images, for example, two functions are useful:</p>
 <ul>
 <li><code>self.app.addImage(id, file, row, column)</code> creates an image and draws it. The image is loaded from the provided file path. Ideally, this is a <code>gif</code> image. The id for the image is a string that we can later use ro replace the image. The row and column are layou coordinates on a grid layout.</li>
 <li><code>self.app.setImage(id, file)</code> replaces an existing image with an id with another file.</li>
 </ul>
-<h2 id="kitchen-timer-example">Kitchen Timer Example</h2>
-<p>You can <a href="files/kitchen-timer.zip">download a zip file with the kitchen timer and all gif images</a>. It uses a grid layout to align all the quaters of the clock in two columns so that they can be individually switched on and off.</p>
+
+<h2>Kitchen Timer Example</h2>
+<p>You can <a href="files/kitchen-timer.zip">download a zip file with the kitchen timer and all gif images</a>.
+It uses a grid layout to align all the quaters of the clock in two columns so that they can be individually switched on and off.</p>
+
 <div class="figure">
 <img src="figures/kitchen-gui.png" width="100%"/>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> appJar <span class="im">import</span> gui</a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="im">from</span> stmpy <span class="im">import</span> Machine, Driver</a>
-<a class="sourceLine" id="cb1-3" title="3"></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">class</span> KitchenTimer:</a>
-<a class="sourceLine" id="cb1-5" title="5"></a>
-<a class="sourceLine" id="cb1-6" title="6">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb1-7" title="7">        <span class="va">self</span>.app <span class="op">=</span> gui(<span class="st">&quot;Kitchen Timer&quot;</span>, <span class="st">&quot;160x340&quot;</span>)</a>
-<a class="sourceLine" id="cb1-8" title="8">        <span class="va">self</span>.app.setFont(<span class="dv">14</span>)</a>
-<a class="sourceLine" id="cb1-9" title="9">        <span class="va">self</span>.app.addImage(<span class="st">&quot;x60&quot;</span>, <span class="st">&quot;timer/60_0.gif&quot;</span>, <span class="dv">0</span>, <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb1-10" title="10">        <span class="va">self</span>.app.addImage(<span class="st">&quot;x15&quot;</span>, <span class="st">&quot;timer/15_0.gif&quot;</span>, <span class="dv">0</span>, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-11" title="11">        <span class="va">self</span>.app.addImage(<span class="st">&quot;x30&quot;</span>, <span class="st">&quot;timer/30_0.gif&quot;</span>, <span class="dv">1</span>, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-12" title="12">        <span class="va">self</span>.app.addImage(<span class="st">&quot;x45&quot;</span>, <span class="st">&quot;timer/45_0.gif&quot;</span>, <span class="dv">1</span>, <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb1-13" title="13">        <span class="va">self</span>.app.addImage(<span class="st">&quot;plug&quot;</span>, <span class="st">&quot;timer/plug_off.gif&quot;</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb1-14" title="14">        <span class="kw">def</span> press(button):</a>
-<a class="sourceLine" id="cb1-15" title="15">            <span class="va">self</span>.stm.send(<span class="st">&#39;switch&#39;</span>)</a>
-<a class="sourceLine" id="cb1-16" title="16">        <span class="va">self</span>.app.addButton(<span class="st">&quot;Press Button&quot;</span>, press, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-17" title="17">        <span class="kw">def</span> terminate():</a>
-<a class="sourceLine" id="cb1-18" title="18">            <span class="va">self</span>.stm.terminate()</a>
-<a class="sourceLine" id="cb1-19" title="19">            <span class="cf">return</span> <span class="va">True</span></a>
-<a class="sourceLine" id="cb1-20" title="20">        <span class="va">self</span>.app.setStopFunction(terminate)</a>
-<a class="sourceLine" id="cb1-21" title="21"></a>
-<a class="sourceLine" id="cb1-22" title="22">    <span class="kw">def</span> switch_led(<span class="va">self</span>, led, brightness):</a>
-<a class="sourceLine" id="cb1-23" title="23">        <span class="va">self</span>.app.setImage(<span class="st">&#39;x</span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(led), <span class="st">&#39;timer/</span><span class="sc">{}</span><span class="st">_</span><span class="sc">{}</span><span class="st">.gif&#39;</span>.<span class="bu">format</span>(led, brightness))</a>
-<a class="sourceLine" id="cb1-24" title="24"></a>
-<a class="sourceLine" id="cb1-25" title="25">    <span class="kw">def</span> switch_plug(<span class="va">self</span>, on):</a>
-<a class="sourceLine" id="cb1-26" title="26">        <span class="cf">if</span> on: </a>
-<a class="sourceLine" id="cb1-27" title="27">            <span class="va">self</span>.app.setImage(<span class="st">&#39;plug&#39;</span>, <span class="st">&quot;timer/plug_on.gif&quot;</span>)</a>
-<a class="sourceLine" id="cb1-28" title="28">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb1-29" title="29">            <span class="va">self</span>.app.setImage(<span class="st">&#39;plug&#39;</span>, <span class="st">&quot;timer/plug_off.gif&quot;</span>)</a>
-<a class="sourceLine" id="cb1-30" title="30"></a>
-<a class="sourceLine" id="cb1-31" title="31"></a>
-<a class="sourceLine" id="cb1-32" title="32">t0 <span class="op">=</span> {<span class="st">&#39;source&#39;</span>: <span class="st">&#39;initial&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</a>
-<a class="sourceLine" id="cb1-33" title="33">t1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s15&#39;</span>}</a>
-<a class="sourceLine" id="cb1-34" title="34">t2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s30&#39;</span>}</a>
-<a class="sourceLine" id="cb1-35" title="35">t3 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s45&#39;</span>}</a>
-<a class="sourceLine" id="cb1-36" title="36">t4 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s60&#39;</span>}</a>
-<a class="sourceLine" id="cb1-37" title="37">t5 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s60&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</a>
-<a class="sourceLine" id="cb1-38" title="38"></a>
-<a class="sourceLine" id="cb1-39" title="39">tt1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;0&quot;)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-40" title="40">tt2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;0&quot;)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-41" title="41">tt3 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;0&quot;)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-42" title="42">tt4 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s60&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;0&quot;)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-43" title="43"></a>
-<a class="sourceLine" id="cb1-44" title="44">off <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;off&#39;</span>,</a>
-<a class="sourceLine" id="cb1-45" title="45">      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;switch_plug(False); switch_led(&quot;15&quot;, &quot;0&quot;); switch_led(&quot;30&quot;, &quot;0&quot;); switch_led(&quot;45&quot;, &quot;0&quot;); switch_led(&quot;60&quot;, &quot;0&quot;)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-46" title="46">      <span class="st">&#39;exit&#39;</span>: <span class="st">&#39;switch_plug(True)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-47" title="47"></a>
-<a class="sourceLine" id="cb1-48" title="48">s15 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s15&#39;</span>,</a>
-<a class="sourceLine" id="cb1-49" title="49">      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;15&quot;, &quot;1&quot;)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-50" title="50">      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-51" title="51">      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-52" title="52"></a>
-<a class="sourceLine" id="cb1-53" title="53">s30 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s30&#39;</span>,</a>
-<a class="sourceLine" id="cb1-54" title="54">      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;15&quot;, &quot;1&quot;); switch_led(&quot;30&quot;, &quot;1&quot;)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-55" title="55">      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-56" title="56">      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-57" title="57"></a>
-<a class="sourceLine" id="cb1-58" title="58">s45 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s45&#39;</span>,</a>
-<a class="sourceLine" id="cb1-59" title="59">      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;30&quot;, &quot;1&quot;); switch_led(&quot;45&quot;, &quot;1&quot;)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-60" title="60">      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-61" title="61">      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-62" title="62"></a>
-<a class="sourceLine" id="cb1-63" title="63">s60 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s60&#39;</span>,</a>
-<a class="sourceLine" id="cb1-64" title="64">      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;45&quot;, &quot;1&quot;); switch_led(&quot;60&quot;, &quot;1&quot;)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-65" title="65">      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</a>
-<a class="sourceLine" id="cb1-66" title="66">      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</a>
-<a class="sourceLine" id="cb1-67" title="67"></a>
-<a class="sourceLine" id="cb1-68" title="68">k <span class="op">=</span> KitchenTimer()</a>
-<a class="sourceLine" id="cb1-69" title="69"></a>
-<a class="sourceLine" id="cb1-70" title="70">stm_kitchen <span class="op">=</span> Machine(name<span class="op">=</span><span class="st">&#39;stm_kitchen&#39;</span>, transitions<span class="op">=</span>[t0, t1, t2, t3, t4, t5, tt1, tt2, tt3, tt4], obj<span class="op">=</span>k, states<span class="op">=</span>[off, s15, s30, s45, s60])</a>
-<a class="sourceLine" id="cb1-71" title="71">k.stm <span class="op">=</span> stm_kitchen</a>
-<a class="sourceLine" id="cb1-72" title="72">driver <span class="op">=</span> Driver()</a>
-<a class="sourceLine" id="cb1-73" title="73">driver.add_machine(stm_kitchen)</a>
-<a class="sourceLine" id="cb1-74" title="74">driver.start()</a>
-<a class="sourceLine" id="cb1-75" title="75"></a>
-<a class="sourceLine" id="cb1-76" title="76">k.app.go()</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> appJar <span class="im">import</span> gui</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> stmpy <span class="im">import</span> Machine, Driver</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> KitchenTimer:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app <span class="op">=</span> gui(<span class="st">&quot;Kitchen Timer&quot;</span>, <span class="st">&quot;160x340&quot;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.setFont(<span class="dv">14</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addImage(<span class="st">&quot;x60&quot;</span>, <span class="st">&quot;timer/60_0.gif&quot;</span>, <span class="dv">0</span>, <span class="dv">0</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addImage(<span class="st">&quot;x15&quot;</span>, <span class="st">&quot;timer/15_0.gif&quot;</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addImage(<span class="st">&quot;x30&quot;</span>, <span class="st">&quot;timer/30_0.gif&quot;</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addImage(<span class="st">&quot;x45&quot;</span>, <span class="st">&quot;timer/45_0.gif&quot;</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addImage(<span class="st">&quot;plug&quot;</span>, <span class="st">&quot;timer/plug_off.gif&quot;</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> press(button):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.stm.send(<span class="st">&#39;switch&#39;</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.addButton(<span class="st">&quot;Press Button&quot;</span>, press, <span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> terminate():</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.stm.terminate()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.setStopFunction(terminate)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> switch_led(<span class="va">self</span>, led, brightness):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.app.setImage(<span class="st">&#39;x</span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(led), <span class="st">&#39;timer/</span><span class="sc">{}</span><span class="st">_</span><span class="sc">{}</span><span class="st">.gif&#39;</span>.<span class="bu">format</span>(led, brightness))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> switch_plug(<span class="va">self</span>, on):</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> on: </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.app.setImage(<span class="st">&#39;plug&#39;</span>, <span class="st">&quot;timer/plug_on.gif&quot;</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>            <span class="va">self</span>.app.setImage(<span class="st">&#39;plug&#39;</span>, <span class="st">&quot;timer/plug_off.gif&quot;</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> {<span class="st">&#39;source&#39;</span>: <span class="st">&#39;initial&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s15&#39;</span>}</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s30&#39;</span>}</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>t3 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s45&#39;</span>}</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>t4 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s60&#39;</span>}</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>t5 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;switch&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s60&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>}</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>tt1 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;off&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;0&quot;)&#39;</span>}</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>tt2 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s15&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;0&quot;)&#39;</span>}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>tt3 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s30&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;0&quot;)&#39;</span>}</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>tt4 <span class="op">=</span> {<span class="st">&#39;trigger&#39;</span>: <span class="st">&#39;t&#39;</span>, <span class="st">&#39;source&#39;</span>: <span class="st">&#39;s60&#39;</span>, <span class="st">&#39;target&#39;</span>: <span class="st">&#39;s45&#39;</span>, <span class="st">&#39;effect&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;0&quot;)&#39;</span>}</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>off <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;off&#39;</span>,</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;switch_plug(False); switch_led(&quot;15&quot;, &quot;0&quot;); switch_led(&quot;30&quot;, &quot;0&quot;); switch_led(&quot;45&quot;, &quot;0&quot;); switch_led(&quot;60&quot;, &quot;0&quot;)&#39;</span>,</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;exit&#39;</span>: <span class="st">&#39;switch_plug(True)&#39;</span>}</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>s15 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s15&#39;</span>,</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;15&quot;, &quot;1&quot;)&#39;</span>,</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;15&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>s30 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s30&#39;</span>,</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;15&quot;, &quot;1&quot;); switch_led(&quot;30&quot;, &quot;1&quot;)&#39;</span>,</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;30&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>s45 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s45&#39;</span>,</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;30&quot;, &quot;1&quot;); switch_led(&quot;45&quot;, &quot;1&quot;)&#39;</span>,</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;45&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>s60 <span class="op">=</span> {<span class="st">&#39;name&#39;</span>: <span class="st">&#39;s60&#39;</span>,</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;entry&#39;</span>: <span class="st">&#39;start_timer(&quot;t&quot;, 5000); start_timer(&quot;t1&quot;, 1000); switch_led(&quot;45&quot;, &quot;1&quot;); switch_led(&quot;60&quot;, &quot;1&quot;)&#39;</span>,</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t1&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;2&quot;); start_timer(&quot;t2&quot;, 1000)&#39;</span>,</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;t2&#39;</span>: <span class="st">&#39;switch_led(&quot;60&quot;, &quot;1&quot;); start_timer(&quot;t1&quot;, 1000)&#39;</span>}</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> KitchenTimer()</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>stm_kitchen <span class="op">=</span> Machine(name<span class="op">=</span><span class="st">&#39;stm_kitchen&#39;</span>, transitions<span class="op">=</span>[t0, t1, t2, t3, t4, t5, tt1, tt2, tt3, tt4], obj<span class="op">=</span>k, states<span class="op">=</span>[off, s15, s30, s45, s60])</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>k.stm <span class="op">=</span> stm_kitchen</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>driver <span class="op">=</span> Driver()</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>driver.add_machine(stm_kitchen)</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>driver.start()</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>k.app.go()</span></code></pre></div>
     </section>
 </div>
 
@@ -457,68 +417,6 @@ div.rat ol {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

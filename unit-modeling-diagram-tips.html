@@ -152,65 +152,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -304,32 +245,32 @@ table.weekplan a {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -403,48 +344,66 @@ table.weekplan a {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="tips-for-diagrams">Tips for Diagrams</h1>
-<h2 id="have-a-strategic-layout">Have a Strategic Layout</h2>
-<p>The layout determines where you place your elements in the diagram. This is not just about making it look nice and tidy; it is another opportunity to convey extra information to the reader and emphasize structural elements in the diagram that go beyond how the graph is connected.</p>
+<h1>Tips for Diagrams</h1>
+
+<h2>Have a Strategic Layout</h2>
+
+<p>The layout determines where you place your elements in the diagram.
+This is not just about making it look nice and tidy; it is another opportunity to convey extra information to the reader and emphasize structural elements in the diagram that go beyond how the graph is connected.</p>
 <p>The figure below shows a deployment diagram where the strategy is to place the nodes not only dependent to their graph structure, but also to their hierarchy in the system. Devices running in the cloud are shown at the top and devices running as endpoints (like small devices) are shown in the lowest layer. This already conveys some form of order to the diagram.</p>
+
 <div class="figure">
 <img src="figures/diagrams/deployment-tiers.png" alt="Layout that follows the system hierarchy." width="100%"/>
 <span name="figures/diagrams/deployment-tiers.png">&nbsp;</span>
-<aside name="figures/diagrams/deployment-tiers.png"><p><p>Layout that follows the system hierarchy.</p></p></aside>
+<aside name="figures/diagrams/deployment-tiers.png"><p><p>Layout that follows the system hierarchy.</p>
+</p></aside>
 </div>
-<p>Another example is shown below that follows an entirely different strategy. Here the shared communication medium is highlighted, and components are arranged alongside this shared bus.</p>
+<p>Another example is shown below that follows an entirely different strategy.
+Here the shared communication medium is highlighted, and components are arranged alongside this shared bus.</p>
+
 <div class="figure">
 <img src="figures/diagrams/deployment-bus.png" alt="Layout that emphasizes the communication bus." width="100%"/>
 <span name="figures/diagrams/deployment-bus.png">&nbsp;</span>
-<aside name="figures/diagrams/deployment-bus.png"><p><p>Layout that emphasizes the communication bus.</p></p></aside>
+<aside name="figures/diagrams/deployment-bus.png"><p><p>Layout that emphasizes the communication bus.</p>
+</p></aside>
 </div>
 <p>For state machines, experiment with the arrangement of states. Usually it is easiert for the reader to get a good sense of orientation if you begin with the initial state in the upper left corner, like in a written document.</p>
-<h2 id="tidying-up-the-graphics">Tidying up the Graphics</h2>
+
+<h2>Tidying up the Graphics</h2>
 <p>After your layout is stable, have a look at the finer details.</p>
-<h3 id="lines">Lines</h3>
+
+<h3>Lines</h3>
 <p>Avoid corners in lines that are not necessary.</p>
+
 <div class="figure">
 <img src="figures/diagrams/layout-lines.png" alt="" width="100%"/>
 <span name="figures/diagrams/layout-lines.png">&nbsp;</span>
 <aside name="figures/diagrams/layout-lines.png"><p></p></aside>
 </div>
-<h3 id="nodes">Nodes</h3>
-<p>Make sure nodes are aligned. Some tools offer a grid for placement. Often working in a coarse grid is simpler than in a very fine one.</p>
+<h3>Nodes</h3>
+<p>Make sure nodes are aligned. Some tools offer a grid for placement.
+Often working in a coarse grid is simpler than in a very fine one.</p>
+
 <div class="figure">
 <img src="figures/diagrams/layout-alignment.png" alt="" width="100%"/>
 <span name="figures/diagrams/layout-alignment.png">&nbsp;</span>
 <aside name="figures/diagrams/layout-alignment.png"><p></p></aside>
 </div>
-<span name="256fc4"></span><aside name="256fc4"><p>Note that there is a considerable number of people that are <a href="https://en.wikipedia.org/wiki/Color_blindness">colorblind</a>.</p></aside>
-<h3 id="color">Color</h3>
-<p>Coloring nodes can make nodes easier to see and distinguish, but can also make them harder to read. Below the coloring seems useful for T1 and T2, but SSD and TPM are harder to read.</p>
+<span name="256fc4"></span><aside name="256fc4"><p>Note that there is a considerable number of people that are <a href="https://en.wikipedia.org/wiki/Color_blindness">colorblind</a>.</p>
+</aside>
+<h3>Color</h3>
+<p>Coloring nodes can make nodes easier to see and distinguish, but can also make them harder to read.
+Below the coloring seems useful for T1 and T2, but SSD and TPM are harder to read.</p>
+
 <div class="figure">
 <img src="figures/diagrams/layout-coloring.png" alt="" width="100%"/>
 <span name="figures/diagrams/layout-coloring.png">&nbsp;</span>
 <aside name="figures/diagrams/layout-coloring.png"><p></p></aside>
 </div>
-<h3 id="syntax-details">Syntax Details</h3>
-<p>This one may be a very fine detail, but why not doing things right? In UML, stereotypes are using the single-character braces (<code>«</code> and <code>»</code>), which are also called <a href="https://en.wikipedia.org/wiki/Guillemet">guillemets</a>. Use the proper character instead of imitating them with two (like <code>&lt;&lt;</code> and <code>&gt;&gt;</code>).</p>
+<h3>Syntax Details</h3>
+<p>This one may be a very fine detail, but why not doing things right?
+In UML, stereotypes are using the single-character braces (<code>«</code> and <code>»</code>), which are also called <a href="https://en.wikipedia.org/wiki/Guillemet">guillemets</a>. Use the proper character instead of imitating them with two (like <code>&lt;&lt;</code> and <code>&gt;&gt;</code>).</p>
+
 <div class="figure">
 <img src="figures/diagrams/layout-guillemets.png" alt="" width="100%"/>
 <span name="figures/diagrams/layout-guillemets.png">&nbsp;</span>
@@ -452,12 +411,18 @@ table.weekplan a {
 </div>
     </section>
     <section class="content">
-<h1 id="use-pdf-or-png">Use PDF or PNG</h1>
-<p>When you create a digram, try to export it in PDF format from the graphical tool. As a tool for the final report you will most likely use Microsoft Word, which has the option to import PDF graphics. This has the benefit that the graphic is exported in a vectorized format, and not in a pixeled version. If PDF is not available, choose PNG with a resolution that is high enough. That is a pixeled image, but does not use the same compression as JPEG.</p>
+<h1>Use PDF or PNG</h1>
+
+<p>When you create a digram, try to export it in PDF format from the graphical tool.
+As a tool for the final report you will most likely use Microsoft Word, which has the option to import PDF graphics.
+This has the benefit that the graphic is exported in a vectorized format, and not in a pixeled version.
+If PDF is not available, choose PNG with a resolution that is high enough. That is a pixeled image, but does not use the same compression as JPEG.</p>
+
 <div class="figure">
 <img src="figures/diagrams/conversion.png" alt="Prefer PDF as conversion fromat when importing diagrams into Word to avoid blurred diagrams." width="100%"/>
 <span name="figures/diagrams/conversion.png">&nbsp;</span>
-<aside name="figures/diagrams/conversion.png"><p><p>Prefer PDF as conversion fromat when importing diagrams into Word to avoid blurred diagrams.</p></p></aside>
+<aside name="figures/diagrams/conversion.png"><p><p>Prefer PDF as conversion fromat when importing diagrams into Word to avoid blurred diagrams.</p>
+</p></aside>
 </div>
     </section>
 </div>
@@ -472,68 +437,6 @@ table.weekplan a {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

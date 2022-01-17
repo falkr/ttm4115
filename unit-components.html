@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -228,32 +169,32 @@ div.tip p {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -327,198 +268,245 @@ div.tip p {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="components">Components</h1>
-<p>So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn’t build anything with them yet. This week we want to combine several concepts to build a more complete software component.</p>
+<h1>Components</h1>
+
+<p>So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet.
+This week we want to combine several concepts to build a more complete software component.</p>
+
 <div class="figure">
 <img src="figures/components/meme.jpg" width="100%"/>
 </div>
     </section>
     <section class="content">
-<h1 id="stmpy-components-mqtt">STMPY Components + MQTT</h1>
+<h1>STMPY Components + MQTT</h1>
 <p>To ensure a <strong>low degree of coupling</strong>, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.</p>
 <p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
-<p>These means alone do not ensure a low degree of coupling and a high degree of cohesion. A good component design depends on how we manage to group the functions we need for a system or application into the different components. This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>
+<p>These means alone do not ensure a low degree of coupling and a high degree of cohesion.
+A good component design depends on how we manage to group the functions we need for a system or application into the different components.
+This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>
+
     </section>
     <section class="content">
-<h1 id="state-machines-as-sessions">State Machines as Sessions</h1>
+<h1>State Machines as Sessions</h1>
 <p>So far, we have only looked at singe instances of state machines, because they controlled a single resource.</p>
 <ul>
 <li>The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.</li>
 <li>The bus stop had a single button and signal light, which we could take care of with a single state machine.</li>
 </ul>
-<p>In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended — the state machine would not be able to meaningfully track the state of each single charger.</p>
+<p>In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.</p>
 <p>And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.</p>
-<p>For such cases, we keep on using a single state machine per resource it represents. But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a <code>session</code>.</p>
+<p>For such cases, we keep on using a single state machine per resource it represents.
+But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a <code>session</code>.</p>
 <p>For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.</p>
+
     </section>
     <section class="content">
-<h1 id="timer-module-for-a-voice-assistant">Timer Module for a Voice Assistant</h1>
+<h1>Timer Module for a Voice Assistant</h1>
 <p>Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. This means, a user should be able to say:</p>
 <blockquote>
-<p>“Hey Assistant, please start a 10-minute spaghetti timer.”</p>
+<p>&quot;Hey Assistant, please start a 10-minute spaghetti timer.&quot;</p>
 </blockquote>
 <p>During this timer is active, the user can start another timer:</p>
 <blockquote>
-<p>“Hey Assistant, start a 2-minute green tea timer.”</p>
+<p>&quot;Hey Assistant, start a 2-minute green tea timer.&quot;</p>
 </blockquote>
 <p>These timers are independent of each other. Once they expire, the assistant says:</p>
 <blockquote>
-<p>“Your green tea timer is ready!”</p>
+<p>&quot;Your green tea timer is ready!&quot;</p>
 </blockquote>
 <p>And then later:</p>
 <blockquote>
-<p>“Your spaghetti timer is ready!”</p>
+<p>&quot;Your spaghetti timer is ready!&quot;</p>
 </blockquote>
+
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VqAPibRlTvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>The part of the system you are concerned with looks as follows:</p>
+
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS&amp;export=download&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS%26export%3Ddownload"></script>
 
 
 
 <ul>
-<li><p>The voice command detection is responsible for listening for the activation command (“Hey Assistant”), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here.</p></li>
-<li><p>The text-to-speech engine runs locally. It receives strings that are then transformed into speech.</p></li>
+<li>
+<p>The voice command detection is responsible for listening for the activation command (&quot;Hey Assistant&quot;), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here.</p>
+</li>
+<li>
+<p>The text-to-speech engine runs locally. It receives strings that are then transformed into speech.</p>
+</li>
 </ul>
 <p>You should design the timer manager in the middle. It receives commands from the voice command detection, should maintain the control over the necessary timers, and produce commands for the text-to-speech engine.</p>
 <p>From the voice command detection, you may receive the following commands:</p>
 <ul>
-<li><strong>Starting a new timer:</strong> The command is called <em>timer_start</em> and includes the <em>name</em> of the timer (string) and the <em>duration</em> already converted into seconds (as int).<br />
-</li>
+<li><strong>Starting a new timer:</strong> The command is called <em>timer_start</em> and includes the <em>name</em> of the timer (string) and the <em>duration</em> already converted into seconds (as int).</li>
 <li><strong>Stopping a timer:</strong> The command is called <em>timer_stop</em> and includes the <em>name</em> of the timer (string) that should be stopped.</li>
 <li><strong>Status:</strong> The command is called <em>timer_status</em>. The user can either ask for a specific timer, then the <em>name</em> is set. If the name is not set, the device should present a list of all currently active timers.</li>
 </ul>
 <p>The text-to-speech just accepts a command that contains a sentence in English. For the timers, you will probably produce the following texts:</p>
 <ul>
-<li>“Your spaghetti timer is ready!”</li>
-<li>“You have 30 seconds left on the spaghetti timer.”</li>
-<li>“You have 2 active timers, spaghetti and green tea.”</li>
+<li>&quot;Your spaghetti timer is ready!&quot;</li>
+<li>&quot;You have 30 seconds left on the spaghetti timer.&quot;</li>
+<li>&quot;You have 2 active timers, spaghetti and green tea.&quot;</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="component-template">Component Template</h1>
+<h1>Component Template</h1>
 <p>You can use our code template for components that contains a lot of the boilerplate code that is useful for any component that connects STMPY state machines with MQTT:</p>
 <p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py" class="arrow">TimerManager.py<a></p>
+
 <div class="figure">
 <img src="figures/components/component-template.svg" alt="Template for a component with an MQTT client and STMPY state machines." width="100%"/>
 <span name="figures/components/component-template.svg">&nbsp;</span>
-<aside name="figures/components/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p></p></aside>
+<aside name="figures/components/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p>
+</p></aside>
 </div>
-<h2 id="logging">Logging</h2>
-<p>Logging is important to figure out what the system is doing, especially when something is going wrong. When configuring logging, we can select a log level, which determines which messages are printed. There are the following log levels:</p>
+<h2>Logging</h2>
+<p>Logging is important to figure out what the system is doing, especially when something is going wrong.
+When configuring logging, we can select a log level, which determines which messages are printed. There are the following log levels:</p>
 <ul>
 <li><strong>DEBUG:</strong> Most fine-grained logging, printing everything</li>
-<li><strong>INFO:</strong> Only the most important informational log items</li>
-<li><strong>WARN:</strong> Show only warnings and errors.</li>
+<li><strong>INFO:</strong>  Only the most important informational log items</li>
+<li><strong>WARN:</strong>  Show only warnings and errors.</li>
 <li><strong>ERROR:</strong> Show only error messages.</li>
 </ul>
 <p>Different parts of our component have different log levels, the code below registers the log level for the main component (with name <code>__name__</code>):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">debug_level <span class="op">=</span> logging.DEBUG</a>
-<a class="sourceLine" id="cb1-2" title="2">logger <span class="op">=</span> logging.getLogger(<span class="va">__name__</span>)</a>
-<a class="sourceLine" id="cb1-3" title="3">logger.setLevel(debug_level)</a>
-<a class="sourceLine" id="cb1-4" title="4">ch <span class="op">=</span> logging.StreamHandler()</a>
-<a class="sourceLine" id="cb1-5" title="5">ch.setLevel(debug_level)</a>
-<a class="sourceLine" id="cb1-6" title="6">formatter <span class="op">=</span> logging.Formatter(<span class="st">&#39;</span><span class="sc">%(asctime)s</span><span class="st"> - </span><span class="sc">%(name)-12s</span><span class="st"> - </span><span class="sc">%(levelname)-8s</span><span class="st"> - </span><span class="sc">%(message)s</span><span class="st">&#39;</span>)</a>
-<a class="sourceLine" id="cb1-7" title="7">ch.setFormatter(formatter)</a>
-<a class="sourceLine" id="cb1-8" title="8">logger.addHandler(ch)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>debug_level <span class="op">=</span> logging.DEBUG</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>logger <span class="op">=</span> logging.getLogger(<span class="va">__name__</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>logger.setLevel(debug_level)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>ch <span class="op">=</span> logging.StreamHandler()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>ch.setLevel(debug_level)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>formatter <span class="op">=</span> logging.Formatter(<span class="st">&#39;</span><span class="sc">%(asctime)s</span><span class="st"> - </span><span class="sc">%(name)-12s</span><span class="st"> - </span><span class="sc">%(levelname)-8s</span><span class="st"> - </span><span class="sc">%(message)s</span><span class="st">&#39;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ch.setFormatter(formatter)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>logger.addHandler(ch)</span></code></pre></div>
 <p>To change the log level for STMPY state machine:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">...</a>
-<a class="sourceLine" id="cb1-2" title="2">logger <span class="op">=</span> logging.getLogger(<span class="st">&#39;stmpy&#39;</span>)</a>
-<a class="sourceLine" id="cb1-3" title="3">...</a></code></pre></div>
-<h2 id="communication-mqtt-client-and-json">Communication: MQTT Client and JSON</h2>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>logger <span class="op">=</span> logging.getLogger(<span class="st">&#39;stmpy&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>...</span></code></pre></div>
+<h2>Communication: MQTT Client and JSON</h2>
 <p>The component has its own MQTT client that gets configured and started with the main component.</p>
-<h3 id="json">JSON</h3>
+<h3>JSON</h3>
 <p>JSON is a way to serialize data into strings. Have a look at the notebook below:</p>
 <p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/Serialization%20with%20JSON.ipynb" class="arrow">Notebook about JSON<a></p>
+
 <p>For the timer system, you can use the following JSON encodings:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;new_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">,</span> <span class="dt">&quot;duration&quot;</span><span class="fu">:</span><span class="dv">50</span><span class="fu">}</span></a></code></pre></div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_all_timers&quot;</span><span class="fu">}</span></a></code></pre></div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_single_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">}</span></a></code></pre></div>
-<h3 id="incoming-messages">Incoming Messages</h3>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;new_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">,</span> <span class="dt">&quot;duration&quot;</span><span class="fu">:</span><span class="dv">50</span><span class="fu">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_all_timers&quot;</span><span class="fu">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_single_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">}</span></span></code></pre></div>
+<h3>Incoming Messages</h3>
 <p>Messages arrive in the components function <code>on_message()</code>. In this message, we need to determine what the incoming message is, get any data it may have as payload, and then react on it.</p>
 <p>If the payload is given as JSON-encoded string, we can get back a dictionary with the following lines:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="cf">try</span>:</a>
-<a class="sourceLine" id="cb1-2" title="2">    payload <span class="op">=</span> json.loads(msg.payload.decode(<span class="st">&quot;utf-8&quot;</span>))</a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</a>
-<a class="sourceLine" id="cb1-4" title="4">    <span class="va">self</span>._logger.error(<span class="st">&#39;Message sent to topic </span><span class="sc">{}</span><span class="st"> had no valid JSON. Message ignored. </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(msg.topic, err))</a>
-<a class="sourceLine" id="cb1-5" title="5">    <span class="cf">return</span></a>
-<a class="sourceLine" id="cb1-6" title="6">command <span class="op">=</span> payload.get(<span class="st">&#39;command&#39;</span>)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    payload <span class="op">=</span> json.loads(msg.payload.decode(<span class="st">&quot;utf-8&quot;</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>._logger.error(<span class="st">&#39;Message sent to topic </span><span class="sc">{}</span><span class="st"> had no valid JSON. Message ignored. </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(msg.topic, err))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>command <span class="op">=</span> payload.get(<span class="st">&#39;command&#39;</span>)</span></code></pre></div>
 <p>Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a machine.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="va">self</span>.stm_driver.send(<span class="st">&#39;report&#39;</span>, timer_name)</a></code></pre></div>
-<h3 id="publishing">Publishing</h3>
-<p>Publishing works via the MQTT client, for example in the effect of a transition of the state machine. This works exactly like we used MQTT before, we get access to the client via the component’s variable.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="va">self</span>.component.mqtt_client.publish(<span class="st">&#39;topic.../&#39;</span>, message)</a></code></pre></div>
-<h2 id="sessions-several-instances-of-state-machines">Sessions: Several Instances of State Machines</h2>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.stm_driver.send(<span class="st">&#39;report&#39;</span>, timer_name)</span></code></pre></div>
+<h3>Publishing</h3>
+<p>Publishing works via the MQTT client, for example in the effect of a transition of the state machine.
+This works exactly like we used MQTT before, we get access to the client via the component's variable.</p>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.component.mqtt_client.publish(<span class="st">&#39;topic.../&#39;</span>, message)</span></code></pre></div>
+<h2>Sessions: Several Instances of State Machines</h2>
 <p>The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:</p>
+
 <div class="figure">
 <img src="figures/components/timer-stm.png" width="100%"/>
 </div>
-<p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time. We want to do this by creating a single state machine instance for each timer. Each state machine can then take care of a single timer. These state machine instances are also called <strong>sessions</strong>. This may seem like an overhead for this simple scenario, since the timer is a relatively easy behavior, but this is a clean solution that also works well for much more complicated interactions.</p>
+<p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time.
+We want to do this by creating a single state machine instance for each timer.
+Each state machine can then take care of a single timer.
+These state machine instances are also called <strong>sessions</strong>.
+This may seem like an overhead for this simple scenario, since the timer is a relatively easy behavior, but this is a clean solution that also works well for much more complicated interactions.</p>
+
 <p>In our component, we can create and start a new session with the following code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">timer_name <span class="op">=</span> ...</a>
-<a class="sourceLine" id="cb1-2" title="2">duration <span class="op">=</span> ...</a>
-<a class="sourceLine" id="cb1-3" title="3">timer_stm <span class="op">=</span> TimerLogic(timer_name, duration, <span class="va">self</span>)</a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="va">self</span>.stm_driver.add_machine(timer_stm)</a></code></pre></div>
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>timer_name <span class="op">=</span> ...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>duration <span class="op">=</span> ...</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>timer_stm <span class="op">=</span> TimerLogic(timer_name, duration, <span class="va">self</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.stm_driver.add_machine(timer_stm)</span></code></pre></div>
     </section>
     <section class="content">
-<h1 id="task-create-the-timer-component">Task: Create the Timer Component</h1>
-<h2 id="step-1-sequence-diagrams">Step 1: Sequence Diagrams</h2>
-<p>Create <strong>two sequence diagrams</strong> for the scenario with a 10-minute timer “spaghetti”, and a 2-minute timer “green tea”.</p>
+<h1>Task: Create the Timer Component</h1>
+
+<h2>Step 1: Sequence Diagrams</h2>
+<p>Create <strong>two sequence diagrams</strong> for the scenario with a 10-minute timer &quot;spaghetti&quot;, and a 2-minute timer &quot;green tea&quot;.</p>
 <ul>
 <li>Create one version in which you show the MQTT messages, including <em>publish</em> and <em>subscribe</em>, including the MQTT broker as lifeline.</li>
-<li>Create another, more high-level sequence diagram, in which you don’t show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.</li>
+<li>Create another, more high-level sequence diagram, in which you don't show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.</li>
 </ul>
-<h2 id="step-2-start-the-command-component">Step 2: Start the Command Component</h2>
-<p>Because we don’t have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:</p>
+<h2>Step 2: Start the Command Component</h2>
+<p>Because we don't have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:</p>
+
 <div class="figure">
 <img src="figures/components/command-sender.png" alt="Simple GUI to dispatch commands via MQTT." width="100%"/>
 <span name="figures/components/command-sender.png">&nbsp;</span>
-<aside name="figures/components/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p></p></aside>
+<aside name="figures/components/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p>
+</p></aside>
 </div>
 <p>Do the following:</p>
 <ul>
-<li><del>Start your own broker.</del></li>
+<li>~~Start your own broker.~~</li>
 <li>Use <code>mqtt.item.ntnu.no</code> with port <code>1883</code> as broker.</li>
 <li>Download the <a href="https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py">code of the command component</a> and study it.</li>
 <li>Adjust the topics.</li>
 <li>Run the component and see commands coming in by using MQTT.fx for debugging.</li>
 </ul>
-<h2 id="step-2-implement-the-components">Step 2: Implement the Components</h2>
+<h2>Step 2: Implement the Components</h2>
 <ul>
-<li><p>Use <a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py">the component template</a>, and add the required code in the places marked with <code>TODO</code>.</p></li>
-<li><p>Send Timer commands into the component using the GUI.</p></li>
-<li>See if your component works as intended and sends the required messages to the Text To Speech component.
+<li>
+<p>Use <a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py">the component template</a>, and add the required code in the places marked with <code>TODO</code>.</p>
+</li>
+<li>
+<p>Send Timer commands into the component using the GUI.</p>
+</li>
+<li>
+<p>See if your component works as intended and sends the required messages to the Text To Speech component.</p>
 <ul>
 <li>Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.</li>
-</ul></li>
-<li>Reflect on your progress in a document.</li>
-<li><p>Create a <strong>short and uncut demo video</strong> using two named timers, simulated via MQTT.FX and your timer manager component.</p></li>
 </ul>
+</li>
+<li>
+<p>Reflect on your progress in a document.</p>
+</li>
+<li>
+<p>Create a <strong>short and uncut demo video</strong> using two named timers, simulated via MQTT.FX and your timer manager component.</p>
+</li>
+</ul>
+
     </section>
     <section class="content">
-<h1 id="checklist">Checklist</h1>
-<h3 id="blackboard">Blackboard</h3>
+<h1>Checklist</h1>
+<h3>Blackboard</h3>
 <ul>
 <li>Deliver your document that shows progress and results.</li>
 </ul>
-<h3 id="ms-teams">MS Teams</h3>
+<h3>MS Teams</h3>
 <ul>
 <li>Ask for feedback in general</li>
 <li>Report any errors with the provided solution</li>
 <li>Discuss, with me or other teams</li>
 </ul>
-<h3 id="team-reflection-for-this-unit">Team Reflection for This Unit</h3>
+<h3>Team Reflection for This Unit</h3>
 <ul>
 <li>Add another section to the team reflection document, just like every week.</li>
 </ul>
-<h3 id="individual-reflection">Individual Reflection</h3>
+<h3>Individual Reflection</h3>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
+
     </section>
 </div>
 
@@ -530,68 +518,6 @@ div.tip p {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

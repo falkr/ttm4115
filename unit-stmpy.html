@@ -104,65 +104,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
@@ -228,32 +169,32 @@ div.tip p {
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preparation</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="prep-setup.html">Introduction and Setup</a>
+      <a class="dropdown-item" href="prep-setup.html"><b>1.</b> Introduction and Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="prep-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="prep-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="prep-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="prep-stmpy.html">State Machines in Python</a>
-      <a class="dropdown-item" href="prep-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="prep-communication.html">Communication</a>
-      <a class="dropdown-item" href="prep-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="prep-components.html">Components</a>
+      <a class="dropdown-item" href="prep-modeling.html"><b>2.</b> Modeling and Deployment</a>
+      <a class="dropdown-item" href="prep-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="prep-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="prep-stmpy.html"><b>5.</b> State Machines in Python</a>
+      <a class="dropdown-item" href="prep-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="prep-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="prep-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="prep-components.html"><b>9.</b> Components</a>
     </div>
   </li>
   
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="unit-setup.html">Team Setup</a>
+      <a class="dropdown-item" href="unit-setup.html"><b>1.</b> Team Setup</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="unit-modeling.html">Modeling and Deployment</a>
-      <a class="dropdown-item" href="unit-statemachines.html">State Machines</a>
-      <a class="dropdown-item" href="unit-user-requirements.html">User Requirements</a>
-      <a class="dropdown-item" href="unit-stmpy.html">State Machines in Python</a>
-  	  <a class="dropdown-item" href="unit-agile.html">Agile Development</a>
-      <a class="dropdown-item" href="unit-communication.html">Communication</a>
-      <a class="dropdown-item" href="unit-interactions.html">Interactions</a>
-      <a class="dropdown-item" href="unit-components.html">Components</a>
+      <a class="dropdown-item" href="unit-modeling.html"<b>2.</b> >Modeling and Deployment</a>
+      <a class="dropdown-item" href="unit-statemachines.html"><b>3.</b> State Machines</a>
+      <a class="dropdown-item" href="unit-user-requirements.html"><b>4.</b> User Requirements</a>
+      <a class="dropdown-item" href="unit-stmpy.html"><b>5.</b> State Machines in Python</a>
+  	  <a class="dropdown-item" href="unit-agile.html"><b>6.</b> Agile Development</a>
+      <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
+      <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
+      <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
       <div class="dropdown-divider"></div>
 	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
       <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
@@ -327,9 +268,12 @@ div.tip p {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="state-machines-in-python">State Machines in Python</h1>
-<p>This week you are going to implement state machines in Python. As a delivery you should keep a reflection document about your work where you include screen shots and your observations. The running code is in itself a feedback if you got it right.</p>
-<h3 id="installation">Installation</h3>
+<h1>State Machines in Python</h1>
+<p>This week you are going to implement state machines in Python.
+As a delivery you should keep a reflection document about your work where you include screen shots and your observations.
+The running code is in itself a feedback if you got it right.</p>
+
+<h3>Installation</h3>
 <p>Make sure you have <a href="prep-stmpy.html#jupyter-notebooks-introducing-stmpy">STMPY and Jupyter lab set up</a> like in the preparation. In case you have troubles with Python:</p>
 <ul>
 <li>Use a limited amount of time to try fixing the installation.</li>
@@ -337,16 +281,23 @@ div.tip p {
 <li>Run the Notebooks <a href="https://mybinder.org/v2/gh/falkr/stmpy-notebooks/HEAD">using Binder</a></li>
 <li>Fix your installation later</li>
 </ul>
+
 <p>In case your notebook gets stuck, you can restart its Python kernel in the menu <code>Kernel</code>.</p>
-<h3 id="todays-challenge">Today’s Challenge</h3>
-<p>The tasks today are not particularly difficult, but a lot of details must come together to get it right. Also, as code is involved, it may be difficult for everyone in the team to have exactly the same understanding at the same time. So, take some time to explain the code to each other. Also, consider to repeat some parts of the assignment after the team activity on tour own.</p>
+
+<h3>Today's Challenge</h3>
+<p>The tasks today are not particularly difficult, but a lot of details must come together to get it right.
+Also, as code is involved, it may be difficult for everyone in the team to have exactly the same understanding at the same time. So, take some time to explain the code to each other.
+Also, consider to repeat some parts of the assignment after the team activity on tour own.</p>
+
     </section>
     <section class="content">
-<h1 id="task-1-traffic-light">Task 1: Traffic Light</h1>
+<h1>Task 1: Traffic Light</h1>
+
 <div class="figure">
 <img src="figures/statemachines/notebook-traffic-light.jpg" alt="A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook." width="100%"/>
 <span name="figures/statemachines/notebook-traffic-light.jpg">&nbsp;</span>
-<aside name="figures/statemachines/notebook-traffic-light.jpg"><p><p>A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook.</p></p></aside>
+<aside name="figures/statemachines/notebook-traffic-light.jpg"><p><p>A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook.</p>
+</p></aside>
 </div>
 <ul>
 <li>Look at the provided code of the traffic light, and run it.</li>
@@ -354,13 +305,16 @@ div.tip p {
 <li>Create a copy of the diagram, but use more entry and exit actions on the states.</li>
 <li>Create another implementation of the traffic light state machine that uses more entry and exit actions in another cell and run it.</li>
 </ul>
+
     </section>
     <section class="content">
-<h1 id="task-2-kitchen-timer">Task 2: Kitchen Timer</h1>
+<h1>Task 2: Kitchen Timer</h1>
+
 <div class="figure">
 <img src="figures/statemachines/notebook-kitchen-timer.jpg" alt="A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook." width="100%"/>
 <span name="figures/statemachines/notebook-kitchen-timer.jpg">&nbsp;</span>
-<aside name="figures/statemachines/notebook-kitchen-timer.jpg"><p><p>A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook.</p></p></aside>
+<aside name="figures/statemachines/notebook-kitchen-timer.jpg"><p><p>A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook.</p>
+</p></aside>
 </div>
 <ul>
 <li>Use the code provided for the simple use interface of the kitchen timer.</li>
@@ -368,17 +322,26 @@ div.tip p {
 <li>Run the state machine and validate if you are satisfied with how it works.
 <ul>
 <li>Use a shorter timeout, like 4 seconds instead of 15 minutes.</li>
-</ul></li>
 </ul>
+</li>
+</ul>
+
     </section>
     <section class="content">
-<h1 id="task-3-head-lamp">Task 3: Head Lamp</h1>
-<p>You should design the state machine for the controller of a head lamp. This headlamp is used for outdoor activities. It has an infrared sensor attached, so that the LED can be switched on and off without fiddling with delicate buttons. It’s enough to swipe the hand in front of the sensor and the LED turns off. Another swipe turns the LED on again. However, to prevent the LED from turning off unintentionally, the swipe has to happen within a short time. If the hand is in front of the IR sensor for more than one second, the gesture is ignored.</p>
-<p>The communication diagram below shows the context of the controller. It receives the signals <code>hand</code> and <code>no_hand</code> from the IR sensor, and it controls the LED with signals on and off.</p>
+<h1>Task 3: Head Lamp</h1>
+<p>You should design the state machine for the controller of a head lamp.
+This headlamp is used for outdoor activities.
+It has an infrared sensor attached, so that the LED can be switched on and off without fiddling with delicate buttons.
+It’s enough to swipe the hand in front of the sensor and the LED turns off.
+Another swipe turns the LED on again. However, to prevent the LED from turning off unintentionally, the swipe has to happen within a short time.
+If the hand is in front of the IR sensor for more than one second, the gesture is ignored.</p>
+<p>The communication diagram below shows the context of the controller.
+It receives the signals <code>hand</code> and <code>no_hand</code> from the IR sensor, and it controls the LED with signals on and off.</p>
+
 <div class="figure">
 <img src="figures/statemachines/head-lights-1.svg" width="100%"/>
 </div>
-<h2 id="state-machine-design">State Machine Design</h2>
+<h2>State Machine Design</h2>
 <p>Design first a state machine diagram for the problem.</p>
 <ul>
 <li>Assume the controller starts in a state with the LED switched off and the IR sensor not detecting any hand.</li>
@@ -386,37 +349,43 @@ div.tip p {
 <li>Pay attention to the control state. Which situation does each of them represent? (In this example, you have only a few states. Meaningful names for them can make the task easier.)</li>
 <li>Can you use some form of symmetry in the diagram to get more confidence in the solution?</li>
 </ul>
-<h2 id="implementation-in-python">Implementation in Python</h2>
+
+<h2>Implementation in Python</h2>
 <p>Create now from the state machine diagram a solution in Python using the STMPY patterns and libraries, like before.</p>
 <ul>
 <li>Start with the code provided in notebook <strong>Head Lamp</strong></li>
 <li>The IR sensor is represented with a checkbox. When you select the checkbox, it symbolizes that the hand is in front of the sensor.</li>
 </ul>
+
 <div class="figure">
 <img src="figures/statemachines/notebook-head-light.jpg" alt="A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook." width="100%"/>
 <span name="figures/statemachines/notebook-head-light.jpg">&nbsp;</span>
-<aside name="figures/statemachines/notebook-head-light.jpg"><p><p>A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook.</p></p></aside>
+<aside name="figures/statemachines/notebook-head-light.jpg"><p><p>A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook.</p>
+</p></aside>
 </div>
-<h2 id="debugging-the-state-machine">Debugging the State Machine</h2>
+<h2>Debugging the State Machine</h2>
 <p>When running the implementation, does the state machine behave as intended? If not, what is the problem? Do you have to go back and also change the diagram, or is it more technical problems with the code? (Or a combination?)</p>
+
     </section>
     <section class="content">
-<h1 id="deliveries">Deliveries</h1>
-<h3 id="reflection-document-about-state-machine-implementation">Reflection Document about State Machine Implementation</h3>
+<h1>Deliveries</h1>
+
+<h3>Reflection Document about State Machine Implementation</h3>
 <ul>
 <li>Write down your observations.</li>
 <li>Document the results.</li>
 <li>Pay especially attention on the process around the head lamp, and delivering it in a high-quality process.</li>
 <li>Deliver on Teams</li>
 </ul>
-<h3 id="team-reflection">Team Reflection</h3>
+<h3>Team Reflection</h3>
 <ul>
 <li>As always, update your document about the team process and roles.</li>
 </ul>
-<h3 id="individual-reflection">Individual Reflection</h3>
+<h3>Individual Reflection</h3>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 </ul>
+
     </section>
 </div>
 
@@ -428,68 +397,6 @@ div.tip p {
 
 
 
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

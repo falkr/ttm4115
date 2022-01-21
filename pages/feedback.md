@@ -16,7 +16,7 @@ There are several ways to give feedback:
 ## Reference Group
 
 The reference group meets several times during the semester and gives feedback to the course responsible on behalf of all students.
-Members of the reference group are listed below.
+Members of the reference group are listed on Blackboard.
 The main concern is to provide constructive feedback on the learning outcome in the course, and anything related to that.
 
 

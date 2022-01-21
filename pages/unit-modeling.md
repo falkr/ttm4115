@@ -48,7 +48,8 @@ Each on their own, make some sketches **using pen and paper** for a deployment d
 
 - Compare your ideas and find commonalities, discuss differences. (Take a photo with your phone and share it.)
 - Iteratively agree on a diagram you want to build.
-- Outline the diagram, ideally on a whiteboard, blackboard or a shared piece of paper. (Update for 2021: Be practical and inventive how to do that digitally via Teams. There is a digital whiteboard, or you can send photos of your sketches.)
+- Outline the diagram, ideally on a whiteboard, blackboard or a shared piece of paper.
+  * If working digitally: Be practical and inventive how to do that via Teams. There is a digital whiteboard, or you can send photos of your sketches.
 
 
 ### Step 5: Quality Awareness
@@ -96,14 +97,9 @@ Copy the diagram into the document.
 
 Now you ask another team for their diagram and self-evaluation. This requires some coordination, so that each team gets another diagram to comment on, and all diagrams are commented.
 
-* We don't do the assignment beforehand since not all of you may be ready at the same time.
-* We can't simply use pairs of teams for all (like Team 1 and Team 2 reviewing each other's diagrams) since we have an odd number of teams. 
+* We don't do the assignment beforehand since not all of you may be ready at the same time. 
 * Check in the document Coordination.docx on Teams and note there on which team you comment.
 * Check with the student assistants.
-
-
-
-, since you have scheduled different time slots. Have a look in the team overview diagram which teams may already be ready, and contact them on Teams. 
 
 
 Have a look at the diagram of the other team. We recommend to do this on the original online version. (Ask them for sharing access or duplicating the diagram). Add notes into their diagram, using UML comments.

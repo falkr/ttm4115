@@ -177,34 +177,35 @@ div.figurefullwitdth {
 <div class="page">
     </section>
     <section class="content">
-<h1>The Headphone Story</h1>
+<h1 id="the-headphone-story">The Headphone Story</h1>
 <p>This is an additional task if we have time left.</p>
-
 <p>You work as a summer intern at a computer company during the spring of 2007. You get the task to develop a controller for a mysterious remote control for some headphone stuff or so. Everyone is busy. A product manager drops by, and tells you:</p>
 <blockquote>
-<p>&quot;The controller should translate button clicks into specific commands, depending on how often the user clicks. A single click should generate signal ’switch’. I think they use that for switching between playing and pausing. A double click should send signal ’next’. And if the user clicks three times in a row they need signal ’back’. That’s all I know. I have to go. Oh... the guys from the X-department gave me a diagram how it should be integrated. Here.”</p>
+<p>“The controller should translate button clicks into specific commands, depending on how often the user clicks. A single click should generate signal ’switch’. I think they use that for switching between playing and pausing. A double click should send signal ’next’. And if the user clicks three times in a row they need signal ’back’. That’s all I know. I have to go. Oh… the guys from the X-department gave me a diagram how it should be integrated. Here.”</p>
 </blockquote>
-
 <div class="figure">
 <img src="figures/statemachines/headphones.png" width="100%"/>
 </div>
 <p>You are confused, but you manage to produce a decent state machine.</p>
-
-<p>You are confused, but manage to draw a sequence diagram onto the whiteboard. When the product manager comes again, you ask if it looks okay. The immediate answer is:
-\begin{quote}\emph{<code>Sure. Build it!''}\end{quote} And the product manager is away again. You shout. \emph{</code>But wait.. there is one thing I need to know. How long... never mind.''} But even without the answer, you create a state machine.</p>
+<p>You are confused, but manage to draw a sequence diagram onto the whiteboard. When the product manager comes again, you ask if it looks okay. The immediate answer is:</p>
+<blockquote>
+<p>“Sure. Build it!”</p>
+</blockquote>
+<p>And the product manager is away again. You shout:</p>
+<blockquote>
+<p>“But wait.. there is one thing I need to know. How long… never mind.”</p>
+</blockquote>
+<p>But even without the answer, you create a state machine.</p>
 <p>After you created the state machine, an engineer from team X drops by.</p>
 <blockquote>
-<p>&quot;Are you done with the design? I have bad news. We made some changes. We require not a single switch signal, but dedicated pause and play signals. Just assume that all music is paused when your controller is activated. You need to build it all again.&quot;</p>
+<p>“Are you done with the design? I have bad news. We made some changes. We require not a single switch signal, but dedicated pause and play signals. Just assume that all music is paused when your controller is activated. You need to build it all again.”</p>
 </blockquote>
-
 <div class="figure">
 <img src="figures/statemachines/headphones-2.png" width="100%"/>
 </div>
-<p>That's tough. But you manage to build another state machine that solves the task. That's the story.</p>
-
-<h2>Questions</h2>
-
-<ol>
+<p>That’s tough. But you manage to build another state machine that solves the task. That’s the story.</p>
+<h2 id="questions">Questions</h2>
+<ol type="1">
 <li>Draw the sequence diagram that you sketched on the whiteboard.</li>
 <li>Which information did you try to get from the product manager?</li>
 <li>Build the first state machine for the controller.</li>
@@ -212,40 +213,34 @@ div.figurefullwitdth {
 <li>Draw a second state machine that uses the signals <code>pause</code> and <code>play</code> instead of <code>switch</code>.</li>
 <li>Looking at the new state machine and comparing it with the first one, why do you feel confident it is the proper solution?</li>
 </ol>
-
     </section>
     <section class="content">
-<h1>Solution</h1>
+<h1 id="solution">Solution</h1>
 <p><strong>Spoiler Alarm:</strong> Only look at the solutions after you prepared your own solution, or you are really, <em>really</em> stuck.</p>
-
-<h3>Q1: Sequence Diagram</h3>
+<h3 id="q1-sequence-diagram">Q1: Sequence Diagram</h3>
 <p><a href="figures/statemachines/headphones-sd-1.png">Sequence Diagram</a></p>
-
-<h3>Q2: Info from Product Manager</h3>
-
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
-<p>I don't know how much time must pass between two clicks so that they should count as two separate single clicks that trigger <code>switch</code> twice, in contrast to triggering only a single <code>next</code>. Similar for the timing between three clicks.</p>
-
+<p><img src="figures/statemachines/headphones-sd-1.png" /></p>
 </div>
-<h3>Q3: First State Machine</h3>
+<h3 id="q2-info-from-product-manager">Q2: Info from Product Manager</h3>
+<button class="w3collapsible">Answer</button>
+<div class="w3content">
+<p>I don’t know how much time must pass between two clicks so that they should count as two separate single clicks that trigger <code>switch</code> twice, in contrast to triggering only a single <code>next</code>. Similar for the timing between three clicks.</p>
+</div>
+<h3 id="q3-first-state-machine">Q3: First State Machine</h3>
 <p><a href="figures/statemachines/headphones-stm-1.png">State Machine 1</a></p>
-<h3>Q4: What is the difference in the new machine?</h3>
-
+<h3 id="q4-what-is-the-difference-in-the-new-machine">Q4: What is the difference in the new machine?</h3>
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
 <p>The controller needs to know when to send signal <code>play</code> and when to send signal <code>pause</code>. With the hint from the engineer we know that the music is initially paused, so the first time we need to send a <code>play</code>. We then need to keep track of the current state of the music, which we do with a control state in the state machine.</p>
-
 </div>
-<h3>Q5: Second State Machine</h3>
+<h3 id="q5-second-state-machine">Q5: Second State Machine</h3>
 <p><a href="figures/statemachines/headphones-stm-2.png">State Machine 2</a></p>
-
-<h3>Q6: Why are you confident?</h3>
-
+<h3 id="q6-why-are-you-confident">Q6: Why are you confident?</h3>
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
 <p>The new state machine has some symmetry, i.e., it has similar behavior for the pause and play states.</p>
-
 </div>
     </section>
 </div>
@@ -254,9 +249,6 @@ div.figurefullwitdth {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-
-
-
 
 
 

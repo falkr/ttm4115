@@ -13,12 +13,15 @@ type: figure
 source: figures/statemachines/headphones.png
 ---
 
-You are confused, but you manage to produce a decent state machine.
-
-
 You are confused, but manage to draw a sequence diagram onto the whiteboard. When the product manager comes again, you ask if it looks okay. The immediate answer is:
-\begin{quote}\emph{``Sure. Build it!''}\end{quote}
-And the product manager is away again. You shout. \emph{``But wait.. there is one thing I need to know. How long... never mind.''} But even without the answer, you create a state machine. 
+
+> "Sure. Build it!"
+
+And the product manager is away again. You shout:
+
+> "But wait.. there is one thing I need to know. How long... never mind."
+
+But even without the answer, you create a state machine. 
 
 After you created the state machine, an engineer from team X drops by.
 

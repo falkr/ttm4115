@@ -219,12 +219,6 @@ And yet another similar one:
 Implementing the security correctly is a challenging task, and goes easily beyond what you can manage during this semester. For this reason, you can decide if you want to take security issues into account at all. 
 
 
-**Is there a specific way to determine the right person to talk to when speaking into the walkie-talkie? Does one say the name to send the message to? Or can we decide?**
-
-* Selecting a person hands-free by telling their name is one solution, which you can also mimic with a user interface that lets you select that name (instead of implementing the speech recognition). 
-But you can decide on your own, maybe you have a good idea how to solve this.
-
-
 **How much do we have to realize in reality? What should we implement?**
 
 * You must implement a selected subset of the functions of the system, preferably so that you can make a good and interesting demo. Some features are more interesting for the coordination and interactions in the system, while others (like for instance a database with user names) may be less interesting and can be provided by a simulated component (like a hardcoded lookup table used instead of a data base.)

@@ -32,10 +32,14 @@
 2. Requirements for external interfaces between system and environment.
 3. Other design and implementation constraints.
 
+
+
 1. Only items named under 1).
 2. Items named under 1) and 2).
 3. Items named under 2) and 3).
 4. Items named under 1) and 2) and 3).
+
+
 
 ## Question 5
 

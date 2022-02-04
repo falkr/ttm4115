@@ -344,6 +344,67 @@ source: figures/deployment/multiplicity.svg
 caption: "Examples of multiplicity between nodes."
 ---
 
+# Containment
+
+We have seen above that some nodes in a deployment diagram can contain other nodes, depending on the node types. 
+
+The following containments are typical:
+
+* An execution environment can run in a device.
+* An artifact is deployed in a device.
+* An artifact is deployed in an execution environment.
+
+The following containments are also possible, but maybe less common. Use them if you want to show a detail that is important to point out, and consider if that makes sense.
+
+* A device can contain a device. For instance, a computer (device) can contain a harddisk. 
+* An execution environment can contain another execution environment. For instance, a virtual operating system container could rund a Python runtime. 
+* An artifact could be composite, like a file stored in an archive. 
+
+The following combinations make no sense:
+
+* An execution environment cannot contain a device. 
+* An artifact cannot contain a device. 
+* An artifact cannot contain an execution environment.
+
+
+# Overview of Elements
+
+* Communication Path
+  * &laquo;TCP/IP&raquo;
+  * &laquo;MQTT&raquo;
+  * &laquo;AMQP&raquo;
+  * &laquo;RMI&raquo;
+  * &laquo;CoAP&raquo;
+* Nodes
+  * &laquo;execution environment&raquo;
+  	* &laquo;application server&raquo;
+	* &laquo;web server&raquo;
+	* &laquo;operating system&raquo;
+  * &laquo;device&raquo;
+    * &laquo;server&raquo;
+	* &laquo;gateway&raquo;
+	* &laquo;desktop PC&raquo;
+* &laquo;artifact&raquo;
+  * &laquo;data base&raquo;
+  * &laquo;firmware&raquo;
+  * &laquo;device driver&raquo;
+  * configuration files
+    * .txt
+	* .properties
+	* .xml
+  * source files
+    * .cpp
+	* .c
+	* .py
+	* .java
+  * library files
+    * .dll
+	* .jar
+  * executable files
+    * .exe
+	* .jar
+
+
 
 
 # Optional Preparation

@@ -29,22 +29,7 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
-div.figure {
+<style type="text/css">div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
 }
@@ -55,59 +40,9 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-.w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.w3active, .w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 0 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
 div.rat ol {
   list-style-type: upper-alpha;
 }
-
 </style>
 </head>
 <body id="top">
@@ -224,7 +159,7 @@ div.rat ol {
 <div class="rat"><p>What should happen if another system component wants to trigger a transition of a state machine?</p>
 <ol>
 <li>It adds a transition into the transition table.</li>
-<li>It sends a message to the driver of the state machine.</li>
+<li>It sends a message to the driver of the state machine which then forwards it to the state machine.</li>
 <li>It directly triggers the transition of the state machine by calling the transition method.</li>
 <li>It adds an event into the transition table.</li>
 </ol>
@@ -310,7 +245,7 @@ div.rat ol {
 <div class="rat"><p>How are while-loops used in STMPY?</p>
 <ol>
 <li>All drivers share a single while-loop.</li>
-<li>A driver has a while-loop, serving all its state machines.</li>
+<li>Only a driver has a while-loop, serving all its state machines.</li>
 <li>Each state machine has its own while-loop.</li>
 <li>STMPY is implemented <em>without</em> while-loops.</li>
 </ol>
@@ -331,10 +266,6 @@ div.rat ol {
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-
-
-
-
 
 
 

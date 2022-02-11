@@ -3,7 +3,7 @@
 :rat:What should happen if another system component wants to trigger a transition of a state machine?
 
 1. It adds a transition into the transition table.
-2. It sends a message to the driver of the state machine.
+2. It sends a message to the driver of the state machine which then forwards it to the state machine.
 3. It directly triggers the transition of the state machine by calling the transition method.
 4. It adds an event into the transition table.
 
@@ -87,7 +87,7 @@ caption: "Code listing with an error."
 :rat:How are while-loops used in STMPY?
 
 1. All drivers share a single while-loop.
-2. A driver has a while-loop, serving all its state machines.
+2. Only a driver has a while-loop, serving all its state machines.
 3. Each state machine has its own while-loop.
 4. STMPY is implemented *without* while-loops.
 

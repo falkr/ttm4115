@@ -68,7 +68,7 @@ Another swipe turns the LED on again. However, to prevent the LED from turning o
 If the hand is in front of the IR sensor for more than one second, the gesture is ignored.
 
 
-<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=dfb44925-cafc-4ed0-9a54-ae39008d9451&autoplay=false&offerviewer=false&showtitle=false&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=dfb44925-cafc-4ed0-9a54-ae39008d9451&autoplay=false&offerviewer=false&showtitle=false&showbrand=true&captions=false&interactivity=all" style="width:100%; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 The communication diagram below shows the context of the controller.

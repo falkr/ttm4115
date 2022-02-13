@@ -29,7 +29,22 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.figure {
+<style type="text/css">div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
 }

@@ -13,23 +13,71 @@
 <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">
 
-<!--
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <link href="assets/bootstrap.min.css" rel="stylesheet">
 
-<!--
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
-<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.delivery p {
+<style type="text/css">a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
   font-family: "Source Sans Pro", Georgia, serif;
@@ -107,7 +155,83 @@ div.goals ul li:before {
 div.rat ol {
   list-style-type: upper-alpha;
 }
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
 
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 </style>
 </head>
 <body id="top">
@@ -220,20 +344,14 @@ div.rat ol {
 <div class="page">
     </section>
     <section class="content">
-<h1>Feedback on Version 1</h1>
+<h1>Learning Areas</h1>
 <ul>
-<li>This is an individual delivery, each student has to deliver their own solution.</li>
-<li>Focus is on reflection and providing feedback on the system specification of another team.</li>
+<li>Overview of rooms on <a href="https://tp.uio.no/ntnu/report/rominfo.php#Gl%C3%B8shaugen">Timeplan</a></li>
 </ul>
-
-<h2>Individual Reflection</h2>
-<p>This is a preparation for your individual delivery I3 at the end of the semester. You will probably end up with ca. 1 page of content. You can address everything about the system, the process, the team, the learning goals, your own learning, insights, ... that affects this course.</p>
-<p>You don't have to deliver this document. Keep it for your own record.</p>
-
+<h2>Smia</h2>
 <ul>
-<li>The reflection may be about yourself, your team, the other team you got assigned. (Most likely a combination.)</li>
-<li>You can use a comparison between your team and the other team as a source of starting points to think.</li>
-<li>You may share your feedback and observations with your team so that you can improve your process or system.</li>
+<li>Place: Sentralbygg 2, 2nd floor. <a href="http://use.mazemap.com/?v=1&amp;campuses=ntnu&amp;sharepoitype=identifier&amp;sharepoi=322-212">Map</a></li>
+<li>Check for availability: <a href="https://tp.uio.no/ntnu/timeplan/?id%5B%5D=322212&amp;type=room&amp;area=30000&amp;building=322&amp;id=322212">Timeplan Smia</a></li>
 </ul>
 
     </section>
@@ -241,8 +359,14 @@ div.rat ol {
 
 
 <footer></footer>
-<script src="assets/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
+
+
+
+
+
+
 
 
 

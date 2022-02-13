@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.navbar {
+  box-shadow: 0 0 1px rgba(0,0,0,0.2),0 0 1rem rgba(40,40,40,0.2);
+}
+
+table p {
+  margin-bottom: 0;
+  font-size: 0.7rem;
+}
+  
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #272833;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+body {
+  /* font: 1rem/2 var(--bs-font-sans-serif); */
+}
+.page a {
+  color: #0b5fff;
+  /* background-color: #2B65EC; */
+  text-decoration: none;
+}
+/*h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-blue);
+}*/
+
+.navlinks a {
+  color: grey;
+}
+
+.navlinks button {
+  padding-left: 0px
+}
+
+.page a {
+  color: #00509e;
+}
+
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-top: 3em;
+  xborder-bottom: 1px solid #8EA9C2;
+  color: #555;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin-top: 3em;
+  color: #555;
+}

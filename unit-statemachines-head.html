@@ -11,18 +11,18 @@
 
 
 <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">
+<!--<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt" rel="stylesheet" type="text/css">-->
 
-<!--
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <link href="assets/bootstrap.min.css" rel="stylesheet">
 
-<!--
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
-<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons.css">
@@ -65,6 +65,9 @@ div.figurefullwitdth {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
+div.rat ol {
+  list-style-type: upper-alpha;
+}
 </style>
 </head>
 <body id="top">
@@ -104,12 +107,16 @@ div.figurefullwitdth {
       <a class="dropdown-item" href="unit-communication.html"><b>7.</b> Communication</a>
       <a class="dropdown-item" href="unit-interactions.html"><b>8.</b> Interactions</a>
       <a class="dropdown-item" href="unit-components.html"><b>9.</b> Components</a>
-      <div class="dropdown-divider"></div>
-	  <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Focus: Diagram Tips</a>
-      <a class="dropdown-item" href="unit-statemachines-data.html">Focus: State Machines — Data vs. States</a>
-	  <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
+    </div>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Focus</a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="unit-modeling-diagram-tips.html">Diagram Tips</a>
+    <a class="dropdown-item" href="unit-statemachines-data.html">State Machines — Data vs. States</a>
+    <a class="dropdown-item" href="unit-statemachines-car.html">Focus: State Machines — Car Lock Example</a>
     <a class="dropdown-item" href="unit-statemachines-head.html">Focus: State Machines — Headphones Exercise</a>
-    <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="unit-components-tips.html">Tips: Components</a>
     </div>
   </li>
@@ -177,34 +184,39 @@ div.figurefullwitdth {
 <div class="page">
     </section>
     <section class="content">
-<h1 id="the-headphone-story">The Headphone Story</h1>
+<h1>The Headphone Story</h1>
 <p>This is an additional task if we have time left.</p>
+
 <p>You work as a summer intern at a computer company during the spring of 2007. You get the task to develop a controller for a mysterious remote control for some headphone stuff or so. Everyone is busy. A product manager drops by, and tells you:</p>
 <blockquote>
-<p>“The controller should translate button clicks into specific commands, depending on how often the user clicks. A single click should generate signal ’switch’. I think they use that for switching between playing and pausing. A double click should send signal ’next’. And if the user clicks three times in a row they need signal ’back’. That’s all I know. I have to go. Oh… the guys from the X-department gave me a diagram how it should be integrated. Here.”</p>
+<p>&quot;The controller should translate button clicks into specific commands, depending on how often the user clicks. A single click should generate signal ’switch’. I think they use that for switching between playing and pausing. A double click should send signal ’next’. And if the user clicks three times in a row they need signal ’back’. That’s all I know. I have to go. Oh... the guys from the X-department gave me a diagram how it should be integrated. Here.”</p>
 </blockquote>
+
 <div class="figure">
 <img src="figures/statemachines/headphones.png" width="100%"/>
 </div>
 <p>You are confused, but manage to draw a sequence diagram onto the whiteboard. When the product manager comes again, you ask if it looks okay. The immediate answer is:</p>
 <blockquote>
-<p>“Sure. Build it!”</p>
+<p>&quot;Sure. Build it!&quot;</p>
 </blockquote>
 <p>And the product manager is away again. You shout:</p>
 <blockquote>
-<p>“But wait.. there is one thing I need to know. How long… never mind.”</p>
+<p>&quot;But wait.. there is one thing I need to know. How long... never mind.&quot;</p>
 </blockquote>
 <p>But even without the answer, you create a state machine.</p>
 <p>After you created the state machine, an engineer from team X drops by.</p>
 <blockquote>
-<p>“Are you done with the design? I have bad news. We made some changes. We require not a single switch signal, but dedicated pause and play signals. Just assume that all music is paused when your controller is activated. You need to build it all again.”</p>
+<p>&quot;Are you done with the design? I have bad news. We made some changes. We require not a single switch signal, but dedicated pause and play signals. Just assume that all music is paused when your controller is activated. You need to build it all again.&quot;</p>
 </blockquote>
+
 <div class="figure">
 <img src="figures/statemachines/headphones-2.png" width="100%"/>
 </div>
-<p>That’s tough. But you manage to build another state machine that solves the task. That’s the story.</p>
-<h2 id="questions">Questions</h2>
-<ol type="1">
+<p>That's tough. But you manage to build another state machine that solves the task. That's the story.</p>
+
+<h2>Questions</h2>
+
+<ol>
 <li>Draw the sequence diagram that you sketched on the whiteboard.</li>
 <li>Which information did you try to get from the product manager?</li>
 <li>Build the first state machine for the controller.</li>
@@ -212,38 +224,52 @@ div.figurefullwitdth {
 <li>Draw a second state machine that uses the signals <code>pause</code> and <code>play</code> instead of <code>switch</code>.</li>
 <li>Looking at the new state machine and comparing it with the first one, why do you feel confident it is the proper solution?</li>
 </ol>
+
     </section>
     <section class="content">
-<h1 id="solution">Solution</h1>
+<h1>Solution</h1>
 <p><strong>Spoiler Alarm:</strong> Only look at the solutions after you prepared your own solution, or you are really, <em>really</em> stuck.</p>
-<h3 id="q1-sequence-diagram">Q1: Sequence Diagram</h3>
+
+<h3>Q1: Sequence Diagram</h3>
 <p><a href="figures/statemachines/headphones-sd-1.png">Sequence Diagram</a></p>
-<h3 id="q2-info-from-product-manager">Q2: Info from Product Manager</h3>
+
+<h3>Q2: Info from Product Manager</h3>
+
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
-<p>I don’t know how much time must pass between two clicks so that they should count as two separate single clicks that trigger <code>switch</code> twice, in contrast to triggering only a single <code>next</code>. Similar for the timing between three clicks.</p>
+<p>I don't know how much time must pass between two clicks so that they should count as two separate single clicks that trigger <code>switch</code> twice, in contrast to triggering only a single <code>next</code>. Similar for the timing between three clicks.</p>
+
 </div>
-<h3 id="q3-first-state-machine">Q3: First State Machine</h3>
+<h3>Q3: First State Machine</h3>
 <p><a href="figures/statemachines/headphones-stm-1.png">State Machine 1</a></p>
-<h3 id="q4-what-is-the-difference-in-the-new-machine">Q4: What is the difference in the new machine?</h3>
+<h3>Q4: What is the difference in the new machine?</h3>
+
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
 <p>The controller needs to know when to send signal <code>play</code> and when to send signal <code>pause</code>. With the hint from the engineer we know that the music is initially paused, so the first time we need to send a <code>play</code>. We then need to keep track of the current state of the music, which we do with a control state in the state machine.</p>
+
 </div>
-<h3 id="q5-second-state-machine">Q5: Second State Machine</h3>
+<h3>Q5: Second State Machine</h3>
 <p><a href="figures/statemachines/headphones-stm-2.png">State Machine 2</a></p>
-<h3 id="q6-why-are-you-confident">Q6: Why are you confident?</h3>
+
+<h3>Q6: Why are you confident?</h3>
+
 <button class="w3collapsible">Answer</button>
 <div class="w3content">
 <p>The new state machine has some symmetry, i.e., it has similar behavior for the pause and play states.</p>
+
 </div>
     </section>
 </div>
 
 
 <footer></footer>
-<script src="assets/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
+
+
+
+
 
 
 

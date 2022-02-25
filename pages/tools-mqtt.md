@@ -148,3 +148,14 @@ source: figures/mqtt/mqtt-fx-subscribe.png
 ## Observing Communication
 
 Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application  and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.
+
+
+
+# MQTT Explorer
+
+MQTT.FX does not run (yet) on Macs with Apple processors, but there is a similar program that you can install from the app store, [MQTT Explorer](https://apps.apple.com/no/app/mqtt-explorer/id1455214828?mt=12). The image below shows how to add our default broker to it. 
+
+---
+type: figure
+source: figures/mqtt/mqtt-explorer.jpg
+---

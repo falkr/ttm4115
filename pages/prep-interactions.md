@@ -370,19 +370,19 @@ The passing of a message **A** consists of two events:
 
 **Ordering Rule 1:** Because our universe seems to act causally, **a
 message must be sent before it can be received**. For a message A, the
-only sequence of events that is possible is $\langle !A, ?A \rangle$.
+only sequence of events that is possible is `<!A, ?A>`.
 
 **Ordering Rule 2:** A second ordering rule is that of lifelines:
 **Events along the *same* lifeline are in a total order.** Below, this
 means that lifeline Y receives signal A before it receives B,
-$\langle ?A, ?B \rangle$.
+`< ?A, ?B >`.
 
 ---
 type: figure
 source: figures/interactions/ordering-lifeline.png
 ---
 
-Now comes the part that may be less intuitive: Events on different
+Now comes the part that may be less intuitive: Events on *different*
 lifelines are *not ordered*, even though they have distinct
 y-coordinates. In the diagram below, the reception of A and the
 reception of B are clearly at different y-coordinates. *Visually*, A
@@ -408,7 +408,7 @@ the message can get a different slope depending on the position on the
 rings. Rings attached to the same lifeline cannot pass each other.
 Therefore, the diagrams below all look different, but imply the same
 ordering among the events, irrespective of their absolute position on
-the lifelines. What counts is that $A$ is received before $B$, and this
+the lifelines. What counts is that `A` is received before `B`, and this
 does not change in any of the diagrams.
 
 ---
@@ -431,39 +431,42 @@ source: figures/interactions/ex-1.png
 ---
 
 Intuitively, we already know one sequence in which these events can
-happen, that is, we know that $\langle !A,?A,!B,?B \rangle$ is one valid
+happen, that is, we know that `<!A,?A,!B,?B>` is one valid
 trace. However, it is not the only possible trace. To find the other
 traces, we may start by writing down all possible different combinations
 we can get from these events. With 4 events, we end up with 24 different
 traces:
 
-$\langle !A,?A,!B,?B \rangle,
-\langle !A,?A,?B,!B \rangle,
-\langle !A,!B,?A,?B \rangle,
-\langle !A,!B,?B,?A \rangle,
-\langle !A,?B,?A,!B \rangle,
-\langle !A,?B,!B,?A \rangle$
+```
+< !A,?A,!B,?B >,
+< !A,?A,?B,!B >,
+< !A,!B,?A,?B >,
+< !A,!B,?B,?A >,
+< !A,?B,?A,!B >,
+< !A,?B,!B,?A >
 
-$\langle ?A,!A,!B,?B \rangle,
-\langle ?A,!A,?B,!B \rangle,
-\langle ?A,!B,!A,?B \rangle,
-\langle ?A,!B,?B,!A \rangle,
-\langle ?A,?B,!A,!B \rangle,
-\langle ?A,?B,!B,!A \rangle$
+< ?A,!A,!B,?B >,
+< ?A,!A,?B,!B >,
+< ?A,!B,!A,?B >,
+< ?A,!B,?B,!A >,
+< ?A,?B,!A,!B >,
+< ?A,?B,!B,!A >
 
-$\langle !B,!A,?A,?B \rangle,
-\langle !B,!A,?B,?A \rangle,
-\langle !B,?A,!A,?B \rangle,
-\langle !B,?A,?B,!A \rangle,
-\langle !B,?B,!A,?A \rangle,
-\langle !B,?B,?A,!A \rangle$
+< !B,!A,?A,?B >,
+< !B,!A,?B,?A >,
+< !B,?A,!A,?B >,
+< !B,?A,?B,!A >,
+< !B,?B,!A,?A >,
+< !B,?B,?A,!A >
 
-$\langle ?B,!A,?A,!B \rangle,
-\langle ?B,!A,!B,?A \rangle,
-\langle ?B,?A,!A,!B \rangle,
-\langle ?B,?A,!B,!A \rangle,
-\langle ?B,!B,!A,?A \rangle,
-\langle ?B,!B,?A,!A \rangle$
+< ?B,!A,?A,!B >,
+< ?B,!A,!B,?A >,
+< ?B,?A,!A,!B >,
+< ?B,?A,!B,!A >,
+< ?B,!B,!A,?A >,
+< ?B,!B,?A,!A >
+```
+
 
 Because of the ordering rules from above, not all of these traces are
 possible. The sequence diagram *Alpha* from above relates the four
@@ -471,21 +474,21 @@ events with each other.
 
 -   Because of message ordering, we know that only those traces are
     valid ones, in which a signal is sent before it is received. This
-    means, $!A$ must happen before $?A$ and $!B$ must happen before
-    $?B$.
+    means, `!A` must happen before `?A` and `!B` must happen before
+    `?B`.
 
 -   Because of lifeline ordering, we also know that those traces, in
     which events do not follow the order of the lifeline, are invalid.
-    This means $!A$ must happen before $!B$, and $?A$ must happen before
-    $?B$.
+    This means `!A` must happen before `!B`, and `?A` must happen before
+    `?B`.
 
 **Exercise:** Can you find the traces that violate any of the two
 ordering rules, and strike them out?
 
 ## Co-Regions
 
-The diagram *Beta* below only covers the scenario that $A$ is received
-by $Y$ before $B$.
+The diagram *Beta* below only covers the scenario that `A` is received
+by `Y` before `B`.
 
 ---
 type: figure
@@ -496,10 +499,10 @@ source: figures/interactions/ex-2.png
 diagram *Beta* allows.
 
 In reality, it will be hard or impossible to ensure that this order is
-maintained, especially since the diagram allows to send $B$ first. For a
+maintained, especially since the diagram allows to send `B` first. For a
 real and robust specification, we should handle such situations. One way
-is to demand from component $Y$ that it must be prepared to properly
-handle the arrival of messages $A$ or $B$ in *any* order. For that, we
+is to demand from component `Y` that it must be prepared to properly
+handle the arrival of messages `A` or `B` in *any* order. For that, we
 can use a so-called *co-region*. These are the brackets placed on the
 lifeline *Y*. Within the brackets of a co-region, events on the lifeline
 are not ordered anymore, i.e., they can happen in any order.
@@ -510,7 +513,7 @@ source: figures/interactions/ex-3.png
 ---
 
 **Exercise:** Which are the *additional* traces that are possible, if
-the events within the co-region ($?A$ and $?B$) can happen in any order?
+the events within the co-region (`?A` and `?B`) can happen in any order?
 
 **Exercise:** Is there a way to handle the situation also in another
 way? For instance, can you, just by adding a message (and without a
@@ -565,8 +568,8 @@ So, whenever there is a diagram in which a message is sent, we should
 check what would happen if this message got lost. Here are some possible
 alternatives:
 
--   The application is fine even if message $A$ is lost. This can be the
-    case, for instance, if message $A$ is one (of many) messages of the
+-   The application is fine even if message `A` is lost. This can be the
+    case, for instance, if message `A` is one (of many) messages of the
     same type that are sent periodically, and where it does not matter
     if some of them get lost. A sensor that repeatedly sends some
     measurements is a typical example. (It may be, however, important
@@ -574,10 +577,10 @@ alternatives:
     are lost.
 
 -   The most common solution is to use acknowledgment messages. This is
-    illustrated in *Lossy\_3*. In case message $A$ is lost, $Y$ does not
-    send an acknowledgement. This is detected by $X$ indirectly, through
+    illustrated in *Lossy\_3*. In case message `A` is lost, `Y` does not
+    send an acknowledgement. This is detected by `X` indirectly, through
     the expiration of a timer. We show the timer here as a message of
-    $X$ to itself.
+    `X` to itself.
 
 ---
 type: figure

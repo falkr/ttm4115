@@ -237,7 +237,7 @@ protocol websockets
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>client.loop_forever()</span></code></pre></div>
 <p>More information on the paho package can be found here: <a href="https://pypi.python.org/pypi/paho-mqtt/">https://pypi.python.org/pypi/paho-mqtt/</a></p>
 
-<p>If there is an error in the <code>on_message()</code> function, you may not see an error and nothing is happening, and it may look as if the client doesn't receive any messages. To prevent such errors, add a <code>print('Message received!')</code> line at the start of the message so you see it was called. Make sure this first statement does not have any problems (like unkown variables) so that it does not fail.</p>
+<p>If there is an error in the <code>on_message()</code> function, you may not see an error and nothing is happening, and it may look as if the client doesn't receive any messages. To prevent such errors, add a <code>print('Message received!')</code> line at the start of the message so you see it was called. Make sure this first statement does not have any problems (like unknown variables) so that it does not fail.</p>
 <p>You can also place any code that could cause an error into a <code>try:</code> ... <code>except:</code> block to handle any exceptions locally.</p>
 
 <h2>Subscribe to system messages</h2>

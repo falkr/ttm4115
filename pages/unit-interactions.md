@@ -82,16 +82,6 @@ Your sequence diagrams contain a situation that is called **mixed initiative**.
 
 
 
-# Feedback on Specification Version 1
-
-Via MS Teams you will receive all feedback documents from the others to your first version of the system specification. 
-Read through all of them and conclude on which feedback to react on in the next version.
-A suggestion for the working style:
-
-* Each one of you opens one of the feedback documents
-* You go through them item by item, comparing the feedback
-* One of you collects your conclusion or todos to each element in a new working document
-
 
 
 # Reflection

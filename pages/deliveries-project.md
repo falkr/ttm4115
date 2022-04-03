@@ -24,3 +24,23 @@ This base idea leaves some room for suggestions and ideas on your side.
 
 We will refine this idea together and incorporate your ideas over time.
 
+
+
+# Some Guidelines
+
+There are some recommendations or guidelines to ensure that you build a system in a way where you can apply the learning outcomes of the units in the course as directly as possible. Don't see them as tight constraints that need to be followed precisely, but as rules of thumb that should guide you.
+
+In general, we recommend that some parts of your system are implemented in Python using STMPY state machines, follow the component architecture we have studied in the last unit, and communicate via MQTT. 
+
+The motivation is that you can 
+
+* describe the software in meaningful ways using the diagram types we have learned
+* develop state machines that work on synchronization of concurrency via signals
+* develop a set of loosely coupled components
+* overall, apply the learning goals of the different units
+
+Of course you can incorporate other components written in other languages and using other frameworks, for instance to get specific functions implemented that are easier in other languages than Python. 
+
+User interfaces only have to be practical so that you can show how the system should work. Python is not very good at coding user interfaces, and this course is not about user interfaces either. So don't worry too much about them. 
+
+

@@ -29,85 +29,7 @@
 
 <script src="assets/anchor.js"></script>
 <script src="assets/script-aside.js"></script>
-<style type="text/css">div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
-}
-
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
-}
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-.w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.w3active, .w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 0 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-div.rat ol {
-  list-style-type: upper-alpha;
-}
-</style>
+<style type="text/css"></style>
 </head>
 <body id="top">
 
@@ -244,18 +166,27 @@ div.rat ol {
 <p>We will refine this idea together and incorporate your ideas over time.</p>
 
     </section>
+    <section class="content">
+<h1>Some Guidelines</h1>
+<p>There are some recommendations or guidelines to ensure that you build a system in a way where you can apply the learning outcomes of the units in the course as directly as possible. Don't see them as tight constraints that need to be followed precisely, but as rules of thumb that should guide you.</p>
+<p>In general, we recommend that some parts of your system are implemented in Python using STMPY state machines, follow the component architecture we have studied in the last unit, and communicate via MQTT.</p>
+<p>The motivation is that you can</p>
+<ul>
+<li>describe the software in meaningful ways using the diagram types we have learned</li>
+<li>develop state machines that work on synchronization of concurrency via signals</li>
+<li>develop a set of loosely coupled components</li>
+<li>overall, apply the learning goals of the different units</li>
+</ul>
+<p>Of course you can incorporate other components written in other languages and using other frameworks, for instance to get specific functions implemented that are easier in other languages than Python.</p>
+<p>User interfaces only have to be practical so that you can show how the system should work. Python is not very good at coding user interfaces, and this course is not about user interfaces either. So don't worry too much about them.</p>
+
+    </section>
 </div>
 
 
 <footer></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-
-
-
-
-
-
 
 </script>
 <script>

@@ -1,0 +1,44 @@
+{|
+!
+! Excellent
+! Good
+! Sufficient
+! Not rateable
+|-
+| Alignment
+| Noticable and consistent alignment between all parts.
+| Overall good alignment between all parts.
+| Minor inconsisentcies in alignment.
+| Missing alignment.
+|-
+| Descriptions
+| Concise descriptions with focused formulations.
+| Overall good language.
+| Minor flaws in formulations and language.
+| Major language errors and typos.
+|-
+| Problem Description
+|
+| Clearly identified, motivated and explained.
+| Problem is addressed and somewhat aligned with objectives and vision.
+|
+|-
+| Vision
+| Vision serves as overall, consistent goal for the entire system.
+| Vision is well aligned with the problem and objectives.
+| Vision is provided, but somewhat lacking in overall value.
+|
+|-
+| Objectives
+| Objectives are focused, compact, specific and relevant.
+| Objectives are specific.
+| A few good objectives are given.
+|
+|-
+| Stakeholders
+| Reveal valuable requirements and motivation.
+| Are complete.
+|
+|
+|}
+

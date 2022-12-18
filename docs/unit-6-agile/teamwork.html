@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="../assets/anchor.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#333333">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#2B65EC"> -->
+
+
+    <div class="navbar-nav">
+      <!-- flex-row ml-md-auto d-none d-md-flex">-->
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <svg width="auto" height="25px">
+          <image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg"
+            src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%"
+            height="100%" alt="NTNU Logo"></image>
+        </svg>
+      </a>
+    </div>
+
+    <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex flex-grow-1" style="margin-left:2rem">
+
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="font-weight: bold; color:white" )>edu.<span
+              style="font-weight:200">iik.ntnu.no</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-8" style="margin-top: 6rem;">
+        <div class="page">
+    </section>
+    <section class="content">
+<h1>Agile vs. Architecture</h1>
+<p>No matter which development method you will use for a project, there is one very important questions, that all of them need to address: <strong>How much should we plan ahead?</strong></p>
+<p>Remember the diagram from the preparation, that listed some development methods based on the amount of planning:</p>
+
+<div class="figure">
+<img src="../../pages/unit-6-agile/figures/agile-spectrum.png" alt="**The spectrum of development methods:** Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right." width="100%"/>
+<span name="../../pages/unit-6-agile/figures/agile-spectrum.png">&nbsp;</span>
+<aside name="../../pages/unit-6-agile/figures/agile-spectrum.png"><p><p><strong>The spectrum of development methods:</strong> Aligned on an axis that goes from a waterfall model with lots of planning on the left towards pure hacking without planning to the right.</p>
+</p></aside>
+</div>
+<p>Think of your own semester project:</p>
+<ul>
+<li>On the one side, planning is necessary when you want to work together, so that you can deliver on time, decide when to meet, when you want to reach which milestones. It is obvious that some degree of planning is necessary for any project.</li>
+<li>On the other side, planning can also be hard. You don't know how something works out before you have done it. There are a lot of unknowns ahead, and sometimes you just need to try something out.</li>
+</ul>
+<p>So how much <em>should</em> you plan?</p>
+<h2>Discussion</h2>
+<p>Before we continue, let's have a discussion on the challenges and benefits with planning:</p>
+<ul>
+<li>Use 3 minutes and think individually about the tradeoff between planning ahead and making plan as you go along.</li>
+<li>Discuss your findings around the table.</li>
+<li>Write down concrete challenges you face in your particular project you have observed. What can you do to mitigate these problems.</li>
+</ul>
+<p>Unfortunately, there is no simple answer. Instead, managing a development project means to constantly think about adequate planning. It means to review progress, routines and watch out for warning signs. What helps is to be aware of the different forces that are at work during development, forces that can either require to plan more or to plan less.</p>
+<p>The figure below illustrates the forces (in red) that influence a development team, and the strategies (in blue) that can be applied to mitigate them:</p>
+
+<div class="figure">
+<img src="../../pages/unit-6-agile/figures/agile-forces.png" alt="A development faces forces (in red), and should react with strategies (in blue)." width="100%"/>
+<span name="../../pages/unit-6-agile/figures/agile-forces.png">&nbsp;</span>
+<aside name="../../pages/unit-6-agile/figures/agile-forces.png"><p><p>A development faces forces (in red), and should react with strategies (in blue).</p>
+</p></aside>
+</div>
+<p>The forces and strategies were identified by Waterman, Noble and Allan in their article <em>How much up Front? A Grounded Theory of Agile Architecture</em>. The following are the more detailed descriptions of the <strong>forces</strong> (paraphrased from the original article).</p>
+<p><strong>Task:</strong> Go through them, one by one. To understand them better, try to identify what they mean by naming examples from your specific semester project. Make notes.</p>
+<ul>
+<li><strong>F1 (REQUIREMENTS INSTABILITY)</strong> refers to the effect that unstable requirements have on up-front planning. Being able to respond to changing requirements is one of the underlying values of the Agile Manifesto and is central to our conceptual definition of agility.</li>
+<li><strong>F2 (TECHNICAL RISK)</strong> describes the effect that exposure to potentially negative outcome has on a team’s up-front effort. Risk is caused by complex architecture.</li>
+<li><strong>F3 (EARLY VALUE)</strong> refers to a customer’s need to gain value from a system or product being built (rather than simply provide feedback) before all functionality has been implemented, perhaps in the form of a minimum viable product.</li>
+<li><strong>F4 (TEAM CULTURE)</strong> describes the effect that a team’s culture has on its agility and the effort it puts into up-front planning. A culture that is people-focused and collaborative is a very important factor in a team’s ability to communicate.</li>
+<li><strong>F5 (CUSTOMER AGILITY)</strong> describes the culture of the customer’s organisation and the huge impact that it has on the amount of up-front architecture design a team does. A customer must have an agile culture that is similar to the team’s culture, whether the team is in-house or an ISV (independent software vendor), for the team to be truly agile. A highly-agile team will not fit in well with a heavyweight process-oriented organisation that prefers planning and formal communication.</li>
+<li><strong>F6 (EXPERIENCE)</strong> describes the impact that an experienced architect’s tacit knowledge and implicit decision-making ability has on the time that an agile team spends on up-front design. Experienced architects have breadth of knowledge; they are more likely to be aware of suitable options for implementing a solution and better understand what will work and what will not.</li>
+</ul>
+<p>And here are the detailed <strong>strategies</strong>, which help to mitigate the challenges caused by the forces:</p>
+<ul>
+<li>A team's ability to use <strong>S1 (RESPOND TO CHANGE)</strong> is directly related to how agile it is. S1 increases the architecture’s agility by increasing its modifiability and its tolerance of change, and allows the team to ensure the architecture continuously represents the best solution to the problem as it evolves.</li>
+<li><strong>S2 (ADDRESS RISK)</strong> reduces the impact of risk before it causes problems, and is usually done up-front, particularly for risk relating to system-wide decisions (for example, risk in selecting the technology stack or top-level styles). Using S2, a team designs the architecture in sufficient detail that it is comfortable that it is actually possible to build the system with a satisfactory level of risk.</li>
+<li><strong>S3 (EMERGENT ARCHITECTURE)</strong> produces an architecture in which the team makes only the minimum architecture decisions up-front, such as selecting the technology stack and the highest level architectural styles and patterns. When using S3, the team only considers the requirements that are immediately needed for its design, ignoring even high- level requirements that are to be implemented in the longer term.</li>
+<li><strong>S4 (BIG DESIGN UP-FRONT)</strong> requires that the team acquires a full set of requirements and completes a full architecture design before development starts. There are no emergent design decisions, although the architecture may evolve during development.</li>
+<li><strong>S5 (USE FRAMEWORKS AND TEMPLATE ARCHITECTURES)</strong> is the use of software frameworks, and template and reference architectures sourced from particular framework vendors for use with those frameworks. Frameworks … include default architectural patterns which constrain the systems to these patterns. S4 provides the benefit of standard solutions to standard problems, which means that software engineers do not need to make as many architectural decisions, and can greatly reduce the effort required to design a system and get it up and running.</li>
+</ul>
+<h2>Task</h2>
+<p>Make a copy of the diagram below, and move the forces on the right side to the right place.</p>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL&amp;export=download&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL%26export%3Ddownload"></script>
+<p>Here is also a <a href="https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing">link to the diagram</a>.</p>
+<p>With some discussion you should be able to place all forces and strategies so that the entire diagram makes sense. These are the considerations you have to do in a development project!</p>
+<p>Copy a screenshot of the final puzzle into the document where you also made notes on the examples for each of the forces. Deliver on Teams in the folder for this unit, under file name <code>ttm4115-team-xx-agile-forces.docx</code>.</p>
+
+<h3>Team Reflection</h3>
+<ul>
+<li>As always, update your document about the team process and roles.</li>
+</ul>
+<h3>Individual Reflection</h3>
+<ul>
+<li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
+</ul>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

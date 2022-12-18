@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="85.03937 5700.2226 323.3996 332.15355" width="323.3996" height="332.15355">
+  <defs>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 0 M 0 -2.1 L 5.6 0 L 0 2.1" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="7" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="7" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-1500" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica-Oblique"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-01 17:21:07 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11611">
+        <rect x="121.88977" y="5700.4726" width="249.44883" height="158.74016" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11671">
+        <rect x="121.88977" y="5873.386" width="249.44883" height="158.74016" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11612">
+        <text transform="translate(240.2756 5807.52)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="1.4414062" y="8">t1 / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11613">
+        <path d="M 139.22835 5788.3466 L 218.10237 5788.3466 C 221.41608 5788.3466 224.10237 5791.033 224.10237 5794.3466 L 224.10237 5841.874 C 224.10237 5845.188 221.41608 5847.874 218.10237 5847.874 L 139.22835 5847.874 C 135.91464 5847.874 133.22835 5845.188 133.22835 5841.874 L 133.22835 5794.3466 C 133.22835 5791.033 135.91464 5788.3466 139.22835 5788.3466 Z" fill="white"/>
+        <path d="M 139.22835 5788.3466 L 218.10237 5788.3466 C 221.41608 5788.3466 224.10237 5791.033 224.10237 5794.3466 L 224.10237 5841.874 C 224.10237 5845.188 221.41608 5847.874 218.10237 5847.874 L 139.22835 5847.874 C 135.91464 5847.874 133.22835 5845.188 133.22835 5841.874 L 133.22835 5794.3466 C 133.22835 5791.033 135.91464 5788.3466 139.22835 5788.3466 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(135.22835 5790.3466)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="29.259763" y="10">active</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11614">
+        <circle cx="178.58268" cy="5728.819" r="2.83465027762371" fill="black"/>
+        <circle cx="178.58268" cy="5728.819" r="2.83465027762371" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11615">
+        <line x1="178.58268" y1="5731.904" x2="178.58268" y2="5741.827" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11616">
+        <line x1="223.93701" y1="5819.528" x2="265.4567" y2="5819.528" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11617">
+        <line x1="133.22835" y1="5805.3545" x2="224.10237" y2="5805.3545" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11618">
+        <clipPath id="clip_path">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path)" transform="translate(138.22835 5808.441)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry / start(t1, 60000)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11619">
+        <path d="M 274.9567 5788.3466 L 354 5788.3466 C 357.3137 5788.3466 360 5791.033 360 5794.3466 L 360 5841.874 C 360 5845.188 357.3137 5847.874 354 5847.874 L 274.9567 5847.874 C 271.643 5847.874 268.9567 5845.188 268.9567 5841.874 L 268.9567 5794.3466 C 268.9567 5791.033 271.643 5788.3466 274.9567 5788.3466 Z" fill="white"/>
+        <path d="M 274.9567 5788.3466 L 354 5788.3466 C 357.3137 5788.3466 360 5791.033 360 5794.3466 L 360 5841.874 C 360 5845.188 357.3137 5847.874 354 5847.874 L 274.9567 5847.874 C 271.643 5847.874 268.9567 5845.188 268.9567 5841.874 L 268.9567 5794.3466 C 268.9567 5791.033 271.643 5788.3466 274.9567 5788.3466 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(270.9567 5790.3466)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="24.354174" y="10">beeping</tspan>
+        </text>
+      </g>
+      <g id="Line_11620">
+        <line x1="269.12205" y1="5805.3545" x2="360" y2="5805.3545" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11625">
+        <text transform="translate(274.29135 5745.1576)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x=".44140625" y="8">t2 /</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11626">
+        <clipPath id="clip_path_2">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_2)" transform="translate(274.29135 5808.441)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry / start(t2, 3000)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11627">
+        <clipPath id="clip_path_3">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_3)" transform="translate(274.29135 5819.78)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry / start_beep()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11628">
+        <clipPath id="clip_path_4">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_4)" transform="translate(274.29135 5831.118)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">exit / stop_beep()</tspan>
+        </text>
+      </g>
+      <g id="Line_11629">
+        <path d="M 121.88977 5717.4805 L 252.28347 5717.4805 L 257.95276 5711.811 L 257.95276 5700.4726" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11630">
+        <text transform="translate(124.72441 5702.646)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="0" y="10">stm</tspan>
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" y="10"> Blinking 10 min Timer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11634">
+        <text transform="translate(225.93308 5977.5986)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="1.1660156" y="8">t / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11635">
+        <path d="M 139.22835 5961.26 L 201.0945 5961.26 C 204.4082 5961.26 207.0945 5963.946 207.0945 5967.26 L 207.0945 6014.7876 C 207.0945 6018.101 204.4082 6020.7876 201.0945 6020.7876 L 139.22835 6020.7876 C 135.91464 6020.7876 133.22835 6018.101 133.22835 6014.7876 L 133.22835 5967.26 C 133.22835 5963.946 135.91464 5961.26 139.22835 5961.26 Z" fill="white"/>
+        <path d="M 139.22835 5961.26 L 201.0945 5961.26 C 204.4082 5961.26 207.0945 5963.946 207.0945 5967.26 L 207.0945 6014.7876 C 207.0945 6018.101 204.4082 6020.7876 201.0945 6020.7876 L 139.22835 6020.7876 C 135.91464 6020.7876 133.22835 6018.101 133.22835 6014.7876 L 133.22835 5967.26 C 133.22835 5963.946 135.91464 5961.26 139.22835 5961.26 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(135.22835 5963.26)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="14.376431" y="10">blink_on</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11636">
+        <circle cx="170.2441" cy="5901.7324" r="2.83465027762395" fill="black"/>
+        <circle cx="170.2441" cy="5901.7324" r="2.83465027762395" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11637">
+        <line x1="170.21411" y1="5904.817" x2="170.11763" y2="5914.7405" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11638">
+        <line x1="207.0945" y1="5989.6065" x2="248.61418" y2="5989.6065" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11639">
+        <line x1="252.61418" y1="6006.614" x2="211.0945" y2="6006.614" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11643">
+        <line x1="133.3937" y1="5978.268" x2="207.0945" y2="5978.268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11644">
+        <text transform="translate(225.93308 5994.6065)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="1.1660156" y="8">t / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11645">
+        <clipPath id="clip_path_5">
+          <rect x="0" y="0" width="73.70079" height="20"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_5)" transform="translate(138.3937 5984.268)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry/ lamp_on()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11646">
+        <clipPath id="clip_path_6">
+          <rect x="0" y="0" width="73.70079" height="20"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_6)" transform="translate(138.3937 5995.449)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry/ start(t, 1000)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11647">
+        <path d="M 257.94883 5961.26 L 319.81497 5961.26 C 323.12868 5961.26 325.81497 5963.946 325.81497 5967.26 L 325.81497 6014.7876 C 325.81497 6018.101 323.12868 6020.7876 319.81497 6020.7876 L 257.94883 6020.7876 C 254.63512 6020.7876 251.94883 6018.101 251.94883 6014.7876 L 251.94883 5967.26 C 251.94883 5963.946 254.63512 5961.26 257.94883 5961.26 Z" fill="white"/>
+        <path d="M 257.94883 5961.26 L 319.81497 5961.26 C 323.12868 5961.26 325.81497 5963.946 325.81497 5967.26 L 325.81497 6014.7876 C 325.81497 6018.101 323.12868 6020.7876 319.81497 6020.7876 L 257.94883 6020.7876 C 254.63512 6020.7876 251.94883 6018.101 251.94883 6014.7876 L 251.94883 5967.26 C 251.94883 5963.946 254.63512 5961.26 257.94883 5961.26 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(253.94883 5963.26)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="14.100552" y="10">blink_off</tspan>
+        </text>
+      </g>
+      <g id="Line_11648">
+        <line x1="252.11418" y1="5978.268" x2="325.81497" y2="5978.268" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11649">
+        <clipPath id="clip_path_7">
+          <rect x="0" y="0" width="73.70079" height="20"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_7)" transform="translate(257.44883 5984.268)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry / lamp_off()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11656">
+        <text transform="translate(254.11418 5918.071)" fill="#0096ff">
+          <tspan font-family="Helvetica" font-size="8" font-weight="700" fill="#0096ff" x="1.1699219" y="8">off</tspan>
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" y="8"> / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11658">
+        <path d="M 139.3937 5918.74 L 201.0945 5918.74 C 204.4082 5918.74 207.0945 5921.4266 207.0945 5924.74 L 207.0945 5932.583 C 207.0945 5935.8966 204.4082 5938.583 201.0945 5938.583 L 139.3937 5938.583 C 136.08 5938.583 133.3937 5935.8966 133.3937 5932.583 L 133.3937 5924.74 C 133.3937 5921.4266 136.08 5918.74 139.3937 5918.74 Z" fill="white"/>
+        <path d="M 139.3937 5918.74 L 201.0945 5918.74 C 204.4082 5918.74 207.0945 5921.4266 207.0945 5924.74 L 207.0945 5932.583 C 207.0945 5935.8966 204.4082 5938.583 201.0945 5938.583 L 139.3937 5938.583 C 136.08 5938.583 133.3937 5935.8966 133.3937 5932.583 L 133.3937 5924.74 C 133.3937 5921.4266 136.08 5918.74 139.3937 5918.74 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(138.3937 5921.6616)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="21.514457" y="11">idle</tspan>
+        </text>
+      </g>
+      <g id="Line_11659">
+        <line x1="153.37159" y1="5938.583" x2="153.37159" y2="5957.26" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11660">
+        <line x1="187.25197" y1="5961.26" x2="187.25197" y2="5942.583" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11661">
+        <path d="M 289.08742 5961.01 L 289.29922 5930.079 L 211.0945 5930.079" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11662">
+        <clipPath id="clip_path_8">
+          <rect x="0" y="0" width="73.70079" height="20"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_8)" transform="translate(257.44883 5995.6065)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry/ start(t, 1000)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11663">
+        <text transform="translate(188.91733 5943.583)" fill="#0096ff">
+          <tspan font-family="Helvetica" font-size="8" font-weight="700" fill="#0096ff" x="1.1699219" y="8">off</tspan>
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" y="8"> / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11664">
+        <text transform="translate(154.90158 5943.583)" fill="#f7b504">
+          <tspan font-family="Helvetica" font-size="8" font-weight="700" fill="#f7b504" x="1.390625" y="8">on</tspan>
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" y="8"> / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11665">
+        <path d="M 139.22835 5745.827 L 217.93701 5745.827 C 221.25072 5745.827 223.93701 5748.513 223.93701 5751.827 L 223.93701 5759.6695 C 223.93701 5762.983 221.25072 5765.6695 217.93701 5765.6695 L 139.22835 5765.6695 C 135.91464 5765.6695 133.22835 5762.983 133.22835 5759.6695 L 133.22835 5751.827 C 133.22835 5748.513 135.91464 5745.827 139.22835 5745.827 Z" fill="white"/>
+        <path d="M 139.22835 5745.827 L 217.93701 5745.827 C 221.25072 5745.827 223.93701 5748.513 223.93701 5751.827 L 223.93701 5759.6695 C 223.93701 5762.983 221.25072 5765.6695 217.93701 5765.6695 L 139.22835 5765.6695 C 135.91464 5765.6695 133.22835 5762.983 133.22835 5759.6695 L 133.22835 5751.827 C 133.22835 5748.513 135.91464 5745.827 139.22835 5745.827 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(138.22835 5748.748)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="30.018394" y="11">idle</tspan>
+        </text>
+      </g>
+      <g id="Line_11666">
+        <line x1="178.71805" y1="5765.6695" x2="178.71805" y2="5784.3466" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11667">
+        <text transform="translate(180.74804 5770.6695)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="1.4980469" y="8">start / </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11668">
+        <clipPath id="clip_path_9">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_9)" transform="translate(138.22835 5819.78)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">entry / send(</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="700" fill="#f7b504" y="6">on</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" y="6">, </tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="#ff2f92" y="6">blink</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" y="6">)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11669">
+        <clipPath id="clip_path_10">
+          <rect x="0" y="0" width="90.70866" height="14.173229"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_10)" transform="translate(138.22835 5831.118)" fill="black">
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" x="0" y="6">exit / send(</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="700" fill="#0096ff" y="6">off</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" y="6">, </tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="#ff2f92" y="6">blink</tspan>
+          <tspan font-family="Helvetica" font-size="7" font-weight="400" fill="black" y="6">)</tspan>
+        </text>
+      </g>
+      <g id="Line_11670">
+        <path d="M 314.3951 5788.0966 L 314.64568 5757.1655 L 227.93701 5757.1655" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_11672">
+        <path d="M 121.88977 5890.394 L 204.0945 5890.394 L 209.76379 5884.7246 L 209.76379 5873.386" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11673">
+        <text transform="translate(124.72441 5875.559)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x="0" y="10">stm</tspan>
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" y="10"> Blink Lamp</tspan>
+        </text>
+      </g>
+      <g id="Group_11677">
+        <g id="Graphic_11679">
+          <path d="M 283.46457 5879.055 L 283.46457 5918.74 L 408.189 5918.74 L 408.189 5885.008 L 399.68505 5879.055 Z" fill="white"/>
+          <path d="M 283.46457 5879.055 L 283.46457 5918.74 L 408.189 5918.74 L 408.189 5885.008 L 399.68505 5879.055 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+          <text transform="translate(288.46457 5883.898)" fill="black">
+            <tspan font-family="Helvetica" font-size="8" font-style="italic" font-weight="400" fill="black" x="0" y="8">In the final system, we declare </tspan>
+            <tspan font-family="Helvetica" font-size="8" font-style="italic" font-weight="400" fill="black" x="0" y="18">one instance of this machine </tspan>
+            <tspan font-family="Helvetica" font-size="8" font-style="italic" font-weight="400" fill="black" x="0" y="28">with name ‘</tspan>
+            <tspan font-family="Helvetica" font-size="8" font-style="italic" font-weight="400" fill="#ff2f92" y="28">blink</tspan>
+            <tspan font-family="Helvetica" font-size="8" font-style="italic" font-weight="400" fill="black" y="28">’. </tspan>
+          </text>
+        </g>
+        <g id="Graphic_11678">
+          <path d="M 399.68505 5879.055 L 399.68505 5885.321 L 408.189 5885.321 Z" fill="white"/>
+          <path d="M 399.68505 5879.055 L 399.68505 5885.321 L 408.189 5885.321 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+      </g>
+      <g id="Graphic_11680"/>
+    </g>
+  </g>
+</svg>

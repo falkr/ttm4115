@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../assets/anchor.js"></script>
+  <script src="../assets/script-aside.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Deliveries</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Feedback on Specification 3</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-9" style="margin-top: 6rem;">
+        <div class="page">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
+<li class="breadcrumb-item"><a href="index.html">Learning</a></li>
+<li class="breadcrumb-item active" aria-current="page">Team-Based Learning</li>
+</ol>
+</nav>
+    </section>
+    <section class="content">
+<h1>Team-Based Learning</h1>
+
+<p>The course will use team-based learning (TBL).
+This is a learning method to ensure active learning in small teams.
+It will make this course intensive, but also the source of much fun.
+By the end of the semester, most students prefer TBL to traditional lectures.</p>
+<p>Some features of team-based and active learning:</p>
+<ul>
+<li>You will be part of a team of 5 to 7 students that stays constant during the semester.</li>
+<li>You will receive a preparation guide that will help you to prepare for a lecture, for instance by reading a book chapter, doing a specific exercise or watching a video.</li>
+<li>We will do several readiness assurance tests (RATs). These are multiple-choice tests that are easy to solve when you are reasonably prepared.</li>
+<li>The team will help during the RAT, and this also counts towards the final grade.</li>
+</ul>
+
+<h2>How TBL Works</h2>
+<p>The course consists of separate units, roughly one for each week. Each week will be organized in a very similar way:</p>
+<ol>
+<li>You need to prepare for the unit.</li>
+<li>At class time we start with a test about the reading material, a so-called RAT.</li>
+<li>After the RAT, you get special activities that you do together in your team. Depending on the activities, there are different ways of handing in the results.</li>
+</ol>
+
+<h2>Phase 1: Preparation</h2>
+<p>The preparation happens individually. Sometimes it is one or two chapters of a book, special reading material developed for this course or some videos.
+This gives you the opportunity to study at your own pace and get familiar with a new topic.
+Of course it will vary how much time each student will spend on the preparation material, and it also depends on the unit, but roughly 2 hours is a good guideline, sometimes more and sometimes less.</p>
+<ul>
+<li>Have a look at the schedule. It shows on which days we have RATs, with a link to the corresponding preparation material.</li>
+</ul>
+
+<h2>Phase 2: Individual RAT</h2>
+<p>A RAT is a multiple-choice test with 10 questions that have 4 answer alternatives.
+You get 20 minutes to answer the test individually.
+The questions are not particularly difficult, and directly related to the preparation material.
+Some questions may still feel a bit tricky, since we want you to select the <em>best</em> answer.</p>
+<ul>
+<li>We do the RAT as a quiz on Blackboard</li>
+<li>The RAT will be available each Monday from 9:15</li>
+<li>We fill out the RAT will being all together on Zoom</li>
+</ul>
+<p>Note the following:</p>
+<ul>
+<li>The scores of your RAT <strong>do not count towards your final grade</strong>.</li>
+<li>This means you can completely focus on understanding the answers and getting feedback on your state of preparedness for the unit.</li>
+<li><strong>It is mandatory to submit all RATs.</strong> If you are sick on a Monday and cannot participate, you can do the RAT later. (In this case, you only do the individual RAT, not the team-RAT explained next.)</li>
+</ul>
+
+<h2>Phase 3: Team RAT</h2>
+<p>After the first 20 minutes with the individual RAT, you get the same test again, but this time you solve it in your team.
+At the beginning, get the team-RAT, and find the assigned place in the auditorium for your team.
+Together with your team-RAT you receive an attached scratch card.
+You need to discuss with your team members and agree on a common answer.
+Once you agree on an answer, you scratch the corresponding field on the scratch card open.
+If the answer was correct, you'll see a little star in it.
+In this case, proceed with the next question.
+If you don't see a star, find the next answer alternative, until you find it.</p>
+
+<div class="figure">
+<img src="../../pages/learning/figures/scratchcards.jpg" alt="Scratchcards reveal the right answer with a star." width="100%"/>
+<span name="../../pages/learning/figures/scratchcards.jpg">&nbsp;</span>
+<aside name="../../pages/learning/figures/scratchcards.jpg"><p><p>Scratchcards reveal the right answer with a star.</p>
+</p></aside>
+</div>
+<p>For best learning, make sure of the following:</p>
+<ul>
+<li>Everybody should contribute and be heard in the discussion.</li>
+<li>Solve the question one by one, and scratch <strong>immediately</strong> after you have discussed a question. (That means, don't scratch all questions at once at the end.)</li>
+<li>Don't vote on the answer alternative, discuss until you agree on which one is best.</li>
+</ul>
+
+<p>We do the RATs together as teams in Zoom using breakout rooms.
+Instead of physical cards, your team receives a link to a digital card.</p>
+
+<div class="figure">
+<img src="../../pages/learning/figures/card.png" alt="Digital version of the scratch card." width="100%"/>
+<span name="../../pages/learning/figures/card.png">&nbsp;</span>
+<aside name="../../pages/learning/figures/card.png"><p><p>Digital version of the scratch card.</p>
+</p></aside>
+</div>
+<span name="b374bd"></span><aside name="b374bd"><p>Apart from the team activities that are scheduled each week, you will also work on a semester project.</p>
+</aside>
+<h2>Phase 4: Team Activities</h2>
+<p>After the team-RAT we continue with the team activities for this learning unit.
+We will introduce the activities and clarify any questions about the task,
+the expectations, and how you deliver your results.</p>
+<p>After the class time you can either continue working in your team or schedule a time
+when all are available. The team activities are timed to fit in an 2-hour block.
+You finish each team activity with a delivery and also a team reflection.
+Depending on the type of activity and delivery, you'll get some feedback on it during the next week.</p>
+
+    </section>
+    <section class="content">
+<h1>Videos about TBL</h1>
+<p>Have a look how TBL works at other universities.</p>
+<h3>Team-Based Learning at Duke University</h3>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gW_M426V2E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3>Team-Based Learning at Bradford</h3>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VwgE_3lMaTY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3>Sheri Wall on TBL</h3>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tjuUlfI8aY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3>On Forming Teams</h3>
+
+<p>In TBL, teams are assigned by the instructor. Let's hear the description from Michael Sweet why this is a good idea:</p>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XSpyLRX9meY?start=1116" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

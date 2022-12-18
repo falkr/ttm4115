@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="70.86614 3230.996 425.19686 154.07087" width="425.19686" height="154.07087">
+  <defs>
+    <font-face font-family="Calibri" font-size="12" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-18 11:07:24 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_18">
+        <rect x="198.4252" y="3231.496" width="56.69292" height="17.007874" fill="white"/>
+        <rect x="198.4252" y="3231.496" width="56.69292" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(203.4252 3233)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="6.032005" y="11">cashier</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="308.9764" y="3231.496" width="62.36221" height="17.007874" fill="white"/>
+        <rect x="308.9764" y="3231.496" width="62.36221" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(313.9764 3233)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="3.2270017" y="11">customer</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="226.77166" y1="3249.004" x2="226.77166" y2="3384.567" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_15">
+        <line x1="340.1575" y1="3248.504" x2="340.1575" y2="3384.567" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <line x1="226.77166" y1="3268.3465" x2="330.2575" y2="3268.3465" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <line x1="340.1575" y1="3288.189" x2="236.67166" y2="3288.189" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(270.62993 3255.1733)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".07128906" y="11">pose?</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <line x1="226.77166" y1="3308.0316" x2="330.2575" y2="3308.0316" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_9">
+        <line x1="340.1575" y1="3327.874" x2="236.67166" y2="3327.874" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(252.12993 3294.8584)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".3486328" y="11">kasselappen?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(275.29135 3314.701)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".48535156" y="11">nei</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="226.77166" y1="3347.7166" x2="330.2575" y2="3347.7166" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_5">
+        <line x1="340.1575" y1="3367.559" x2="236.67166" y2="3367.559" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(269.62993 3334.5434)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".001953125" y="11">ha det</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(252.29135 3354.386)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".484375" y="11">ha det bra ja</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(269.29135 3275.016)" fill="black">
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x=".068359375" y="11">ja takk</tspan>
+        </text>
+      </g>
+      <g id="Graphic_470"/>
+    </g>
+  </g>
+</svg>

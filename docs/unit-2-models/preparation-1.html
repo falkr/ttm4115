@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../assets/anchor.js"></script>
+  <script src="../assets/script-aside.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+button:hover {
+  background-color: #EFF7FF;
+}
+div.qna .accordion-button:not(.collapsed) {
+  background-color: #EFF7FF;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  color: #00509e;
+}
+
+div.qna .accordion-button:not(.collapsed)::after {
+  color: #00509e;
+}
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {
+	margin: 0px
+}
+
+.rubric th {
+	text-align: center;
+	padding: 6px;
+}
+
+.rubric td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.rubric th {
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.rubric td:nth-child(2),
+.rubric th:nth-child(2) {
+	background-color: #D0E8DC;
+	width: 22%
+}
+
+.rubric td:nth-child(3),
+.rubric th:nth-child(3) {
+	background-color: #FCFDE3;
+	width: 22%
+}
+
+.rubric td:nth-child(4),
+.rubric th:nth-child(4) {
+	background-color: #F8D9C2;
+	width: 22%
+}
+
+.rubric td:nth-child(5),
+.rubric th:nth-child(5) {
+	background-color: #EBBCB9;
+	width: 22%
+}
+
+.rubric tfoot td {
+	text-align: right;
+	border-bottom: none;
+	padding: 1px;
+}
+
+.rubric tfoot a {
+	font-size: 12px;
+	font-style: italic;
+	color: gray
+}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Deliveries</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Feedback on Specification 3</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-9" style="margin-top: 6rem;">
+        <div class="page">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
+<li class="breadcrumb-item"><a href="index.html">Unit 2: Modeling and Deployment Diagrams</a></li>
+<li class="breadcrumb-item active" aria-current="page">Why Do We Model Software Systems?</li>
+</ol>
+</nav>
+    </section>
+    <section class="content">
+<h1>Why Do We Model Software Systems?</h1>
+
+<h2>The Problem</h2>
+<blockquote>
+<p>You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money.</p>
+</blockquote>
+<p>Doesn't this sound like a nice story? Unfortunately, it's bullshit. --- <em>Why?</em></p>
+<ul>
+<li>Systems are rarely created by a single person. Most systems are the effort of a team of developers, or rather <em>several</em> teams of developers, changing over time.</li>
+<li>Most systems are not just built once, but maintained, extended and adapted over many years.</li>
+</ul>
+<p>In this process, the code of the system, that is, the machine instructions needed to run it, are only one part of the descriptions and specifications that are created throughout the entire lifecycle of a system. With <em>lifecycle</em> we mean from the beginning of its conception, the idea, its creation and the following maintenance. During these phases, engineers create many documents that describe different aspects of it. Some descriptions have the purpose to make new programmers understand what has already been built and how the different parts of the system work together. Other descriptions are suitable to simulate the system, so we can check it for important properties like safety, security or performance. Yet again other descriptions are only created temporarily, before making a technical decision.</p>
+
+<h2>Modeling</h2>
+<p>Creating descriptions of something means to create a <em>model</em>, and the activity is called <em>modeling</em>. In this course, we learn how to apply modeling to systems, so that we can create high-quality systems.</p>
+
+<h2>Models are Everywhere</h2>
+<p>Modeling means to represent something so we can find out more about it, play with it and work on it. Many tasks of engineers are related to models. In some disciplines this is more obvious than others. For example:</p>
+<ul>
+<li>A plan (or model) of a plane.</li>
+<li>A plan (or model) of a building.</li>
+<li>A plan (or model) of a software system.</li>
+</ul>
+<p>Models allow to do a crash test on a car using a computer simulation, to check how fire and smoke propagate through a building, and they allow to study how a building looks before it is even built. If we were doing engineering without models, we would only be able to work with the real thing. As you can imagine, this is often impossible, prohibitively expensive or unethical. But models are also useful in less dramatic and obvious cases. We are so used to working on models that we often don't think about it.</p>
+<p>Let's have a closer look what models are and which properties they can have:</p>
+<ul>
+<li>Models can be <strong>physical</strong>, like a wooden model of a car, or <strong>digital</strong>, like a digital plan of a building. A diagram on a piece of paper or whiteboard is somewhere between these two.</li>
+<li>Models can be <strong>textual</strong> descriptions, like a step-by-step description of a business process, or expressed <strong>graphically</strong>, like a flowchart.</li>
+<li>Models can be expressed by <strong>mathematical formulas</strong>, like Newton's law of gravity that is a model for how masses attract each other.</li>
+</ul>
+<p>This list is not intended to be complete, but should just illustrate the wide variety of models there are. Depending on what we want to find out, we can use different models. The same concept can have several models at the same time, each showing different aspects of it.</p>
+<p>Depending on what we want to find out, a model may also cover some aspects very well, while being less precise on others.</p>
+<ul>
+<li>Newton's law of gravity, for instance, is a good model to describe the movement of the planets, but it is ultimately not as precise as Einstein's relativity theory, which is another model that involves gravity.</li>
+<li>A crash test model for a car is suitable to understand how the car behaves in an accident, but is useless when we want to decide which colors we should chose for the dashboard buttons.</li>
+</ul>
+
+<h2>Models of Software</h2>
+<p>Of course, like we can have models of planes and buildings, we can also have models of a system that mainly consists of software. But there's one thing that is special with software: Software is made up of digital artifacts, and therefore virtual in nature. (<em>Virtual</em> means you can't touch it.) While it is easy to distinguish the <em>model</em> of a house from the house itself, it is harder to distinguish the <em>model</em> of a piece of software from the software itself. One could also argue that code itself is a model, since it describes a way of executing an algorithm.
+This is why we sometimes confuse software models and programs. In some cases, the lines are even more blurry when we generate code from models automatically, or take the model and interpret it by a machine that then effectively executes it. But more on that later.</p>
+<h2>Why Modeling Software?</h2>
+<p>Let's think one again, why we use models in general, and why models make sense also for software:</p>
+<ul>
+<li>We use models for <strong>planning ahead</strong> and estimate how long the construction of something will take. With software, we also need to plan ahead and plan who is doing what and when. Is it useful to have models for that? Of course!</li>
+<li><strong>Study properties and behavior</strong> of a system before it is built. For software, this means for instance that we can play with a model to talk through some use cases of a system without building the real thing. Sometimes such models are done only with paper. Sometimes they are programmed quickly but without all functions behind the buttons. These models are also called mock-ups.</li>
+<li>When a model has a more mathematical or formal character, we can also simulate it or analyze it thoroughly.</li>
+<li>One obvious, but often underestimated value is <strong>communication</strong> with other developers, or sometimes customers.</li>
+</ul>
+<p>Altogether, through modeling all participants in a development project can gain a better understanding of the system --- before it's built, during its constructions, and afterwards during maintenance and extensions or adaptations.</p>
+<h2>Where Does Modeling Happen?</h2>
+<p>We have seen that models come in a variety of forms. There's no specific property models needs to have to be called <em>model</em> other than being <em>a model of something</em>. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a <em>useful</em> model. The act of modeling can therefore take place in different forms:</p>
+<ul>
+<li><strong>In your head.</strong> This is kind of obvious. Engineers have a representation of the system they work in their heads. These are models, too. The only problem of these models is that they are local and hard to transfer from one developer to another.</li>
+<li><strong>At a whiteboard or on a piece of paper.</strong> When discussing, engineers often draw spontaneously to illustrate a part of a system, so that they can understand a system aspect better or communicate it to other developers.</li>
+<li><strong>In a general-purpose graphical editor.</strong> For documentation or planning, engineers create more detailed models using graphical editors. <em>General-purpose</em> means that the editor is not specific for software but for drawing diagrams in general. Text can also be part of that description.</li>
+<li><strong>In a modeling editor.</strong> In contrast to a general-purpose editor, a modeling editor knows more about the type of models you want to create. With this knowledge, it can for instance offer connections between modeling elements, or check if there are errors in the model.</li>
+</ul>
+<p>Any of these models can be valuable, and one is not inherently more valuable than another. Models are always as valuable as they contribute to clarify and increase system quality. A model is not more valuable just because it is done in a tool, its value depends on its context.</p>
+<p>With regard to this course, we focus in the first three: You will be able to improve the models you have of a system in your own head. I also want you to get much better at just taking a pen during a discussion and sketching a relevant model on a whiteboard to show to some colleagues. This is an underestimated skill. Finally, once you should produce a delivery document or plan ahead your project in greater detail, you will also be able to create some decent diagrams.</p>
+
+    </section>
+    <section class="content">
+<span name="829c00"></span><aside name="829c00"><p>The <a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML specification</a> is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It's a detailed specification for toolmakers and those who need to know all the details.</p>
+</aside>
+<h1>UML: Unified Modeling Language</h1>
+<p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job.
+This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
+
+<p>However, UML itself is not really important in this course.  This is not a UML course. It's a course about <em>designing systems</em>, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:</p>
+<ul>
+<li>Deployment Diagrams</li>
+<li>Use Case Diagrams</li>
+<li>State machine diagrams</li>
+<li>Interaction Diagrams</li>
+</ul>
+<p>For each of these diagrams, we only look at a subset of the modeling elements, and shy away from some more obscure constructs. The course is therefore not very syntax heavy. However, you will need to apply the syntax consistently. This is because we want to convey information with the diagrams. We want the diagrams to be valuable. For that reason, we need to stick to some conventions. Therefore, we are strict with the syntax that we will use.</p>
+<h2>Degrees of UML</h2>
+<p>Depending on how and when we create our models and which details they show, we can use UML in fundamentally different ways. We can roughly outline three degrees, levels or modes how UML can be used:</p>
+<ul>
+<li><strong>UML as Sketch:</strong> This means to use UML in a very informal way, maybe without paying too much attention on the detailed syntax.
+<ul>
+<li>The sketches can be done on a whiteboard during a discussion or a piece of paper.</li>
+<li>The point may only be to illustrate a certain point and then throw the diagram away again.</li>
+<li>A UML sketch of a system can also be a simple diagram in a document that highlights some aspect of a system.</li>
+<li>This kind works both forwards and backwards, this means we can either first sketch the system and then build it (forward) or first program the system and then illustrate it (backwards).</li>
+</ul>
+</li>
+<li><strong>UML as Blueprint:</strong> At this level, modeling can also happen forward or backward, but the models are much more complete and describe to a much higher degree what has been built or what needs to be built. Plans can be made based on these models, and teams can share work based on them. Often, UML as a blueprint is supported by special tools for computer-aided systems engineering (CASE).</li>
+<li><strong>UML as Programming Language:</strong> Finally, at this level UML is used like a (graphical) programming language from which the system can be implemented or executed directly. This implies that UML is used on a very detailed level. There exists an &quot;executable&quot; version of UML that has exactly this as an aim.</li>
+</ul>
+
+<p>Depending on whom you ask, you may hear very strong arguments for any of these ways of using UML. Which one is the &quot;right&quot; one depends on many factors, and may differ from project to project and development team. But independent of that, any of these levels can produce models that have some value: &quot;Just sketching&quot; doesn't mean a model is not valuable. In this course, we are going to use UML mostly as a blueprint and as a sketch.</p>
+
+<h2>Views and Diagrams</h2>
+<p>The model of a building can have different <strong>views</strong>, like showing the building from different perspectives. There can also be plans for different parts of the infrastructure, like one plan showing the electricity, one focusing on ventilation and another on fire safety.</p>
+<p>Similarly, the UML model of a system provides different views on it using various diagrams. These diagrams are like a window into the model. For instance, a physical view can show how a system is organized into nodes and distributed (deployment diagram). Another dynamic view can show how a component behaves in terms of state machines and interactions. Yet another structural view can show how the use cases in a system are organized.</p>
+<p>These different views all provide perspectives on the same model, and ideally, are consistent with each other.</p>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

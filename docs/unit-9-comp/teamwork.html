@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="../assets/anchor.js"></script>
+  <style type="text/css">
+    div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#333333">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#2B65EC"> -->
+
+
+    <div class="navbar-nav">
+      <!-- flex-row ml-md-auto d-none d-md-flex">-->
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <svg width="auto" height="25px">
+          <image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg"
+            src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%"
+            height="100%" alt="NTNU Logo"></image>
+        </svg>
+      </a>
+    </div>
+
+    <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex flex-grow-1" style="margin-left:2rem">
+
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="font-weight: bold; color:white" )>edu.<span
+              style="font-weight:200">iik.ntnu.no</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-8" style="margin-top: 6rem;">
+        <div class="page">
+    </section>
+    <section class="content">
+<h1>Components</h1>
+
+<p>So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet.
+This week we want to combine several concepts to build a more complete software component.</p>
+
+<div class="figure">
+<img src="../../pages/unit-9-comp/figures/meme.jpg" width="100%"/>
+</div>
+    </section>
+    <section class="content">
+<h1>STMPY Components + MQTT</h1>
+<p>To ensure a <strong>low degree of coupling</strong>, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.</p>
+<p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
+<p>These means alone do not ensure a low degree of coupling and a high degree of cohesion.
+A good component design depends on how we manage to group the functions we need for a system or application into the different components.
+This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>
+
+    </section>
+    <section class="content">
+<h1>State Machines as Sessions</h1>
+<p>So far, we have only looked at singe instances of state machines, because they controlled a single resource.</p>
+<ul>
+<li>The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.</li>
+<li>The bus stop had a single button and signal light, which we could take care of with a single state machine.</li>
+</ul>
+<p>In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.</p>
+<p>And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.</p>
+<p>For such cases, we keep on using a single state machine per resource it represents.
+But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a <code>session</code>.</p>
+<p>For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.</p>
+
+    </section>
+    <section class="content">
+<h1>Timer Module for a Voice Assistant</h1>
+<p>Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. This means, a user should be able to say:</p>
+<blockquote>
+<p>&quot;Hey Assistant, please start a 10-minute spaghetti timer.&quot;</p>
+</blockquote>
+<p>During this timer is active, the user can start another timer:</p>
+<blockquote>
+<p>&quot;Hey Assistant, start a 2-minute green tea timer.&quot;</p>
+</blockquote>
+<p>These timers are independent of each other. Once they expire, the assistant says:</p>
+<blockquote>
+<p>&quot;Your green tea timer is ready!&quot;</p>
+</blockquote>
+<p>And then later:</p>
+<blockquote>
+<p>&quot;Your spaghetti timer is ready!&quot;</p>
+</blockquote>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VqAPibRlTvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>The part of the system you are concerned with looks as follows:</p>
+
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS&amp;export=download&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1UjAIbZzzBUW5G_qATLOtiieN3NRl3OTS%26export%3Ddownload"></script>
+
+
+
+<ul>
+<li>
+<p>The voice command detection is responsible for listening for the activation command (&quot;Hey Assistant&quot;), and the subsequent interpretation of the command. It uses some support from the data center, which we are not concerned with here.</p>
+</li>
+<li>
+<p>The text-to-speech engine runs locally. It receives strings that are then transformed into speech.</p>
+</li>
+</ul>
+<p>You should design the timer manager in the middle. It receives commands from the voice command detection, should maintain the control over the necessary timers, and produce commands for the text-to-speech engine.</p>
+<p>From the voice command detection, you may receive the following commands:</p>
+<ul>
+<li><strong>Starting a new timer:</strong> The command is called <em>timer_start</em> and includes the <em>name</em> of the timer (string) and the <em>duration</em> already converted into seconds (as int).</li>
+<li><strong>Stopping a timer:</strong> The command is called <em>timer_stop</em> and includes the <em>name</em> of the timer (string) that should be stopped.</li>
+<li><strong>Status:</strong> The command is called <em>timer_status</em>. The user can either ask for a specific timer, then the <em>name</em> is set. If the name is not set, the device should present a list of all currently active timers.</li>
+</ul>
+<p>The text-to-speech just accepts a command that contains a sentence in English. For the timers, you will probably produce the following texts:</p>
+<ul>
+<li>&quot;Your spaghetti timer is ready!&quot;</li>
+<li>&quot;You have 30 seconds left on the spaghetti timer.&quot;</li>
+<li>&quot;You have 2 active timers, spaghetti and green tea.&quot;</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Component Template</h1>
+<p>You can use our code template for components that contains a lot of the boilerplate code that is useful for any component that connects STMPY state machines with MQTT:</p>
+<p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py" class="arrow">TimerManager.py<a></p>
+
+<div class="figure">
+<img src="../../pages/unit-9-comp/figures/component-template.svg" alt="Template for a component with an MQTT client and STMPY state machines." width="100%"/>
+<span name="../../pages/unit-9-comp/figures/component-template.svg">&nbsp;</span>
+<aside name="../../pages/unit-9-comp/figures/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p>
+</p></aside>
+</div>
+<h2>Logging</h2>
+<p>Logging is important to figure out what the system is doing, especially when something is going wrong.
+When configuring logging, we can select a log level, which determines which messages are printed. There are the following log levels:</p>
+<ul>
+<li><strong>DEBUG:</strong> Most fine-grained logging, printing everything</li>
+<li><strong>INFO:</strong>  Only the most important informational log items</li>
+<li><strong>WARN:</strong>  Show only warnings and errors.</li>
+<li><strong>ERROR:</strong> Show only error messages.</li>
+</ul>
+<p>Different parts of our component have different log levels, the code below registers the log level for the main component (with name <code>__name__</code>):</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>debug_level <span class="op">=</span> logging.DEBUG</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>logger <span class="op">=</span> logging.getLogger(<span class="va">__name__</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>logger.setLevel(debug_level)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>ch <span class="op">=</span> logging.StreamHandler()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>ch.setLevel(debug_level)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>formatter <span class="op">=</span> logging.Formatter(<span class="st">&#39;</span><span class="sc">%(asctime)s</span><span class="st"> - </span><span class="sc">%(name)-12s</span><span class="st"> - </span><span class="sc">%(levelname)-8s</span><span class="st"> - </span><span class="sc">%(message)s</span><span class="st">&#39;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ch.setFormatter(formatter)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>logger.addHandler(ch)</span></code></pre></div>
+<p>To change the log level for STMPY state machine:</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>logger <span class="op">=</span> logging.getLogger(<span class="st">&#39;stmpy&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>...</span></code></pre></div>
+<h2>Communication: MQTT Client and JSON</h2>
+<p>The component has its own MQTT client that gets configured and started with the main component.</p>
+<h3>JSON</h3>
+<p>JSON is a way to serialize data into strings. Have a look at the notebook below:</p>
+<p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/Serialization%20with%20JSON.ipynb" class="arrow">Notebook about JSON<a></p>
+
+<p>For the timer system, you can use the following JSON encodings:</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;new_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">,</span> <span class="dt">&quot;duration&quot;</span><span class="fu">:</span><span class="dv">50</span><span class="fu">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_all_timers&quot;</span><span class="fu">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;status_single_timer&quot;</span><span class="fu">,</span> <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;spaghetti&quot;</span><span class="fu">}</span></span></code></pre></div>
+<h3>Incoming Messages</h3>
+<p>Messages arrive in the components function <code>on_message()</code>. In this message, we need to determine what the incoming message is, get any data it may have as payload, and then react on it.</p>
+<p>If the payload is given as JSON-encoded string, we can get back a dictionary with the following lines:</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    payload <span class="op">=</span> json.loads(msg.payload.decode(<span class="st">&quot;utf-8&quot;</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>._logger.error(<span class="st">&#39;Message sent to topic </span><span class="sc">{}</span><span class="st"> had no valid JSON. Message ignored. </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(msg.topic, err))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>command <span class="op">=</span> payload.get(<span class="st">&#39;command&#39;</span>)</span></code></pre></div>
+<p>Since the message can be formatted wrong, we should wrap this in an exception handler. Based on the content or type of the message, we may for instance create a state machine session (see below), or send a message into a machine.</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.stm_driver.send(<span class="st">&#39;report&#39;</span>, timer_name)</span></code></pre></div>
+<h3>Publishing</h3>
+<p>Publishing works via the MQTT client, for example in the effect of a transition of the state machine.
+This works exactly like we used MQTT before, we get access to the client via the component's variable.</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.component.mqtt_client.publish(<span class="st">&#39;topic.../&#39;</span>, message)</span></code></pre></div>
+<h2>Sessions: Several Instances of State Machines</h2>
+<p>The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:</p>
+
+<div class="figure">
+<img src="../../pages/unit-9-comp/figures/timer-stm.png" width="100%"/>
+</div>
+<p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time.
+We want to do this by creating a single state machine instance for each timer.
+Each state machine can then take care of a single timer.
+These state machine instances are also called <strong>sessions</strong>.
+This may seem like an overhead for this simple scenario, since the timer is a relatively easy behavior, but this is a clean solution that also works well for much more complicated interactions.</p>
+
+<p>In our component, we can create and start a new session with the following code:</p>
+
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>timer_name <span class="op">=</span> ...</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>duration <span class="op">=</span> ...</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>timer_stm <span class="op">=</span> TimerLogic(timer_name, duration, <span class="va">self</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.stm_driver.add_machine(timer_stm)</span></code></pre></div>
+    </section>
+    <section class="content">
+<h1>Task: Create the Timer Component</h1>
+
+<h2>Step 1: Sequence Diagrams</h2>
+<p>Create <strong>two sequence diagrams</strong> for the scenario with a 10-minute timer &quot;spaghetti&quot;, and a 2-minute timer &quot;green tea&quot;.</p>
+<ul>
+<li>Create one version in which you show the MQTT messages, including <em>publish</em> and <em>subscribe</em>, including the MQTT broker as lifeline.</li>
+<li>Create another, more high-level sequence diagram, in which you don't show the MQTT broker and only show messages between the system components, as if they were sending directly to each other.</li>
+</ul>
+<h2>Step 2: Start the Command Component</h2>
+<p>Because we don't have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:</p>
+
+<div class="figure">
+<img src="../../pages/unit-9-comp/figures/command-sender.png" alt="Simple GUI to dispatch commands via MQTT." width="100%"/>
+<span name="../../pages/unit-9-comp/figures/command-sender.png">&nbsp;</span>
+<aside name="../../pages/unit-9-comp/figures/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p>
+</p></aside>
+</div>
+<p>Do the following:</p>
+<ul>
+<li>~~Start your own broker.~~</li>
+<li>Use <code>mqtt.item.ntnu.no</code> with port <code>1883</code> as broker.</li>
+<li>Download the <a href="https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py">code of the command component</a> and study it.</li>
+<li>Adjust the topics.</li>
+<li>Run the component and see commands coming in by using MQTT.fx for debugging.</li>
+</ul>
+<h2>Step 2: Implement the Components</h2>
+<ul>
+<li>
+<p>Use <a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py">the component template</a>, and add the required code in the places marked with <code>TODO</code>.</p>
+</li>
+<li>
+<p>Send Timer commands into the component using the GUI.</p>
+</li>
+<li>
+<p>See if your component works as intended and sends the required messages to the Text To Speech component.</p>
+<ul>
+<li>Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.</li>
+</ul>
+</li>
+<li>
+<p>Reflect on your progress in a document.</p>
+</li>
+<li>
+<p>Create a <strong>short and uncut demo video</strong> using two named timers, simulated via MQTT.FX and your timer manager component.</p>
+</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Checklist</h1>
+<h3>Blackboard</h3>
+<ul>
+<li>Deliver your document that shows progress and results.</li>
+</ul>
+<h3>MS Teams</h3>
+<ul>
+<li>Ask for feedback in general</li>
+<li>Report any errors with the provided solution</li>
+<li>Discuss, with me or other teams</li>
+</ul>
+<h3>Team Reflection for This Unit</h3>
+<ul>
+<li>Add another section to the team reflection document, just like every week.</li>
+</ul>
+<h3>Individual Reflection</h3>
+<ul>
+<li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
+<li>Copy the answers into a document that you maintain on your own.</li>
+<li>Add any additional observations to your reflection diary.</li>
+</ul>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../assets/anchor.js"></script>
+  <script src="../assets/script-aside.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {
+	margin: 0px
+}
+
+.rubric th {
+	text-align: center;
+	padding: 6px;
+}
+
+.rubric td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.rubric th {
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.rubric td:nth-child(2),
+.rubric th:nth-child(2) {
+	background-color: #D0E8DC;
+	width: 22%
+}
+
+.rubric td:nth-child(3),
+.rubric th:nth-child(3) {
+	background-color: #FCFDE3;
+	width: 22%
+}
+
+.rubric td:nth-child(4),
+.rubric th:nth-child(4) {
+	background-color: #F8D9C2;
+	width: 22%
+}
+
+.rubric td:nth-child(5),
+.rubric th:nth-child(5) {
+	background-color: #EBBCB9;
+	width: 22%
+}
+
+.rubric tfoot td {
+	text-align: right;
+	border-bottom: none;
+	padding: 1px;
+}
+
+.rubric tfoot a {
+	font-size: 12px;
+	font-style: italic;
+	color: gray
+}
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Deliveries</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Feedback on Specification 3</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-9" style="margin-top: 6rem;">
+        <div class="page">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
+<li class="breadcrumb-item"><a href="index.html">Deliveries</a></li>
+<li class="breadcrumb-item active" aria-current="page">Individual Reflective Essay</li>
+</ol>
+</nav>
+    </section>
+    <section class="content">
+<h1>Individual Reflective Essay</h1>
+
+<p>In the individual delivery, you need to deliver further evidence that you have reached the learning goals of the course and think independently about the course topics.
+The subject of your reflection can be anything relevant to the course and its learning goals.
+This means systems and system architectures, their description, the development process and the process during teamwork.</p>
+<p>This part is highly individual. It depends on your personal observations and reflections, and it should be unique.
+You need to provide a maximum of 3 written pages in which you reflect about selected issues that relate to the learning goals of the course.
+You can decide what to write about, and you decide if you want to address a single point or several ones.
+We recommend not to try to address more than 3 topics, because you should provide a certain depth to each of them and provide consistent arguments.</p>
+
+    </section>
+    <section class="content">
+<h1>How to Make an Argument</h1>
+<p>No matter what you choose to write about, you need to make good arguments.
+Good arguments are based on logically consistent reasoning, are based on facts and observations, are explained well and have an explicit conclusion.</p>
+<ul>
+<li>You need to collect evidence for your argument. Explain situations that happened during the semester, point to diagrams or code, or point to the learning material.</li>
+<li>Construct a claim, and explain it. Make sure the reader understands your point.</li>
+<li>Discuss your claim. Consider counter-arguments, or tradeoffs, evidence against your argument.</li>
+<li>Draw a conclusion, repeat or reinforce your main point.</li>
+</ul>
+
+<h3>Language</h3>
+<p>Of course, expressing yourself well will always be a benefit, and we encourage you to acquire excellent language skills. Also, check your delivery for typos and grammar. We will, however, ignore language issues as long as we understand what you mean.</p>
+<h3>Write Efficiently</h3>
+<p>Use repetition only carefully when it makes sense to do so, for instance to summarize or compare one point to an earlier one. Don't just repeat something because you are unsure if we got it.
+We are going through your text carefully, so there is no danger that we miss an arguments. We are looking for them.</p>
+<h3>Use Paragraphs Strategically</h3>
+<p>A paragraph should only contain one main idea or argument. Outline this argument early on in the paragraph, and use the rest of the paragraph to develop the argument, provide evidence, discuss alternatives. For longer argumentations, use several paragraphs.</p>
+
+    </section>
+    <section class="content">
+<h1>Levels</h1>
+<p>To understand what makes a good argument, we may consider the three highest levels in the <a href="https://en.wikipedia.org/wiki/Structure_of_observed_learning_outcome">SOLO taxonomy</a>. This taxonomy is used to assess learning outcomes, but it also works when looking at arguments. For a good argumentation, you should aim for the level of extended abstract.</p>
+
+<div class="figure">
+<img src="../../pages/figures/solo-arguments.png" alt="Each level comes with an illustration that tries to convey the very abstract idea behind each level." width="100%"/>
+<span name="../../pages/figures/solo-arguments.png">&nbsp;</span>
+<aside name="../../pages/figures/solo-arguments.png"><p><p>Each level comes with an illustration that tries to convey the very abstract idea behind each level.</p>
+</p></aside>
+</div>
+<ul>
+<li>
+<p><strong>Multi-structural:</strong> You present multiple pieces of information, but they are not linked.</p>
+</li>
+<li>
+<p><strong>Relational:</strong> You present multiple pieces of information, and also provide links between them.</p>
+</li>
+<li>
+<p><strong>Extended Abstract:</strong> You present a reasonable multiple pieces of information, and also provide links between them, and extend your discussion beyond what was said in the course.</p>
+</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Look at your Sentences</h1>
+<p>You can also consider each of your sentences to get an indication of the quality of your argument. For some, it may be too restrictive when doing this before writing. So you may also do this after you have written a couple of sentences, to plan how to proceed.</p>
+<p>The following type of sentences are examples for providing some information. Such sentences are useful to provide evidence and to lay the ground for further argumentation. Just make sure that you only include such sentences to support your argumentation, and not just fill up the page.</p>
+<ul>
+<li>Rephrasing some of the content of the curriculum.</li>
+<li>Explaining some parts of your specification.</li>
+<li>Provide background information.</li>
+</ul>
+
+<p>The following sentences are often examples for building relations between information. Such sentences are useful in the course of a discussion, to build up an argument.</p>
+<ul>
+<li>Comparing alternatives.</li>
+<li>Discussing benefits and drawbacks.</li>
+</ul>
+
+<p>Now, make a statement with an idea that provides a more abstract view on your knowledge or extends it beyond what was already covered in the course. Examples for that are sentences like the following:</p>
+<ul>
+<li>Analyzing causes for something.</li>
+<li>Generalize from a specific situation to more general one.</li>
+<li>Reasoning, drawing logic conclusions, developping an argument.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Examples for Topics</h1>
+<p>You should select the topic or topics to write about for yourself. You may also try to work on several topics, and then select the ones where you were most successful with the argumentation. There is no requirement that you cover <em>all</em> aspects, learning goals, or topics addressed in the course.</p>
+<p>Ideally, chose a topic that you care about, or where you gained the most insights, as this will probably improve your argumentation. For this reason, it's probably not a good idea that we show you a list with possible topics, as this may limit your creativity and maybe keep you from writing about a more unique topic.
+But we know that you will ask, so here is a list of examples and ideas anyway:</p>
+<ul>
+<li>About the system design and architecture choices.</li>
+<li>Quality of the state machine, correspondence between state machine and sequence diagram, or correspondence between state machine and implementation.</li>
+<li>An overall look on the correspondence of the requirements, possibly improved ones, with the realized system.</li>
+<li>Observations and insights into the development process.</li>
+<li>The quality of your delivery, maybe a critique of it.</li>
+<li>Your learning process, in relation to specific course concepts.</li>
+<li>...any item of your choice, as long as they are connected to the learning goals of the course.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Grading</h1>
+<p>The individual delivery is part of your portfolio, and it will weigh around 30 % for the final grade. For the performance level, we will apply <a href="learning-grading.html#overall-generic-criteria">NTNU's general grading criteria</a>. Notice the significance of <em>independent thinking</em> in the performance levels.</p>
+
+    </section>
+    <section class="content">
+<h1>Final Hints</h1>
+<ul>
+<li>Be individual and unique. We not only recommend to work on your own, but also to not discuss your delivery with others.</li>
+<li><strong>The maximum length is 3 pages.</strong> You can add an appendix (within the same PDF file) that consists of screenshots of material that you can annotate. For instance, you can include a screenshot of a diagram and point out an issue that you refer to in your report.</li>
+<li>Deliveries I1 and I2 can help you towards I3. Apart from providing feedback to the other teams, they should also have started a reflection process on your own work and learning process. You can therefore take up points you made in I1 and I2 and develop them.</li>
+<li>You can take <strong>all teaching material</strong>, including all presentations, articles and the guest lectures as input. You can, of course, also gather information outside of the provided learning material if you see need and fit.</li>
+<li>Revisit the learning goals of the course. They can be a valuable guide.</li>
+<li>Of course, all material must be written by yourself. Copying from others or letting others copy from you is not allowed. All reflections must be based on your experiences in the course.</li>
+<li>Delivery I3 is not meant as a feedback on the course. For this, please use any of the other channels for course feedback. The focus is your own learning, and reflection about it. Of course, if you develop a point that naturally includes some feedback about the course you may do so.</li>
+<li>The recommended language for I3 is <strong>English</strong>. You can, however, also deliver in Norwegian, if you prefer.</li>
+</ul>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

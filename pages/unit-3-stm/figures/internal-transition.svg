@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="141.73229 5096.443 286.29922 65.69685" width="286.29922" height="65.69685">
+  <defs>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0098ff">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="7" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-31 08:44:06 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11577"/>
+      <g id="Graphic_11566">
+        <path d="M 252.61418 5096.693 L 314.48032 5096.693 C 317.79403 5096.693 320.48032 5099.3793 320.48032 5102.693 L 320.48032 5155.89 C 320.48032 5159.2036 317.79403 5161.89 314.48032 5161.89 L 252.61418 5161.89 C 249.30047 5161.89 246.61418 5159.2036 246.61418 5155.89 L 246.61418 5102.693 C 246.61418 5099.3793 249.30047 5096.693 252.61418 5096.693 Z" fill="white"/>
+        <path d="M 252.61418 5096.693 L 314.48032 5096.693 C 317.79403 5096.693 320.48032 5099.3793 320.48032 5102.693 L 320.48032 5155.89 C 320.48032 5159.2036 317.79403 5161.89 314.48032 5161.89 L 252.61418 5161.89 C 249.30047 5161.89 246.61418 5159.2036 246.61418 5155.89 L 246.61418 5102.693 C 246.61418 5099.3793 249.30047 5096.693 252.61418 5096.693 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(248.61418 5098.693)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="29.37155" y="10">s1</tspan>
+        </text>
+      </g>
+      <g id="Line_11567">
+        <line x1="246.77953" y1="5113.701" x2="320.48032" y2="5113.701" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11568">
+        <clipPath id="clip_path">
+          <rect x="0" y="0" width="65.33071" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path)" transform="translate(257.28347 5117.205)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / a_1()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11573">
+        <clipPath id="clip_path_2">
+          <rect x="0" y="0" width="65.19685" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_2)" transform="translate(257.28347 5145.5513)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">exit / a_3()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11578">
+        <clipPath id="clip_path_3">
+          <rect x="0" y="0" width="68.165354" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_3)" transform="translate(257.28347 5131.378)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">A / a_2()</tspan>
+        </text>
+      </g>
+      <g id="Line_11579">
+        <path d="M 206.92914 5136.378 C 206.92914 5136.378 239.75852 5136.58 252.75428 5136.4947" marker-end="url(#StickArrow_Marker)" stroke="#0098ff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11580">
+        <clipPath id="clip_path_4">
+          <rect x="0" y="0" width="64" height="10.496063"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_4)" transform="translate(150.76379 5131.859)" fill="#0098ff">
+          <tspan font-family="Helvetica Neue" font-size="7" font-weight="400" fill="#0098ff" x=".036" y="7">internal transition</tspan>
+        </text>
+      </g>
+      <g id="Line_11581">
+        <path d="M 342.99214 5136.378 C 342.99214 5136.378 316.50467 5127.885 305.3369 5124.045" marker-end="url(#StickArrow_Marker)" stroke="#0098ff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11582">
+        <clipPath id="clip_path_5">
+          <rect x="0" y="0" width="64" height="17.007874"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_5)" transform="translate(345.1575 5128.182)" fill="#0097ff">
+          <tspan font-family="Helvetica Neue" font-size="7" font-weight="400" fill="#0097ff" x="0" y="7">entry and exit</tspan>
+          <tspan font-family="Helvetica Neue" font-size="7" font-weight="400" fill="#0097ff" x="0" y="15.196">actions</tspan>
+        </text>
+      </g>
+      <g id="Line_11583">
+        <path d="M 342.99214 5136.378 C 342.99214 5136.378 314.39354 5145.369 302.61123 5149.031" marker-end="url(#StickArrow_Marker)" stroke="#0098ff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../assets/anchor.js"></script>
+  <script src="../assets/script-aside.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {
+	margin: 0px
+}
+
+.rubric th {
+	text-align: center;
+	padding: 6px;
+}
+
+.rubric td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.rubric th {
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.rubric td:nth-child(2),
+.rubric th:nth-child(2) {
+	background-color: #D0E8DC;
+	width: 22%
+}
+
+.rubric td:nth-child(3),
+.rubric th:nth-child(3) {
+	background-color: #FCFDE3;
+	width: 22%
+}
+
+.rubric td:nth-child(4),
+.rubric th:nth-child(4) {
+	background-color: #F8D9C2;
+	width: 22%
+}
+
+.rubric td:nth-child(5),
+.rubric th:nth-child(5) {
+	background-color: #EBBCB9;
+	width: 22%
+}
+
+.rubric tfoot td {
+	text-align: right;
+	border-bottom: none;
+	padding: 1px;
+}
+
+.rubric tfoot a {
+	font-size: 12px;
+	font-style: italic;
+	color: gray
+}
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Deliveries</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Feedback on Specification 3</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-9" style="margin-top: 6rem;">
+        <div class="page">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
+<li class="breadcrumb-item"><a href="index.html">Deliveries</a></li>
+<li class="breadcrumb-item active" aria-current="page">Feedback on Version 1</li>
+</ol>
+</nav>
+    </section>
+    <section class="content">
+<h1>Feedback on Version 1</h1>
+<ul>
+<li>This is an individual delivery, each student has to deliver their own solution.</li>
+<li>Focus is on reflection and providing feedback on the system specification of another team.</li>
+</ul>
+
+<p>In the announcement for the delivery you find a table that assigns a team to you. This is the team you should provide feedback to.</p>
+<ul>
+<li>Your other team members get assigned a different team than you.</li>
+<li>You will get the same team assigned also after delivery 2</li>
+</ul>
+
+<p>Find the delivery of the team (the PDF file) and the feedback document (DOCX) and download them.</p>
+<ul>
+<li>Read through their delivery</li>
+<li>Use their feedback document and fill it out</li>
+<li>Address all relevant issues you find.</li>
+<li>Pay extra attention on the team's request for comments and feedback.</li>
+<li>See if you agree or disagree with their own evaluation.</li>
+<li>Try to be as direct as possible.</li>
+<li>Be constructive and try to suggest improvements. Focus on that the feedback is useful to the team. It should improve their next delivery.</li>
+<li>You can weave your feedback into the team's own reflection, in Word format.</li>
+<li>It's okay to include screenshots (maybe partial ones) that you annotate if that makes things easier. (Then you may need more space than indicated above.)</li>
+<li>The feedback you give is not anonymous. This is on purpose, so a team might ask you for clarifications (though this is probably not necessary).</li>
+</ul>
+
+<h2>Individual Reflection</h2>
+<p>This is a preparation for your individual delivery I3 at the end of the semester. You will probably end up with ca. 1 page of content. You can address everything about the system, the process, the team, the learning goals, your own learning, insights, ... that affects this course.</p>
+<p>You don't have to deliver this document. Keep it for your own record. It will help your for the final individual delivery, the essay.</p>
+
+<ul>
+<li>The reflection may be about yourself, your team, the other team you got assigned. (Most likely a combination.)</li>
+<li>You can use a comparison between your team and the other team as a source of starting points to think.</li>
+<li>You may share your feedback and observations with your team so that you can improve your process or system.</li>
+</ul>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

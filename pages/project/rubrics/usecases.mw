@@ -1,0 +1,32 @@
+{|
+!
+! Excellent
+! Good
+! Sufficient
+! Not rateable
+|-
+| Exceptions and Alternatives
+| Consistent handling of relevant exceptions and alternatives.
+| Most relevant exceptions and alterntives described.
+| Some inconsistencies.
+|
+|-
+| Alignment
+| Consistent with user requirements, vision and system.
+| Good alignment to the user requirements.
+| Minor inconsistencies.
+| Missing alignment.
+|-
+| Descriptions
+| Concise descriptions.
+| Use cases have good, descriptive names.
+|
+| Major language errors and typos.
+|-
+| Value
+| The use cases provide excellent value for the development by addressing relevant issues in a compact form.
+| The described use cases form a cohesive, focused whole that are a good basis for planning the upcoming development of the system.
+| Some value for further development, but inconsistent.
+|
+|}
+

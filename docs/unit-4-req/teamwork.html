@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="../assets/anchor.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#333333">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#2B65EC"> -->
+
+
+    <div class="navbar-nav">
+      <!-- flex-row ml-md-auto d-none d-md-flex">-->
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <svg width="auto" height="25px">
+          <image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg"
+            src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%"
+            height="100%" alt="NTNU Logo"></image>
+        </svg>
+      </a>
+    </div>
+
+    <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex flex-grow-1" style="margin-left:2rem">
+
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="font-weight: bold; color:white" )>edu.<span
+              style="font-weight:200">iik.ntnu.no</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-8" style="margin-top: 6rem;">
+        <div class="page">
+    </section>
+    <section class="content">
+<h1>User Requirements</h1>
+<p>This week we are getting started with the semester project by working on the user requirements and outlining some use cases.</p>
+<p>It is probably a weak point in the course that you not only specify and implement the system, but are also responsible to come up with the requirements for the system.
+There is no real customer that you can interview, and that can tell you in the end if your system satisfies their requirements or not.
+(We could fill an entire course with just the user requirements.)
+We need to keep that in mind.
+The goal is hence to come up with a sensible set of good use cases that we take as input for the subsequent specification and implementation process.</p>
+<p>We guide the design of these use cases using a partial Vision-and-Scope document.</p>
+
+    </section>
+    <section class="content">
+<h1>Discuss the Semester Project</h1>
+<p>We provided you with a <a href="deliveries-project.html">partial and vague outline of the semester project</a>.
+It is vague because it should allow you to adjust the system idea with your own ideas and plans.
+Defining the detailed requirements is part of the task.</p>
+<p>Have a short round where each of you explains their understanding of the system, and make a list of good ideas. For example:</p>
+<ul>
+<li>Do you want the system to focus on a specific domain?</li>
+<li>Are there some functions you want to focus on?</li>
+<li>Are there some specific ideas you want to try?</li>
+</ul>
+<p>This is an open-ended task, so make sure to conclude the discussion after some maximum time. (Like 20 minutes maximum.)</p>
+
+    </section>
+    <section class="content">
+<h1>Partial Vision and Scope Document</h1>
+<p>Based on your idea, create a preliminary Vision and Scope Document.
+The entire document should be short and concise, probably only about two to three pages.
+Capture the following sections:</p>
+<ul>
+<li><strong>Background:</strong> A better name for this section is probably <strong>&quot;The Problem&quot;</strong>, because it needs to introduce why the system is actually needed.
+It provides information about the context of the system to make the vision more understandable and motivate it.
+<ul>
+<li>It is important that this part focuses on the context of the system, the environment, the problem and <strong>not</strong> the system itself.</li>
+<li>Simply said, which problem does the system  solve for someone?</li>
+<li>See also Compendium, Vision and Scope Document, p.576, 1.1</li>
+</ul>
+</li>
+<li><strong>Vision Statement:</strong> This is the most important item.
+Formulate a vision for your system that will guide your development, and explain the system also to others.
+<ul>
+<li>This may be hard to write down in a first attempt. Make some sketches, and be satisfied with an initial version.</li>
+<li>See Compendium, Vision and Scope Document, p.577, 1.5</li>
+</ul>
+</li>
+<li><strong>Objectives:</strong> Try to formulate specific goals that the system should achieve, and that are somehow measurable.
+This should guide the technical development, and contribute to achieve the vision.
+<ul>
+<li>See Compendium, Vision and Scope Document, p.576, 1.3</li>
+</ul>
+</li>
+<li><strong>Stakeholders:</strong> Describe briefly the stakeholders that are important for the system. What is important to them?
+<ul>
+<li>See Compendium, Vision and Scope Document, p.579, 3.1</li>
+</ul>
+</li>
+<li><strong>Risks:</strong> Describe briefly the main risks relevant for the system. Which are they, how can they be handled or reduced?
+<ul>
+<li>See Compendium, Vision and Scope Document, p.577, 1.6</li>
+</ul>
+</li>
+</ul>
+
+<p>This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session.
+You will most likely have question about this document. <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMFg3OFQzWTdBQ0RTWUUxNUpNMzhFSVVCUi4u">Submit them in this form</a>. We will collect these questions, group similar ones and then answer them.</p>
+<p>Based on the coarse idea of the system you will describe a set of use cases in the following.</p>
+
+<div class="delivery"><p>You don't need to deliver this document this week, as it will be part of the delivery for the semester project. Create a folder in your own Team channel where you store all semester project related documents. You can also create a private team for that, where only you can access the documents.</p>
+</div>
+    </section>
+    <section class="content">
+<h1>What are Good Use Cases?</h1>
+<p>You have now already learned a lot about use cases and seen some examples, and know which goal we have when designing use cases. So what are the characteristics of <strong>good</strong> use cases?</p>
+<h3>Step 1: Individual Work</h3>
+<p>As always, have an individual round first:</p>
+<ul>
+<li>Use 3 to 5 minutes of silence where each of you thinks about what are characteristics of a good use case.
+<ul>
+<li>Each one should come up with about 3 to 5 such suggestions.</li>
+<li>Each one prepares a ranked list, with the most important quality of a use case at the top.</li>
+<li>Try to be compact, either a word or a short phrase for each characteristic.</li>
+</ul>
+</li>
+</ul>
+<h3>Step 2: Teamwork</h3>
+<p>Now combine your work together:</p>
+<ul>
+<li>Take rounds where each of you takes their top choice, and compile a complete list of attributes.
+<ul>
+<li>Take rounds until you have listed all characteristics.</li>
+<li>Eliminate or rephrase similar characteristics as you go, to remove making the same point several times.</li>
+</ul>
+</li>
+<li>Discuss and select the <strong>three most important</strong> characteristics.
+<ul>
+<li>Mark the them with a star, or highlight them in yellow.</li>
+</ul>
+</li>
+</ul>
+
+<div class="delivery"><p>Deliver your solution in the Teams folder for this unit. Use filename <code>ttm4115-use-case-qualities-Team-XX.docx</code></p>
+</div>
+    </section>
+    <section class="content">
+<h1>Use Case Levels</h1>
+<p>Recall the different levels of use cases from the preparation, where we assigned use cases to different levels on a horizon:</p>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg&amp;export=download&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg%26export%3Ddownload"></script>
+<p>In the document above, you see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level.
+In case you have troubles with the document, here is a list of all the use cases it lists:</p>
+<ul>
+<li>Log into system</li>
+<li>Hit tab key</li>
+<li>Register a new customer</li>
+<li>Get paid for a car accident</li>
+<li>Buy a book</li>
+<li>Provide students loans.</li>
+</ul>
+<p>As you can see, these use cases do not relate to the same system. Use some fantasy to think about the systems around them, most should be obvious.
+Your task is to assign these use cases to the level where they fit best. The exercise has the main intention to make you familiar with the use case levels, before we apply this kind of thinking on your semester project.</p>
+
+<ul>
+<li>Make a <strong>copy</strong> of the diagram. <a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">Here is the direct link to it.</a></li>
+<li>Move the use cases up and down, and discuss them.
+<ul>
+<li>Argue why they should be on a certain level.</li>
+<li>Compare the use cases with each other, and see if the level also fits relative to each other.</li>
+</ul>
+</li>
+<li>Once you are happy with the level of all use cases, <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMk1CS1gxMDhIVEtZS1pFMEJGSkRTWjBVNC4u">fill out the quiz (once per team.)</a></li>
+<li>See if you agree with the answers.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Use Cases for Your Project</h1>
+<p>Turn your attention now to your semester project.</p>
+<p>For your project delivery, you should focus on <strong>three</strong> use cases <strong>at the sea-level</strong>. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail, but may be valuable when implementing the system.</p>
+<ul>
+<li>Make a copy of the <a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">use case level document</a>, and start filling it with some use cases for your system.</li>
+<li>Be critical so that you capture the most important three use cases at the sea-level of your system.
+<ul>
+<li>Look at higher-level ones, how they can be decomposed into sea-level use cases.</li>
+<li>Look at lower-level ones to see if they can be aggregates into sea-level ones.</li>
+<li>Ignore clam-level use cases.</li>
+</ul>
+</li>
+<li>In case you struggle to condense your plans into a single such overview, consider to create one or two alternatives.</li>
+<li>Also, &quot;three use cases at the sea-level&quot; is just meant as a guide.</li>
+</ul>
+<p>As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems that were popular when students could choose their own systems. The focus is at the sea-level, where I added two use cases (a third one is yet unspecified). I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases.</p>
+
+<div class="figure">
+<img src="../../pages/unit-4-req/figures/toilet-paper.png" alt="Example use cases on their respective levels for a toilet paper management system." width="100%"/>
+<span name="../../pages/unit-4-req/figures/toilet-paper.png">&nbsp;</span>
+<aside name="../../pages/unit-4-req/figures/toilet-paper.png"><p><p>Example use cases on their respective levels for a toilet paper management system.</p>
+</p></aside>
+</div>
+<div class="delivery"><p>Of course, store the use case level document for your work on the semester project. <strong>Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)</strong></p>
+</div>
+    </section>
+    <section class="content">
+<h1>Team Reflection for This Unit</h1>
+<ul>
+<li>Add another section to the team reflection document, just like last week.</li>
+<li>How did the roles work today?</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Individual Reflection</h1>
+<ul>
+<li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
+<li>Copy the answers into a document that you maintain on your own.</li>
+<li>Add any additional observations to your reflection diary.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Questions and Answers</h1>
+
+<h3>Risks</h3>
+<p>The Vision-and-Scope document lists <em>business</em> risks, which may be difficult for us to come up with. (These would be related to the operation and for instance financial aspects of the system.) Instead, think about the risks that can affect your specific situation of being able to delivering a the semester project with high quality.</p>
+<p><strong>For the risks, are you looking for the risks for planning the system, for the production of the system or our teams risks?</strong></p>
+<ul>
+<li>All of the above. Whatever can affect the development of the system.</li>
+</ul>
+<p><strong>How many risks should be included? There are plenty of different risks, both regarding development and once in production.</strong></p>
+<ul>
+<li>Focus on the most important ones that affect your development the most.</li>
+</ul>
+
+<h3>Objectives</h3>
+<p><strong>How business-oriented should the objectives be?</strong></p>
+<ul>
+<li>The should concern the domain of the users and related to what they can get out of the system, so they are oriented towards their &quot;business&quot;. (For some systems the term &quot;business&quot; is not a good one.)</li>
+</ul>
+
+<p><strong>Regarding business objectives: are we supposed to have numbers and percentages in our goals, or do we use more of a qualitative approach?</strong></p>
+<ul>
+<li>The objectives should be specific. In some cases, we can measure some metrics and then state some expected improvements. In other cases, it is more natural to describe qualitative improvements.</li>
+</ul>
+
+<p><strong>How specific should the objectives be? Should we just use our imagination, or find some possible source?</strong></p>
+<ul>
+<li>See the answer above. Making the objectives specific will help you to design functionality that implement the objectives. Therefore it may also be a good idea to target specific domains, so that the objectives can be more specific.</li>
+</ul>
+
+<p><strong>We have a question about the field objectives. Can we make assumptions on how the workplace is today, if we want to come up with some measurable values for improvement?</strong></p>
+<p>Similar question:</p>
+<p><strong>How big assumptions can we make? Concerning background: can we assume there are problems with the prior system and that we have solutions for this?</strong></p>
+<p>And yet another similar one:</p>
+<p><strong>Do we need to consider already existing solutions? Compare whether our solution is better?</strong></p>
+<ul>
+<li>Make assumptions that the users have another way of communicating and that this system is intended to make their communication better.</li>
+</ul>
+
+<h3>Stakeholders</h3>
+<p><strong>Are developers stakeholders?</strong></p>
+<ul>
+<li>No, developers are not stakeholders. Stakeholders are owners of the systems, the ones operating it, the different user groups and so on.</li>
+</ul>
+
+<h3>Scope and Functions</h3>
+<p><strong>Is encryption/security something we should think about in this project?</strong></p>
+<ul>
+<li>For the system, security is of course a main issue. We need for instance to protect the confidentiality of the messages, maintain availability and protect the system from other misuse.
+Implementing the security correctly is a challenging task, and goes easily beyond what you can manage during this semester. For this reason, you can decide if you want to take security issues into account at all.</li>
+</ul>
+
+<p><strong>How much do we have to realize in reality? What should we implement?</strong></p>
+<ul>
+<li>You must implement a selected subset of the functions of the system, preferably so that you can make a good and interesting demo. Some features are more interesting for the coordination and interactions in the system, while others (like for instance a database with user names) may be less interesting and can be provided by a simulated component (like a hardcoded lookup table used instead of a data base.)</li>
+</ul>
+
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

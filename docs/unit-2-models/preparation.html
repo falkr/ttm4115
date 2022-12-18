@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="../assets/anchor.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {margin: 0px}
+.rubric th {border-top: 1.4px black solid; border-bottom: 1.4px black solid; text-align: center; padding:6px;}
+.rubric td {border-bottom: 0.7px black solid; vertical-align:top; font-size:12px; padding:6px;}
+.rubric th {font-size:12px; vertical-align:top; }
+.rubric td:nth-child(2), .rubric th:nth-child(2){background-color: #D0E8DC; width:22%}
+.rubric td:nth-child(3), .rubric th:nth-child(3){background-color: #FCFDE3; width:22%}
+.rubric td:nth-child(4), .rubric th:nth-child(4){background-color: #F8D9C2; width:22%}
+.rubric td:nth-child(5), .rubric th:nth-child(5){background-color: #EBBCB9; width:22%}
+.rubric tfoot td {text-align:right; border-bottom: none; padding: 1px;}
+.rubric tfoot a {font-size: 12px; font-style: italic; color: gray}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#333333">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark " style="background-color:#2B65EC"> -->
+
+
+    <div class="navbar-nav">
+      <!-- flex-row ml-md-auto d-none d-md-flex">-->
+      <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+        <svg width="auto" height="25px">
+          <image xlink:href="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.svg"
+            src="https://innsida.ntnu.no/innsida-theme/images/ntnu-graphics/ntnu_logo_white.png" width="100%"
+            height="100%" alt="NTNU Logo"></image>
+        </svg>
+      </a>
+    </div>
+
+    <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex flex-grow-1" style="margin-left:2rem">
+
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="font-weight: bold; color:white" )>edu.<span
+              style="font-weight:200">iik.ntnu.no</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-8" style="margin-top: 6rem;">
+        <div class="page">
+    <section class="content">
+<h2>The Problem</h2>
+<blockquote>
+<p>You are an engineer and should build a new system, an information and communication system for a new airport. You start coding on your laptop, and you manage to create the system all by yourself, in one long session. You think for yourself that Python is a really powerful programming language, and that this programming course really payed off. The next day, a bit tired, you send the code to the airport people and they happily accept your system. Some days after, they send you the money.</p>
+</blockquote>
+<p>Doesn't this sound like a nice story? Unfortunately, it's bullshit. --- <em>Why?</em></p>
+<ul>
+<li>Systems are rarely created by a single person. Most systems are the effort of a team of developers, or rather <em>several</em> teams of developers, changing over time.</li>
+<li>Most systems are not just built once, but maintained, extended and adapted over many years.</li>
+</ul>
+<p>In this process, the code of the system, that is, the machine instructions needed to run it, are only one part of the descriptions and specifications that are created throughout the entire lifecycle of a system. With <em>lifecycle</em> we mean from the beginning of its conception, the idea, its creation and the following maintenance. During these phases, engineers create many documents that describe different aspects of it. Some descriptions have the purpose to make new programmers understand what has already been built and how the different parts of the system work together. Other descriptions are suitable to simulate the system, so we can check it for important properties like safety, security or performance. Yet again other descriptions are only created temporarily, before making a technical decision.</p>
+
+<h2>Modeling</h2>
+<p>Creating descriptions of something means to create a <em>model</em>, and the activity is called <em>modeling</em>. In this course, we learn how to apply modeling to systems, so that we can create high-quality systems.</p>
+
+<h2>Models are Everywhere</h2>
+<p>Modeling means to represent something so we can find out more about it, play with it and work on it. Many tasks of engineers are related to models. In some disciplines this is more obvious than others. For example:</p>
+<ul>
+<li>A plan (or model) of a plane.</li>
+<li>A plan (or model) of a building.</li>
+<li>A plan (or model) of a software system.</li>
+</ul>
+<p>Models allow to do a crash test on a car using a computer simulation, to check how fire and smoke propagate through a building, and they allow to study how a building looks before it is even built. If we were doing engineering without models, we would only be able to work with the real thing. As you can imagine, this is often impossible, prohibitively expensive or unethical. But models are also useful in less dramatic and obvious cases. We are so used to working on models that we often don't think about it.</p>
+<p>Let's have a closer look what models are and which properties they can have:</p>
+<ul>
+<li>Models can be <strong>physical</strong>, like a wooden model of a car, or <strong>digital</strong>, like a digital plan of a building. A diagram on a piece of paper or whiteboard is somewhere between these two.</li>
+<li>Models can be <strong>textual</strong> descriptions, like a step-by-step description of a business process, or expressed <strong>graphically</strong>, like a flowchart.</li>
+<li>Models can be expressed by <strong>mathematical formulas</strong>, like Newton's law of gravity that is a model for how masses attract each other.</li>
+</ul>
+<p>This list is not intended to be complete, but should just illustrate the wide variety of models there are. Depending on what we want to find out, we can use different models. The same concept can have several models at the same time, each showing different aspects of it.</p>
+<p>Depending on what we want to find out, a model may also cover some aspects very well, while being less precise on others.</p>
+<ul>
+<li>Newton's law of gravity, for instance, is a good model to describe the movement of the planets, but it is ultimately not as precise as Einstein's relativity theory, which is another model that involves gravity.</li>
+<li>A crash test model for a car is suitable to understand how the car behaves in an accident, but is useless when we want to decide which colors we should chose for the dashboard buttons.</li>
+</ul>
+
+<h2>Models of Software</h2>
+<p>Of course, like we can have models of planes and buildings, we can also have models of a system that mainly consists of software. But there's one thing that is special with software: Software is made up of digital artifacts, and therefore virtual in nature. (<em>Virtual</em> means you can't touch it.) While it is easy to distinguish the <em>model</em> of a house from the house itself, it is harder to distinguish the <em>model</em> of a piece of software from the software itself. One could also argue that code itself is a model, since it describes a way of executing an algorithm.
+This is why we sometimes confuse software models and programs. In some cases, the lines are even more blurry when we generate code from models automatically, or take the model and interpret it by a machine that then effectively executes it. But more on that later.</p>
+<h2>Why Modeling Software?</h2>
+<p>Let's think one again, why we use models in general, and why models make sense also for software:</p>
+<ul>
+<li>We use models for <strong>planning ahead</strong> and estimate how long the construction of something will take. With software, we also need to plan ahead and plan who is doing what and when. Is it useful to have models for that? Of course!</li>
+<li><strong>Study properties and behavior</strong> of a system before it is built. For software, this means for instance that we can play with a model to talk through some use cases of a system without building the real thing. Sometimes such models are done only with paper. Sometimes they are programmed quickly but without all functions behind the buttons. These models are also called mock-ups.</li>
+<li>When a model has a more mathematical or formal character, we can also simulate it or analyze it thoroughly.</li>
+<li>One obvious, but often underestimated value is <strong>communication</strong> with other developers, or sometimes customers.</li>
+</ul>
+<p>Altogether, through modeling all participants in a development project can gain a better understanding of the system --- before it's built, during its constructions, and afterwards during maintenance and extensions or adaptations.</p>
+<h2>Where Does Modeling Happen?</h2>
+<p>We have seen that models come in a variety of forms. There's no specific property models needs to have to be called <em>model</em> other than being <em>a model of something</em>. If it represents something, it's a model. If we can use it to find out more about what we are working on, it's a <em>useful</em> model. The act of modeling can therefore take place in different forms:</p>
+<ul>
+<li><strong>In your head.</strong> This is kind of obvious. Engineers have a representation of the system they work in their heads. These are models, too. The only problem of these models is that they are local and hard to transfer from one developer to another.</li>
+<li><strong>At a whiteboard or on a piece of paper.</strong> When discussing, engineers often draw spontaneously to illustrate a part of a system, so that they can understand a system aspect better or communicate it to other developers.</li>
+<li><strong>In a general-purpose graphical editor.</strong> For documentation or planning, engineers create more detailed models using graphical editors. <em>General-purpose</em> means that the editor is not specific for software but for drawing diagrams in general. Text can also be part of that description.</li>
+<li><strong>In a modeling editor.</strong> In contrast to a general-purpose editor, a modeling editor knows more about the type of models you want to create. With this knowledge, it can for instance offer connections between modeling elements, or check if there are errors in the model.</li>
+</ul>
+<p>Any of these models can be valuable, and one is not inherently more valuable than another. Models are always as valuable as they contribute to clarify and increase system quality. A model is not more valuable just because it is done in a tool, its value depends on its context.</p>
+<p>With regard to this course, we focus in the first three: You will be able to improve the models you have of a system in your own head. I also want you to get much better at just taking a pen during a discussion and sketching a relevant model on a whiteboard to show to some colleagues. This is an underestimated skill. Finally, once you should produce a delivery document or plan ahead your project in greater detail, you will also be able to create some decent diagrams.</p>
+
+    </section>
+    <section class="content">
+<span name="829c00"></span><aside name="829c00"><p>The <a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML specification</a> is currently in version 2.5.1, and has 751 pages. If you are curious, you can have a look at the document, but it is not a good source to learn the language or anything about modeling. It's a detailed specification for toolmakers and those who need to know all the details.</p>
+</aside>
+<h1>UML --- Unified Modeling Language</h1>
+<p>There are lots of languages, notations or standards for modeling software. In this course, we will use the Unified Modeling Language (UML) as a basis. Some of you have already heard about UML, and among all modeling languages it is probably the one you will come most likely into contact with later in your job.
+This is because UML is not a single language, but a selection of notations that have each been around for a while. Sequence diagrams or state machines, for instance, have existed for a long time before UML. UML tries to unify them.</p>
+
+<p>However, UML itself is not really important in this course.  This is not a UML course. It's a course about <em>designing systems</em>, and we happen to use UML notation. UML has several hundred different modeling elements and eleven different graphical notations. We will look only at the following:</p>
+<ul>
+<li>Deployment Diagrams</li>
+<li>Use Case Diagrams</li>
+<li>State machine diagrams</li>
+<li>Interaction Diagrams</li>
+</ul>
+<p>For each of these diagrams, we only look at a subset of the modeling elements, and shy away from some more obscure constructs. The course is therefore not very syntax heavy. However, you will need to apply the syntax consistently. This is because we want to convey information with the diagrams. We want the diagrams to be valuable. For that reason, we need to stick to some conventions. Therefore, we are strict with the syntax that we will use.</p>
+<h2>Degrees of UML</h2>
+<p>Depending on how and when we create our models and which details they show, we can use UML in fundamentally different ways. We can roughly outline three degrees, levels or modes how UML can be used:</p>
+<ul>
+<li><strong>UML as Sketch:</strong> This means to use UML in a very informal way, maybe without paying too much attention on the detailed syntax.
+<ul>
+<li>The sketches can be done on a whiteboard during a discussion or a piece of paper.</li>
+<li>The point may only be to illustrate a certain point and then throw the diagram away again.</li>
+<li>A UML sketch of a system can also be a simple diagram in a document that highlights some aspect of a system.</li>
+<li>This kind works both forwards and backwards, this means we can either first sketch the system and then build it (forward) or first program the system and then illustrate it (backwards).</li>
+</ul>
+</li>
+<li><strong>UML as Blueprint:</strong> At this level, modeling can also happen forward or backward, but the models are much more complete and describe to a much higher degree what has been built or what needs to be built. Plans can be made based on these models, and teams can share work based on them. Often, UML as a blueprint is supported by special tools for computer-aided systems engineering (CASE).</li>
+<li><strong>UML as Programming Language:</strong> Finally, at this level UML is used like a (graphical) programming language from which the system can be implemented or executed directly. This implies that UML is used on a very detailed level. There exists an &quot;executable&quot; version of UML that has exactly this as an aim.</li>
+</ul>
+
+<p>Depending on whom you ask, you may hear very strong arguments for any of these ways of using UML. Which one is the &quot;right&quot; one depends on many factors, and may differ from project to project and development team. But independent of that, any of these levels can produce models that have some value: &quot;Just sketching&quot; doesn't mean a model is not valuable. In this course, we are going to use UML mostly as a blueprint and as a sketch.</p>
+
+<h2>Views and Diagrams</h2>
+<p>The model of a building can have different <strong>views</strong>, like showing the building from different perspectives. There can also be plans for different parts of the infrastructure, like one plan showing the electricity, one focusing on ventilation and another on fire safety.</p>
+<p>Similarly, the UML model of a system provides different views on it using various diagrams. These diagrams are like a window into the model. For instance, a physical view can show how a system is organized into nodes and distributed (deployment diagram). Another dynamic view can show how a component behaves in terms of state machines and interactions. Yet another structural view can show how the use cases in a system are organized.</p>
+<p>These different views all provide perspectives on the same model, and ideally, are consistent with each other.</p>
+
+    </section>
+    <section class="content">
+<h1>Deployment Diagrams</h1>
+<p>Deployment diagrams are useful at all stages of development. They provide a <strong>physical view</strong> of the system, and show the files and the devices they run on. In particular, they show:</p>
+<ul>
+<li>the coarse structure of a system</li>
+<li>which devices are involved</li>
+<li>how devices are connected to each other</li>
+<li>which devices run which software</li>
+</ul>
+<p>Below is an example for a deployment diagram, showing the elements of a fitness tracker (here a Fitbit) and how it works together with a mobile phone and the server backend.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/fitbit-1.svg" alt="Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device." width="100%"/>
+<span name="../../pages/figures/deployment/fitbit-1.svg">&nbsp;</span>
+<aside name="../../pages/figures/deployment/fitbit-1.svg"><p><p>Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.</p>
+</p></aside>
+</div>
+<p>What can we learn from this diagram?</p>
+<ul>
+<li>To the left, there is the Fitbit server, which is connected via HTTPS to a PC and the mobile phone of a user.</li>
+<li>On the PC, a browser is running.</li>
+<li>On the mobile phone, we have an application.</li>
+<li>The Fitbit is connected to PC and mobile phone via Bluetooth.</li>
+</ul>
+<p>When we apply some color, we can see that deployment diagrams basically consist of three types of modeling elements:</p>
+<ol>
+<li>Nodes that represent hardware devices and software execution environments (in blue). In other words, locations in the system that can execute software.</li>
+<li>Connections that represent communication between nodes (in red).</li>
+<li>Software artifacts that are assigned to nodes (in yellow).</li>
+</ol>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/fitbit-2.svg" alt="Colored version of the original deployment diagram." width="100%"/>
+<span name="../../pages/figures/deployment/fitbit-2.svg">&nbsp;</span>
+<aside name="../../pages/figures/deployment/fitbit-2.svg"><p><p>Colored version of the original deployment diagram.</p>
+</p></aside>
+</div>
+<h2>Nodes: Devices</h2>
+<p>Devices are shown as a 3D-box with «device» printed at its top. The funny brackets are called <em>guillemets</em> and are each a single character. This is a notation for stereotypes, which are a kind of marker in UML.</p>
+<p>Examples for devices are:</p>
+<ul>
+<li>PC</li>
+<li>Raspberry Pi</li>
+<li>Mobile Phone</li>
+<li>Tablet</li>
+<li>iPhone</li>
+<li>server</li>
+<li>gateway</li>
+<li>...</li>
+</ul>
+<p>These device types are not built into UML, you can decide on your own. Which ones make  sense depends on your project. Is it relevant and informative that you are talking about a Raspberry Pi? If yes, fine! If it doesn't matter, use a more generic device type.</p>
+
+<h2>Nodes: Execution Environments</h2>
+<p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype «execution environment».</p>
+<p>Examples for execution environments are runtime environment,
+application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
+
+<h2>Nested Nodes</h2>
+<p>In some cases it makes sense to show nested nodes.</p>
+<p>You can show a <strong>device inside a device</strong>, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory.
+You should only show such elements if there is something special you want to point out.
+Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.</p>
+<p>Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.</p>
+<p>In some cases, you might want to points out that an execution environment is nested inside another execution environment, like when you want to point out that Python runs within Docker, in a Linux operating system on a server. Again---assess for your specific case which information is relevant.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/nested-nodes.svg" alt="Devices can be nested inside devices, if it is worth emphasizing them." width="100%"/>
+<span name="../../pages/figures/deployment/nested-nodes.svg">&nbsp;</span>
+<aside name="../../pages/figures/deployment/nested-nodes.svg"><p><p>Devices can be nested inside devices, if it is worth emphasizing them.</p>
+</p></aside>
+</div>
+<h2>Showing Node Instances</h2>
+<p>Sometimes you want to show several nodes of the same type, but want to express that these are different instances. Example, an airport gate with several passenger turnstiles, that are physical identical. For that, you just include the instance name in front of a colon, like <strong>t1: Turnstile</strong>. In addition, you underline to make clear that you refer to a specific instance.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/node-instances.svg" alt="Two instances of the same type of device." width="100%"/>
+<span name="../../pages/figures/deployment/node-instances.svg">&nbsp;</span>
+<aside name="../../pages/figures/deployment/node-instances.svg"><p><p>Two instances of the same type of device.</p>
+</p></aside>
+</div>
+<h2>Communication Paths</h2>
+<p>When two nodes communicate, they are connected by a solid line. This line can be labelled with a stereotype that says something about the way of communication, by referring to a standard or a protocol, as for instance:</p>
+<ul>
+<li>«http»</li>
+<li>«mqtt»</li>
+<li>«amqp»</li>
+<li>«tcp/ip» or «tcp»</li>
+<li>«bluetooth»</li>
+<li>«CoAP»</li>
+</ul>
+<h2>Artifacts</h2>
+<p>The software itself that runs on hardware and inside execution environments comes in the form of <strong>artifacts</strong>. They are shown as simple rectangles, with «artifact» written at the top. They can represent any artifact we find in software, for example:</p>
+<ul>
+<li>Database</li>
+<li>firmware</li>
+<li>device driver</li>
+<li>configuration files (.xml, .txt, .properties,...)</li>
+<li>source files (.java, .py, .c)</li>
+<li>library files (.dll, .jar)</li>
+<li>executable files (.exe, .jar, .c)</li>
+</ul>
+<h3>Deploying Artifacts</h3>
+<p>Software artifacts run within an execution environment or directly in a hardware nodes. There are two ways to assign a software artifact into a node:</p>
+<ol>
+<li>Simply by drawing it into the node, that means, graphically by <em>nesting</em>.</li>
+<li>By connecting them with a dashed line arrow labelled «deploy»</li>
+</ol>
+<p>Below you see the two ways of deploying an artifact into a node. Both are semantically equivalent (they <em>mean</em> the same thing), but the graphics are different. Depending on how many artifacts to deploy and other layout constraints, either of them can be more compact and practical to use.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/deployment-1.png" alt="Two ways of showing deployment. Both ways have the same meaning, but look different graphically." width="100%"/>
+<span name="../../pages/figures/deployment/deployment-1.png">&nbsp;</span>
+<aside name="../../pages/figures/deployment/deployment-1.png"><p><p>Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</p>
+</p></aside>
+</div>
+<!--
+In some cases, the deployment of an artifact requires some more details, which can be expressed by an (optional) deployment specification.
+.wsdd, .xml
+-->
+<h3>Manifestation</h3>
+<p>The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact <em>manifests</em> other modeling elements.</p>
+<p>In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest».
+This means that there is a UML description of a traffic light encapsulated by the component <code>Traffic Light Logic</code>. This can be for example a state machine that describes in which sequences the traffic light cycles through red, yellow and green. (We will work with state machines later.) The state machines and the component, however, are only descriptions but cannot be executed on their own. For that, we need the code provided here by the artifact <code>traffic-light-firmware.c</code>, which implements for instance the component and state machines for the traffic light.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/manifest-1.png" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact." width="100%"/>
+<span name="../../pages/figures/deployment/manifest-1.png">&nbsp;</span>
+<aside name="../../pages/figures/deployment/manifest-1.png"><p><p>With the stereotype «manifest» we can show that a UML element (here a component) is used to describe the contents of a software artifact.</p>
+</p></aside>
+</div>
+<!--
+Deployment diagrams most often show node instances
+- Which details are actually worth showing?
+	- Too many details and the diagram gets messy
+	- Too little and there is not much to show
+	- show composite diagrams
+- How to provide a good overview, good layout?
+-->
+
+<p><strong>Hint:</strong> The difference between artifacts and nodes may appear subtle in some cases.
+Nodes that are devices describe physical pieces of hardware that you can touch. Artifacts, on the other side are often files, like source files or executable files for a program.
+They are real, but you cannot touch them.
+Execution environments, which are nodes, are a bit more subtle. You cannot touch them, but
+they provide a place of executing software, which comes in the form of artifacts.</p>
+
+<h2>Notes</h2>
+<p>Similar to comments and documentation in source code, UML diagrams can contain notes. They can capture additional information that cannot be expressed by other elements.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/notes-1.png" alt="Notes can show additional information that is difficult to express in other ways." width="100%"/>
+<span name="../../pages/figures/deployment/notes-1.png">&nbsp;</span>
+<aside name="../../pages/figures/deployment/notes-1.png"><p><p>Notes can show additional information that is difficult to express in other ways.</p>
+</p></aside>
+</div>
+<h2>Multiplicities</h2>
+<p>In some cases we can add useful information to the deployment diagram by showing how many instances of a pair of nodes are connected with each other.</p>
+<p>A multiplicity specification is a tuple in the form <code>n..m</code> where <code>n</code> denotes the lower bound and <code>m</code> the upper one. (This implies that <code>n</code> is smaller than <code>m</code>.) To keep the upper value unbounded, we use the asterisk <code>*</code>. This leads to the following possible combinations in practice:</p>
+
+<p>The first column shows the multiplicity in <code>n..m</code> format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words.</p>
+<p>We can use these multiplicities at both sides of a connection between nodes.
+If no multiplicity is specified, it means <code>*</code>, which implies <em>many</em>.</p>
+<p>In most practical cases, you don't need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are:</p>
+<ul>
+<li>One Fitbit only can sync with a single mobile phone, emphasized by a one-to-one relationship.</li>
+<li>One server is connected to many gateways.</li>
+</ul>
+<p>If the number varies at runtime, use <code>0..*</code> or <code>*</code> in short, just implying <em>many</em>.</p>
+
+<div class="figure">
+<img src="../../pages/figures/deployment/multiplicity.svg" alt="Examples of multiplicity between nodes." width="100%"/>
+<span name="../../pages/figures/deployment/multiplicity.svg">&nbsp;</span>
+<aside name="../../pages/figures/deployment/multiplicity.svg"><p><p>Examples of multiplicity between nodes.</p>
+</p></aside>
+</div>
+    </section>
+    <section class="content">
+<h1>Containment</h1>
+<p>We have seen above that some nodes in a deployment diagram can contain other nodes, depending on the node types.</p>
+<p>The following containments are typical:</p>
+<ul>
+<li>An execution environment can run in a device.</li>
+<li>An artifact is deployed in a device.</li>
+<li>An artifact is deployed in an execution environment.</li>
+</ul>
+<p>The following containments are also possible, but maybe less common. Use them if you want to show a detail that is important to point out, and consider if that makes sense.</p>
+<ul>
+<li>A device can contain a device. For instance, a computer (device) can contain a harddisk.</li>
+<li>An execution environment can contain another execution environment. For instance, a virtual operating system container could rund a Python runtime.</li>
+<li>An artifact could be composite, like a file stored in an archive.</li>
+</ul>
+<p>The following combinations make no sense:</p>
+<ul>
+<li>An execution environment cannot contain a device.</li>
+<li>An artifact cannot contain a device.</li>
+<li>An artifact cannot contain an execution environment.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Overview of Elements</h1>
+<ul>
+<li>Communication Path
+<ul>
+<li>«TCP/IP»</li>
+<li>«MQTT»</li>
+<li>«AMQP»</li>
+<li>«RMI»</li>
+<li>«CoAP»</li>
+</ul>
+</li>
+<li>Nodes
+<ul>
+<li>«execution environment»
+<ul>
+<li>«application server»</li>
+<li>«web server»</li>
+<li>«operating system»</li>
+</ul>
+</li>
+<li>«device»
+<ul>
+<li>«server»</li>
+<li>«gateway»</li>
+<li>«desktop PC»</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>«artifact»
+<ul>
+<li>«data base»</li>
+<li>«firmware»</li>
+<li>«device driver»</li>
+<li>configuration files
+<ul>
+<li>.txt</li>
+<li>.properties</li>
+<li>.xml</li>
+</ul>
+</li>
+<li>source files
+<ul>
+<li>.cpp</li>
+<li>.c</li>
+<li>.py</li>
+<li>.java</li>
+</ul>
+</li>
+<li>library files
+<ul>
+<li>.dll</li>
+<li>.jar</li>
+</ul>
+</li>
+<li>executable files
+<ul>
+<li>.exe</li>
+<li>.jar</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    <section class="content">
+<span name="600ff0"></span><aside name="600ff0"><p>The opinion among student about this series of videos is divided; some find them very useful, others not so much. So have a look at some and decide for yourself.</p>
+</aside>
+<h1>Optional Preparation</h1>
+<p>If you want, have a look at the following videos that show how to create deployment diagrams.</p>
+
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Man81KkQyNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5plFlvAI7Ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O3DcU50aMDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fZrULbBqalc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DTOymPZmYkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="figure">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nTtQwGoUUNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

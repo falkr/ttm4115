@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="599.5 229.5 601 1281" width="601" height="1281">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.10.1 
+    <dc:date>2019-03-10 18:21:55 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="599.5" y="229.5" width="601" height="1281"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <path d="M 609 1380 L 1191 1380 C 1195.9706 1380 1200 1384.0294 1200 1389 L 1200 1501 C 1200 1505.9706 1195.9706 1510 1191 1510 L 609 1510 C 604.02944 1510 600 1505.9706 600 1501 L 600 1389 C 600 1384.0294 604.02944 1380 609 1380 Z" fill="#ccc"/>
+        <path d="M 609 1380 L 1191 1380 C 1195.9706 1380 1200 1384.0294 1200 1389 L 1200 1501 C 1200 1505.9706 1195.9706 1510 1191 1510 L 609 1510 C 604.02944 1510 600 1505.9706 600 1501 L 600 1389 C 600 1384.0294 604.02944 1380 609 1380 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(605 1385)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">main</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 609 230 L 1191 230 C 1195.9706 230 1200 234.02944 1200 239 L 1200 1001 C 1200 1005.9706 1195.9706 1010 1191 1010 L 609 1010 C 604.02944 1010 600 1005.9706 600 1001 L 600 239 C 600 234.02944 604.02944 230 609 230 Z" fill="#ff2f92" fill-opacity=".5100332"/>
+        <path d="M 609 230 L 1191 230 C 1195.9706 230 1200 234.02944 1200 239 L 1200 1001 C 1200 1005.9706 1195.9706 1010 1191 1010 L 609 1010 C 604.02944 1010 600 1005.9706 600 1001 L 600 239 C 600 234.02944 604.02944 230 609 230 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(605 235)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">class TimerComponent:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 629 280 L 1161 280 C 1165.9706 280 1170 284.02944 1170 289 L 1170 341 C 1170 345.97056 1165.9706 350 1161 350 L 629 350 C 624.02944 350 620 345.97056 620 341 L 620 289 C 620 284.02944 624.02944 280 629 280 Z" fill="#0096ff" fill-opacity=".3730201"/>
+        <path d="M 629 280 L 1161 280 C 1165.9706 280 1170 284.02944 1170 289 L 1170 341 C 1170 345.97056 1165.9706 350 1161 350 L 629 350 C 624.02944 350 620 345.97056 620 341 L 620 289 C 620 284.02944 624.02944 280 629 280 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 285)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">def on_connect()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <path d="M 629 360 L 1161 360 C 1165.9706 360 1170 364.02944 1170 369 L 1170 581 C 1170 585.97056 1165.9706 590 1161 590 L 629 590 C 624.02944 590 620 585.97056 620 581 L 620 369 C 620 364.02944 624.02944 360 629 360 Z" fill="#0096ff" fill-opacity=".3730201"/>
+        <path d="M 629 360 L 1161 360 C 1165.9706 360 1170 364.02944 1170 369 L 1170 581 C 1170 585.97056 1165.9706 590 1161 590 L 629 590 C 624.02944 590 620 585.97056 620 581 L 620 369 C 620 364.02944 624.02944 360 629 360 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 365)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">def on_message()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 629 610 L 1161 610 C 1165.9706 610 1170 614.02944 1170 619 L 1170 841 C 1170 845.9706 1165.9706 850 1161 850 L 629 850 C 624.02944 850 620 845.9706 620 841 L 620 619 C 620 614.02944 624.02944 610 629 610 Z" fill="#ff2f92" fill-opacity=".5100332"/>
+        <path d="M 629 610 L 1161 610 C 1165.9706 610 1170 614.02944 1170 619 L 1170 841 C 1170 845.9706 1165.9706 850 1161 850 L 629 850 C 624.02944 850 620 845.9706 620 841 L 620 619 C 620 614.02944 624.02944 610 629 610 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 615)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">def __init__(self)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 649 690 L 1101 690 C 1105.9706 690 1110 694.0294 1110 699 L 1110 741 C 1110 745.9706 1105.9706 750 1101 750 L 649 750 C 644.0294 750 640 745.9706 640 741 L 640 699 C 640 694.0294 644.0294 690 649 690 Z" fill="#0096ff" fill-opacity=".3730201"/>
+        <path d="M 649 690 L 1101 690 C 1105.9706 690 1110 694.0294 1110 699 L 1110 741 C 1110 745.9706 1105.9706 750 1101 750 L 649 750 C 644.0294 750 640 745.9706 640 741 L 640 699 C 640 694.0294 644.0294 690 649 690 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 695)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">configure and start mqtt client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 629 860 L 1161 860 C 1165.9706 860 1170 864.0294 1170 869 L 1170 981 C 1170 985.9706 1165.9706 990 1161 990 L 629 990 C 624.02944 990 620 985.9706 620 981 L 620 869 C 620 864.0294 624.02944 860 629 860 Z" fill="#ff2f92" fill-opacity=".5100332"/>
+        <path d="M 629 860 L 1161 860 C 1165.9706 860 1170 864.0294 1170 869 L 1170 981 C 1170 985.9706 1165.9706 990 1161 990 L 629 990 C 624.02944 990 620 985.9706 620 981 L 620 869 C 620 864.0294 624.02944 860 629 860 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 865)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">def stop(self)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 649 760 L 1101 760 C 1105.9706 760 1110 764.0294 1110 769 L 1110 821 C 1110 825.9706 1105.9706 830 1101 830 L 649 830 C 644.0294 830 640 825.9706 640 821 L 640 769 C 640 764.0294 644.0294 760 649 760 Z" fill="#ffd579" fill-opacity=".50778574"/>
+        <path d="M 649 760 L 1101 760 C 1105.9706 760 1110 764.0294 1110 769 L 1110 821 C 1110 825.9706 1105.9706 830 1101 830 L 649 830 C 644.0294 830 640 825.9706 640 821 L 640 769 C 640 764.0294 644.0294 760 649 760 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 765)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">start STMPY driver</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 629 1420 L 1161 1420 C 1165.9706 1420 1170 1424.0294 1170 1429 L 1170 1441 C 1170 1445.9706 1165.9706 1450 1161 1450 L 629 1450 C 624.02944 1450 620 1445.9706 620 1441 L 620 1429 C 620 1424.0294 624.02944 1420 629 1420 Z" fill="#00fb92" fill-opacity=".5096586"/>
+        <path d="M 629 1420 L 1161 1420 C 1165.9706 1420 1170 1424.0294 1170 1429 L 1170 1441 C 1170 1445.9706 1165.9706 1450 1161 1450 L 629 1450 C 624.02944 1450 620 1445.9706 620 1441 L 620 1429 C 620 1424.0294 624.02944 1420 629 1420 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 1425)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">setup logging</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 629 1460 L 1161 1460 C 1165.9706 1460 1170 1464.0294 1170 1469 L 1170 1481 C 1170 1485.9706 1165.9706 1490 1161 1490 L 629 1490 C 624.02944 1490 620 1485.9706 620 1481 L 620 1469 C 620 1464.0294 624.02944 1460 629 1460 Z" fill="#ff2f92" fill-opacity=".511799"/>
+        <path d="M 629 1460 L 1161 1460 C 1165.9706 1460 1170 1464.0294 1170 1469 L 1170 1481 C 1170 1485.9706 1165.9706 1490 1161 1490 L 629 1490 C 624.02944 1490 620 1485.9706 620 1481 L 620 1469 C 620 1464.0294 624.02944 1460 629 1460 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(625 1465)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">create instance of TimerComponent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 609 1030 L 1191 1030 C 1195.9706 1030 1200 1034.0294 1200 1039 L 1200 1351 C 1200 1355.9706 1195.9706 1360 1191 1360 L 609 1360 C 604.02944 1360 600 1355.9706 600 1351 L 600 1039 C 600 1034.0294 604.02944 1030 609 1030 Z" fill="#ff9300" fill-opacity=".48595355"/>
+        <path d="M 609 1030 L 1191 1030 C 1195.9706 1030 1200 1034.0294 1200 1039 L 1200 1351 C 1200 1355.9706 1195.9706 1360 1191 1360 L 609 1360 C 604.02944 1360 600 1355.9706 600 1351 L 600 1039 C 600 1034.0294 604.02944 1030 609 1030 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(605 1035)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">class </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" y="15">TimerLogic</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" y="15">:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 639 1070 L 1171 1070 C 1175.9706 1070 1180 1074.0294 1180 1079 L 1180 1151 C 1180 1155.9706 1175.9706 1160 1171 1160 L 639 1160 C 634.0294 1160 630 1155.9706 630 1151 L 630 1079 C 630 1074.0294 634.0294 1070 639 1070 Z" fill="#ff9300" fill-opacity=".48595355"/>
+        <path d="M 639 1070 L 1171 1070 C 1175.9706 1070 1180 1074.0294 1180 1079 L 1180 1151 C 1180 1155.9706 1175.9706 1160 1171 1160 L 639 1160 C 634.0294 1160 630 1155.9706 630 1151 L 630 1079 C 630 1074.0294 634.0294 1070 639 1070 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(635 1075)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">def __init__(self, name, duration, component)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="33.448">    …</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="51.895996">    create state machine structure</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="70.34399">    self.stm = …</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 639 1170 L 1171 1170 C 1175.9706 1170 1180 1174.0294 1180 1179 L 1180 1331 C 1180 1335.9706 1175.9706 1340 1171 1340 L 639 1340 C 634.0294 1340 630 1335.9706 630 1331 L 630 1179 C 630 1174.0294 634.0294 1170 639 1170 Z" fill="#ff9300" fill-opacity=".48595355"/>
+        <path d="M 639 1170 L 1171 1170 C 1175.9706 1170 1180 1174.0294 1180 1179 L 1180 1331 C 1180 1335.9706 1175.9706 1340 1171 1340 L 639 1340 C 634.0294 1340 630 1335.9706 630 1331 L 630 1179 C 630 1174.0294 634.0294 1170 639 1170 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(635 1175)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">any actions called by transitions</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 689 500 L 1141 500 C 1145.9706 500 1150 504.02944 1150 509 L 1150 521 C 1150 525.97056 1145.9706 530 1141 530 L 689 530 C 684.0294 530 680 525.97056 680 521 L 680 509 C 680 504.02944 684.0294 500 689 500 Z" fill="#ffd579" fill-opacity=".50778574"/>
+        <path d="M 689 500 L 1141 500 C 1145.9706 500 1150 504.02944 1150 509 L 1150 521 C 1150 525.97056 1145.9706 530 1141 530 L 689 530 C 684.0294 530 680 525.97056 680 521 L 680 509 C 680 504.02944 684.0294 500 689 500 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(685 505)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">create a new session</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 689 540 L 1141 540 C 1145.9706 540 1150 544.02944 1150 549 L 1150 561 C 1150 565.97056 1145.9706 570 1141 570 L 689 570 C 684.0294 570 680 565.97056 680 561 L 680 549 C 680 544.02944 684.0294 540 689 540 Z" fill="#ffd579" fill-opacity=".50778574"/>
+        <path d="M 689 540 L 1141 540 C 1145.9706 540 1150 544.02944 1150 549 L 1150 561 C 1150 565.97056 1145.9706 570 1141 570 L 689 570 C 684.0294 570 680 565.97056 680 561 L 680 549 C 680 544.02944 684.0294 540 689 540 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(685 545)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">send a signal to session / state machine</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 649 400 L 1101 400 C 1105.9706 400 1110 404.02944 1110 409 L 1110 421 C 1110 425.97056 1105.9706 430 1101 430 L 649 430 C 644.0294 430 640 425.97056 640 421 L 640 409 C 640 404.02944 644.0294 400 649 400 Z" fill="#0096ff" fill-opacity=".3730201"/>
+        <path d="M 649 400 L 1101 400 C 1105.9706 400 1110 404.02944 1110 409 L 1110 421 C 1110 425.97056 1105.9706 430 1101 430 L 649 430 C 644.0294 430 640 425.97056 640 421 L 640 409 C 640 404.02944 644.0294 400 649 400 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 405)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">unwrap payload, determine message name</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 649 940 L 1101 940 C 1105.9706 940 1110 944.0294 1110 949 L 1110 961 C 1110 965.9706 1105.9706 970 1101 970 L 649 970 C 644.0294 970 640 965.9706 640 961 L 640 949 C 640 944.0294 644.0294 940 649 940 Z" fill="#ffd579" fill-opacity=".50778574"/>
+        <path d="M 649 940 L 1101 940 C 1105.9706 940 1110 944.0294 1110 949 L 1110 961 C 1110 965.9706 1105.9706 970 1101 970 L 649 970 C 644.0294 970 640 965.9706 640 961 L 640 949 C 640 944.0294 644.0294 940 649 940 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 945)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">stop STMPY driver</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 649 900 L 1101 900 C 1105.9706 900 1110 904.0294 1110 909 L 1110 921 C 1110 925.9706 1105.9706 930 1101 930 L 649 930 C 644.0294 930 640 925.9706 640 921 L 640 909 C 640 904.0294 644.0294 900 649 900 Z" fill="#0096ff" fill-opacity=".3730201"/>
+        <path d="M 649 900 L 1101 900 C 1105.9706 900 1110 904.0294 1110 909 L 1110 921 C 1110 925.9706 1105.9706 930 1101 930 L 649 930 C 644.0294 930 640 925.9706 640 921 L 640 909 C 640 904.0294 644.0294 900 649 900 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 905)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">stop MQTT client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 649 650 L 1101 650 C 1105.9706 650 1110 654.0294 1110 659 L 1110 671 C 1110 675.9706 1105.9706 680 1101 680 L 649 680 C 644.0294 680 640 675.9706 640 671 L 640 659 C 640 654.0294 644.0294 650 649 650 Z" fill="#00fb92" fill-opacity=".5096586"/>
+        <path d="M 649 650 L 1101 650 C 1105.9706 650 1110 654.0294 1110 659 L 1110 671 C 1110 675.9706 1105.9706 680 1101 680 L 649 680 C 644.0294 680 640 675.9706 640 671 L 640 659 C 640 654.0294 644.0294 650 649 650 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(645 655)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">setup logger</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(655.6 445)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">Determine what to do with the incoming message.</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="33.448">For example:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(675 1213.448)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="15">Inside these action, for example:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <path d="M 709 1250 L 1161 1250 C 1165.9706 1250 1170 1254.0294 1170 1259 L 1170 1271 C 1170 1275.9706 1165.9706 1280 1161 1280 L 709 1280 C 704.0294 1280 700 1275.9706 700 1271 L 700 1259 C 700 1254.0294 704.0294 1250 709 1250 Z" fill="#0096ff" fill-opacity=".37302"/>
+        <path d="M 709 1250 L 1161 1250 C 1165.9706 1250 1170 1254.0294 1170 1259 L 1170 1271 C 1170 1275.9706 1165.9706 1280 1161 1280 L 709 1280 C 704.0294 1280 700 1275.9706 700 1271 L 700 1259 C 700 1254.0294 704.0294 1250 709 1250 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(705 1255)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">publish messages via component’s MQTT client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <path d="M 709 1290 L 1161 1290 C 1165.9706 1290 1170 1294.0294 1170 1299 L 1170 1311 C 1170 1315.9706 1165.9706 1320 1161 1320 L 709 1320 C 704.0294 1320 700 1315.9706 700 1311 L 700 1299 C 700 1294.0294 704.0294 1290 709 1290 Z" fill="#0096ff" fill-opacity=".37302"/>
+        <path d="M 709 1290 L 1161 1290 C 1165.9706 1290 1170 1294.0294 1170 1299 L 1170 1311 C 1170 1315.9706 1165.9706 1320 1161 1320 L 709 1320 C 704.0294 1320 700 1315.9706 700 1311 L 700 1299 C 700 1294.0294 704.0294 1290 709 1290 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(705 1295)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">start timers with variable duration</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="362.33466 878.2402 171.07874 97.37796" width="171.07874" height="97.37796">
+  <defs>
+    <font-face font-family="Calibri" font-size="9" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Calibri" font-size="12" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-15 17:42:42 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_2" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none" fill-opacity="1">
+    <title>Canvas 2</title>
+    <g id="Canvas_2: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_104">
+        <rect x="362.83466" y="890.0788" width="158.74016" height="85.03938" fill="white"/>
+        <rect x="362.83466" y="890.0788" width="158.74016" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(367.83466 895.0788)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="57.97189" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="68.07125" y="22">PC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <path d="M 362.83466 890.0788 L 374.17324 878.7402 L 532.9134 878.7402 L 521.5748 890.0788 Z" fill="white"/>
+        <path d="M 362.83466 890.0788 L 374.17324 878.7402 L 532.9134 878.7402 L 521.5748 890.0788 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_107">
+        <path d="M 498.89765 929.7638 L 504.56694 924.0945 L 504.56694 958.1103 L 498.89765 963.7796 Z" fill="white"/>
+        <path d="M 498.89765 929.7638 L 504.56694 924.0945 L 504.56694 958.1103 L 498.89765 963.7796 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_108">
+        <path d="M 521.5748 890.0788 L 532.9134 878.7402 L 532.9134 963.7796 L 521.5748 975.1181 Z" fill="white"/>
+        <path d="M 521.5748 890.0788 L 532.9134 878.7402 L 532.9134 963.7796 L 521.5748 975.1181 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_101">
+        <rect x="442.20474" y="929.7638" width="56.692916" height="34.01575" fill="white"/>
+        <rect x="442.20474" y="929.7638" width="56.692916" height="34.01575" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(447.20474 934.7638)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="6.948265" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="13.742942" y="22">disk</tspan>
+        </text>
+      </g>
+      <g id="Graphic_102">
+        <path d="M 442.20474 929.7638 L 447.87403 924.0945 L 504.56694 924.0945 L 498.89765 929.7638 Z" fill="white"/>
+        <path d="M 442.20474 929.7638 L 447.87403 924.0945 L 504.56694 924.0945 L 498.89765 929.7638 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_109">
+        <path d="M 430.86615 929.7638 L 436.53545 924.0945 L 436.53545 958.1103 L 430.86615 963.7796 Z" fill="white"/>
+        <path d="M 430.86615 929.7638 L 436.53545 924.0945 L 436.53545 958.1103 L 430.86615 963.7796 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_110">
+        <rect x="374.17324" y="929.7638" width="56.692916" height="34.01575" fill="white"/>
+        <rect x="374.17324" y="929.7638" width="56.692916" height="34.01575" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(379.17324 934.7638)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="6.948265" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="2.7741923" y="22">memory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <path d="M 374.17324 929.7638 L 379.84253 924.0945 L 436.53545 924.0945 L 430.86615 929.7638 Z" fill="white"/>
+        <path d="M 374.17324 929.7638 L 379.84253 924.0945 L 436.53545 924.0945 L 430.86615 929.7638 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

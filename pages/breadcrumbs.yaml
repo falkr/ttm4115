@@ -1,0 +1,150 @@
+- page: index.md
+  title: TTM4115
+- - page: learning/index.md
+    title: Learning
+  - - page: learning/feedback.md
+      title: Feedback
+    - page: learning/goals.md
+      title: Learning Goals
+    - page: learning/grading.md
+      title: Grading
+    - page: learning/reflection.md
+      title: Reflection
+    - page: learning/tbl.md
+      title: Team-Based Learning
+    - page: learning/teamwork.md
+      title: Team Roles
+  - page: project/index.md
+    title: Deliveries
+  - - page: project/deliveries-format.md
+      title: Formatting Rules for Deliveries
+    - page: project/deliveries-i1.md
+      title: Feedback on Version 1
+    - page: project/deliveries-i2.md
+      title: Feedback on Version 2
+    - page: project/deliveries-i3.md
+      title: Individual Reflective Essay
+    - page: project/deliveries-project-2021.md
+      title: Semester Project
+    - page: project/deliveries-project.md
+      title: Semester Project
+    - page: project/deliveries-t1.md
+      title: System Spec, Version 1
+    - page: project/deliveries-t2.md
+      title: System Spec, Version 2
+    - page: project/deliveries-t3.md
+      title: Final System Specification, Code and Demo
+  - page: tools/index.md
+    title: Tools
+  - - page: tools/tools-base.md
+      title: The TTM4115 Base Architecture
+    - page: tools/tools-gui.md
+      title: User Interfaces
+    - page: tools/tools-mqtt.md
+      title: MQTT
+    - page: tools/tools-notebooks.md
+      title: Jupyter Notebooks
+    - page: tools/tools-python.md
+      title: Python
+    - page: tools/tools-stmpy.md
+      title: STMPY - State Machines in Python
+  - page: unit-1-setup/index.md
+    title: 'Unit 1: Introduction and Course Setup'
+  - - page: unit-1-setup/teamwork-1.md
+      title: Team Setup
+    - page: unit-1-setup/teamwork-2.md
+      title: Balances in Teamwork
+    - page: unit-1-setup/teamwork-3.md
+      title: 'Task: Learning Goals Relevance'
+  - page: unit-2-models/index.md
+    title: 'Unit 2: Modeling and Deployment Diagrams'
+  - - page: unit-2-models/unit-modeling-diagram-tips.md
+      title: Tips for Diagrams
+    - page: unit-2-models/preparation-1.md
+      title: Why Do We Model Software Systems?
+    - page: unit-2-models/preparation-2.md
+      title: Deployment Diagrams
+    - page: unit-2-models/preparation-3.md
+      title: Optional Preparation
+    - page: unit-2-models/teamwork-1.md
+      title: Team Setup
+  - page: unit-3-stm/index.md
+    title: 'Unit 3: State Machines'
+  - - page: unit-3-stm/teamwork.md
+      title: State Machines
+    - page: unit-3-stm/unit-statemachines-car.md
+      title: Car Lock
+    - page: unit-3-stm/unit-statemachines-data.md
+      title: 'State Machines: Data vs. States'
+    - page: unit-3-stm/unit-statemachines-head.md
+      title: The Headphone Story
+    - page: unit-3-stm/preparation-1.md
+      title: 'Example: Traffic Light'
+    - page: unit-3-stm/preparation-2.md
+      title: State Machine Diagrams
+    - page: unit-3-stm/preparation-3.md
+      title: State Machine Semantics
+    - page: unit-3-stm/preparation-4.md
+      title: Advanced Queue Semantics
+    - page: unit-3-stm/preparation-5.md
+      title: Creating State Machines
+    - page: unit-3-stm/teamwork-1.md
+      title: Errors in State Machines
+    - page: unit-3-stm/teamwork-2.md
+      title: 'Getting Started: Bus Stop'
+    - page: unit-3-stm/teamwork-3.md
+      title: Kitchen Timer
+  - page: unit-4-req/index.md
+    title: 'Unit 4: User Requirements'
+  - - page: unit-4-req/preparation-1.md
+      title: User Requirements
+    - page: unit-4-req/preparation-2.md
+      title: Optional Preparation
+    - page: unit-4-req/teamwork-1.md
+      title: User Requirements
+  - page: unit-5-stmpy/index.md
+    title: 'Unit 5: State Machines in Python'
+  - - page: unit-5-stmpy/preparation-1.md
+      title: Coding State Machines
+    - page: unit-5-stmpy/preparation-2.md
+      title: Jupyter Notebooks Introducing STMPY
+    - page: unit-5-stmpy/teamwork-1.md
+      title: State Machines in Python
+  - page: unit-6-agile/index.md
+    title: 'Unit 6: Agile Development'
+  - - page: unit-6-agile/preparation-1.md
+      title: Agile Development
+    - page: unit-6-agile/teamwork-1.md
+      title: Agile vs. Architecture
+  - page: unit-7-comm/index.md
+    title: 'Unit 7: Communication'
+  - - page: unit-7-comm/preparation-1.md
+      title: Communication Protocols
+    - page: unit-7-comm/preparation-2.md
+      title: HTTP - Hypertext Transfer Protocol
+    - page: unit-7-comm/preparation-3.md
+      title: MQTT
+    - page: unit-7-comm/teamwork-1.md
+      title: Communication
+  - page: unit-8-sd/index.md
+    title: 'Unit 8: Interactions'
+  - - page: unit-8-sd/preparation-1.md
+      title: Intuition on Sequence Diagrams
+    - page: unit-8-sd/preparation-2.md
+      title: Combined Fragments
+    - page: unit-8-sd/preparation-3.md
+      title: Event Orderings and Semantics
+    - page: unit-8-sd/preparation-4.md
+      title: Implied Scenarios
+    - page: unit-8-sd/teamwork-1.md
+      title: Airport Gate Control System
+  - page: unit-9-comp/index.md
+    title: 'Unit 9: Components'
+  - - page: unit-9-comp/unit-components-tips.md
+      title: Tips for Components
+    - page: unit-9-comp/preparation-1.md
+      title: Components
+    - page: unit-9-comp/preparation-2.md
+      title: Implementing Components
+    - page: unit-9-comp/teamwork-1.md
+      title: Components

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="45.35433 606.0986 363.77953 114.40137" width="363.77953" height="114.40137">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-26 12:28:03 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="45.35433" y="606.0986" width="363.77953" height="114.40137"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_11142">
+        <line x1="226.74803" y1="691.638" x2="123.26221" y2="691.638" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11143">
+        <text transform="translate(136.05119 677.4648)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".31347656" y="11">response 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11144">
+        <rect x="79.37008" y="606.6143" width="68.05512" height="17.01496" fill="white"/>
+        <rect x="79.37008" y="606.6143" width="68.05512" height="17.01496" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(84.37008 608.1218)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="3.6799047" y="11">requestor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11145">
+        <rect x="187.0866" y="606.5986" width="79.37004" height="17.007874" fill="white"/>
+        <rect x="187.0866" y="606.5986" width="79.37004" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(192.0866 608.1026)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="2.663536" y="11">responder 1</tspan>
+        </text>
+      </g>
+      <g id="Line_11146">
+        <line x1="113.39663" y1="624.1293" x2="113.38583" y2="720" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11147">
+        <line x1="226.74803" y1="623.6065" x2="226.77167" y2="720" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11148">
+        <text transform="translate(143.38583 634.96075)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".48339844" y="11">request 1</tspan>
+        </text>
+      </g>
+      <g id="Line_11149">
+        <line x1="113.36221" y1="651.9687" x2="216.84803" y2="651.9687" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11150">
+        <rect x="300.4724" y="606.5986" width="79.37004" height="17.007874" fill="white"/>
+        <rect x="300.4724" y="606.5986" width="79.37004" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(305.4724 608.1026)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="2.663536" y="11">responder 2</tspan>
+        </text>
+      </g>
+      <g id="Line_11151">
+        <line x1="340.13385" y1="623.6065" x2="340.13385" y2="720" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11152">
+        <text transform="translate(259.60632 651.9687)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".48339844" y="11">request 2</tspan>
+        </text>
+      </g>
+      <g id="Line_11153">
+        <line x1="113.36221" y1="666.142" x2="330.2575" y2="666.1417" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11154">
+        <line x1="340.1575" y1="711.4961" x2="123.28583" y2="711.4961" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11155">
+        <text transform="translate(136.05119 697.3074)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".31347656" y="11">response 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11201"/>
+    </g>
+  </g>
+</svg>

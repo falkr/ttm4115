@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>IIK Education Guide</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../assets/anchor.js"></script>
+  <script src="../assets/script-aside.js"></script>
+  <style type="text/css">
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+/*tr.rubric_title {background-color: lightgrey}*/
+/*tr.rubric_a {background-color: #D0E8DC}
+tr.rubric_b {background-color: #EEF7DB}
+tr.rubric_c {background-color: #FCFDE3}
+tr.rubric_d {background-color: #FDF3D6}
+tr.rubric_e {background-color: #F8D9C2}
+tr.rubric_f {background-color: #EBBCB9}
+
+tr.rubric_title {background-color: white; 
+	border-top: 2px black solid; 
+	border-bottom: 2px black solid;}
+td.rubric_title {background-color: white;}
+td.rubric_a {background-color: #D0E8DC}
+td.rubric_b {background-color: #EEF7DB}
+td.rubric_c {background-color: #FCFDE3}
+td.rubric_d {background-color: #FDF3D6}
+td.rubric_e {background-color: #F8D9C2}
+td.rubric_f {background-color: #EBBCB9}
+
+th.rubric_title {background-color: white}
+th.rubric_a {background-color: #D0E8DC}
+th.rubric_b {background-color: #EEF7DB}
+th.rubric_c {background-color: #FCFDE3}
+th.rubric_d {background-color: #FDF3D6}
+th.rubric_e {background-color: #F8D9C2}
+th.rubric_f {background-color: #EBBCB9}
+
+table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
+	vertical-align:top;}
+table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
+
+.rubric p {
+	margin: 0px
+}
+
+.rubric th {
+	text-align: center;
+	padding: 6px;
+}
+
+.rubric td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.rubric th {
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.rubric td:nth-child(2),
+.rubric th:nth-child(2) {
+	background-color: #D0E8DC;
+	width: 22%
+}
+
+.rubric td:nth-child(3),
+.rubric th:nth-child(3) {
+	background-color: #FCFDE3;
+	width: 22%
+}
+
+.rubric td:nth-child(4),
+.rubric th:nth-child(4) {
+	background-color: #F8D9C2;
+	width: 22%
+}
+
+.rubric td:nth-child(5),
+.rubric th:nth-child(5) {
+	background-color: #EBBCB9;
+	width: 22%
+}
+
+.rubric tfoot td {
+	text-align: right;
+	border-bottom: none;
+	padding: 1px;
+}
+
+.rubric tfoot a {
+	font-size: 12px;
+	font-style: italic;
+	color: gray
+}
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Deliveries</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Feedback on Specification 3</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+  <main class="container">
+
+    <div class="row g-5 justify-content-md-center pb-5">
+
+
+
+      <div class="col-md-9" style="margin-top: 6rem;">
+        <div class="page">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
+<li class="breadcrumb-item"><a href="index.html">Learning</a></li>
+<li class="breadcrumb-item active" aria-current="page">Learning Goals</li>
+</ol>
+</nav>
+    </section>
+    <section class="content">
+<h1>Learning Goals</h1>
+
+<p>In this course you will learn about systems in which communication is an important part of functionality. We will study technologies to build these systems, how communication protocols can be used in combination with components and program code.</p>
+
+<div class="figure">
+<img src="../../pages/learning/figures/ttm4115-content-systems.png" width="100%"/>
+</div>
+<p>You will also learn how to describe these types of systems. We will create system models with various notations, at various levels of detail and with different degree of rigor. This includes formal modeling in terms of state machines, but also simple and effective sketches of the system on a whiteboard. As part of this, you will learn how to think in states and transitions, and how to describe complex interactions efficiently.</p>
+
+<div class="figure">
+<img src="../../pages/learning/figures/ttm4115-content-descriptions.png" width="100%"/>
+</div>
+<p>Part of system development is also the coordination of a team of developers and the management of resources. You will therefore learn about development processes and directly experience the dynamics in a team.</p>
+
+<div class="figure">
+<img src="../../pages/learning/figures/ttm4115-content-people.png" width="100%"/>
+</div>
+<p>This means there are three layers of things to learn in this course: <strong>Technologies</strong>, how to <strong>specify</strong> them, and how to organize a <strong>development project and team</strong>.
+Maybe we could have a separate course on each of them — there would be more than enough to learn for any of these.
+But in this course, it is especially the combination of these three layers.
+If you are working as an engineer in any realistic project, elements from all of these three layers matter, are interconnected with each other and lead to a complex problem.
+Just being good ad one of these levels is not sufficient.</p>
+
+<p>The following are the learning goals in this course. I think they are well-aligned with what a future employer will expect from you. All goals should be useful in many situations and roles within technology.</p>
+<h2>Knowledge</h2>
+
+<span name="7d4ddd"></span><aside name="7d4ddd"><p>Knowledge refers to the understanding of theories, facts, concepts, principles, procedures in subjects, subjects and professions.</p>
+</aside>
+<table class="table table-sm">
+<tr>
+<td><p>Learning Goal</p>
+</td>
+<td><p>Comment</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>1.</strong> Classify different types of requirements, and explain the main activities during requirements development. Recite potential problems during requirements engineering.</p>
+</td>
+<td><p>Learn to ask the right questions. You have an idea about what can go wrong, you anticipate customer concerns, even if they don't know themselves.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>2.</strong> Recognize modeling elements in UML, properly explain their semantics, and correctly map them to program code. This comprises use case, sequence, state machine and deployment diagrams, among others.</p>
+</td>
+<td><p>UML defines many standard modeling diagrams. The actual syntax does not matter too much, but we need precision to detect flaws and achieve consistency. Once you have understood the basic diagram types, you can easily learn others (like for example BPEL).</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>3.</strong> Understand and describe the main features of application protocols (like HTTP and MQTT), and select and apply them efficiently and correctly to a system architecture.</p>
+</td>
+<td><p>Communication is what keeps system components together and makes them form a whole. Often, different system components are realized by different stakeholders. Fragile communication between system components is therefore a major concern.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>4.</strong> List and explain the main elements in a development method as for instance Scrum, and reason about their applicability in a given development context.</p>
+</td>
+<td><p>Agile methods of some form are now used for many projects. Learn about the key concepts in agile methods.</p>
+</td>
+</tr>
+</table>
+<h2>Skills</h2>
+
+<span name="a1dcf6"></span><aside name="a1dcf6"><p>Skills are the ability to apply knowledge to solve problems and tasks. There are different types of skills - cognitive, practical, creative and communicative skills.</p>
+</aside>
+<table class="table table-sm">
+<tr>
+<td><p>Learning Goal</p>
+</td>
+<td><p>Comment</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>5.</strong> Capture user requirements and synthesize relevant use cases at a proper level of detail.</p>
+</td>
+<td><p>This is an underestimated skill. The resulting use cases are often written in text and don't look spectacular. But formulating bad use cases is the earliest phase in a project where things can go wrong.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>6.</strong> Write project deliverables that describe system requirements, properties and solutions.</p>
+</td>
+<td><p>Producing the right documents, emphasizing relevant questions, reasonable precision level. Can uncover project problems early or even before they arise. Again, learn to ask the right questions.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>7.</strong> Plan and coordinate the development of larger software products within a team of developers.</p>
+</td>
+<td><p>To coordinate a project, you need to know a lot about the architecture of a system, but also the process how to build it and potential pitfalls.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>8.</strong> Think in terms of states and transitions, and handle complex concurrent behavior correctly.</p>
+</td>
+<td><p>It is a valuable skill as an engineer to handle concurrent behavior correctly, independent of technical domain or employed tools.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>9.</strong> Model different aspects of a system efficiently, especially with regard to an appropriate level of detail and the consistency between different views.</p>
+</td>
+<td><p>Modeling is a universal engineering tool in all disciplines and at all stages of system development.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>10.</strong> Apply agile development methods and reflect about their usage within the context of a project.</p>
+</td>
+<td><p>Selecting and reflecting over development methods: How much should you plan ahead? Should you use an agile method? Read an article on development methods, and understanding it based on own experience.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>11.</strong> Make proper design choices for the system architecture and document them accordingly.</p>
+</td>
+<td><p>Learn how to reason about different alternatives together with others. This can happen at a whiteboard or through a document. No matter how, good visualizations are helpful in this task.</p>
+</td>
+</tr>
+</table>
+<h2>General Competence</h2>
+
+<span name="470e35"></span><aside name="470e35"><p>General competence is to be able to apply knowledge and skills independently in different situations by showing collaborative ability, accountability, ability to reflect and critical thinking in educational and professional context.</p>
+</aside>
+<table class="table table-sm">
+<tr>
+<td><p>Learning Goal</p>
+</td>
+<td><p>Comment</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>12.</strong> Organize and facilitate meetings in which use cases and user requirements are solicited, discussed and evaluated.</p>
+</td>
+<td><p>In engineering, we often focus about building the system ''right''. Building the right system is equally important.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>13.</strong> Managing the work of several developers.</p>
+</td>
+<td><p>The technical challenges are only one aspect that make system development difficult. Co-workers and other resources also need to be handled and planned.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>14.</strong> Facilitate team discussions and brainstorming sessions.</p>
+</td>
+<td><p>How can you organize collaboration with your colleagues so that work is done efficiently in a good working environment.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>15.</strong> Provide feedback to the work of others that is critical, constructive and relevant.</p>
+</td>
+<td><p>Everybody likes to receive constructive feedback — providing it needs to be learned.</p>
+</td>
+</tr>
+<tr>
+<td><p><strong>16.</strong> Reflect over own work done individually and in a team.</p>
+</td>
+<td><p>Reflection is the basis for improving and adjusting development processes. It also helps to create good learning and working conditions.</p>
+</td>
+</tr>
+</table>
+    </section>
+</div>
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+  </script>
+  <script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

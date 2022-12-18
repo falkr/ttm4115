@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="212.59843 6332.5986 552.7559 211.07874" width="552.7559" height="211.07874">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 6 6" markerWidth="6" markerHeight="6" color="#666">
+      <g>
+        <path d="M 3.2 0 L 0 -1.2 L 0 1.2 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="13" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-923.0769" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="15" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-10 06:04:54 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_11688">
+        <path d="M 403.09558 6372.809 C 442.4626 6374.827 466.89953 6380.624 480.16757 6398.59" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_11689">
+        <path d="M 506.3691 6492.6626 C 531.1637 6503.609 574.4835 6505.775 607.37714 6499.658" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Line_11690">
+        <path d="M 645.9036 6419.01 C 620.6084 6400.2436 555.10265 6397.384 515.1306 6408.7124" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="Graphic_11691"/>
+      <g id="Graphic_11692">
+        <text transform="translate(404.68505 6343.404)" fill="#666">
+          <tspan font-family="Helvetica Neue" font-size="13" font-style="italic" font-weight="400" fill="#666" x="16.24906" y="12">okay to make </tspan>
+          <tspan font-family="Helvetica Neue" font-size="13" font-style="italic" font-weight="400" fill="#666" x="29.25556" y="27.364">mistakes</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11694">
+        <text transform="translate(489.7244 6507.813)" fill="#666">
+          <tspan font-family="Helvetica Neue" font-size="13" font-style="italic" font-weight="400" fill="#666" x="5.283561" y="12">learn more about </tspan>
+          <tspan font-family="Helvetica Neue" font-size="13" font-style="italic" font-weight="400" fill="#666" x="19.60956" y="27.364">the problem</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11695">
+        <text transform="translate(552.0866 6383.271)" fill="#666">
+          <tspan font-family="Helvetica Neue" font-size="13" font-style="italic" font-weight="400" fill="#666" x="7.935561" y="12">have another try</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11684">
+        <ellipse cx="492.92474" cy="6454.488" rx="65.5005739460465" ry="39.0000625627359" fill="#ff365e"/>
+        <text transform="translate(440.52437 6437.068)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="18.222875" y="14">Check the </tspan>
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="5.3003754" y="31.42">state machine </tspan>
+        </text>
+      </g>
+      <g id="Graphic_11685">
+        <ellipse cx="646.60285" cy="6458.008" rx="65.5005739460467" ry="39.0000625627363" fill="#0096ff"/>
+        <text transform="translate(594.2025 6440.588)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="24.065375" y="14">Create a</tspan>
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="12.267875" y="31.42">new version</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11686">
+        <ellipse cx="337.62646" cy="6371.5986" rx="65.5005739460466" ry="39.0000625627366" fill="#0096ff"/>
+        <text transform="translate(285.2261 6354.1786)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="9.485375" y="14">Create a first </tspan>
+          <tspan font-family="Helvetica Neue" font-size="15" font-weight="400" fill="white" x="5.3003754" y="31.42">state machine</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

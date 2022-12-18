@@ -65,7 +65,7 @@ It lists criteria in different categories, which should help as a framework to u
 
 ---
 type: table
-file: ../learning/rubrics/deployment.mw
+file: ../project/rubrics/deployment.mw
 class: rubric
 caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---

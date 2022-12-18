@@ -5,7 +5,7 @@ During the semester, you need to hand in the following deliveries:
 ---
 type: table
 file: tables/deliveries.mw
-class: table table-sm check
+class: table table-sm 
 ---
 
 
@@ -17,7 +17,7 @@ This work is the basis for the entire course, and it will be delivered in severa
 ---
 type: table
 file: tables/spec.mw
-class: table table-sm check
+class: table table-sm
 ---
 
 

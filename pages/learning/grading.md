@@ -44,7 +44,7 @@ The speficic tables explain how the performance levels and general criteria map 
 
 ---
 type: table
-file: rubrics/deployment.mw
+file: ../project/rubrics/deployment.mw
 class: rubric
 caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---

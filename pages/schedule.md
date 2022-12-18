@@ -24,6 +24,6 @@ Here is the semester schedule for 2023. Note that this is a tentative plan that 
 ---
 type: table
 file: tables/schedule-2023.mw
-class: schedule table-sm table-bordered
+class: table-sm table-bordered
 format: html
 ---

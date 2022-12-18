@@ -332,7 +332,7 @@ This is only a very brief description of HTTP to relate it to the
 previously described communication topologies and message patterns. You
 have probably already heard about HTTP in other courses. Here, we look
 at it from an application's perspective. If you are interested in more
-technical details, read for instance on [Wikipedia](<https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>).
+technical details, read for instance on [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
 HTTP is a request-response message pattern, and uses a client-server
 topology. The server usually provides resources to the client, which can

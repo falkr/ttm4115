@@ -18,263 +18,19 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
+    button:hover {
+  background-color: #EFF7FF;
 }
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
-}
-
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
-}
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
+div.qna .accordion-button:not(.collapsed) {
+  background-color: #EFF7FF;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
   color: #00509e;
 }
-.w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+
+div.qna .accordion-button:not(.collapsed)::after {
+  color: #00509e;
 }
 
-.w3active, .w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 0 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-
-
-/*tr.rubric_title {background-color: lightgrey}*/
-/*tr.rubric_a {background-color: #D0E8DC}
-tr.rubric_b {background-color: #EEF7DB}
-tr.rubric_c {background-color: #FCFDE3}
-tr.rubric_d {background-color: #FDF3D6}
-tr.rubric_e {background-color: #F8D9C2}
-tr.rubric_f {background-color: #EBBCB9}
-
-tr.rubric_title {background-color: white; 
-	border-top: 2px black solid; 
-	border-bottom: 2px black solid;}
-td.rubric_title {background-color: white;}
-td.rubric_a {background-color: #D0E8DC}
-td.rubric_b {background-color: #EEF7DB}
-td.rubric_c {background-color: #FCFDE3}
-td.rubric_d {background-color: #FDF3D6}
-td.rubric_e {background-color: #F8D9C2}
-td.rubric_f {background-color: #EBBCB9}
-
-th.rubric_title {background-color: white}
-th.rubric_a {background-color: #D0E8DC}
-th.rubric_b {background-color: #EEF7DB}
-th.rubric_c {background-color: #FCFDE3}
-th.rubric_d {background-color: #FDF3D6}
-th.rubric_e {background-color: #F8D9C2}
-th.rubric_f {background-color: #EBBCB9}
-
-table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
-	vertical-align:top;}
-table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
-
-.rubric p {
-	margin: 0px
-}
-
-.rubric th {
-	text-align: center;
-	padding: 6px;
-}
-
-.rubric td {
-	vertical-align: top;
-	font-size: 12px;
-	padding: 6px;
-}
-
-.rubric th {
-	font-size: 12px;
-	vertical-align: top;
-}
-
-.rubric td:nth-child(2),
-.rubric th:nth-child(2) {
-	background-color: #D0E8DC;
-	width: 22%
-}
-
-.rubric td:nth-child(3),
-.rubric th:nth-child(3) {
-	background-color: #FCFDE3;
-	width: 22%
-}
-
-.rubric td:nth-child(4),
-.rubric th:nth-child(4) {
-	background-color: #F8D9C2;
-	width: 22%
-}
-
-.rubric td:nth-child(5),
-.rubric th:nth-child(5) {
-	background-color: #EBBCB9;
-	width: 22%
-}
-
-.rubric tfoot td {
-	text-align: right;
-	border-bottom: none;
-	padding: 1px;
-}
-
-.rubric tfoot a {
-	font-size: 12px;
-	font-style: italic;
-	color: gray
-}
-
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
 
   </style>
 </head>
@@ -389,6 +145,41 @@ table.weekplan a {
 </nav>
     </section>
     <section class="content">
+<h1>Semester Project</h1>
+<p>During the semester you will work on a system specification in your development teams.
+This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
+
+<h2>Managing Uncertainty is part of your job</h2>
+<p>Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.</p>
+
+<h2>You are the Product Owner</h2>
+<p>Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)</p>
+<p>In this course, there is no external product owner. We could have designed the course like this, but this adds additional complexity and would have come at a cost of reducing some of the other learning goals.</p>
+<p>You are therefore also the product owner, and have to decide which product to build and how it should work at the same time you are developing it. That's not a problem, but we have to be aware of this.</p>
+<p>Since you are the product owner, we choose a domain where you have some insights, so that you can answer the most important questions on your own and judge which features to implement and how they make sense.</p>
+
+<h2>Theme</h2>
+<p>Each year we select a theme for the semester project. There are two reasons for this:</p>
+<ol>
+<li>It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.</li>
+<li>It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.</li>
+</ol>
+<h2>Theme for 2023: Digital meets Physical Education</h2>
+<p>Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon.</p>
+<p>Can you build a system that makes communication within the lab easier?</p>
+<p>Here are some high-level ideas of functions:</p>
+<ul>
+<li>How can student assistants and teachers get a live overview over the progress of each team?</li>
+<li>How can we see which teams have missing students?</li>
+<li>Which tasks are done? Which tasks are difficult? Which teams are stuck at a certain task?</li>
+<li>How long does each task take, and can we collect historic information about task to estimate the remaining time in the lab?</li>
+<li>Can we track progress during the RATs?</li>
+</ul>
+<p>The idea is that most students are physical on campus and in the classroom or lab, not a fully digital setting. But it can be interesting if the solution would allow to help remote students (sick or away for another reason) could more easily join.</p>
+<p>You can use a Raspberry Pi with a SenseHAT as a hardware device, for instance to show the status at each table. If you have good ideas that require other hardware we can have a talk if we can incorporate them.</p>
+
+    </section>
+    <section class="content">
 <h1>Deliveries</h1>
 <p>During the semester, you need to hand in the following deliveries:</p>
 
@@ -468,12 +259,6 @@ table.weekplan a {
 <td></td>
 </tr>
 </table>
-    </section>
-    <section class="content">
-<h1>System Specification</h1>
-<p>During the semester you will work on a system specification in your development teams.
-This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
-
 <table class="table table-sm">
 <tr>
 <th><p>Item</p>
@@ -561,6 +346,21 @@ This work is the basis for the entire course, and it will be delivered in severa
 <li>For individual deliveries, your name must be in the header.</li>
 </ul>
 
+<h2>Questions and Answers</h2>
+
+<p>
+<div class="accordion" id="iddd936d">
+  <div class="accordion-item">
+    <p class="accordion-header" id="iddd936dA">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iddd936dC" aria-expanded="false" aria-controls="iddd936dC">Can we make changes between the different versions of the specifications?</button>
+    </p>
+    <div id="iddd936dC" class="accordion-collapse collapse" aria-labelledby="iddd936dA" data-bs-parent="#iddd936d">
+      <div class="accordion-body"><p>Yes. It is natural that your understanding of the system evolves, so what you have submitted in version 1 can be updated for version 2 and then also the final version. In the end, only the final version counts.</p>
+</div>
+    </div>
+  </div>
+</div>
+</p>
     </section>
 </div>
       </div>
@@ -584,19 +384,6 @@ This work is the basis for the entire course, and it will be delivered in severa
   </script>
   <script>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   </script>

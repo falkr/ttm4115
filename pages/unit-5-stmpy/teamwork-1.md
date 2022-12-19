@@ -106,22 +106,3 @@ caption: "A simple user interface representing the head lamp in the output of a 
 ## Debugging the State Machine
 
 When running the implementation, does the state machine behave as intended? If not, what is the problem? Do you have to go back and also change the diagram, or is it more technical problems with the code? (Or a combination?)
-
-
-# Deliveries
-
-
-### Reflection Document about State Machine Implementation
-
-* Write down your observations.
-* Document the results.
-* Pay especially attention on the process around the head lamp, and delivering it in a high-quality process.
-* Deliver on Teams
-
-### Team Reflection
-
-* As always, update your document about the team process and roles.
-
-### Individual Reflection 
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.

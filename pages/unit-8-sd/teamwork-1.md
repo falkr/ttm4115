@@ -79,19 +79,3 @@ Your sequence diagrams contain a situation that is called **mixed initiative**.
 * Add a new section *Reflection* to your document and compare your solution.
   * Is there any significant difference?
 * Deliver your final document on Teams
-
-
-
-
-
-# Reflection
-
-### Team Reflection
-
-* Add another section to the team reflection document, just like every week. 
-
-### Individual Reflection
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional observations to your reflection diary.

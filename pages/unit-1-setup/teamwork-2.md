@@ -58,19 +58,3 @@ To ensure progress during the semester and also as some form of feedback to us, 
 * Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
 * Copy the answers into a document that you maintain on your own.
 * Add any additional, maybe more private, observations to your reflection notes.
-
-
-# Checklist
-
-Deliver via Teams:
-
-* First Team Reflection (in the public channel for your team).
-* Learning Goals Relevance (DOCX in the deliveries folder for this unit)
-* Balances in Teamwork (PPTX in the deliveries folder for this unit)
-
-Deliver via Forms:
-
-* Individual reflection
-
-
-

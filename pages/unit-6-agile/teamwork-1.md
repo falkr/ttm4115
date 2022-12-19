@@ -69,12 +69,3 @@ Here is also a [link to the diagram](https://drive.google.com/file/d/1hZdFV59lQ2
 With some discussion you should be able to place all forces and strategies so that the entire diagram makes sense. These are the considerations you have to do in a development project!
 
 Copy a screenshot of the final puzzle into the document where you also made notes on the examples for each of the forces. Deliver on Teams in the folder for this unit, under file name `ttm4115-team-xx-agile-forces.docx`.
-
-
-### Team Reflection
-
-* As always, update your document about the team process and roles.
-
-### Individual Reflection 
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.

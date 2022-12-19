@@ -140,23 +140,3 @@ Some hints for the delivery:
 Document your achievement in your document.
 
 :delivery: Put the document of your unit on Teams, into the folder for this week.
-
-
-
-
-# Reflection
-
-
-
-### Team Reflection for This Unit 
-
-* Add another section to the team reflection document, just like every week. 
-
-### Individual Reflection
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional observations to your reflection diary.
-
-
-

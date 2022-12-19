@@ -4,12 +4,12 @@ During the semester you will work on a system specification in your development 
 This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.
 
 
-## Managing Uncertainty is part of your job
+### Managing Uncertainty is part of your job
 
 Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.
 
 
-## You are the Product Owner
+### You are the Product Owner
 
 Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)
 
@@ -20,14 +20,15 @@ You are therefore also the product owner, and have to decide which product to bu
 Since you are the product owner, we choose a domain where you have some insights, so that you can answer the most important questions on your own and judge which features to implement and how they make sense.
 
 
-## Theme
+### Theme
 
 Each year we select a theme for the semester project. There are two reasons for this: 
 
 1. It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.
 2. It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.
 
-## Theme for 2023: Digital meets Physical Education
+
+### Theme for 2023: Digital meets Physical Education
 
 Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon. 
 
@@ -57,12 +58,18 @@ class: table table-sm
 ---
 
 
+The deliveries contain the following elements:
+
 ---
 type: table
 file: tables/spec.mw
 class: table table-sm
 ---
 
+
+- Deliveries marked with {{:bi-circle-fill:}} *must* be included. 
+- Deliveries marked with {{:bi-circle-half:}} *can* be included if they are updated, and you want provide them as context for the new parts.
+- Deliveries marked with {{:bi-circle:}} are not part of the delivery, since we have not yet treated them in class when the delivery is due.
 
 # Format and Template 
 
@@ -71,11 +78,12 @@ class: table table-sm
 - You can include diagrams and figures in landscape mode for entire pages. In this case, they need to be readable **from the right**. 
 - Check which pattern for the filename we require. This makes file handling for us faster.
 - The header on each page must contain your team number and the delivery name.
+- For group deliveries, you team number (and name) must be in the header. The front page must list all members of the team that have contributed to the delivery.
 - For individual deliveries, your name must be in the header.
 
 
 
-## Questions and Answers
+# Questions and Answers
 
 ---
 type: qna

@@ -77,3 +77,8 @@ title: 'Airport Gate Control System'
 icon: people-fill
 link: teamwork-1.html
 ---
+
+
+---
+ref: ../reflection.ref
+---

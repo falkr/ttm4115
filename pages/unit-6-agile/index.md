@@ -39,3 +39,8 @@ title: 'Agile vs. Architecture'
 icon: people-fill
 link: teamwork-1.html
 ---
+
+
+---
+ref: ../reflection.ref
+---

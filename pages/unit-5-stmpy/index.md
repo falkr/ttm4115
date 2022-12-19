@@ -60,3 +60,8 @@ type: qna
 q: Why do we need to use state machines in the semester project?
 ---
 Remember the blog post we recommended you to read. Sometimes you find out that you need a state machine after it's too late. We want you to understand how to handle concurrent behavior using state machines. Once you have learned that, you can master other frameworks and concepts to handle it.
+
+
+---
+ref: ../reflection.ref
+---

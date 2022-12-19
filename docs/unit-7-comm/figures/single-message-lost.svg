@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-11.338583 107.21654 363.77953 96.54726" width="363.77953" height="96.54726">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="9" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="-1333.3333" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica-Oblique"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0096ff">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-26 12:26:37 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="0" y="107.21654" width="352.44095" height="96.54726"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11091">
+        <rect x="85.03937" y="107.71654" width="56.69292" height="17.007874" fill="white"/>
+        <rect x="85.03937" y="107.71654" width="56.69292" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(90.03937 109.22048)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="5.0007554" y="11">sender</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11092">
+        <rect x="198.44882" y="107.71654" width="56.69291" height="17.007874" fill="white"/>
+        <rect x="198.44882" y="107.71654" width="56.69291" height="17.007874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(203.44882 109.22048)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="2.0066127" y="11">receiver</tspan>
+        </text>
+      </g>
+      <g id="Line_11093">
+        <line x1="113.38842" y1="125.22441" x2="113.40943" y2="198.44095" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11094">
+        <line x1="226.77164" y1="124.72442" x2="226.79526" y2="172.92914" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11095">
+        <text transform="translate(127.40155 138.89764)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x=".15429688" y="11">message</tspan>
+        </text>
+      </g>
+      <g id="Line_11096">
+        <line x1="113.38581" y1="155.90551" x2="185.71417" y2="155.91937" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_11099">
+        <g id="Line_11101">
+          <line x1="187.11023" y1="147.41733" x2="204.11811" y2="164.4252" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_11100">
+          <line x1="204.11811" y1="147.41733" x2="187.11023" y2="164.4252" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Graphic_11114">
+        <text transform="translate(218.11023 181.7638)" fill="#0096ff">
+          <tspan font-family="Helvetica" font-size="9" font-style="italic" font-weight="400" fill="#0096ff" x="0" y="9">message</tspan>
+          <tspan font-family="Helvetica" font-size="9" font-style="italic" font-weight="400" fill="#0096ff" x="0" y="20">is lost</tspan>
+        </text>
+      </g>
+      <g id="Line_11115">
+        <line x1="218.29132" y1="181.7638" x2="204.2577" y2="170.84945" marker-end="url(#StickArrow_Marker_2)" stroke="#0096ff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11199"/>
+    </g>
+  </g>
+</svg>

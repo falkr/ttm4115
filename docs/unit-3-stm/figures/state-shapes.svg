@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="127.05906 3644.8544 335.4882 47.24363" width="335.4882" height="47.24363">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-30 06:36:38 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11360">
+        <rect x="127.55906" y="3645.3544" width="73.70079" height="28.34646" fill="white"/>
+        <rect x="127.55906" y="3645.3544" width="73.70079" height="28.34646" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(132.55906 3652.5277)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="23.17852" y="11">red</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11361">
+        <path d="M 218.59843 3645.3544 L 280.29922 3645.3544 C 283.61293 3645.3544 286.29922 3648.0407 286.29922 3651.3544 L 286.29922 3667.701 C 286.29922 3671.0146 283.61293 3673.701 280.29922 3673.701 L 218.59843 3673.701 C 215.28472 3673.701 212.59843 3671.0146 212.59843 3667.701 L 212.59843 3651.3544 C 212.59843 3648.0407 215.28472 3645.3544 218.59843 3645.3544 Z" fill="white"/>
+        <path d="M 218.59843 3645.3544 L 280.29922 3645.3544 C 283.61293 3645.3544 286.29922 3648.0407 286.29922 3651.3544 L 286.29922 3667.701 C 286.29922 3671.0146 283.61293 3673.701 280.29922 3673.701 L 218.59843 3673.701 C 215.28472 3673.701 212.59843 3671.0146 212.59843 3667.701 L 212.59843 3651.3544 C 212.59843 3648.0407 215.28472 3645.3544 218.59843 3645.3544 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(217.59843 3652.5277)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="23.17852" y="11">red</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11362">
+        <path d="M 311.81103 3645.3544 L 357.16536 3645.3544 C 364.99302 3645.3544 371.3386 3651.7 371.3386 3659.5277 L 371.3386 3659.5277 C 371.3386 3667.3553 364.99302 3673.701 357.16536 3673.701 L 311.81103 3673.701 C 303.98337 3673.701 297.6378 3667.3553 297.6378 3659.5277 L 297.6378 3659.5277 C 297.6378 3651.7 303.98337 3645.3544 311.81103 3645.3544 Z" fill="white"/>
+        <path d="M 311.81103 3645.3544 L 357.16536 3645.3544 C 364.99302 3645.3544 371.3386 3651.7 371.3386 3659.5277 L 371.3386 3659.5277 C 371.3386 3667.3553 364.99302 3673.701 357.16536 3673.701 L 311.81103 3673.701 C 303.98337 3673.701 297.6378 3667.3553 297.6378 3659.5277 L 297.6378 3659.5277 C 297.6378 3651.7 303.98337 3645.3544 311.81103 3645.3544 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(302.6378 3652.5277)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="23.17852" y="11">red</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11363">
+        <path d="M 382.67718 3659.5277 L 385.5118 3645.3544 L 459.2126 3645.3544 L 462.04726 3659.5277 L 459.2126 3673.701 L 385.5118 3673.701 Z" fill="white"/>
+        <path d="M 382.67718 3659.5277 L 385.5118 3645.3544 L 459.2126 3645.3544 L 462.04726 3659.5277 L 459.2126 3673.701 L 385.5118 3673.701 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(387.67718 3652.5277)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="26.013165" y="11">red</tspan>
+        </text>
+      </g>
+      <g id="Group_11370">
+        <g id="Graphic_11369">
+          <circle cx="265.48403" cy="3678.3975" r="13.2005761268042" fill="white"/>
+          <circle cx="265.48403" cy="3678.3975" r="13.2005761268042" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_11368">
+          <path d="M 258.40087 3680.5487 L 263.37194 3685.79 L 272.5366 3670.6405" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_11371">
+        <g id="Graphic_11367">
+          <circle cx="350.5234" cy="3678.3975" r="13.2005761268042" fill="white"/>
+          <circle cx="350.5234" cy="3678.3975" r="13.2005761268042" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Group_11364">
+          <g id="Line_11366">
+            <line x1="343.1311" y1="3685.79" x2="358.44373" y2="3670.477" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Line_11365">
+            <line x1="358.44373" y1="3685.79" x2="343.1311" y2="3670.477" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_11372">
+        <g id="Graphic_11376">
+          <circle cx="446.01206" cy="3678.3975" r="13.2005761268042" fill="white"/>
+          <circle cx="446.01206" cy="3678.3975" r="13.2005761268042" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Group_11373">
+          <g id="Line_11375">
+            <line x1="438.61975" y1="3685.79" x2="453.9324" y2="3670.477" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Line_11374">
+            <line x1="453.9324" y1="3685.79" x2="438.61975" y2="3670.477" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_11377">
+        <g id="Graphic_11381">
+          <circle cx="183.2793" cy="3677.508" r="13.2005761268042" fill="white"/>
+          <circle cx="183.2793" cy="3677.508" r="13.2005761268042" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Group_11378">
+          <g id="Line_11380">
+            <line x1="175.88699" y1="3684.9005" x2="191.19963" y2="3669.588" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+          <g id="Line_11379">
+            <line x1="191.19963" y1="3684.9005" x2="175.88699" y2="3669.588" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

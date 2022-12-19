@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="178.58268 4589.0415 192.7559 82.70473" width="192.7559" height="82.70473">
+  <defs>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="8" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-31 08:44:46 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_11507">
+        <path d="M 244.11025 4589.2915 L 305.9764 4589.2915 C 309.2901 4589.2915 311.9764 4591.978 311.9764 4595.2915 L 311.9764 4665.496 C 311.9764 4668.81 309.2901 4671.496 305.9764 4671.496 L 244.11025 4671.496 C 240.79654 4671.496 238.11025 4668.81 238.11025 4665.496 L 238.11025 4595.2915 C 238.11025 4591.978 240.79654 4589.2915 244.11025 4589.2915 Z" fill="white"/>
+        <path d="M 244.11025 4589.2915 L 305.9764 4589.2915 C 309.2901 4589.2915 311.9764 4591.978 311.9764 4595.2915 L 311.9764 4665.496 C 311.9764 4668.81 309.2901 4671.496 305.9764 4671.496 L 244.11025 4671.496 C 240.79654 4671.496 238.11025 4668.81 238.11025 4665.496 L 238.11025 4595.2915 C 238.11025 4591.978 240.79654 4589.2915 244.11025 4589.2915 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(240.11025 4591.2915)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="700" fill="black" x="23.260709" y="10">state</tspan>
+        </text>
+      </g>
+      <g id="Line_11508">
+        <line x1="238.2756" y1="4606.2993" x2="311.9764" y2="4606.2993" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_11509">
+        <clipPath id="clip_path">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path)" transform="translate(243.11025 4606.9686)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / action_1()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11511">
+        <clipPath id="clip_path_2">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_2)" transform="translate(242.9764 4615.4726)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / action_2()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11512">
+        <clipPath id="clip_path_3">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_3)" transform="translate(242.9764 4623.9765)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">entry / action_3()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11513">
+        <clipPath id="clip_path_4">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_4)" transform="translate(243.2441 4632.4804)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">exit / action_4()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11514">
+        <clipPath id="clip_path_5">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_5)" transform="translate(243.11025 4640.9844)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">exit / action_5()</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11515">
+        <clipPath id="clip_path_6">
+          <rect x="0" y="0" width="71" height="11.338583"/>
+        </clipPath>
+        <text clip-path="url(#clip_path_6)" transform="translate(243.11025 4649.4883)" fill="black">
+          <tspan font-family="Helvetica" font-size="8" font-weight="400" fill="black" x="0" y="8">exit / action_6()</tspan>
+        </text>
+      </g>
+      <g id="Group_11516">
+        <g id="Graphic_11518">
+          <circle cx="316.50765" cy="4650.681" r="13.2005761268042" fill="white"/>
+          <circle cx="316.50765" cy="4650.681" r="13.2005761268042" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_11517">
+          <path d="M 309.4245 4652.832 L 314.39556 4658.0733 L 323.56022 4642.924" stroke="#008f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Graphic_11519"/>
+    </g>
+  </g>
+</svg>

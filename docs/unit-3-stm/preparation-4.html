@@ -316,9 +316,9 @@ But what if the current state does not say anything about the incoming event?</p
 <p>When the state machine is in a state that does not declare a transition that is triggered by the event at the head of the queue, the event is taken from the queue and <strong>discarded</strong>, that means thrown away.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/discard.png" alt="An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/discard.png">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/discard.png"><p><p>An illustration how a message is discarded. In the current state <code>s1</code>, an arriving message <code>b</code> is discarded because <code>s1</code> does not handle it.</p>
+<img src="figures/discard.png" alt="An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it." width="100%"/>
+<span name="figures/discard.png">&nbsp;</span>
+<aside name="figures/discard.png"><p><p>An illustration how a message is discarded. In the current state <code>s1</code>, an arriving message <code>b</code> is discarded because <code>s1</code> does not handle it.</p>
 </p></aside>
 </div>
 <p>Look at the situation above. Assume that the state machine is currently in state <code>s1</code>.
@@ -332,9 +332,9 @@ When a deferred event is at the head of the event queue, the state machine will 
 Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it).</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/defer.jpg" alt="State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/defer.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/defer.jpg"><p><p>State <code>s1</code> <em>defers</em> event <code>A</code> so that it is stored in the queue until after the arrival of event <code>B</code>.</p>
+<img src="figures/defer.jpg" alt="State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`." width="100%"/>
+<span name="figures/defer.jpg">&nbsp;</span>
+<aside name="figures/defer.jpg"><p><p>State <code>s1</code> <em>defers</em> event <code>A</code> so that it is stored in the queue until after the arrival of event <code>B</code>.</p>
 </p></aside>
 </div>
 <h3>Summary of Queue Semantics</h3>

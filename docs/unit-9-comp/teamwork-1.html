@@ -69,7 +69,61 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -192,7 +246,7 @@ div.figurefullwitdth {
 This week we want to combine several concepts to build a more complete software component.</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/meme.jpg" width="100%"/>
+<img src="figures/meme.jpg" width="100%"/>
 </div>
     </section>
     <section class="content">
@@ -276,9 +330,9 @@ But we add the possibility to create several instances of the same state machine
 <p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py" class="arrow">TimerManager.py<a></p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/component-template.svg" alt="Template for a component with an MQTT client and STMPY state machines." width="100%"/>
-<span name="../../pages/unit-9-comp/figures/component-template.svg">&nbsp;</span>
-<aside name="../../pages/unit-9-comp/figures/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p>
+<img src="figures/component-template.svg" alt="Template for a component with an MQTT client and STMPY state machines." width="100%"/>
+<span name="figures/component-template.svg">&nbsp;</span>
+<aside name="figures/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p>
 </p></aside>
 </div>
 <h2>Logging</h2>
@@ -346,7 +400,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <p>The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/timer-stm.png" width="100%"/>
+<img src="figures/timer-stm.png" width="100%"/>
 </div>
 <p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time.
 We want to do this by creating a single state machine instance for each timer.
@@ -375,9 +429,9 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <p>Because we don't have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/command-sender.png" alt="Simple GUI to dispatch commands via MQTT." width="100%"/>
-<span name="../../pages/unit-9-comp/figures/command-sender.png">&nbsp;</span>
-<aside name="../../pages/unit-9-comp/figures/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p>
+<img src="figures/command-sender.png" alt="Simple GUI to dispatch commands via MQTT." width="100%"/>
+<span name="figures/command-sender.png">&nbsp;</span>
+<aside name="figures/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p>
 </p></aside>
 </div>
 <p>Do the following:</p>

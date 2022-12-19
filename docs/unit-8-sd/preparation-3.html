@@ -95,6 +95,34 @@ div.goals ul li:before {
 }
 
 
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -235,7 +263,7 @@ means that lifeline Y receives signal A before it receives B,
 <code>&lt; ?A, ?B &gt;</code>.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ordering-lifeline.png" width="100%"/>
+<img src="figures/ordering-lifeline.png" width="100%"/>
 </div>
 <p>Now comes the part that may be less intuitive: Events on <em>different</em>
 lifelines are <em>not ordered</em>, even though they have distinct
@@ -247,9 +275,9 @@ not tell if any of them happens before each other, despite it may look
 like it.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-11.png" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/ex-11.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
+<img src="figures/ex-11.png" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram." width="100%"/>
+<span name="figures/ex-11.png">&nbsp;</span>
+<aside name="figures/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
 </p></aside>
 </div>
 <p>For some, this non-ordering of events on different lifelines may not be
@@ -264,7 +292,7 @@ the lifelines. What counts is that <code>A</code> is received before <code>B</co
 does not change in any of the diagrams.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-12.png" width="100%"/>
+<img src="figures/ex-12.png" width="100%"/>
 </div>
 <p>The slope of messages is hence only a means of illustration. A
 recommendation is to use horizontal messages where possible, and
@@ -275,7 +303,7 @@ slope.</p>
 distinct events:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-1.png" width="100%"/>
+<img src="figures/ex-1.png" width="100%"/>
 </div>
 <p>Intuitively, we already know one sequence in which these events can
 happen, that is, we know that <code>&lt;!A,?A,!B,?B&gt;</code> is one valid
@@ -335,7 +363,7 @@ ordering rules, and strike them out?</p>
 by <code>Y</code> before <code>B</code>.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-2.png" width="100%"/>
+<img src="figures/ex-2.png" width="100%"/>
 </div>
 <p><strong>Exercise:</strong> Write down all the possible traces that the sequence
 diagram <em>Beta</em> allows.</p>
@@ -349,7 +377,7 @@ lifeline <em>Y</em>. Within the brackets of a co-region, events on the lifeline
 are not ordered anymore, i.e., they can happen in any order.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-3.png" width="100%"/>
+<img src="figures/ex-3.png" width="100%"/>
 </div>
 <p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if
 the events within the co-region (<code>?A</code> and <code>?B</code>) can happen in any order?</p>
@@ -359,7 +387,7 @@ co-region), reduce the number of traces so that there is only one
 possible trace left for diagram <em>Beta-C</em>?</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-3-2.png" width="100%"/>
+<img src="figures/ex-3-2.png" width="100%"/>
 </div>
     </section>
 </div>

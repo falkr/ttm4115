@@ -343,13 +343,13 @@ Using MQTT.FX is really simple, but because we have now talked about brokers, cl
 <p><a class="arrow" href="https://mqttfx.jensd.de">Download MQTT.FX</a></p>
 
 <div class="figure">
-<img src="../../pages/figures/mqtt/mqtt-fx-publish.png" width="100%"/>
+<img src="figures/mqtt/mqtt-fx-publish.png" width="100%"/>
 </div>
 <h2>Publishing Messages</h2>
 <p>Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not doen with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.</p>
 
 <div class="figure">
-<img src="../../pages/figures/mqtt/mqtt-fx-subscribe.png" width="100%"/>
+<img src="figures/mqtt/mqtt-fx-subscribe.png" width="100%"/>
 </div>
 <h2>Observing Communication</h2>
 <p>Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application  and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.</p>
@@ -360,7 +360,7 @@ Using MQTT.FX is really simple, but because we have now talked about brokers, cl
 <p>MQTT.FX does not run (yet) on Macs with Apple processors, but there is a similar program that you can install from the app store, <a href="https://apps.apple.com/no/app/mqtt-explorer/id1455214828?mt=12">MQTT Explorer</a>. The image below shows how to add our default broker to it.</p>
 
 <div class="figure">
-<img src="../../pages/figures/mqtt/mqtt-explorer.jpg" width="100%"/>
+<img src="figures/mqtt/mqtt-explorer.jpg" width="100%"/>
 </div>
     </section>
 </div>

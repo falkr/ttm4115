@@ -269,7 +269,7 @@ situation. The scenario <em>Lossy_1</em> for instance also implies scenario
 message is written with a big cross.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/lossy-12.png" width="100%"/>
+<img src="figures/lossy-12.png" width="100%"/>
 </div>
 <p>So, whenever there is a diagram in which a message is sent, we should
 check what would happen if this message got lost. Here are some possible
@@ -294,7 +294,7 @@ the expiration of a timer. We show the timer here as a message of
 </ul>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/lossy-3.png" width="100%"/>
+<img src="figures/lossy-3.png" width="100%"/>
 </div>
 <h2>Non-Causal Orderings</h2>
 <p>The diagram below shows an interaction between parts in a movie ticket
@@ -305,7 +305,7 @@ to the printer. The printer then prints the tickets. We ignore the case
 that the payment fails.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-6.png" width="100%"/>
+<img src="figures/ex-6.png" width="100%"/>
 </div>
 <p>This specification has a trouble spot. The diagram indicates that the
 <em>movie</em> message is received after the <em>pay_ok</em> message. In a real
@@ -330,7 +330,7 @@ implementation, the non-causal ordering of the events may be a source of
 trouble.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-7.png" width="100%"/>
+<img src="figures/ex-7.png" width="100%"/>
 </div>
 <h2>Mixed Initiatives</h2>
 <p>Consider the following alarm system. A sensor may detect an alarm and
@@ -339,7 +339,7 @@ the alarm via message <em>confirm</em>. The alarm can also be stopped by the
 sensor via <em>stop</em>. This is shown in the two diagrams below.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-8.png" width="100%"/>
+<img src="figures/ex-8.png" width="100%"/>
 </div>
 <p>The two different scenarios seem pretty straight-forward. However, these
 two scenarios imply a third one: What should happen, if the alarm is
@@ -351,7 +351,7 @@ coincidence, but it is only a matter of time and you will observe this
 situation. We can illustrate it in another diagram:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-9.png" width="100%"/>
+<img src="figures/ex-9.png" width="100%"/>
 </div>
 <p>So what to do about this? If you only provide the sequence diagrams
 above, it is not clear how an implementation should respond in this
@@ -362,7 +362,7 @@ vice versa. The diagram <em>Confirm and Stop</em> shows one way to address the
 mixed initiative, using a simple comment.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-91.png" width="100%"/>
+<img src="figures/ex-91.png" width="100%"/>
 </div>
     </section>
     <section class="content">

@@ -287,9 +287,9 @@ table.weekplan a {
 In principle, you could design a state machine that only has a single state, yet handles many incoming messages and timers. This state machine could store all information in its variables, and use lots of guards on the transitions. It would obey all rules of a consistent state machine we have listed so far.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/stateless-machine.png" alt="A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/stateless-machine.png">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/stateless-machine.png"><p><p>A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.</p>
+<img src="figures/stateless-machine.png" alt="A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended." width="100%"/>
+<span name="figures/stateless-machine.png">&nbsp;</span>
+<aside name="figures/stateless-machine.png"><p><p>A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.</p>
 </p></aside>
 </div>
 <p>Above we see a machine that is syntactically correct. It consists of only a single state <code>s_1</code>, and declares outgoing triggers <code>A</code>, <code>B</code>, <code>C</code>. For each of these triggers it defines compound transitions that contain a choice state with an outgoing guard. These guards determine what the state machine is doing, like execurting actions attached to the branches of the transitions (not shown here). So this is a valid state machine, and totally possible to produce. But is it a good idea?</p>
@@ -302,18 +302,18 @@ Instead, the states should follow what is happening in the real world or follow 
 <p>Similar to the strategy with the decisions above, we could realize the state machine shown below. It should monitor the arrival of a message <code>A</code>. If it arrives in time (i.e., before timer <code>t</code> expires), we want to go into state <code>in_time</code>, otherwise we go into state <code>too_late</code>. The solution below uses a decision once the message <code>A</code> arrives and checks iof the timer alreay expired, to then decide where to go.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/stateless-timer-1.svg" alt="Using a choice state with a decision to query the state of the timer. Not recommended." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/stateless-timer-1.svg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/stateless-timer-1.svg"><p><p>Using a choice state with a decision to query the state of the timer. Not recommended.</p>
+<img src="figures/stateless-timer-1.svg" alt="Using a choice state with a decision to query the state of the timer. Not recommended." width="100%"/>
+<span name="figures/stateless-timer-1.svg">&nbsp;</span>
+<aside name="figures/stateless-timer-1.svg"><p><p>Using a choice state with a decision to query the state of the timer. Not recommended.</p>
 </p></aside>
 </div>
 <p>Although the solution above is syntactically okay, it is not a good design. Obviously, the fact if the message arrived in time or too late has something to do with the flow of the conversation between this state machine and wherever <code>A</code> comes from. The fact that the timer <code>t</code> expired is n the design above not visible form the control state. When we debug the state machine, we don't see that it is in a differnet state, and we also have to look at the timer queue to understand the current state of the system.</p>
 <p>The solution below is much better. Here we use states the way they are useful. When the timer expires, the state machine switches into state <code>still_waiting</code>, which already signifies that <code>A</code> is late. In this design, the control flow follows the flow of the conversation, and encodes that the timer expires.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/stateless-timer-2.svg" alt="Recommended, state-based design realizing the same functionality." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/stateless-timer-2.svg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/stateless-timer-2.svg"><p><p>Recommended, state-based design realizing the same functionality.</p>
+<img src="figures/stateless-timer-2.svg" alt="Recommended, state-based design realizing the same functionality." width="100%"/>
+<span name="figures/stateless-timer-2.svg">&nbsp;</span>
+<aside name="figures/stateless-timer-2.svg"><p><p>Recommended, state-based design realizing the same functionality.</p>
 </p></aside>
 </div>
     </section>

@@ -69,7 +69,60 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -228,9 +281,9 @@ To create components also means to partition the entire system into components. 
 <p>To let you better understand, we show a diagram with components for the Airgate System below. We will later use these as examples.</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/airgate-components.png" alt="A possible component-based structure for the Airgate system." width="100%"/>
-<span name="../../pages/unit-9-comp/figures/airgate-components.png">&nbsp;</span>
-<aside name="../../pages/unit-9-comp/figures/airgate-components.png"><p><p>A possible component-based structure for the Airgate system.</p>
+<img src="figures/airgate-components.png" alt="A possible component-based structure for the Airgate system." width="100%"/>
+<span name="figures/airgate-components.png">&nbsp;</span>
+<aside name="figures/airgate-components.png"><p><p>A possible component-based structure for the Airgate system.</p>
 </p></aside>
 </div>
 <ul>
@@ -332,18 +385,18 @@ To create components also means to partition the entire system into components. 
 <p>In UML, interfaces can be visualized with the symbols below; one indicates a required interface, the other one a provided interface.</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/airgate-services.png" alt="The two turnstile components both define the same interface." width="100%"/>
-<span name="../../pages/unit-9-comp/figures/airgate-services.png">&nbsp;</span>
-<aside name="../../pages/unit-9-comp/figures/airgate-services.png"><p><p>The two turnstile components both define the same interface.</p>
+<img src="figures/airgate-services.png" alt="The two turnstile components both define the same interface." width="100%"/>
+<span name="figures/airgate-services.png">&nbsp;</span>
+<aside name="figures/airgate-services.png"><p><p>The two turnstile components both define the same interface.</p>
 </p></aside>
 </div>
 <h2>From Interfaces to Services</h2>
 <p>The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a <strong>service</strong>. Have a look at the three-step interaction below:</p>
 
 <div class="figure">
-<img src="../../pages/unit-9-comp/figures/airgate-discovery.png" alt="The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services." width="100%"/>
-<span name="../../pages/unit-9-comp/figures/airgate-discovery.png">&nbsp;</span>
-<aside name="../../pages/unit-9-comp/figures/airgate-discovery.png"><p><p>The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services.</p>
+<img src="figures/airgate-discovery.png" alt="The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services." width="100%"/>
+<span name="figures/airgate-discovery.png">&nbsp;</span>
+<aside name="figures/airgate-discovery.png"><p><p>The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services.</p>
 </p></aside>
 </div>
 <ol>

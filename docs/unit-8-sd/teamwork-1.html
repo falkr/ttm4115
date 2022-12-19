@@ -69,6 +69,30 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
 
 
   </style>
@@ -190,9 +214,9 @@ div.figurefullwitdth {
 <p>You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven't formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/airport.png" alt="A communication diagram for the controller and its connected components." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/airport.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/airport.png"><p><p>A communication diagram for the controller and its connected components.</p>
+<img src="figures/airport.png" alt="A communication diagram for the controller and its connected components." width="100%"/>
+<span name="figures/airport.png">&nbsp;</span>
+<aside name="figures/airport.png"><p><p>A communication diagram for the controller and its connected components.</p>
 </p></aside>
 </div>
 <ul>
@@ -237,7 +261,7 @@ div.figurefullwitdth {
 <p>Some help for starting:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/airport-help.png" width="100%"/>
+<img src="figures/airport-help.png" width="100%"/>
 </div>
 <h2>Task 3: Turnstile - Controller</h2>
 <p>We now want to consider the interaction between the turnstile and the controller.</p>
@@ -314,7 +338,6 @@ div.figurefullwitdth {
   </script>
   <script>
     
-
 
 
 

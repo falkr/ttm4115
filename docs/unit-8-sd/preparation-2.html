@@ -96,6 +96,35 @@ div.goals ul li:before {
 
 
 
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
+
   </style>
 </head>
 
@@ -224,7 +253,7 @@ component may ask for access, and the access right may be granted or
 not. We can show this in the sequence diagram <em>Access</em> below:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/alt.png" width="100%"/>
+<img src="figures/alt.png" width="100%"/>
 </div>
 <p>The different compartments are alternatives to each other. There may be
 any number of compartments, not only two. They are separated by a dashed
@@ -246,7 +275,7 @@ similar to an alt fragment with two compartments, one of which is empty.
 Like with the alt fragment, the opt fragment can have a guard.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/opt-1.png" width="100%"/>
+<img src="figures/opt-1.png" width="100%"/>
 </div>
 <h2>loop</h2>
 <p>With the <strong>loop</strong> fragment, you can express that a behavior is executed
@@ -258,7 +287,7 @@ the escape out of the loop. You may also leave unspecified how often the
 loop is executed.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/loop-1.png" width="100%"/>
+<img src="figures/loop-1.png" width="100%"/>
 </div>
 <h2>assert and neg</h2>
 <p>In some cases, you want to assert that a certain interaction must
@@ -268,7 +297,7 @@ exactly occur as specified. For that, you can place it into an
 can be places in a <strong>neg</strong> fragment.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/assert-neg.png" width="100%"/>
+<img src="figures/assert-neg.png" width="100%"/>
 </div>
 <h2>ref</h2>
 <p>With a <strong>ref</strong> fragment, you can refer from one sequence diagram to
@@ -282,7 +311,7 @@ general, but it should work. Note that the outermost frame, labeled
 &quot;<strong>sd</strong> alarm&quot; encapsulates the entire sequence diagram.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ref-1.png" width="100%"/>
+<img src="figures/ref-1.png" width="100%"/>
 </div>
 <h2>Time Constraints</h2>
 <p>In some cases, you want to add time constraints to a specification, to
@@ -290,9 +319,9 @@ show <em>when</em> an interaction occurs, or how long specific parts of it may
 or should take. Have a look at the example below:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/timing.png" alt="From the UML@Class book." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/timing.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/timing.png"><p><p>From the UML@Class book.</p>
+<img src="figures/timing.png" alt="From the UML@Class book." width="100%"/>
+<span name="figures/timing.png">&nbsp;</span>
+<aside name="figures/timing.png"><p><p>From the UML@Class book.</p>
 </p></aside>
 </div>
 <p>It shows that the newsletter is sent at 12:00. Five time units later,

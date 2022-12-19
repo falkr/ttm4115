@@ -331,7 +331,7 @@ To react on the reception of a signal, simply write that signals as the trigger 
 <p>Design a state machine in draw.io for the Car Lock Controller that keeps track of the state of the door and the lock, and that implements the functional requirements from above.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/car-lock-1.png" width="100%"/>
+<img src="figures/car-lock-1.png" width="100%"/>
 </div>
 <p>Now, add the following functional requirement and create another version of the state machine. (Edit as a copy of the sheet.)</p>
 <ul>
@@ -340,12 +340,12 @@ To react on the reception of a signal, simply write that signals as the trigger 
 <p>This implies that we add a timer to the state machine with a transition reacting to it once the timer expires. We do this in the state machine below. It is important that we use the exit/stop_timer(t) action to state <code>closed_unlocked</code>, to prevent a sequence where the user quickly opens the door, then closes it again, then the timer (which was not stopped) to expire and the lock to close. This is prevented by explicitly stopping the timer.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/car-lock-2.png" width="100%"/>
+<img src="figures/car-lock-2.png" width="100%"/>
 </div>
 <p>Another solution adds an additional state, here called <code>closed_unlocked_timed</code>. This state covers explicitly that the timer is active, and we leave this state either by the timer expiration or by opening the door.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/car-lock-3.png" width="100%"/>
+<img src="figures/car-lock-3.png" width="100%"/>
 </div>
     </section>
 </div>

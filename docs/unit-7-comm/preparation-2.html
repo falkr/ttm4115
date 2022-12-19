@@ -501,7 +501,7 @@ your router at home.</p>
 <p>A typical interaction looks as follows:</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-1.svg" width="100%"/>
+<img src="figures/mqtt-1.svg" width="100%"/>
 </div>
 <p>There can be any number of subscribers and any number of publishers in a
 system. Because of the publish-subscribe pattern, the subscribers do not
@@ -589,9 +589,9 @@ wait until the sensor sends its temperature, which can be as long as
 about 10 minutes in the worst case.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-retained-1.svg" alt="Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-retained-1.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-retained-1.svg"><p><p>Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</p>
+<img src="figures/mqtt-retained-1.svg" alt="Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published." width="100%"/>
+<span name="figures/mqtt-retained-1.svg">&nbsp;</span>
+<aside name="figures/mqtt-retained-1.svg"><p><p>Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</p>
 </p></aside>
 </div>
 <p>Instead, the sensor can mark its temperature message as a <strong>retained</strong>
@@ -604,9 +604,9 @@ again, but that it immediately receives the last temperature reading.
 (We show the reainted message with a trailing <em>R</em>.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-retained-2.svg" alt="Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-retained-2.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-retained-2.svg"><p><p>Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</p>
+<img src="figures/mqtt-retained-2.svg" alt="Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker." width="100%"/>
+<span name="figures/mqtt-retained-2.svg">&nbsp;</span>
+<aside name="figures/mqtt-retained-2.svg"><p><p>Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</p>
 </p></aside>
 </div>
 <h2>Last Wills</h2>
@@ -652,21 +652,21 @@ many control packages are involved to just send a single MQTT message
 with the different QoS levels. (The grey message arrows that start end end at the same lifeline illustrate only local operations, not communication.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-0.svg" alt="To send one MQTT message with QoS 0, only two messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-0.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-0.svg"><p><p>To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-0.svg" alt="To send one MQTT message with QoS 0, only two messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-0.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-0.svg"><p><p>To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-1.svg" alt="To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-1.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-1.svg"><p><p>To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-1.svg" alt="To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-1.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-1.svg"><p><p>To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-2.svg" alt="To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-2.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-2.svg"><p><p>To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-2.svg" alt="To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-2.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-2.svg"><p><p>To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <h2>Sequence Diagrams on Many Levels</h2>

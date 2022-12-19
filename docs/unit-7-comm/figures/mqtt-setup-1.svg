@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="61.86221 129.8937 664.8071 324.1496" width="664.8071" height="324.1496">
+  <defs>
+    <font-face font-family="Helvetica" font-size="9" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-03-03 17:44:44 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_23">
+        <rect x="300.47245" y="141.73229" width="141.73228" height="153.07088" fill="white"/>
+        <rect x="300.47245" y="141.73229" width="141.73228" height="153.07088" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(305.47245 146.73229)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="47.85296" y="9">«device»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="57.53118" y="22">PC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="311.81103" y="187.08661" width="119.05512" height="96.37796" fill="white"/>
+        <rect x="311.81103" y="187.08661" width="119.05512" height="96.37796" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(316.81103 192.08661)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="3.7465553" y="9">«execution Environment»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="11.171116" y="22">Jupyter / Python</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <rect x="323.1496" y="221.10237" width="96.37795" height="51.02363" fill="white"/>
+        <rect x="323.1496" y="221.10237" width="96.37795" height="51.02363" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(328.1496 226.10237)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="24.67921" y="9">«artifact»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="15.523937" y="22">Notebook</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <path d="M 300.47245 141.73229 L 311.81103 130.3937 L 453.5433 130.3937 L 442.20474 141.73229 Z" fill="white"/>
+        <path d="M 300.47245 141.73229 L 311.81103 130.3937 L 453.5433 130.3937 L 442.20474 141.73229 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_28">
+        <path d="M 442.20474 141.73229 L 453.5433 130.3937 L 453.5433 283.46457 L 442.20474 294.80316 Z" fill="white"/>
+        <path d="M 442.20474 141.73229 L 453.5433 130.3937 L 453.5433 283.46457 L 442.20474 294.80316 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_31">
+        <rect x="62.36221" y="289.13386" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="62.36221" y="289.13386" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(67.36221 294.13386)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="36.514378" y="9">«device»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="36.855686" y="22">Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 62.36221 289.13387 L 73.70079 277.79528 L 192.7559 277.79528 L 181.41733 289.13387 Z" fill="white"/>
+        <path d="M 62.36221 289.13387 L 73.70079 277.79528 L 192.7559 277.79528 L 181.41733 289.13387 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <rect x="73.70079" y="323.1496" width="96.37795" height="39.68504" fill="white"/>
+        <rect x="73.70079" y="323.1496" width="96.37795" height="39.68504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(78.70079 328.1496)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="24.67921" y="9">«artifact»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="5.18507" y="22">MQTT Broker</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <path d="M 181.41733 289.13387 L 192.7559 277.79528 L 192.7559 362.83466 L 181.41733 374.17324 Z" fill="white"/>
+        <path d="M 181.41733 289.13387 L 192.7559 277.79528 L 192.7559 362.83466 L 181.41733 374.17324 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Line_29">
+        <line x1="187.08662" y1="328.8189" x2="725.6693" y2="328.8189" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_37">
+        <line x1="368.50395" y1="328.8189" x2="368.50395" y2="272.126" stroke="#929292" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_38">
+        <rect x="459.2126" y="368.50395" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="459.2126" y="368.50395" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(464.2126 373.50395)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="36.514378" y="9">«device»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="46.1926" y="22">PC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 459.2126 368.50395 L 470.5512 357.16536 L 589.6063 357.16536 L 578.2677 368.50395 Z" fill="white"/>
+        <path d="M 459.2126 368.50395 L 470.5512 357.16536 L 589.6063 357.16536 L 578.2677 368.50395 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_40">
+        <rect x="470.5512" y="402.5197" width="96.37795" height="39.68504" fill="white"/>
+        <rect x="470.5512" y="402.5197" width="96.37795" height="39.68504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(475.5512 407.5197)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x="24.67921" y="9">«artifact»</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="black" x="19.856945" y="22">MQTT.fx</tspan>
+        </text>
+      </g>
+      <g id="Line_41">
+        <line x1="555.59057" y1="402.5197" x2="555.59057" y2="328.8189" stroke="#929292" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_42">
+        <path d="M 578.2677 368.50395 L 589.6063 357.16536 L 589.6063 442.20474 L 578.2677 453.5433 Z" fill="white"/>
+        <path d="M 578.2677 368.50395 L 589.6063 357.16536 L 589.6063 442.20474 L 578.2677 453.5433 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(248.27953 311.81103)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x=".24291992" y="9">«mqtt»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(623.6221 311.81103)" fill="black">
+          <tspan font-family="Helvetica" font-size="9" font-weight="400" fill="black" x=".24291992" y="9">«mqtt»</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

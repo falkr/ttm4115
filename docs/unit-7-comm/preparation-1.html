@@ -419,9 +419,9 @@ we are concerned with the entire system, the user requirements and also
 the development process to build that system.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/wifi_vs_cellular.png" alt="Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/" width="100%"/>
-<span name="../../pages/unit-7-comm/figures/wifi_vs_cellular.png">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/wifi_vs_cellular.png"><p><p>Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</p>
+<img src="figures/wifi_vs_cellular.png" alt="Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/" width="100%"/>
+<span name="figures/wifi_vs_cellular.png">&nbsp;</span>
+<aside name="figures/wifi_vs_cellular.png"><p><p>Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</p>
 </p></aside>
 </div>
 <p>Communication between components has a great influence on the system,
@@ -452,7 +452,7 @@ middleware, libraries of framework don't free you from the problems of
 communication; they may however, make life much easier.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/communication-errors.jpg" width="100%"/>
+<img src="figures/communication-errors.jpg" width="100%"/>
 </div>
 <p>Let's have a look at three very different applications:</p>
 <ul>
@@ -615,13 +615,13 @@ communicate. Many protocols use similar message exchange patterns.</p>
 receiver. The message can contain data or be empty.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/single-message.svg" width="100%"/>
+<img src="figures/single-message.svg" width="100%"/>
 </div>
 <p>Communication channels can be disturbed or disrupted, and messages can
 get lost.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/single-message-lost.svg" width="100%"/>
+<img src="figures/single-message-lost.svg" width="100%"/>
 </div>
 <h2>Pattern: Request-Response {#request-response}</h2>
 <p>The requestor sends a message, and the responder sends a response
@@ -650,14 +650,14 @@ else while the communication is going on. A synchronous
 request-response, for instance, looks as follows:</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/sync.svg" width="100%"/>
+<img src="figures/sync.svg" width="100%"/>
 </div>
 <p>In contrast, <em>asynchronous</em> communication means that the sender and the
 receiver are decoupled. The sender can do other things while waiting for
 a response, or it may not wait for a response at all.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/async.svg" width="100%"/>
+<img src="figures/async.svg" width="100%"/>
 </div>
 <h2>Pattern: Observe {#observe}</h2>
 <p>An observer can tell a server that it would like to get informed about
@@ -665,7 +665,7 @@ events. Whenever the event happens, the server notifies the observer
 with a message.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/observer.svg" width="100%"/>
+<img src="figures/observer.svg" width="100%"/>
 </div>
 <h2>Pattern: Publish-Subscribe {#publish-subscribe}</h2>
 <p>The publish-subscribe pattern is similar to the observe pattern, but
@@ -675,7 +675,7 @@ effect that publisher and subscriber do not have a direct connection
 with each other, each of them is only connected to the broker.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/publish-subscribe.svg" width="100%"/>
+<img src="figures/publish-subscribe.svg" width="100%"/>
 </div>
 <h2>Pattern: Exclusive Pair {#exclusive-pair}</h2>
 <p>This is the most complicated and also most general pattern. Here the two
@@ -796,7 +796,7 @@ your router at home.</p>
 <p>A typical interaction looks as follows:</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-1.svg" width="100%"/>
+<img src="figures/mqtt-1.svg" width="100%"/>
 </div>
 <p>There can be any number of subscribers and any number of publishers in a
 system. Because of the publish-subscribe pattern, the subscribers do not
@@ -884,9 +884,9 @@ wait until the sensor sends its temperature, which can be as long as
 about 10 minutes in the worst case.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-retained-1.svg" alt="Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-retained-1.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-retained-1.svg"><p><p>Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</p>
+<img src="figures/mqtt-retained-1.svg" alt="Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published." width="100%"/>
+<span name="figures/mqtt-retained-1.svg">&nbsp;</span>
+<aside name="figures/mqtt-retained-1.svg"><p><p>Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</p>
 </p></aside>
 </div>
 <p>Instead, the sensor can mark its temperature message as a <strong>retained</strong>
@@ -899,9 +899,9 @@ again, but that it immediately receives the last temperature reading.
 (We show the reainted message with a trailing <em>R</em>.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-retained-2.svg" alt="Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-retained-2.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-retained-2.svg"><p><p>Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</p>
+<img src="figures/mqtt-retained-2.svg" alt="Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker." width="100%"/>
+<span name="figures/mqtt-retained-2.svg">&nbsp;</span>
+<aside name="figures/mqtt-retained-2.svg"><p><p>Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</p>
 </p></aside>
 </div>
 <h2>Last Wills</h2>
@@ -947,21 +947,21 @@ many control packages are involved to just send a single MQTT message
 with the different QoS levels. (The grey message arrows that start end end at the same lifeline illustrate only local operations, not communication.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-0.svg" alt="To send one MQTT message with QoS 0, only two messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-0.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-0.svg"><p><p>To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-0.svg" alt="To send one MQTT message with QoS 0, only two messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-0.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-0.svg"><p><p>To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-1.svg" alt="To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-1.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-1.svg"><p><p>To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-1.svg" alt="To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-1.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-1.svg"><p><p>To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-qos-2.svg" alt="To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary." width="100%"/>
-<span name="../../pages/unit-7-comm/figures/mqtt-qos-2.svg">&nbsp;</span>
-<aside name="../../pages/unit-7-comm/figures/mqtt-qos-2.svg"><p><p>To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</p>
+<img src="figures/mqtt-qos-2.svg" alt="To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary." width="100%"/>
+<span name="figures/mqtt-qos-2.svg">&nbsp;</span>
+<aside name="figures/mqtt-qos-2.svg"><p><p>To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</p>
 </p></aside>
 </div>
 <h2>Sequence Diagrams on Many Levels</h2>

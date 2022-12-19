@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="101.54726 90.20866 363.8347 97.37797" width="363.8347" height="97.37797">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="StickArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 0 M 0 -3 L 8 0 L 0 3" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica" font-size="10" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-02-26 12:50:54 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="101.54726" y="90.20866" width="363.8347" height="97.37797"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <rect x="102.04726" y="90.70866" width="79.37009" height="22.677167" fill="white"/>
+        <rect x="102.04726" y="90.70866" width="79.37009" height="22.677167" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(107.04726 95.04725)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="10.336411" y="11">publisher</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="243.77955" y="90.70866" width="79.37009" height="22.677166" fill="white"/>
+        <rect x="243.77955" y="90.70866" width="79.37009" height="22.677166" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(248.77955 95.04725)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="17.678208" y="11">broker</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="141.7323" y1="113.38583" x2="141.73229" y2="187.08664" stroke="#929292" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_7">
+        <line x1="283.46457" y1="113.38583" x2="283.4646" y2="187.08664" stroke="#929292" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_8">
+        <line x1="425.1969" y1="136.063" x2="293.3646" y2="136.063" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(318.8268 119.05513)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x=".3203125" y="10">subscribe (topic)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="385.51185" y="90.70866" width="79.37009" height="22.677167" fill="white"/>
+        <rect x="385.51185" y="90.70866" width="79.37009" height="22.677167" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(390.51185 95.04725)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="7.008286" y="11">subscriber</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line x1="425.1969" y1="113.38583" x2="425.19686" y2="187.08664" stroke="#929292" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_12">
+        <line x1="283.4646" y1="170.07876" x2="415.2969" y2="170.07876" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_14">
+        <line x1="141.7323" y1="153.07088" x2="273.5646" y2="153.07088" marker-end="url(#StickArrow_Marker)" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(159.5945 136.063)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x=".08154297" y="10">publish (topic, payload)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(298.66145 153.07088)" fill="black">
+          <tspan font-family="Helvetica" font-size="10" font-weight="400" fill="black" x=".1381836" y="10">message (topic, payload)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

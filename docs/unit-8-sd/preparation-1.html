@@ -93,6 +93,31 @@ div.goals ul li:before {
   margin-left: -1.5em;
   color: #00509e;
 }
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
 
 
 
@@ -250,9 +275,9 @@ communication between several communicating partners. Have a look at the
 following dialogue:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/intuition.png" alt="A sequence diagram showing a conversation." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/intuition.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/intuition.png"><p><p>A sequence diagram showing a conversation.</p>
+<img src="figures/intuition.png" alt="A sequence diagram showing a conversation." width="100%"/>
+<span name="figures/intuition.png">&nbsp;</span>
+<aside name="figures/intuition.png"><p><p>A sequence diagram showing a conversation.</p>
 </p></aside>
 </div>
 <p>That's pretty much how sequence diagrams work, they show messages
@@ -280,7 +305,7 @@ button on a car key. The car key then sends a radio signal to the car,
 which in turn confirms to the user by blinking the lights.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/car-key.png" width="100%"/>
+<img src="figures/car-key.png" width="100%"/>
 </div>
 <p>The top of the lifeline shows a box that refers to what the participant
 represents in this sequence diagram. The label in this box consists of
@@ -305,7 +330,7 @@ refer to different rooms. They show that there can be many sensors (role
 make sense. Alternatives are numbers.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/home-system.png" width="100%"/>
+<img src="figures/home-system.png" width="100%"/>
 </div>
 <p>A lifeline requires at least a role name or a class name. The selector
 is optional. Note that the class name is always preceded by a colon
@@ -334,7 +359,7 @@ programming languages.</p>
 </ul>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/math-pow.png" width="100%"/>
+<img src="figures/math-pow.png" width="100%"/>
 </div>
 <p>The figure above shows an example of a sequence diagram that shows the communication
 between a Python main program <em>main.py</em> that calls the <em>pow()</em> function
@@ -357,7 +382,7 @@ signals from that of operation calls. If you use messages that represent
 operation calls, always draw the return messages.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/math-pow-3.png" width="100%"/>
+<img src="figures/math-pow-3.png" width="100%"/>
 </div>
 <p>There are also situations where method calls in programming languages
 are asynchronous. Then, the calling message is shown with the
@@ -365,7 +390,7 @@ asynchronous message symbol (the one with the open arrow head). In this
 course, you will probably not use this and can forget about them.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/math-pow-2.png" width="100%"/>
+<img src="figures/math-pow-2.png" width="100%"/>
 </div>
 <p>The diagram above shows another element that is sometimes used:
 <strong>execution specifications</strong>. These elements illustrate that a
@@ -389,7 +414,7 @@ they can be triggered by different participants in the interaction. A
 lifeline can also terminate itself without a destruction message.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/create-destroy.png" width="100%"/>
+<img src="figures/create-destroy.png" width="100%"/>
 </div>
     </section>
     <section class="content">
@@ -459,7 +484,7 @@ component may ask for access, and the access right may be granted or
 not. We can show this in the sequence diagram <em>Access</em> below:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/alt.png" width="100%"/>
+<img src="figures/alt.png" width="100%"/>
 </div>
 <p>The different compartments are alternatives to each other. There may be
 any number of compartments, not only two. They are separated by a dashed
@@ -481,7 +506,7 @@ similar to an alt fragment with two compartments, one of which is empty.
 Like with the alt fragment, the opt fragment can have a guard.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/opt-1.png" width="100%"/>
+<img src="figures/opt-1.png" width="100%"/>
 </div>
 <h2>loop</h2>
 <p>With the <strong>loop</strong> fragment, you can express that a behavior is executed
@@ -493,7 +518,7 @@ the escape out of the loop. You may also leave unspecified how often the
 loop is executed.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/loop-1.png" width="100%"/>
+<img src="figures/loop-1.png" width="100%"/>
 </div>
 <h2>assert and neg</h2>
 <p>In some cases, you want to assert that a certain interaction must
@@ -503,7 +528,7 @@ exactly occur as specified. For that, you can place it into an
 can be places in a <strong>neg</strong> fragment.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/assert-neg.png" width="100%"/>
+<img src="figures/assert-neg.png" width="100%"/>
 </div>
 <h2>ref</h2>
 <p>With a <strong>ref</strong> fragment, you can refer from one sequence diagram to
@@ -517,7 +542,7 @@ general, but it should work. Note that the outermost frame, labeled
 &quot;<strong>sd</strong> alarm&quot; encapsulates the entire sequence diagram.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ref-1.png" width="100%"/>
+<img src="figures/ref-1.png" width="100%"/>
 </div>
 <h2>Time Constraints</h2>
 <p>In some cases, you want to add time constraints to a specification, to
@@ -525,9 +550,9 @@ show <em>when</em> an interaction occurs, or how long specific parts of it may
 or should take. Have a look at the example below:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/timing.png" alt="From the UML@Class book." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/timing.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/timing.png"><p><p>From the UML@Class book.</p>
+<img src="figures/timing.png" alt="From the UML@Class book." width="100%"/>
+<span name="figures/timing.png">&nbsp;</span>
+<aside name="figures/timing.png"><p><p>From the UML@Class book.</p>
 </p></aside>
 </div>
 <p>It shows that the newsletter is sent at 12:00. Five time units later,
@@ -560,7 +585,7 @@ means that lifeline Y receives signal A before it receives B,
 <code>&lt; ?A, ?B &gt;</code>.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ordering-lifeline.png" width="100%"/>
+<img src="figures/ordering-lifeline.png" width="100%"/>
 </div>
 <p>Now comes the part that may be less intuitive: Events on <em>different</em>
 lifelines are <em>not ordered</em>, even though they have distinct
@@ -572,9 +597,9 @@ not tell if any of them happens before each other, despite it may look
 like it.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-11.png" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram." width="100%"/>
-<span name="../../pages/unit-8-sd/figures/ex-11.png">&nbsp;</span>
-<aside name="../../pages/unit-8-sd/figures/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
+<img src="figures/ex-11.png" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram." width="100%"/>
+<span name="figures/ex-11.png">&nbsp;</span>
+<aside name="figures/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
 </p></aside>
 </div>
 <p>For some, this non-ordering of events on different lifelines may not be
@@ -589,7 +614,7 @@ the lifelines. What counts is that <code>A</code> is received before <code>B</co
 does not change in any of the diagrams.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-12.png" width="100%"/>
+<img src="figures/ex-12.png" width="100%"/>
 </div>
 <p>The slope of messages is hence only a means of illustration. A
 recommendation is to use horizontal messages where possible, and
@@ -600,7 +625,7 @@ slope.</p>
 distinct events:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-1.png" width="100%"/>
+<img src="figures/ex-1.png" width="100%"/>
 </div>
 <p>Intuitively, we already know one sequence in which these events can
 happen, that is, we know that <code>&lt;!A,?A,!B,?B&gt;</code> is one valid
@@ -660,7 +685,7 @@ ordering rules, and strike them out?</p>
 by <code>Y</code> before <code>B</code>.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-2.png" width="100%"/>
+<img src="figures/ex-2.png" width="100%"/>
 </div>
 <p><strong>Exercise:</strong> Write down all the possible traces that the sequence
 diagram <em>Beta</em> allows.</p>
@@ -674,7 +699,7 @@ lifeline <em>Y</em>. Within the brackets of a co-region, events on the lifeline
 are not ordered anymore, i.e., they can happen in any order.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-3.png" width="100%"/>
+<img src="figures/ex-3.png" width="100%"/>
 </div>
 <p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if
 the events within the co-region (<code>?A</code> and <code>?B</code>) can happen in any order?</p>
@@ -684,7 +709,7 @@ co-region), reduce the number of traces so that there is only one
 possible trace left for diagram <em>Beta-C</em>?</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-3-2.png" width="100%"/>
+<img src="figures/ex-3-2.png" width="100%"/>
 </div>
     </section>
     <section class="content">
@@ -717,7 +742,7 @@ situation. The scenario <em>Lossy_1</em> for instance also implies scenario
 message is written with a big cross.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/lossy-12.png" width="100%"/>
+<img src="figures/lossy-12.png" width="100%"/>
 </div>
 <p>So, whenever there is a diagram in which a message is sent, we should
 check what would happen if this message got lost. Here are some possible
@@ -742,7 +767,7 @@ the expiration of a timer. We show the timer here as a message of
 </ul>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/lossy-3.png" width="100%"/>
+<img src="figures/lossy-3.png" width="100%"/>
 </div>
 <h2>Non-Causal Orderings</h2>
 <p>The diagram below shows an interaction between parts in a movie ticket
@@ -753,7 +778,7 @@ to the printer. The printer then prints the tickets. We ignore the case
 that the payment fails.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-6.png" width="100%"/>
+<img src="figures/ex-6.png" width="100%"/>
 </div>
 <p>This specification has a trouble spot. The diagram indicates that the
 <em>movie</em> message is received after the <em>pay_ok</em> message. In a real
@@ -778,7 +803,7 @@ implementation, the non-causal ordering of the events may be a source of
 trouble.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-7.png" width="100%"/>
+<img src="figures/ex-7.png" width="100%"/>
 </div>
 <h2>Mixed Initiatives</h2>
 <p>Consider the following alarm system. A sensor may detect an alarm and
@@ -787,7 +812,7 @@ the alarm via message <em>confirm</em>. The alarm can also be stopped by the
 sensor via <em>stop</em>. This is shown in the two diagrams below.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-8.png" width="100%"/>
+<img src="figures/ex-8.png" width="100%"/>
 </div>
 <p>The two different scenarios seem pretty straight-forward. However, these
 two scenarios imply a third one: What should happen, if the alarm is
@@ -799,7 +824,7 @@ coincidence, but it is only a matter of time and you will observe this
 situation. We can illustrate it in another diagram:</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-9.png" width="100%"/>
+<img src="figures/ex-9.png" width="100%"/>
 </div>
 <p>So what to do about this? If you only provide the sequence diagrams
 above, it is not clear how an implementation should respond in this
@@ -810,7 +835,7 @@ vice versa. The diagram <em>Confirm and Stop</em> shows one way to address the
 mixed initiative, using a simple comment.</p>
 
 <div class="figure">
-<img src="../../pages/unit-8-sd/figures/ex-91.png" width="100%"/>
+<img src="figures/ex-91.png" width="100%"/>
 </div>
     </section>
     <section class="content">
@@ -890,6 +915,9 @@ system design early, can save millions in whatever currency.</p>
   </script>
   <script>
     
+
+
+
 
 
 

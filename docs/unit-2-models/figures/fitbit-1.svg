@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="152.57087 368.00395 562.25986 222.10237" width="562.25986" height="222.10237">
+  <defs>
+    <font-face font-family="Calibri" font-size="9" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Calibri" font-size="12" panose-1="2 15 5 2 2 2 4 3 2 4" units-per-em="1000" underline-position="-113.28125" underline-thickness="65.42969" slope="0" x-height="464.35547" cap-height="631.8359" ascent="952.1484" descent="-268.5547" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Calibri"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-16 06:30:00 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_2" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1" fill="none" stroke="none">
+    <title>Canvas 2</title>
+    <g id="Canvas_2: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_31">
+        <rect x="153.07087" y="379.84253" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="153.07087" y="379.84253" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(158.07087 384.84253)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="24.870335" y="22">Fitbit Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 153.07087 379.84253 L 164.40945 368.50395 L 283.46457 368.50395 L 272.126 379.84253 Z" fill="white"/>
+        <path d="M 153.07087 379.84253 L 164.40945 368.50395 L 283.46457 368.50395 L 272.126 379.84253 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_34">
+        <path d="M 272.126 379.84253 L 283.46457 368.50395 L 283.46457 453.5433 L 272.126 464.8819 Z" fill="white"/>
+        <path d="M 272.126 379.84253 L 283.46457 368.50395 L 283.46457 453.5433 L 272.126 464.8819 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <rect x="368.50395" y="504.56694" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="368.50395" y="504.56694" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(373.50395 509.56694)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="20.431858" y="22">Mobile Phone</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <path d="M 368.50395 504.56694 L 379.84253 493.22836 L 498.89765 493.22836 L 487.55907 504.56694 Z" fill="white"/>
+        <path d="M 368.50395 504.56694 L 379.84253 493.22836 L 498.89765 493.22836 L 487.55907 504.56694 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <rect x="379.84253" y="538.5827" width="96.37795" height="39.68504" fill="white"/>
+        <rect x="379.84253" y="538.5827" width="96.37795" height="39.68504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(384.84253 543.5827)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="25.496593" y="9">«artifact»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <path d="M 487.55907 504.56694 L 498.89765 493.22836 L 498.89765 578.2677 L 487.55907 589.6063 Z" fill="white"/>
+        <path d="M 487.55907 504.56694 L 498.89765 493.22836 L 498.89765 578.2677 L 487.55907 589.6063 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Line_67">
+        <line x1="277.79528" y1="419.52757" x2="368.50395" y2="419.52757" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_69">
+        <path d="M 493.22836 544.252 L 646.2992 544.252 L 646.2992 464.8819" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_71">
+        <path d="M 368.50395 544.252 L 209.76379 544.252 L 209.76379 464.8819" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(516.9055 403.0197)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x=".3330078" y="9">«bluetooth»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <text transform="translate(307.14174 403.0197)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x=".11108398" y="9">«https»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(307.14174 527.7441)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x=".11108398" y="9">«https»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(522.5748 527.7441)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x=".3330078" y="9">«bluetooth»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="368.50395" y="379.84253" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="368.50395" y="379.84253" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(373.50395 384.84253)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="48.228733" y="22">PC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 368.50395 379.84253 L 379.84253 368.50395 L 498.89765 368.50395 L 487.55907 379.84253 Z" fill="white"/>
+        <path d="M 368.50395 379.84253 L 379.84253 368.50395 L 498.89765 368.50395 L 487.55907 379.84253 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_40">
+        <rect x="379.84253" y="413.8583" width="96.37795" height="39.68504" fill="white"/>
+        <rect x="379.84253" y="413.8583" width="96.37795" height="39.68504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(384.84253 418.8583)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="25.496593" y="9">«artifact»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_42">
+        <path d="M 487.55907 379.84253 L 498.89765 368.50395 L 498.89765 453.5433 L 487.55907 464.8819 Z" fill="white"/>
+        <path d="M 487.55907 379.84253 L 498.89765 368.50395 L 498.89765 453.5433 L 487.55907 464.8819 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Line_68">
+        <line x1="493.22836" y1="419.52757" x2="583.937" y2="419.52757" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_64">
+        <rect x="583.937" y="379.84253" width="119.05512" height="85.03938" fill="white"/>
+        <rect x="583.937" y="379.84253" width="119.05512" height="85.03938" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+        <text transform="translate(588.937 384.84253)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="38.12937" y="9">«device»</tspan>
+          <tspan font-family="Calibri" font-size="12" font-weight="400" fill="black" x="41.844944" y="22">Fitbit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_65">
+        <path d="M 583.937 379.84253 L 595.2756 368.50395 L 714.3307 368.50395 L 702.99215 379.84253 Z" fill="white"/>
+        <path d="M 583.937 379.84253 L 595.2756 368.50395 L 714.3307 368.50395 L 702.99215 379.84253 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_66">
+        <path d="M 702.99215 379.84253 L 714.3307 368.50395 L 714.3307 453.5433 L 702.99215 464.8819 Z" fill="white"/>
+        <path d="M 702.99215 379.84253 L 714.3307 368.50395 L 714.3307 453.5433 L 702.99215 464.8819 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="bevel" stroke-width="1"/>
+      </g>
+      <g id="Graphic_76">
+        <rect x="595.2756" y="413.8583" width="96.37795" height="39.68504" fill="white"/>
+        <rect x="595.2756" y="413.8583" width="96.37795" height="39.68504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(600.2756 418.8583)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="25.496593" y="9">«artifact»</tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <text transform="translate(600.2756 436.36615)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="26.604017" y="9">firmware</tspan>
+        </text>
+      </g>
+      <g id="Graphic_125">
+        <text transform="translate(384.84253 436.36615)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="28.227796" y="9">browser</tspan>
+        </text>
+      </g>
+      <g id="Graphic_126">
+        <text transform="translate(384.84253 561.0906)" fill="black">
+          <tspan font-family="Calibri" font-size="9" font-weight="400" fill="black" x="25.775648" y="9">Fitbit app</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

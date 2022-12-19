@@ -414,7 +414,7 @@ table.weekplan a {
 <p>The deployment diagram below shows today's distributed setup:</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-setup-1.svg" width="100%"/>
+<img src="figures/mqtt-setup-1.svg" width="100%"/>
 </div>
 <p>The setup consists of at least three components:</p>
 <ul>
@@ -461,13 +461,13 @@ Using MQTT.FX is really simple, but because we have now talked about brokers, cl
 <p>Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not done with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-fx-publish.png" width="100%"/>
+<img src="figures/mqtt-fx-publish.png" width="100%"/>
 </div>
 <h3>Observing Communication</h3>
 <p>Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application  and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.</p>
 
 <div class="figure">
-<img src="../../pages/unit-7-comm/figures/mqtt-fx-subscribe.png" width="100%"/>
+<img src="figures/mqtt-fx-subscribe.png" width="100%"/>
 </div>
 <h2>Task: Observing a Public MQTT Broker</h2>
 <p>There are some public MQTT brokers to which anyone can connect.</p>

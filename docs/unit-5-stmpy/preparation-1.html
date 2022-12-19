@@ -417,15 +417,15 @@ Just look at this:</p>
 <span name="ca90ad"></span><aside name="ca90ad"><p>The reason for looking at state machines is simple: Concurrency in programming languages is hard, even for experienced developers.</p>
 </aside>
 <div class="figure">
-<img src="../../pages/unit-5-stmpy/figures/threads.png" alt="Concurrent behavior starts simple and gets quickly so complex that even the best developers give up when using the wrong approach." width="100%"/>
-<span name="../../pages/unit-5-stmpy/figures/threads.png">&nbsp;</span>
-<aside name="../../pages/unit-5-stmpy/figures/threads.png"><p><p>Concurrent behavior starts simple and gets quickly so complex that even the best developers give up when using the wrong approach.</p>
+<img src="figures/threads.png" alt="Concurrent behavior starts simple and gets quickly so complex that even the best developers give up when using the wrong approach." width="100%"/>
+<span name="figures/threads.png">&nbsp;</span>
+<aside name="figures/threads.png"><p><p>Concurrent behavior starts simple and gets quickly so complex that even the best developers give up when using the wrong approach.</p>
 </p></aside>
 </div>
 <p>Many programmers cannot even handle very simple threading problems correctly.</p>
 
 <div class="figure">
-<img src="../../pages/unit-5-stmpy/figures/tweet.jpg" width="100%"/>
+<img src="figures/tweet.jpg" width="100%"/>
 </div>
 <!--
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A programmer had a problem. He thought to himself, &quot;I know, I&#39;ll solve it with threads!&quot;. has Now problems. two he</p>&mdash; Davidlohr Bueso (@davidlohr) <a href="https://twitter.com/davidlohr/status/288786300067270656?ref_src=twsrc%5Etfw">January 8, 2013</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
@@ -446,9 +446,9 @@ The states in between are just the ordering criteria between them.
 (If this analogy is not <em>entirely</em> clear to you now, don't worry. You will understand more once we implement state machines.)</p>
 
 <div class="figure">
-<img src="../../pages/unit-5-stmpy/figures/transition-sequencing.png" alt="A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time." width="100%"/>
-<span name="../../pages/unit-5-stmpy/figures/transition-sequencing.png">&nbsp;</span>
-<aside name="../../pages/unit-5-stmpy/figures/transition-sequencing.png"><p><p>A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time.</p>
+<img src="figures/transition-sequencing.png" alt="A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time." width="100%"/>
+<span name="figures/transition-sequencing.png">&nbsp;</span>
+<aside name="figures/transition-sequencing.png"><p><p>A state machine takes concurrent behavior, transformes it into many transitions and sorts their execution, so that only one of them is executed at the same time.</p>
 </p></aside>
 </div>
 <p>What you also gain immediately is the ability for parallel computing. State machines can be grouped and execute on a single process or thread, then occupying different CPUs. This is very helpful when we have a lot of tasks that also take some time, to utilize all computing resources we may have.</p>
@@ -471,9 +471,9 @@ The states in between are just the ordering criteria between them.
 <p>As a first overview, have a look at the following whiteboard sketch:</p>
 
 <div class="figure">
-<img src="../../pages/unit-5-stmpy/figures/stmpy-sketch.jpg" alt="The original sketch from a whiteboard when planning the first release for STMPY." width="100%"/>
-<span name="../../pages/unit-5-stmpy/figures/stmpy-sketch.jpg">&nbsp;</span>
-<aside name="../../pages/unit-5-stmpy/figures/stmpy-sketch.jpg"><p><p>The original sketch from a whiteboard when planning the first release for STMPY.</p>
+<img src="figures/stmpy-sketch.jpg" alt="The original sketch from a whiteboard when planning the first release for STMPY." width="100%"/>
+<span name="figures/stmpy-sketch.jpg">&nbsp;</span>
+<aside name="figures/stmpy-sketch.jpg"><p><p>The original sketch from a whiteboard when planning the first release for STMPY.</p>
 </p></aside>
 </div>
 <ul>

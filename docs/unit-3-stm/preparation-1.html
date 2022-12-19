@@ -310,17 +310,17 @@ They are used to specify communication protocols, logic in embedded systems, and
 Here is an intuitive example of a sketch for a state machine that illustrates in a compact way how a traffic light works:</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/state-machines-traffic-light.jpg" alt="A state machine describing the sequence of phases in a traffic light." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/state-machines-traffic-light.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/state-machines-traffic-light.jpg"><p><p>A state machine describing the sequence of phases in a traffic light.</p>
+<img src="figures/state-machines-traffic-light.jpg" alt="A state machine describing the sequence of phases in a traffic light." width="100%"/>
+<span name="figures/state-machines-traffic-light.jpg">&nbsp;</span>
+<aside name="figures/state-machines-traffic-light.jpg"><p><p>A state machine describing the sequence of phases in a traffic light.</p>
 </p></aside>
 </div>
 <p>Another example is the specification of the TCP protocol, also using a state machine:</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/state-machines-tcp.jpg" alt="The TCP protocol uses state machines to describe parts of its behavior." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/state-machines-tcp.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/state-machines-tcp.jpg"><p><p>The TCP protocol uses state machines to describe parts of its behavior.</p>
+<img src="figures/state-machines-tcp.jpg" alt="The TCP protocol uses state machines to describe parts of its behavior." width="100%"/>
+<span name="figures/state-machines-tcp.jpg">&nbsp;</span>
+<aside name="figures/state-machines-tcp.jpg"><p><p>The TCP protocol uses state machines to describe parts of its behavior.</p>
 </p></aside>
 </div>
 <h2>Why State Machines?</h2>
@@ -364,9 +364,9 @@ This gives you three different entry points into the concept of state machines.<
 One idea is to just take pictures of a traffic light, like this:</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/traffic-light-1.jpg" alt="A set of pictures of a traffic light that represent the different states it can be in." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/traffic-light-1.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/traffic-light-1.jpg"><p><p>A set of pictures of a traffic light that represent the different states it can be in.</p>
+<img src="figures/traffic-light-1.jpg" alt="A set of pictures of a traffic light that represent the different states it can be in." width="100%"/>
+<span name="figures/traffic-light-1.jpg">&nbsp;</span>
+<aside name="figures/traffic-light-1.jpg"><p><p>A set of pictures of a traffic light that represent the different states it can be in.</p>
 </p></aside>
 </div>
 <p>That already helps; the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively <em>red</em>, <em>red-yellow</em>, <em>green</em> and <em>yellow</em>. (The <em>red-yellow</em> is common in many, but not all countries.)</p>
@@ -374,17 +374,17 @@ One idea is to just take pictures of a traffic light, like this:</p>
 <p>The photos already help explaining the traffic light. But imagine you want to explain on paper in which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/traffic-light-2.jpg" alt="The photos of the traffic light in a sequential order." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/traffic-light-2.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/traffic-light-2.jpg"><p><p>The photos of the traffic light in a sequential order.</p>
+<img src="figures/traffic-light-2.jpg" alt="The photos of the traffic light in a sequential order." width="100%"/>
+<span name="figures/traffic-light-2.jpg">&nbsp;</span>
+<aside name="figures/traffic-light-2.jpg"><p><p>The photos of the traffic light in a sequential order.</p>
 </p></aside>
 </div>
 <p>Of course, the picture above is a simplification. Some trafic lights are switched off at night and just blink yellow. The same happens as a default state in case there is an error in the controller. We can show this blinking with the two additional photos <em>blink-off</em> and <em>blink-on</em>. The two arrows between them show how the blinking is created by two phases, one with the yellow light on and one with all lights off. We also show that blinking can be started from any of the other phases, because an error can always happen, and the lights may be switched off at any time. When we get out of the blinking sequence, we go towards the phase <em>red</em> for safety.</p>
 
 <div class="figure">
-<img src="../../pages/unit-3-stm/figures/traffic-light-3.jpg" alt="A more advanced state machine for the traffic light." width="100%"/>
-<span name="../../pages/unit-3-stm/figures/traffic-light-3.jpg">&nbsp;</span>
-<aside name="../../pages/unit-3-stm/figures/traffic-light-3.jpg"><p><p>A more advanced state machine for the traffic light.</p>
+<img src="figures/traffic-light-3.jpg" alt="A more advanced state machine for the traffic light." width="100%"/>
+<span name="figures/traffic-light-3.jpg">&nbsp;</span>
+<aside name="figures/traffic-light-3.jpg"><p><p>A more advanced state machine for the traffic light.</p>
 </p></aside>
 </div>
 <p>That's a complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into <em>red</em> first.</p>

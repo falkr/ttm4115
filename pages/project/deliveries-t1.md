@@ -37,7 +37,7 @@ It highlights what is new or special with the system.
 
 
 ---
-type: faq
+type: qna
 q: Should we include risks in the vision and scope document?
 ---
 No, they are not necessary to cover. They are part of the example in the book chapter, and they are an important part in a real project, but they turned out to be very "artificial" for the student projects so I thought it would be better just to take them out, also to reduce size of the document and workload. 

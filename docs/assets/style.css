@@ -102,8 +102,8 @@ body {
   background: white;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: .25rem;
-  padding: 0rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  padding: 2rem;
   border: 1px solid #e8e8e8;
   overflow: hidden
 }

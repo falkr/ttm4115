@@ -1,6 +1,7 @@
 # User Requirements
 
-Read carefully through the following book chapters from the compendium:
+Read carefully through the following book chapters from the compendium.
+You find the book chapters as PDF files on Blackboard.
 
 * Software Requirements, Third Edition Karl Wiegers and Joy Beatty, 2013, Microsoft Press. 
 **Chapter 1: The Essential Software Requirement.** pp 3--23 (20 pages). 
@@ -16,9 +17,6 @@ Optionally, read through the following chapter from the compendium: _(You will n
 **Appendix C: Sample Requirements Document.** pp 575--580 (6 pages).
 This is a sample requirements document, similar to one that you also will have to deliver for your project. 
 The RAT will not contain question that require you to remember details from the document, but this document provides a valuable context for Chapter 1.
-
-:aside: You find the book chapter as part of the compendium on Blackboard.
-
 
 
 # Use Case Levels

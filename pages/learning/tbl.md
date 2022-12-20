@@ -39,12 +39,6 @@ You get 20 minutes to answer the test individually.
 The questions are not particularly difficult, and directly related to the preparation material. 
 Some questions may still feel a bit tricky, since we want you to select the _best_ answer.
 
-* We do the RAT as a quiz on Blackboard
-* The RAT will be available each Monday from 9:15
-* We fill out the RAT will being all together on Zoom
-
-Note the following:
-
 * The scores of your RAT **do not count towards your final grade**. 
 * This means you can completely focus on understanding the answers and getting feedback on your state of preparedness for the unit.
 * **It is mandatory to submit all RATs.** If you are sick on a Monday and cannot participate, you can do the RAT later. (In this case, you only do the individual RAT, not the team-RAT explained next.) 
@@ -73,15 +67,6 @@ For best learning, make sure of the following:
 * Solve the question one by one, and scratch **immediately** after you have discussed a question. (That means, don't scratch all questions at once at the end.)
 * Don't vote on the answer alternative, discuss until you agree on which one is best. 
 
-
-We do the RATs together as teams in Zoom using breakout rooms. 
-Instead of physical cards, your team receives a link to a digital card.
-
----
-type: figure
-source: figures/card.png
-caption: Digital version of the scratch card.
----
 
 
 ## Phase 4: Team Activities

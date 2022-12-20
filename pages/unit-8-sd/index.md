@@ -66,7 +66,7 @@ link: preparation-4.html
 ---
 
 
-## Teamwork
+## Teamwork on Monday
 
 Go through the following activities with your team:
 

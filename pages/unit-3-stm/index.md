@@ -65,7 +65,7 @@ link: preparation-5.html
 ---
 
 
-## Teamwork
+## Teamwork on Monday
 
 Go through the following activities with your team:
 
@@ -93,6 +93,10 @@ icon: people-fill
 link: teamwork-3.html
 ---
 
+
+### For the Semester Project
+
+When we start with requirements engineering, we will ask you to create the requirements for the semester project. [Have a look at the theme for the semester project of this year](../project/index.html), so that you can start early with preparing some specific ideas for your project.
 
 ---
 ref: ../reflection.ref

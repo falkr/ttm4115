@@ -14,7 +14,7 @@ We guide the design of these use cases using a partial Vision-and-Scope document
 
 # Discuss the Semester Project
 
-We provided you with a [partial and vague outline of the semester project](deliveries-project.html).
+We provided you with a [partial and vague outline of the semester project](../project/index.html).
 It is vague because it should allow you to adjust the system idea with your own ideas and plans. 
 Defining the detailed requirements is part of the task. 
 
@@ -24,7 +24,7 @@ Have a short round where each of you explains their understanding of the system,
 * Are there some functions you want to focus on?
 * Are there some specific ideas you want to try?
 
-This is an open-ended task, so make sure to conclude the discussion after some maximum time. (Like 20 minutes maximum.)
+This is an open-ended task, so make sure to conclude the discussion after some maximum time, like 30 minutes.
 
 
 # Partial Vision and Scope Document

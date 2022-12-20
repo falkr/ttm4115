@@ -1,7 +1,15 @@
 # Unit 4: User Requirements
 
-Before we actually start to build a system **right**, we need to ensure that we actually build the **right system**. 
+Before we start to build a system, we need to ensure that we actually build the **right system**. 
 This is part of systems development is called **requirements engineering**.
+
+
+---
+type: figure
+source: figures/robertson.jpg
+caption:
+  "An advertisement for a requirements course. Remember the quote."
+--- 
 
 
 ## Learning Goals
@@ -37,7 +45,7 @@ link: preparation-2.html
 ---
 
 
-## Teamwork
+## Teamwork on Monday
 
 Go through the following activities with your team:
 

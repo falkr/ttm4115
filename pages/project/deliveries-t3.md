@@ -31,3 +31,12 @@ Record a video or a screencast where you demonstrate the system.
 ## Code
 
 Provide the code of your system, ideally as a well-organized Git repository.
+
+
+# Questions and Answers
+
+---
+type: qna
+q: Do we have to document our code extensively?
+---
+Document so that it is useful within your project for yourself, and maybe on places where you do something critical that benefits from explanation. Ideally the diagrams are the documentation of the code. We have not specifically covered coding conventions or style, so this is outside of the scope of the course. 

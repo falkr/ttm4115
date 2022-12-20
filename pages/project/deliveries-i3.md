@@ -116,3 +116,13 @@ The individual delivery is part of your portfolio, and it will weigh around 30 %
 - Of course, all material must be written by yourself. Copying from others or letting others copy from you is not allowed. All reflections must be based on your experiences in the course. 
 - Delivery I3 is not meant as a feedback on the course. For this, please use any of the other channels for course feedback. The focus is your own learning, and reflection about it. Of course, if you develop a point that naturally includes some feedback about the course you may do so.
 - The recommended language for I3 is **English**. You can, however, also deliver in Norwegian, if you prefer.
+
+
+
+# Questions and Answers
+
+---
+type: qna
+q: Should the reflective essay contain headers?
+---
+You can add sections, but usually they are not necessary. Decide for yourself. In any case, i would not add to many in this short document; maybe only one per topic, that means max 3. But don't take this as a firm rule, just a guide.

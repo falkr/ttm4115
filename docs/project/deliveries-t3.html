@@ -159,6 +159,18 @@ div.goals ul li:before {
 }
 
 
+button:hover {
+  background-color: #EFF7FF;
+}
+div.qna .accordion-button:not(.collapsed) {
+  background-color: #EFF7FF;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  color: #00509e;
+}
+
+div.qna .accordion-button:not(.collapsed)::after {
+  color: #00509e;
+}
 /*tr.rubric_title {background-color: lightgrey}*/
 /*tr.rubric_a {background-color: #D0E8DC}
 tr.rubric_b {background-color: #EEF7DB}
@@ -422,6 +434,23 @@ This will usually fit on a single page.</li>
 <p>Provide the code of your system, ideally as a well-organized Git repository.</p>
 
     </section>
+    <section class="content">
+<h1>Questions and Answers</h1>
+
+<p>
+<div class="accordion" id="id42d29c">
+  <div class="accordion-item">
+    <p class="accordion-header" id="id42d29cA">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#id42d29cC" aria-expanded="false" aria-controls="id42d29cC">Do we have to document our code extensively?</button>
+    </p>
+    <div id="id42d29cC" class="accordion-collapse collapse" aria-labelledby="id42d29cA" data-bs-parent="#id42d29c">
+      <div class="accordion-body"><p>Document so that it is useful within your project for yourself, and maybe on places where you do something critical that benefits from explanation. Ideally the diagrams are the documentation of the code. We have not specifically covered coding conventions or style, so this is outside of the scope of the course.</p>
+</div>
+    </div>
+  </div>
+</div>
+</p>
+    </section>
 </div>
       </div>
 
@@ -465,6 +494,7 @@ This will usually fit on a single page.</li>
   </script>
   <script>
     
+
 
 
 

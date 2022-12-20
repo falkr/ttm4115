@@ -35,6 +35,14 @@ It highlights what is new or special with the system.
 * Formulate the vision in complete sentences, not bullet points.
 * The vision should be ca. a quarter of a page.
 
+
+---
+type: faq
+q: Should we include risks in the vision and scope document?
+---
+No, they are not necessary to cover. They are part of the example in the book chapter, and they are an important part in a real project, but they turned out to be very "artificial" for the student projects so I thought it would be better just to take them out, also to reduce size of the document and workload. 
+
+
 ### 3. Objectives
 
 State at least three objectives, but not much more than five. Objectives are goals that your system can achieve. They need to be specific, and they need to be verifiable. State the objective, and state how it can be verified.
@@ -119,3 +127,9 @@ Create a copy, and fill it out for your own team:
 # Delivery
 
 Deliver both the system specification and the feedback document via Blackboard.
+
+
+
+Should we include risks in the vision and scope document?
+
+No, not necessary to cover. They were part of the example in the book chapter, and they are an important part in a real project, but they turned out to be very "artificial" for the student projects so I thought it would be better just to take them out, also to reduce size of the document and workload. 

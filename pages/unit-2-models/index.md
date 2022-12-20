@@ -51,7 +51,7 @@ link: preparation-3.html
 ---
 
 
-## Teamwork
+## Teamwork on Monday
 
 Go through the following activities with your team:
 
@@ -62,6 +62,10 @@ title: 'Teamwork: Rice Farm Irrigation System'
 icon: people-fill
 link: teamwork-1.html
 ---
+
+### For the Semester Project
+
+When we start with requirements engineering, we will ask you to create the requirements for the semester project. [Have a look at the theme for the semester project of this year](../project/index.html), so that you can start early with preparing some specific ideas for your project.
 
 
 ---

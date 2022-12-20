@@ -99,12 +99,11 @@ body {
 }
 
 .content {
-  padding: 0 40px 40px 40px;
   background: white;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: .25rem;
-  padding: 2rem 2rem 1rem;
+  padding: 0rem 2rem 2rem 2rem;
   border: 1px solid #e8e8e8;
   overflow: hidden
 }
@@ -155,7 +154,7 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-weight: 300;
-  margin-top: 3em;
+  margin-top: 2em;
   xborder-bottom: 1px solid #8EA9C2;
   color: #555;
 }

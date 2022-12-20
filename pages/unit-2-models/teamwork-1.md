@@ -117,18 +117,3 @@ Include your commented diagram in a copy of the original document.
 
 
 :delivery: Deliver your comments on Teams with the filename `Rice Farming Team XX comments by Team YY.docx`. Store it under `Files > Unit 1... > Diagrams with Comments`.
-
-
-
-
-# Team Reflection for This Unit 
-
-* Add another section to the team reflection document, just like last week.
-* How did the roles work today? 
-
-
-# Individual Reflection
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional observations to your reflection diary.

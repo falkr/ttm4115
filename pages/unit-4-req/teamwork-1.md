@@ -143,19 +143,6 @@ caption: "Example use cases on their respective levels for a toilet paper manage
 :delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)**
 
 
-# Team Reflection for This Unit 
-
-* Add another section to the team reflection document, just like last week.
-* How did the roles work today? 
-
-
-# Individual Reflection
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional observations to your reflection diary.
-
-
 
 
 # Questions and Answers

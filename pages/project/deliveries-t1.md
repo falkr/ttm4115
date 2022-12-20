@@ -67,7 +67,6 @@ Identify the main stakeholders in the system. Identify their values and interest
 All sections in the requirement part are evaluated together with the following criteria:
 
 ---
-caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: rubrics/requirements.mw
 type: table
@@ -88,7 +87,6 @@ Show at least three use cases at the sea level. Add relevant ones at the fish-le
 -->
 
 ---
-caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: rubrics/usecases-level.mw
 type: table
@@ -107,7 +105,6 @@ Present a first version of a deployment diagram of your system. Identify the mai
 The deployment diagram is evaluated based on general criteria for diagrams.
 
 ---
-caption: <a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>
 class: rubric
 file: rubrics/deployment.mw
 type: table

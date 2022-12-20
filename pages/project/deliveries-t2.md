@@ -22,7 +22,6 @@ The value of this part hence is based on its usefulness for the upcoming process
 type: table
 file: rubrics/usecases.mw
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
 
@@ -57,7 +56,6 @@ If you want, and already have a clearer picture about them, you can already repr
 type: table
 file: rubrics/deployment.mw
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
 * Tips for [diagram layout](unit-modeling-diagram-tips.html)
@@ -78,7 +76,6 @@ How much? Depends of course on your layout. If two diagrams fit on a page, most 
 type: table
 file: rubrics/interactions.mw
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
 * [Syntax for interactions](prep-interactions.html).
@@ -100,7 +97,6 @@ Create state machines for selected components in the system.
 type: table
 file: rubrics/statemachines.mw
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
 * [Syntax for state machines](prep-statemachines.html).
@@ -116,7 +112,6 @@ At this stage, you should also have a look at the overall quality of the deliver
 type: table
 file: rubrics/overall.mw
 class: rubric
-caption: '<a href="learning-grading.html#grading-criteria">Read more about these criteria...</a>'
 ---
 
 # Feedback Document and Delivery

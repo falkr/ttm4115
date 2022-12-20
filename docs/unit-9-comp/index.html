@@ -58,6 +58,17 @@ a.ntnu-button:hover {
 .person-card-detail {
   font-size: 0.8em;
 }
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
 div.goals ul,
 div.goals ul li {
   padding: 0;
@@ -83,6 +94,36 @@ div.goals ul li:before {
   color: #00509e;
 }
 
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -216,7 +257,12 @@ div.goals ul li:before {
 <li>Understand and apply the mechanisms of services.</li>
 <li>Decompose the semester project into components.</li>
 </ul>
-<h3>For the Semester Project</h3>
+</div>
+<p>So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet.
+This week we want to combine several concepts to build a more complete software component.</p>
+
+<div class="figure">
+<img src="figures/meme.jpg" width="100%"/>
 </div>
 <h2>Preparation</h2>
 <p>Go through the following preparation material before we meet in class:</p>
@@ -244,7 +290,7 @@ div.goals ul li:before {
 <div class="card-body">
 <a href="teamwork-1.html" class="stretched-link">
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-people-fill" viewBox="0 0 16 16" id="people-fill"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" /></svg>
-<span class="ms-3">Components</span>
+<span class="ms-3">Timer Module for a Voice Assistant: The Spaghetti Timer</span>
 </a>
 </div>
 </div>

@@ -1,43 +1,3 @@
-# Components
-
-
-So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet. 
-This week we want to combine several concepts to build a more complete software component. 
-
----
-type: figure
-source: figures/meme.jpg
----
-
-# STMPY Components + MQTT
-
-To ensure a **low degree of coupling**, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.
-
-The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically **a better degree of cohesion**.
-
-These means alone do not ensure a low degree of coupling and a high degree of cohesion.
-A good component design depends on how we manage to group the functions we need for a system or application into the different components.
-This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps. 
-
-
-# State Machines as Sessions
-
-So far, we have only looked at singe instances of state machines, because they controlled a single resource. 
-
-* The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.
-* The bus stop had a single button and signal light, which we could take care of with a single state machine.
-
-In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.
-
-And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.
-
-For such cases, we keep on using a single state machine per resource it represents.
-But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a `session`. 
-
-For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.
-
-
-
 # Timer Module for a Voice Assistant
 
 Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. This means, a user should be able to say:
@@ -242,7 +202,6 @@ caption: "Simple GUI to dispatch commands via MQTT."
 
 Do the following:
 
-  * ~~Start your own broker.~~
   * Use `mqtt.item.ntnu.no` with port `1883` as broker.
   * Download the [code of the command component](https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py) and study it.
   * Adjust the topics.
@@ -258,29 +217,3 @@ Do the following:
   * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.
 * Reflect on your progress in a document. 
 * Create a **short and uncut demo video** using two named timers, simulated via MQTT.FX and your timer manager component.
-
-
-
-
-
-# Checklist
-
-### Blackboard
-
-- Deliver your document that shows progress and results. 
-
-### MS Teams
-
-- Ask for feedback in general
-- Report any errors with the provided solution
-- Discuss, with me or other teams
-
-### Team Reflection for This Unit 
-
-* Add another section to the team reflection document, just like every week. 
-
-### Individual Reflection
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional observations to your reflection diary.

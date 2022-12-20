@@ -21,8 +21,15 @@ But don't get me wrong: Components are a fascinating subject! Components do not 
 - Understand and apply the mechanisms of services.
 - Decompose the semester project into components.
 
-### For the Semester Project
 
+
+So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet. 
+This week we want to combine several concepts to build a more complete software component. 
+
+---
+type: figure
+source: figures/meme.jpg
+---
 
 
 
@@ -54,7 +61,7 @@ Go through the following activities with your team:
 
 ---
 type: link
-title: 'Components'
+title: 'Timer Module for a Voice Assistant: The Spaghetti Timer'
 icon: people-fill
 link: teamwork-1.html
 ---

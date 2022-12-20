@@ -211,39 +211,6 @@ div.goals ul li:before {
 </nav>
     </section>
     <section class="content">
-<h1>Components</h1>
-
-<p>So far, we have created single state machines, and just connected them with MQTT to let them communicate, but we didn't build anything with them yet.
-This week we want to combine several concepts to build a more complete software component.</p>
-
-<div class="figure">
-<img src="figures/meme.jpg" width="100%"/>
-</div>
-    </section>
-    <section class="content">
-<h1>STMPY Components + MQTT</h1>
-<p>To ensure a <strong>low degree of coupling</strong>, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.</p>
-<p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
-<p>These means alone do not ensure a low degree of coupling and a high degree of cohesion.
-A good component design depends on how we manage to group the functions we need for a system or application into the different components.
-This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>
-
-    </section>
-    <section class="content">
-<h1>State Machines as Sessions</h1>
-<p>So far, we have only looked at singe instances of state machines, because they controlled a single resource.</p>
-<ul>
-<li>The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.</li>
-<li>The bus stop had a single button and signal light, which we could take care of with a single state machine.</li>
-</ul>
-<p>In some systems, there are multiple resources to control. For instance, imagine a parrking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.</p>
-<p>And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.</p>
-<p>For such cases, we keep on using a single state machine per resource it represents.
-But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a <code>session</code>.</p>
-<p>For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.</p>
-
-    </section>
-    <section class="content">
 <h1>Timer Module for a Voice Assistant</h1>
 <p>Your task is to build the module that allows a voice assistant to maintain timers. The timers should have a name, and it should be possible for a user to start as many timers as they want. This means, a user should be able to say:</p>
 <blockquote>
@@ -407,7 +374,6 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 </div>
 <p>Do the following:</p>
 <ul>
-<li>~~Start your own broker.~~</li>
 <li>Use <code>mqtt.item.ntnu.no</code> with port <code>1883</code> as broker.</li>
 <li>Download the <a href="https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py">code of the command component</a> and study it.</li>
 <li>Adjust the topics.</li>
@@ -433,30 +399,6 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <li>
 <p>Create a <strong>short and uncut demo video</strong> using two named timers, simulated via MQTT.FX and your timer manager component.</p>
 </li>
-</ul>
-
-    </section>
-    <section class="content">
-<h1>Checklist</h1>
-<h3>Blackboard</h3>
-<ul>
-<li>Deliver your document that shows progress and results.</li>
-</ul>
-<h3>MS Teams</h3>
-<ul>
-<li>Ask for feedback in general</li>
-<li>Report any errors with the provided solution</li>
-<li>Discuss, with me or other teams</li>
-</ul>
-<h3>Team Reflection for This Unit</h3>
-<ul>
-<li>Add another section to the team reflection document, just like every week.</li>
-</ul>
-<h3>Individual Reflection</h3>
-<ul>
-<li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
-<li>Copy the answers into a document that you maintain on your own.</li>
-<li>Add any additional observations to your reflection diary.</li>
 </ul>
 
     </section>

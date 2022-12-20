@@ -23,29 +23,50 @@ The following signals are sent between the components via the CAN-bus:
 To send a signal, use method `send_signal('...')` with the signal name as argument. 
 To react on the reception of a signal, simply write that signals as the trigger of a transition.
 
-Design a state machine in draw.io for the Car Lock Controller that keeps track of the state of the door and the lock, and that implements the functional requirements from above.
-
----
-type: figure
-source: figures/car-lock-1.png
----
+**Task 1:** Design a state machine in for the Car Lock Controller that keeps track of the state of the door and the lock, and that implements the functional requirements from above.
 
 
-
-Now, add the following functional requirement and create another version of the state machine. (Edit as a copy of the sheet.)
+**Task 2:** Now, add the following functional requirement and create another version of the state machine. (Edit as a copy of the sheet.)
 
 - **R2.1:** If a door is unlocked but not opened, it is locked again after 60 seconds.
 
-This implies that we add a timer to the state machine with a transition reacting to it once the timer expires. We do this in the state machine below. It is important that we use the exit/stop_timer(t) action to state `closed_unlocked`, to prevent a sequence where the user quickly opens the door, then closes it again, then the timer (which was not stopped) to expire and the lock to close. This is prevented by explicitly stopping the timer.
+
+
+
+# Solution 
+
+
 
 ---
-type: figure
-source: figures/car-lock-2.png
+type: hint
+title: Answer to Task 1
+image: figures/car-lock-1.png
 ---
+
+
+
+---
+type: hint
+title: Answer to Task 2
+---
+This implies that we add a timer to the state machine with a transition reacting to it once the timer expires. We do this in the state machine below. It is important that we use the exit/stop_timer(t) action to state `closed_unlocked`, to prevent a sequence where the user quickly opens the door, then closes it again, then the timer (which was not stopped) to expire and the lock to close. This is prevented by explicitly stopping the timer.
+
+
+
+---
+type: hint
+title: Answer to Task 2
+image: figures/car-lock-2.png
+---
+
+
+
+
 
 Another solution adds an additional state, here called `closed_unlocked_timed`. This state covers explicitly that the timer is active, and we leave this state either by the timer expiration or by opening the door. 
 
 ---
-type: figure
-source: figures/car-lock-3.png
+type: hint
+title: Alternative Answer to Task 2
+image: figures/car-lock-3.png
 ---

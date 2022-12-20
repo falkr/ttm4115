@@ -93,6 +93,24 @@ link: teamwork-3.html
 ---
 
 
+## Additional Exercises
+
+---
+type: link
+title: 'Headphones Exercise'
+icon: gear-wide-connected
+link: exercise-headphones.html
+---
+
+
+---
+type: link
+title: 'Car Lock Exercise'
+icon: gear-wide-connected
+link: exercise-carlock.html
+---
+
+
 ### For the Semester Project
 
 When we start with requirements engineering, we will ask you to create the requirements for the semester project. [Have a look at the theme for the semester project of this year](../project/index.html), so that you can start early with preparing some specific ideas for your project.

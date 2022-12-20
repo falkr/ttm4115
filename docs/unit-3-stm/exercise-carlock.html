@@ -58,6 +58,137 @@ a.ntnu-button:hover {
 .person-card-detail {
   font-size: 0.8em;
 }
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color:#f0e9db;
+  color: #868279; 
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active, .w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -168,39 +299,65 @@ a.ntnu-button:hover {
 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
-<li class="breadcrumb-item"><a href="index.html">Unit 9: Components</a></li>
-<li class="breadcrumb-item active" aria-current="page">Implementing Components</li>
+<li class="breadcrumb-item"><a href="index.html">Unit 3: State Machines</a></li>
+<li class="breadcrumb-item active" aria-current="page">Carlock Exercise</li>
 </ol>
 </nav>
     </section>
     <section class="content">
-<h1>Implementing Components</h1>
+<h1>Car Lock</h1>
+<p>You should design the controller of a car lock. The controller is one of several modules in the car, which are connected via a CAN-bus, that sends signals between the modules.
+The controller gets input from the remote car key, which can send the commands <code>key_unlock</code> and <code>key_lock</code>. (The necessary encryption and security mechanisms are implemented between the car key and the key component, but not detailed here.) The controller send the signals <code>unlock</code> and <code>lock</code> to the lock component. It can also detect if the car door was opened or closed, via the signals <code>door_opened</code> and <code>door_closed</code>. Below is a diagram that illustrates all components and the CAN bus.</p>
 
-<p>In this section, we want to study some of the technical solutions to create components with state machines that we can use for several applications.</p>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1ZX0ZxYLXXpE4ZLAdk7D39M1mdFLEcA7T&amp;export=download&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ZX0ZxYLXXpE4ZLAdk7D39M1mdFLEcA7T%26export%3Ddownload"></script>
 
-    </section>
-    <section class="content">
-<h1>STMPY Components + MQTT</h1>
-<p>To ensure a <strong>low degree of coupling</strong>, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.</p>
-<p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
-<p>These means alone do not ensure a low degree of coupling and a high degree of cohesion.
-A good component design depends on how we manage to group the functions we need for a system or application into the different components.
-This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>
 
-    </section>
-    <section class="content">
-<h1>State Machines as Sessions</h1>
-<p>So far, we have only looked at singe instances of state machines, because they controlled a single resource.</p>
+
+<p>The following are the functional requirements for the controller:</p>
 <ul>
-<li>The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.</li>
-<li>The bus stop had a single button and signal light, which we could take care of with a single state machine.</li>
+<li><strong>R1.1:</strong> When the button <code>Unlock</code> is pressed, the door is unlocked.</li>
+<li><strong>R1.2:</strong> When the button <code>Lock</code> is pressed, the door is locked.</li>
+<li>Assume that the controller starts in a state where the door is closed and the lock is locked.</li>
 </ul>
-<p>In some systems, there are multiple resources to control. For instance, imagine a parking lot with chargers for electrical cars. Each charger deserves its own state machine to keep track of the states of the car. Integrating all charging logic into a single state machine is not recommended --- the state machine would not be able to meaningfully track the state of each single charger.</p>
-<p>And now imagine that the number of resources is dynamic, and changes at runtime. Imagine for example, that you have a management system for keeping track of customers in a recycling station, where you want to represent each customer with a state machine to keep track of their states from entering to exiting.</p>
-<p>For such cases, we keep on using a single state machine per resource it represents.
-But we add the possibility to create several instances of the same state machine, and address them with an id. Each state machine instance is then called a <code>session</code>.</p>
-<p>For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.</p>
+<p>The following signals are sent between the components via the CAN-bus:</p>
+<ul>
+<li>From Remote Key Controller to Car Lock Controller: <code>key_unlock</code>, <code>key_lock</code></li>
+<li>From Car Lock Controller to Door Controller: <code>unlock</code>, <code>lock</code></li>
+<li>From Door Controller to Car Lock Controller: <code>door_opened</code>, <code>door_closed</code></li>
+</ul>
+<p>To send a signal, use method <code>send_signal('...')</code> with the signal name as argument.
+To react on the reception of a signal, simply write that signals as the trigger of a transition.</p>
+<p><strong>Task 1:</strong> Design a state machine in for the Car Lock Controller that keeps track of the state of the door and the lock, and that implements the functional requirements from above.</p>
 
+<p><strong>Task 2:</strong> Now, add the following functional requirement and create another version of the state machine. (Edit as a copy of the sheet.)</p>
+<ul>
+<li><strong>R2.1:</strong> If a door is unlocked but not opened, it is locked again after 60 seconds.</li>
+</ul>
+
+    </section>
+    <section class="content">
+<h1>Solution</h1>
+
+<button class="w3collapsible">Answer to Task 1</button>
+<div class="w3content">
+<img src="figures/car-lock-1.png" width="100%"/>
+</div>
+<button class="w3collapsible">Answer to Task 2</button>
+<div class="w3content">
+<p>This implies that we add a timer to the state machine with a transition reacting to it once the timer expires. We do this in the state machine below. It is important that we use the exit/stop_timer(t) action to state <code>closed_unlocked</code>, to prevent a sequence where the user quickly opens the door, then closes it again, then the timer (which was not stopped) to expire and the lock to close. This is prevented by explicitly stopping the timer.</p>
+
+</div>
+<button class="w3collapsible">Answer to Task 2</button>
+<div class="w3content">
+<img src="figures/car-lock-2.png" width="100%"/>
+</div>
+<p>Another solution adds an additional state, here called <code>closed_unlocked_timed</code>. This state covers explicitly that the timer is active, and we leave this state either by the timer expiration or by opening the door.</p>
+
+<button class="w3collapsible">Alternative Answer to Task 2</button>
+<div class="w3content">
+<img src="figures/car-lock-3.png" width="100%"/>
+</div>
     </section>
 </div>
       </div>
@@ -225,7 +382,7 @@ But we add the possibility to create several instances of the same state machine
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-9-comp/preparation-2.md">
+            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-3-stm/exercise-carlock.md">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -245,6 +402,16 @@ But we add the possibility to create several instances of the same state machine
   </script>
   <script>
     
+
+
+
+
+
+
+
+
+
+
 
 
   </script>

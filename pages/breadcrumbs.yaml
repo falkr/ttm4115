@@ -94,6 +94,10 @@
       title: 'Getting Started: Bus Stop'
     - page: unit-3-stm/teamwork-3.md
       title: Kitchen Timer
+    - page: unit-3-stm/exercise-carlock.md
+      title: Carlock Exercise
+    - page: unit-3-stm/exercise-headphones.md
+      title: Headphones Exercise
   - page: unit-4-req/index.md
     title: 'Unit 4: User Requirements'
   - - page: unit-4-req/preparation-1.md

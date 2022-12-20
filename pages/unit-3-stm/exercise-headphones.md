@@ -55,8 +55,12 @@ That's tough. But you manage to build another state machine that solves the task
 
 ### Q1: Sequence Diagram
 
-[Sequence Diagram](figures/headphones-sd-1.png)
 
+---
+type: hint
+title: Answer
+image: figures/figures/headphones-sd-1.png
+---
 
 ### Q2: Info from Product Manager
 
@@ -69,7 +73,11 @@ I don't know how much time must pass between two clicks so that they should coun
 
 ### Q3: First State Machine
 
-[State Machine 1](figures/headphones-stm-1.png)
+---
+type: hint
+title: Answer
+image: figures/headphones-stm-1.png
+---
 
 ### Q4: What is the difference in the new machine?
 
@@ -82,8 +90,11 @@ The controller needs to know when to send signal `play` and when to send signal 
 
 ### Q5: Second State Machine
 
-[State Machine 2](figures/headphones-stm-2.png)
-
+---
+type: hint
+title: Answer
+image: figures/headphones-stm-2.png
+---
 
 ### Q6: Why are you confident?
 

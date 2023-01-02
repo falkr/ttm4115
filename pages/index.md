@@ -8,7 +8,7 @@ In this course, you will get some of the tools and experiences that will help yo
 
 It's also fun, but we leave it up to you to decide.
 
-Welcome to the iteration in spring 2023!
+Welcome to the iteration in spring {{:year:}}!
 
 
 ## Startup for 2023

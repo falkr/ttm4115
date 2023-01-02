@@ -281,12 +281,10 @@ To create components also means to partition the entire system into components. 
 <h2>Component-based Software for AIRGATE.</h2>
 <p>To let you better understand, we show a diagram with components for the Airgate System below. We will later use these as examples.</p>
 
-<div class="figure">
-<img src="figures/airgate-components.png" alt="A possible component-based structure for the Airgate system." width="100%"/>
-<span name="figures/airgate-components.png">&nbsp;</span>
-<aside name="figures/airgate-components.png"><p><p>A possible component-based structure for the Airgate system.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/airgate-components.png" class="figure-img img-fluid rounded" alt="A possible component-based structure for the Airgate system.">
+  <figcaption class="figure-caption">A possible component-based structure for the Airgate system.</figcaption>
+</figure>
 <ul>
 <li><strong>Gate Controller</strong> contains the main logic of the gate that ties together all hardware elements and the connection to the back end.</li>
 <li><strong>Airport Interface</strong> contains the code to adapt with various version for different airports.</li>
@@ -385,21 +383,17 @@ To create components also means to partition the entire system into components. 
 </ul>
 <p>In UML, interfaces can be visualized with the symbols below; one indicates a required interface, the other one a provided interface.</p>
 
-<div class="figure">
-<img src="figures/airgate-services.png" alt="The two turnstile components both define the same interface." width="100%"/>
-<span name="figures/airgate-services.png">&nbsp;</span>
-<aside name="figures/airgate-services.png"><p><p>The two turnstile components both define the same interface.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/airgate-services.png" class="figure-img img-fluid rounded" alt="The two turnstile components both define the same interface.">
+  <figcaption class="figure-caption">The two turnstile components both define the same interface.</figcaption>
+</figure>
 <h2>From Interfaces to Services</h2>
 <p>The interfaces describe how to use a specific functionality of a component. And indeed, in object-oriented programming, we can use these interfaces to plug together system parts. To make this also work in a component-based setting and in a dynamic way, we introduce the concept of a <strong>service</strong>. Have a look at the three-step interaction below:</p>
 
-<div class="figure">
-<img src="figures/airgate-discovery.png" alt="The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services." width="100%"/>
-<span name="figures/airgate-discovery.png">&nbsp;</span>
-<aside name="figures/airgate-discovery.png"><p><p>The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/airgate-discovery.png" class="figure-img img-fluid rounded" alt="The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services.">
+  <figcaption class="figure-caption">The interactions going on between the components to provide and use the right component for the turnstile, using the concept of services.</figcaption>
+</figure>
 <ol>
 <li><strong>Service Registration:</strong> A component <em>offering</em> a service, such as a turnstile, first registers its capability in a service registry. In the example, the configuration manager could be the service registry that keeps an overview of all services available.</li>
 <li><strong>Service Discovery:</strong> A component <em>requiring</em> a service, like the gate controller needs a turnstile, looks up which turnstiles are available by asking the service registry. As part of this discovery, it somehow needs to describe what it is looking for. In the simplest case, this can be some identifier of a service.</li>

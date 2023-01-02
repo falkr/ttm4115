@@ -58,6 +58,21 @@ a.ntnu-button:hover {
 .person-card-detail {
   font-size: 0.8em;
 }
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -93,6 +108,7 @@ div.goals ul li:before {
   margin-left: -1.5em;
   color: #00509e;
 }
+
 
 
 
@@ -231,24 +247,37 @@ table.weekplan a {
 
       <div class="col-md-9" style="margin-top: 6rem;">
         <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
-<li class="breadcrumb-item"><a href="index.html">Tools</a></li>
-<li class="breadcrumb-item active" aria-current="page">The TTM4115 Base Architecture</li>
-</ol>
-</nav>
     </section>
     <section class="content">
-<h1>The TTM4115 Base Architecture</h1>
-<p>To make the development of the semester project simpler for you, we have developed a base architecture.</p>
-<ul>
-<li><strong>MQTT</strong> is the protocol to connect all system components. We use Mosquitto as broker.</li>
-<li><strong>STMPY Components</strong> provides support for state machines that communicate over MQTT. Internally, STMPY Components uses <strong>Paho for Python</strong> as MQTT client for Python and STMPY to drive the state machines.</li>
-<li><strong>Node RED</strong> is a flow-based programming tool based on Node and Java Script. It connects with MQTT, and can help you to add data base components and to connect other hardware.</li>
-<li><strong>Paho for Java Script</strong> can connect webpages that run Java Script to MQTT by using Websockets. This makes it possible to integrate two-way interactive websites into your system.</li>
-</ul>
+<h1>State Machines: Data vs. States</h1>
 
+<p>As you have seen, state machines can have choice states so that transitions can contain decisions, similar to if-statements in programming languages.
+In principle, you could design a state machine that only has a single state, yet handles many incoming messages and timers. This state machine could store all information in its variables, and use lots of guards on the transitions. It would obey all rules of a consistent state machine we have listed so far.</p>
+
+<figure class="figure">
+    <img src="figures/stateless-machine.png" class="figure-img img-fluid rounded" alt="A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.">
+  <figcaption class="figure-caption">A state machine with only a single state. Possible, syntactically correct, and also completely useless. Not recommended.</figcaption>
+</figure>
+<p>Above we see a machine that is syntactically correct. It consists of only a single state <code>s_1</code>, and declares outgoing triggers <code>A</code>, <code>B</code>, <code>C</code>. For each of these triggers it defines compound transitions that contain a choice state with an outgoing guard. These guards determine what the state machine is doing, like execurting actions attached to the branches of the transitions (not shown here). So this is a valid state machine, and totally possible to produce. But is it a good idea?</p>
+
+<p>In most cases, this is a <strong>bad design</strong> for a state machine. It does not use the concept of control states, and will be hard to understand.
+States are really hidden in the data of the machine.
+Instead, the states should follow what is happening in the real world or follow the state of an interaction explicitly by using its control states.</p>
+<p>Of course, variables should be used to store values, and in some cases, these values have an influence on the guards of choice states. But variables should not be stored to remember the state of an interactions, like a variable that would store if you have previously received a specific message. Equally, you should not access an API to check if a timer is still active or allready expired. This you should express with states and dedicated transitions.</p>
+<h3>Example</h3>
+<p>Similar to the strategy with the decisions above, we could realize the state machine shown below. It should monitor the arrival of a message <code>A</code>. If it arrives in time (i.e., before timer <code>t</code> expires), we want to go into state <code>in_time</code>, otherwise we go into state <code>too_late</code>. The solution below uses a decision once the message <code>A</code> arrives and checks iof the timer alreay expired, to then decide where to go.</p>
+
+<figure class="figure">
+    <img src="figures/stateless-timer-1.svg" class="figure-img img-fluid rounded" alt="Using a choice state with a decision to query the state of the timer. Not recommended.">
+  <figcaption class="figure-caption">Using a choice state with a decision to query the state of the timer. Not recommended.</figcaption>
+</figure>
+<p>Although the solution above is syntactically okay, it is not a good design. Obviously, the fact if the message arrived in time or too late has something to do with the flow of the conversation between this state machine and wherever <code>A</code> comes from. The fact that the timer <code>t</code> expired is n the design above not visible form the control state. When we debug the state machine, we don't see that it is in a differnet state, and we also have to look at the timer queue to understand the current state of the system.</p>
+<p>The solution below is much better. Here we use states the way they are useful. When the timer expires, the state machine switches into state <code>still_waiting</code>, which already signifies that <code>A</code> is late. In this design, the control flow follows the flow of the conversation, and encodes that the timer expires.</p>
+
+<figure class="figure">
+    <img src="figures/stateless-timer-2.svg" class="figure-img img-fluid rounded" alt="Recommended, state-based design realizing the same functionality.">
+  <figcaption class="figure-caption">Recommended, state-based design realizing the same functionality.</figcaption>
+</figure>
     </section>
 </div>
       </div>
@@ -273,7 +302,7 @@ table.weekplan a {
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/tools/tools-base.md">
+            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-3-stm/hints-data.md">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -293,6 +322,9 @@ table.weekplan a {
   </script>
   <script>
     
+
+
+
 
 
 

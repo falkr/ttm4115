@@ -4,22 +4,6 @@ During the semester you will work on a system specification in your development 
 This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.
 
 
-### Managing Uncertainty is part of your job
-
-Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.
-
-
-### You are the Product Owner
-
-Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)
-
-In this course, there is no external product owner. We could have designed the course like this, but this adds additional complexity and would have come at a cost of reducing some of the other learning goals. 
-
-You are therefore also the product owner, and have to decide which product to build and how it should work at the same time you are developing it. That's not a problem, but we have to be aware of this.
-
-Since you are the product owner, we choose a domain where you have some insights, so that you can answer the most important questions on your own and judge which features to implement and how they make sense.
-
-
 ### Theme
 
 Each year we select a theme for the semester project. There are two reasons for this: 
@@ -49,6 +33,25 @@ The idea is that most students are physical on campus and in the classroom or la
 The system should not replace a complete learning system, which are mostly about handling documents or providing material.    
 
 You can use a Raspberry Pi with a SenseHAT as a hardware device, for instance to show the status at each table. If you have good ideas that require other hardware we can have a talk if we can incorporate them. 
+
+
+# Hints
+
+### Managing Uncertainty is part of your job
+
+Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.
+
+
+### You are the Product Owner
+
+Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)
+
+In this course, there is no external product owner. We could have designed the course like this, but this adds additional complexity and would have come at a cost of reducing some of the other learning goals. 
+
+You are therefore also the product owner, and have to decide which product to build and how it should work at the same time you are developing it. That's not a problem, but we have to be aware of this.
+
+Since you are the product owner, we choose a domain where you have some insights, so that you can answer the most important questions on your own and judge which features to implement and how they make sense.
+
 
 
 # Deliveries

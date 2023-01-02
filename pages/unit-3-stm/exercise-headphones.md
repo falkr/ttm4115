@@ -59,7 +59,7 @@ That's tough. But you manage to build another state machine that solves the task
 ---
 type: hint
 title: Answer
-image: figures/figures/headphones-sd-1.png
+image: figures/headphones-sd-1.png
 ---
 
 ### Q2: Info from Product Manager

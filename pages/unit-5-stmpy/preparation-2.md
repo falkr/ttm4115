@@ -62,3 +62,6 @@ At this time, you don't have to program anything on your own, just execute the c
 
 * Work through the content of the notebook **State Machines in Python - Part 4.ipynb**
 * You learn how to support decisions in state machines using **compound transitions.**
+
+
+:tip: Running state machines in Jupyter notebooks now is convenient because it provides you access to code and documentation step-by-step. For more comprehensive code and especially for your semester project we recommend to move away from notebooks and use normal Python programming instead.

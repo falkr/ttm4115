@@ -269,12 +269,10 @@ This will be the basis for implementing state machines in Python.
 There's not much more to say about this table, other than that it offers another way of looking at a state machine, and understand them systematically.
 Below you see again the state machine for the tunnel light, and the table that describes the same behavior. Check if you understand what each row means, and how it corresponds line by line to the diagram.</p>
 
-<div class="figure">
-<img src="figures/tunnel-2.svg" alt="The state machine from the tunnel light." width="100%"/>
-<span name="figures/tunnel-2.svg">&nbsp;</span>
-<aside name="figures/tunnel-2.svg"><p><p>The state machine from the tunnel light.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/tunnel-2.svg" class="figure-img img-fluid rounded" alt="The state machine from the tunnel light.">
+  <figcaption class="figure-caption">The state machine from the tunnel light.</figcaption>
+</figure>
 <span name="ff237d">&nbsp;</span>
 <aside name="ff237d"><p><p>A transition table with equivalent content.</p>
 </p></aside>
@@ -347,12 +345,10 @@ Below you see again the state machine for the tunnel light, and the table that d
 To understand how a state machine works, you can also think of them as a physical machine, which executes almost like a mechanical clockwork.
 The figure below illustrates such a machine.</p>
 
-<div class="figure">
-<img src="figures/state-machine-machine.svg" alt="An imaginary machine that illustrates how a state machine works." width="100%"/>
-<span name="figures/state-machine-machine.svg">&nbsp;</span>
-<aside name="figures/state-machine-machine.svg"><p><p>An imaginary machine that illustrates how a state machine works.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/state-machine-machine.svg" class="figure-img img-fluid rounded" alt="An imaginary machine that illustrates how a state machine works.">
+  <figcaption class="figure-caption">An imaginary machine that illustrates how a state machine works.</figcaption>
+</figure>
 <p>The state machine has an input queue for messages sent by other parts of the system.
 These may be other state machines within the same computing node, state machines from other nodes, or other parts of programs that send messages.</p>
 <p>All messages arrive and are sorted in a first-in, first-out order, also called <em>FIFO</em>.</p>
@@ -370,13 +366,15 @@ This is why this type of state machine is also called <em>extended</em> finite s
 
 <nav class="d-flex justify-content-between">
 <a type="button" href="preparation-2.html" class="page-link rounded">
-State Machine Diagrams
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-short" viewBox="0 0 16 16" id="arrow-left-short"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" /></svg>
+State Machine Diagrams
 </a>
 <div></div>
 <a type="button" href="preparation-4.html" class="page-link rounded">
 Advanced Queue Semantics
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-short" viewBox="0 0 16 16" id="arrow-right-short"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
 </a>
+</nav>
     </section>
 </div>
       </div>

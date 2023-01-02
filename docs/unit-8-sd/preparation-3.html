@@ -263,9 +263,9 @@ only sequence of events that is possible is <code>&lt;!A, ?A&gt;</code>.</p>
 means that lifeline Y receives signal A before it receives B,
 <code>&lt; ?A, ?B &gt;</code>.</p>
 
-<div class="figure">
-<img src="figures/ordering-lifeline.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ordering-lifeline.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>Now comes the part that may be less intuitive: Events on <em>different</em>
 lifelines are <em>not ordered</em>, even though they have distinct
 y-coordinates. In the diagram below, the reception of A and the
@@ -275,12 +275,10 @@ Because these events are not related with each other, the diagram does
 not tell if any of them happens before each other, despite it may look
 like it.</p>
 
-<div class="figure">
-<img src="figures/ex-11.png" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram." width="100%"/>
-<span name="figures/ex-11.png">&nbsp;</span>
-<aside name="figures/ex-11.png"><p><p>Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/ex-11.png" class="figure-img img-fluid rounded" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.">
+  <figcaption class="figure-caption">Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</figcaption>
+</figure>
 <p>For some, this non-ordering of events on different lifelines may not be
 intuitive at the first glance. The following illustration may help you
 to understand it: Imagine that the events along a lifeline are connected
@@ -292,9 +290,9 @@ ordering among the events, irrespective of their absolute position on
 the lifelines. What counts is that <code>A</code> is received before <code>B</code>, and this
 does not change in any of the diagrams.</p>
 
-<div class="figure">
-<img src="figures/ex-12.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-12.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>The slope of messages is hence only a means of illustration. A
 recommendation is to use horizontal messages where possible, and
 messages with a downwards slope when you want to show that messages
@@ -303,9 +301,9 @@ slope.</p>
 <p>The example below shows a sequence diagram with two messages, and four
 distinct events:</p>
 
-<div class="figure">
-<img src="figures/ex-1.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-1.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>Intuitively, we already know one sequence in which these events can
 happen, that is, we know that <code>&lt;!A,?A,!B,?B&gt;</code> is one valid
 trace. However, it is not the only possible trace. To find the other
@@ -363,9 +361,9 @@ ordering rules, and strike them out?</p>
 <p>The diagram <em>Beta</em> below only covers the scenario that <code>A</code> is received
 by <code>Y</code> before <code>B</code>.</p>
 
-<div class="figure">
-<img src="figures/ex-2.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-2.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p><strong>Exercise:</strong> Write down all the possible traces that the sequence
 diagram <em>Beta</em> allows.</p>
 <p>In reality, it will be hard or impossible to ensure that this order is
@@ -377,9 +375,9 @@ can use a so-called <em>co-region</em>. These are the brackets placed on the
 lifeline <em>Y</em>. Within the brackets of a co-region, events on the lifeline
 are not ordered anymore, i.e., they can happen in any order.</p>
 
-<div class="figure">
-<img src="figures/ex-3.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-3.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if
 the events within the co-region (<code>?A</code> and <code>?B</code>) can happen in any order?</p>
 <p><strong>Exercise:</strong> Is there a way to handle the situation also in another
@@ -387,9 +385,9 @@ way? For instance, can you, just by adding a message (and without a
 co-region), reduce the number of traces so that there is only one
 possible trace left for diagram <em>Beta-C</em>?</p>
 
-<div class="figure">
-<img src="figures/ex-3-2.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-3-2.png" class="figure-img img-fluid rounded" alt="">
+</figure>
     </section>
 </div>
       </div>

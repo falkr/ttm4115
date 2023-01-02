@@ -284,12 +284,10 @@ table.weekplan a {
 
 <p>For the traffic light above we described actually a state machine. Since taking photos of real objects is cumbersome, and we also want to describe abstract things we cannot take a photo off, we replace the photos above with a more convenient symbol, a rectangle with rounded corners. These are the states in which the traffic light can be. A state machine for the traffic light looks hence like this:</p>
 
-<div class="figure">
-<img src="figures/traffic-light-4.svg" alt="A state machine of the traffic light using the syntax of UML." width="100%"/>
-<span name="figures/traffic-light-4.svg">&nbsp;</span>
-<aside name="figures/traffic-light-4.svg"><p><p>A state machine of the traffic light using the syntax of UML.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/traffic-light-4.svg" class="figure-img img-fluid rounded" alt="A state machine of the traffic light using the syntax of UML.">
+  <figcaption class="figure-caption">A state machine of the traffic light using the syntax of UML.</figcaption>
+</figure>
 <p>Have a look at the detailed elements in this diagram:</p>
 <ul>
 <li>The frame has a five-cornered compartment at the top, showing the name of the state machine, prefixed with the keyword <code>stm</code>.</li>
@@ -300,23 +298,19 @@ table.weekplan a {
 <h2>States</h2>
 <p>State symbols with the same name refer to the same state. This means, we can use a copy of the state symbol to make our layout easier, without changing what we actually mean by the diagram. For instance, we can remove the long arrow from state <code>yellow</code> to state <code>red</code> just by having another copy of the symbol for state <code>red</code>:</p>
 
-<div class="figure">
-<img src="figures/traffic-light-5.svg" alt="Another version that uses two state symbols for the state red." width="100%"/>
-<span name="figures/traffic-light-5.svg">&nbsp;</span>
-<aside name="figures/traffic-light-5.svg"><p><p>Another version that uses two state symbols for the state red.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/traffic-light-5.svg" class="figure-img img-fluid rounded" alt="Another version that uses two state symbols for the state red.">
+  <figcaption class="figure-caption">Another version that uses two state symbols for the state red.</figcaption>
+</figure>
 <p>The diagram describes exactly the same behavior. Both state symbols for the state <code>red</code> refer to the same state, so our traffic light still has the same number of states, just its layout changed. In this simple state machine this doesn't really matter, but this can help you to create better layouts once state machines become larger.</p>
 
 <p><strong>State Names:</strong> Selecting good names for states can help making state machine easier to understand, especially when the states map to phases of the thing we want to model, like <em>on</em> and <em>off</em> for a lamp, or <em>open</em> and <em>close</em> for a lock. However, sometimes there is no obvious good name. In such cases, I recommend to use state names like <code>s0</code>, <code>s1</code>,..., which can make life easier. You always have the possibility to attach a note to a state and explain what it means.</p>
 <p>Pay attention to the state symbol. It's a rectangle with some rounded corners, nothing else!</p>
 
-<div class="figure">
-<img src="figures/state-shapes.svg" alt="The correct symbol for a state is a rounded rectangle." width="100%"/>
-<span name="figures/state-shapes.svg">&nbsp;</span>
-<aside name="figures/state-shapes.svg"><p><p>The correct symbol for a state is a rounded rectangle.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/state-shapes.svg" class="figure-img img-fluid rounded" alt="The correct symbol for a state is a rounded rectangle.">
+  <figcaption class="figure-caption">The correct symbol for a state is a rounded rectangle.</figcaption>
+</figure>
 <h2>Transitions</h2>
 <p>The arrows between the states are called <strong>transitions</strong>. We have said above that the state machine is at any point in time in exactly one of its states. It is not in two or more of them at the same time, and it is never somewhere in between. Conceptually, this means that a state machine switches from one state to another <strong>within no time at all</strong>,  meaning that <strong>transitions take no time</strong>. This sounds magical, but we will come back to this.</p>
 <p>So far, we have not yet talked about <em>when</em> a transition happens, this means, what <strong>triggers</strong> a transition. We have, for example, not described <em>when</em> the traffic light switches from <code>red</code> to <code>red_yellow</code>. There are three types of events that can trigger transitions in a state machine:</p>
@@ -330,20 +324,16 @@ table.weekplan a {
 <h2>Actions</h2>
 <p>Let's have a look at a blinking light that you find often at the entry of tunnels. The light blinks with two lamps to indicate that the tunnel is closed. The blinking happens so that either the left lamp or the right lamp are on, and they switch every second.</p>
 
-<div class="figure">
-<img src="figures/tunnel.jpg" alt="A picture of a traffic light for a tunnel." width="100%"/>
-<span name="figures/tunnel.jpg">&nbsp;</span>
-<aside name="figures/tunnel.jpg"><p><p>A picture of a traffic light for a tunnel.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/tunnel.jpg" class="figure-img img-fluid rounded" alt="A picture of a traffic light for a tunnel.">
+  <figcaption class="figure-caption">A picture of a traffic light for a tunnel.</figcaption>
+</figure>
 <p>From our experience with the more complex traffic light, this should be an easy state machine to write down. It has two states, <code>left</code>and <code>right</code>, corresponding to one of the lamps being switched on. We also added labels to some of the transitions. They describe that the state machine switches from state <code>left</code> to state <code>right</code> triggered by an event <code>t1</code>. This is a timer. It switches back with a timer <code>t2</code>. The detailed timer operations are not yet visible, we come later to that. In this blinking light we also show how to switch it off. This happens by an event called <code>off</code>, and it can happen in any of the two states.</p>
 
-<div class="figure">
-<img src="figures/tunnel-1.svg" alt="A simple state machine for the blinking light." width="100%"/>
-<span name="figures/tunnel-1.svg">&nbsp;</span>
-<aside name="figures/tunnel-1.svg"><p><p>A simple state machine for the blinking light.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/tunnel-1.svg" class="figure-img img-fluid rounded" alt="A simple state machine for the blinking light.">
+  <figcaption class="figure-caption">A simple state machine for the blinking light.</figcaption>
+</figure>
 <p>We also want to specify the actions to switch the individual lamps on and off. We assume that we have for this the actions <code>left_on()</code>, <code>left_off()</code>, and <code>right_on()</code>, <code>right_off()</code>. We already use Python syntax for these actions. In our state machine diagram we can use these actions and add them to the transitions.</p>
 
 <p>The actions are also called an <strong>effect</strong> of the transition, and happen at the same instant the transition is executed, that means, when we switch states. The effects are written behind the <code>/</code> of the transition label.</p>
@@ -354,30 +344,24 @@ table.weekplan a {
 <li>When the blinking light switches off and moves into the final state, we run actions <code>left_off()</code> or <code>right_off()</code>, depending on in which of the two states we are.</li>
 </ul>
 
-<div class="figure">
-<img src="figures/tunnel-2.svg" alt="This version adds actions to turn lights on and off." width="100%"/>
-<span name="figures/tunnel-2.svg">&nbsp;</span>
-<aside name="figures/tunnel-2.svg"><p><p>This version adds actions to turn lights on and off.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/tunnel-2.svg" class="figure-img img-fluid rounded" alt="This version adds actions to turn lights on and off.">
+  <figcaption class="figure-caption">This version adds actions to turn lights on and off.</figcaption>
+</figure>
 <p>Another way to execute actions is to add them to a state, and run them when we enter or exit the state. For some problems, such as the blinking light, this makes the diagram much nicer. Have a look at the functionally equivalent diagram:</p>
 
-<div class="figure">
-<img src="figures/tunnel-3.svg" alt="Equivalent representation with entry and exit actions." width="100%"/>
-<span name="figures/tunnel-3.svg">&nbsp;</span>
-<aside name="figures/tunnel-3.svg"><p><p>Equivalent representation with entry and exit actions.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/tunnel-3.svg" class="figure-img img-fluid rounded" alt="Equivalent representation with entry and exit actions.">
+  <figcaption class="figure-caption">Equivalent representation with entry and exit actions.</figcaption>
+</figure>
 <p>Here we have drawn the state symbol with a compartment and add entry and exit actions to it. Actions that are preceded with the prefix <code>entry/</code> are executed when the state machine enters the state, and actions preceded with the prefix <code>exit/</code> run when the machine exits the state. In the example this cleans up the entire diagram, since we also can remove the actions from the initial transition and the transitions that target the final states. When we before had to add actions to all transitions entering or exiting a state, it is now enough to only declare them once within the state.</p>
 <p>You can list as many entry and exit actions for a state as you need, just add a new line with the prefix <code>entry/</code> or <code>exit/</code> for each of them. And of course, it looks nice when you list all entry actions above the exit actions.
 We also assume that they are executed in the way they are sorted, that means when we enter a state then the entry actions are executed in the order they are written, and the same for the exit actions when we exit the state.</p>
 
-<div class="figure">
-<img src="figures/many-actions.svg" alt="Several entry and exit actions are possible." width="100%"/>
-<span name="figures/many-actions.svg">&nbsp;</span>
-<aside name="figures/many-actions.svg"><p><p>Several entry and exit actions are possible.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/many-actions.svg" class="figure-img img-fluid rounded" alt="Several entry and exit actions are possible.">
+  <figcaption class="figure-caption">Several entry and exit actions are possible.</figcaption>
+</figure>
 <p><strong>Mind the Slash!</strong> The slash on the transition labels separates the triggers from the actions.</p>
 <ul>
 <li>For initial transitions (the ones originating at an initial state) that do not have an action, the label is empty.</li>
@@ -395,42 +379,34 @@ We also assume that they are executed in the way they are sorted, that means whe
 <h3>Spaghetti Timer Example</h3>
 <p>Imagine we want to describe the behavior of a simple spaghetti timer. This timer expires after 10 minutes and then beeps for 3 seconds. We can do this with the state machine below.</p>
 
-<div class="figure">
-<img src="figures/spaghetti-1.svg" alt="Simple timer that beeps for 3 seconds after 10 minutes are over." width="100%"/>
-<span name="figures/spaghetti-1.svg">&nbsp;</span>
-<aside name="figures/spaghetti-1.svg"><p><p>Simple timer that beeps for 3 seconds after 10 minutes are over.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/spaghetti-1.svg" class="figure-img img-fluid rounded" alt="Simple timer that beeps for 3 seconds after 10 minutes are over.">
+  <figcaption class="figure-caption">Simple timer that beeps for 3 seconds after 10 minutes are over.</figcaption>
+</figure>
 <p>Using entry and exit action on the states, we can also write this one in a more compact form.</p>
 
-<div class="figure">
-<img src="figures/spaghetti-2.svg" alt="Functionally identical timer, but with entry and exit actions on the state." width="100%"/>
-<span name="figures/spaghetti-2.svg">&nbsp;</span>
-<aside name="figures/spaghetti-2.svg"><p><p>Functionally identical timer, but with entry and exit actions on the state.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/spaghetti-2.svg" class="figure-img img-fluid rounded" alt="Functionally identical timer, but with entry and exit actions on the state.">
+  <figcaption class="figure-caption">Functionally identical timer, but with entry and exit actions on the state.</figcaption>
+</figure>
 <p><strong>Exercise:</strong> Simulate both of these state machines in you head or on paper by going through all the states, starting with the initial state. Verify that these two versions really are functionally equivalent.</p>
 <h2>Internal Transitions</h2>
 <p>You have seen that we can declare entry and exit actions within a state symbol, which lets us in some cases describe more compact state machines. Another thing we can declare within a state is an <strong>internal transition</strong>. The internal transition has a label like normal transitions, <code>trigger/actions</code> but is written inside the state symbol, between the entry and exit actions.</p>
 
-<div class="figure">
-<img src="figures/internal-transition.svg" alt="Declaration of an internal transition, triggered by event A." width="100%"/>
-<span name="figures/internal-transition.svg">&nbsp;</span>
-<aside name="figures/internal-transition.svg"><p><p>Declaration of an internal transition, triggered by event A.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/internal-transition.svg" class="figure-img img-fluid rounded" alt="Declaration of an internal transition, triggered by event A.">
+  <figcaption class="figure-caption">Declaration of an internal transition, triggered by event A.</figcaption>
+</figure>
 <p>The state <em>s1</em> above declares an internal transition <code>A/a_2()</code>. It is triggered when the event <code>A</code> is happening. When that happens, action <code>a_2()</code> is executed. Because it is an internal transition, the entry and exit actions are <strong>not</strong> executed. Also, because the state stays the same, we can react many times to the event <code>A</code>. Whenever it occurs and we are in state <em>s1</em>, action <code>a_2()</code> will be executed.</p>
 <p><strong>Note:</strong> When you look at the entry and exit actions, you see that they almost look the same as an internal transition. And the notation is quite consistent, because the prefix <em>entry</em> and <em>exit</em> before the <code>/</code> really do describe when the action behind the slash is executed. But these are not transitions, just declarations of entry and exit actions.</p>
 
 <h2>Choice States</h2>
 <p>In some cases, we want to have a choice in which state a transition should switch, based on conditions in data. As an example, let's look at the incomplete state machine below. It describes a part of a controller for a heater. In state <code>heater_on</code> we wait for 1 second for timer <code>t</code>, which triggers the transition towards the choice state. This choice state has two alternative branches, distinguished by two guards, in rectangular brackets. Think of them as an if-statement in a programming language. if the temperature is okay, we switch into state <code>heater_off</code>. If not, we take the else-branch and restart the timer, to check again in another 1000 milliseconds.</p>
 
-<div class="figure">
-<img src="figures/heater.svg" alt="Part of a temperature controller, using a choice state with guards to make a decision." width="100%"/>
-<span name="figures/heater.svg">&nbsp;</span>
-<aside name="figures/heater.svg"><p><p>Part of a temperature controller, using a choice state with guards to make a decision.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/heater.svg" class="figure-img img-fluid rounded" alt="Part of a temperature controller, using a choice state with guards to make a decision.">
+  <figcaption class="figure-caption">Part of a temperature controller, using a choice state with guards to make a decision.</figcaption>
+</figure>
 <p>Don't worry too much about what to write into the guard for now. This will get much clearer once we implement state machines in Python, where we implement the entire choice state with a Python if-statement.</p>
 <p>A choice state can have many outgoing branches. One of them must have a guard that is true, otherwise the state machine would be blocked. I therefore recommend to have an else-branch, which is true whenever none of the other branches is true.</p>
 <p>By the way: There is one imperfection with this machine: When the temperature is not okay yet, we re-enter the state <code>heater_on</code>, which means that we execute entry action <code>heat_on()</code> again. We assume here that it is programmed in such a way that this doesn't matter. An alternative is to add the action to both incoming transitions of state <code>heater_on</code>.</p>
@@ -469,23 +445,23 @@ But the motivation is actually different. By sending messages, we can couple sta
 
 <p><strong>Example:</strong> We want to extend our spaghetti timer from above. The new timer should blink a light while it is active. Have a look at the two coupled state machines below. The one at the top has the control of the 10 minute timer, and waits until a user activates it via message <code>start</code>. This message can come from a user interface, which we don't show here. Once this message arrives, the machine switches into state <code>active</code>, which declares the entry actions that start the 10 minute countdown timer <code>t1</code>, and another entry action that sends message <code>on</code> to the machine to the right. This machine takes only care of the blinking light, 1 sec on and 1 sec off.</p>
 
-<div class="figure">
-<img src="figures/blinking-timer.svg" alt="Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages." width="100%"/>
-<span name="figures/blinking-timer.svg">&nbsp;</span>
-<aside name="figures/blinking-timer.svg"><p><p>Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/blinking-timer.svg" class="figure-img img-fluid rounded" alt="Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages.">
+  <figcaption class="figure-caption">Two state machines that together realize a blinking timer. One takes care of the timer, the other one of blinking the lights. Both communicate using messages.</figcaption>
+</figure>
 <p>We <em>could</em> build a single state machine for it, which handles the 10 minutes timeout and the 1 sec blinking at the same time. But imagine that the timer has more complicated functions, like restarting, pausing, or it would be an entire different application with more functions to integrate. Then it helps to reduce complexity when you can start and stop a sub-function such as blinking a light just by sending messages to it from another machine.</p>
 
 <nav class="d-flex justify-content-between">
 <a type="button" href="preparation-1.html" class="page-link rounded">
-Hello, State Machines!
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-short" viewBox="0 0 16 16" id="arrow-left-short"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" /></svg>
+Hello, State Machines!
 </a>
 <div></div>
 <a type="button" href="preparation-3.html" class="page-link rounded">
 State Machine Semantics
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-short" viewBox="0 0 16 16" id="arrow-right-short"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
 </a>
+</nav>
     </section>
 </div>
       </div>
@@ -530,7 +506,6 @@ State Machine Semantics
   </script>
   <script>
     
-
 
 
 

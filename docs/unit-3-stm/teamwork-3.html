@@ -133,8 +133,8 @@ div.goals ul li:before {
   color: #00509e;
 }
 .w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
+  background-color: #f0e9db;
+  color: #868279;
   padding: 8px 18px 8px 8px;
   cursor: pointer;
   width: 100%;
@@ -145,13 +145,14 @@ div.goals ul li:before {
   font-size: 15px;
 }
 
-.w3active, .w3collapsible:hover {
+.w3active,
+.w3collapsible:hover {
   background-color: #f0e9cb;
 }
 
 .w3content {
   filter: blur(3px);
-  padding: 0 18px;
+  padding: 18px;
   display: block;
   overflow: hidden;
   background-color: #f3f3f3;
@@ -311,8 +312,12 @@ table.weekplan a {
 <div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<p>It's a kitchen timer. It has 4 LEDs and a button. When the button is pressed, the first LED is switched on, and the plug provides electricity, for instance for a coffee machine. After 15 minutes, the LED is switched off and the plug is turned off. Whenever the button is pressed when an LED is already on, the next LED is switched on and time timer is set to 30, 45, or 60 minutes, respectively. If all LEDs are on, and the button is pressed, all LEDs and the plug are switched off.</p>
-<p>You can ignore that the LED of the segment that is currently active is blinking, just assume it lights all the time.</p>
+<p>It's a kitchen timer. It has 4 LEDs and a button. When the button is pressed, the first LED is switched on, and the plug provides electricity, for instance for a coffee machine. After 15 minutes, the LED is switched off and the plug is turned off. Whenever the button is pressed when an LED is already on, the next LED is switched on and time timer is set to 30, 45, or 60 minutes, respectively. If all LEDs are on, and the button is pressed, all LEDs and the plug are switched off. You can ignore that the LED of the segment that is currently active is blinking, just assume it lights all the time.</p>
+
+<iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9bfe4a96-4f9a-44ac-879a-af79009d2a1a&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&captions=false&interactivity=all" height="540" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+
 <p>Use the following actions:</p>
 <ul>
 <li><code>start_timer('t',... )</code> This starts a timer with name <code>t</code>. The second argument is the time, given as seconds. If a timer is already active, the timer is simply restarted with the new, updated timeout.</li>

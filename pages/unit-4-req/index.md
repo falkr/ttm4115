@@ -45,6 +45,16 @@ link: preparation-2.html
 ---
 
 
+In the team activity you will start to write doen the requirements for the semester project. 
+As preparation, read through once again about this year's semester project.
+
+---
+type: link
+title: 'Semester Project'
+icon: journal-bookmark-fill
+link: ../project/index.html
+---
+
 ## Teamwork on Monday
 
 Go through the following activities with your team:

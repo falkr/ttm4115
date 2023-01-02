@@ -252,9 +252,9 @@ to characterize interactions.</p>
 component may ask for access, and the access right may be granted or
 not. We can show this in the sequence diagram <em>Access</em> below:</p>
 
-<div class="figure">
-<img src="figures/alt.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/alt.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>The different compartments are alternatives to each other. There may be
 any number of compartments, not only two. They are separated by a dashed
 line. To describe in more detail, when a specific alternative is chosen,
@@ -274,9 +274,9 @@ interaction.</p>
 similar to an alt fragment with two compartments, one of which is empty.
 Like with the alt fragment, the opt fragment can have a guard.</p>
 
-<div class="figure">
-<img src="figures/opt-1.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/opt-1.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>loop</h2>
 <p>With the <strong>loop</strong> fragment, you can express that a behavior is executed
 repeatedly. Below, you see the specification of an alarm clock with a
@@ -286,9 +286,9 @@ case of stopping the alarm, there is also a break fragment. This signals
 the escape out of the loop. You may also leave unspecified how often the
 loop is executed.</p>
 
-<div class="figure">
-<img src="figures/loop-1.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/loop-1.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>assert and neg</h2>
 <p>In some cases, you want to assert that a certain interaction must
 exactly occur as specified. For that, you can place it into an
@@ -296,9 +296,9 @@ exactly occur as specified. For that, you can place it into an
 <em>negative</em> behavior, i.e., behavior that must not happen. Such behavior
 can be places in a <strong>neg</strong> fragment.</p>
 
-<div class="figure">
-<img src="figures/assert-neg.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/assert-neg.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>ref</h2>
 <p>With a <strong>ref</strong> fragment, you can refer from one sequence diagram to
 another one. This makes diagrams easier to handle. It also allows to
@@ -310,20 +310,18 @@ arrow is just an illustration.) This is probably not a good example in
 general, but it should work. Note that the outermost frame, labeled
 &quot;<strong>sd</strong> alarm&quot; encapsulates the entire sequence diagram.</p>
 
-<div class="figure">
-<img src="figures/ref-1.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ref-1.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>Time Constraints</h2>
 <p>In some cases, you want to add time constraints to a specification, to
 show <em>when</em> an interaction occurs, or how long specific parts of it may
 or should take. Have a look at the example below:</p>
 
-<div class="figure">
-<img src="figures/timing.png" alt="From the UML@Class book." width="100%"/>
-<span name="figures/timing.png">&nbsp;</span>
-<aside name="figures/timing.png"><p><p>From the UML@Class book.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/timing.png" class="figure-img img-fluid rounded" alt="From the UML@Class book.">
+  <figcaption class="figure-caption">From the UML@Class book.</figcaption>
+</figure>
 <p>It shows that the newsletter is sent at 12:00. Five time units later,
 the student receives the confirmation. The diagram also specifies that
 the signal <em>inform</em> must be received within two hours.</p>

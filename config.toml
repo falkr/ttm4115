@@ -1,2 +1,5 @@
 input = "pages"
 output = "docs"
+
+[replacements]
+"year" = "2023"

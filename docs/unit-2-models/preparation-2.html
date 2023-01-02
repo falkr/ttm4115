@@ -18,7 +18,14 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    a.ntnu-button {
+    div.abstract {
+  font-weight: bold;
+  font-style: italic;
+}
+div.factbox {
+  width:250px; float: right; margin: 0 15px 15px 15px; padding:15px; background: lightblue
+}
+a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
     background: #fff;
     color: #00509e;
@@ -41,6 +48,22 @@ a.ntnu-button:hover {
     background: #00509e;
     color: #fff;
     text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
 }
 .person-card img {
   width: 56px;
@@ -82,6 +105,38 @@ div.check ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
+div.checklistbox {
+  width: 18rem;
+  float: right;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: #EFF7FF;
+  border-radius: 0px;
+  border-top: 6px solid #00509e
+  }
+  
+div.checklistbox::before { 
+  content: "Checklist:";
+  font-weight: bold;
+  padding: 0px 0 12px 0;
+  display: block;
+  color: #00509e;
+  }
+
+div.checklistbox ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+  line-height: 1.5rem;
+}
+
+
+div.checklistbox ul {
+  list-style-type: none;
+}
 div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
@@ -96,6 +151,9 @@ div.delivery p::before {
   color: #fc8c03;
   display: inline;
   font-weight: bold;
+}
+.double {
+  column-count: 2;
 }
 div.figure {
   padding: 20px 0 20px 0;
@@ -133,8 +191,8 @@ div.goals ul li:before {
   color: #00509e;
 }
 .w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
+  background-color: #f0e9db;
+  color: #868279;
   padding: 8px 18px 8px 8px;
   cursor: pointer;
   width: 100%;
@@ -145,13 +203,40 @@ div.goals ul li:before {
   font-size: 15px;
 }
 
-.w3active, .w3collapsible:hover {
+.w3active,
+.w3collapsible:hover {
   background-color: #f0e9cb;
 }
 
 .w3content {
   filter: blur(3px);
-  padding: 0 18px;
+  padding: 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+.w3collapsible {
+  background-color: #f0e9db;
+  color: #868279;
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active,
+.w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 18px;
   display: block;
   overflow: hidden;
   background-color: #f3f3f3;
@@ -171,37 +256,88 @@ div.qna .accordion-button:not(.collapsed) {
 div.qna .accordion-button:not(.collapsed)::after {
   color: #00509e;
 }
-/*tr.rubric_title {background-color: lightgrey}*/
-/*tr.rubric_a {background-color: #D0E8DC}
-tr.rubric_b {background-color: #EEF7DB}
-tr.rubric_c {background-color: #FCFDE3}
-tr.rubric_d {background-color: #FDF3D6}
-tr.rubric_e {background-color: #F8D9C2}
-tr.rubric_f {background-color: #EBBCB9}
+ol.quiz li {
+  padding-left:3rem;
+  cursor: pointer;
+  }
+ol.quiz li::before {
+  font-family: bootstrap-icons !important;
+  padding-top:0.3rem;
+  padding-right: 1rem;
+  margin-left:-2rem;
+  font-size: 1rem;
+  vertical-align: top;
+  }
+ol.quiz li.unselected::before {
+  content: "\f28a";
+  }
+ol.quiz li.unselected:hover::before {
+  content: "\f287";
+  }
+ol.quiz li.selected::before {
+  content: "\f287";
+  color: #666666;
+  }
+ol.quiz li.unselected-true::before {
+  content: "\f26b";
+  color: #5CA551;
+  }
+ol.quiz li.selected-true::before {
+  content: "\f26a";
+  color: #5CA551;
+  }
+ol.quiz li.unselected-false::before {
+  content: "\f5e7";
+  }
+ol.quiz li.selected-false::before {
+  content: "\f5e6";
+  color: #FF3B30;
+  }
+ol.quiz li.selected-false {
+  color:#666666;
+  background-color: #FFD6D3;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.selected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.unselected-false {
+  color:lightgray;
+  }
+ol.quiz li.unselected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+div.card-footer a {
+  cursor: pointer;
+}
+div.quotedoc {
+  padding: 22px;
+  xbackground-color: #EFF7FF;
+  border-radius: 0px;
+  border-top: 0px solid #00509e;
+  #margin: 1rem 0 1rem 0;
+}
 
-tr.rubric_title {background-color: white; 
-	border-top: 2px black solid; 
-	border-bottom: 2px black solid;}
-td.rubric_title {background-color: white;}
-td.rubric_a {background-color: #D0E8DC}
-td.rubric_b {background-color: #EEF7DB}
-td.rubric_c {background-color: #FCFDE3}
-td.rubric_d {background-color: #FDF3D6}
-td.rubric_e {background-color: #F8D9C2}
-td.rubric_f {background-color: #EBBCB9}
+div.quotecontent {
+  font-size:1em;
+  
+}
 
-th.rubric_title {background-color: white}
-th.rubric_a {background-color: #D0E8DC}
-th.rubric_b {background-color: #EEF7DB}
-th.rubric_c {background-color: #FCFDE3}
-th.rubric_d {background-color: #FDF3D6}
-th.rubric_e {background-color: #F8D9C2}
-th.rubric_f {background-color: #EBBCB9}
+div.quotetitle {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
 
-table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
-	vertical-align:top;}
-table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
-
+div.quotedoc h1:first-child,
+div.quotedoc h2:first-child,
+div.quotedoc h3:first-child {
+  margin-top: 0em;
+}
 .rubric p {
 	margin: 0px
 }
@@ -257,6 +393,35 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 	font-style: italic;
 	color: gray
 }
+.steps ol, .steps ul {
+  counter-reset: li;
+  list-style: none;
+  margin-left: 10px
+}
+
+.steps li {
+  margin: 0 0 10px 0;
+  min-height: 40px
+}
+
+.steps li:before {
+  content: counter(li);
+  counter-increment: li;
+  border: 2px solid #868279;
+  color: #868279;
+  background-color: none;
+  font-family: "Source Sans Pro", Georgia, serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+  top:8px;
+  left:-30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: -20px -10px -20px -20px
+}
 
 div.tip p {
   padding: 10px;
@@ -264,7 +429,49 @@ div.tip p {
   border-radius: 5px;
   border-left: 6px solid #1481b8
 }
+.tree ul, .tree ul ul {
+  list-style: none;
+ } 
+.tree ul ul {
+ }
+ .tree ul li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px; 
+  border-left: 1px solid #868279;
+ }
+ .tree ul li:last-child {
+     border-left:none;
+ }
+ .tree ul li:before {
+    position:relative;
+    top:-0.3em;
+    height:22px;
+    width:12px;
+    color:white;
+    border-bottom:1px solid #868279;
+    content:"";
+    display:inline-block;
+    left:-7px;
+ }
+ .tree ul li:last-child:before {
+    border-left:1px solid #868279;
+    border-radius: 0px 0px 0px 3px   
+ }
 
+div.warning p {
+padding: 10px;
+background-color: #ffd9ab;
+border-radius: 5px;
+border-left: 6px solid #fc8c03 
+}
+
+div.warning p::before {
+    content: '\f071 ';
+    font-family: 'Font Awesome 5 Free'; 
+    color: #fc8c03;
+display: inline;
+}
 table.weekplan {
   width: 100%;
   table-layout: fixed;
@@ -419,12 +626,10 @@ table.weekplan a {
 </ul>
 <p>Below is an example for a deployment diagram, showing the elements of a fitness tracker (here a Fitbit) and how it works together with a mobile phone and the server backend.</p>
 
-<div class="figure">
-<img src="figures/fitbit-1.svg" alt="Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device." width="100%"/>
-<span name="figures/fitbit-1.svg">&nbsp;</span>
-<aside name="figures/fitbit-1.svg"><p><p>Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/fitbit-1.svg" class="figure-img img-fluid rounded" alt="Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.">
+  <figcaption class="figure-caption">Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.</figcaption>
+</figure>
 <p>What can we learn from this diagram?</p>
 <ul>
 <li>To the left, there is the Fitbit server, which is connected via HTTPS to a PC and the mobile phone of a user.</li>
@@ -439,12 +644,10 @@ table.weekplan a {
 <li>Software artifacts that are assigned to nodes (in yellow).</li>
 </ol>
 
-<div class="figure">
-<img src="figures/fitbit-2.svg" alt="Colored version of the original deployment diagram." width="100%"/>
-<span name="figures/fitbit-2.svg">&nbsp;</span>
-<aside name="figures/fitbit-2.svg"><p><p>Colored version of the original deployment diagram.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/fitbit-2.svg" class="figure-img img-fluid rounded" alt="Colored version of the original deployment diagram.">
+  <figcaption class="figure-caption">Colored version of the original deployment diagram.</figcaption>
+</figure>
 <h2>Nodes: Devices</h2>
 <p>Devices are shown as a 3D-box with «device» printed at its top. The funny brackets are called <em>guillemets</em> and are each a single character. This is a notation for stereotypes, which are a kind of marker in UML.</p>
 <p>Examples for devices are:</p>
@@ -473,21 +676,17 @@ Like a special type of memory that is critical for the system, or the trusted co
 <p>Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.</p>
 <p>In some cases, you might want to points out that an execution environment is nested inside another execution environment, like when you want to point out that Python runs within Docker, in a Linux operating system on a server. Again---assess for your specific case which information is relevant.</p>
 
-<div class="figure">
-<img src="figures/nested-nodes.svg" alt="Devices can be nested inside devices, if it is worth emphasizing them." width="100%"/>
-<span name="figures/nested-nodes.svg">&nbsp;</span>
-<aside name="figures/nested-nodes.svg"><p><p>Devices can be nested inside devices, if it is worth emphasizing them.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/nested-nodes.svg" class="figure-img img-fluid rounded" alt="Devices can be nested inside devices, if it is worth emphasizing them.">
+  <figcaption class="figure-caption">Devices can be nested inside devices, if it is worth emphasizing them.</figcaption>
+</figure>
 <h2>Showing Node Instances</h2>
 <p>Sometimes you want to show several nodes of the same type, but want to express that these are different instances. Example, an airport gate with several passenger turnstiles, that are physical identical. For that, you just include the instance name in front of a colon, like <strong>t1: Turnstile</strong>. In addition, you underline to make clear that you refer to a specific instance.</p>
 
-<div class="figure">
-<img src="figures/node-instances.svg" alt="Two instances of the same type of device." width="100%"/>
-<span name="figures/node-instances.svg">&nbsp;</span>
-<aside name="figures/node-instances.svg"><p><p>Two instances of the same type of device.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/node-instances.svg" class="figure-img img-fluid rounded" alt="Two instances of the same type of device.">
+  <figcaption class="figure-caption">Two instances of the same type of device.</figcaption>
+</figure>
 <h2>Communication Paths</h2>
 <p>When two nodes communicate, they are connected by a solid line. This line can be labelled with a stereotype that says something about the way of communication, by referring to a standard or a protocol, as for instance:</p>
 <ul>
@@ -517,12 +716,10 @@ Like a special type of memory that is critical for the system, or the trusted co
 </ol>
 <p>Below you see the two ways of deploying an artifact into a node. Both are semantically equivalent (they <em>mean</em> the same thing), but the graphics are different. Depending on how many artifacts to deploy and other layout constraints, either of them can be more compact and practical to use.</p>
 
-<div class="figure">
-<img src="figures/deployment-1.png" alt="Two ways of showing deployment. Both ways have the same meaning, but look different graphically." width="100%"/>
-<span name="figures/deployment-1.png">&nbsp;</span>
-<aside name="figures/deployment-1.png"><p><p>Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/deployment-1.png" class="figure-img img-fluid rounded" alt="Two ways of showing deployment. Both ways have the same meaning, but look different graphically.">
+  <figcaption class="figure-caption">Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</figcaption>
+</figure>
 <!--
 In some cases, the deployment of an artifact requires some more details, which can be expressed by an (optional) deployment specification.
 .wsdd, .xml
@@ -532,12 +729,10 @@ In some cases, the deployment of an artifact requires some more details, which c
 <p>In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest».
 This means that there is a UML description of a traffic light encapsulated by the component <code>Traffic Light Logic</code>. This can be for example a state machine that describes in which sequences the traffic light cycles through red, yellow and green. (We will work with state machines later.) The state machines and the component, however, are only descriptions but cannot be executed on their own. For that, we need the code provided here by the artifact <code>traffic-light-firmware.c</code>, which implements for instance the component and state machines for the traffic light.</p>
 
-<div class="figure">
-<img src="figures/manifest-1.png" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact." width="100%"/>
-<span name="figures/manifest-1.png">&nbsp;</span>
-<aside name="figures/manifest-1.png"><p><p>With the stereotype «manifest» we can show that a UML element (here a component) is used to describe the contents of a software artifact.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/manifest-1.png" class="figure-img img-fluid rounded" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact.">
+  <figcaption class="figure-caption">With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact.</figcaption>
+</figure>
 <!--
 Deployment diagrams most often show node instances
 - Which details are actually worth showing?
@@ -556,12 +751,10 @@ they provide a place of executing software, which comes in the form of artifacts
 <h2>Notes</h2>
 <p>Similar to comments and documentation in source code, UML diagrams can contain notes. They can capture additional information that cannot be expressed by other elements.</p>
 
-<div class="figure">
-<img src="figures/notes-1.png" alt="Notes can show additional information that is difficult to express in other ways." width="100%"/>
-<span name="figures/notes-1.png">&nbsp;</span>
-<aside name="figures/notes-1.png"><p><p>Notes can show additional information that is difficult to express in other ways.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/notes-1.png" class="figure-img img-fluid rounded" alt="Notes can show additional information that is difficult to express in other ways.">
+  <figcaption class="figure-caption">Notes can show additional information that is difficult to express in other ways.</figcaption>
+</figure>
 <h2>Multiplicities</h2>
 <p>In some cases we can add useful information to the deployment diagram by showing how many instances of a pair of nodes are connected with each other.</p>
 <p>A multiplicity specification is a tuple in the form <code>n..m</code> where <code>n</code> denotes the lower bound and <code>m</code> the upper one. (This implies that <code>n</code> is smaller than <code>m</code>.) To keep the upper value unbounded, we use the asterisk <code>*</code>. This leads to the following possible combinations in practice:</p>
@@ -636,12 +829,10 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
 </ul>
 <p>If the number varies at runtime, use <code>0..*</code> or <code>*</code> in short, just implying <em>many</em>.</p>
 
-<div class="figure">
-<img src="figures/multiplicity.svg" alt="Examples of multiplicity between nodes." width="100%"/>
-<span name="figures/multiplicity.svg">&nbsp;</span>
-<aside name="figures/multiplicity.svg"><p><p>Examples of multiplicity between nodes.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/multiplicity.svg" class="figure-img img-fluid rounded" alt="Examples of multiplicity between nodes.">
+  <figcaption class="figure-caption">Examples of multiplicity between nodes.</figcaption>
+</figure>
     </section>
     <section class="content">
 <h1>Containment</h1>
@@ -781,6 +972,78 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
 
 
 
+
+
+
+
+
+
+
+
+
+
+function quiz_select(quiz_id, alternative) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
+            if (i == alternative) {
+                li.classList.add('selected')
+                li.classList.remove('unselected')
+            } else {
+                li.classList.add('unselected')
+                li.classList.remove('selected')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "instructions") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == "confirm") {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
+
+function quiz_confirm(quiz_id, correct) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    let selected = -1;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (i == correct) {
+            if (li.classList.contains('selected')) {
+                // selected and true
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-true')
+            } else if (li.classList.contains('unselected')) {
+                // unselected but true
+                li.classList.remove('unselected')
+                li.classList.add('unselected-true')
+            }
+        } else {
+            if (li.classList.contains('selected')) {
+                // selected but false
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-false')
+            } else if (li.classList.contains('unselected')) {
+                // unselected and false
+                li.classList.remove('unselected')
+                li.classList.add('unselected-false')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "confirm") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == selected) {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
 
 
 

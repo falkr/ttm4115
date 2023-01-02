@@ -18,7 +18,14 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    a.ntnu-button {
+    div.abstract {
+  font-weight: bold;
+  font-style: italic;
+}
+div.factbox {
+  width:250px; float: right; margin: 0 15px 15px 15px; padding:15px; background: lightblue
+}
+a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
     background: #fff;
     color: #00509e;
@@ -41,6 +48,22 @@ a.ntnu-button:hover {
     background: #00509e;
     color: #fff;
     text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
 }
 .person-card img {
   width: 56px;
@@ -82,6 +105,38 @@ div.check ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
+div.checklistbox {
+  width: 18rem;
+  float: right;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: #EFF7FF;
+  border-radius: 0px;
+  border-top: 6px solid #00509e
+  }
+  
+div.checklistbox::before { 
+  content: "Checklist:";
+  font-weight: bold;
+  padding: 0px 0 12px 0;
+  display: block;
+  color: #00509e;
+  }
+
+div.checklistbox ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+  line-height: 1.5rem;
+}
+
+
+div.checklistbox ul {
+  list-style-type: none;
+}
 div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
@@ -96,6 +151,9 @@ div.delivery p::before {
   color: #fc8c03;
   display: inline;
   font-weight: bold;
+}
+.double {
+  column-count: 2;
 }
 div.figure {
   padding: 20px 0 20px 0;
@@ -133,8 +191,8 @@ div.goals ul li:before {
   color: #00509e;
 }
 .w3collapsible {
-  background-color:#f0e9db;
-  color: #868279; 
+  background-color: #f0e9db;
+  color: #868279;
   padding: 8px 18px 8px 8px;
   cursor: pointer;
   width: 100%;
@@ -145,13 +203,40 @@ div.goals ul li:before {
   font-size: 15px;
 }
 
-.w3active, .w3collapsible:hover {
+.w3active,
+.w3collapsible:hover {
   background-color: #f0e9cb;
 }
 
 .w3content {
   filter: blur(3px);
-  padding: 0 18px;
+  padding: 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+.w3collapsible {
+  background-color: #f0e9db;
+  color: #868279;
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active,
+.w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 18px;
   display: block;
   overflow: hidden;
   background-color: #f3f3f3;
@@ -171,37 +256,88 @@ div.qna .accordion-button:not(.collapsed) {
 div.qna .accordion-button:not(.collapsed)::after {
   color: #00509e;
 }
-/*tr.rubric_title {background-color: lightgrey}*/
-/*tr.rubric_a {background-color: #D0E8DC}
-tr.rubric_b {background-color: #EEF7DB}
-tr.rubric_c {background-color: #FCFDE3}
-tr.rubric_d {background-color: #FDF3D6}
-tr.rubric_e {background-color: #F8D9C2}
-tr.rubric_f {background-color: #EBBCB9}
+ol.quiz li {
+  padding-left:3rem;
+  cursor: pointer;
+  }
+ol.quiz li::before {
+  font-family: bootstrap-icons !important;
+  padding-top:0.3rem;
+  padding-right: 1rem;
+  margin-left:-2rem;
+  font-size: 1rem;
+  vertical-align: top;
+  }
+ol.quiz li.unselected::before {
+  content: "\f28a";
+  }
+ol.quiz li.unselected:hover::before {
+  content: "\f287";
+  }
+ol.quiz li.selected::before {
+  content: "\f287";
+  color: #666666;
+  }
+ol.quiz li.unselected-true::before {
+  content: "\f26b";
+  color: #5CA551;
+  }
+ol.quiz li.selected-true::before {
+  content: "\f26a";
+  color: #5CA551;
+  }
+ol.quiz li.unselected-false::before {
+  content: "\f5e7";
+  }
+ol.quiz li.selected-false::before {
+  content: "\f5e6";
+  color: #FF3B30;
+  }
+ol.quiz li.selected-false {
+  color:#666666;
+  background-color: #FFD6D3;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.selected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+ol.quiz li.unselected-false {
+  color:lightgray;
+  }
+ol.quiz li.unselected-true {
+  background-color:#DBF6CF;
+  border-top: none;
+  border-bottom: none;
+  }
+div.card-footer a {
+  cursor: pointer;
+}
+div.quotedoc {
+  padding: 22px;
+  xbackground-color: #EFF7FF;
+  border-radius: 0px;
+  border-top: 0px solid #00509e;
+  #margin: 1rem 0 1rem 0;
+}
 
-tr.rubric_title {background-color: white; 
-	border-top: 2px black solid; 
-	border-bottom: 2px black solid;}
-td.rubric_title {background-color: white;}
-td.rubric_a {background-color: #D0E8DC}
-td.rubric_b {background-color: #EEF7DB}
-td.rubric_c {background-color: #FCFDE3}
-td.rubric_d {background-color: #FDF3D6}
-td.rubric_e {background-color: #F8D9C2}
-td.rubric_f {background-color: #EBBCB9}
+div.quotecontent {
+  font-size:1em;
+  
+}
 
-th.rubric_title {background-color: white}
-th.rubric_a {background-color: #D0E8DC}
-th.rubric_b {background-color: #EEF7DB}
-th.rubric_c {background-color: #FCFDE3}
-th.rubric_d {background-color: #FDF3D6}
-th.rubric_e {background-color: #F8D9C2}
-th.rubric_f {background-color: #EBBCB9}
+div.quotetitle {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
 
-table.rubric th {border-top: 2px black solid; border-bottom: 2px black solid; text-align: center;
-	vertical-align:top;}
-table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
-
+div.quotedoc h1:first-child,
+div.quotedoc h2:first-child,
+div.quotedoc h3:first-child {
+  margin-top: 0em;
+}
 .rubric p {
 	margin: 0px
 }
@@ -257,8 +393,85 @@ table.rubric td {width:22%; border-bottom: 1px black solid;}}*/
 	font-style: italic;
 	color: gray
 }
+.steps ol, .steps ul {
+  counter-reset: li;
+  list-style: none;
+  margin-left: 10px
+}
 
+.steps li {
+  margin: 0 0 10px 0;
+  min-height: 40px
+}
 
+.steps li:before {
+  content: counter(li);
+  counter-increment: li;
+  border: 2px solid #868279;
+  color: #868279;
+  background-color: none;
+  font-family: "Source Sans Pro", Georgia, serif;
+  font-weight: bold;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+  top:8px;
+  left:-30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: -20px -10px -20px -20px
+}
+
+div.tip p {
+  padding: 10px;
+  background-color: #d9eaf2;
+  border-radius: 5px;
+  border-left: 6px solid #1481b8
+}
+.tree ul, .tree ul ul {
+  list-style: none;
+ } 
+.tree ul ul {
+ }
+ .tree ul li {
+  margin: 0;
+  padding: 0 7px;
+  line-height: 20px; 
+  border-left: 1px solid #868279;
+ }
+ .tree ul li:last-child {
+     border-left:none;
+ }
+ .tree ul li:before {
+    position:relative;
+    top:-0.3em;
+    height:22px;
+    width:12px;
+    color:white;
+    border-bottom:1px solid #868279;
+    content:"";
+    display:inline-block;
+    left:-7px;
+ }
+ .tree ul li:last-child:before {
+    border-left:1px solid #868279;
+    border-radius: 0px 0px 0px 3px   
+ }
+
+div.warning p {
+padding: 10px;
+background-color: #ffd9ab;
+border-radius: 5px;
+border-left: 6px solid #fc8c03 
+}
+
+div.warning p::before {
+    content: '\f071 ';
+    font-family: 'Font Awesome 5 Free'; 
+    color: #fc8c03;
+display: inline;
+}
 table.weekplan {
   width: 100%;
   table-layout: fixed;
@@ -428,12 +641,10 @@ Also, consider to repeat some parts of the assignment after the team activity on
     <section class="content">
 <h1>Task 1: Traffic Light</h1>
 
-<div class="figure">
-<img src="figures/notebook-traffic-light.jpg" alt="A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook." width="100%"/>
-<span name="figures/notebook-traffic-light.jpg">&nbsp;</span>
-<aside name="figures/notebook-traffic-light.jpg"><p><p>A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/notebook-traffic-light.jpg" class="figure-img img-fluid rounded" alt="A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook.">
+  <figcaption class="figure-caption">A simple user interface representing the traffic light in the output of a cell in a Jupyter notebook.</figcaption>
+</figure>
 <ul>
 <li>Look at the provided code of the traffic light, and run it.</li>
 <li>Create a state machine diagram by looking at the code.</li>
@@ -445,15 +656,13 @@ Also, consider to repeat some parts of the assignment after the team activity on
     <section class="content">
 <h1>Task 2: Kitchen Timer</h1>
 
-<div class="figure">
-<img src="figures/notebook-kitchen-timer.jpg" alt="A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook." width="100%"/>
-<span name="figures/notebook-kitchen-timer.jpg">&nbsp;</span>
-<aside name="figures/notebook-kitchen-timer.jpg"><p><p>A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/notebook-kitchen-timer.jpg" class="figure-img img-fluid rounded" alt="A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook.">
+  <figcaption class="figure-caption">A simple user interface representing the kitchen timer in the output of a cell in a Jupyter notebook.</figcaption>
+</figure>
 <ul>
 <li>Use the code provided for the simple use interface of the kitchen timer.</li>
-<li>Get the state machine diagram you built previously, and create it in STMPY.</li>
+<li>Get the <a href="../unit-3-stm/teamwork-3.html">state machine diagram you built previously</a>, and create it in STMPY.</li>
 <li>Run the state machine and validate if you are satisfied with how it works.
 <ul>
 <li>Use a shorter timeout, like 4 seconds instead of 15 minutes.</li>
@@ -478,9 +687,9 @@ If the hand is in front of the IR sensor for more than one second, the gesture i
 <p>The communication diagram below shows the context of the controller.
 It receives the signals <code>hand</code> and <code>no_hand</code> from the IR sensor, and it controls the LED with signals on and off.</p>
 
-<div class="figure">
-<img src="figures/head-lights-1.svg" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/head-lights-1.svg" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>State Machine Design</h2>
 <p>Design first a state machine diagram for the problem.</p>
 <ul>
@@ -497,12 +706,10 @@ It receives the signals <code>hand</code> and <code>no_hand</code> from the IR s
 <li>The IR sensor is represented with a checkbox. When you select the checkbox, it symbolizes that the hand is in front of the sensor.</li>
 </ul>
 
-<div class="figure">
-<img src="figures/notebook-head-light.jpg" alt="A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook." width="100%"/>
-<span name="figures/notebook-head-light.jpg">&nbsp;</span>
-<aside name="figures/notebook-head-light.jpg"><p><p>A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/notebook-head-light.jpg" class="figure-img img-fluid rounded" alt="A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook.">
+  <figcaption class="figure-caption">A simple user interface representing the head lamp in the output of a cell in a Jupyter notebook.</figcaption>
+</figure>
 <h2>Debugging the State Machine</h2>
 <p>When running the implementation, does the state machine behave as intended? If not, what is the problem? Do you have to go back and also change the diagram, or is it more technical problems with the code? (Or a combination?)</p>
 
@@ -555,6 +762,78 @@ It receives the signals <code>hand</code> and <code>no_hand</code> from the IR s
 
 
 
+
+
+
+
+
+
+
+
+
+
+function quiz_select(quiz_id, alternative) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
+            if (i == alternative) {
+                li.classList.add('selected')
+                li.classList.remove('unselected')
+            } else {
+                li.classList.add('unselected')
+                li.classList.remove('selected')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "instructions") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == "confirm") {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
+
+function quiz_confirm(quiz_id, correct) {
+    quiz = document.getElementById(quiz_id);
+    let i = 0;
+    let selected = -1;
+    for (li of quiz.getElementsByTagName("li")) {
+        if (i == correct) {
+            if (li.classList.contains('selected')) {
+                // selected and true
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-true')
+            } else if (li.classList.contains('unselected')) {
+                // unselected but true
+                li.classList.remove('unselected')
+                li.classList.add('unselected-true')
+            }
+        } else {
+            if (li.classList.contains('selected')) {
+                // selected but false
+                selected = i
+                li.classList.remove('selected')
+                li.classList.add('selected-false')
+            } else if (li.classList.contains('unselected')) {
+                // unselected and false
+                li.classList.remove('unselected')
+                li.classList.add('unselected-false')
+            }
+        }
+        i = i + 1
+    }
+    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
+        if (div.getAttribute("data") == "confirm") {
+            div.classList.add('visually-hidden')
+        } else if (div.getAttribute("data") == selected) {
+            div.classList.remove('visually-hidden')
+        }
+    }
+}
 
 
 

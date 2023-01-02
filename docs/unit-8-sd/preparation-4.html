@@ -268,9 +268,9 @@ situation. The scenario <em>Lossy_1</em> for instance also implies scenario
 <em>Lossy_2</em>, i.e., that the message is not received. The loss of a
 message is written with a big cross.</p>
 
-<div class="figure">
-<img src="figures/lossy-12.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/lossy-12.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>So, whenever there is a diagram in which a message is sent, we should
 check what would happen if this message got lost. Here are some possible
 alternatives:</p>
@@ -293,9 +293,9 @@ the expiration of a timer. We show the timer here as a message of
 </li>
 </ul>
 
-<div class="figure">
-<img src="figures/lossy-3.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/lossy-3.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>Non-Causal Orderings</h2>
 <p>The diagram below shows an interaction between parts in a movie ticket
 system. At the end of the purchase process, the terminal sends a <em>pay</em>
@@ -304,9 +304,9 @@ message to the payment component. The payment component then forwards
 to the printer. The printer then prints the tickets. We ignore the case
 that the payment fails.</p>
 
-<div class="figure">
-<img src="figures/ex-6.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-6.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>This specification has a trouble spot. The diagram indicates that the
 <em>movie</em> message is received after the <em>pay_ok</em> message. In a real
 system, we often have little control on the delay of message transfer.
@@ -329,18 +329,18 @@ context, type of system and the subsequent development process and
 implementation, the non-causal ordering of the events may be a source of
 trouble.</p>
 
-<div class="figure">
-<img src="figures/ex-7.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-7.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>Mixed Initiatives</h2>
 <p>Consider the following alarm system. A sensor may detect an alarm and
 send message <em>alarm</em> to a subscriber. The subscriber may then confirm
 the alarm via message <em>confirm</em>. The alarm can also be stopped by the
 sensor via <em>stop</em>. This is shown in the two diagrams below.</p>
 
-<div class="figure">
-<img src="figures/ex-8.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-8.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>The two different scenarios seem pretty straight-forward. However, these
 two scenarios imply a third one: What should happen, if the alarm is
 stopped by the sensor, but the subscriber confirms it, right before it
@@ -350,9 +350,9 @@ initiative and send a message. This situation may seem like a rare
 coincidence, but it is only a matter of time and you will observe this
 situation. We can illustrate it in another diagram:</p>
 
-<div class="figure">
-<img src="figures/ex-9.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-9.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>So what to do about this? If you only provide the sequence diagrams
 above, it is not clear how an implementation should respond in this
 situation, i.e., when an alarm is both confirmed and canceled. In this
@@ -361,9 +361,9 @@ what kind of alarm it is, the stopping may overrule the confirmation, or
 vice versa. The diagram <em>Confirm and Stop</em> shows one way to address the
 mixed initiative, using a simple comment.</p>
 
-<div class="figure">
-<img src="figures/ex-91.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/ex-91.png" class="figure-img img-fluid rounded" alt="">
+</figure>
     </section>
     <section class="content">
 <h1>Epilogue: The Value of Sequence Diagrams</h1>

@@ -290,12 +290,10 @@ If you feel that the basic state machines are still a but unfamiliar and you nee
 But what if the current state does not say anything about the incoming event?</p>
 <p>When the state machine is in a state that does not declare a transition that is triggered by the event at the head of the queue, the event is taken from the queue and <strong>discarded</strong>, that means thrown away.</p>
 
-<div class="figure">
-<img src="figures/discard.png" alt="An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it." width="100%"/>
-<span name="figures/discard.png">&nbsp;</span>
-<aside name="figures/discard.png"><p><p>An illustration how a message is discarded. In the current state <code>s1</code>, an arriving message <code>b</code> is discarded because <code>s1</code> does not handle it.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/discard.png" class="figure-img img-fluid rounded" alt="An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it.">
+  <figcaption class="figure-caption">An illustration how a message is discarded. In the current state `s1`, an arriving message `b` is discarded because `s1` does not handle it.</figcaption>
+</figure>
 <p>Look at the situation above. Assume that the state machine is currently in state <code>s1</code>.
 When message <em>b</em> arrives, it is not consumed, since state <code>s1</code> only has a transition with a trigger <em>a</em>, so the state machine only waits for <em>a</em>. Message <em>b</em> is therefore discarded as soon as it arrives during state <em>s1</em>. Note that it is discarded even if it is consumed by the later state <em>s2</em>, which is not the current state.</p>
 
@@ -306,12 +304,10 @@ For this case, you can <strong>defer</strong> an event in some states.</p>
 When a deferred event is at the head of the event queue, the state machine will act like it is not there, and process the first event that is not deferred.
 Once the state machine switches into its next state, the previously deferred event is not ignored anymore (unless also the next state defers it).</p>
 
-<div class="figure">
-<img src="figures/defer.jpg" alt="State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`." width="100%"/>
-<span name="figures/defer.jpg">&nbsp;</span>
-<aside name="figures/defer.jpg"><p><p>State <code>s1</code> <em>defers</em> event <code>A</code> so that it is stored in the queue until after the arrival of event <code>B</code>.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/defer.jpg" class="figure-img img-fluid rounded" alt="State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`.">
+  <figcaption class="figure-caption">State `s1` _defers_ event `A` so that it is stored in the queue until after the arrival of event `B`.</figcaption>
+</figure>
 <h3>Summary of Queue Semantics</h3>
 <p>Many of the semantics we have learned now are about how the input queue of the machine is handled.
 We can summarize them with the following points:</p>
@@ -327,13 +323,15 @@ You can already now read about some tips to create state machines. Read on if yo
 
 <nav class="d-flex justify-content-between">
 <a type="button" href="preparation-3.html" class="page-link rounded">
-State Machine Semantics
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-short" viewBox="0 0 16 16" id="arrow-left-short"><path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" /></svg>
+State Machine Semantics
 </a>
 <div></div>
 <a type="button" href="preparation-5.html" class="page-link rounded">
 Creating State Machines
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-short" viewBox="0 0 16 16" id="arrow-right-short"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
 </a>
+</nav>
     </section>
 </div>
       </div>

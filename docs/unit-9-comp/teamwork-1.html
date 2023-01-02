@@ -69,7 +69,61 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+
+
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -242,12 +296,10 @@ div.figurefullwitdth {
 <p>You can use our code template for components that contains a lot of the boilerplate code that is useful for any component that connects STMPY state machines with MQTT:</p>
 <p><a href="https://github.com/falkr/stmpy-notebooks/blob/master/TimerManager.py" class="arrow">TimerManager.py<a></p>
 
-<div class="figure">
-<img src="figures/component-template.svg" alt="Template for a component with an MQTT client and STMPY state machines." width="100%"/>
-<span name="figures/component-template.svg">&nbsp;</span>
-<aside name="figures/component-template.svg"><p><p>Template for a component with an MQTT client and STMPY state machines.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/component-template.svg" class="figure-img img-fluid rounded" alt="Template for a component with an MQTT client and STMPY state machines.">
+  <figcaption class="figure-caption">Template for a component with an MQTT client and STMPY state machines.</figcaption>
+</figure>
 <h2>Logging</h2>
 <p>Logging is important to figure out what the system is doing, especially when something is going wrong.
 When configuring logging, we can select a log level, which determines which messages are printed. There are the following log levels:</p>
@@ -312,9 +364,9 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <h2>Sessions: Several Instances of State Machines</h2>
 <p>The behavior of a single timer is quite simple, and we can draw the following state machine that takes care of the necessary operations:</p>
 
-<div class="figure">
-<img src="figures/timer-stm.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/timer-stm.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <p>In our example it is important that the assistant can keep track of <strong>several timers</strong> at the same time.
 We want to do this by creating a single state machine instance for each timer.
 Each state machine can then take care of a single timer.
@@ -341,12 +393,10 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <h2>Step 2: Start the Command Component</h2>
 <p>Because we don't have a speech-to-text engine, we send in the commands to the component from buttons of a GUI component. This is how it looks like:</p>
 
-<div class="figure">
-<img src="figures/command-sender.png" alt="Simple GUI to dispatch commands via MQTT." width="100%"/>
-<span name="figures/command-sender.png">&nbsp;</span>
-<aside name="figures/command-sender.png"><p><p>Simple GUI to dispatch commands via MQTT.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/command-sender.png" class="figure-img img-fluid rounded" alt="Simple GUI to dispatch commands via MQTT.">
+  <figcaption class="figure-caption">Simple GUI to dispatch commands via MQTT.</figcaption>
+</figure>
 <p>Do the following:</p>
 <ul>
 <li>Use <code>mqtt.item.ntnu.no</code> with port <code>1883</code> as broker.</li>

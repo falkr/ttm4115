@@ -95,36 +95,6 @@ div.goals ul li:before {
 }
 
 
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
   </style>
 </head>
 
@@ -243,12 +213,10 @@ table.weekplan a {
 <h1>Airport Gate Control System</h1>
 <p>You should design the controller that resides within an airport gate turnstile. A communication diagram for the logic is shown below. (We haven't formally introduced this type of diagram, but you can read it similar to a deployment diagram. The blue arrows symbolize messages sent between the components.)</p>
 
-<div class="figure">
-<img src="figures/airport.png" alt="A communication diagram for the controller and its connected components." width="100%"/>
-<span name="figures/airport.png">&nbsp;</span>
-<aside name="figures/airport.png"><p><p>A communication diagram for the controller and its connected components.</p>
-</p></aside>
-</div>
+<figure class="figure">
+    <img src="figures/airport.png" class="figure-img img-fluid rounded" alt="A communication diagram for the controller and its connected components.">
+  <figcaption class="figure-caption">A communication diagram for the controller and its connected components.</figcaption>
+</figure>
 <ul>
 <li>The controller is connected to the turnstile, the LEDs, a display, the scanner and a backend server. All units communicate with the messages listed at the respective links.</li>
 <li>The scanner detects boarding passes automatically and reads the data. It only uses one message <code>request</code> towards the controller once it detects a boarding pass.</li>
@@ -290,9 +258,9 @@ table.weekplan a {
 </ul>
 <p>Some help for starting:</p>
 
-<div class="figure">
-<img src="figures/airport-help.png" width="100%"/>
-</div>
+<figure class="figure">
+    <img src="figures/airport-help.png" class="figure-img img-fluid rounded" alt="">
+</figure>
 <h2>Task 3: Turnstile - Controller</h2>
 <p>We now want to consider the interaction between the turnstile and the controller.</p>
 <ul>

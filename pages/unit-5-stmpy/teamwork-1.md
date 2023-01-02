@@ -46,6 +46,7 @@ caption: "A simple user interface representing the traffic light in the output o
 
 # Task 2: Kitchen Timer
 
+
 ---
 type: figure
 source: figures/notebook-kitchen-timer.jpg
@@ -53,7 +54,7 @@ caption: "A simple user interface representing the kitchen timer in the output o
 ---
 
 * Use the code provided for the simple use interface of the kitchen timer.
-* Get the state machine diagram you built previously, and create it in STMPY.
+* Get the [state machine diagram you built previously](../unit-3-stm/teamwork-3.html), and create it in STMPY.
 * Run the state machine and validate if you are satisfied with how it works.
   * Use a shorter timeout, like 4 seconds instead of 15 minutes.
 

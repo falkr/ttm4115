@@ -53,7 +53,7 @@ The course is organized so that you can determine many details on your own.
 But teamwork and the relatively complex deliveries require that you coordinate your work with yourself and also the other members of your team.
 We therefore formulate a set of rules and guidelines that you should follow, and that should make everything easier for everybody.
 
-* **Make a week plan.** During class time on Tuesday, make sure to organize your week so that you know when you meet as a team and when you need to hand in which delivery. In most cases, the 4 hours on Tuesday should be sufficient for the week activities, but sometimes you need extra time for the semester project deliverables.
+* **Make a week plan.** During class time on Monday, make sure to organize your week so that you know when you meet as a team and when you need to hand in which delivery. In most cases, the 4 hours on Tuesday should be sufficient for the week activities, but sometimes you need extra time for the semester project deliverables.
 * **Use a calendar.** Don't use your brain for stuff that is easier to organize in a calendar. Also, use the invitation feature integrated with email so that everyone receives the same calendar event, and can confirm it. 
 * **Always hand in the deliveries.** There is no reason for not handing in the deliveries on time. In case you cannot finish them for some reason, or have doubts, contact the course responsible but deliver anyway, with a short comment explaining what was the problem. 
 * **Keep everyone informed.** When you make appointments for teamwork, always inform everyone, and agree on a channel. Ideally confirm via calendar invitations, as explained above. 

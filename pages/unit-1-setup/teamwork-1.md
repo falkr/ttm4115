@@ -80,14 +80,3 @@ If someone is missing, try to find out why and make a note.
 
 
 _We will come back to the team reflection document at the end._
-
-
-
-# Task: Use Piazza
-
-We use Piazza as the forum to ask and answer questions, both from teams or individually. To get started and into the habit of using Piazza:
-
-* Access Piazza from Blackboard
-* Everybody in the team should pose a question, for instance about the organization of the course. If you don't have a real question, as maybe something that you already know but that may still be relevant.
-* Answer at least one question asked by someone in another team.
-* Done!

@@ -11,7 +11,6 @@ Collect these sentences in a text document while you work, then submit them as a
 ---
 type: figure
 source: figures/stm-e-1.png
-caption: ""
 ---
 
 
@@ -20,7 +19,6 @@ caption: ""
 ---
 type: figure
 source: figures/stm-e-2.png
-caption: ""
 ---
 
 
@@ -29,7 +27,6 @@ caption: ""
 ---
 type: figure
 source: figures/stm-e-3.png
-caption: ""
 ---
 
 
@@ -38,7 +35,6 @@ caption: ""
 ---
 type: figure
 source: figures/stm-e-4.png
-caption: ""
 ---
 
 
@@ -47,7 +43,6 @@ caption: ""
 ---
 type: figure
 source: figures/stm-e-5.png
-caption: ""
 ---
 
 
@@ -56,7 +51,6 @@ caption: ""
 ---
 type: figure
 source: figures/stm-e-6.png
-caption: ""
 ---
 
 :delivery: Delivery your diagnostics on the state machines in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQ0ZTRFVIODBUNlNTRzFEUU02VUJVMTc0Mi4u).

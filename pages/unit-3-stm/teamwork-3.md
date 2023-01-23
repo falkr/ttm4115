@@ -48,5 +48,5 @@ You can assume that whenever the button is pressed, the state machine will recei
   * Were there misunderstandings?
 
 
-:delivery: Store your document from above in the Teams folder for this unit. Use filename `ttm4115-2020-kitchen-timer-team-XX.docx`.
+:delivery: Store your document from above in the Teams folder for this unit. Use filename `ttm4115-kitchen-timer-team-XX.docx`.
 

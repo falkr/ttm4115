@@ -102,12 +102,6 @@ link: https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp
 
 
 
-
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg&amp;export=download&quot;}"></div>
-<script type="text/javascript" src="https://viewer.diagrams.net/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg%26export%3Ddownload"></script>
-
-
-
 In the document above, you see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level. 
 In case you have troubles with the document, here is a list of all the use cases it lists:
 

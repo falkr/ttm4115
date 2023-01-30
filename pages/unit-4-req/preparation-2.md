@@ -1,6 +1,6 @@
 # Optional Preparation
 
-Have a look at the following videos that show how to create deployment diagrams.
+Have a look at the following videos that show how to create use case diagrams.
 
 ---
 type: youtube

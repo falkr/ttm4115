@@ -61,8 +61,12 @@ And here are the detailed **strategies**, which help to mitigate the challenges 
 
 Make a copy of the diagram below, and move the forces on the right side to the right place.
 
-<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;url&quot;:&quot;https://drive.google.com/uc?id=1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL&amp;export=download&quot;}"></div>
-<script type="text/javascript" src="https://www.draw.io/embed2.js?&fetch=https%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL%26export%3Ddownload"></script>
+---
+source: figures/agile-forces-2.jpg
+type: figure
+link: https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing
+---
+
 
 Here is also a [link to the diagram](https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing).
 

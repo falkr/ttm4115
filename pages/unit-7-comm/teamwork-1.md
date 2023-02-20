@@ -34,7 +34,7 @@ The setup consists of at least three components:
 
 MQTTX is a desktop application that connects to an MQTT broker and that can publish and subscribe to arbitrary topics.
 This is a very tool useful during development.
-Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTTX has a generic user interface, you can use MQTTX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
+Essentially, MQTTX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTTX has a generic user interface, you can use MQTTX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
 Using MQTTX is really simple, but because we have now talked about brokers, clients, publishers and subscribers, you may loose track and wonder what this MQTTX does: Think of it as a debugger for MQTT, and you can use it like Wireshark. Once the system is done, you don't need MQTTX anymore.
 
 
@@ -119,11 +119,11 @@ Install the **Mosquitto MQTT Broker** on your laptop. This is an open-source MQT
 
 * Install Mosquitto from [https://mosquitto.org/download/](https://mosquitto.org/download/)
 * Start it locally. You can use it with the option `-v` (verbose) so that it prints more information.
-* Test how the broker works by connecting to it with MQTT.FX, as explained above.
-* Try to have the MQTT broker on one PC, and communicate with other PCs that have MQTT.FX running.
+* Test how the broker works by connecting to it with MQTTX, as explained above.
+* Try to have the MQTT broker on one PC, and communicate with other PCs that have MQTTX running.
   * For that to be possible, you need to be able to ping the PC that runs the broker.
   * You need to be on the same network.
-  * If nothing works, you can also have MQTT.FX and the broker installed on the same PC, and use address `localhost`.
+  * If nothing works, you can also have MQTTX and the broker installed on the same PC, and use address `localhost`.
 * If you have trouble installing Mosquitto, try to find help with others on MS Teams!
 
 
@@ -156,7 +156,7 @@ The tasks above did not require any programming from you so that you can focus o
 
 * You now should have very detailed knowledge about how MQTT works, and operate both clients and a broker. 
 * You have also seen how we can connect MQTT with state machines written in STMPY. 
-* MQTT.FX can act as an input and output device into the system, as it can send and receive arbitrary MQTT messages. 
+* MQTTX can act as an input and output device into the system, as it can send and receive arbitrary MQTT messages. 
 
 So the following task should be doable now: 
 
@@ -165,7 +165,7 @@ Create a small and very prototypical system that realizes the timer and buzzers 
 * The quiz master starts a 20 second timer after asking a question. 
 * Any of the participants can press their buzzer, upon which the timer stops and the quiz master sees who presses first.
 * Create a central state machine to keep track of the timer and the incoming messages.
-* All participants use MQTT.FX as their interface to send in messages, which correspond to pressing a buzzer or resetting the timer.
+* All participants use MQTTX as their interface to send in messages, which correspond to pressing a buzzer or resetting the timer.
 
 Some hints for the delivery:
 

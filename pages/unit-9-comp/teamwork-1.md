@@ -214,6 +214,6 @@ Do the following:
 * Send Timer commands into the component using the GUI. 
 
 * See if your component works as intended and sends the required messages to the Text To Speech component.
-  * Just emulate the Text To Speech Component by subscribing with MQTT.FX to the corresponding topic.
+  * Just emulate the Text To Speech Component by subscribing with MQTTX to the corresponding topic.
 * Reflect on your progress in a document. 
-* Create a **short and uncut demo video** using two named timers, simulated via MQTT.FX and your timer manager component.
+* Create a **short and uncut demo video** using two named timers, simulated via MQTTX and your timer manager component.

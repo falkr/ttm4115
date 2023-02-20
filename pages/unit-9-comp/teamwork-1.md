@@ -202,10 +202,10 @@ caption: "Simple GUI to dispatch commands via MQTT."
 
 Do the following:
 
-  * Use `mqtt.item.ntnu.no` with port `1883` as broker.
+  * Use `mqtt20.iik.ntnu.no` with port `1883` as broker.
   * Download the [code of the command component](https://github.com/falkr/stmpy-components/blob/master/TimerCommandSender.py) and study it.
   * Adjust the topics.
-  * Run the component and see commands coming in by using MQTT.fx for debugging.
+  * Run the component and see commands coming in by using MQTTX for debugging.
 
 ## Step 2: Implement the Components
 

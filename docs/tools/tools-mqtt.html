@@ -18,47 +18,7 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.figure {
+    div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
 }
@@ -68,61 +28,6 @@ div.figurefullwitdth {
   margin-left: -33px;
   margin-right: -33px;
   width: 100%;
-}
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-
-
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
 }
 
   </style>
@@ -278,7 +183,7 @@ protocol websockets
     </section>
     <section class="content">
 <h1>NTNU MQTT Broker</h1>
-<p>We have setup an MQTT broker with the address <code>mqtt.item.ntnu.no</code>. It is configured with the default ports <code>1883</code> for connections via TCP and <code>1884</code> for connections via websockets.</p>
+<p>We have setup an MQTT broker with the address <code>mqtt20.iik.ntnu.no</code>. It is configured with the default ports <code>1883</code> for connections via TCP and <code>1884</code> for connections via websockets.</p>
 <pre><code>listener 1883
 protocol mqtt
 
@@ -406,10 +311,6 @@ Using MQTT.FX is really simple, but because we have now talked about brokers, cl
   </script>
   <script>
     
-
-
-
-
 
 
 

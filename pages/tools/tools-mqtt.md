@@ -120,9 +120,8 @@ client.subscribe("$SYS/#")
 
 
 
-# Debugging With MQTT.FX
+# Debugging With MQTTX
 
-# Task: Running MQTTX
 
 MQTTX is a desktop application that connects to an MQTT broker and that can publish and subscribe to arbitrary topics.
 This is a very tool useful during development.

@@ -122,38 +122,78 @@ client.subscribe("$SYS/#")
 
 # Debugging With MQTT.FX
 
-MQTT.FX is a tool useful during development.
-(If you wonder, the name _MQTT.FX_ just comes from the fact that it is implemented in Java FX, but you can forget about that.)
-Using MQTT.FX is really simple, but because we have now talked about brokers, clients, publishers and subscribers, you may loose track and wonder what this MQTT.FX does: Think of it as a debugger for MQTT, and you can use it like Wireshark. Once the system is done, you don't need MQTT.FX anymore.
+# Task: Running MQTTX
 
-Essentially, MQTT.FX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTT.FX has a generic user interface, you can use MQTT.FX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
+MQTTX is a desktop application that connects to an MQTT broker and that can publish and subscribe to arbitrary topics.
+This is a very tool useful during development.
+Essentially, MQTTX is a MQTT client, and can as such connect to an MQTT broker, subscribe to topics and send messages to topics. This does not sound like much. However, MQTTX has a generic user interface, you can use MQTTX while you construct your application to see how the other system components publish messages, and you can also "inject" messages into the system, by publishing to any topic you want.
+Using MQTTX is really simple, but because we have now talked about brokers, clients, publishers and subscribers, you may loose track and wonder what this MQTTX does: Think of it as a debugger for MQTT, and you can use it like Wireshark. Once the system is done, you don't need MQTTX anymore.
 
-<a class="arrow" href="https://mqttfx.jensd.de">Download MQTT.FX</a> 
 
----
-type: figure
-source: figures/mqtt/mqtt-fx-publish.png
----
-
-## Publishing Messages
-
-Imagine you have created a MQTT client that runs a certain action when it receives a message, but you are not doen with the component that should send the message. To test at least the component that should receive the message, you can use MQTT.FX to publish a message with that content to the topic, and the component under test will behave as if the message was sent in the final system.
+:task: Install [MQTTX](https://mqttx.app).
 
 ---
 type: figure
-source: figures/mqtt/mqtt-fx-subscribe.png
+source: figures/mqttx-1.png
 ---
+
+
+## Connecting to a Broker
+
+
+1. Start MQTTX
+2. Add a connection by clicking on the `+` button. Enter the address `mqtt20.iik.ntnu.no` as hostname. Protocol `mqtt://` is already set by default, and our port should be `1883`. As name you can use the same as the hostname.
+3. Click on `Connect`
+
+You should get a green "Connected" message. If not, our broker might be down (contact me then) or you are not connected to the internet. 
+
+---
+type: figure
+source: figures/mqttx-3.png
+---
+
+
+## Publishing a Message
+
+Once you are connected to a broker, and the broker is selected in the list to the left, you can publish a message to a topic using the interface in the lower right corner.
+
+1. Write the topic in the field with the grey label `Topic`
+2. Optionally select the QoS level. 
+3. In the text field below the topic you can write the payload of the message, and MQTTX gives you the possibility to show it as Plaintext or JSON (these two options are most suitable for us).
+4. Click the send symbol on the lower right corner.
+
+
+
+## Subscribing to a Topic
+
+1. Once you are connected, click on `+ New Subscription`
+2. Enter the topic. Include wildcards `+` and `#` as you need.
+3. Set the QoS (default is 0)
+4. Click on `Confirm`
+
+You should now be subscribed to a topic. You can test this by sending a message as described above to that topic. You should then see that you have both sent and received that message in the conversation window.
+
+---
+type: figure
+source: figures/mqttx-2.png
+---
+
+
+:task: Subscribe to a topic and then publish a message to that topic, so that you can see that it is sent back to you like in the screenshot above. 
 
 
 ## Observing Communication
 
-Because MQTT uses the publish-subscribe pattern, it can simply subscribe to any topics that are interesting in your application  and you can see which messages are sent to these topics, without disturbing the communication in the system. To achieve the same in HTTP, for instance, you need a tool like Wireshark.
+Because MQTT uses the publish-subscribe pattern, the MQTTX can simply subscribe
+to any topics that are interesting in your application and you can see
+which messages are sent to these topics, without disturbing the
+communication in the system. 
 
 
 
 # MQTT Explorer
 
-MQTT.FX does not run (yet) on Macs with Apple processors, but there is a similar program that you can install from the app store, [MQTT Explorer](https://apps.apple.com/no/app/mqtt-explorer/id1455214828?mt=12). The image below shows how to add our default broker to it. 
+There is a similar program that you can install from the app store, [MQTT Explorer](https://apps.apple.com/no/app/mqtt-explorer/id1455214828?mt=12). The image below shows how to add our default broker to it. 
 
 ---
 type: figure

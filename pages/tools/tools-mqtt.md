@@ -188,14 +188,3 @@ Because MQTT uses the publish-subscribe pattern, the MQTTX can simply subscribe
 to any topics that are interesting in your application and you can see
 which messages are sent to these topics, without disturbing the
 communication in the system. 
-
-
-
-# MQTT Explorer
-
-There is a similar program that you can install from the app store, [MQTT Explorer](https://apps.apple.com/no/app/mqtt-explorer/id1455214828?mt=12). The image below shows how to add our default broker to it. 
-
----
-type: figure
-source: figures/mqtt/mqtt-explorer.jpg
----

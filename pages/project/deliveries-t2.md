@@ -58,8 +58,8 @@ file: rubrics/deployment.mw
 class: rubric
 ---
 
-* Tips for [diagram layout](unit-modeling-diagram-tips.html)
-* Syntax for [deployment diagrams](prep-modeling.html)
+* Tips for [diagram layout](../unit-2-models/unit-modeling-diagram-tips.html)
+* Syntax for [deployment diagrams](../unit-2-models/preparation-2.html)
 * Level of detail: Details that are included matter, and are not accidental.
 
 
@@ -78,8 +78,8 @@ file: rubrics/interactions.mw
 class: rubric
 ---
 
-* [Syntax for interactions](prep-interactions.html).
-* Pay attention that you select which scnarios to show so that it not only provides coverage, but also helps to understand.
+* [Syntax for interactions](../unit-8-sd/index.html).
+* Pay attention that you select which scenarios to show so that it not only provides coverage, but also helps to understand.
 * It is, in principle, possible to not use any combined fragments. They should be applied where they help.
 * If you don't find any implied scenarios, make sure your system is suitable for the course and not overly simplifying reality. If despite this there are no implied scenarios, add a comment.
 
@@ -99,8 +99,8 @@ file: rubrics/statemachines.mw
 class: rubric
 ---
 
-* [Syntax for state machines](prep-statemachines.html).
-* A wrong use of control states would be when variables are used to keep track of information that is more suitable for control states. See [here](unit-statemachines-data.html).
+* [Syntax for state machines](../unit-3-stm/index.html).
+* A wrong use of control states would be when variables are used to keep track of information that is more suitable for control states. See [here](../unit-3-stm/hints-data.html).
 * The state machine should be consistent with respect to states and transition and the requirements. For instance, it does not end up in a deadlocked state or ignore an event unless the requirements are okay with this.
 
 

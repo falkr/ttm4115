@@ -18,14 +18,7 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    div.abstract {
-  font-weight: bold;
-  font-style: italic;
-}
-div.factbox {
-  width:250px; float: right; margin: 0 15px 15px 15px; padding:15px; background: lightblue
-}
-a.ntnu-button {
+    a.ntnu-button {
     font: 600 14px "Source Sans Pro", Georgia, serif;
     background: #fff;
     color: #00509e;
@@ -48,22 +41,6 @@ a.ntnu-button:hover {
     background: #00509e;
     color: #fff;
     text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
 }
 .person-card img {
   width: 56px;
@@ -105,38 +82,6 @@ div.check ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
-div.checklistbox {
-  width: 18rem;
-  float: right;
-  padding: 10px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  background-color: #EFF7FF;
-  border-radius: 0px;
-  border-top: 6px solid #00509e
-  }
-  
-div.checklistbox::before { 
-  content: "Checklist:";
-  font-weight: bold;
-  padding: 0px 0 12px 0;
-  display: block;
-  color: #00509e;
-  }
-
-div.checklistbox ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-  line-height: 1.5rem;
-}
-
-
-div.checklistbox ul {
-  list-style-type: none;
-}
 div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
@@ -151,9 +96,6 @@ div.delivery p::before {
   color: #fc8c03;
   display: inline;
   font-weight: bold;
-}
-.double {
-  column-count: 2;
 }
 div.figure {
   padding: 20px 0 20px 0;
@@ -216,32 +158,6 @@ div.goals ul li:before {
   background-color: #f3f3f3;
   margin-bottom: 15px;
 }
-.w3collapsible {
-  background-color: #f0e9db;
-  color: #868279;
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.w3active,
-.w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
 
 
 button:hover {
@@ -255,88 +171,6 @@ div.qna .accordion-button:not(.collapsed) {
 
 div.qna .accordion-button:not(.collapsed)::after {
   color: #00509e;
-}
-ol.quiz li {
-  padding-left:3rem;
-  cursor: pointer;
-  }
-ol.quiz li::before {
-  font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
-  padding-right: 1rem;
-  margin-left:-2rem;
-  font-size: 1rem;
-  vertical-align: top;
-  }
-ol.quiz li.unselected::before {
-  content: "\f28a";
-  }
-ol.quiz li.unselected:hover::before {
-  content: "\f287";
-  }
-ol.quiz li.selected::before {
-  content: "\f287";
-  color: #666666;
-  }
-ol.quiz li.unselected-true::before {
-  content: "\f26b";
-  color: #5CA551;
-  }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
-  }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
-  }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
-  }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-ol.quiz li.unselected-false {
-  color:lightgray;
-  }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
-  }
-div.card-footer a {
-  cursor: pointer;
-}
-div.quotedoc {
-  padding: 22px;
-  xbackground-color: #EFF7FF;
-  border-radius: 0px;
-  border-top: 0px solid #00509e;
-  #margin: 1rem 0 1rem 0;
-}
-
-div.quotecontent {
-  font-size:1em;
-  
-}
-
-div.quotetitle {
-  font-style: italic;
-  margin-bottom: 2rem;
-}
-
-div.quotedoc h1:first-child,
-div.quotedoc h2:first-child,
-div.quotedoc h3:first-child {
-  margin-top: 0em;
 }
 .rubric p {
 	margin: 0px
@@ -393,85 +227,26 @@ div.quotedoc h3:first-child {
 	font-style: italic;
 	color: gray
 }
-.steps ol, .steps ul {
-  counter-reset: li;
-  list-style: none;
-  margin-left: 10px
+
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
 }
 
-.steps li {
-  margin: 0 0 10px 0;
-  min-height: 40px
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
 }
-
-.steps li:before {
-  content: counter(li);
-  counter-increment: li;
-  border: 2px solid #868279;
-  color: #868279;
-  background-color: none;
-  font-family: "Source Sans Pro", Georgia, serif;
-  font-weight: bold;
-  border-radius: 100%;
-  text-align: center;
-  display: inline-block;
-  top:8px;
-  left:-30px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  margin: -20px -10px -20px -20px
-}
-
 div.tip p {
   padding: 10px;
   background-color: #d9eaf2;
   border-radius: 5px;
   border-left: 6px solid #1481b8
 }
-.tree ul, .tree ul ul {
-  list-style: none;
- } 
-.tree ul ul {
- }
- .tree ul li {
-  margin: 0;
-  padding: 0 7px;
-  line-height: 20px; 
-  border-left: 1px solid #868279;
- }
- .tree ul li:last-child {
-     border-left:none;
- }
- .tree ul li:before {
-    position:relative;
-    top:-0.3em;
-    height:22px;
-    width:12px;
-    color:white;
-    border-bottom:1px solid #868279;
-    content:"";
-    display:inline-block;
-    left:-7px;
- }
- .tree ul li:last-child:before {
-    border-left:1px solid #868279;
-    border-radius: 0px 0px 0px 3px   
- }
 
-div.warning p {
-padding: 10px;
-background-color: #ffd9ab;
-border-radius: 5px;
-border-left: 6px solid #fc8c03 
-}
-
-div.warning p::before {
-    content: '\f071 ';
-    font-family: 'Font Awesome 5 Free'; 
-    color: #fc8c03;
-display: inline;
-}
 table.weekplan {
   width: 100%;
   table-layout: fixed;
@@ -789,77 +564,6 @@ The RAT will not contain question that require you to remember details from the 
 
 
 
-
-
-
-
-
-
-
-
-
-function quiz_select(quiz_id, alternative) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (li.classList.contains('selected') || li.classList.contains('unselected')) {
-            if (i == alternative) {
-                li.classList.add('selected')
-                li.classList.remove('unselected')
-            } else {
-                li.classList.add('unselected')
-                li.classList.remove('selected')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "instructions") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == "confirm") {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
-
-function quiz_confirm(quiz_id, correct) {
-    quiz = document.getElementById(quiz_id);
-    let i = 0;
-    let selected = -1;
-    for (li of quiz.getElementsByTagName("li")) {
-        if (i == correct) {
-            if (li.classList.contains('selected')) {
-                // selected and true
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-true')
-            } else if (li.classList.contains('unselected')) {
-                // unselected but true
-                li.classList.remove('unselected')
-                li.classList.add('unselected-true')
-            }
-        } else {
-            if (li.classList.contains('selected')) {
-                // selected but false
-                selected = i
-                li.classList.remove('selected')
-                li.classList.add('selected-false')
-            } else if (li.classList.contains('unselected')) {
-                // unselected and false
-                li.classList.remove('unselected')
-                li.classList.add('unselected-false')
-            }
-        }
-        i = i + 1
-    }
-    for (div of quiz.getElementsByClassName("card-footer")[0].getElementsByTagName("div")) {
-        if (div.getAttribute("data") == "confirm") {
-            div.classList.add('visually-hidden')
-        } else if (div.getAttribute("data") == selected) {
-            div.classList.remove('visually-hidden')
-        }
-    }
-}
 
 
 

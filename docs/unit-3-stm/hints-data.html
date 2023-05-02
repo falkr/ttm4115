@@ -58,6 +58,30 @@ a.ntnu-button:hover {
 .person-card-detail {
   font-size: 0.8em;
 }
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
 div.delivery p {
   padding: 10px;
   background-color: #ffd9ab;
@@ -111,6 +135,18 @@ div.goals ul li:before {
 
 
 
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
+}
+
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
+}
 
 table.weekplan {
   width: 100%;
@@ -322,6 +358,7 @@ Instead, the states should follow what is happening in the real world or follow 
   </script>
   <script>
     
+
 
 
 

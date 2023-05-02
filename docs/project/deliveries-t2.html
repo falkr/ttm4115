@@ -18,7 +18,161 @@
   <script src="../assets/anchor.js"></script>
   <script src="../assets/script-aside.js"></script>
   <style type="text/css">
-    .rubric p {
+    a.ntnu-button {
+    font: 600 14px "Source Sans Pro", Georgia, serif;
+    background: #fff;
+    color: #00509e;
+    border: 1px solid #00509e;
+    border-color: #00509e !important;
+    border-style: solid !important;
+    border-radius: 10rem;
+    display: inline-block;
+    padding: 5px 15px;
+    height: auto;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.ntnu-button:hover {
+    background: #00509e;
+    color: #fff;
+    text-decoration: none
+}
+.person-card img {
+  width: 56px;
+  border: 1px solid #eee;
+}
+
+.person-card-name {
+  font-weight: 600;
+}
+
+.person-card-email {
+  font-size: 0.8em;
+}
+
+.person-card-detail {
+  font-size: 0.8em;
+}
+div.check ul,
+div.check ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.check ul {
+  margin: 2em 0;
+}
+
+div.check ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.check ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size:20;
+  float: left;
+  margin-left: -1.5em;
+  color: #1481b8;
+}
+div.delivery p {
+  padding: 10px;
+  background-color: #ffd9ab;
+  font-family: "Source Sans Pro", Georgia, serif;
+  border-radius: 5px;
+  border-left: 6px solid #fc8c03; 
+}
+  
+div.delivery p::before {
+  content: 'Delivery: ';
+  font-family: "Source Sans Pro", Georgia, serif;
+  color: #fc8c03;
+  display: inline;
+  font-weight: bold;
+}
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+div.goals ul,
+div.goals ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.goals ul {
+  margin: 2em 0;
+}
+
+div.goals ul li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+div.goals ul li:before {
+  content: '\f26a';
+  font-family: bootstrap-icons !important;
+  font-size: 20;
+  float: left;
+  margin-left: -1.5em;
+  color: #00509e;
+}
+.w3collapsible {
+  background-color: #f0e9db;
+  color: #868279;
+  padding: 8px 18px 8px 8px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.w3active,
+.w3collapsible:hover {
+  background-color: #f0e9cb;
+}
+
+.w3content {
+  filter: blur(3px);
+  padding: 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+}
+
+
+button:hover {
+  background-color: #EFF7FF;
+}
+div.qna .accordion-button:not(.collapsed) {
+  background-color: #EFF7FF;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  color: #00509e;
+}
+
+div.qna .accordion-button:not(.collapsed)::after {
+  color: #00509e;
+}
+.rubric p {
 	margin: 0px
 }
 
@@ -74,6 +228,47 @@
 	color: gray
 }
 
+div.task p {
+padding: 10px;
+background-color: #D6E5F0;
+border-radius: 5px;
+border-left: 6px solid #1481b8 
+}
+
+div.task p::before { 
+content: "Task: ";
+font-weight: bold;
+display: inline;
+}
+
+table.weekplan {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.weekplan td {
+  background-color: #1481b8;
+  color: white;
+}
+
+table.weekplan td, table.weekplan th {
+  text-align: center;
+}
+
+table.weekplan td:empty {
+  background-color: white;
+}
+
+table.weekplan td:first-child {
+  background-color: white;
+  color: grey;
+}
+
+table.weekplan a {
+  font-weight:bold;
+  color: white;
+  text-decoration: underline;
+}
 
   </style>
 </head>
@@ -664,6 +859,20 @@ Create a copy, and fill it out for your own team:</p>
   </script>
   <script>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   </script>

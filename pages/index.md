@@ -12,6 +12,7 @@ Welcome to the iteration in spring {{:year:}}!
 
 ## Startup for {{:year:}}
 
+
 ### Step 1: Onboarding
 
 Please fill out the onboarding scheme so we can register some more information about you.

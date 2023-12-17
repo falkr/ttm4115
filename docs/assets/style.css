@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Source+Code+Pro|Source+Sans+Pro:200,300,400,600,400italic,600italic|Rock+Salt');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+aside {
+  color: #868279;
+  padding: 10px 10px;
+  background: #faf8f5;
+  border: solid 1px #f7f4ed;
+  border-bottom: solid 1px #f0e9db;
+  border-radius: 3px; }
+  aside h2 {
+    color: #9e9b94;
+    font-size: 24px;
+    border: none;
+    margin: 20px 0 10px 0;
+    padding: 0; }
+  aside p, aside li {
+    font: 15px/22px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+  aside li {
+    line-height: 20px; }
+  aside > p:first-child {
+    margin-top: 0; }
+  aside > p:last-child {
+    margin-bottom: 0; }
+  aside ul, aside ol {
+    padding: 0 0 0 18px; }
+  aside code {
+    color: #666;
+    font: normal 13px "Source Code Pro", Menlo, Consolas, Monaco, monospace; }
+  aside img {
+    padding: 0; }
+
+aside + aside {
+  margin-top: 10px; }
+
+@media only screen and (max-width: 479px) {
+    .content {
+      padding: 0 20px 2px 20px; }
+  
+    .section {
+      display: block; }
+  
+    .section:before {
+      content: ""; }
+  
+   }
+  
+  @media only screen and (min-width: 800px) {
+    .page {
+      padding-right: 300px; }
+  
+    aside {
+      position: absolute;
+      width: 240px;
+      margin-left: 626px;
+      padding: 0;
+      background: none;
+      border: none;
+      padding-left: 12px;
+      border-radius: 0;
+      border-left: solid 8px #f0e9db; }
+      aside p, aside li {
+        font: 14px/20px "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+  
+   }
+
+
+/** {
+  outline: 1px solid red;
+}*/
+
+
+/*.navbar {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 0 1rem rgba(40, 40, 40, 0.2);
+}*/
+
+table p, table td, table th {
+  margin-bottom: 0;
+  font-size: 0.7rem;
+}
+
+
+body {
+  xfont-family: 'Libre Baskerville', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #272833;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #fbfaf8; 
+}
+
+.card {
+  background: #fbfaf8;
+}
+
+.content {
+  background: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid #e8e8e8;
+  overflow: hidden
+}
+
+body {
+  /* font: 1rem/2 var(--bs-font-sans-serif); */
+}
+
+p, li {
+  xfont-family: 'Merriweather', serif;
+}
+
+.page a {
+  color: rgb(0, 80, 158);
+  /* background-color: #2B65EC; */
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+i::before {
+  color: rgb(0, 80, 158) !important;
+}
+
+.nav-link, .dropdown-item, .breadcrumb li {
+  color: grey;
+  font-size: 0.8em;
+}
+
+.breadcrum li {
+  
+}
+
+.navlinks button {
+  padding-left: 0px
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  xmargin-top: 1em;
+  margin-bottom: 1em;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-top: 2em;
+  xborder-bottom: 1px solid #8EA9C2;
+  color: #555;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-top: 2em;
+  color: #555;
+}
+
+th {
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+color: #6b6b6b;
+background-color: #eee !important;
+padding: 4px 8px;
+}
+
+blockquote {
+  margin: 0 0 0 1rem;
+  font-style: italic;
+}
+
+code {
+  font-size: 100%
+}
+
+/*pre.bash {
+    color: lightgrey;
+    background-color: #54626a;
+    text-shadow: 0 0 0.5px white;
+    font-size: 100%;
+    xpadding: 6px;
+    xborder-radius: 6px
+}*/
+
+pre {
+  white-space: pre-wrap;
+  margin-bottom: 0;
+}
+
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: CORAL; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #FF1493; font-weight: bold; } /* Keyword */
+code span.op { color: MEDIUMSEAGREEN; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: MEDIUMSLATEBLUE; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+code.bash span.fu { color: #a5bdfc; } /* Function */
+
+div.source-code-frame {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  position:relative;
+}
+div.source-code-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  x:#f5f5f5;
+  color: #9da0a4;
+  border-radius: 4px 0 4px 0;
+}
+button.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 8px;
+  font-size: 12px;
+  background: none;
+  color: #bbbbbb;
+  border: 0px;
+  xborder-radius: 0 4px 0 4px;
+}
+button.copy-button:hover {
+  color: #444444;
+}

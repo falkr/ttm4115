@@ -31,7 +31,7 @@ Read and work through the [preparation material for setting up the course](unit-
 
 ### Step 3: First Class Time
 
-Our first class time will be on **Monday, Jan. 15th 2024 at 12:15**, 12:15 in [Landmålderhallen](https://link.mazemap.com/oOca9g4M). 
+Our first class time will be on **Monday, Jan. 15th 2024 at 12:15** in [Landmålderhallen](https://link.mazemap.com/oOca9g4M). 
 The regular [schedule is here](schedule.html).
 
 

@@ -1,0 +1,129 @@
+/*div.chunk {
+  border: 1px rgb(0, 210, 255) dashed;
+  border-radius: 5px;
+}
+
+.chunk {
+  border: 1px rgb(0, 210, 255) dashed;
+  border-radius: 5px;
+}
+
+aside.chunk {
+  xbackground-color: rgba(0, 255, 0, 0.5);
+}
+
+div.chunk {
+  xbackground-color: rgba(255, 0, 0, 0.5);
+}
+
+
+section {
+   border: red 1px dashed;
+}*/
+
+/* Additional styles for the wrapping container */
+.container-max-width {
+  max-width: 960px; /* 960px*/
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+body {
+background: #fbfaf8; 
+}
+
+aside.chunk {
+  xpadding: 0 1em 0 1em;
+}
+
+@media (min-width: 768px) {
+section:not(.fullwidth)::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: white;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: calc(66.66666667% + 0px);
+  height: 100%
+}
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) { /* 960px*/
+  .container-max-width {
+  padding: 0; /* Remove padding for small screens */
+  }
+  body {
+  background: #FFFFFF; 
+  }
+  aside.chunk {
+    padding: 0 2em 0 2em;
+  }
+  section::before {
+  content: '';
+  position: absolute;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: calc(66.66666667% + 0px);
+  height: 100%
+  }
+}
+
+section {
+   position: relative;
+   xpadding: 1em 0 1em 0;
+}
+
+section.fullwidth {
+   position: relative;
+   padding: 0;
+}
+
+
+
+aside {
+  color: #868279;
+  }
+
+
+
+div.chunk {
+  xpadding: 0 2em 0 2em;
+}
+
+div p:last-child {
+  xmargin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+p + p {
+  margin-top:1em;
+}
+
+
+.card {
+  background: #fbfaf8;
+}
+
+table p,
+table td,
+table th {
+    margin-bottom: 0;
+    font-size: 0.7rem;
+}
+
+a {
+  color: rgb(0, 80, 158);
+  /* background-color: #2B65EC; */
+  text-decoration: none;
+}

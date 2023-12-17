@@ -1,0 +1,39 @@
+body {
+  color: #272833;
+  background: #fbfaf8; 
+}
+
+.card {
+  background: #fbfaf8;
+}
+
+.content {
+  background: white;
+  border: 1px solid #e8e8e8;
+}
+
+.page a {
+  color: rgb(0, 80, 158);
+}
+
+.nav-link, .dropdown-item, .breadcrumb li {
+  color: grey;
+}
+
+h1 {
+  color: #555;
+}
+
+h2 {
+  color: #555;
+}
+
+h3 {
+  color: #555;
+}
+
+
+th {
+color: #6b6b6b;
+background-color: #eee !important;
+}

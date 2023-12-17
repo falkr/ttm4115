@@ -10,54 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === check === */
 div.check ul,
 div.check ul li {
   padding: 0;
@@ -82,21 +47,8 @@ div.check ul li:before {
   margin-left: -1.5em;
   color: #1481b8;
 }
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
+
+/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -108,79 +60,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+figcaption {
+  color: #868279;
 }
 
-div.goals ul {
-  margin: 2em 0;
-}
+</style>
+  </head>
+  
+  <body>
 
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-
-
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -272,27 +161,16 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 3: State Machines</a></li>
 <li class="breadcrumb-item active" aria-current="page">Creating State Machines</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>Creating State Machines</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Creating State Machines</h1>
 <p>Creating state machines is a valuable engineering task.
 While you do it, you understand gradually more of your system and the task it should solve.
 Usually, this is difficult in the beginning but gets easier as you learn more.
@@ -301,26 +179,25 @@ This will get much better with some experience.
 But it is not always difficult. Often, you manage to handle a problem after some attempts and then you &quot;see&quot; that you have a good solution. In that respect, state machines are very nice, because a problem, once modelled properly, can be easily checked by executing the state machines.</p>
 <p>State machines are precise artefacts that can take care of the detailed behavior, so they are suitable for unambiguously define how a system should work.
 In the end, you did a good job if you are able to map user requirements to a set of consistent, high-quality state machines.</p>
-
-<div class="check"><p>With high quality, we mean here that:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="check"><p>With high quality, we mean here that:</p>
 <ul>
 <li>The state machine is syntactically correct.</li>
 <li>The state machine describes behavior that makes sense and is clearly defined.</li>
 <li>The state machine has a good layout that conveys how it works and helps the reader to understand it.</li>
 <li>The state machine can be implemented in code.</li>
 </ul>
-</div>
-<p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts.
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>How to get started, when your paper or editor is empty in the beginning? It can actually be hard to create a state machine from scratch, also for experts.
 Actually, I think I have never observed that even experts write down a state machine correctly on the first attempt, because there is always something that you forget. So, they key to creating a state machine: <strong>Don't even try to make it correct on the first attempt, but approach it iteratively.</strong>
 Sometimes it is a good idea to separate the task of creating something from the test of validating it. Otherwise it is easy to get stuck. So for state machines, we switch between writing down a state machine and then checking it.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/iterate.svg" class="figure-img img-fluid rounded" alt="Switch between creating a state machine and checking it, so that you don't get stuck.">
-  <figcaption class="figure-caption">Switch between creating a state machine and checking it, so that you don't get stuck.</figcaption>
-</figure>
-<h2>Writing Down a State Machine</h2>
-
-<p>To create down a state machine, don't ba afraid to just sketch a first version. The following tips may help:</p>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Switch between creating a state machine and checking it, so that you don't get stuck.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Writing Down a State Machine</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>To create down a state machine, don't ba afraid to just sketch a first version. The following tips may help:</p>
 <ul>
 <li><strong>Start with pencil and paper</strong>. Sometimes it is easier to explore design when you work alone, very focused and only with pencil and paper, where you can quickly sketch some states and transitions, without the pressure to make it work completely immediately. I have lots of experience in designing state machines. I still start with pencil and paper each time, before I go over to an electronic editor.</li>
 <li><strong>Identify all triggering events</strong>. Identify and write down all kinds of events that can trigger a transition in the state machine. Make a list of all incoming messages you may react to, and all timers that are necessary. Often these triggers are determined by the problem to solve.</li>
@@ -331,12 +208,11 @@ Sometimes it is a good idea to separate the task of creating something from the 
 <li><strong>Explore the problem</strong>. Most likely, you will explore the problem and find out that you haven't understood everything, or that there are details that you have overlooked in the beginning. Be aware of what you learn, and how you can represent it with states and transitions. he state machine challenges you to learn more about the system.</li>
 <li><strong>Start fresh</strong>. When you get completely stuck, throw your sketch away and start fresh.</li>
 </ul>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/sketching.jpg" class="figure-img img-fluid rounded" alt="It's a good idea to start with a sketch using paper and pencil and start simple.">
-  <figcaption class="figure-caption">It's a good idea to start with a sketch using paper and pencil and start simple.</figcaption>
-</figure>
-<h2>Checking State Machines</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">It's a good idea to start with a sketch using paper and pencil and start simple.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Checking State Machines</h2>
 <p>Once you have a state machine, even a partial one, you can check if it can actually work.</p>
 <p>For each of its <strong>states</strong>, you should check:</p>
 <ul>
@@ -347,8 +223,8 @@ Sometimes it is a good idea to separate the task of creating something from the 
 <li><strong>Are triggers clear?</strong> A state must not have two or more outgoing transitions that declare the same triggering event and also the same guard. This means, when an event occurs, it must be clear which transition will be chosen.</li>
 <li><strong>Consume, defer or discard.</strong> Make sure that for each state, an event is either consumed (by an outgoing transition) or deferred. If a state says nothing about an event, the event is implicitly discarded in case it arrives. A state must not defer an event that also triggers one of its outgoing transitions.</li>
 </ul>
-
-<p>For each <strong>transition</strong> you should check:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>For each <strong>transition</strong> you should check:</p>
 <ul>
 <li><strong>Does every transition have a triggering event?</strong> This means that every transition must declare a trigger in the form of a message reception, a timer expiration, unless it is an initial transition or following a choice pseudo state.</li>
 <li><strong>Do transitions with choice states block?</strong> Decisions must not block, which means that one of the outgoing branches of a choice state must have a guard that is <code>True</code>. The safest way to achieve this is by letting one of the outgoing branches have an <code>else</code> branch.</li>
@@ -363,20 +239,15 @@ Sometimes it is a good idea to separate the task of creating something from the 
 <li>Are all events that you need to receive handled, and are they properly handled (consumed, deferred or discarded) in each state? Are there events that are never handled?</li>
 </ul>
 <p>These are the rules that you can check even without knowing exactly what the application should do, just by looking at the state machines. These are generic rules, independent of a specific application, and if they don't hold, it is very likely that you do have a problem. But then there are also errors that have to do with your specific <strong>application.</strong> This can be a bit harder to find out. You need to simulate the state machines using your fingers and go through it state by state and event by event. When the problem is not too big, this is possible. Later, once we implement state machines in Python, you will also be able to build functioning prototypes, which you can use and test to see how the final state machine behaves.</p>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -388,39 +259,46 @@ Sometimes it is a good idea to separate the task of creating something from the 
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-3-stm/preparation-5.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-3-stm/preparation-5.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
 
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

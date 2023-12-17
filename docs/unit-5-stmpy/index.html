@@ -10,156 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
-div.figure {
-  padding: 20px 0 20px 0;
-  width: 100%;
-}
-
-div.figurefullwitdth {
-  padding: 20px 0 20px 0;
-  margin-left: -33px;
-  margin-right: -33px;
-  width: 100%;
-}
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-.w3collapsible {
-  background-color: #f0e9db;
-  color: #868279;
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.w3active,
-.w3collapsible:hover {
-  background-color: #f0e9cb;
-}
-
-.w3content {
-  filter: blur(3px);
-  padding: 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-
-
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === qna === */
 button:hover {
   background-color: #EFF7FF;
 }
@@ -172,114 +35,12 @@ div.qna .accordion-button:not(.collapsed) {
 div.qna .accordion-button:not(.collapsed)::after {
   color: #00509e;
 }
-.rubric p {
-	margin: 0px
-}
 
-.rubric th {
-	text-align: center;
-	padding: 6px;
-}
+</style>
+  </head>
+  
+  <body>
 
-.rubric td {
-	vertical-align: top;
-	font-size: 12px;
-	padding: 6px;
-}
-
-.rubric th {
-	font-size: 12px;
-	vertical-align: top;
-}
-
-.rubric td:nth-child(2),
-.rubric th:nth-child(2) {
-	background-color: #D0E8DC;
-	width: 22%
-}
-
-.rubric td:nth-child(3),
-.rubric th:nth-child(3) {
-	background-color: #FCFDE3;
-	width: 22%
-}
-
-.rubric td:nth-child(4),
-.rubric th:nth-child(4) {
-	background-color: #F8D9C2;
-	width: 22%
-}
-
-.rubric td:nth-child(5),
-.rubric th:nth-child(5) {
-	background-color: #EBBCB9;
-	width: 22%
-}
-
-.rubric tfoot td {
-	text-align: right;
-	border-bottom: none;
-	padding: 1px;
-}
-
-.rubric tfoot a {
-	font-size: 12px;
-	font-style: italic;
-	color: gray
-}
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -371,69 +132,58 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item active" aria-current="page">Unit 5: State Machines in Python</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>Unit 5: State Machines in Python</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Unit 5: State Machines in Python</h1>
 <p>In this unit, you will learn how to implement state machines in Python. Achieving this is valuable for several reasons:</p>
 <ul>
 <li>You will be able to deepen your understanding about state machines in general.</li>
 <li>You will be able to solve arbitrarily complex synchronization tasks in Python.</li>
 <li>You will have a framework for the implementation during the semester project.</li>
 </ul>
-
-<h3>For the Semester Project</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>For the Semester Project</h3>
 <p>To have your code in sync with your state machine diagrams and handle concurrency in an effective way, you will program parts of your semester project using STMPY.</p>
-
-<h2>Preparation</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Preparation</h2>
 <p>Go through the following preparation material before we meet in class:</p>
-
-<div class="card mt-3">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="card mt-3 mb-3">
 <div class="card-body">
 <a href="preparation-1.html" class="stretched-link">
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16" id="journal-bookmark-fill"><path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z" /><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" /><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" /></svg>
 <span class="ms-3">Coding State Machines</span>
 </a>
 </div>
-</div>
-<div class="card mt-3">
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="card mt-3 mb-3">
 <div class="card-body">
 <a href="preparation-2.html" class="stretched-link">
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-filetype-py" viewBox="0 0 16 16" id="filetype-py"><path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z" /></svg>
 <span class="ms-3">Jupyter Notebooks Introducing STMPY</span>
 </a>
 </div>
-</div>
-<h2>Teamwork on Monday</h2>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Teamwork on Monday</h2>
 <p>Go through the following activities with your team:</p>
-
-<div class="card mt-3">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="card mt-3 mb-3">
 <div class="card-body">
 <a href="teamwork-1.html" class="stretched-link">
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-people-fill" viewBox="0 0 16 16" id="people-fill"><path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" /></svg>
 <span class="ms-3">State Machines in Python</span>
 </a>
 </div>
-</div>
-<h2>Questions and Answers</h2>
-
-<p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Questions and Answers</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>
 <div class="accordion" id="ide22cc7">
   <div class="accordion-item">
     <p class="accordion-header" id="ide22cc7A">
@@ -445,8 +195,8 @@ table.weekplan a {
     </div>
   </div>
 </div>
-</p>
-<p>
+</p></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>
 <div class="accordion" id="id36be10">
   <div class="accordion-item">
     <p class="accordion-header" id="id36be10A">
@@ -458,37 +208,32 @@ table.weekplan a {
     </div>
   </div>
 </div>
-</p>
-    </section>
-    <section class="content">
-<h1>Concluding this Unit</h1>
+</p></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Concluding this Unit</h1>
 <p>Please clean up the room after you. Remove any trash or paper.</p>
 <h2>Team Reflection</h2>
 <ul>
 <li>Add another section to the team reflection document, just like last week.</li>
 <li>How did the roles work today?</li>
 </ul>
-
-<h2>Individual Reflection</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Individual Reflection</h2>
 <ul>
 <li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
 <li>Copy the answers into a document that you maintain on your own.</li>
 <li>Add any additional observations to your reflection diary.</li>
 </ul>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -500,43 +245,46 @@ table.weekplan a {
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-5-stmpy/index.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-5-stmpy/index.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

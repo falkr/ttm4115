@@ -10,93 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -108,79 +34,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+figcaption {
+  color: #868279;
 }
 
-div.goals ul {
-  margin: 2em 0;
-}
+</style>
+  </head>
+  
+  <body>
 
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-
-
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -272,64 +135,48 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-    <section class="content">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 3: State Machines</a></li>
 <li class="breadcrumb-item active" aria-current="page">Example: Traffic Light</li>
 </ol>
 </nav>
-<h2>Hello, State Machines!</h2>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Hello, State Machines!</h2>
 <p>State machines are one of the fundamental diagrams to describe behavior.
 They are used to specify communication protocols, logic in embedded systems, and in general behavior where events need to be coordinated in a complex way.
 Here is an intuitive example of a sketch for a state machine that illustrates in a compact way how a traffic light works:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/state-machines-traffic-light.jpg" class="figure-img img-fluid rounded" alt="A state machine describing the sequence of phases in a traffic light.">
-  <figcaption class="figure-caption">A state machine describing the sequence of phases in a traffic light.</figcaption>
-</figure>
-<p>Another example is the specification of the TCP protocol, also using a state machine:</p>
-
-<figure class="figure">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">A state machine describing the sequence of phases in a traffic light.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Another example is the specification of the TCP protocol, also using a state machine:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/state-machines-tcp.jpg" class="figure-img img-fluid rounded" alt="The TCP protocol uses state machines to describe parts of its behavior.">
-  <figcaption class="figure-caption">The TCP protocol uses state machines to describe parts of its behavior.</figcaption>
-</figure>
-<h2>Why State Machines?</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">The TCP protocol uses state machines to describe parts of its behavior.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Why State Machines?</h2>
 <p>Have a look at the short interview section with Richard Stallman (starting at 0:25:25), about the construction of the operating system kernel for GNU:</p>
-
-<div class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="figure">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jw8K460vx1c?start=1525" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<span name="jw8K460vx1c">&nbsp;</span>
-<aside name="jw8K460vx1c"><p><p>Interview with Richard Stallman, from  0:25:25 until 0:26:30, from the movie <em>Revolution OS</em>. You may watch the entire movie later.</p>
-</p></aside>
-</div>
-<p>When he says <em>&quot;It took us years to get the thing to work.&quot;</em>, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control.
+</div></div><aside class="col-md-4 chunk ps-2">Interview with Richard Stallman, from  0:25:25 until 0:26:30, from the movie _Revolution OS_. You may watch the entire movie later.</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>When he says <em>&quot;It took us years to get the thing to work.&quot;</em>, you can imagine how frustrating it can be to handle concurrent behavior and not getting it under control.
 There are problems that look simple but that can quickly grow complex, and state machines offer a way to handle complexity in such situations.</p>
-
-<span name="c07d7d"></span><aside name="c07d7d"><p>Have a look at this blog post from developer Alan Skorkin, <a href="https://www.skorks.com/2011/09/why-developers-never-use-state-machines/">Why Developers Never Use State Machines</a>. It describes how developers often detect to late that they should have started with a state machine.</p>
-</aside>
-<p>A bit of a problem with state machines is that developers often only understand they should have used a state machine for a problem <em>after</em> it is too late, and they already spent much effort on trying to solve a task in other ways. <strong>We tend to underestimate the amount of concurrency and complexity that some situations contain.</strong></p>
-
-<p>With state machines, you can structure complex behavior such that:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>A bit of a problem with state machines is that developers often only understand they should have used a state machine for a problem <em>after</em> it is too late, and they already spent much effort on trying to solve a task in other ways. <strong>We tend to underestimate the amount of concurrency and complexity that some situations contain.</strong></p>
+</div><aside class="col-md-4 chunk ps-2"><p>Have a look at this blog post from developer Alan Skorkin, <a href="https://www.skorks.com/2011/09/why-developers-never-use-state-machines/">Why Developers Never Use State Machines</a>. It describes how developers often detect to late that they should have started with a state machine.</p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>With state machines, you can structure complex behavior such that:</p>
 <ul>
 <li>It is easy to debug and understand precisely what happened.</li>
 <li>Only one thing happens at a time.</li>
 <li>You have detailed control over concurrency.</li>
 </ul>
-
-<h2>Understanding State Machines</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Understanding State Machines</h2>
 <p>Given the complexity they handle, state machines are relatively easy to understand as they only contain a handlful of concepts to model behavior.
 There is also more than one way to approach an understanding of state machines, and in this course you will get the chance to approach state machines from three angles:</p>
 <ul>
@@ -339,32 +186,29 @@ There is also more than one way to approach an understanding of state machines, 
 </ul>
 <p>This week, we will introduce state machines by their diagrams and explain their meaning by describing an abstract machine. Later, we will introduce how you can implement state machines in Python.
 This gives you three different entry points into the concept of state machines.</p>
-
-    </section>
-    <section class="content">
-<h1>Example: Traffic Light</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Example: Traffic Light</h1>
 <p>Let's assume we need to describe how a traffic light works.
 One idea is to just take pictures of a traffic light, like this:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/traffic-light-1.jpg" class="figure-img img-fluid rounded" alt="A set of pictures of a traffic light that represent the different states it can be in.">
-  <figcaption class="figure-caption">A set of pictures of a traffic light that represent the different states it can be in.</figcaption>
-</figure>
-<p>That already helps; the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively <em>red</em>, <em>red-yellow</em>, <em>green</em> and <em>yellow</em>. (The <em>red-yellow</em> is common in many, but not all countries.)</p>
-
-<p>The photos already help explaining the traffic light. But imagine you want to explain on paper in which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:</p>
-
-<figure class="figure">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">A set of pictures of a traffic light that represent the different states it can be in.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>That already helps; the photos describe the phases in which we can observe the traffic light. Whenever we look at the traffic light, it is in one of the phases described by the photos. For easier reference we have even given these photos some labels, intuitively <em>red</em>, <em>red-yellow</em>, <em>green</em> and <em>yellow</em>. (The <em>red-yellow</em> is common in many, but not all countries.)</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The photos already help explaining the traffic light. But imagine you want to explain on paper in which sequence a traffic light switches its lights. One way is text, but a simpler way is to add arrows between the photos, like this:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/traffic-light-2.jpg" class="figure-img img-fluid rounded" alt="The photos of the traffic light in a sequential order.">
-  <figcaption class="figure-caption">The photos of the traffic light in a sequential order.</figcaption>
-</figure>
-<p>Of course, the picture above is a simplification. Some trafic lights are switched off at night and just blink yellow. The same happens as a default state in case there is an error in the controller. We can show this blinking with the two additional photos <em>blink-off</em> and <em>blink-on</em>. The two arrows between them show how the blinking is created by two phases, one with the yellow light on and one with all lights off. We also show that blinking can be started from any of the other phases, because an error can always happen, and the lights may be switched off at any time. When we get out of the blinking sequence, we go towards the phase <em>red</em> for safety.</p>
-
-<figure class="figure">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">The photos of the traffic light in a sequential order.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Of course, the picture above is a simplification. Some trafic lights are switched off at night and just blink yellow. The same happens as a default state in case there is an error in the controller. We can show this blinking with the two additional photos <em>blink-off</em> and <em>blink-on</em>. The two arrows between them show how the blinking is created by two phases, one with the yellow light on and one with all lights off. We also show that blinking can be started from any of the other phases, because an error can always happen, and the lights may be switched off at any time. When we get out of the blinking sequence, we go towards the phase <em>red</em> for safety.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/traffic-light-3.jpg" class="figure-img img-fluid rounded" alt="A more advanced state machine for the traffic light.">
-  <figcaption class="figure-caption">A more advanced state machine for the traffic light.</figcaption>
-</figure>
-<p>That's a complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into <em>red</em> first.</p>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">A more advanced state machine for the traffic light.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>That's a complete and detailed description of a traffic light. As one last thing we add an arrow to mark in which phase a traffic light starts once it is switched on for the first time. For safety, we put it into <em>red</em> first.</p>
 <p>The photos depict the traffic light in phases.
 Some of these phases are shorter than others, but all of them last for some time.
 In the traffic light, these phases have also in common that they correspond to lights being switched on or off.
@@ -372,28 +216,23 @@ In state machine terminology, we call these phases <strong>states</strong>, and 
 <p>The arrows between the states are called <strong>transitions</strong>.</p>
 <p>Maybe you see nothing special here yet, and you may think that this is really easy.
 One word of caution however: Beginners with state machines have often trouble to distinguish between states and transitions once they start creating their own machines. So, remember this simple example to understand the difference between them, as a guide for cases where the distinction between states and transitions is maybe less obvious.</p>
-
-<nav class="d-flex justify-content-between">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><nav class="d-flex justify-content-between">
 <div></div>
 <div></div>
 <a type="button" href="preparation-2.html" class="page-link rounded">
 Next: State Machine Diagrams
 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-short" viewBox="0 0 16 16" id="arrow-right-short"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
 </a>
-</nav>
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</nav></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -405,40 +244,47 @@ Next: State Machine Diagrams
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-3-stm/preparation-1.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-3-stm/preparation-1.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
 
 
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

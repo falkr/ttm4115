@@ -10,93 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -108,178 +34,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-.w3collapsible {
-  background-color: #f0e9db;
+figcaption {
   color: #868279;
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 
-.w3active,
-.w3collapsible:hover {
-  background-color: #f0e9cb;
-}
+</style>
+  </head>
+  
+  <body>
 
-.w3content {
-  filter: blur(3px);
-  padding: 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-
-
-button:hover {
-  background-color: #EFF7FF;
-}
-div.qna .accordion-button:not(.collapsed) {
-  background-color: #EFF7FF;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-  color: #00509e;
-}
-
-div.qna .accordion-button:not(.collapsed)::after {
-  color: #00509e;
-}
-.rubric p {
-	margin: 0px
-}
-
-.rubric th {
-	text-align: center;
-	padding: 6px;
-}
-
-.rubric td {
-	vertical-align: top;
-	font-size: 12px;
-	padding: 6px;
-}
-
-.rubric th {
-	font-size: 12px;
-	vertical-align: top;
-}
-
-.rubric td:nth-child(2),
-.rubric th:nth-child(2) {
-	background-color: #D0E8DC;
-	width: 22%
-}
-
-.rubric td:nth-child(3),
-.rubric th:nth-child(3) {
-	background-color: #FCFDE3;
-	width: 22%
-}
-
-.rubric td:nth-child(4),
-.rubric th:nth-child(4) {
-	background-color: #F8D9C2;
-	width: 22%
-}
-
-.rubric td:nth-child(5),
-.rubric th:nth-child(5) {
-	background-color: #EBBCB9;
-	width: 22%
-}
-
-.rubric tfoot td {
-	text-align: right;
-	border-bottom: none;
-	padding: 1px;
-}
-
-.rubric tfoot a {
-	font-size: 12px;
-	font-style: italic;
-	color: gray
-}
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -371,27 +135,16 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 2: Modeling and Deployment Diagrams</a></li>
 <li class="breadcrumb-item active" aria-current="page">Deployment Diagrams</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>Deployment Diagrams</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Deployment Diagrams</h1>
 <p>Deployment diagrams are useful at all stages of development. They provide a <strong>physical view</strong> of the system, and show the files and the devices they run on. In particular, they show:</p>
 <ul>
 <li>the coarse structure of a system</li>
@@ -400,12 +153,11 @@ table.weekplan a {
 <li>which devices run which software</li>
 </ul>
 <p>Below is an example for a deployment diagram, showing the elements of a fitness tracker (here a Fitbit) and how it works together with a mobile phone and the server backend.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/fitbit-1.svg" class="figure-img img-fluid rounded" alt="Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.">
-  <figcaption class="figure-caption">Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.</figcaption>
-</figure>
-<p>What can we learn from this diagram?</p>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Deployment diagram for a health monitor, consisting of server, PC and mobile pone and the actual health monitoring device.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>What can we learn from this diagram?</p>
 <ul>
 <li>To the left, there is the Fitbit server, which is connected via HTTPS to a PC and the mobile phone of a user.</li>
 <li>On the PC, a browser is running.</li>
@@ -418,12 +170,11 @@ table.weekplan a {
 <li>Connections that represent communication between nodes (in red).</li>
 <li>Software artifacts that are assigned to nodes (in yellow).</li>
 </ol>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/fitbit-2.svg" class="figure-img img-fluid rounded" alt="Colored version of the original deployment diagram.">
-  <figcaption class="figure-caption">Colored version of the original deployment diagram.</figcaption>
-</figure>
-<h2>Nodes: Devices</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Colored version of the original deployment diagram.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Nodes: Devices</h2>
 <p>Devices are shown as a 3D-box with «device» printed at its top. The funny brackets are called <em>guillemets</em> and are each a single character. This is a notation for stereotypes, which are a kind of marker in UML.</p>
 <p>Examples for devices are:</p>
 <ul>
@@ -437,32 +188,30 @@ table.weekplan a {
 <li>...</li>
 </ul>
 <p>These device types are not built into UML, you can decide on your own. Which ones make  sense depends on your project. Is it relevant and informative that you are talking about a Raspberry Pi? If yes, fine! If it doesn't matter, use a more generic device type.</p>
-
-<h2>Nodes: Execution Environments</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Nodes: Execution Environments</h2>
 <p>Software does often not directly run on hardware, but on some execution environment. If you want to show this, you can use a node (again with 3D effect) and the stereotype «execution environment».</p>
 <p>Examples for execution environments are runtime environment,
 application server, web server, operating system, Java virtual machine (JVM) or a container system like Docker.</p>
-
-<h2>Nested Nodes</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Nested Nodes</h2>
 <p>In some cases it makes sense to show nested nodes.</p>
 <p>You can show a <strong>device inside a device</strong>, for instance when you want to show a disk inside a PC or a trusted computation element in a phone. Other hardware elements within a device can be memory.
 You should only show such elements if there is something special you want to point out.
 Like a special type of memory that is critical for the system, or the trusted computation element that enables new use cases.</p>
 <p>Usually, execution environment are contained within devices, since software needs to run on some hardware. The only reason not to show a device and have an execution as its own top-level element is when the hardware it necessarily runs on is obvious from the context or not important at all. One thing is sure, however: execution environments cannot contain devices.</p>
 <p>In some cases, you might want to points out that an execution environment is nested inside another execution environment, like when you want to point out that Python runs within Docker, in a Linux operating system on a server. Again---assess for your specific case which information is relevant.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/nested-nodes.svg" class="figure-img img-fluid rounded" alt="Devices can be nested inside devices, if it is worth emphasizing them.">
-  <figcaption class="figure-caption">Devices can be nested inside devices, if it is worth emphasizing them.</figcaption>
-</figure>
-<h2>Showing Node Instances</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Devices can be nested inside devices, if it is worth emphasizing them.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Showing Node Instances</h2>
 <p>Sometimes you want to show several nodes of the same type, but want to express that these are different instances. Example, an airport gate with several passenger turnstiles, that are physical identical. For that, you just include the instance name in front of a colon, like <strong>t1: Turnstile</strong>. In addition, you underline to make clear that you refer to a specific instance.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/node-instances.svg" class="figure-img img-fluid rounded" alt="Two instances of the same type of device.">
-  <figcaption class="figure-caption">Two instances of the same type of device.</figcaption>
-</figure>
-<h2>Communication Paths</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Two instances of the same type of device.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Communication Paths</h2>
 <p>When two nodes communicate, they are connected by a solid line. This line can be labelled with a stereotype that says something about the way of communication, by referring to a standard or a protocol, as for instance:</p>
 <ul>
 <li>«http»</li>
@@ -490,12 +239,11 @@ Like a special type of memory that is critical for the system, or the trusted co
 <li>By connecting them with a dashed line arrow labelled «deploy»</li>
 </ol>
 <p>Below you see the two ways of deploying an artifact into a node. Both are semantically equivalent (they <em>mean</em> the same thing), but the graphics are different. Depending on how many artifacts to deploy and other layout constraints, either of them can be more compact and practical to use.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/deployment-1.png" class="figure-img img-fluid rounded" alt="Two ways of showing deployment. Both ways have the same meaning, but look different graphically.">
-  <figcaption class="figure-caption">Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</figcaption>
-</figure>
-<!--
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Two ways of showing deployment. Both ways have the same meaning, but look different graphically.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><!--
 In some cases, the deployment of an artifact requires some more details, which can be expressed by an (optional) deployment specification.
 .wsdd, .xml
 -->
@@ -503,12 +251,11 @@ In some cases, the deployment of an artifact requires some more details, which c
 <p>The software in an artifact can itself represent something we have modeled, like a UML component. This means that an artifact <em>manifests</em> other modeling elements.</p>
 <p>In the example below, we show that the UML component <code>Traffic Light Logic</code> is manifested by the artifact <code>traffic-light-firmware.c</code>, using a dashed arrow with the stereotype «manifest».
 This means that there is a UML description of a traffic light encapsulated by the component <code>Traffic Light Logic</code>. This can be for example a state machine that describes in which sequences the traffic light cycles through red, yellow and green. (We will work with state machines later.) The state machines and the component, however, are only descriptions but cannot be executed on their own. For that, we need the code provided here by the artifact <code>traffic-light-firmware.c</code>, which implements for instance the component and state machines for the traffic light.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/manifest-1.png" class="figure-img img-fluid rounded" alt="With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact.">
-  <figcaption class="figure-caption">With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact.</figcaption>
-</figure>
-<!--
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">With the stereotype &laquo;manifest&raquo; we can show that a UML element (here a component) is used to describe the contents of a software artifact.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><!--
 Deployment diagrams most often show node instances
 - Which details are actually worth showing?
 	- Too many details and the diagram gets messy
@@ -516,25 +263,24 @@ Deployment diagrams most often show node instances
 	- show composite diagrams
 - How to provide a good overview, good layout?
 -->
-
-<p><strong>Hint:</strong> The difference between artifacts and nodes may appear subtle in some cases.
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Hint:</strong> The difference between artifacts and nodes may appear subtle in some cases.
 Nodes that are devices describe physical pieces of hardware that you can touch. Artifacts, on the other side are often files, like source files or executable files for a program.
 They are real, but you cannot touch them.
 Execution environments, which are nodes, are a bit more subtle. You cannot touch them, but
 they provide a place of executing software, which comes in the form of artifacts.</p>
-
-<h2>Notes</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Notes</h2>
 <p>Similar to comments and documentation in source code, UML diagrams can contain notes. They can capture additional information that cannot be expressed by other elements.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/notes-1.png" class="figure-img img-fluid rounded" alt="Notes can show additional information that is difficult to express in other ways.">
-  <figcaption class="figure-caption">Notes can show additional information that is difficult to express in other ways.</figcaption>
-</figure>
-<h2>Multiplicities</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Notes can show additional information that is difficult to express in other ways.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Multiplicities</h2>
 <p>In some cases we can add useful information to the deployment diagram by showing how many instances of a pair of nodes are connected with each other.</p>
 <p>A multiplicity specification is a tuple in the form <code>n..m</code> where <code>n</code> denotes the lower bound and <code>m</code> the upper one. (This implies that <code>n</code> is smaller than <code>m</code>.) To keep the upper value unbounded, we use the asterisk <code>*</code>. This leads to the following possible combinations in practice:</p>
-
-<span name="tables/multiplicities.mw">&nbsp;</span>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><span name="tables/multiplicities.mw">&nbsp;</span>
 <aside name="tables/multiplicities.mw"><p><p>Most of the practical combinations of multiplicity bounds.</p>
 </p></aside>
 <table class="table table-sm">
@@ -593,8 +339,8 @@ they provide a place of executing software, which comes in the form of artifacts
 <td><p>exactly n</p>
 </td>
 </tr>
-</table>
-<p>The first column shows the multiplicity in <code>n..m</code> format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words.</p>
+</table></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The first column shows the multiplicity in <code>n..m</code> format. The second columns shows an equivalent shorthand notation if there is one, and the third column how the multiplicity it to be understood or pronounced in words.</p>
 <p>We can use these multiplicities at both sides of a connection between nodes.
 If no multiplicity is specified, it means <code>*</code>, which implies <em>many</em>.</p>
 <p>In most practical cases, you don't need to worry much about the multiplicities because they are often implicitly clear from the context. But in some cases you can emphasize details that you consider important. Typical examples are:</p>
@@ -603,14 +349,13 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
 <li>One server is connected to many gateways.</li>
 </ul>
 <p>If the number varies at runtime, use <code>0..*</code> or <code>*</code> in short, just implying <em>many</em>.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/multiplicity.svg" class="figure-img img-fluid rounded" alt="Examples of multiplicity between nodes.">
-  <figcaption class="figure-caption">Examples of multiplicity between nodes.</figcaption>
-</figure>
-    </section>
-    <section class="content">
-<h1>Containment</h1>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Examples of multiplicity between nodes.</figcaption></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Containment</h1>
 <p>We have seen above that some nodes in a deployment diagram can contain other nodes, depending on the node types.</p>
 <p>The following containments are typical:</p>
 <ul>
@@ -630,10 +375,10 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
 <li>An artifact cannot contain a device.</li>
 <li>An artifact cannot contain an execution environment.</li>
 </ul>
-
-    </section>
-    <section class="content">
-<h1>Overview of Elements</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Overview of Elements</h1>
 <ul>
 <li>Communication Path
 <ul>
@@ -697,20 +442,15 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
 </ul>
 </li>
 </ul>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -722,43 +462,46 @@ If no multiplicity is specified, it means <code>*</code>, which implies <em>many
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-2-models/preparation-2.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-2-models/preparation-2.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

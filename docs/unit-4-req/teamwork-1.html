@@ -10,93 +10,114 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === boxes === */
+div.box {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
 }
 
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
+div.box>p {
+  margin-bottom: 0px;
 }
 
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
+div.box>*:first-child::before {
   font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: grid;
+}
+
+div.milestone {
+  background-color: #E3BCDA;
+}
+
+div.milestone>*:first-child::before {
+  content: '\f706';
+  color: #75225E;
+}
+
+div.delivery {
+  background-color: #ffd9ab;
+}
+
+div.delivery>*:first-child::before {
+  content: '\f1be';
+  color: #fc8c03;
+}
+
+div.definition {
+  background-color: #EEE5D5;
+}
+
+div.definition>*:first-child::before {
+  content: '\f3e9';
+  color: #7D705A;
+}
+
+div.guideline {
+  background-color: #fae7e8;
+}
+
+div.guideline>*:first-child::before {
+  content: '\f548';
+  color: #e45460;
+}
+
+div.report {
+  background-color: #D6E5F0;
+}
+
+div.report>*:first-child::before {
+  content: '\f43e';
   color: #1481b8;
 }
-div.delivery p {
-  padding: 10px;
+
+div.warning {
   background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
 }
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
+
+div.warning>*:first-child::before {
+  content: '\f33a';
   color: #fc8c03;
-  display: inline;
-  font-weight: bold;
 }
+
+div.tip {
+  background-color: #E3BCDA;
+}
+
+div.tip>*:first-child::before {
+  content: '\f402';
+  color: #75225E;
+}
+
+div.task {
+  background-color: #fae7e8;
+}
+
+div.task>*:first-child::before {
+  content: '\f5db';
+  color: #e45460;
+}
+
+/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -108,178 +129,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-.w3collapsible {
-  background-color: #f0e9db;
+figcaption {
   color: #868279;
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 
-.w3active,
-.w3collapsible:hover {
-  background-color: #f0e9cb;
-}
+</style>
+  </head>
+  
+  <body>
 
-.w3content {
-  filter: blur(3px);
-  padding: 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-
-
-button:hover {
-  background-color: #EFF7FF;
-}
-div.qna .accordion-button:not(.collapsed) {
-  background-color: #EFF7FF;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-  color: #00509e;
-}
-
-div.qna .accordion-button:not(.collapsed)::after {
-  color: #00509e;
-}
-.rubric p {
-	margin: 0px
-}
-
-.rubric th {
-	text-align: center;
-	padding: 6px;
-}
-
-.rubric td {
-	vertical-align: top;
-	font-size: 12px;
-	padding: 6px;
-}
-
-.rubric th {
-	font-size: 12px;
-	vertical-align: top;
-}
-
-.rubric td:nth-child(2),
-.rubric th:nth-child(2) {
-	background-color: #D0E8DC;
-	width: 22%
-}
-
-.rubric td:nth-child(3),
-.rubric th:nth-child(3) {
-	background-color: #FCFDE3;
-	width: 22%
-}
-
-.rubric td:nth-child(4),
-.rubric th:nth-child(4) {
-	background-color: #F8D9C2;
-	width: 22%
-}
-
-.rubric td:nth-child(5),
-.rubric th:nth-child(5) {
-	background-color: #EBBCB9;
-	width: 22%
-}
-
-.rubric tfoot td {
-	text-align: right;
-	border-bottom: none;
-	padding: 1px;
-}
-
-.rubric tfoot a {
-	font-size: 12px;
-	font-style: italic;
-	color: gray
-}
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -371,27 +230,16 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 4: User Requirements</a></li>
 <li class="breadcrumb-item active" aria-current="page">User Requirements</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>User Requirements</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>User Requirements</h1>
 <p>This week we are getting started with the semester project by working on the user requirements and outlining some use cases.</p>
 <p>It is probably a weak point in the course that you not only specify and implement the system, but are also responsible to come up with the requirements for the system.
 There is no real customer that you can interview, and that can tell you in the end if your system satisfies their requirements or not.
@@ -399,10 +247,10 @@ There is no real customer that you can interview, and that can tell you in the e
 We need to keep that in mind.
 The goal is hence to come up with a sensible set of good use cases that we take as input for the subsequent specification and implementation process.</p>
 <p>We guide the design of these use cases using a partial Vision-and-Scope document.</p>
-
-    </section>
-    <section class="content">
-<h1>Discuss the Semester Project</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Discuss the Semester Project</h1>
 <p>We provided you with a <a href="../project/index.html">partial and vague outline of the semester project</a>.
 It is vague because it should allow you to adjust the system idea with your own ideas and plans.
 Defining the detailed requirements is part of the task.</p>
@@ -413,10 +261,10 @@ Defining the detailed requirements is part of the task.</p>
 <li>Are there some specific ideas you want to try?</li>
 </ul>
 <p>This is an open-ended task, so make sure to conclude the discussion after some maximum time, like 30 minutes.</p>
-
-    </section>
-    <section class="content">
-<h1>Partial Vision and Scope Document</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Partial Vision and Scope Document</h1>
 <p>Based on your idea, create a preliminary Vision and Scope Document.
 The entire document should be short and concise, probably only about two to three pages.
 Capture the following sections:</p>
@@ -453,16 +301,16 @@ This should guide the technical development, and contribute to achieve the visio
 </ul>
 </li>
 </ul>
-
-<p>This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session.
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session.
 You will most likely have question about this document. <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMFg3OFQzWTdBQ0RTWUUxNUpNMzhFSVVCUi4u">Submit them in this form</a>. We will collect these questions, group similar ones and then answer them.</p>
 <p>Based on the coarse idea of the system you will describe a set of use cases in the following.</p>
-
-<div class="delivery"><p>You don't need to deliver this document this week, as it will be part of the delivery for the semester project. Create a folder in your own Team channel where you store all semester project related documents. You can also create a private team for that, where only you can access the documents.</p>
-</div>
-    </section>
-    <section class="content">
-<h1>What are Good Use Cases?</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="delivery box mt-3 mb-3"><p>You don't need to deliver this document this week, as it will be part of the delivery for the semester project. Create a folder in your own Team channel where you store all semester project related documents. You can also create a private team for that, where only you can access the documents.</p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>What are Good Use Cases?</h1>
 <p>You have now already learned a lot about use cases and seen some examples, and know which goal we have when designing use cases. So what are the characteristics of <strong>good</strong> use cases?</p>
 <h3>Step 1: Individual Work</h3>
 <p>As always, have an individual round first:</p>
@@ -490,21 +338,20 @@ You will most likely have question about this document. <a href="https://forms.o
 </ul>
 </li>
 </ul>
-
-<div class="delivery"><p>Deliver your solution in the Teams folder for this unit. Use filename <code>ttm4115-use-case-qualities-Team-XX.docx</code></p>
-</div>
-    </section>
-    <section class="content">
-<h1>Use Case Levels</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="delivery box mt-3 mb-3"><p>Deliver your solution in the Teams folder for this unit. Use filename <code>ttm4115-use-case-qualities-Team-XX.docx</code></p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Use Case Levels</h1>
 <p>Recall the different levels of use cases from the preparation, where we assigned use cases to different levels on a horizon:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
   <a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">
     <img src="figures/use-case-teamwork.jpg" class="figure-img img-fluid rounded" alt="Document on Draw.io for you to copy.">
   </a>
-  <figcaption class="figure-caption">Document on Draw.io for you to copy.</figcaption>
-</figure>
-<p>In the document above, you see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level.
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Document on Draw.io for you to copy.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>In the document above, you see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level.
 In case you have troubles with the document, here is a list of all the use cases it lists:</p>
 <ul>
 <li>Log into system</li>
@@ -516,8 +363,8 @@ In case you have troubles with the document, here is a list of all the use cases
 </ul>
 <p>As you can see, these use cases do not relate to the same system. Use some fantasy to think about the systems around them, most should be obvious.
 Your task is to assign these use cases to the level where they fit best. The exercise has the main intention to make you familiar with the use case levels, before we apply this kind of thinking on your semester project.</p>
-
-<ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
 <li>Make a <strong>copy</strong> of the diagram. <a href="https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing">Here is the direct link to it.</a></li>
 <li>Move the use cases up and down, and discuss them.
 <ul>
@@ -528,10 +375,10 @@ Your task is to assign these use cases to the level where they fit best. The exe
 <li>Once you are happy with the level of all use cases, <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMk1CS1gxMDhIVEtZS1pFMEJGSkRTWjBVNC4u">fill out the quiz (once per team.)</a></li>
 <li>See if you agree with the answers.</li>
 </ul>
-
-    </section>
-    <section class="content">
-<h1>Use Cases for Your Project</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Use Cases for Your Project</h1>
 <p>Turn your attention now to your semester project.</p>
 <p>For your project delivery, you should focus on <strong>three</strong> use cases <strong>at the sea-level</strong>. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail, but may be valuable when implementing the system.</p>
 <ul>
@@ -547,18 +394,17 @@ Your task is to assign these use cases to the level where they fit best. The exe
 <li>Also, &quot;three use cases at the sea-level&quot; is just meant as a guide.</li>
 </ul>
 <p>As an example, look at the use cases below I sketched for one of the many toilet paper ordering systems that were popular when students could choose their own systems. The focus is at the sea-level, where I added two use cases (a third one is yet unspecified). I added a few use cases at the fish, kite, and cloud level, and connected the use cases with some arrows to show their dependencies. Try to follow the same strategy for your use cases.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/toilet-paper.png" class="figure-img img-fluid rounded" alt="Example use cases on their respective levels for a toilet paper management system.">
-  <figcaption class="figure-caption">Example use cases on their respective levels for a toilet paper management system.</figcaption>
-</figure>
-<div class="delivery"><p>Of course, store the use case level document for your work on the semester project. <strong>Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)</strong></p>
-</div>
-    </section>
-    <section class="content">
-<h1>Questions and Answers</h1>
-
-<h3>Risks</h3>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Example use cases on their respective levels for a toilet paper management system.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="delivery box mt-3 mb-3"><p>Of course, store the use case level document for your work on the semester project. <strong>Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)</strong></p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Questions and Answers</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Risks</h3>
 <p>The Vision-and-Scope document lists <em>business</em> risks, which may be difficult for us to come up with. (These would be related to the operation and for instance financial aspects of the system.) Instead, think about the risks that can affect your specific situation of being able to delivering a the semester project with high quality.</p>
 <p><strong>For the risks, are you looking for the risks for planning the system, for the production of the system or our teams risks?</strong></p>
 <ul>
@@ -568,24 +414,24 @@ Your task is to assign these use cases to the level where they fit best. The exe
 <ul>
 <li>Focus on the most important ones that affect your development the most.</li>
 </ul>
-
-<h3>Objectives</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Objectives</h3>
 <p><strong>How business-oriented should the objectives be?</strong></p>
 <ul>
 <li>The should concern the domain of the users and related to what they can get out of the system, so they are oriented towards their &quot;business&quot;. (For some systems the term &quot;business&quot; is not a good one.)</li>
 </ul>
-
-<p><strong>Regarding business objectives: are we supposed to have numbers and percentages in our goals, or do we use more of a qualitative approach?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Regarding business objectives: are we supposed to have numbers and percentages in our goals, or do we use more of a qualitative approach?</strong></p>
 <ul>
 <li>The objectives should be specific. In some cases, we can measure some metrics and then state some expected improvements. In other cases, it is more natural to describe qualitative improvements.</li>
 </ul>
-
-<p><strong>How specific should the objectives be? Should we just use our imagination, or find some possible source?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>How specific should the objectives be? Should we just use our imagination, or find some possible source?</strong></p>
 <ul>
 <li>See the answer above. Making the objectives specific will help you to design functionality that implement the objectives. Therefore it may also be a good idea to target specific domains, so that the objectives can be more specific.</li>
 </ul>
-
-<p><strong>We have a question about the field objectives. Can we make assumptions on how the workplace is today, if we want to come up with some measurable values for improvement?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>We have a question about the field objectives. Can we make assumptions on how the workplace is today, if we want to come up with some measurable values for improvement?</strong></p>
 <p>Similar question:</p>
 <p><strong>How big assumptions can we make? Concerning background: can we assume there are problems with the prior system and that we have solutions for this?</strong></p>
 <p>And yet another similar one:</p>
@@ -593,38 +439,33 @@ Your task is to assign these use cases to the level where they fit best. The exe
 <ul>
 <li>Make assumptions that the users have another way of communicating and that this system is intended to make their communication better.</li>
 </ul>
-
-<h3>Stakeholders</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Stakeholders</h3>
 <p><strong>Are developers stakeholders?</strong></p>
 <ul>
 <li>No, developers are not stakeholders. Stakeholders are owners of the systems, the ones operating it, the different user groups and so on.</li>
 </ul>
-
-<h3>Scope and Functions</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Scope and Functions</h3>
 <p><strong>Is encryption/security something we should think about in this project?</strong></p>
 <ul>
 <li>For the system, security is of course a main issue. We need for instance to protect the confidentiality of the messages, maintain availability and protect the system from other misuse.
 Implementing the security correctly is a challenging task, and goes easily beyond what you can manage during this semester. For this reason, you can decide if you want to take security issues into account at all.</li>
 </ul>
-
-<p><strong>How much do we have to realize in reality? What should we implement?</strong></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>How much do we have to realize in reality? What should we implement?</strong></p>
 <ul>
 <li>You must implement a selected subset of the functions of the system, preferably so that you can make a good and interesting demo. Some features are more interesting for the coordination and interactions in the system, while others (like for instance a database with user names) may be less interesting and can be provided by a simulated component (like a hardcoded lookup table used instead of a data base.)</li>
 </ul>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -636,43 +477,46 @@ Implementing the security correctly is a challenging task, and goes easily beyon
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-4-req/teamwork-1.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-4-req/teamwork-1.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

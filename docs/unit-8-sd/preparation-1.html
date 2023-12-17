@@ -10,69 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -84,79 +34,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+figcaption {
+  color: #868279;
 }
 
-div.goals ul {
-  margin: 2em 0;
-}
+</style>
+  </head>
+  
+  <body>
 
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-
-
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -248,27 +135,16 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 8: Interactions</a></li>
 <li class="breadcrumb-item active" aria-current="page">Intuition on Sequence Diagrams</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>Intuition on Sequence Diagrams</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Intuition on Sequence Diagrams</h1>
 <p>An important difference to state machines is that sequence diagrams
 usually do not model complete behaviors, but only show selected
 scenarios that a developer wants to show. More on that later. Let's
@@ -276,12 +152,11 @@ first get some intuition on sequence diagrams.</p>
 <p>Sequence diagrams are an effective and intuitive way to describe the
 communication between several communicating partners. Have a look at the
 following dialogue:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/intuition.png" class="figure-img img-fluid rounded" alt="A sequence diagram showing a conversation.">
-  <figcaption class="figure-caption">A sequence diagram showing a conversation.</figcaption>
-</figure>
-<p>That's pretty much how sequence diagrams work, they show messages
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">A sequence diagram showing a conversation.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>That's pretty much how sequence diagrams work, they show messages
 between participants. Each participant in a sequence diagram is
 represented by a vertical line, called <em>lifeline</em>. The horizontal lines
 are messages. Time flows downwards, so that the messages make up a
@@ -304,11 +179,11 @@ objects or classes. They can also represent entities from reality, like
 human users. The diagram below shows how a human user who presses a
 button on a car key. The car key then sends a radio signal to the car,
 which in turn confirms to the user by blinking the lights.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/car-key.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The top of the lifeline shows a box that refers to what the participant
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The top of the lifeline shows a box that refers to what the participant
 represents in this sequence diagram. The label in this box consists of
 three parts: a role name, a selector, a class name.</p>
 <pre><code>role[selector]:Class
@@ -329,11 +204,11 @@ the sensors have different <strong>selectors</strong>, which here are strings th
 refer to different rooms. They show that there can be many sensors (role
 <em>sensor</em> of the same class (for instance <em>TempSensor</em>). Here, room names
 make sense. Alternatives are numbers.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/home-system.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>A lifeline requires at least a role name or a class name. The selector
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>A lifeline requires at least a role name or a class name. The selector
 is optional. Note that the class name is always preceded by a colon
 (&quot;:&quot;). Usually, role names are in lowercase letters, and class names are
 written in CamelCase.</p>
@@ -358,11 +233,11 @@ calls</strong>. They correspond to functions, methods or operations in
 programming languages.</p>
 </li>
 </ul>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/math-pow.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The figure above shows an example of a sequence diagram that shows the communication
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The figure above shows an example of a sequence diagram that shows the communication
 between a Python main program <em>main.py</em> that calls the <em>pow()</em> function
 of the <em>math</em> module. As you can see, this interaction is much more
 complicated than the one with the signals. An operation call consists of
@@ -381,19 +256,19 @@ of a diagram or just due to laziness. In this course, we don't do that
 for didactic reasons, so that we can clearly distinguish the modeling of
 signals from that of operation calls. If you use messages that represent
 operation calls, always draw the return messages.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/math-pow-3.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>There are also situations where method calls in programming languages
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There are also situations where method calls in programming languages
 are asynchronous. Then, the calling message is shown with the
 asynchronous message symbol (the one with the open arrow head). In this
 course, you will probably not use this and can forget about them.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/math-pow-2.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The diagram above shows another element that is sometimes used:
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The diagram above shows another element that is sometimes used:
 <strong>execution specifications</strong>. These elements illustrate that a
 participant is active. For instance, the main program is active, then
 calling <em>pow()</em>, which activates the math module until it returns. In
@@ -413,13 +288,13 @@ program creates an object of type <em>Socket</em> and then destroys it again.
 Note that creation and destruction can be used independently, and that
 they can be triggered by different participants in the interaction. A
 lifeline can also terminate itself without a destruction message.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/create-destroy.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-    </section>
-    <section class="content">
-<h1>What do Sequence Diagrams Represent?</h1>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>What do Sequence Diagrams Represent?</h1>
 <p>Let's take a step back. You have seen that sequence diagrams can
 represent a wide variety of interactions, and even include elements that
 are not software. Within software, we can coarsely distinguish two
@@ -469,10 +344,10 @@ possibilities is reduced.</p>
 <p>One way of making sequence diagrams more powerful and let a single
 diagram express more than one scenario is by using combined fragments,
 which we will look at in the next section.</p>
-
-    </section>
-    <section class="content">
-<h1>Combined Fragments</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Combined Fragments</h1>
 <p>Combined fragments allow you to express more behavioral details in
 compact ways. Some of them look very much like programming statements,
 which makes them intuitive to understand. However, it can also be a trap
@@ -483,11 +358,11 @@ to characterize interactions.</p>
 <p>The <strong>alt</strong> fragment specifies alternative scenarios. For instance, a
 component may ask for access, and the access right may be granted or
 not. We can show this in the sequence diagram <em>Access</em> below:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/alt.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The different compartments are alternatives to each other. There may be
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The different compartments are alternatives to each other. There may be
 any number of compartments, not only two. They are separated by a dashed
 line. To describe in more detail, when a specific alternative is chosen,
 the compartments can have an optional guard. This guard may refer to
@@ -505,11 +380,11 @@ interaction.</p>
 <p>The <strong>opt</strong> fragment contains behavior that can happen or not. It is
 similar to an alt fragment with two compartments, one of which is empty.
 Like with the alt fragment, the opt fragment can have a guard.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/opt-1.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>loop</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>loop</h2>
 <p>With the <strong>loop</strong> fragment, you can express that a behavior is executed
 repeatedly. Below, you see the specification of an alarm clock with a
 snooze function. Within the loop fragment, you see an alt fragment, with
@@ -517,21 +392,21 @@ different branches of the user either snoozing or stopping the alarm. In
 case of stopping the alarm, there is also a break fragment. This signals
 the escape out of the loop. You may also leave unspecified how often the
 loop is executed.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/loop-1.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>assert and neg</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>assert and neg</h2>
 <p>In some cases, you want to assert that a certain interaction must
 exactly occur as specified. For that, you can place it into an
 <strong>assert</strong> fragment. The other way round, you may want to specify
 <em>negative</em> behavior, i.e., behavior that must not happen. Such behavior
 can be places in a <strong>neg</strong> fragment.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/assert-neg.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>ref</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>ref</h2>
 <p>With a <strong>ref</strong> fragment, you can refer from one sequence diagram to
 another one. This makes diagrams easier to handle. It also allows to
 reuse a sequence diagram and apply it at several places.</p>
@@ -541,26 +416,25 @@ sequence diagram itself and by that introduces some recursion. (The blue
 arrow is just an illustration.) This is probably not a good example in
 general, but it should work. Note that the outermost frame, labeled
 &quot;<strong>sd</strong> alarm&quot; encapsulates the entire sequence diagram.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ref-1.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Time Constraints</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Time Constraints</h2>
 <p>In some cases, you want to add time constraints to a specification, to
 show <em>when</em> an interaction occurs, or how long specific parts of it may
 or should take. Have a look at the example below:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/timing.png" class="figure-img img-fluid rounded" alt="From the UML@Class book.">
-  <figcaption class="figure-caption">From the UML@Class book.</figcaption>
-</figure>
-<p>It shows that the newsletter is sent at 12:00. Five time units later,
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">From the UML@Class book.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>It shows that the newsletter is sent at 12:00. Five time units later,
 the student receives the confirmation. The diagram also specifies that
 the signal <em>inform</em> must be received within two hours.</p>
-
-    </section>
-    <section class="content">
-<h1>Event Orderings and Semantics</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Event Orderings and Semantics</h1>
 <p>Let's have a closer look at the semantics of sequence diagrams, that is,
 what they mean in detail. We do this by looking at the detailed events
 that happen as part of an interaction. Understanding in which order they
@@ -582,11 +456,11 @@ only sequence of events that is possible is <code>&lt;!A, ?A&gt;</code>.</p>
 <strong>Events along the <em>same</em> lifeline are in a total order.</strong> Below, this
 means that lifeline Y receives signal A before it receives B,
 <code>&lt; ?A, ?B &gt;</code>.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ordering-lifeline.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>Now comes the part that may be less intuitive: Events on <em>different</em>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Now comes the part that may be less intuitive: Events on <em>different</em>
 lifelines are <em>not ordered</em>, even though they have distinct
 y-coordinates. In the diagram below, the reception of A and the
 reception of B are clearly at different y-coordinates. <em>Visually</em>, A
@@ -594,12 +468,11 @@ happens before B. But this is <em>not</em> an order that the diagram implies.
 Because these events are not related with each other, the diagram does
 not tell if any of them happens before each other, despite it may look
 like it.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-11.png" class="figure-img img-fluid rounded" alt="Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.">
-  <figcaption class="figure-caption">Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</figcaption>
-</figure>
-<p>For some, this non-ordering of events on different lifelines may not be
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Despite the position on their respective lifelines, events ?A and ?B are not in any order in this diagram.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>For some, this non-ordering of events on different lifelines may not be
 intuitive at the first glance. The following illustration may help you
 to understand it: Imagine that the events along a lifeline are connected
 to it by rings. The rings can move up and down along the lifeline, and
@@ -609,28 +482,63 @@ Therefore, the diagrams below all look different, but imply the same
 ordering among the events, irrespective of their absolute position on
 the lifelines. What counts is that <code>A</code> is received before <code>B</code>, and this
 does not change in any of the diagrams.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-12.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The slope of messages is hence only a means of illustration. A
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The slope of messages is hence only a means of illustration. A
 recommendation is to use horizontal messages where possible, and
 messages with a downwards slope when you want to show that messages
 cross each other. (That comes later.) Avoid messages with an upwards
 slope.</p>
 <p>The example below shows a sequence diagram with two messages, and four
 distinct events:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-1.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>Intuitively, we already know one sequence in which these events can
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Intuitively, we already know one sequence in which these events can
 happen, that is, we know that <code>&lt;!A,?A,!B,?B&gt;</code> is one valid
 trace. However, it is not the only possible trace. To find the other
 traces, we may start by writing down all possible different combinations
 we can get from these events. With 4 events, we end up with 24 different
 traces:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="source-code-frame mt-3 mb-3">
+<pre class="d-none" id="id5d8253">< !A,?A,!B,?B >,
+< !A,?A,?B,!B >,
+< !A,!B,?A,?B >,
+< !A,!B,?B,?A >,
+< !A,?B,?A,!B >,
+< !A,?B,!B,?A >
 
+< ?A,!A,!B,?B >,
+< ?A,!A,?B,!B >,
+< ?A,!B,!A,?B >,
+< ?A,!B,?B,!A >,
+< ?A,?B,!A,!B >,
+< ?A,?B,!B,!A >
+
+< !B,!A,?A,?B >,
+< !B,!A,?B,?A >,
+< !B,?A,!A,?B >,
+< !B,?A,?B,!A >,
+< !B,?B,!A,?A >,
+< !B,?B,?A,!A >
+
+< ?B,!A,?A,!B >,
+< ?B,!A,!B,?A >,
+< ?B,?A,!A,!B >,
+< ?B,?A,!B,!A >,
+< ?B,!B,!A,?A >,
+< ?B,!B,?A,!A >
+</pre>
+<button type="button" class="copy-button" data-clipboard-target="#id5d8253">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+  		<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+  		<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+	</svg>
+</button>
 <pre><code>&lt; !A,?A,!B,?B &gt;,
 &lt; !A,?A,?B,!B &gt;,
 &lt; !A,!B,?A,?B &gt;,
@@ -658,7 +566,8 @@ traces:</p>
 &lt; ?B,?A,!B,!A &gt;,
 &lt; ?B,!B,!A,?A &gt;,
 &lt; ?B,!B,?A,!A &gt;</code></pre>
-<p>Because of the ordering rules from above, not all of these traces are
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Because of the ordering rules from above, not all of these traces are
 possible. The sequence diagram <em>Alpha</em> from above relates the four
 events with each other.</p>
 <ul>
@@ -680,11 +589,11 @@ ordering rules, and strike them out?</p>
 <h2>Co-Regions</h2>
 <p>The diagram <em>Beta</em> below only covers the scenario that <code>A</code> is received
 by <code>Y</code> before <code>B</code>.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-2.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p><strong>Exercise:</strong> Write down all the possible traces that the sequence
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Exercise:</strong> Write down all the possible traces that the sequence
 diagram <em>Beta</em> allows.</p>
 <p>In reality, it will be hard or impossible to ensure that this order is
 maintained, especially since the diagram allows to send <code>B</code> first. For a
@@ -694,23 +603,23 @@ handle the arrival of messages <code>A</code> or <code>B</code> in <em>any</em> 
 can use a so-called <em>co-region</em>. These are the brackets placed on the
 lifeline <em>Y</em>. Within the brackets of a co-region, events on the lifeline
 are not ordered anymore, i.e., they can happen in any order.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-3.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Exercise:</strong> Which are the <em>additional</em> traces that are possible, if
 the events within the co-region (<code>?A</code> and <code>?B</code>) can happen in any order?</p>
 <p><strong>Exercise:</strong> Is there a way to handle the situation also in another
 way? For instance, can you, just by adding a message (and without a
 co-region), reduce the number of traces so that there is only one
 possible trace left for diagram <em>Beta-C</em>?</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-3-2.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-    </section>
-    <section class="content">
-<h1>Implied Scenarios</h1>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Implied Scenarios</h1>
 <p>With the sequence diagrams, we describe scenarios, that means, specific
 and selected examples of the system interactions. Some diagrams cover
 several scenarios. In most cases, a specification (a set of diagrams)
@@ -737,11 +646,11 @@ the application, and the application itself needs to handle the
 situation. The scenario <em>Lossy_1</em> for instance also implies scenario
 <em>Lossy_2</em>, i.e., that the message is not received. The loss of a
 message is written with a big cross.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/lossy-12.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>So, whenever there is a diagram in which a message is sent, we should
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>So, whenever there is a diagram in which a message is sent, we should
 check what would happen if this message got lost. Here are some possible
 alternatives:</p>
 <ul>
@@ -762,22 +671,22 @@ the expiration of a timer. We show the timer here as a message of
 <code>X</code> to itself.</p>
 </li>
 </ul>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/lossy-3.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Non-Causal Orderings</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Non-Causal Orderings</h2>
 <p>The diagram below shows an interaction between parts in a movie ticket
 system. At the end of the purchase process, the terminal sends a <em>pay</em>
 message to the payment component. The payment component then forwards
 <em>pay_ok</em> to the ticket printer. The terminal sends the movie selection
 to the printer. The printer then prints the tickets. We ignore the case
 that the payment fails.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-6.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>This specification has a trouble spot. The diagram indicates that the
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>This specification has a trouble spot. The diagram indicates that the
 <em>movie</em> message is received after the <em>pay_ok</em> message. In a real
 system, we often have little control on the delay of message transfer.
 The payment process within <em>payment</em> may also take different amounts of
@@ -798,20 +707,20 @@ anything else.</p>
 context, type of system and the subsequent development process and
 implementation, the non-causal ordering of the events may be a source of
 trouble.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-7.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Mixed Initiatives</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Mixed Initiatives</h2>
 <p>Consider the following alarm system. A sensor may detect an alarm and
 send message <em>alarm</em> to a subscriber. The subscriber may then confirm
 the alarm via message <em>confirm</em>. The alarm can also be stopped by the
 sensor via <em>stop</em>. This is shown in the two diagrams below.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-8.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>The two different scenarios seem pretty straight-forward. However, these
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The two different scenarios seem pretty straight-forward. However, these
 two scenarios imply a third one: What should happen, if the alarm is
 stopped by the sensor, but the subscriber confirms it, right before it
 receives the stop message? We call this scenario a <em>mixed initiative</em>,
@@ -819,24 +728,24 @@ since it involves a situation where several participants may take
 initiative and send a message. This situation may seem like a rare
 coincidence, but it is only a matter of time and you will observe this
 situation. We can illustrate it in another diagram:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-9.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>So what to do about this? If you only provide the sequence diagrams
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>So what to do about this? If you only provide the sequence diagrams
 above, it is not clear how an implementation should respond in this
 situation, i.e., when an alarm is both confirmed and canceled. In this
 case, you need to find out what the application should do. Depending on
 what kind of alarm it is, the stopping may overrule the confirmation, or
 vice versa. The diagram <em>Confirm and Stop</em> shows one way to address the
 mixed initiative, using a simple comment.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/ex-91.png" class="figure-img img-fluid rounded" alt="">
-</figure>
-    </section>
-    <section class="content">
-<h1>Epilogue: The Value of Sequence Diagrams</h1>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Epilogue: The Value of Sequence Diagrams</h1>
 <p>You may ask yourself: <em>Why should I use sequence diagrams?</em> Can't you
 just immediately build a state machine or write code for your system? Of
 course, you could. But then again, would you build a house before
@@ -867,20 +776,15 @@ interactions changes your view on the system, leads to good design
 choices and prevents errors in the first place. A single relevant
 sequence diagram, sketched on a paper that uncovers problems in your
 system design early, can save millions in whatever currency.</p>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -892,39 +796,45 @@ system design early, can save millions in whatever currency.</p>
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-8-sd/preparation-1.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-8-sd/preparation-1.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

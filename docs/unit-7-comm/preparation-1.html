@@ -10,93 +10,19 @@
   <title>TTM4115</title>
   <link rel="canonical" href="https://edu.iik.ntnu.no">
   <!-- Bootstrap core CSS -->
-  <link href="../assets/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../assets/anchor.js"></script>
-  <script src="../assets/script-aside.js"></script>
-  <style type="text/css">
-    a.ntnu-button {
-    font: 600 14px "Source Sans Pro", Georgia, serif;
-    background: #fff;
-    color: #00509e;
-    border: 1px solid #00509e;
-    border-color: #00509e !important;
-    border-style: solid !important;
-    border-radius: 10rem;
-    display: inline-block;
-    padding: 5px 15px;
-    height: auto;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-align: center;
-    vertical-align: top;
-    cursor: pointer;
-    text-decoration: none
-}
-
-a.ntnu-button:hover {
-    background: #00509e;
-    color: #fff;
-    text-decoration: none
-}
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-div.check ul,
-div.check ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-div.check ul {
-  margin: 2em 0;
-}
-
-div.check ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.check ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size:20;
-  float: left;
-  margin-left: -1.5em;
-  color: #1481b8;
-}
-div.delivery p {
-  padding: 10px;
-  background-color: #ffd9ab;
-  font-family: "Source Sans Pro", Georgia, serif;
-  border-radius: 5px;
-  border-left: 6px solid #fc8c03; 
-}
-  
-div.delivery p::before {
-  content: 'Delivery: ';
-  font-family: "Source Sans Pro", Georgia, serif;
-  color: #fc8c03;
-  display: inline;
-  font-weight: bold;
-}
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === figure === */
 div.figure {
   padding: 20px 0 20px 0;
   width: 100%;
@@ -108,178 +34,16 @@ div.figurefullwitdth {
   margin-right: -33px;
   width: 100%;
 }
-div.goals ul,
-div.goals ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-div.goals ul {
-  margin: 2em 0;
-}
-
-div.goals ul li {
-  margin: 1em;
-  margin-left: 3em;
-}
-
-div.goals ul li:before {
-  content: '\f26a';
-  font-family: bootstrap-icons !important;
-  font-size: 20;
-  float: left;
-  margin-left: -1.5em;
-  color: #00509e;
-}
-.w3collapsible {
-  background-color: #f0e9db;
+figcaption {
   color: #868279;
-  padding: 8px 18px 8px 8px;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  border-radius: 3px 3px 0 0;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 
-.w3active,
-.w3collapsible:hover {
-  background-color: #f0e9cb;
-}
+</style>
+  </head>
+  
+  <body>
 
-.w3content {
-  filter: blur(3px);
-  padding: 18px;
-  display: block;
-  overflow: hidden;
-  background-color: #f3f3f3;
-  margin-bottom: 15px;
-}
-
-
-button:hover {
-  background-color: #EFF7FF;
-}
-div.qna .accordion-button:not(.collapsed) {
-  background-color: #EFF7FF;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-  color: #00509e;
-}
-
-div.qna .accordion-button:not(.collapsed)::after {
-  color: #00509e;
-}
-.rubric p {
-	margin: 0px
-}
-
-.rubric th {
-	text-align: center;
-	padding: 6px;
-}
-
-.rubric td {
-	vertical-align: top;
-	font-size: 12px;
-	padding: 6px;
-}
-
-.rubric th {
-	font-size: 12px;
-	vertical-align: top;
-}
-
-.rubric td:nth-child(2),
-.rubric th:nth-child(2) {
-	background-color: #D0E8DC;
-	width: 22%
-}
-
-.rubric td:nth-child(3),
-.rubric th:nth-child(3) {
-	background-color: #FCFDE3;
-	width: 22%
-}
-
-.rubric td:nth-child(4),
-.rubric th:nth-child(4) {
-	background-color: #F8D9C2;
-	width: 22%
-}
-
-.rubric td:nth-child(5),
-.rubric th:nth-child(5) {
-	background-color: #EBBCB9;
-	width: 22%
-}
-
-.rubric tfoot td {
-	text-align: right;
-	border-bottom: none;
-	padding: 1px;
-}
-
-.rubric tfoot a {
-	font-size: 12px;
-	font-style: italic;
-	color: gray
-}
-
-div.task p {
-padding: 10px;
-background-color: #D6E5F0;
-border-radius: 5px;
-border-left: 6px solid #1481b8 
-}
-
-div.task p::before { 
-content: "Task: ";
-font-weight: bold;
-display: inline;
-}
-div.tip p {
-  padding: 10px;
-  background-color: #d9eaf2;
-  border-radius: 5px;
-  border-left: 6px solid #1481b8
-}
-
-table.weekplan {
-  width: 100%;
-  table-layout: fixed;
-}
-
-table.weekplan td {
-  background-color: #1481b8;
-  color: white;
-}
-
-table.weekplan td, table.weekplan th {
-  text-align: center;
-}
-
-table.weekplan td:empty {
-  background-color: white;
-}
-
-table.weekplan td:first-child {
-  background-color: white;
-  color: grey;
-}
-
-table.weekplan a {
-  font-weight:bold;
-  color: white;
-  text-decoration: underline;
-}
-
-  </style>
-</head>
-
-<body>
   
   
 
@@ -371,27 +135,16 @@ table.weekplan a {
 
 
 
-
-
-
-  <main class="container">
-
-    <div class="row g-5 justify-content-md-center pb-5">
-
-
-
-      <div class="col-md-9" style="margin-top: 6rem;">
-        <div class="page">
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <main class="container container-max-width">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
 <li class="breadcrumb-item"><a href="index.html">Unit 7: Communication</a></li>
 <li class="breadcrumb-item active" aria-current="page">Communication Protocols</li>
 </ol>
 </nav>
-    </section>
-    <section class="content">
-<h1>Communication Protocols</h1>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Communication Protocols</h1>
 <p>Communication protocols easily fill a course on their own, because
 there are so many of them and because they rely on a lot of mechanisms
 that are worth studying. You have probably already learned about
@@ -399,12 +152,11 @@ protocols like TCP and HTTP. In the following, we will have a look at
 protocols from the viewpoint of an application. From this perspective,
 we are concerned with the entire system, the user requirements and also
 the development process to build that system.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/wifi_vs_cellular.png" class="figure-img img-fluid rounded" alt="Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/">
-  <figcaption class="figure-caption">Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</figcaption>
-</figure>
-<p>Communication between components has a great influence on the system,
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Communication between components has a great influence on the system,
 its performance, its behavior, its robustness and its security, to name
 a few. Communication is probably most brittle part of our logic, since
 it depends on many factors that we don't have control over. For
@@ -430,11 +182,11 @@ take into account that communication fails, may have to re-send
 messages, or tell the user that something is wrong. So even good
 middleware, libraries of framework don't free you from the problems of
 communication; they may however, make life much easier.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/communication-errors.jpg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>Let's have a look at three very different applications:</p>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Let's have a look at three very different applications:</p>
 <ul>
 <li>
 <p>A wireless <strong>temperature</strong> sensor sends the temperature every ten
@@ -482,10 +234,10 @@ communication to fail. The body weight scale offers some compensation
 that seems reasonable. The home automation system escalates the failure
 and involves the user to make decisions, simply because the command is
 important to transmit.</p>
-
-    </section>
-    <section class="content">
-<h1>Basic Terms and Mechanisms</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Basic Terms and Mechanisms</h1>
 <p>Communication protocols determine rules that lets two or more entities
 communicate with each other. They describe, for instance, how data is
 serialized, how data is encrypted, or how errors are handled. In the
@@ -548,10 +300,10 @@ connectivity between networks using IP packets. TCP uses this
 functionality and offers guaranteed delivery over the lossy IP channels
 using a sliding window mechanism. HTTP then uses TCP to handle requests
 that are ideal for websites, and was later also used for REST-ful APIs.</p>
-
-    </section>
-    <section class="content">
-<h1>Communication Topologies {#topologies-architectures}</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Communication Topologies {#topologies-architectures}</h1>
 <p>With topologies, we describe the patterns of the nodes and summarize
 some of their behavior. The following are the most important topologies:</p>
 <p><strong>Client-server:</strong> The client knows the address of the server. The server gets to know
@@ -576,34 +328,34 @@ coordination. Examples are peer-to-peer networks for sharing data,
 or the protocol for the interactions used in blockchain protocols
 and currencies like Bitcoin.</p>
 <p><a class="arrow" href="https://en.m.wikipedia.org/wiki/Peer-to-peer">Peer to Peer on Wikipedia</a></p>
-
-<p><strong>Broker:</strong> A message broker is a server that distributes messages. The message
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><strong>Broker:</strong> A message broker is a server that distributes messages. The message
 broker usually does not care about the specific application or the
 content of the message. Clients communicate with the server and send
 messages to the broker, which then get distributed to those clients
 that are interested in the events.</p>
 <p><a class="arrow" href="https://en.m.wikipedia.org/wiki/Broker\_Pattern">Broker on Wikipedia</a></p>
-
-    </section>
-    <section class="content">
-<h1>Message Exchange Patterns</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Message Exchange Patterns</h1>
 <p>Communication happens by sending messages. Communication patterns
 describe in which sequence and directions messages are sent to
 communicate. Many protocols use similar message exchange patterns.</p>
 <h2>Pattern: Single Message {#single-message}</h2>
 <p>The simplest pattern is a single message, sent from the sender to the
 receiver. The message can contain data or be empty.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/single-message.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>Communication channels can be disturbed or disrupted, and messages can
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Communication channels can be disturbed or disrupted, and messages can
 get lost.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/single-message-lost.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Pattern: Request-Response {#request-response}</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Pattern: Request-Response {#request-response}</h2>
 <p>The requestor sends a message, and the responder sends a response
 message back to the requestor. The response can contain data or be
 empty. The answer message or response is also called <em>acknowledgement.</em>
@@ -618,46 +370,45 @@ received. In such cases, the request-response pattern is often combined
 with a timer on the requestor side. If the requestor does not receive a
 response within a given time, it sends the request again, until it
 receives the response.</p>
-
-<span name="e4c801"></span><aside name="e4c801"><p>Note that we are now using the words synchronous and asynchronous
-for the communication pattern, not to the specific modeling element
-of a synchronous or asynchronous messages in sequence diagrams. In
-both examples, we use synchronous messages.</p>
-</aside>
-<p>In a <em>synchronous</em> communication, the sender and the receiver are
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>In a <em>synchronous</em> communication, the sender and the receiver are
 directly connected, in the sense that the sender is not doing anything
 else while the communication is going on. A synchronous
 request-response, for instance, looks as follows:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"><p>Note that we are now using the words synchronous and asynchronous
+for the communication pattern, not to the specific modeling element
+of a synchronous or asynchronous messages in sequence diagrams. In
+both examples, we use synchronous messages.</p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/sync.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>In contrast, <em>asynchronous</em> communication means that the sender and the
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>In contrast, <em>asynchronous</em> communication means that the sender and the
 receiver are decoupled. The sender can do other things while waiting for
 a response, or it may not wait for a response at all.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/async.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Pattern: Observe {#observe}</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Pattern: Observe {#observe}</h2>
 <p>An observer can tell a server that it would like to get informed about
 events. Whenever the event happens, the server notifies the observer
 with a message.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/observer.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Pattern: Publish-Subscribe {#publish-subscribe}</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Pattern: Publish-Subscribe {#publish-subscribe}</h2>
 <p>The publish-subscribe pattern is similar to the observe pattern, but
 involves three roles: a publisher, a message broker, and a subscriber.
 The broker sits in between the publisher and subscriber. It has the
 effect that publisher and subscriber do not have a direct connection
 with each other, each of them is only connected to the broker.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/publish-subscribe.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<h2>Pattern: Exclusive Pair {#exclusive-pair}</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Pattern: Exclusive Pair {#exclusive-pair}</h2>
 <p>This is the most complicated and also most general pattern. Here the two
 communication partners have a specific sequence of messages to get a
 specific job done, which depends on a specific application. The two
@@ -681,10 +432,10 @@ invisible and it appears as if the connection simply works. TCP achieves
 this by the rules according to which it sends the different messages in
 both directions. So in this sense, two components talking TCP are an
 exclusive pair that together execute a specific protocol.</p>
-
-    </section>
-    <section class="content">
-<h1>HTTP - Hypertext Transfer Protocol</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>HTTP - Hypertext Transfer Protocol</h1>
 <p>This is only a very brief description of HTTP to relate it to the
 previously described communication topologies and message patterns. You
 have probably already heard about HTTP in other courses. Here, we look
@@ -723,18 +474,16 @@ builds upon TCP, but offers full-duplex. With WebSockets, you can for
 instance build relatively simple web-applications running in the browser
 that support fine-grained, bi-directional interactions like chat or
 games.</p>
-
-    </section>
-    <section class="content">
-<h1>MQTT</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>MQTT</h1>
 <p>MQTT is a protocol that is based on the <strong>broker</strong> topology, and that
 implements a <strong>publish-subscribe</strong> message pattern. MQTT was invented in
 1999 by Andy Stanford-Clark from IBM and Arlen Nipper from Arcom. Today,
 MQTT is an Oasis standard.</p>
-
-<span name="b32115"></span><aside name="b32115"><p>Read the article <a href="https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920">Building Facebook Messenger</a></p>
-</aside>
-<p>MQTT is often used in situations where events should be sent from many
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>MQTT is often used in situations where events should be sent from many
 sensors and broadcast to several applications. IBM and others for
 instance use MQTT so that IoT devices can send updates into their cloud.
 When Facebook introduced their Messenger application as a standalone
@@ -746,8 +495,9 @@ topology is complementary to those of HTTP. When you have understood
 MQTT and HTTP, many other application-level protocols will be easy to
 understand, too. There are also some more practical reasons why we
 recommend you to use MQTT for the semester project:</p>
-
-<ul>
+</div><aside class="col-md-4 chunk ps-2"><p>Read the article <a href="https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920">Building Facebook Messenger</a></p>
+</aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
 <li>
 <p>MQTT is simple to debug, since more than one entity can subscribe to
 the same topic. This means, you can work on the communication
@@ -774,11 +524,11 @@ your router at home.</p>
 <strong>Broker</strong>, which then forwards them to a set of interested
 <strong>Subscribers</strong>.</p>
 <p>A typical interaction looks as follows:</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-1.svg" class="figure-img img-fluid rounded" alt="">
-</figure>
-<p>There can be any number of subscribers and any number of publishers in a
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There can be any number of subscribers and any number of publishers in a
 system. Because of the publish-subscribe pattern, the subscribers do not
 have to know about the publishers, and the publishers do not have to
 know of the subscribers. They only have to know the address of the MQTT
@@ -793,18 +543,46 @@ publishers send. Subscribers therefore only subscribe to specific
 topics, which depend on the application. The topics are organized in a
 hierarchy, separated by a dash (&quot;/&quot;). The following is an example for
 topics that an application for home automation can use:</p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="source-code-frame mt-3 mb-3">
+<pre class="d-none" id="id354575">house/garage/lights/l1
+house/garage/lights/l2
+house/garage/sensors/pi1
+house/garage/doors/d1
+</pre>
+<button type="button" class="copy-button" data-clipboard-target="#id354575">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+  		<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+  		<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+	</svg>
+</button>
 <pre><code>house/garage/lights/l1
 house/garage/lights/l2
 house/garage/sensors/pi1
 house/garage/doors/d1</code></pre>
-<p>The light <em>l1</em> for instance subscribes to the topic
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The light <em>l1</em> for instance subscribes to the topic
 <code>house/garage/lights/l1</code> so that it can receive messages that switch it
 on or off. The passive infrared sensor <em>pi1</em> publishes messages to the
 topic <code>house/garage/sensors/pi1</code> every time it detects a movement. An
 application to switch on the lights whenever a movement is detected can
 then work like this: (In pseudo code)</p>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="source-code-frame mt-3 mb-3">
+<pre class="d-none" id="id356bdb">subscribe to house/garage/sensors/pi1
+whenever an MQTT messages arrives at house/garage/sensors/pi1:
+    send a message 
+        to house/garage/lights/l1 with payload "on"@
+    
+    after some time, send a message
+        to house/garage/lights/l1 with payload "off"
+</pre>
+<button type="button" class="copy-button" data-clipboard-target="#id356bdb">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+  		<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+  		<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+	</svg>
+</button>
 <pre><code>subscribe to house/garage/sensors/pi1
 whenever an MQTT messages arrives at house/garage/sensors/pi1:
     send a message 
@@ -812,7 +590,8 @@ whenever an MQTT messages arrives at house/garage/sensors/pi1:
     
     after some time, send a message
         to house/garage/lights/l1 with payload &quot;off&quot;</code></pre>
-<p>Topics can include wildcards, which make it possible for a subscriber to
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Topics can include wildcards, which make it possible for a subscriber to
 subscribe to several topics with a single pattern:</p>
 <ul>
 <li>
@@ -862,12 +641,11 @@ too quickly, and the sensor should preserve its battery. When we start
 an application that needs the temperature in a room, it would have to
 wait until the sensor sends its temperature, which can be as long as
 about 10 minutes in the worst case.</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-retained-1.svg" class="figure-img img-fluid rounded" alt="Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.">
-  <figcaption class="figure-caption">Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</figcaption>
-</figure>
-<p>Instead, the sensor can mark its temperature message as a <strong>retained</strong>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Scenario without retained message: The subscriber misses the last update and has to wait until the next update is published.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Instead, the sensor can mark its temperature message as a <strong>retained</strong>
 message. The broker will then store a copy of this message until it is
 replaced with a new message sent to the same topic. Whenever a new
 subscriber subscribes to the topic, it will immediately receive the
@@ -875,12 +653,11 @@ retained message from the broker. In our example this means that the
 application does not have to wait until the sensor wakes up and sends
 again, but that it immediately receives the last temperature reading.
 (We show the reainted message with a trailing <em>R</em>.)</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-retained-2.svg" class="figure-img img-fluid rounded" alt="Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.">
-  <figcaption class="figure-caption">Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</figcaption>
-</figure>
-<h2>Last Wills</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">Scenario with retained message: The subscriber misses the last update, but receives the retained message from the broker.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Last Wills</h2>
 <p>The MQTT broker monitors the connection to all clients, and detects once
 they do not respond anymore. Any subscriber, however, by default does
 not get notified once another client disappears. For instance, our
@@ -921,20 +698,17 @@ are necessary. Therefore, an application should always choose the lowest
 QoS level it can work with. Below you see three diagrams that show how
 many control packages are involved to just send a single MQTT message
 with the different QoS levels. (The grey message arrows that start end end at the same lifeline illustrate only local operations, not communication.)</p>
-
-<figure class="figure">
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-qos-0.svg" class="figure-img img-fluid rounded" alt="To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.">
-  <figcaption class="figure-caption">To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</figcaption>
-</figure>
-<figure class="figure">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">To send one MQTT message with QoS 0, only two messages on the lower layer are necessary.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-qos-1.svg" class="figure-img img-fluid rounded" alt="To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.">
-  <figcaption class="figure-caption">To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</figcaption>
-</figure>
-<figure class="figure">
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">To send one MQTT message with QoS 1, at least three messages on the lower layer are necessary.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/mqtt-qos-2.svg" class="figure-img img-fluid rounded" alt="To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.">
-  <figcaption class="figure-caption">To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</figcaption>
-</figure>
-<h2>Sequence Diagrams on Many Levels</h2>
+</figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">To send one MQTT message with QoS 2, at least five messages on the lower layer are necessary.</figcaption></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Sequence Diagrams on Many Levels</h2>
 <p>Maybe you wondered how some of the sequence diagrams we have seen on the
 last pages relate to those that you develop for a specific application.
 Assume the application uses MQTT. What should you show then in a
@@ -963,10 +737,10 @@ directly send messages to each other, so that the application logic
 gets easier visible.</p>
 </li>
 </ul>
-
-    </section>
-    <section class="content">
-<h1>Solution</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-2 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Solution</h1>
 <pre><code>   **Topic**                **Receive?**
 </code></pre>
 <hr />
@@ -985,20 +759,15 @@ gets easier visible.</p>
 13   <code>a/b/c/d</code>                yes
 14   <code>b/+/c/d</code>                no!
 15   <code>a/b/c/d/+</code>              no!</p>
-
-    </section>
-</div>
-      </div>
-
-
-
-
-    </div>
-
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
   </main>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7d705a">
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
@@ -1010,43 +779,45 @@ gets easier visible.</p>
         <div class="bg-light ms-auto border-0"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/falkr/ttm4115/tree/master/pages/unit-7-comm/preparation-1.md">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-              </svg> Edit this page
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-7-comm/preparation-1.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script>
     anchors.add('h1').add('h2').add('h3');
     anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </script>
+</script>
 </body>
 
 </html>

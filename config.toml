@@ -2,4 +2,4 @@ input = "pages"
 output = "docs"
 
 [replacements]
-"year" = "2023"
+"year" = "2024"

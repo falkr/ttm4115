@@ -5,13 +5,12 @@
 We often think that the programming is the difficult part,
 but most of the important decisions that affect the system's quality are done long before the first line of code is written, or, at least, these decisions *should be done before*. 
 In this course, you will get some of the tools and experiences that will help you to become a better engineer and adopt a more realistic approach to systems development in team. 
-
 It's also fun, but we leave it up to you to decide.
 
 Welcome to the iteration in spring {{:year:}}!
 
 
-## Startup for 2023
+## Startup for {{:year:}}
 
 ### Step 1: Onboarding
 
@@ -32,7 +31,7 @@ Read and work through the [preparation material for setting up the course](unit-
 
 ### Step 3: First Class Time
 
-Our first class time will be on **Monday, January 9th 2022**, 14:15 in [GL-HB 326](https://link.mazemap.com/YoKHciaS). 
+Our first class time will be on **Monday, Jan. 15th 2024 at 12:15**, 12:15 in [Landmålderhallen](https://link.mazemap.com/oOca9g4M). 
 The regular [schedule is here](schedule.html).
 
 

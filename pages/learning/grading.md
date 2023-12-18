@@ -13,6 +13,10 @@ The portfolio contains the following elements:
 
 * The system specification in its final version, which students create together in designated development teams. These deliveries are handed in once per team on behalf of all team members.
 
+* Code for the implemented system
+
+* A recorded screencast that demonstrates the implemented system
+
 * Each student provides feedback to earlier versions of system specification of other teams. This feedback, as given to other teams, is part of the portfolio.
 
 * Each student works individually on a reflective essay, which is part of the portfolio.

@@ -1,6 +1,10 @@
-╭─────────────╮
-│ ☘ Finished. │
-╰─────────────╯
+╭──────────────────────────────╮
+│ 🍌 Finished with 2 warnings. │
+╰──────────────────────────────╯
+├── Image does not exist.
+│   └── /home/runner/work/ttm4115/ttm4115/pages/supermark/hints.md 82
+├── Hint should have a post-yaml section with the content.
+│   └── /home/runner/work/ttm4115/ttm4115/pages/supermark/hints.md 82
 ├── Found configuration file.
 │   └── config.toml
 ├── Found extension NavExtension
@@ -47,78 +51,109 @@
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-1-setup/teamwork-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-1-setup/teamwork-2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-1-setup/index.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-1-setup/teamwork-3.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-4-req/preparation-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-4-req/preparation-2.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/teamwork-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-4-req/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-4-req/teamwork-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/teamwork-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/teamwork-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-4-req/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-4.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/preparation-3.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/preparation-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/teamwork-3.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/exercise-carlock.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-3.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/teamwork-3.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/schedule.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-4.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/teamwork-2.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/preparation-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/exercise-headphones.ht
     │   ml
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-4.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-3.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/teamwork-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-7-comm/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/schedule.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/teamwork-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-5.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/hints-data.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-5-stmpy/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-5.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-5-stmpy/teamwork-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/preparation-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-5-stmpy/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/teamwork-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/extensions.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/checklistbox.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/quote.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-5-stmpy/preparation-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/usage.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/tree.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/qna.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/check.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/button.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/rat.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/tipsbox.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/figure.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/hints.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/development.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/weekplan.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/goals.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/installation.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/lines.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/nav.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/video.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/quiz.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/abstract.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/table.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/double.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/teamwork-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/link.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/preparation-1.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/preparation-3.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-6-agile/teamwork-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-8-sd/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/rubrics.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/coursetable.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/hints.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/teamwork-1.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/preparation-2.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/steps.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/unit-modeling-diagr
     │   am-tips.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-notebooks.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/preparation-2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-base.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-3-stm/preparation-2.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-stmpy.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/index.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-5-stmpy/preparation-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/preparation-1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-stmpy.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/card.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-notebooks.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/preparation-2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/writing.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-i3.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/tools/index.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-python.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-i2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-project.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-python.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-project-2021.h
     │   tml
-    ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-format.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/unit-2-models/preparation-2.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-i1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-format.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-t3.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-t1.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/tbl.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/learning/teamwork.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/learning/reflection.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/tbl.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/grading.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/supermark/boxes.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/index.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/index.html
-    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/feedback.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/project/deliveries-t2.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/index.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/learning/goals.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/feedback.html
+    ├── /home/runner/work/ttm4115/ttm4115/docs/learning/grading.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-gui.html
     ├── /home/runner/work/ttm4115/ttm4115/docs/tools/tools-mqtt.html
     └── /home/runner/work/ttm4115/ttm4115/docs/unit-9-comp/teamwork-1.html

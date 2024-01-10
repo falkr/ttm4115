@@ -4,7 +4,7 @@ During the semester you will work on a system specification in your development 
 This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.
 
 
-### Theme
+# Theme
 
 Each year we select a theme for the semester project. There are two reasons for this: 
 

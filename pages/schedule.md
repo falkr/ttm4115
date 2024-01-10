@@ -11,6 +11,7 @@ For each unit, we follow the same schedule:
   * We have a (digital) question and answer class.
 
 
+
 The first lecture in 2024 is on **Monday, Jan. 15th at 12:15**.
 
 ---

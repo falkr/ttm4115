@@ -20,11 +20,7 @@ You can ask the following:
 
 ### Find Your Teams Channel
 
-In the Team for the course you find a channel for each team.
-(It may be listed under *hidden channels*.)
-
-Use this (public) channel when you meet and share your video, so others can join your meeting. 
-This is a bit like working together in a big room and you can visit the table of another team.
+In the Team for the course, create a **public** channel for your Team. Call it *Team XX*, so for instance *Team 01* for Team 1. Keep it public so other can send you files and messages, we need that later in the course.
 
 Store all your documents in the files section of your team's channel. 
 
@@ -63,7 +59,7 @@ Try to briefly get an overview of today's tasks, and come up with a rough time p
 
 ### Picture
 
-- Take a picture together. (Be creative --- a screenshot of your Teams window also works!)
+- Take a picture together.
 - Annotate the picture with your names. 
 - Put the picture into your Team document.
 - Copy your picture also in the document "Team Pictures.pptx" on Teams.

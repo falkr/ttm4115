@@ -48,13 +48,3 @@ Reflect about the following points:
 * What could be improved? 
 
 :aside: This team reflection should become a natural routine for each week. 
-
-
-# Individual Reflection
-
-Each week you should in addition complete an **individual reflection**, that makes up your **individual reflection diary**. These reflections will help you to collect material for the individual deliveries.
-To ensure progress during the semester and also as some form of feedback to us, the individual reflection is kicked off with an individual reflection survey.
-
-* Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.
-* Copy the answers into a document that you maintain on your own.
-* Add any additional, maybe more private, observations to your reflection notes.

@@ -47,4 +47,4 @@ The project manager is usually a single person, with the responsibility to manag
 
 
 :delivery:
-Copy the DOCX with your final answer into the general channel / Files and folder for this unit. (This is why you should change the XX in the filename to your team name.) Done!
+Copy the DOCX with your final answer into the general channel / Files and folder for this unit. (This is why you should change the XX in the filename to your team name.) **Done!**

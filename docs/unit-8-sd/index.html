@@ -22,7 +22,102 @@
     <script src="../assets/anchor.js"></script>
     <script src="../assets/clipboard.min.js"></script>
     <script src="../assets/script-aside.js"></script>
-    <style>/* === goals === */
+    <style>/* === boxes === */
+div.box {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
+}
+
+div.box>p {
+  margin-bottom: 0px;
+}
+
+div.box>*:first-child::before {
+  font-family: bootstrap-icons !important;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: grid;
+}
+
+div.milestone {
+  background-color: #E3BCDA;
+}
+
+div.milestone>*:first-child::before {
+  content: '\f706';
+  color: #75225E;
+}
+
+div.delivery {
+  background-color: #ffd9ab;
+}
+
+div.delivery>*:first-child::before {
+  content: '\f1be';
+  color: #fc8c03;
+}
+
+div.definition {
+  background-color: #EEE5D5;
+}
+
+div.definition>*:first-child::before {
+  content: '\f3e9';
+  color: #7D705A;
+}
+
+div.guideline {
+  background-color: #fae7e8;
+}
+
+div.guideline>*:first-child::before {
+  content: '\f548';
+  color: #e45460;
+}
+
+div.report {
+  background-color: #D6E5F0;
+}
+
+div.report>*:first-child::before {
+  content: '\f43e';
+  color: #1481b8;
+}
+
+div.warning {
+  background-color: #ffd9ab;
+}
+
+div.warning>*:first-child::before {
+  content: '\f33a';
+  color: #fc8c03;
+}
+
+div.tip {
+  background-color: #E3BCDA;
+}
+
+div.tip>*:first-child::before {
+  content: '\f402';
+  color: #75225E;
+}
+
+div.task {
+  background-color: #fae7e8;
+}
+
+div.task>*:first-child::before {
+  content: '\f5db';
+  color: #e45460;
+}
+
+/* === goals === */
 div.goals ul,
 div.goals ul li {
   padding: 0;
@@ -235,12 +330,19 @@ components may not even be software.</p>
 </ul>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Individual Reflection</h2>
-<ul>
-<li>Fill out the <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUQUQxNEVLOTBZMDZGNkJBM1Y2NjZCTzhWSi4u" class="arrow">individual reflection survey</a>.</li>
-<li>Copy the answers into a document that you maintain on your own.</li>
-<li>Add any additional observations to your reflection diary.</li>
-</ul>
+<p>To conclude a unit, fill out the individual reflection.
+Also, make notes about ny observations, which will help you for the reflective essay at the end of the semester.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="card mt-3 mb-3">
+<div class="card-body">
+<a href="https://ref.iik.ntnu.no/app/enroll/TTM4115" class="stretched-link">
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-cloud-sun" viewBox="0 0 16 16" id="cloud-sun"><path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z" /><path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" /></svg>
+<span class="ms-3">Inidividual reflection</span>
+</a>
+</div>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="tip box mt-3 mb-3"><p>If the form does not open properly or you get an error message, try right-clicking the link and opening it in a new tab or window.</p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
   </main>
 
@@ -282,7 +384,7 @@ components may not even be software.</p>
     </div>
     <div class="offcanvas-body">
       <ul>
-        <li>This site is hosted on <a href="https://github.com/falkr/ttm4175">Github</a></li>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm41751">Github</a></li>
         <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
         <li>To edit this page, make a commit to <a
             href="https://github.com/falkr/ttm4175/tree/master/pages/unit-8-sd/index.md">this file</a></li>
@@ -298,6 +400,7 @@ components may not even be software.</p>
     var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
+
 
 </script>
 </body>

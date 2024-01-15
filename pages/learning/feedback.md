@@ -60,24 +60,8 @@ image: figures/persons/areeb.jpg
 
 ---
 type: card/person
-name: Dharshini Tharmarajan
-email: dharshit@stud.ntnu.no
+name: Herman Lindskog
+email: herman.lindskog@ntnu.no
 detail: Learning assistant
-image: figures/persons/dharshini.png
----
-
----
-type: card/person
-name: Iselin Eriksen Eng
-email: iselinee@stud.ntnu.no
-detail: Learning assistant
-image: figures/persons/iselin.jpg
----
-
----
-type: card/person
-name: Christopher Collin Løkken
-email: chrisclo@stud.ntnu.no
-detail: Learning assistant
-image: figures/persons/christopher.jpg
+image: figures/persons/lindskog.jpg
 ---

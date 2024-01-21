@@ -22,7 +22,24 @@
     <script src="../assets/anchor.js"></script>
     <script src="../assets/clipboard.min.js"></script>
     <script src="../assets/script-aside.js"></script>
-    <style>/* === qna === */
+    <style>/* === figure === */
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+
+figcaption {
+  color: #868279;
+}
+
+/* === qna === */
 button:hover {
   background-color: #EFF7FF;
 }
@@ -153,6 +170,16 @@ This work is the basis for the entire course, and it will be delivered in severa
 <li>It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.</li>
 <li>It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.</li>
 </ol>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2024: Electrical Car Charing</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/charger.jpg" class="figure-img img-fluid rounded" alt="">
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There are more and more electrical cars, and subsequently more charging stations. The charing process involves quite complex interactions between the car, the charing station, and the app for starting the process and payment.</p>
+<p>You should create a system for managing the charing. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components.</p>
+<p>You will receive two Raspberry Pi computers, one of them with a <a href="https://www.raspberrypi.com/documentation/accessories/sense-hat.html">Sense HAT</a>. With these you could simulate for instance the charing station.</p>
+<p>Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2023: Digital meets Physical Education</h3>
 <p>Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon.</p>
@@ -434,6 +461,7 @@ This work is the basis for the entire course, and it will be delivered in severa
     var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
+
 
 </script>
 </body>

@@ -12,6 +12,23 @@ Each year we select a theme for the semester project. There are two reasons for 
 2. It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.
 
 
+### Theme for 2024: Electrical Car Charing
+
+---
+type: figure
+source: figures/charger.jpg
+---
+
+There are more and more electrical cars, and subsequently more charging stations. The charing process involves quite complex interactions between the car, the charing station, and the app for starting the process and payment.
+
+You should create a system for managing the charing. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components. 
+
+You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the charing station.
+
+Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
+
+
+
 ### Theme for 2023: Digital meets Physical Education
 
 Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon. 

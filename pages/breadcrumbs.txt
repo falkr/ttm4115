@@ -6,6 +6,7 @@ index.md - TTM4115
     learning/reflection.md - Reflection
     learning/tbl.md - Team-Based Learning
     learning/teamwork.md - Team Roles
+    learning/remote.md - Remote Teams
   project/index.md - Deliveries
     project/deliveries-format.md - Formatting Rules for Deliveries
     project/deliveries-i1.md - Feedback on Version 1

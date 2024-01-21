@@ -22,102 +22,7 @@
     <script src="../assets/anchor.js"></script>
     <script src="../assets/clipboard.min.js"></script>
     <script src="../assets/script-aside.js"></script>
-    <style>/* === boxes === */
-div.box {
-  padding: 10px;
-  border-radius: 5px;
-  position: relative;
-  padding: 1rem 1rem 1rem 3.5rem;
-}
-
-div.box>p {
-  margin-bottom: 0px;
-}
-
-div.box>*:first-child::before {
-  font-family: bootstrap-icons !important;
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  display: grid;
-}
-
-div.milestone {
-  background-color: #E3BCDA;
-}
-
-div.milestone>*:first-child::before {
-  content: '\f706';
-  color: #75225E;
-}
-
-div.delivery {
-  background-color: #ffd9ab;
-}
-
-div.delivery>*:first-child::before {
-  content: '\f1be';
-  color: #fc8c03;
-}
-
-div.definition {
-  background-color: #EEE5D5;
-}
-
-div.definition>*:first-child::before {
-  content: '\f3e9';
-  color: #7D705A;
-}
-
-div.guideline {
-  background-color: #fae7e8;
-}
-
-div.guideline>*:first-child::before {
-  content: '\f548';
-  color: #e45460;
-}
-
-div.report {
-  background-color: #D6E5F0;
-}
-
-div.report>*:first-child::before {
-  content: '\f43e';
-  color: #1481b8;
-}
-
-div.warning {
-  background-color: #ffd9ab;
-}
-
-div.warning>*:first-child::before {
-  content: '\f33a';
-  color: #fc8c03;
-}
-
-div.tip {
-  background-color: #E3BCDA;
-}
-
-div.tip>*:first-child::before {
-  content: '\f402';
-  color: #75225E;
-}
-
-div.task {
-  background-color: #fae7e8;
-}
-
-div.task>*:first-child::before {
-  content: '\f5db';
-  color: #e45460;
-}
-
-</style>
+    <style></style>
   </head>
   
   <body>
@@ -215,65 +120,32 @@ div.task>*:first-child::before {
 
 
   <main class="container container-max-width">
-    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="../index.html">TTM4115</a></li>
-<li class="breadcrumb-item"><a href="index.html">Unit 3: State Machines</a></li>
-<li class="breadcrumb-item active" aria-current="page">Kitchen Timer</li>
-</ol>
-</nav>
-<section class="mt-2 mb-5 py-3">
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Kitchen Timer</h1>
-<p>You should build the state machine for the following device:</p>
+    <section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Remote Team Instructions</h1>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="figure">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gnjg16f6DhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>It's a kitchen timer. It has 4 LEDs and a button. When the button is pressed, the first LED is switched on, and the plug provides electricity, for instance for a coffee machine. After 15 minutes, the LED is switched off and the plug is turned off. Whenever the button is pressed when an LED is already on, the next LED is switched on and time timer is set to 30, 45, or 60 minutes, respectively. If all LEDs are on, and the button is pressed, all LEDs and the plug are switched off. You can ignore that the LED of the segment that is currently active is blinking, just assume it lights all the time.</p>
-</div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><iframe src="https://ntnu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9bfe4a96-4f9a-44ac-879a-af79009d2a1a&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&captions=false&interactivity=all" height="540" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-</div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Use the following actions:</p>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Collect your RATs from us on Mondays at 12:15 in the classroom.</p>
+<h3>Individual RAT</h3>
 <ul>
-<li><code>start_timer('t',... )</code> This starts a timer with name <code>t</code>. The second argument is the time, given as seconds. If a timer is already active, the timer is simply restarted with the new, updated timeout.</li>
-<li><code>stop_timer('t')</code>. Stops a timer. If no such timer exists or has already timed out, nothing happens.</li>
-<li><code>set_leds(1, 0, 0, 0)</code>. Control all of the four LEDs at the same time. <code>1</code> means on, <code>0</code> means off. Here, the first LED is switched on, the others are off.</li>
-<li><code>set_power(True)</code> switches the power on (True) or off (False)</li>
-</ul>
-<p>You can assume that whenever the button is pressed, the state machine will receive a signal with the name <code>switch</code>.</p>
-<h2>Create a State Machine, Individually</h2>
-</div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
-<li>Use some time to find a first solution each one on your own.</li>
-<li>Use pencil and paper.</li>
+<li>Solve the individual RATs at first.</li>
+<li>Use maximum 20 minutes, but often less time will be sufficient.</li>
+<li>Work alone during the individual RATs.</li>
+<li>Do not talk to each other.</li>
+<li>Do not use any helping material.</li>
 </ul>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Create a State Machine, Together</h2>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>After the time is up, collect all the individual RATs and put them on one stack. Do not go back and look at them during the team round.</p>
+<h3>Team RAT</h3>
 <ul>
-<li>Compare your solutions, one at a time.</li>
-<li>Starting again with an empty screen, whiteboard or paper, design the state machine once again, together.</li>
-<li>Play through this simple scenario, and correct your state machine if necessary.</li>
+<li>Solve the team RAT together.</li>
+<li>Use one iPhone with the Nøtteknekker app.</li>
+<li>Discuss the proper answer, do not simply vote for a solution.</li>
+<li>Make sure everyone contributes in the discussion.</li>
+<li>Note your final score on the team RAT paper.</li>
 </ul>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Solution</h2>
-<ul>
-<li>Once you are happy with your solution, have a look at <a href="files/kitchen-timer.pdf">my solution</a>.</li>
-<li>Compare the solutions in detail.</li>
-<li>If you find that my solution has any flaws, please discuss on MS Teams!</li>
-<li>Prepare a document where you show your solution and mine side-by-side, and compare.</li>
-<li>Reflect about your process towards this machine.
-<ul>
-<li>What did you get right immediately?</li>
-<li>What was difficult?</li>
-<li>Were there misunderstandings?</li>
-</ul>
-</li>
-</ul>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Teamwork</h3>
+<p>Have a short break, then continue with the teamwork for the week.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="delivery box mt-3 mb-3"><p>Store your document from above in the Teams folder for this unit. Use filename <code>ttm4115-kitchen-timer-team-XX.docx</code>.</p>
-</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
   </main>
 
@@ -318,7 +190,7 @@ div.task>*:first-child::before {
         <li>This site is hosted on <a href="https://github.com/falkr/ttm41751">Github</a></li>
         <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
         <li>To edit this page, make a commit to <a
-            href="https://github.com/falkr/ttm4175/tree/master/pages/unit-3-stm/teamwork-3.md">this file</a></li>
+            href="https://github.com/falkr/ttm4175/tree/master/pages/learning/remote.md">this file</a></li>
       </ul>
     </div>
   </div>
@@ -330,9 +202,7 @@ div.task>*:first-child::before {
     anchors.options.visible = 'always';
     var clipboard = new ClipboardJS('.copy-button');
   </script>
-  <script>
-
-</script>
+  <script></script>
 </body>
 
 </html>

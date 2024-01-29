@@ -97,5 +97,5 @@ If PDF is not available, choose PNG with a resolution that is high enough. That 
 ---
 type: figure
 source: figures/conversion.png
-caption: "Prefer PDF as conversion fromat when importing diagrams into Word to avoid blurred diagrams."
+caption: "Prefer PDF as conversion format when importing diagrams into Word to avoid blurred diagrams."
 ---

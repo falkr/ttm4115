@@ -68,6 +68,19 @@ link: teamwork-1.html
 When we start with requirements engineering, we will ask you to create the requirements for the semester project. [Have a look at the theme for the semester project of this year](../project/index.html), so that you can start early with preparing some specific ideas for your project.
 
 
+
+# Extra Material
+
+---
+type: link
+title: 'Tips for Creating Diagrams'
+icon: journal-bookmark-fill
+link: unit-modeling-diagram-tips.html
+---
+
+
+
+
 ---
 ref: ../reflection.ref
 ---
@@ -75,4 +88,4 @@ ref: ../reflection.ref
 
 # Heads-up for Unit 4
 
-In [Unit 4](../unit-4-req/index.html) we work on requirements, and as preparation you need to read twi book chapters. Some students want to get more time for reading, so we notify you about this already now.
+In [Unit 4](../unit-4-req/index.html) we work on requirements, and as preparation you need to read two book chapters. Some students want to get more time for reading, so we notify you about this already now.

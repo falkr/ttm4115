@@ -4,27 +4,27 @@
 ! Shorthand
 ! Meaning
 |-
-| n..m
+| `n..m`
 | 
 | Minimum n elements, maximum m. (m>n)
 |-
-| 0..1
+| `0..1`
 | 
 | optional value
 |-
-| 1..1
-| 1
+| `1..1`
+| `1`
 | exactly one
 |-
-| 0..*
-| *
+| `0..*`
+| `*`
 | any number of elements, "many"
 |-
-| n..*
+| `n..*`
 | 
 | n or more
 |-
-| n..n
-| n
+| `n..n`
+| `n`
 | exactly n
 |}

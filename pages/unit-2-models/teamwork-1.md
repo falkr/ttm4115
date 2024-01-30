@@ -72,7 +72,7 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 
 * Some tips for [strategic layout](unit-modeling-diagram-tips.html#have-a-strategic-layout).
 * Some tips for [tidy graphics](unit-modeling-diagram-tips.html#tidying-up-the-graphics).
-* [Syntax for deployment diagrams](prep-modeling.html#deployment-diagrams) from the preparation.
+* [Syntax for deployment diagrams](preparation-2.html) from the preparation.
 * Getting the level of detail right may require the most judgement. Think which information is useful to the reader of your diagram, and which information rather clutters it up.
 
 

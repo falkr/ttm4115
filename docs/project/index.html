@@ -161,6 +161,18 @@ div.qna .accordion-button:not(.collapsed)::after {
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Semester Project</h1>
 <p>During the semester you will work on a system specification in your development teams.
 This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
+<h2>Properties of the System</h2>
+<ul>
+<li>
+<p>You will need some form of user interface, since we need to cover the interactions with the users of the system. At the same time, this is not a course about how to program the details of user interfaces. We will hence find some way of making prototypical user interfaces. What we would like to emphasize, however, is that the user interface is responsive, and react to the interactions with the other system components.</p>
+</li>
+<li>
+<p>Managing interactions between components through the handling of stateful behavior and communication is at the core of this course. We hence want to see that the system consists of several components that interact with each other, and that these interactions work well.</p>
+</li>
+<li>
+<p>The system should be able to handle several events coming in any order as they may occur in reality. For instance, several users may issue commands that could be in conflict with each other, and the system should handle this well.</p>
+</li>
+</ul>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
 <section class="mt-2 mb-5 py-3">
@@ -170,33 +182,27 @@ This work is the basis for the entire course, and it will be delivered in severa
 <li>It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.</li>
 <li>It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.</li>
 </ol>
+<p>The theme should guide what you are considering, but we don't want that all systems will work in the same way, focus on the same features and are too similar to each other.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2024: Electrical Car Charing</h3>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2024: Electrical Car Charging</h3>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
     <img src="figures/charger.jpg" class="figure-img img-fluid rounded" alt="">
 </figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There are more and more electrical cars, and subsequently more charging stations. The charing process involves quite complex interactions between the car, the charing station, and the app for starting the process and payment.</p>
-<p>You should create a system for managing the charing. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components.</p>
-<p>You will receive two Raspberry Pi computers, one of them with a <a href="https://www.raspberrypi.com/documentation/accessories/sense-hat.html">Sense HAT</a>. With these you could simulate for instance the charing station.</p>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There are more and more electrical cars, and subsequently more charging stations. The charging process involves quite complex interactions between the car, the charging station, and the app for starting the process and payment.</p>
+<p>You should create a system for managing the charging. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components.</p>
+<p>You will receive two Raspberry Pi computers, one of them with a <a href="https://www.raspberrypi.com/documentation/accessories/sense-hat.html">Sense HAT</a>. With these you could simulate for instance the charging station.</p>
 <p>Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2023: Digital meets Physical Education</h3>
-<p>Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon.</p>
-<p>Can you build a system that makes communication within the lab easier?</p>
-<p>Here are some high-level ideas of functions:</p>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Apart from being related to car charging, you have a lot of freedom.
+Ideally, beside the basic functionality of managing the charing process, think of the following:</p>
 <ul>
-<li>How can student assistants and teachers get a live overview over the progress of each team?</li>
-<li>How can we see which teams have missing students?</li>
-<li>Which tasks are done? Which tasks are difficult? Which teams are stuck at a certain task?</li>
-<li>How long does each task take, and can we collect historic information about task to estimate the remaining time in the lab?</li>
-<li>Can we track progress during the RATs?</li>
-<li>Managing breaks</li>
-<li>Can there be CTF-inspired &quot;leader boards&quot; that update?</li>
+<li>Should it be a car charger for a single car in a home, or for several cars in a public car charing station. (The latter will probably enable more interactions.)</li>
+<li>How do you make the user interface responsive so that the user knows what is going on, given that all components may fail?</li>
+<li>Do you want to implement new features like reservations, queuing, guaranteed power, or other ideas that require more advanced management?</li>
 </ul>
-<p>The idea is that most students are physical on campus and in the classroom or lab, not a fully digital setting. But it can be interesting if the solution would allow to help remote students (sick or away for another reason) could more easily join.</p>
-<p>The system should not replace a complete learning system, which are mostly about handling documents or providing material.</p>
-<p>You can use a Raspberry Pi with a SenseHAT as a hardware device, for instance to show the status at each table. If you have good ideas that require other hardware we can have a talk if we can incorporate them.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><a href="theme-2023.html">Theme 2023</a></p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
 <section class="mt-2 mb-5 py-3">

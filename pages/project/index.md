@@ -3,6 +3,14 @@
 During the semester you will work on a system specification in your development teams. 
 This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.
 
+## Properties of the System
+
+* You will need some form of user interface, since we need to cover the interactions with the users of the system. At the same time, this is not a course about how to program the details of user interfaces. We will hence find some way of making prototypical user interfaces. What we would like to emphasize, however, is that the user interface is responsive, and react to the interactions with the other system components.
+
+* Managing interactions between components through the handling of stateful behavior and communication is at the core of this course. We hence want to see that the system consists of several components that interact with each other, and that these interactions work well.
+
+* The system should be able to handle several events coming in any order as they may occur in reality. For instance, several users may issue commands that could be in conflict with each other, and the system should handle this well.
+
 
 # Theme
 
@@ -11,45 +19,37 @@ Each year we select a theme for the semester project. There are two reasons for 
 1. It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.
 2. It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.
 
+The theme should guide what you are considering, but we don't want that all systems will work in the same way, focus on the same features and are too similar to each other. 
 
-### Theme for 2024: Electrical Car Charing
+
+### Theme for 2024: Electrical Car Charging
 
 ---
 type: figure
 source: figures/charger.jpg
 ---
 
-There are more and more electrical cars, and subsequently more charging stations. The charing process involves quite complex interactions between the car, the charing station, and the app for starting the process and payment.
+There are more and more electrical cars, and subsequently more charging stations. The charging process involves quite complex interactions between the car, the charging station, and the app for starting the process and payment.
 
-You should create a system for managing the charing. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components. 
+You should create a system for managing the charging. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components. 
 
-You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the charing station.
+You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the charging station.
 
 Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
 
 
+Apart from being related to car charging, you have a lot of freedom. 
+Ideally, beside the basic functionality of managing the charing process, think of the following:
 
-### Theme for 2023: Digital meets Physical Education
+* Should it be a car charger for a single car in a home, or for several cars in a public car charing station. (The latter will probably enable more interactions.)
+* How do you make the user interface responsive so that the user knows what is going on, given that all components may fail?
+* Do you want to implement new features like reservations, queuing, guaranteed power, or other ideas that require more advanced management?
 
-Imagine a university course that involves exercises in a lab, similar to what you are doing in the team activities on Monday afternoon. 
 
-Can you build a system that makes communication within the lab easier? 
 
-Here are some high-level ideas of functions:
 
-- How can student assistants and teachers get a live overview over the progress of each team?
-- How can we see which teams have missing students?
-- Which tasks are done? Which tasks are difficult? Which teams are stuck at a certain task?
-- How long does each task take, and can we collect historic information about task to estimate the remaining time in the lab?
-- Can we track progress during the RATs?
-- Managing breaks
-- Can there be CTF-inspired "leader boards" that update?
 
-The idea is that most students are physical on campus and in the classroom or lab, not a fully digital setting. But it can be interesting if the solution would allow to help remote students (sick or away for another reason) could more easily join.
-
-The system should not replace a complete learning system, which are mostly about handling documents or providing material.    
-
-You can use a Raspberry Pi with a SenseHAT as a hardware device, for instance to show the status at each table. If you have good ideas that require other hardware we can have a talk if we can incorporate them. 
+[Theme 2023](theme-2023.html)
 
 
 # Hints

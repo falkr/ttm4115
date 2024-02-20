@@ -138,7 +138,17 @@
 <li><a href="https://github.com/falkr/stmpy">Source Code on Github</a></li>
 <li><a href="https://github.com/falkr/stmpy-notebooks">Jupyter Notebooks with Examples</a></li>
 </ul>
-<h2>STMPY Components</h2>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>STMPY Example Notebooks</h2>
+<p>The <a href="https://github.com/falkr/stmpy-notebooks">Jupyter Notebooks with Examples</a> contain some more advanced topics that you can study to consolidate and expand your knowledge on state machines:</p>
+<ul>
+<li><strong>Buffered Text To Speech:</strong> We build a state machine that controls a text-to-speech synthesis. This is interesting also in general since you learn about do-activities which let us execute long-running operations. We also use deferred events.</li>
+<li><strong>Passing Data to Actions:</strong> An example how actions (functions in Python) can have input data.</li>
+<li><strong>Polling with Two State Machines:</strong> Here we create two state machines, one that is constantly polling the value of a sensor, and then notifying another state machine. It illustrates how one state machine can take care of some behavior (here constantly checking a sensor) and communicate with another state machine.</li>
+<li><strong>Audio Recording and Playback:</strong> This is a more specific example on how to record and playback audio, and have a state machine for control of this.</li>
+</ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>STMPY Components</h2>
 <p>Have a look at the <a href="https://github.com/falkr/stmpy-components">STMPY Components repository</a>. It provides examples how to make a component that contains state machines and that communicates via MQTT and JSON.</p>
 <ul>
 <li><a href="https://falkr.github.io/stmpy-components/TimerManager.html">Timer Manager Source Code</a></li>

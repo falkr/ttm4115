@@ -100,6 +100,23 @@ But we know that you will ask, so here is a list of examples and ideas anyway:
 - ...any item of your choice, as long as they are connected to the learning goals of the course.
 
 
+# Use of AI Tools
+
+For the reflective essay, like for all other deliveries, the [usual rules for cheating on exams](https://i.ntnu.no/wiki/-/wiki/English/Cheating+on+exams) apply.
+The point on plagiarism also covers AI tools.
+In summary, you can use such tools for your essay, but you need to inform about their use. 
+
+For the essay, we therefore require that you [fill out the declaration form for use of AI tools](../learning/ai-form.docx) that we also use for master theses. You will deliver the filled out declaration form together with the essay.
+In this scheme you can also declare that you did not use any AI tools, and select “No”.
+Depending on the use of AI tools, it may be helpful that you also specify directly in the essay how AI tools were used.
+In the end, it must be clear to the reader how AI tools were involved, if any.
+
+We don’t see specific benefits of using an AI tool for the reflective essay, since the arguments you provide must be based on your specific project, experiences, examples or context in the course.
+Using AI tools for grammar and spell checking may be useful.
+At the same time, we will not specifically be evaluating writing style, so you will be fine also without using any advanced tools.
+
+
+
 
 # Grading
 

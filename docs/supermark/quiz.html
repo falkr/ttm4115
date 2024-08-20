@@ -24,64 +24,76 @@
     <script src="../assets/script-aside.js"></script>
     <style>/* === quiz === */
 ol.quiz li {
-  padding-left:3rem;
+  padding-left: 3rem;
   cursor: pointer;
-  }
+}
+
 ol.quiz li::before {
   font-family: bootstrap-icons !important;
-  padding-top:0.3rem;
+  padding-top: 0.3rem;
   padding-right: 1rem;
-  margin-left:-2rem;
+  margin-left: -2rem;
   font-size: 1rem;
   vertical-align: top;
-  }
+}
+
 ol.quiz li.unselected::before {
   content: "\f28a";
-  }
+}
+
 ol.quiz li.unselected:hover::before {
   content: "\f287";
-  }
+}
+
 ol.quiz li.selected::before {
   content: "\f287";
   color: #666666;
-  }
+}
+
 ol.quiz li.unselected-true::before {
   content: "\f26b";
   color: #5CA551;
+
+  ol.quiz li.selected-true::before {
+    content: "\f26a";
+    color: #5CA551;
   }
-ol.quiz li.selected-true::before {
-  content: "\f26a";
-  color: #5CA551;
+
+  ol.quiz li.unselected-false::before {
+    content: "\f623";
   }
-ol.quiz li.unselected-false::before {
-  content: "\f5e7";
+
+  ol.quiz li.selected-false::before {
+    content: "\f622";
+    color: #FF3B30;
   }
-ol.quiz li.selected-false::before {
-  content: "\f5e6";
-  color: #FF3B30;
+
+  ol.quiz li.selected-false {
+    color: #666666;
+    background-color: #FFD6D3;
+    border-top: none;
+    border-bottom: none;
   }
-ol.quiz li.selected-false {
-  color:#666666;
-  background-color: #FFD6D3;
-  border-top: none;
-  border-bottom: none;
+
+  ol.quiz li.selected-true {
+    background-color: #DBF6CF;
+    border-top: none;
+    border-bottom: none;
   }
-ol.quiz li.selected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
+
+  ol.quiz li.unselected-false {
+    color: lightgray;
   }
-ol.quiz li.unselected-false {
-  color:lightgray;
+
+  ol.quiz li.unselected-true {
+    background-color: #DBF6CF;
+    border-top: none;
+    border-bottom: none;
   }
-ol.quiz li.unselected-true {
-  background-color:#DBF6CF;
-  border-top: none;
-  border-bottom: none;
+
+  div.card-footer a {
+    cursor: pointer;
   }
-div.card-footer a {
-  cursor: pointer;
-}
 
 </style>
   </head>

@@ -28,6 +28,7 @@ The theme should guide what you are considering, but we don't want that all syst
 type: figure
 source: figures/e-scooter.jpg
 ---
+Picture taken by Thomas Wolter is free to use according to the [Pixabay Content License](https://pixabay.com/service/license-summary/).
 
 Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO2 emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 
 
@@ -38,7 +39,7 @@ You will receive two Raspberry Pi computers, one of them with a [Sense HAT](http
 Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
 
 
-Apart from being related to handling of e-scooters, you have a lot of freedom. In the following, you will find some ideas for new features:
+Apart from being related to handling of e-scooters, you have a lot of freedom. In the following, you will find some ideas for possible new features:
 
 * Could there be possibilities to reserve an e-scooter and, if yes, in which way?
 * In contrast to shared bicycles, e-scooters have no fixed place, where they are stored, and where they can be recharged. Can that be changed by, for instance, placing charging stations ahead of popular places like university lecture halls? Users that place the e-scooters at such loading stations, could be rewarded by lower fees.

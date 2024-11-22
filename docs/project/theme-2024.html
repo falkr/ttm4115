@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title>TTM4115</title>
+  <link rel="canonical" href="https://edu.iik.ntnu.no">
+  <!-- Bootstrap core CSS -->
+    <link href="../assets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/style-frame.css" rel="stylesheet">
+    <link href="../assets/style-fonts.css" rel="stylesheet">
+    <link href="../assets/style-code.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="../assets/anchor.js"></script>
+    <script src="../assets/clipboard.min.js"></script>
+    <script src="../assets/script-aside.js"></script>
+    <style>/* === figure === */
+div.figure {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+div.figurefullwitdth {
+  padding: 20px 0 20px 0;
+  margin-left: -33px;
+  margin-right: -33px;
+  width: 100%;
+}
+
+figcaption {
+  color: #868279;
+}
+
+/* === qna === */
+button:hover {
+  background-color: #EFF7FF;
+}
+div.qna .accordion-button:not(.collapsed) {
+  background-color: #EFF7FF;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  color: #00509e;
+}
+
+div.qna .accordion-button:not(.collapsed)::after {
+  color: #00509e;
+}
+
+</style>
+  </head>
+  
+  <body>
+
+  
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ntnu.edu" title="NTNU Homepage">
+      <img id="header_logo" alt="NTNU Hjemmeside" width="120px" src="https://www.ntnu.no/o/ntnu-theme/images/logo_ntnu.svg" height="23px">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">TTM4115</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Units
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../unit-1-setup/index.html">Unit 1: Introduction and Setup</a>
+            <a class="dropdown-item" href="../unit-2-models/index.html">Unit 2: Modeling and Deployment Diagrams</a>
+            <a class="dropdown-item" href="../unit-3-stm/index.html">Unit 3: State Machines</a>
+            <a class="dropdown-item" href="../unit-4-req/index.html">Unit 4: User Requirements</a>
+            <a class="dropdown-item" href="../unit-5-stmpy/index.html">Unit 5: State Machines in Python</a>
+            <a class="dropdown-item" href="../unit-6-agile/index.html">Unit 6: Agile Development</a>
+            <a class="dropdown-item" href="../unit-7-comm/index.html">Unit 7: Communication</a>
+            <a class="dropdown-item" href="../unit-8-sd/index.html">Unit 8: Interactions</a>
+            <a class="dropdown-item" href="../unit-9-comp/index.html">Unit 9: Components</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../project/index.html">Semester Project</a>
+            <a class="dropdown-item" href="../project/deliveries-t1.html">Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-i1.html">Feedback on Specification 1</a>
+            <a class="dropdown-item" href="../project/deliveries-t2.html">Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-i2.html">Feedback on Specification 2</a>
+            <a class="dropdown-item" href="../project/deliveries-t3.html">Specification 3 (Final)</a>
+            <a class="dropdown-item" href="../project/deliveries-i3.html">Individual Reflective Essay</a>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Learning
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../learning/feedback.html">Teachers and Feedback</a>
+            <a class="dropdown-item" href="../learning/goals.html">Learning Goals</a>
+            <a class="dropdown-item" href="../learning/grading.html">Grading</a>
+            <a class="dropdown-item" href="../learning/reflection.html">Reflection</a>
+            <a class="dropdown-item" href="../learning/tbl.html">Team-Based Learning</a>
+            <a class="dropdown-item" href="../learning/teamwork.html">Teamwork</a>
+            <a class="dropdown-item" href="../schedule.html">Schedule</a>
+            <a class="dropdown-item" href="../learning/remote.html">For Remote Teams</a>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu dropdown-menu">
+            <a class="dropdown-item" href="../tools/index.html">Tools</a>
+            <!--<a class="dropdown-item" href="../tools/tools-python.html">Python</a>-->
+            <a class="dropdown-item" href="../tools/tools-gui.html">GUIs in Python</a>    
+            <a class="dropdown-item" href="../tools/tools-mqtt.html">MQTT</a>            
+            <a class="dropdown-item" href="../tools/tools-notebooks.html">Notebooks</a>
+            <a class="dropdown-item" href="../tools/tools-stmpy.html">STMPY</a>            
+          </ul>
+        </li>
+      </ul>
+      <div class="bg-light border ms-auto"></div>
+        <div>
+        <a class="nav-link" href="../schedule.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <main class="container container-max-width">
+    <section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Semester Project</h1>
+<p>During the semester you will work on a system specification in your development teams.
+This work is the basis for the entire course, and it will be delivered in several versions so you get feedback on it also during the semester.</p>
+<h2>Properties of the System</h2>
+<ul>
+<li>
+<p>You will need some form of user interface, since we need to cover the interactions with the users of the system. At the same time, this is not a course about how to program the details of user interfaces. We will hence find some way of making prototypical user interfaces. What we would like to emphasize, however, is that the user interface is responsive, and react to the interactions with the other system components.</p>
+</li>
+<li>
+<p>Managing interactions between components through the handling of stateful behavior and communication is at the core of this course. We hence want to see that the system consists of several components that interact with each other, and that these interactions work well.</p>
+</li>
+<li>
+<p>The system should be able to handle several events coming in any order as they may occur in reality. For instance, several users may issue commands that could be in conflict with each other, and the system should handle this well.</p>
+</li>
+</ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Theme</h1>
+<p>Each year we select a theme for the semester project. There are two reasons for this:</p>
+<ol>
+<li>It should make it easier for you to converge towards a solution; instead of beginning to sketch very different ideas in the beginning you will probably much quicker agree on a common idea.</li>
+<li>It will make it more interesting for you to see the solutions of other teams. During the semester you will give feedback to another team, and this is of course simpler if they work on a system that you already have some ideas about.</li>
+</ol>
+<p>The theme should guide what you are considering, but we don't want that all systems will work in the same way, focus on the same features and are too similar to each other.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Theme for 2024: Electrical Car Charging</h3>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><figure class="figure">
+    <img src="figures/charger.jpg" class="figure-img img-fluid rounded" alt="">
+</figure></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>There are more and more electrical cars, and subsequently more charging stations. The charging process involves quite complex interactions between the car, the charging station, and the app for starting the process and payment.</p>
+<p>You should create a system for managing the charging. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components.</p>
+<p>You will receive two Raspberry Pi computers, one of them with a <a href="https://www.raspberrypi.com/documentation/accessories/sense-hat.html">Sense HAT</a>. With these you could simulate for instance the charging station.</p>
+<p>Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>Apart from being related to car charging, you have a lot of freedom.
+Ideally, beside the basic functionality of managing the charing process, think of the following:</p>
+<ul>
+<li>Should it be a car charger for a single car in a home, or for several cars in a public car charing station. (The latter will probably enable more interactions.)</li>
+<li>How do you make the user interface responsive so that the user knows what is going on, given that all components may fail?</li>
+<li>Do you want to implement new features like reservations, queuing, guaranteed power, or other ideas that require more advanced management?</li>
+</ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p><a href="theme-2023.html">Theme 2023</a></p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Hints</h1>
+<h3>Managing Uncertainty is part of your job</h3>
+<p>Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>You are the Product Owner</h3>
+<p>Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)</p>
+<p>In this course, there is no external product owner. We could have designed the course like this, but this adds additional complexity and would have come at a cost of reducing some of the other learning goals.</p>
+<p>You are therefore also the product owner, and have to decide which product to build and how it should work at the same time you are developing it. That's not a problem, but we have to be aware of this.</p>
+<p>Since you are the product owner, we choose a domain where you have some insights, so that you can answer the most important questions on your own and judge which features to implement and how they make sense.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Deliveries</h1>
+<p>During the semester, you need to hand in the following deliveries:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><table class="table table-sm">
+<tr>
+<th></th>
+<th><p>Date</p>
+</th>
+<th><p>Type</p>
+</th>
+<th><p>Content</p>
+</th>
+<th></th>
+</tr>
+<tr>
+<td><p>System Spec, version 1</p>
+</td>
+<td></td>
+<td><p>Team</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Feedback to version 1</p>
+</td>
+<td></td>
+<td><p>Individual</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>System Spec, version 2</p>
+</td>
+<td></td>
+<td><p>Team</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Feedback to version 2</p>
+</td>
+<td></td>
+<td><p>Individual</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>System Spec, final version</p>
+</td>
+<td></td>
+<td><p>Team</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>RATx</p>
+</td>
+<td></td>
+<td><p>Individual+Team</p>
+</td>
+<td><p>RATs are done during class.</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><p>Reflective Essay</p>
+</td>
+<td></td>
+<td><p>Individual</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</table></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>The deliveries contain the following elements:</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><table class="table table-sm">
+<tr>
+<th><p>Item</p>
+</th>
+<th><p>System Spec, Version 1</p>
+</th>
+<th><p>System Spec, Version 2</p>
+</th>
+<th><p>System Spec, Final Version</p>
+</th>
+</tr>
+<tr>
+<td><p>Deployment Diagram</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Problem and Background</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Vision</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Objectives</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Stakeholders</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Use Case Hierarchy</p>
+</td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-half.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Selected Use Cases</p>
+</td>
+<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>Interactions</p>
+</td>
+<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+<tr>
+<td><p>State Machines</p>
+</td>
+<td><img src="assets/icons/circle.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+<td><img src="assets/icons/circle-fill.svg" alt="OK" width="16" height="16"></td>
+</tr>
+</table></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
+<li>Deliveries marked with <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" class="bi bi-circle-fill" viewBox="0 0 16 16" id="circle-fill"><circle cx="8" cy="8" r="8" /></svg> <em>must</em> be included.</li>
+<li>Deliveries marked with <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" class="bi bi-circle-half" viewBox="0 0 16 16" id="circle-half"><path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" /></svg> <em>can</em> be included if they are updated, and you want provide them as context for the new parts.</li>
+<li>Deliveries marked with <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" class="bi bi-circle" viewBox="0 0 16 16" id="circle"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" /></svg> are not part of the delivery, since we have not yet treated them in class when the delivery is due.</li>
+</ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Format and Template</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
+<li>All delivery documents must be in <em>PDF</em> format.</li>
+<li>You can include diagrams and figures in landscape mode for entire pages. In this case, they need to be readable <strong>from the right</strong>.</li>
+<li>Check which pattern for the filename we require. This makes file handling for us faster.</li>
+<li>The header on each page must contain your team number and the delivery name.</li>
+<li>For group deliveries, you team number (and name) must be in the header. The front page must list all members of the team that have contributed to the delivery.</li>
+<li>For individual deliveries, your name must be in the header.</li>
+</ul>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+<section class="mt-5 mb-5 py-3">
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Questions and Answers</h1>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>
+<div class="accordion" id="iddd936d">
+  <div class="accordion-item">
+    <p class="accordion-header" id="iddd936dA">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iddd936dC" aria-expanded="false" aria-controls="iddd936dC">Can we make changes between the different versions of the specifications?</button>
+    </p>
+    <div id="iddd936dC" class="accordion-collapse collapse" aria-labelledby="iddd936dA" data-bs-parent="#iddd936d">
+      <div class="accordion-body"><p>Yes. It is natural that your understanding of the system evolves, so what you have submitted in version 1 can be updated for version 2 and then also the final version. In the end, only the final version counts.</p>
+</div>
+    </div>
+  </div>
+</div>
+</p></div><aside class="col-md-4 chunk ps-2"></aside></div>
+</section>
+  </main>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #555555">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/informasjonskapsler">Om informasjonskapsler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ntnu.no/personvern">Personvern</a>
+          </li>
+        </ul>
+        <div class="bg-light ms-auto border-0"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Edit this page</h5>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>This site is hosted on <a href="https://github.com/falkr/ttm41751">Github</a></li>
+        <li>The source is written in <a href="../supermark/index.html">Supermark</a> syntax</li>
+        <li>To edit this page, make a commit to <a
+            href="https://github.com/falkr/ttm4175/tree/master/pages/project/theme-2024.md">this file</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script>
+    anchors.add('h1').add('h2').add('h3');
+    anchors.options.visible = 'always';
+    var clipboard = new ClipboardJS('.copy-button');
+  </script>
+  <script>
+
+
+</script>
+</body>
+
+</html>

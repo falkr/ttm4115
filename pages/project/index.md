@@ -26,7 +26,7 @@ The theme should guide what you are considering, but we don't want that all syst
 
 ---
 type: figure
-source: figures/charger.jpg
+source: figures/e-scooter.jpg
 ---
 
 Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO2 emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 

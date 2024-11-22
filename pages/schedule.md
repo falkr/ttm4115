@@ -16,16 +16,16 @@ The first lecture in 2025 is on **Thursday, Jan. 9th at 14:15**.
 
 ---
 type: table
-file: tables/week-2024.mw
+file: tables/week-2025.mw
 class: weekplan table-sm table-bordered
 format: html
 ---
 
-Here is the semester schedule for 2024. Note that this is a tentative plan that we may adjust during the semester.
+Here is the semester schedule for 2025. Note that this is a tentative plan that we may adjust during the semester.
 
 ---
 type: table
-file: tables/schedule-2024.mw
+file: tables/schedule-2025.mw
 class: table-sm table-bordered
 format: html
 ---

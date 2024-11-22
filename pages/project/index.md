@@ -31,7 +31,7 @@ source: figures/e-scooter.jpg
 Picture taken by Thomas Wolter is free to use according to the [Pixabay Content License](https://pixabay.com/service/license-summary/).
 
 
-Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO(sub)2(/sub) emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 
+Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO<sub>2</sub> emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 
 
 Usually they are operated with the help of mobile phone apps, that allows their owners to localize e-scooters in their vicinity, to unlock them, and to pay. You should create a system for handling e-scooters, that adds new interesting features for the use of e-scooters. For that, you should program components for the e-scooters and the apps. Depending on your ideas, you may also add more components. 
 

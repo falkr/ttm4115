@@ -24,13 +24,7 @@ The theme should guide what you are considering, but we don't want that all syst
 
 ### Theme for 2025: Handling of E-Scooters
 
----
-type: figure
-source: figures/e-scooter.jpg
-text: Picture taken by Thomas Wolter is free to use according to the [Pixabay Content License](https://pixabay.com/service/license-summary/).
----
-
-![E-Scooters](figures/e-scooter.jpg "Picture taken by Thomas Wolter is free to use according to the [Pixabay Content License](https://pixabay.com/service/license-summary/).")
+![E-Scooters](figures/e-scooter.jpg "Picture taken by Thomas Wolter is free to use according to the Pixabay Content License.")
 
 Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO<sub>2</sub> emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 
 

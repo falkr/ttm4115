@@ -22,7 +22,7 @@ Each year we select a theme for the semester project. There are two reasons for 
 The theme should guide what you are considering, but we don't want that all systems will work in the same way, focus on the same features and are too similar to each other. 
 
 
-### Theme for 2025: Handling of E-Scooters
+## Theme for 2025: Handling of E-Scooters
 
 ---
 type: figure
@@ -52,12 +52,12 @@ Apart from being related to handling of e-scooters, you have a lot of freedom. I
 
 # Hints
 
-### Managing Uncertainty is part of your job
+## Managing Uncertainty is part of your job
 
 Sooner or later you will feel that our system constraints are ambiguous or vague. We don't do this on purpose---we really try to answer any of your questions as good as we can. But this is in fact a similar situation that you will experience in a real system development scenario: With many things that are new, there is an element of uncertainty. Managing such uncertainty is one of the key skills you should acquire in this course, and the tools we give you are intended to reduce uncertainty step by step.
 
 
-### You are the Product Owner
+## You are the Product Owner
 
 Often the product owner is external to the development team or company, and is available to answer questions about the product to be built. (That doesn't mean that they are always right or have all the answers.)
 

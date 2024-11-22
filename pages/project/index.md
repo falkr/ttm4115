@@ -48,7 +48,7 @@ Apart from being related to handling of e-scooters, you have a lot of freedom. I
 
 
 
-[Theme 2023](theme-2023.html)
+[Theme 2024](theme-2024.html)
 
 
 # Hints

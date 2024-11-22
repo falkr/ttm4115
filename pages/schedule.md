@@ -12,7 +12,7 @@ For each unit, we follow the same schedule:
 
 
 
-The first lecture in 2025 is on **Thursday, Jan. 9th at 14:15**.
+The first lecture in 2025 is on **Thursday, Jan. 9th, at 14:15**.
 
 ---
 type: table

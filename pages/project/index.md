@@ -22,29 +22,27 @@ Each year we select a theme for the semester project. There are two reasons for 
 The theme should guide what you are considering, but we don't want that all systems will work in the same way, focus on the same features and are too similar to each other. 
 
 
-### Theme for 2024: Electrical Car Charging
+### Theme for 2025: Handling of E-Scooters
 
 ---
 type: figure
 source: figures/charger.jpg
 ---
 
-There are more and more electrical cars, and subsequently more charging stations. The charging process involves quite complex interactions between the car, the charging station, and the app for starting the process and payment.
+Shared electric kick scooters, better known as e-scooters, are a popular means of transport for last-mile mobility in urban areas. Using them can be fun, and their use is environment-friendly, since they are electrically operated without direct CO2 emission. On the other side, they have a tendency to block walkways and may produce [visual pollution](https://en.wikipedia.org/wiki/Visual_pollution). 
 
-You should create a system for managing the charging. You should program components for the car, the app, and the charging station. Depending on your ideas, you may also add more components. 
+Usually they are operated with the help of mobile phone apps, that allows their owners to localize e-scooters in their vicinity, to unlock them, and to pay. You should create a system for handling e-scooters, that adds new interesting features for the use of e-scooters. For that, you should program components for the e-scooters and the apps. Depending on your ideas, you may also add more components. 
 
-You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the charging station.
+You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the control unit of an e-scooter.
 
 Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
 
 
-Apart from being related to car charging, you have a lot of freedom. 
-Ideally, beside the basic functionality of managing the charing process, think of the following:
+Apart from being related to handling of e-scooters, you have a lot of freedom. In the following, you will find some ideas for new features:
 
-* Should it be a car charger for a single car in a home, or for several cars in a public car charing station. (The latter will probably enable more interactions.)
-* How do you make the user interface responsive so that the user knows what is going on, given that all components may fail?
-* Do you want to implement new features like reservations, queuing, guaranteed power, or other ideas that require more advanced management?
-
+* Could there be possibilities to reserve an e-scooter and, if yes, in which way?
+* In contrast to shared bicycles, e-scooters have no fixed place, where they are stored, and where they can be recharged. Can that be changed by, for instance, placing charging stations ahead of popular places like university lecture halls? Users that place the e-scooters at such loading stations, could be rewarded by lower fees.
+* Has your team any ideas to reduce the problem with blocking walkways or causing visual pollution?
 
 
 

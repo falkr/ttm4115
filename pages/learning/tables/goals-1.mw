@@ -3,14 +3,14 @@
 | Comment
 |-
 | **1.** Classify different types of requirements, and explain the main activities during requirements development. Recite potential problems during requirements engineering.
-| Learn to ask the right questions. You have an idea about what can go wrong, you anticipate customer concerns, even if they don't know themselves.
+| In the end, you should be able to develop systems, that fulfill certain requirements. To be able to do that, you should learn to ask the right questions about the requirements. Here, it is important to have an idea about what can go wrong during the development. Moreover, you should learn to anticipate customer concerns, even if they don't know themselves.
 |-
 | **2.** Recognize modeling elements in UML, properly explain their semantics, and correctly map them to program code. This comprises use case, sequence, state machine and deployment diagrams, among others.
 | UML defines many standard modeling diagrams. The actual syntax does not matter too much, but we need precision to detect flaws and achieve consistency. Once you have understood the basic diagram types, you can easily learn others (like for example BPEL).
 |-
 | **3.** Understand and describe the main features of application protocols (like HTTP and MQTT), and select and apply them efficiently and correctly to a system architecture.
-| Communication is what keeps system components together and makes them form a whole. Often, different system components are realized by different stakeholders. Fragile communication between system components is therefore a major concern.
+| Communication is what keeps system components together and makes them form a whole. Often, however, different system components are realized by different stakeholders, which makes fragile communication between system components a major concern. You should have the knowledge necessary to guarantee a stable communication between the distributed components.
 |-
 | **4.** List and explain the main elements in a development method as for instance Scrum, and reason about their applicability in a given development context.
-| Agile methods of some form are now used for many projects. Learn about the key concepts in agile methods.
+| Agile methods of some form are now used in many projects, even if they may easily lead to quality issues of the developed product. To use agile methods correctly and with success, you should learn their key concepts.
 |}

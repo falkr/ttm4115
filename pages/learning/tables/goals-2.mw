@@ -3,23 +3,23 @@
 | Comment
 |-
 | **1.** Capture user requirements and synthesize relevant use cases at a proper level of detail.
-| This is an underestimated skill. The resulting use cases are often written in text and don't look spectacular. But formulating bad use cases is the earliest phase in a project where things can go wrong.
+| This is a frequently underestimated skill. The resulting use cases are often written in text and don't look spectacular, but formulating bad use cases is the earliest phase in a project where things can go wrong.
 |-
 | **2.** Write project deliverables that describe system requirements, properties and solutions.
-| Producing the right documents, emphasizing relevant questions, reasonable precision level. Can uncover project problems early or even before they arise. Again, learn to ask the right questions.
+| You should learn to produce the right documents by emphasizing relevant questions at a reasonable precision level. By doing this well, project problems can often be early uncovered, sometimes even before they arise. Again, you learn to ask the right questions.
 |-
 | **3.** Plan and coordinate the development of larger software products within a team of developers.
-| To coordinate a project, you need to know a lot about the architecture of a system, but also the process how to build it and potential pitfalls.
+| In order to coordinate a project, you need to know a lot about the architecture of a system, but also the process, how to build it, and potential pitfalls.
 |-
 | **4.** Think in terms of states and transitions, and handle complex concurrent behavior correctly.
-| It is a valuable skill as an engineer to handle concurrent behavior correctly, independent of technical domain or employed tools.
+| It is a valuable skill for an engineer to handle concurrent behavior correctly, independently of the technical domain or the tools employed.
 |-
 | **5.** Model different aspects of a system efficiently, especially with regard to an appropriate level of detail and the consistency between different views.
 | Modeling is a universal engineering tool in all disciplines and at all stages of system development.
 |-
 | **6.** Apply agile development methods and reflect about their usage within the context of a project.
-| Selecting and reflecting over development methods: How much should you plan ahead? Should you use an agile method? Read an article on development methods, and understanding it based on own experience.
+| An important goal of this course is to be able to select the right development development method: For that you should be able to answer questions like, how much should you plan ahead, or if you should use an agile method or better not. Further, you should be able to read articles on development methods and understand them based on your own experience.
 |-
 | **7.** Make proper design choices for the system architecture and document them accordingly.
-| Learn how to reason about different alternatives together with others. This can happen at a whiteboard or through a document. No matter how, good visualizations are helpful in this task.
+| It is a paractically important skill to learn, how to reason about different alternatives together with others. This can happen at a whiteboard or through a document. No matter how, good visualizations are helpful to achieve this task.
 |}

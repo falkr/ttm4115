@@ -8,7 +8,7 @@ type: figure
 source: figures/ttm4115-content-systems.png
 ---
 
-You will also learn how to describe these types of systems. We will create system models with various notations, at various levels of detail and with different degree of rigor. This includes formal modeling in terms of state machines, but also simple and effective sketches of the system on a whiteboard. As part of this, you will learn how to think in states and transitions, and how to describe complex interactions efficiently.
+You will also learn how to describe these types of systems. We will create system models with various notations, at various levels of detail and with different degrees of rigor. This includes formal modeling in terms of state machines, but also simple and effective sketches of the system on a whiteboard. As part of this, you will learn how to think in states and transitions, and how to describe complex interactions efficiently.
 
 ---
 type: figure

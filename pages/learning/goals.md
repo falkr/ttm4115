@@ -27,7 +27,7 @@ This means there are three layers of things to learn in this course: **Technolog
 Maybe we could have a separate course on each of them — there would be more than enough to learn for any of these.
 But in this course, it is particularly the combination of these three layers. 
 If you are working as an engineer in any realistic project, elements from all of these three layers matter. They are interconnected with each other, which can make the work quite complex. 
-Therefore, it is not sufficient to be good at just one of these levels.
+Therefore, it is not sufficient to be good at just one of these layers.
 
 
 

@@ -25,17 +25,17 @@ source: figures/ttm4115-content-people.png
 
 This means there are three layers of things to learn in this course: **Technologies**, how to **specify** them, and how to organize **development projects and teams**.
 Maybe we could have a separate course on each of them — there would be more than enough to learn for any of these.
-But in this course, it is especially the combination of these three layers. 
-If you are working as an engineer in any realistic project, elements from all of these three layers matter, are interconnected with each other and lead to a complex problem. 
-Just being good ad one of these levels is not sufficient.
+But in this course, it is particularly the combination of these three layers. 
+If you are working as an engineer in any realistic project, elements from all of these three layers matter. They are interconnected with each other, which can make the work quite complex. 
+Therefore, it is not sufficient to be good at just one of these levels.
 
 
 
-The following are the learning goals in this course. I think they are well-aligned with what a future employer will expect from you. All goals should be useful in many situations and roles within technology.
+The following are the learning goals in this course. I think they are well-aligned with, what a future employer will expect from you. All goals should be useful in many situations and roles within technology.
 
 ## Knowledge
 
-Knowledge refers to the understanding of theories, facts, concepts, principles, procedures in subjects, subjects and professions.
+Knowledge refers to the understanding of theories, facts, concepts, principles, procedures in subjects, subjects, and professions.
 
 ---
 type: table

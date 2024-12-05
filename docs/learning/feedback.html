@@ -22,25 +22,7 @@
     <script src="../assets/anchor.js"></script>
     <script src="../assets/clipboard.min.js"></script>
     <script src="../assets/script-aside.js"></script>
-    <style>/* === card === */
-.person-card img {
-  width: 56px;
-  border: 1px solid #eee;
-}
-
-.person-card-name {
-  font-weight: 600;
-}
-
-.person-card-email {
-  font-size: 0.8em;
-}
-
-.person-card-detail {
-  font-size: 0.8em;
-}
-
-</style>
+    <style></style>
   </head>
   
   <body>
@@ -174,72 +156,40 @@ The main concern is to provide constructive feedback on the learning outcome in 
 </div></div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h2>Contact</h2>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="row row-cols-1 row-cols-md-2 g-4">
-<div class="col">
-<div class="card border-0 person-card h-100" style="max-width: 540px;">
-    <div class="row g-0">
-        <div class="col-md-3">
-            <img src="figures/persons/amir.jpg" class="img-fluid" alt="Photo of Amirhosein Taherkordi">
-        </div>
-        <div class="col-md-9">
-            <div class="card-body" style="padding: 0px 0px 0px 5px">
-                <div class="person-card-name">Amirhosein Taherkordi</div>
-                <div class="person-card-detail">Course teacher</div>
-                <a class="person-card-email stretched-link" href="mailto:amirhosein.taherkordi@ntnu.no">amirhosein.taherkordi@ntnu.no</a>
-            </div>
-        </div>
-        </div>
-</div>
-</div>
-<div class="col">
-<div class="card border-0 person-card h-100" style="max-width: 540px;">
-    <div class="row g-0">
-        <div class="col-md-3">
-            <img src="figures/persons/peter.jpg" class="img-fluid" alt="Photo of Peter Herrmann">
-        </div>
-        <div class="col-md-9">
-            <div class="card-body" style="padding: 0px 0px 0px 5px">
-                <div class="person-card-name">Peter Herrmann</div>
-                <div class="person-card-detail">Course teacher</div>
-                <a class="person-card-email stretched-link" href="mailto:peter.herrmann@ntnu.no">peter.herrmann@ntnu.no</a>
-            </div>
-        </div>
-        </div>
-</div>
-</div>
-<div class="col">
-<div class="card border-0 person-card h-100" style="max-width: 540px;">
-    <div class="row g-0">
-        <div class="col-md-3">
-            <img src="figures/persons/areeb.jpg" class="img-fluid" alt="Photo of Hafiz Areeb Asad">
-        </div>
-        <div class="col-md-9">
-            <div class="card-body" style="padding: 0px 0px 0px 5px">
-                <div class="person-card-name">Hafiz Areeb Asad</div>
-                <div class="person-card-detail">Assistant</div>
-                <a class="person-card-email stretched-link" href="mailto:hafiz.a.asad@ntnu.no">hafiz.a.asad@ntnu.no</a>
-            </div>
-        </div>
-        </div>
-</div>
-</div>
-<div class="col">
-<div class="card border-0 person-card h-100" style="max-width: 540px;">
-    <div class="row g-0">
-        <div class="col-md-3">
-            <img src="figures/persons/lindskog.jpg" class="img-fluid" alt="Photo of Herman Lindskog">
-        </div>
-        <div class="col-md-9">
-            <div class="card-body" style="padding: 0px 0px 0px 5px">
-                <div class="person-card-name">Herman Lindskog</div>
-                <div class="person-card-detail">Learning assistant</div>
-                <a class="person-card-email stretched-link" href="mailto:herman.lindskog@ntnu.no">herman.lindskog@ntnu.no</a>
-            </div>
-        </div>
-        </div>
-</div>
-</div>
-</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><!--
+---
+type: card/person
+name: Amirhosein Taherkordi
+email: amirhosein.taherkordi@ntnu.no
+detail: Course teacher
+image: figures/persons/amir.jpg
+---
+-->
+
+---
+type: card/person
+name: Peter Herrmann
+email: peter.herrmann@ntnu.no
+detail: Course teacher
+image: figures/persons/peter.jpg
+---
+
+---
+type: card/person
+name: Hafiz Areeb Asad
+email: hafiz.a.asad@ntnu.no
+detail: Assistant
+image: figures/persons/areeb.jpg
+---
+
+---
+type: card/person
+name: Herman Lindskog
+email: herman.lindskog@ntnu.no
+detail: Learning assistant
+image: figures/persons/lindskog.jpg
+---
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
   </main>
 
@@ -297,7 +247,6 @@ The main concern is to provide constructive feedback on the learning outcome in 
     var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
-
 </script>
 </body>
 

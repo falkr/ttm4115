@@ -53,7 +53,7 @@ type: card/person
 name: Henrik Haug Larsen
 email: henrihl@stud.ntnu.no
 detail: Learning assistant
-image: figures/persons/peer-1.jpg
+image: figures/persons/empty.svg
 ---
 
 ---
@@ -61,7 +61,7 @@ type: card/person
 name: Elias Melkeraaen
 email: elias.w.melkeraaen@ntnu.no
 detail: Learning assistant
-image: figures/persons/peer-1.jpg
+image: figures/persons/empty.svg
 ---
 
 ---
@@ -69,5 +69,5 @@ type: card/person
 name: Alexander Moltu
 email: alexander.moltu@ntnu.no
 detail: Learning assistant
-image: figures/persons/peer-1.jpg
+image: figures/persons/empty.svg
 ---

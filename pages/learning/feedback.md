@@ -24,7 +24,7 @@ The main concern is to provide constructive feedback on the learning outcome in 
 type: link
 title: About Reference Groups
 icon: link-45deg
-link: https://innsida.ntnu.no/wiki/-/wiki/Norsk/Referansegruppe+-+kvalitetssikring+av+utdanning
+link: https://i.ntnu.no/wiki/-/wiki/English/Reference+groups+-+quality+assurance+of+education
 ---
 
 

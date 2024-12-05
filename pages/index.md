@@ -34,7 +34,7 @@ Read and work through the [preparation material for setting up the course](unit-
 
 ### Step 3: First Class Time
 
-Our first class time will be on **Thursday, Jan. 09th 2025 at 14:15** in [Hovedbygningen, room GL-HB 326](https://link.mazemap.com/oOca9g4M). 
+Our first class time will be on **Thursday, Jan. 09th 2025 at 14:15** in [Hovedbygningen, room GL-HB 326](https://link.mazemap.com/Tg8i3seb). 
 The regular [schedule is here](schedule.html).
 
 

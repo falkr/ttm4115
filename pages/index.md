@@ -2,7 +2,6 @@
 
 **The Update to the year 2025 is still under progress. At least the [Schedule](https://ttm4115.iik.ntnu.no/schedule.html), however, is already adapted.**
 
-
 **Developing systems is surprisingly hard.** 
 We often think that the programming is the difficult part,
 but most of the important decisions that affect the system's quality are done long before the first line of code is written, or, at least, these decisions *should be done before*. 

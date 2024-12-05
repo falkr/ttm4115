@@ -1,12 +1,12 @@
 # Remote Team Instructions
 
 
-Collect your RATs from us on Mondays at 12:15 in the classroom.
+Collect your RATs from us on Thursdays at 14:15 in the classroom.
 
 ### Individual RAT
 
 * Solve the individual RATs at first.
-* Use maximum 20 minutes, but often less time will be sufficient.
+* Use 20 minutes at maximum, but often you will need less time.
 * Work alone during the individual RATs.
 * Do not talk to each other.
 * Do not use any helping material.

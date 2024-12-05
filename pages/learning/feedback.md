@@ -33,6 +33,7 @@ link: https://innsida.ntnu.no/wiki/-/wiki/Norsk/Referansegruppe+-+kvalitetssikri
 
 
 
+<!--
 ---
 type: card/person
 name: Amirhosein Taherkordi
@@ -40,7 +41,7 @@ email: amirhosein.taherkordi@ntnu.no
 detail: Course teacher
 image: figures/persons/amir.jpg
 ---
-
+-->
 
 ---
 type: card/person

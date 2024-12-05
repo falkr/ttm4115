@@ -61,7 +61,7 @@ type: card/person
 name: Elias Melkeraaen
 email: elias.w.melkeraaen@ntnu.no
 detail: Learning assistant
-image: figures/persons/empty.svg
+image: figures/persons/Elias2.jpg
 ---
 
 ---

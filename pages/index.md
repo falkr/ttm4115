@@ -1,5 +1,7 @@
 # Design of Communicating Systems
 
+**The Update to the year 2025 is still under progress. At least the [Schedule](https://ttm4115.iik.ntnu.no/schedule.html), however, is already adapted.**
+
 
 **Developing systems is surprisingly hard.** 
 We often think that the programming is the difficult part,
@@ -32,7 +34,7 @@ Read and work through the [preparation material for setting up the course](unit-
 
 ### Step 3: First Class Time
 
-Our first class time will be on **Monday, Jan. 15th 2024 at 12:15** in [Landmålderhallen](https://link.mazemap.com/oOca9g4M). 
+Our first class time will be on **Thursday, Jan. 09th 2025 at 14:15** in [Hovedbygningen, room GL-HB 326](https://link.mazemap.com/oOca9g4M). 
 The regular [schedule is here](schedule.html).
 
 

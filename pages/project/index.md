@@ -40,7 +40,7 @@ Usually, e-scooters are operated with the help of mobile phone apps, that allow 
 
 You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the control unit of an e-scooter.
 
-In the last year, there was some discussion about, how many features a project should realize. Of course, that depends heavily on the complexity of the particular features. However, if you manage to realize three to four [use cases](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html) at the sea level, preferably those that have some logical relationships with each other, you should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
+In the last year, there was some discussion about, how many features a project should realize. Of course, that depends heavily on the complexity of the particular features. However, if you manage to realize three to four [use cases at the sea level](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html), preferably those that have some logical relationships with each other, you should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together.
 
 Apart from being related to handling of e-scooters, you have a lot of freedom. In the following, you will find some ideas for possible new features:
 

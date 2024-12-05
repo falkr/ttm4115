@@ -50,8 +50,8 @@ image: figures/persons/areeb.jpg
 
 ---
 type: card/person
-name: Herman Lindskog
-email: herman.lindskog@ntnu.no
+name: Elias Melkeraaen
+email: elias.w.melkeraaen@ntnu.no
 detail: Learning assistant
-image: figures/persons/lindskog.jpg
+image: figures/persons/peer-1.jpg
 ---

@@ -32,22 +32,11 @@ link: https://innsida.ntnu.no/wiki/-/wiki/Norsk/Referansegruppe+-+kvalitetssikri
 ## Contact
 
 
-
-<!--
----
-type: card/person
-name: Amirhosein Taherkordi
-email: amirhosein.taherkordi@ntnu.no
-detail: Course teacher
-image: figures/persons/amir.jpg
----
--->
-
 ---
 type: card/person
 name: Peter Herrmann
 email: peter.herrmann@ntnu.no
-detail: Course teacher
+detail: Course responsible and teacher
 image: figures/persons/peter.jpg
 ---
 

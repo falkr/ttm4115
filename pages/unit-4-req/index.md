@@ -55,7 +55,7 @@ icon: journal-bookmark-fill
 link: ../project/index.html
 ---
 
-## Teamwork on Monday
+## Teamwork on Thursday
 
 Go through the following activities with your team:
 

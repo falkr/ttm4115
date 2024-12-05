@@ -33,7 +33,7 @@ link: preparation-2.html
 ---
 
 
-## Teamwork on Monday
+## Teamwork on Thursday
 
 Go through the following activities with your team:
 

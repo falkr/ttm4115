@@ -126,24 +126,6 @@ format: html
 ---
 
 
-   No. Topic  
-   ---  ---   
-   1   `#`                      
-   2   `+/+/+`                  
-   3   `+/+/+/+`                
-   4   `+/b/c/#`                
-   5   `+/b/c/d`                
-   6   `a/#`                    
-   7   `a/+/+/d`                
-   8   `a/+/c/d`                
-   9   `a/b/#`                  
-   10  `a/b/c`                  
-   11  `a/b/c/#`                
-   12  `a/b/c/d/#`              
-   13  `a/b/c/d`                
-   14  `b/+/c/d`               
-   15  `a/b/c/d/+`               
-
 ## Retained Messages
 
 Imagine a temperature sensor that sends the temperature every 10
@@ -268,6 +250,13 @@ sequence diagram? The answer: _It depends on what you want to show._
     gets easier visible.
 
 # Solution
+
+---
+type: table
+file: tables/mqtt-answers.mw
+class: table-sm table-bordered
+format: html
+---
 
        **Topic**                **Receive?**
   ---- ------------------------ --------------

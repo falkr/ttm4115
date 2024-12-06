@@ -66,7 +66,14 @@ link: preparation-4.html
 ---
 
 
-## Teamwork on Monday
+---
+type: link
+title: 'Epilogue: The Value of Sequence Diagrams'
+icon: journal-bookmark-fill
+link: preparation-5.html
+---
+
+## Teamwork on Thursday
 
 Go through the following activities with your team:
 

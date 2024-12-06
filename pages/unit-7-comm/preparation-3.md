@@ -118,7 +118,6 @@ Examples:
 A publisher sends a message to the topic `a/b/c/d`. Which of the
 following 15 subscription topics will receive this message?
 
-
   | No. | Subscription Topic |  
   | ---: | :--- |   
   | 1  |  `#`         |             

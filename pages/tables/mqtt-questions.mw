@@ -21,7 +21,7 @@
 | <code>a/#</code>
 |-
 | 7
-| <code>a/+/+/d|</code>
+| <code>a/+/+/d</code>
 |-
 | 8
 | <code>a/+/c/d</code>
@@ -31,4 +31,19 @@
 |-
 | 10
 | <code>a/b/c</code>
+|-
+| 11
+| <code>a/b/c/#</code>
+|-
+| 12
+| <code>a/b/c/d/#</code>
+|-
+| 13
+| <code>a/b/c/d</code>
+|-
+| 14
+| <code>b/+/c/d</code>
+|-
+| 15
+| <code>a/b/c/d/+</code>
 |-

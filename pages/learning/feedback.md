@@ -69,5 +69,5 @@ type: card/person
 name: Alexander Moltu
 email: alexander.moltu@ntnu.no
 detail: Learning assistant
-image: figures/persons/empty.svg
+image: figures/persons/Alexander.jpg
 ---

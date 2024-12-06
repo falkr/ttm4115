@@ -459,7 +459,88 @@ gets easier visible.</p>
 <section class="mt-2 mb-5 py-3">
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>Solution</h1>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
-<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><table class="table table-sm">
+<tr>
+<th>No.</th>
+<th>Subscription Topic</th>
+<th>Receive Message?</th>
+</tr>
+<tr>
+<td>1</td>
+<td><code>#</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>+/+/+</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>+/+/+/+</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>+/b/c/#</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>+/b/c/d</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>a/#</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>a/+/+/d</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>a/+/c/d</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>a/b/#</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>a/b/c</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>a/b/c/#</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>a/b/c/d/#</code></td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>13</td>
+<td><code>a/b/c/d</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>b/+/c/d</code></td>
+<td>No</td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>a/b/c/d/+</code></td>
+<td>No</td>
+</tr>
+</table></div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><pre><code>   **Topic**                **Receive?**
 </code></pre>
 <hr />

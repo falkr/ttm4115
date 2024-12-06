@@ -249,8 +249,7 @@ sequence diagram? The answer: _It depends on what you want to show._
     directly send messages to each other, so that the application logic
     gets easier visible.
 
-# Solution
-
+# Solution of the Exercise
 ---
 type: table
 file: tables/mqtt-answers.mw

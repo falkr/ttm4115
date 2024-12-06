@@ -1,5 +1,5 @@
 {| First Header  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| <code>Content</code> Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 |}

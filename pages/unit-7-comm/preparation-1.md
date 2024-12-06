@@ -175,7 +175,7 @@ server many clients. But there are also protocols in which the
 server is on a tiny sensor device, and "serves" the values of the
 sensor to any client that is interested in them.
 
-<a class="arrow" href="https://en.m.wikipedia.org/wiki/Client--server\_model">Client-Server on Wikipedia</a>
+[Client-Server on Wikipedia](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
 
 **Peer-to-peer:** A peer is a node in a communication scenario. The word peer
 emphasizes that the nodes are equivalent, and each node can both

@@ -121,8 +121,6 @@ following 15 subscription topics will receive this message?
 ---
 type: table
 file: tables/mqtt-questions.mw
-class: table-sm table-bordered
-format: html
 ---
 
 

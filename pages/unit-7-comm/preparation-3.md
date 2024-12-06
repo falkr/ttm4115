@@ -118,23 +118,23 @@ Examples:
 A publisher sends a message to the topic `a/b/c/d`. Which of the
 following 15 subscription topics will receive this message?
 
-   No. | Subscription Topic  
-   ---: | :---   
-   1  |  `#`                      
-   2  |  `+/+/+`                  
-   3  |  `+/+/+/+`                
-   4  |  `+/b/c/#`                
-   5  |  `+/b/c/d`                
-   6  |  `a/#`                    
-   7  |  `a/+/+/d`                
-   8  |  `a/+/c/d`                
-   9  |  `a/b/#`                  
-   10 |  `a/b/c`                  
-   11 |  `a/b/c/#`                
-   12 |  `a/b/c/d/#`              
-   13 |  `a/b/c/d`                
-   14 |  `b/+/c/d`               
-   15 |  `a/b/c/d/+`               
+   No. Topic  
+   ---: :---   
+   1   `#`                      
+   2   `+/+/+`                  
+   3   `+/+/+/+`                
+   4   `+/b/c/#`                
+   5   `+/b/c/d`                
+   6   `a/#`                    
+   7   `a/+/+/d`                
+   8   `a/+/c/d`                
+   9   `a/b/#`                  
+   10  `a/b/c`                  
+   11  `a/b/c/#`                
+   12  `a/b/c/d/#`              
+   13  `a/b/c/d`                
+   14  `b/+/c/d`               
+   15  `a/b/c/d/+`               
 
 ## Retained Messages
 

@@ -257,21 +257,3 @@ file: tables/mqtt-answers.mw
 class: table-sm table-bordered
 format: html
 ---
-
-       **Topic**                **Receive?**
-  ---- ------------------------ --------------
-  1    `#`                      yes
-  2    `+/+/+`                  no!
-  3    `+/+/+/+`                yes
-  4    `+/b/c/#`                yes
-  5    `+/b/c/d`                yes
-  6    `a/#`                    yes
-  7    `a/+/+/d`                yes
-  8    `a/+/c/d`                yes
-  9    `a/b/#`                  yes
-  10   `a/b/c`                  no!
-  11   `a/b/c/#`                yes
-  12   `a/b/c/d/#`              yes
-  13   `a/b/c/d`                yes
-  14   `b/+/c/d`                no!
-  15   `a/b/c/d/+`              no!

@@ -21,7 +21,7 @@ MQTT and HTTP, many other application-level protocols will be easy to
 understand, too. There are also some more practical reasons why we
 recommend you to use MQTT for the semester project:
 
-:aside: Read the article [Building Facebook Messenger](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920)
+:aside: If you have a Facebook account, you may read the article [Building Facebook Messenger](https://www.facebook.com/notes/facebook-engineering/building-facebook-messenger/10150259350998920)
 
 
 

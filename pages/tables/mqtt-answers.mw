@@ -1,1 +1,66 @@
+{|
+! No.
+! Subscription Topic
+! Receive Message?
+|-
+| 1
+| <code>#</code>
+| Yes
+|-
+| 2
+| <code>+/+/+</code> 
+| No
+|-
+| 3
+| <code>+/+/+/+</code>
+| Yes
+|-
+| 4
+| <code>+/b/c/#</code>
+| Yes
+|-
+| 5
+| <code>+/b/c/d</code>
+| Yes
+|-
+| 6
+| <code>a/#</code>
+| Yes
+|-
+| 7
+| <code>a/+/+/d</code>
+| Yes
+|-
+| 8
+| <code>a/+/c/d</code>
+| Yes
+|-
+| 9
+| <code>a/b/#</code>
+| Yes
+|-
+| 10
+| <code>a/b/c</code>
+| No
+|-
+| 11
+| <code>a/b/c/#</code>
+| Yes
+|-
+| 12
+| <code>a/b/c/d/#</code>
+|-
+| Yes
+| 13
+| <code>a/b/c/d</code>
+| Yes
+|-
+| 14
+| <code>b/+/c/d</code>
+| No
+|-
+| 15
+| <code>a/b/c/d/+</code>
+| No
+|-
 

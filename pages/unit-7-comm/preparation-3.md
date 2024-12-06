@@ -120,7 +120,7 @@ following 15 subscription topics will receive this message?
 
 
   | No. | Subscription Topic |  
-  | ---- | ------------------------- |   
+  | ---: | :--- |   
   | 1  |  `#`         |             
   | 2  |  `+/+/+`     |             
   | 3  |  `+/+/+/+`   |             

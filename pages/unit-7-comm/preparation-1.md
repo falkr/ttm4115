@@ -175,7 +175,7 @@ server many clients. But there are also protocols in which the
 server is on a tiny sensor device, and "serves" the values of the
 sensor to any client that is interested in them.
 
-[Client-Server on Wikipedia](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
+[Client-Server on Wikipedia](https://en.wikipedia.org/wiki/Client-server_model)
 
 **Peer-to-peer:** A peer is a node in a communication scenario. The word peer
 emphasizes that the nodes are equivalent, and each node can both
@@ -188,7 +188,7 @@ coordination. Examples are peer-to-peer networks for sharing data,
 or the protocol for the interactions used in blockchain protocols
 and currencies like Bitcoin.
 
-<a class="arrow" href="https://en.m.wikipedia.org/wiki/Peer-to-peer">Peer to Peer on Wikipedia</a>
+[Peer to Peer on Wikipedia](https://en.m.wikipedia.org/wiki/Peer-to-peer)
 
 
 **Broker:** A message broker is a server that distributes messages. The message
@@ -197,7 +197,7 @@ content of the message. Clients communicate with the server and send
 messages to the broker, which then get distributed to those clients
 that are interested in the events.
 
-<a class="arrow" href="https://en.m.wikipedia.org/wiki/Broker\_Pattern">Broker on Wikipedia</a>
+[Broker Pattern on Wikipedia](https://en.wikipedia.org/wiki/Broker_pattern)
 
 # Message Exchange Patterns
 

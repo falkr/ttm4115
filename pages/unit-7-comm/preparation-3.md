@@ -118,15 +118,8 @@ Examples:
 A publisher sends a message to the topic `a/b/c/d`. Which of the
 following 15 subscription topics will receive this message?
 
----
-type: table
-file: tables/mqtt-questions.mw
----
 
-
-
-
-       **Subscription Topic**  
+  **No.**  **Subscription Topic**  
   ---- -------------------------
   1    `#`                      
   2    `+/+/+`                  

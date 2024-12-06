@@ -21,8 +21,14 @@
 | <code>a/#</code>
 |-
 | 7
-| <code>a/+/+/d|/code>
+| <code>a/+/+/d|</code>
 |-
 | 8
 | <code>a/+/c/d</code>
+|-
+| 9
+| <code>a/b/#</code>
+|-
+| 10
+| <code>a/b/c</code>
 |-

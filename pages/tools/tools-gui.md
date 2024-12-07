@@ -51,7 +51,7 @@ app.go()
 
 * [appJar Website](http://appjar.info)
 * [appJar on Github](https://github.com/jarvisteach/appJar/)
-* [appJar API (for Reference)](appjarapi.html)
+<!--- * [appJar API (for Reference)](appjarapi.html) --->
 
 
 # State Machines and GUI

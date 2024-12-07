@@ -28,4 +28,5 @@ The [Jupyter Notebooks with Examples](https://github.com/falkr/stmpy-notebooks) 
 
 Have a look at the [STMPY Components repository](https://github.com/falkr/stmpy-components). It provides examples how to make a component that contains state machines and that communicates via MQTT and JSON. 
 
-* [Timer Manager Source Code](https://falkr.github.io/stmpy-components/TimerManager.html)
+* [Timer Manager Source Code](https://github.com/falkr/docs/TimerManager.m.html))
+<!--- * [Timer Manager Source Code](https://falkr.github.io/stmpy-components/TimerManager.html) --->

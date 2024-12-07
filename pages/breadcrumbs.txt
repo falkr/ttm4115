@@ -70,6 +70,7 @@ index.md - TTM4115
     unit-8-sd/preparation-2.md - Combined Fragments
     unit-8-sd/preparation-3.md - Event Orderings and Semantics
     unit-8-sd/preparation-4.md - Implied Scenarios
+    unit-8-sd/preparation-5.md - Epilogue: The Value of Sequence Diagrams
     unit-8-sd/teamwork-1.md - Airport Gate Control System
   unit-9-comp/index.md - Unit 9: Components
     unit-9-comp/unit-components-tips.md - Tips for Components

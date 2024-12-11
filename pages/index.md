@@ -1,6 +1,6 @@
 # Design of Communicating Systems
 
-**The Update to the year 2025 is still under progress. At least the [Schedule](https://ttm4115.iik.ntnu.no/schedule.html), however, is already adapted.**
+**The Update to the year 2025 is still under progress but, with the exception of some not yet working links, should be finished. In particular, you can now fill out the [Onboarding Form](https://forms.office.com/e/erFQ0LfryE), if you like.**
 
 **Developing systems is surprisingly hard.** 
 We often think that the programming is the difficult part,

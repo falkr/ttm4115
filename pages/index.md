@@ -22,7 +22,7 @@ We will use this for a faster startup and the creation of working teams.
 ---
 type: button
 text: "Fill out the Onboarding Form"
-url: https://forms.office.com/r/y39LwZtWeF
+url: https://forms.office.com/e/erFQ0LfryE
 ---
 
 

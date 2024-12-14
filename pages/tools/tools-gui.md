@@ -118,14 +118,14 @@ timer_gui.app.go()
 Above you have seen that we created class `TimerGUI`. In that class we can also place function that manipulate widgets of the user interface, such as replacing a text or switching an image.
 For images, for example, two functions are useful:
 
-* `self.app.addImage(id, file, row, column)` creates an image and draws it. The image is loaded from the provided file path. Ideally, this is a `gif` image. The id for the image is a string that we can later use ro replace the image. The row and column are layou coordinates on a grid layout.
+* `self.app.addImage(id, file, row, column)` creates an image and draws it. The image is loaded from the provided file path. Ideally, this is a `gif` image. The id for the image is a string that we can later use ro replace the image. The row and column are layout coordinates on a grid layout.
 * `self.app.setImage(id, file)` replaces an existing image with an id with another file. 
 
 
 ## Kitchen Timer Example
 
-You can [download a zip file with the kitchen timer and all gif images](files/kitchen-timer.zip).
-It uses a grid layout to align all the quaters of the clock in two columns so that they can be individually switched on and off.
+You can [download a zip file with the kitchen timer and all gif images](kitchen-timer.zip).
+It uses a grid layout to align all the quarters of the clock in two columns so that they can be individually switched on and off.
 
 ---
 type: figure

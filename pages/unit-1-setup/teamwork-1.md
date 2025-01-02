@@ -34,8 +34,8 @@ After each team activity you visit this document and add an entry for the week.
 The team reflection document is also part of your final portfolio. 
 It is not graded, but contributes as context for grading all other deliveries.
 
-- Find the template for the team reflection document in the general channel on Teams. It has the name `Team Reflection Team XX.docx`.
-- Make a copy, replace the `XX` with your two-digit team number, and place it in the files section of the public channel for your team.
+- Find the template for the team reflection document in the general channel on Teams. It has the name `Team Reflection Template.docx`.
+- Make a copy, replace the `Template` with your two-digit team number, and place it in the files section of the public channel for your team.
 - Since this is a document you will need every week, you can make a Tab out of it, if you want.
 
 ### Team Roles for This Week

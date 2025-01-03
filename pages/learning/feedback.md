@@ -50,8 +50,8 @@ image: figures/persons/areeb.jpg
 
 ---
 type: card/person
-name: Henrik Haug Larsen
-email: henrihl@stud.ntnu.no
+name: Vladislav Levitin
+email: vladislav.levitin@ntnu.no
 detail: Learning assistant
 image: figures/persons/empty.svg
 ---

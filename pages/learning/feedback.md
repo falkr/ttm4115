@@ -53,7 +53,7 @@ type: card/person
 name: Vladislav Levitin
 email: vladislav.levitin@ntnu.no
 detail: Learning assistant
-image: figures/persons/empty.svg
+image: figures/persons/VladislavLevitinPhoto.jpg
 ---
 
 ---

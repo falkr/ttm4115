@@ -78,7 +78,7 @@ caption: '<a href="learning-grading.html#grading-criteria">Read more about these
 
 ### Step 6: The Final Diagram 
 
-Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool [Draw.io](draw.io), because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
+Based on the previous step, create a polished diagram. For this time, we recommend you to try the tool [Draw.io](https://app.diagrams.net/), because it offers to collaborate simultaneously. You can either work on a single machine with a shared screen or projector, or you can all log into the same shared diagram and work on your laptops. 
 
 - Try to create a diagram that provides you with a good overview of the system.
 - Include _relevant_ details.

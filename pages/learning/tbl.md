@@ -41,7 +41,7 @@ Some questions may still feel a bit tricky, since we want you to select the _bes
 
 * The scores of your RAT **do not count towards your final grade**. 
 * This means you can completely focus on understanding the answers and getting feedback on your state of preparedness for the unit.
-* **It is mandatory to submit all RATs.** If you are sick on a Monday and cannot participate, you can do the RAT later. (In this case, you only do the individual RAT, not the team-RAT explained next.) 
+* **It is mandatory to submit all RATs.** If you cannot participate on a Thursday, you can do the RAT later. (In this case, you only do the individual RAT, not the team-RAT explained next.) 
 
 
 ## Phase 3: Team RAT

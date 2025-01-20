@@ -53,7 +53,7 @@ type: figure
 source: figures/stm-e-6.png
 ---
 
-:delivery: Delivery your diagnostics on the state machines in [this form](https://forms.office.com/e/wWum7xuUdd)).
+:delivery: Delivery your diagnostics on the state machines in [this form](https://forms.office.com/e/wWum7xuUdd).
 
 
 

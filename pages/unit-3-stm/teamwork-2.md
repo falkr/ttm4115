@@ -1,7 +1,7 @@
 # Getting Started: Bus Stop
 
 You should build the state machine for a bus stop signal light. 
-It is intended for bus stops where busses only halt when there are passengers, and which are located so that it is difficult for a bus driver to see passengers when they approach. It may also be that they need to get off a larger road, but can stay on that road if there are not passengers. The solution is a signal light that passengers can activate at the buss top and which is better visible for the approaching bus. 
+It is intended for bus stops where busses only halt when there are passengers, and which are located so that it is difficult for a bus driver to see passengers when they approach. It may also be that they need to get off a larger road, but can stay on that road if there are not passengers. The solution is a signal light that passengers can activate at the bus top and which is better visible for the approaching bus. 
 
 
 ---

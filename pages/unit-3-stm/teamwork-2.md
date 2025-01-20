@@ -42,7 +42,7 @@ You can ignore for now that the system may be switched off, so you need no final
 
 ## Solution
 
-* Once you are happy with your solution, have a look at [my solution](files/bus-stop.pdf).
+* Once you are happy with your solution, have a look at [our solution](files/bus-stop.pdf).
 * Compare the solutions in detail. (If you find that my solution has any flaws, please discuss on MS Teams!)
 * Prepare a document where you show your solution and mine side-by-side, and compare.
 * Reflect about your process towards this machine.

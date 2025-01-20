@@ -121,7 +121,7 @@ caption: "Several entry and exit actions are possible."
 
 
 
-**Mind the Slash!** The slash on the transition labels separates the triggers from the actions. 
+**Mind the Slash (`/`)!** The slash on the transition labels separates the triggers from the actions. 
 
 * For initial transitions (the ones originating at an initial state) that do not have an action, the label is empty. 
 * For initial transitions with actions, we add the slash before the actions: `/a1(); a2()`

@@ -95,7 +95,7 @@ caption: "This version adds actions to turn lights on and off."
 ---  
 
 
-Another way to execute actions is to add them to a state, and run them when we enter or exit the state. For some problems, such as the blinking light, this makes the diagram much nicer. Have a look at the functionally equivalent diagram:
+Another way to execute actions is to add them to a state, and run them when we enter or exit the state. For some problems such as the blinking light, this makes the diagram much nicer. Have a look at the functionally equivalent diagram:
 
 
 ---

@@ -120,7 +120,7 @@ Your task is to assign these use cases to the level where they fit best. The exe
 * Move the use cases up and down, and discuss them. 
   * Argue why they should be on a certain level. 
   * Compare the use cases with each other, and see if the level also fits relative to each other. 
-* Once you are happy with the level of all use cases, [fill out the quiz (once per team.)](https://forms.office.com/Pages/ResponsePage.aspx?id=cgahCS-CZ0SluluzdZZ8BSxiepoCd7lKk70IThBWqdJUMk1CS1gxMDhIVEtZS1pFMEJGSkRTWjBVNC4u)
+* Once you are happy with the level of all use cases, [fill out the quiz (once per team.)](https://forms.office.com/e/r6U06h6N7E)
 * See if you agree with the answers.
 
 

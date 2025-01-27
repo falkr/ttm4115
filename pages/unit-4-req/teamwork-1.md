@@ -52,7 +52,7 @@ This should guide the technical development, and contribute to achieve the visio
 
 
 This task kicks off your work with the semester project, but is open-ended in the sense that you will probably not come up with the final document in this session. 
-You will most likely have question about this document. [Submit them in the discussion forum](https://edstem.org/eu/courses/1097/discussion/) and discuss them. (We will also be involved in the discussion.)
+You will most likely have question about this document. [Submit them in the discussion forum](https://teams.microsoft.com/l/channel/19%3AP5LlsVvj6b7cUHo3BA4KJeQZ9e2eik1Lftgm9vAUcrg1%40thread.tacv2/General?groupId=ac28add7-919a-4e18-a323-012e3ccdea9a), i.e., the General Page of our Microsoft Team, and discuss them. (We will also be involved in the discussion.)
 
 Based on the coarse idea of the system you will describe a set of use cases in the following. 
 

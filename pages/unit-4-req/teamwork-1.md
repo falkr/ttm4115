@@ -147,7 +147,7 @@ source: figures/toilet-paper.png
 caption: "Example use cases on their respective levels for a toilet paper management system."
 ---
 
-:delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels on Blackboard. (Once per team.)**
+:delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels on Teams. (Once per team.)**
 
 
 

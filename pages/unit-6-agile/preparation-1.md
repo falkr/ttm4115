@@ -53,7 +53,7 @@ A word of caution: There are a lot of people that have very strong opinions abou
 One popular agile method is *Scrum*. It is very likely that you will be invited to a course in Scrum when you start working. 
 As part of the preparation, you should read through the Scrum Guide:
 
-* [The Scrum Guide](https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100) by Ken Schwaber and Jeff Sutherland (An earlier version of this page linked to a previous version of the guide, but there are only minor adjustments.)
+* [The Scrum Guide](https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100) by Ken Schwaber and Jeff Sutherland.
 
 
 

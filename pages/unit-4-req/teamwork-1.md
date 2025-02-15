@@ -97,7 +97,7 @@ Recall the different levels of use cases from the preparation, where we assigned
 type: figure
 source: figures/use-case-teamwork.jpg
 caption: "Document on Draw.io for you to copy."
-link: https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing
+link: data/use-case-levels.pptx
 ---
 
 
@@ -116,7 +116,7 @@ As you can see, these use cases do not relate to the same system. Use some fanta
 Your task is to assign these use cases to the level where they fit best. The exercise has the main intention to make you familiar with the use case levels, before we apply this kind of thinking on your semester project.
 
 
-* Make a **copy** of the diagram. [Here is the direct link to it.](https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing)
+* Make a **copy** of the diagram. [Here is the direct link to it.](data/use-case-levels.pptx)
 * Move the use cases up and down, and discuss them. 
   * Argue why they should be on a certain level. 
   * Compare the use cases with each other, and see if the level also fits relative to each other. 
@@ -131,7 +131,7 @@ Turn your attention now to your semester project.
 
 For your project delivery, you should focus on **three** use cases **at the sea-level**. As you have seen above, these are the use cases most important to get right. The ones above provide direction and connect to your system's goals and purpose, but are more abstract. The ones below sea-level provide too much detail, but may be valuable when implementing the system. 
 
-* Make a copy of the [use case level document](https://drive.google.com/file/d/1Q3F2M-akRFF_G0HIhx5faG2iu6gjRWkg/view?usp=sharing), and start filling it with some use cases for your system.
+* Make a copy of the [use case level document](data/use-case-levels.pptx), and start filling it with some use cases for your system.
 * Be critical so that you capture the most important three use cases at the sea-level of your system. 
   * Look at higher-level ones, how they can be decomposed into sea-level use cases.
   * Look at lower-level ones to see if they can be aggregates into sea-level ones.

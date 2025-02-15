@@ -11,7 +11,7 @@ the development process to build that system.
 ---
 type: figure
 source: figures/wifi_vs_cellular.png
-caption: "Communication fails, and we are used to it. From XKCD, https://xkcd.com/1865/"
+caption: "Communication fails, and we are used to it. From XKCD, [https://xkcd.com/1865/](https://xkcd.com/1865/)"
 ---
 
 Communication between components has a great influence on the system,

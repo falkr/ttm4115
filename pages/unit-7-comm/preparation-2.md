@@ -43,3 +43,9 @@ builds upon TCP, but offers full-duplex. With WebSockets, you can for
 instance build relatively simple web-applications running in the browser
 that support fine-grained, bi-directional interactions like chat or
 games.
+
+---
+type: nav
+prev: ["Communication Protocols", "preparation-1.html"]
+next: ["MQTT", "preparation-3.html"]
+---

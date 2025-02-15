@@ -256,3 +256,8 @@ file: tables/mqtt-answers.mw
 class: table-sm table-bordered
 format: html
 ---
+
+---
+type: nav
+prev: ["HTTP - Hypertext Transfer Protocol", "preparation-2.html"]
+---

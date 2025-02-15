@@ -102,7 +102,7 @@ link: data/use-case-levels.pptx
 
 
 
-In the document above, you see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level. 
+You find the document above as a [Powerpoint file](data/use-case-levels.pptx). You see a number of use cases lined up at the sea-level, but many of them belong either to a higher or a lower level. 
 In case you have troubles with the document, here is a list of all the use cases it lists:
 
 * Log into system
@@ -116,7 +116,7 @@ As you can see, these use cases do not relate to the same system. Use some fanta
 Your task is to assign these use cases to the level where they fit best. The exercise has the main intention to make you familiar with the use case levels, before we apply this kind of thinking on your semester project.
 
 
-* Make a **copy** of the diagram. [Here is the direct link to it.](data/use-case-levels.pptx)
+* Make a **copy** of the diagram. [Here is the direct link to it as a Powerpoint file.](data/use-case-levels.pptx)
 * Move the use cases up and down, and discuss them. 
   * Argue why they should be on a certain level. 
   * Compare the use cases with each other, and see if the level also fits relative to each other. 

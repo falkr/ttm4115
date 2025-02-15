@@ -326,3 +326,8 @@ invisible and it appears as if the connection simply works. TCP achieves
 this by the rules according to which it sends the different messages in
 both directions. So in this sense, two components talking TCP are an
 exclusive pair that together execute a specific protocol.
+
+---
+type: nav
+next: ["HTTP - Hypertext Transfer Protocol", "preparation-2.html"]
+--- 

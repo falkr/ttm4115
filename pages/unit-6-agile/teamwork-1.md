@@ -64,11 +64,11 @@ Make a copy of the diagram below, and move the forces on the right side to the r
 ---
 source: figures/agile-forces-2.jpg
 type: figure
-link: https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing
+link: data/agile-forces.pptx
 ---
 
 
-Here is also a [link to the diagram](https://drive.google.com/file/d/1hZdFV59lQ20oGVIzIQK5W0W4xcJzVLTL/view?usp=sharing).
+Here is also a [link to the diagram](data/agile-forces.pptx).
 
 With some discussion you should be able to place all forces and strategies so that the entire diagram makes sense. These are the considerations you have to do in a development project!
 

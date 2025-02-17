@@ -112,13 +112,13 @@ type: table
 
 # Feedback Document and Delivery
 
-On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v1-team-xx.docx`.
-Create a copy, and fill it out for your own team:
+To allow both, your teachers and members of other teams to give you feedback, each team needs to create a feedback form. This can be done by the teammates together or by those members, to whom this task is assigned.
+You find a template for the evaluation document on Teams in channel `General` under `Semester Project / feedback-v1-team-xx.docx`.
+Create a copy, and fill the following out for your own team:
 
-* Add team name and team members
-* Follow the instructions in the document
-    * For each rubric, evaluate which level you have achieved for each criteria. Comment where necessary.
-    * Add up to three questions at the end of the document where you ask about particular help.
+* Add your team name and team members.
+* For each of the rubrics, make a short self-evaluation by assigning yourself one of the grades `excellent`, `good`, `sufficient`, or `not rateable`. If useful, comment why you assigned yourself the particular grade.
+* If you have some special problems addressed in the feedback, you can pose up to three questions at the end of the document. These questions should be answered by the people giving you feedback.
 
 
 # Delivery

@@ -214,3 +214,8 @@ to this dilemma:
 One way of making sequence diagrams more powerful and let a single
 diagram express more than one scenario is by using combined fragments,
 which we will look at in the next section.
+
+---
+type: nav
+next: ["Combined Fragments", "preparation-2.html"]
+---

@@ -106,3 +106,9 @@ caption: "From the UML@Class book."
 It shows that the newsletter is sent at 12:00. Five time units later,
 the student receives the confirmation. The diagram also specifies that
 the signal *inform* must be received within two hours.
+
+---
+type: nav
+prev: ["Intuition on Sequence Diagrams", "preparation-1.html"]
+next: ["Event Orderings and Semantics", "preparation-3.html"]
+---

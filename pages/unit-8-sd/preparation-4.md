@@ -142,3 +142,10 @@ mixed initiative, using a simple comment.
 type: figure
 source: figures/ex-91.png
 ---
+
+
+---
+type: nav
+prev: ["Event Orderings and Semantics", "preparation-3.html"]
+next: ["Epilogue: The Value of Sequence Diagrams", "preparation-5.html"]
+---

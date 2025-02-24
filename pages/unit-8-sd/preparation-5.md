@@ -26,3 +26,8 @@ interactions changes your view on the system, leads to good design
 choices and prevents errors in the first place. A single relevant
 sequence diagram, sketched on a paper that uncovers problems in your
 system design early, can save millions in whatever currency.
+
+---
+type: nav
+prev: ["Implied Scenarios", "preparation-4.html"]
+---

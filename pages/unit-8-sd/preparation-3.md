@@ -159,12 +159,18 @@ source: figures/ex-3.png
 **Exercise:** Which are the *additional* traces that are possible, if
 the events within the co-region (`?A` and `?B`) can happen in any order?
 
+---
+type: figure
+source: figures/ex-3-2.png
+---
+
 **Exercise:** Is there a way to handle the situation also in another
 way? For instance, can you, just by adding a message (and without a
 co-region), reduce the number of traces so that there is only one
 possible trace left for diagram *Beta-C*?
 
 ---
-type: figure
-source: figures/ex-3-2.png
+type: nav
+prev: ["Combined Fragments", "preparation-2.html"]
+next: ["Implied Scenarios", "preparation-4.html"]
 ---

@@ -136,7 +136,7 @@
 <section class="mt-2 mb-5 py-3">
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h1>STMPY Components + MQTT</h1>
 <p>To ensure a <strong>low degree of coupling</strong>, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.</p>
-<p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
+<p>The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other code that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically <strong>a better degree of cohesion</strong>.</p>
 <p>These means alone do not ensure a low degree of coupling and a high degree of cohesion.
 A good component design depends on how we manage to group the functions we need for a system or application into the different components.
 This means we still have to put the right functions into the right components, but having them communication-wise decoupled already helps.</p>

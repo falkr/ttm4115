@@ -191,7 +191,7 @@ To create components also means to partition the entire system into components. 
 </figure></div><aside class="col-md-4 chunk ps-2"><figcaption class="figure-caption">A possible component-based structure for the Airgate system.</figcaption></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><ul>
 <li><strong>Gate Controller</strong> contains the main logic of the gate that ties together all hardware elements and the connection to the back end.</li>
-<li><strong>Airport Interface</strong> contains the code to adapt with various version for different airports.</li>
+<li><strong>Airport Interface</strong> contains the code necessary to adapt the Airgate System with different airport management systems to allow using it at different airports.</li>
 <li><strong>Turnstile</strong>, <strong>Display</strong> and <strong>Scanner</strong> encapsulate all logic that is needed to adapt to the various versions of hardware Airgate has sold over time.</li>
 </ul>
 <p>At the bottom of the diagram you see six more components, each providing more generic functionality. Most of them are from open source projects (such as Apache), because they are also used in many other systems.</p>

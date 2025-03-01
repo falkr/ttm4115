@@ -126,7 +126,9 @@ Components also help to structure the system into parts that can be understood a
 
 Some requirements may also be so important that they require a deeper analysis to check that they really hold. An example would be the following requirement:
 
+
 > Only a passenger with a validated boarding pass may enter the aircraft.
+
 
 This is kind of obvious, but where should we check if this requirement is fulfilled? We must analyze if it could open the turnstile even if it did not get an okay from the airport back end. This does not mean that we only need to analyze the gate controller, but this is where we can start and get an overview and then systematically check which other components are relevant for this requirement. 
 

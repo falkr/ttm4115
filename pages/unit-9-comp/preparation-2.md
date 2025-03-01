@@ -32,3 +32,7 @@ But we add the possibility to create several instances of the same state machine
 
 For our component model this means that a component manages usually state machine sessions, that means, potentially many instances of them.
 
+---
+type: nav
+prev: ["Components", "preparation-1.html"]
+---

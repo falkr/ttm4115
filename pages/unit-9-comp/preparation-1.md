@@ -246,3 +246,8 @@ These are just a few examples of functionalities offered by component frameworks
 
 :aside: A while ago, Java 9 was published with a framework called Java Jigsaw that [introduces a module system for Java](https://openjdk.org/projects/jigsaw/). 
 
+---
+type: nav
+next: ["Implementing Components", "preparation-2.html"]
+---
+

@@ -115,7 +115,7 @@ Components, instead, offer a unit that can be more suitable to deliver separatel
 
 New versions of components are often developed independently of each other, and therefore they are also separate units of compilation, that means, the process that generates some form of machine code from the source code and packages all files. 
 
-In OSGi for instance, all Java classes belonging to a single OSGi bundle are compiled and then place together into a zip file which is then ready for deployment. 
+In OSGi for instance, all Java classes belonging to a single OSGi bundle are compiled and then placed together into a zip file which is then ready for deployment. 
 
 Deployment means that a component is made available on a platform, and maybe adjusted for specific settings. It is also analyzed if it has dependencies to other components that are required as well. The subsequent installation makes the deployed component available on a computer, and checks its integrity, for instance. (The detailed process depends on which kind of component framework we use.) 
 

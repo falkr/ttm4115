@@ -6,7 +6,7 @@ Your task is to build the module that allows a voice assistant to maintain timer
 
 During this timer is active, the user can start another timer:
 
-> "Hey Assistant, start a 2-minute green tea timer."
+> "Hey Assistant, start a 3-minute green tea timer."
 
 These timers are independent of each other. Once they expire, the assistant says:
 

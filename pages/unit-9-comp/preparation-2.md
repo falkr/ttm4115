@@ -9,7 +9,7 @@ In this section, we want to study some of the technical solutions to create comp
 
 To ensure a **low degree of coupling**, we connect components only by means of MQTT as communication between them. This means, components can run wherever the MQTT broker is reachable, and they can communicate asynchronously.
 
-The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other coide that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically **a better degree of cohesion**.
+The state machines alone would not make good components. They are too dependent on communication (here MQTT) and other code that they interact with. For cohesion, we therefore combine state machines with an MQTT communication client into a single component. This enables technically **a better degree of cohesion**.
 
 These means alone do not ensure a low degree of coupling and a high degree of cohesion.
 A good component design depends on how we manage to group the functions we need for a system or application into the different components.

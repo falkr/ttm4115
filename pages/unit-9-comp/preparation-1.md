@@ -63,7 +63,7 @@ caption: "A possible component-based structure for the Airgate system."
 ---
 
 * **Gate Controller** contains the main logic of the gate that ties together all hardware elements and the connection to the back end.
-* **Airport Interface** contains the code to adapt with various version for different airports.
+* **Airport Interface** contains the code necessary to adapt the Airgate System with different airport management systems to allow using it at different airports.
 * **Turnstile**, **Display** and **Scanner** encapsulate all logic that is needed to adapt to the various versions of hardware Airgate has sold over time.
 
 At the bottom of the diagram you see six more components, each providing more generic functionality. Most of them are from open source projects (such as Apache), because they are also used in many other systems. 

@@ -237,10 +237,12 @@ To create components also means to partition the entire system into components. 
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Units of Analysis and Understanding</h3>
 <p>Components also help to structure the system into parts that can be understood and analyzed separately from each other. Imagine for instance that you should create a new component for the turnstile, since there is a new one with slightly changed mechanics. You can have a look at the old component, see how it communicates with the other components (here probably most with the gate controller) and then develop a new version. Maybe you have to peek sometimes into some of the other components to find out a detail that is not documented as part of their interfaces, but having to focus on the turnstile component helps your work a lot.</p>
 <p>Some requirements may also be so important that they require a deeper analysis to check that they really hold. An example would be the following requirement:</p>
-<blockquote>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><blockquote>
 <p>Only a passenger with a validated boarding pass may enter the aircraft.</p>
 </blockquote>
-<p>This is kind of obvious, but where should we check if this requirement is fulfilled? We must analyze if it could open the turnstile even if it did not get an okay from the airport back end. This does not mean that we only need to analyze the gate controller, but this is where we can start and get an overview and then systematically check which other components are relevant for this requirement.</p>
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><p>This is kind of obvious, but where should we check if this requirement is fulfilled? We must analyze if it could open the turnstile even if it did not get an okay from the airport back end. This does not mean that we only need to analyze the gate controller, but this is where we can start and get an overview and then systematically check which other components are relevant for this requirement.</p>
 </div><aside class="col-md-4 chunk ps-2"></aside></div>
 <div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><h3>Units of Fault Containment</h3>
 <p>It's unrealistic to assume that software contains no errors. Sometimes errors do not show up even during extensive testing, but may be a combination of factors that only happen at runtime in a specific deployment. It's therefore good to have mechanisms  in place that handle errors and can help to contain them, so that the effects for the system are less severe. Components represent such a possible containment border for errors. Internally, they must still be developed in a fault-tolerant way.</p>

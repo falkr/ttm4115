@@ -6,7 +6,7 @@ but most of the important decisions that affect the system's quality are done lo
 In this course, you will get some of the tools and experiences that will help you to become a better engineer and adopt a more realistic approach to systems development in team. 
 It's also fun, but we leave it up to you to decide.
 
-Welcome to the iteration in spring 2025!
+Welcome to the iteration in spring 2026!
 
 
 ## Startup for 2025

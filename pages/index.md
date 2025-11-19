@@ -9,7 +9,7 @@ It's also fun, but we leave it up to you to decide.
 Welcome to the iteration in spring 2026!
 
 
-## Startup for 2025
+## Startup for 2026
 
 
 ### Step 1: Onboarding

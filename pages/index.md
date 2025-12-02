@@ -20,9 +20,12 @@ We will use this for a faster startup and the creation of working teams.
 ---
 type: button
 text: "Fill out the Onboarding Form"
-url: https://forms.office.com/e/erFQ0LfryE
+url: https://forms.office.com/e/jApPBc1Sxu
 ---
 
+<!---
+url: https://forms.office.com/e/erFQ0LfryE
+-->
 
 ### Step 2: Preparation
 
@@ -31,7 +34,7 @@ Read and work through the [preparation material for setting up the course](unit-
 
 ### Step 3: First Class Time
 
-Our first class time will be on **Thursday, Jan. 09th 2026 at 14:15** in [Hovedbygningen, room GL-HB 326](https://link.mazemap.com/Tg8i3seb). 
+Our first class time will be on **Monday, Jan. 12th 2026 at 14:15** in [Realfagbygget, Floor U1, room GL-RFB R2](https://link.mazemap.com/mA1mAmMk). 
 The regular [schedule is here](schedule.html).
 
 

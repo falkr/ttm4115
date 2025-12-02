@@ -24,7 +24,7 @@
 | Mon., 12. Jan 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-| Unit 1
+| <a href="unit-1-setup/index.html">Unit 1</a>
 | 
 |-
 |
@@ -38,7 +38,7 @@
 | Mon., 19. Jan 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-2-models/index.html">Unit 2</a>
 |
 |-
 |
@@ -52,7 +52,7 @@
 | Mon., 26. Jan 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-3-stm/index.html">Unit 3</a>
 |
 |-
 |
@@ -66,7 +66,7 @@
 | Mon., 02. Feb 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-4-req/index.html">Unit 4</a>
 |
 |-
 |
@@ -80,7 +80,7 @@
 | Mon., 09. Feb 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-5-stmpy/index.html">Unit 5</a>
 |
 |-
 |
@@ -88,13 +88,13 @@
 | 10:15 - 12:00
 | <a href="https://link.mazemap.com/o1ZZRp3j">Kjelhuset GL-KH KJL1</a>
 | 
-|
+| <a href="project/deliveries-t1.html">Spec v.1</a>
 |-
 | 8
 | Mon., 16. Feb 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-6-agile/index.html">Unit 6</a>
 | 
 |-
 |
@@ -108,7 +108,7 @@
 | Mon., 23. Feb 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-7-comm/index.html">Unit 7</a>
 |
 |-
 |
@@ -116,13 +116,13 @@
 | 10:15 - 12:00
 | <a href="https://link.mazemap.com/o1ZZRp3j">Kjelhuset GL-KH KJL1</a>
 | 
-| 
+| <a href="project/deliveries-i1.html">Feedback to Spec v.1</a>
 |-
 | 10
 | Mon., 02. Mar 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
+| <a href="unit-8-sd/index.html">Unit 8</a>
 | 
 |-
 |
@@ -130,14 +130,14 @@
 | 10:15 - 12:00
 | <a href="https://link.mazemap.com/o1ZZRp3j">Kjelhuset GL-KH KJL1</a>
 | 
-|
+| 
 |-
 | 11
 | Mon., 09. Mar 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
-|
+| <a href="unit-9-comp/index.html">Unit 9</a>
+| <a href="project/deliveries-t2.html">Spec v.2</a>
 |-
 |
 | Fri., 13. Mar 2026
@@ -150,8 +150,8 @@
 | Mon., 16. Mar 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
-|
+| <a href="index.html">Unit</a>
+| 
 |-
 |
 | Fri., 20. Mar 2026
@@ -164,8 +164,8 @@
 | Mon., 23. Mar 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-|
-|
+| <a href="index.html">Unit</a>
+| <a href="project/deliveries-i2.html">Feedback to Spec v.2</a>
 |-
 |
 | Fri., 27. Mar 2026
@@ -206,8 +206,8 @@
 | Mon., 13. Apr 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
+| <a href="index.html">Unit</a>
 | 
-|
 |-
 |
 | Fri., 17. Apr 2026
@@ -220,7 +220,7 @@
 | Mon., 20. Apr 2026
 | 14:15 - 18:00
 | <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-| 
+| <a href="index.html">Unit</a>
 |
 |-
 |
@@ -233,15 +233,15 @@
 | 18
 | Mon., 27. Apr 2026
 | 14:15 - 18:00
-| <a href="https://link.mazemap.com/mUcoRZlv">Realfagbygget GL-RFB R2</a>
-| 
+| -
+| no lectures
 |
 |-
 |
 | Fri., 01. May 2026
 | 10:15 - 12:00
-| -
-| no lectures
+| <a href="https://link.mazemap.com/o1ZZRp3j">Kjelhuset GL-KH KJL1</a>
+| 
 |
 |-
 | 19 
@@ -249,12 +249,12 @@
 | -
 | -
 | 
-| 
+| <a href="project/deliveries-t3.html">Spec v.3, Code, Screencast</a>
 |-
 | 20 
 | Mon., 11. May 2026
 | -
 | -
 | 
-| 
+| <a href="project/deliveries-i3.html">Reflective Essay</a>
 |}

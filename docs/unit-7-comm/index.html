@@ -22,7 +22,102 @@
     <script src="../assets/anchor.js"></script>
     <script src="../assets/clipboard.min.js"></script>
     <script src="../assets/script-aside.js"></script>
-    <style>/* === goals === */
+    <style>/* === boxes === */
+div.box {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
+}
+
+div.box>p {
+  margin-bottom: 0px;
+}
+
+div.box>*:first-child::before {
+  font-family: bootstrap-icons !important;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: grid;
+}
+
+div.milestone {
+  background-color: #E3BCDA;
+}
+
+div.milestone>*:first-child::before {
+  content: '\f706';
+  color: #75225E;
+}
+
+div.delivery {
+  background-color: #ffd9ab;
+}
+
+div.delivery>*:first-child::before {
+  content: '\f1be';
+  color: #fc8c03;
+}
+
+div.definition {
+  background-color: #EEE5D5;
+}
+
+div.definition>*:first-child::before {
+  content: '\f3e9';
+  color: #7D705A;
+}
+
+div.guideline {
+  background-color: #fae7e8;
+}
+
+div.guideline>*:first-child::before {
+  content: '\f548';
+  color: #e45460;
+}
+
+div.report {
+  background-color: #D6E5F0;
+}
+
+div.report>*:first-child::before {
+  content: '\f43e';
+  color: #1481b8;
+}
+
+div.warning {
+  background-color: #ffd9ab;
+}
+
+div.warning>*:first-child::before {
+  content: '\f33a';
+  color: #fc8c03;
+}
+
+div.tip {
+  background-color: #E3BCDA;
+}
+
+div.tip>*:first-child::before {
+  content: '\f402';
+  color: #75225E;
+}
+
+div.task {
+  background-color: #fae7e8;
+}
+
+div.task>*:first-child::before {
+  content: '\f5db';
+  color: #e45460;
+}
+
+/* === goals === */
 div.goals ul,
 div.goals ul li {
   padding: 0;
@@ -231,6 +326,13 @@ Also, make notes about ny observations, which will help you for the reflective e
 </a>
 </div>
 </div></div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><!---
+link: https://forms.office.com/e/A3gZZxxwuA
+link: https://ref.iik.ntnu.no/app/enroll/spring2024/TTM4115
+-->
+</div><aside class="col-md-4 chunk ps-2"></aside></div>
+<div class="row g-0 my-3"><div class="col-md-8 px-4 chunk"><div class="tip box mt-3 mb-3"><p>If the form does not open properly or you get an error message, try right-clicking the link and opening it in a new tab or window.</p>
+</div></div><aside class="col-md-4 chunk ps-2"></aside></div>
 </section>
   </main>
 
@@ -288,6 +390,7 @@ Also, make notes about ny observations, which will help you for the reflective e
     var clipboard = new ClipboardJS('.copy-button');
   </script>
   <script>
+
 
 </script>
 </body>

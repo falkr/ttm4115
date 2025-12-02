@@ -4,28 +4,28 @@
 For each unit, we follow the same schedule:
 
 * You will receive a Blackboard announcement with a link to preparation material. (But even without the announcement, the preparation material is already accessible on this website.)
-* We meet on **Thursdays at 14:15** in [Hovedbygningen, room GL-HB 326](https://link.mazemap.com/Tg8i3seb), where we start with the individual RAT and the team RAT, ca 45 minutes.
+* We meet on **Mondays at 14:15** in [Realfagbygget, Floor U1, room GL-RFB R2](https://link.mazemap.com/MOQ34ith), where we start with the individual RAT and the team RAT, ca 45 minutes.
 * We continue with the teamwork for that week.
-* On Tuesdays in the following week between 14:15 and 16:00, different things may happen:
-  * You can meet you team independently on campus to finish the teamwork or work on the semester project.
+* On Fridays in the same week between 10:15 and 12:00, different things may happen:
+  * You can meet your team independently on campus to finish the teamwork or work on the semester project.
   * We have a (digital) question and answer class.
 
 
 
-The first lecture in 2025 is on **Thursday, Jan. 9th, at 14:15**.
+The first lecture in 2026 is on **Monday, Jan. 12th, at 14:15**.
 
 ---
 type: table
-file: tables/week-2025.mw
+file: tables/week-2026.mw
 class: weekplan table-sm table-bordered
 format: html
 ---
 
-Here is the semester schedule for 2025. Note that this is a tentative plan that we may adjust during the semester.
+Here is the semester schedule for 2026. Note that this is a tentative plan that we may adjust during the semester.
 
 ---
 type: table
-file: tables/schedule-2025.mw
+file: tables/schedule-2026.mw
 class: table-sm table-bordered
 format: html
 ---

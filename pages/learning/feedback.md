@@ -34,18 +34,18 @@ link: https://i.ntnu.no/wiki/-/wiki/English/Reference+groups+-+quality+assurance
 
 ---
 type: card/person
-name: Peter Herrmann
-email: peter.herrmann@ntnu.no
+name: Amirhosein Taherkordi
+email: amirhosein.taherkordi@ntnu.no
 detail: Course responsible and teacher
-image: figures/persons/peter.jpg
+image: figures/persons/amir.jpg
 ---
 
 ---
 type: card/person
-name: Hafiz Areeb Asad
-email: hafiz.a.asad@ntnu.no
+name: Sahana Sridhar
+email: sahana.sridhar@ntnu.no
 detail: Assistant
-image: figures/persons/areeb.jpg
+image: figures/persons/sahana.jpg
 ---
 
 ---

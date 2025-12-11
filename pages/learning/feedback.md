@@ -45,29 +45,23 @@ type: card/person
 name: Sahana Sridhar
 email: sahana.sridhar@ntnu.no
 detail: Assistant
-image: figures/persons/sahana.jpg
+image: figures/persons/sahanas.jpg
 ---
 
 ---
 type: card/person
-name: Vladislav Levitin
-email: vladislav.levitin@ntnu.no
+name: Haakon Kirksæter
+email: haakoki@stud.ntnu.no
 detail: Learning assistant
-image: figures/persons/VladislavLevitinPhoto.jpg
+image: figures/persons/empty.svg
 ---
 
 ---
 type: card/person
-name: Elias Melkeraaen
-email: elias.w.melkeraaen@ntnu.no
+name: Tobias Dubland Nilsen
+email: tobias.d.nilsen@ntnu.no
 detail: Learning assistant
-image: figures/persons/Elias2.jpg
+image: figures/persons/empty.svg
 ---
 
----
-type: card/person
-name: Alexander Moltu
-email: alexander.moltu@ntnu.no
-detail: Learning assistant
-image: figures/persons/Alexander.jpg
----
+

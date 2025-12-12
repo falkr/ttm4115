@@ -34,8 +34,8 @@ link: https://i.ntnu.no/wiki/-/wiki/English/Reference+groups+-+quality+assurance
 
 ---
 type: card/person
-name: Amirhosein Taherkordi
-email: amirhosein.taherkordi@ntnu.no
+name: Amir Taherkordi
+email: amirhost@ntnu.no
 detail: Course responsible and teacher
 image: figures/persons/amir.jpg
 ---

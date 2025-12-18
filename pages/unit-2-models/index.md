@@ -51,7 +51,7 @@ link: preparation-3.html
 ---
 
 
-## Teamwork on Thursday
+## Teamwork on Monday
 
 Go through the following activities with your team:
 

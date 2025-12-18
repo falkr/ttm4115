@@ -45,7 +45,7 @@ link: ../learning/reflection.html
 Go to the [Tools Page](../tools/index.html) and check that you have installed all necessary tools.
 
 
-## Teamwork on Thursday
+## Teamwork on Monday
 
 Go through the following activities with your team:
 

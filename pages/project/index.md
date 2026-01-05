@@ -37,9 +37,9 @@ You should create a system for handling drones used in package delivery scenario
 
 You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the control unit of a drone. 
 
-Scope of your project: you may ask how many features a project should realize. This of course depends heavily on the complexity of the particular features you are aiming to implement. However, if you manage to realize three to four [use cases at the sea level](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html), preferably those that have some logical relationships with each other, it should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together. 
+**Scope of your project:** you may ask how many features a project should realize. This of course depends heavily on the complexity of the particular features you are aiming to implement. However, if you manage to realize three to four [use cases at the sea level](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html), preferably those that have some logical relationships with each other, it should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together. 
 
-Apart from being related to handling of drones, you have a lot of freedom. In the following, you will find **some ideas** for possible new features: 
+Apart from being related to handling of drones, you have a lot of freedom. In the following, you will find **some ideas for possible** new features: 
 
  
 
@@ -53,9 +53,8 @@ Apart from being related to handling of drones, you have a lot of freedom. In th
 
 * **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying&real-time location, issue detected, delivered, etc.). 
 
-
  
-We emphasize once again that the above features are only examples meant to illustrate the scope and possible direction of the project. You are encouraged to develop your own ideas, explore creative alternatives, and propose new features that align with your system concept or introduce novel features.  
+We emphasize once again that the above features are **only examples** meant to illustrate the scope and possible direction of the project. You are encouraged to develop **your own ideas**, explore creative alternatives, and propose new features that align with your system concept or introduce novel features.  
 
 
 

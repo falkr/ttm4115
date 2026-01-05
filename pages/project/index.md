@@ -31,7 +31,7 @@ type: figure
 source: figures/drone.jpg
 ---
 
-Drone-based package delivery is an emerging logistics solution designed to transport packages quickly and efficiently using autonomous or remotely controlled unmanned aerial vehicles (UAVs). This technology aims to reduce delivery time, traffic congestion, and environmental impact by leveraging aerial routes rather than traditional on the gropund road networks. Equipped with sensors, GPS navigation, and smart routing algorithms, delivery drones can navigate complex environments, avoid obstacles, and land at designated delivery points. As the technology evolves, drone delivery systems are increasingly becoming a key feature of future urban and rural logistics infrastructures. 
+Drone-based package delivery is an emerging logistics solution designed to transport packages quickly and efficiently using autonomous or remotely controlled unmanned aerial vehicles (UAVs). This technology aims to reduce delivery time, traffic congestion, and environmental impact by leveraging aerial routes rather than traditional on the ground road networks. Equipped with sensors, GPS navigation, and smart routing algorithms, delivery drones can navigate complex environments, avoid obstacles, and land at designated delivery points. As the technology evolves, drone delivery systems are increasingly becoming a key feature of future urban and rural logistics infrastructures. 
 
 You should create a system for handling drones used in package delivery scenarios, that provides some interesting features for the use of drones. For that, you should program components for the drone and the apps. Depending on your ideas, you may also add more components. 
 
@@ -49,9 +49,9 @@ Apart from being related to handling of drones, you have a lot of freedom. In th
 
 * **Battery simulation and energy modeling**, including automated decisions for charging, landing in charging stations, or forced return. 
 
-* **Delivery prioritization rules**, where urgent or high-value deliveries defualt standard route for delivery. 
+* **Delivery prioritization rules**, where urgent or high-value deliveries default standard route for delivery. 
 
-* **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying&real-time location, issue detected, delivered, etc.). 
+* **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying & real-time location, issue detected, delivered, etc.). 
 
  
 We emphasize once again that the above features are **only examples** meant to illustrate the scope and possible direction of the project. You are encouraged to develop **your own ideas**, explore creative alternatives, and propose new features that align with your system concept or introduce novel features.  

@@ -31,8 +31,6 @@ type: figure
 source: figures/drone.jpg
 ---
 
-<figcaption>Picture taken by Thomas Wolter is freely usable according to the Pixabay Content License.</figcaption>
-
 Drone-based package delivery is an emerging logistics solution designed to transport packages quickly and efficiently using autonomous or remotely controlled unmanned aerial vehicles (UAVs). This technology aims to reduce delivery time, traffic congestion, and environmental impact by leveraging aerial routes rather than traditional on the gropund road networks. Equipped with sensors, GPS navigation, and smart routing algorithms, delivery drones can navigate complex environments, avoid obstacles, and land at designated delivery points. As the technology evolves, drone delivery systems are increasingly becoming a key feature of future urban and rural logistics infrastructures. 
 
 You should create a system for handling drones used in package delivery scenarios, that provides some interesting features for the use of drones. For that, you should program components for the drone and the apps. Depending on your ideas, you may also add more components. 
@@ -41,19 +39,19 @@ You will receive two Raspberry Pi computers, one of them with a [Sense HAT](http
 
 Scope of your project: you may ask how many features a project should realize. This of course depends heavily on the complexity of the particular features you are aiming to implement. However, if you manage to realize three to four [use cases at the sea level](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html), preferably those that have some logical relationships with each other, it should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together. 
 
-Apart from being related to handling of drones, you have a lot of freedom. In the following, you will find some ideas for possible new features: 
+Apart from being related to handling of drones, you have a lot of freedom. In the following, you will find **some ideas** for possible new features: 
 
  
 
-* Real-time tracking and simulated telemetry, showing drone position, speed, battery level, and estimated delivery time. 
+* **Real-time tracking and simulated telemetry**, showing drone position, speed, battery level, and estimated delivery time. 
 
-* Fleet management and drone assignment logic, where the system selects the best drone based on location, load capacity, and battery status. 
+* **Fleet management and drone assignment logic**, where the system selects the best drone based on location, load capacity, and battery status. 
 
-* Battery simulation and energy modeling, including automated decisions for charging, landing in charging stations, or forced return. 
+* **Battery simulation and energy modeling**, including automated decisions for charging, landing in charging stations, or forced return. 
 
-* Delivery prioritization rules, where urgent or high-value deliveries defualt standard route for delivery. 
+* **Delivery prioritization rules**, where urgent or high-value deliveries defualt standard route for delivery. 
 
-* User notifications and communication flow, informing customers about each delivery stage (takeoff, flying&real-time location, issue detected, delivered, etc.). 
+* **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying&real-time location, issue detected, delivered, etc.). 
 
 
  

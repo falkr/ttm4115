@@ -2,7 +2,6 @@
 |-
 ! 
 ! Blackboard
-! Email
 ! Forum
 ! Zoom
 ! Teams
@@ -10,8 +9,7 @@
 |-
 ! Announcements
 | <i class="bi-circle-fill"></i>
-| <i class="bi-circle-half"></i>
-| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
@@ -21,19 +19,16 @@
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 |-
 ! Private Questions
 | <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
 |-
 ! Public Questions
-| <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
@@ -46,10 +41,8 @@
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
 |-
 ! Online Lectures
-| <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
@@ -58,7 +51,6 @@
 |-
 ! Contact with Teaching Assistants
 | <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
@@ -66,14 +58,12 @@
 |-
 ! Contact among Students
 | <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
-| <i class="bi-circle"></i>
+| <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle-fill"></i>
 | <i class="bi-circle"></i>
 |-
 ! Document Collaboration
-| <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>
 | <i class="bi-circle"></i>

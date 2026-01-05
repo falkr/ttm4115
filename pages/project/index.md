@@ -28,7 +28,7 @@ The theme should guide what you are considering, but we don't want that all syst
 
 ---
 type: figure
-source: figures/e-scooter.jpg
+source: figures/drone.jpg
 ---
 
 <figcaption>Picture taken by Thomas Wolter is freely usable according to the Pixabay Content License.</figcaption>

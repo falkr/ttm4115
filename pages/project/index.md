@@ -24,7 +24,7 @@ The theme should guide what you are considering, but we don't want that all syst
 
 
 
-## Theme for 2025: Handling of E-Scooters
+## Theme for 2026: Drone-Based Package Delivery
 
 ---
 type: figure
@@ -37,9 +37,9 @@ Drone-based package delivery is an emerging logistics solution designed to trans
 
 You should create a system for handling drones used in package delivery scenarios, that provides some interesting features for the use of drones. For that, you should program components for the drone and the apps. Depending on your ideas, you may also add more components. 
 
-You will receive two Raspberry Pi computers, one of them with a Sense HAT. With these you could simulate for instance the control unit of a drone. 
+You will receive two Raspberry Pi computers, one of them with a [Sense HAT](https://www.raspberrypi.com/documentation/accessories/sense-hat.html). With these you could simulate for instance the control unit of a drone. 
 
-Scope of your project: you may ask how many features a project should realize. This of course depends heavily on the complexity of the particular features you are aiming to implement. However, if you manage to realize three to four use cases at the sea level, preferably those that have some logical relationships with each other, it should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together. 
+Scope of your project: you may ask how many features a project should realize. This of course depends heavily on the complexity of the particular features you are aiming to implement. However, if you manage to realize three to four [use cases at the sea level](https://ttm4115.iik.ntnu.no/unit-4-req/preparation-1.html), preferably those that have some logical relationships with each other, it should be fine. Feel free to discuss the outline of the semester project on the discussion forum, we will refine the guidelines as we learn more together. 
 
 Apart from being related to handling of drones, you have a lot of freedom. In the following, you will find some ideas for possible new features: 
 
@@ -78,7 +78,7 @@ Apart from being related to handling of e-scooters, you have a lot of freedom. I
 
 
 
-[Theme 2024](theme-2024.html)
+[Theme 2025](theme-2025.html)
 
 
 # Hints

@@ -49,7 +49,7 @@ Apart from being related to handling of drones, you have a lot of freedom. In th
 
 * **Battery simulation and energy modeling**, including automated decisions for charging, landing in charging stations, or forced return. 
 
-* **Delivery prioritization rules**, where urgent or high-value deliveries default standard route for delivery. 
+* **Delivery prioritization rules**, where urgent or high-value deliveries override default standard route for delivery. 
 
 * **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying & real-time location, issue detected, delivered, etc.). 
 

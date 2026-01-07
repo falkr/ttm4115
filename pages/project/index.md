@@ -31,7 +31,7 @@ type: figure
 source: figures/drone.jpg
 ---
 
-Drone-based package delivery is an emerging logistics solution designed to transport packages quickly and efficiently using autonomous or remotely controlled unmanned aerial vehicles (UAVs). This technology aims to reduce delivery time, traffic congestion, and environmental impact by leveraging aerial routes rather than traditional on the ground road networks. Equipped with sensors, GPS navigation, and smart routing algorithms, delivery drones can navigate complex environments, avoid obstacles, and land at designated delivery points. As the technology evolves, drone delivery systems are increasingly becoming a key feature of future urban and rural logistics infrastructures. 
+Drone-based package delivery is an emerging logistics solution designed to transport packages quickly and efficiently using autonomous or remotely controlled unmanned aerial vehicles (UAVs). This technology aims to reduce delivery time, traffic congestion, and environmental impact by leveraging aerial routes rather than traditional on the ground road networks. Equipped with sensors and smart routing algorithms, delivery drones can navigate complex environments, avoid obstacles, and land at designated delivery points. As the technology evolves, drone delivery systems are increasingly becoming a key feature of future urban and rural logistics infrastructures. 
 
 You should create a system for handling drones used in package delivery scenarios, that provides some interesting features for the use of drones. For that, you should program components for the drone and the apps. Depending on your ideas, you may also add more components. 
 

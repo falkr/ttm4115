@@ -53,7 +53,9 @@ Apart from being related to handling of drones, you have a lot of freedom. In th
 
 * **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying & real-time location, issue detected, delivered, etc.). 
 
- 
+**Note on the drone’s location data:** The RPi nodes are not equipped with GPS sensors. However, you can either develop a simple algorithm to generate the drone’s real-time location based on the packet source and destination, along with the UAV’s speed, or you may use publicly available open-source datasets that provide drone location data. Such datasets can be found on platforms like Kaggle, GitHub, and Hugging Face (e.g., [1](https://www.kaggle.com/datasets/ziya07/uav-coordination-dataset), [2](https://github.com/uavdelievery/Dataset?tab=readme-ov-file), [3](https://www.kaggle.com/datasets/ziya07/uav-autonomous-navigation-dataset), etc.).
+
+
 We emphasize once again that the above features are **only examples** meant to illustrate the scope and possible direction of the project. You are encouraged to develop **your own ideas**, explore creative alternatives, and propose new features that align with your system concept or introduce novel features.  
 
 

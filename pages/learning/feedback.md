@@ -53,7 +53,7 @@ type: card/person
 name: Haakon Kirksæter
 email: haakoki@stud.ntnu.no
 detail: Learning assistant
-image: figures/persons/empty.svg
+image: figures/persons/Haakon.jfif
 ---
 
 ---
@@ -61,7 +61,7 @@ type: card/person
 name: Tobias Dubland Nilsen
 email: tobias.d.nilsen@ntnu.no
 detail: Learning assistant
-image: figures/persons/empty.svg
+image: figures/persons/Tobias.jfif
 ---
 
 

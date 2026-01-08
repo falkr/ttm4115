@@ -51,7 +51,9 @@ Apart from being related to handling of drones, you have a lot of freedom. In th
 
 * **Delivery prioritization rules**, where urgent or high-value deliveries override default standard route for delivery. 
 
-* **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying & real-time location, issue detected, delivered, etc.). 
+* **User notifications and communication flow**, informing customers about each delivery stage (takeoff, flying & real-time location, issue detected, delivered, etc.).
+  
+* **Other interesting featurs...**
 
 **Note on the drone’s location data:** The RPi nodes are not equipped with GPS sensors. However, you can either develop a simple algorithm to generate the drone’s real-time location based on the packet source and destination, along with the UAV’s speed, or you may use publicly available open-source datasets that provide drone location data. Such datasets can be found on platforms like Kaggle, GitHub, and Hugging Face (e.g., [1](https://www.kaggle.com/datasets/ziya07/uav-coordination-dataset), [2](https://github.com/uavdelievery/Dataset?tab=readme-ov-file), [3](https://www.kaggle.com/datasets/ziya07/uav-autonomous-navigation-dataset), etc.).
 

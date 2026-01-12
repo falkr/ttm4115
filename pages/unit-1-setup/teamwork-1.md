@@ -22,7 +22,7 @@ You can ask the following:
 
 In the Team for the course, there is a **public** channel for your Team (called *Team XX*, so for instance *Team 01* for Team 01). It is public so other can send you files and messages, we need that later in the course.
 
-Store all your documents in the 'Shared' section of your team's channel. 
+Store all your documents in the 'Shared' section of your team's channel. For **each unit, you first need to create a folder, for example Unit 01** for the first unti.
 
 
 ### Create a Team Reflection Document
@@ -36,7 +36,7 @@ It is not graded, but contributes as context for grading all other deliveries.
 
 - Find the template for the team reflection document in the 'General' channel on Teams. It has the name `Team Reflection Template.docx`.
 - Make a copy, replace the `Template` with your two-digit team number, and place it in the 'Shared' section of the public channel for your team.
-- Since this is a document you will need every week, you can make a Tab out of it, if you want.
+- Since this is a document you will need every week, you should store it under the **root directory of your channel**. You can also make a Tab out of it, if you want.
 
 ### Team Roles for This Week
 

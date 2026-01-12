@@ -20,9 +20,9 @@ You can ask the following:
 
 ### Find Your Teams Channel
 
-In the Team for the course, create a **public** channel for your Team. Call it *Team XX*, so for instance *Team 01* for Team 1. Keep it public so other can send you files and messages, we need that later in the course.
+In the Team for the course, there is a **public** channel for your Team (called *Team XX*, so for instance *Team 01* for Team 01). It is public so other can send you files and messages, we need that later in the course.
 
-Store all your documents in the files section of your team's channel. 
+Store all your documents in the 'Shared' section of your team's channel. 
 
 
 ### Create a Team Reflection Document
@@ -34,8 +34,8 @@ After each team activity you visit this document and add an entry for the week.
 The team reflection document is also part of your final portfolio. 
 It is not graded, but contributes as context for grading all other deliveries.
 
-- Find the template for the team reflection document in the general channel on Teams. It has the name `Team Reflection Template.docx`.
-- Make a copy, replace the `Template` with your two-digit team number, and place it in the files section of the public channel for your team.
+- Find the template for the team reflection document in the 'General' channel on Teams. It has the name `Team Reflection Template.docx`.
+- Make a copy, replace the `Template` with your two-digit team number, and place it in the 'Shared' section of the public channel for your team.
 - Since this is a document you will need every week, you can make a Tab out of it, if you want.
 
 ### Team Roles for This Week

@@ -8,7 +8,7 @@ Ideally, your team works in a balanced way. Below with examples for balances you
 
 These are just examples of balances. 
 
-* Find the document **Balances in Teamwork Team XX.pptx** and make a copy.
+* Find the document **General/Unit01.../Balances in Teamwork Team XX.pptx** and make a copy.
 * Go through each page, and fill out the table.
 * Discuss guidelines for working with each other.
 * Conclude on the last page with expectations that you have towards each other.

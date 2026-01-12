@@ -11,7 +11,7 @@ Some features of team-based and active learning:
 * You will be part of a team of 5 to 7 students that stays constant during the semester.
 * You will receive a preparation guide that will help you to prepare for a lecture, for instance by reading a book chapter, doing a specific exercise or watching a video.
 * We will do several readiness assurance tests (RATs). These are multiple-choice tests that are easy to solve when you are reasonably prepared.
-* The team will help during the RAT, and this also counts towards the final grade.
+* The team will help during the RAT. <!-- , and this also counts towards the final grade.-->
 
 
 ## How TBL Works

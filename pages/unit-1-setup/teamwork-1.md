@@ -22,7 +22,7 @@ You can ask the following:
 
 In the Team for the course, there is a **public** channel for your Team (called *Team XX*, so for instance *Team 01* for Team 01). It is public so other can send you files and messages, we need that later in the course.
 
-Store all your documents in the 'Shared' section of your team's channel. For **each unit, you first need to create a folder, for example Unit 01** for the first unti.
+Store all your documents in the 'Shared' section of your team's channel. For **each unit, you first need to create a folder, for example Unit01** for the first unit.
 
 
 ### Create a Team Reflection Document

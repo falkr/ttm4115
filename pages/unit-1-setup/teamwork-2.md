@@ -14,7 +14,7 @@ These are just examples of balances.
 * Conclude on the last page with expectations that you have towards each other.
 
 :delivery:
-Copy the PPTX with your final answer into your team's channel / Shared / Unit 1 (folder for this unit).
+Copy the PPTX with your final answer into your team's channel / Shared / Unit01 (folder for this unit).
 Done!
 
 

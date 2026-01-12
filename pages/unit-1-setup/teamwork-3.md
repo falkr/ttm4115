@@ -9,7 +9,7 @@ It is very likely that you will find the learning goals of this course useful in
 In the following, you should estimate how relevant the learning goals of this course are for the different roles.
 
 
-- Find the document **Learning Goal Relevance**, and make a copy.
+- Find the document **Learning Goal Relevance Team XX**, and make a copy.
 - Assign the relative importance of the goal to the individual roles. 
   - `-` for _not relevant_ 
   - `+` for _relevant_

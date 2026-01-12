@@ -9,7 +9,7 @@ It is very likely that you will find the learning goals of this course useful in
 In the following, you should estimate how relevant the learning goals of this course are for the different roles.
 
 
-- Find the document **General/Shared/Unit01.../Learning Goal Relevance Team XX**, and make a copy.
+- Find the document **General/Unit01.../Learning Goal Relevance Team XX**, and make a copy.
 - Assign the relative importance of the goal to the individual roles. 
   - `-` for _not relevant_ 
   - `+` for _relevant_
@@ -47,4 +47,4 @@ The project manager is usually a single person, with the responsibility to manag
 
 
 :delivery:
-Copy the DOCX with your final answer into your team's channel / Shared / Unit01 (folder for this unit). (This is why you should change the XX in the filename to your team name.) **Done!**
+Copy the DOCX with your final answer into your team's channel / Unit01 (folder for this unit). (This is why you should change the XX in the filename to your team name.) **Done!**

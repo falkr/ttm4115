@@ -86,7 +86,7 @@ Based on the previous step, create a polished diagram. For this time, we recomme
 
 ### Step 7: Self-Evaluation
 
-On Teams find the template for the self-evaluation document `General > Unit02... > Rice Farming Team XX.docx`. Fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
+On Teams find the template for the self-evaluation document `General > Unit02... > Rice Farming Team XX.docx`. Download the template and replace XX with your team's number, then fill out the text for the criteria of the rubrics, and any other concerns not covered by the rubrics. (If you immediately come up with improvements, go back and change your diagram!)
 
 Copy the diagram into the document. 
 
@@ -99,11 +99,11 @@ Copy the diagram into the document.
 Now you ask another team for their diagram and self-evaluation. This requires some coordination, so that each team gets another diagram to comment on, and all diagrams are commented.
 
 * We don't do the assignment beforehand since not all of you may be ready at the same time. 
-* Check in the document Coordination.docx on Teams and note there on which team you comment.
+* Check in the document `Coordination.docx` on Teams and note there on which team you comment.
 * Check with the student assistants.
 
 
-Have a look at the diagram of the other team. We recommend to do this on the original online version. (Ask them for sharing access or duplicating the diagram). Add notes into their diagram, using UML comments.
+Have a look at the diagram of the other team. We recommend to do this on the original online version. (Ask them for sharing access or duplicating the diagram, if you do not have access to it). Add notes into their diagram, using UML comments.
 
 ---
 type: figure
@@ -117,5 +117,5 @@ Include your commented diagram in a copy of the original document.
 
 
 :delivery: Deliver your comments on Teams with the filename `Rice Farming Team XX comments by Team YY.docx`. 
-Copy the DOCX into your team's channel / Unit02 (folder for this unit).
+Copy the DOCX into your team XX's channel / Unit02 (folder for this unit).
 <!-- Store it under `Files > Unit 1... > Diagrams with Comments`. -->

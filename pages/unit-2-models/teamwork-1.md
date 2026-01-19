@@ -118,4 +118,4 @@ Include your commented diagram in a copy of the original document.
 
 :delivery: Deliver your comments on Teams with the filename `Rice Farming Team XX comments by Team YY.docx`. 
 Copy the DOCX into your team's channel / Unit02 (folder for this unit).
-Store it under `Files > Unit 1... > Diagrams with Comments`.
+<!-- Store it under `Files > Unit 1... > Diagrams with Comments`. -->

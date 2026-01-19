@@ -40,7 +40,7 @@ It is not graded, but contributes as context for grading all other deliveries.
 
 ### Team Roles for This Week
 
-Have a quick look again at the [team roles](learning-teamwork.html) that you have read through during the preparation.
+Have a quick look again at the [team roles](teamwork.html) that you have read through during the preparation.
 
 - Assign the roles for this week.
 - Go through the tasks of the roles and find out if you have the same understanding about them.

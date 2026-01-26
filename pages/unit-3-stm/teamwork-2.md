@@ -50,7 +50,7 @@ You can ignore for now that the system may be switched off, so you need no final
   * What was difficult? 
   * Were there misunderstandings?
   
-:delivery: Store your document from above under your 'team's channel / Unit03 >'. Use filname `ttm4115-bus-stop-team-XX.docx`
+:delivery: Store your document from above under your `team's channel / Unit03 >`. Use filname `ttm4115-bus-stop-team-XX.docx`
 
 
 

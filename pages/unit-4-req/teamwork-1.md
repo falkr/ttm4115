@@ -83,7 +83,8 @@ Now combine your work together:
 * Discuss and select the **three most important** characteristics. 
   - Mark the them with a star, or highlight them in yellow.
 
-:delivery: Deliver your solution in the Teams folder for this unit. Use filename `ttm4115-use-case-qualities-Team-XX.docx`
+:delivery: Deliver your solution in the Teams folder for this unit in the Teams folder for this unit (under `your 
+team's channel/Unit04`). Use filename `ttm4115-use-case-qualities-Team-XX.docx`
 
 
 
@@ -120,7 +121,7 @@ Your task is to assign these use cases to the level where they fit best. The exe
 * Move the use cases up and down, and discuss them. 
   * Argue why they should be on a certain level. 
   * Compare the use cases with each other, and see if the level also fits relative to each other. 
-* Once you are happy with the level of all use cases, [fill out the quiz (once per team.)](https://forms.office.com/e/RsMLFpdfJi)
+* Once you are happy with the level of all use cases, [fill out the quiz (one per team.)](https://forms.office.com/e/RsMLFpdfJi)
 * See if you agree with the answers.
 
 <!--
@@ -150,7 +151,7 @@ source: figures/toilet-paper.png
 caption: "Example use cases on their respective levels for a toilet paper management system."
 ---
 
-:delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels on Teams. (Once per team.)**
+:delivery: Of course, store the use case level document for your work on the semester project. **Also, deliver a screenshot of your use case levels in the Teams folder for this unit (under `your team's channel/Unit04`). (One per team.)**
 
 
 

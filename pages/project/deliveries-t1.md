@@ -113,7 +113,7 @@ type: table
 # Feedback Document and Delivery
 
 To allow both, your teachers and members of other teams to give you feedback, each team needs to create a feedback form.
-You find a template for the evaluation document on Teams in channel `General` under `Semester Project / feedback-v1-team-xx.docx`.
+You find a template for the evaluation document on Teams in channel `General` under `Semester Project / System Spect 1 / feedback-v1-team-xx.docx`.
 Create a copy, and fill the following out for your own team:
 
 * Add your team name and team members.

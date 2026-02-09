@@ -123,9 +123,9 @@ Create a copy, and fill the following out for your own team:
 
 # Delivery
 
-Deliver both the system specification and the feedback document via Blackboard.
+Deliver both the system specification and the feedback document (separate PDF files for each document) via Blackboard. You will find the assignment link to upload your files under "Course Work". 
 
-
+[https://ntnu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_56316_1&content_id=_3030156_1](Specification_V1)
 
 Should we include risks in the vision and scope document?
 

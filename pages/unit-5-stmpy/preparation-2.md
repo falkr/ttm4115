@@ -8,7 +8,7 @@ You have two possibilities to run them
 
 In this solution, you run Jupyter on your own computer. 
 
-* Install Jupyter Lab on your computer, following [these instructions](tools-notebooks.html).
+* Install Jupyter Lab on your computer, following [these instructions](tools/tools-notebooks.html).
 * Install the STMPY library:
 
 ```bash

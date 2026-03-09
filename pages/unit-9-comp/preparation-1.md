@@ -19,7 +19,7 @@ So far in the course, we have considered small examples and  focused on single s
 - Since most systems are distributed, we need to create different parts of the software for the different locations that can be deployed and started on their own.
 - It is also likely that we want to use some existing code or even larger parts of the system that we get from elsewhere. This again makes it necessary to split the implementation into parts.
 
-But even if we wrote all our code ourselves and new for each new system (good luck with that), and even if the system wouldn't be distributed, we need to decompose the system implementation into smaller parts to keep it manageable at all. Hence, it is not a question _if_ we should partition our system into parts, but rather _how_.
+But even if we wrote all our code ourselves and new for each new system (good luck with that), and even if the system wouldn't be distributed, we need to decompose the system implementation into smaller parts to keep it manageable. Hence, it is not a question _if_ we should partition our system into parts, but rather _how_.
 
 ## Components and Classes Are Not the Same
 

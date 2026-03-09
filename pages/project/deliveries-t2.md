@@ -129,4 +129,4 @@ Create a copy, and fill it out for your own team:
 
 *For this week, no individual reflection is necessary, we do it when we have the weekly activity on components.*
 
-Deliver both the system specification and the feedback document via Blackboard.
+Deliver both the `system specification` and the `feedback document` via **Blackboard**.

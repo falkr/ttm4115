@@ -129,4 +129,6 @@ Create a copy, and fill it out for your own team:
 
 *For this week, no individual reflection is necessary, we do it when we have the weekly activity on components.*
 
-Deliver both the `system specification (PDF file)` and the `team's self-evaluation feedback document (Word file)` via **Blackboard** (Submission link).
+Deliver both the `system specification (PDF file)` and the `team's self-evaluation feedback document (Word file)` via **Blackboard**.
+
+Submission Link: [Course Work/System Specification V2](https://ntnu.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_2807094_1&course_id=_56316_1&mode=reset)

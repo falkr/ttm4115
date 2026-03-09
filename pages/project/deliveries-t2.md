@@ -129,4 +129,4 @@ Create a copy, and fill it out for your own team:
 
 *For this week, no individual reflection is necessary, we do it when we have the weekly activity on components.*
 
-Deliver both the `system specification (PDF file)` and the `feedback document (Word file)` via **Blackboard**.
+Deliver both the `system specification (PDF file)` and the `team's self-evaluation feedback document (Word file)` via **Blackboard** (Submission link).

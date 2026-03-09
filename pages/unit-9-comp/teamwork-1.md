@@ -216,4 +216,4 @@ Do the following:
 * See if your component works as intended and sends the required messages to the Text To Speech component.
   * Just emulate the Text To Speech Component by subscribing with MQTTX to the corresponding topic.
 * Reflect on your progress in a document. 
-* Create a **short and uncut demo video** using two named timers, simulated via MQTTX and your timer manager component. Please upload the video under your team's channel/Unit09.
+* Create a **short and uncut demo video** using two named timers, simulated via MQTTX and your timer manager component. Please upload the video `under your team's channel/Unit09`.

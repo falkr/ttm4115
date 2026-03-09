@@ -18,7 +18,7 @@ This means we still have to put the right functions into the right components, b
 
 # State Machines as Sessions
 
-So far, we have only looked at singe instances of state machines, because they controlled a single resource. 
+So far, we have only looked at single instances of state machines, because they controlled a single resource. 
 
 * The kitchen timer was controlling a single hardware plug, and we hence had only a single state machine.
 * The bus stop had a single button and signal light, which we could take care of with a single state machine.

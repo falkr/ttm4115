@@ -10,7 +10,7 @@ This was a difficult learning unit to prepare! The reason is that we have to int
 
 So in the following, we have a combination of these perspectives. Some theoretical treatment with the principles, some view into the real world, and some programming in the week ahead. 
 
-But don't get me wrong: Components are a fascinating subject! Components do not only couple together a lot of the properties of a system, both at runtime and after deployment. They are the main subjects when we talk about software architecture, which is a changing field with different trends, ideas, fashions, faiths and also fantasies. When you learn, such discussions can be interesting but also confusing. What I want to achieve in the following unit is that you get the basic ideas and develop the skills to think about modularity in a system so you can adapt to whichever specific component framework and architectural style is used in your job. Here are, as always, the learning :goals:
+But don't get me wrong: Components are a fascinating subject! Components do not only couple together a lot of the properties of a system, both at runtime and after deployment. They are the main subjects when we talk about software architecture, which is a changing field with different trends, ideas, fashions, faiths and also fantasies. When you learn, such discussions can be interesting but also confusing. What I want to achieve in the following unit is that you get the basic ideas and develop the skills to think about modularity in a system so you can adapt to whichever specific component framework and architectural style is used in your job. Here are, as always, the learning goals:
 
 ## Learning Goals
 

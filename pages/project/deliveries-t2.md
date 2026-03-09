@@ -116,7 +116,7 @@ class: rubric
 
 # Feedback Document and Delivery
 
-On Teams, you find a template for the evaluation document, under `Semester Project / feedback-v2-team-xx.docx`.
+On Teams, you find a template for the evaluation document, under `Semester Project / System Spec 2 / feedback-v2-team-xx.docx`.
 Create a copy, and fill it out for your own team:
 
 * Add team name and team members
